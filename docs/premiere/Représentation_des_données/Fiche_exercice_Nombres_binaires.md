@@ -76,7 +76,7 @@
 19. $11001_{2} \div10_{2}$.
 20. $100111_{2} \div1001_{2}$.
 
-### Complément à deux 
+### Complément à deux
 
 Trouver le complément à deux des nombres binaires suivants (sur 8 bits) :
 
