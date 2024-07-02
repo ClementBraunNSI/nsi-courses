@@ -1,30 +1,24 @@
-# Welcome to MkDocs
+# Cours de SNT et NSI
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Clément Braun
+*Enseignant d'Informatique*
 
-## Commands
+## Présentation des enseignements
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Programmes de SNT
 
-## Project layout
+## Programmes de NSI
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Logiciels utiles
 
+## Baccalauréat NSI
 
 ## Ont contribué à ce site
 
-BRAUN Clément
 
-DELPLACE Nicolas
-
-RAMSTEIN Stéphane
-
-BOULIER HUGO
-
-LEAL Nicolas
+[!TIP]
+Ont participé à la création de ces cours:
+BRAUN Clément : Enseignant d'informatique
+DELPLACE Nicolas : Enseignant d'informatique
+RAMSTEIN Stéphane : Enseignant d'informatique au lycée Raymon Queneau
+PAPEGAY Benoit : Enseignant à l'Université de Lille
