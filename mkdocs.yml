@@ -1,6 +1,6 @@
 site_name: NSI - Clément Braun
 theme:
-  name : cinder
+  name : material
   features :
     - navigation.tabs
     - navigation.tabs.sticky
