@@ -8,13 +8,13 @@
 
 Indiquer quel schéma représente la latitude et lequel représente la longitude.
 
-La ....(géolocalisation).................... est une technique permettant de situer de manière précise un lieu, une personne, un objet sur la planète. Pour se faire, on doit connaître au moins trois coordonnées géographiques.
+La ....................... est une technique permettant de situer de manière précise un lieu, une personne, un objet sur la planète. Pour se faire, on doit connaître au moins trois coordonnées géographiques.
 
-La .......(latitude)................... est la mesure de l'angle formé entre le point extrême de l'équateur, le centre de la terre et la position de ce que l'on cherche à localiser exprimée en degrés. La  .......(longitude)................... est une mesure faite par rapport à un des méridien de la Terre sur 360° exprimée en degrés. L' .......(altitude)................... est la hauteur du point maximal de l'objet que l'on cherche à situer par rapport au niveau 0 de la mer, elle est exprimée en mètres.
+La .......................... est la mesure de l'angle formé entre le point extrême de l'équateur, le centre de la terre et la position de ce que l'on cherche à localiser exprimée en degrés. La  .......(longitude)................... est une mesure faite par rapport à un des méridien de la Terre sur 360° exprimée en degrés. L' .......................... est la hauteur du point maximal de l'objet que l'on cherche à situer par rapport au niveau 0 de la mer, elle est exprimée en mètres.
 
 
 
-<img src="im1.png" style="zoom:33%" /><img src="im2.png" alt="image-20230320173930303" style="zoom:33%;" /><img src="im3.png" alt="image-20230320181747753" style="zoom:50%;" />
+<img src="/docs/seconde/Géolocalisation/im1.png" style="zoom:33%" /><img src="/docs/seconde/Géolocalisation/im2.png" alt="image-20230320173930303" style="zoom:33%;" /><img src="/docs/seconde/Géolocalisation/im3.png" alt="image-20230320181747753" style="zoom:50%;" />
 
 
 
