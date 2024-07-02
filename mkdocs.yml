@@ -1,6 +1,6 @@
 site_name: NSI - Clément Braun
 theme:
-  name : cinder
+  name : readthedocs
   features :
     - navigation.tabs
     - navigation.tabs.sticky
