@@ -50,9 +50,30 @@ $0,25_{10} = 0,010_{2}$.
 On a donc : $1,75_{10} = 1,110_{2}$.
 
 Après réalisation de l'opération, on obtient le résultat : $1110,110_2 + 1,110_2 = 10000,000_2 = 16_{10}$. C'est bien le bon résultat.
-Cependant, on remarque que beaucoup de bits sont utilisés pour représenter un si petit nombre, on se retrouve avec un problème grave d'utilisation inutile d'espace.
+Cependant, les machines (ordinateurs et smartphones) n'utilisent pas cette méthode mais utilise la méthode de la **virgule flottante**.
 
 ### La Norme IEEE754
 
-La norme IEEE754 permet de répondre au problème de stockage énoncé précédemment.
-La norme IEEE754 permet de représenter des nombres réels en utilisant 32 bits dont certains ont une utilité propre.
+La norme IEEE754 permet de représenter les nombres réels en utilisant le principe de virgule flottante.
+
+Pour simplifier, cette norme permet d'écrire chaque nombre comme une écriture scientifique d'un nombre avec pour base 2.
+
+Un nombre N s'écrit : $N = -1^s * m \times 2^n$ avec $m \in [1;2[$.
+
+- s correspond au signe du nombre : 0 est positif, 1 correspond à un négatif.
+- m correspond à l'écriture scientifique du nombre.
+- n correspond à la puissance permettant de l'écrire en notation scientifique.
+
+### Problème : les imprécisions
+
+On a remarqué que pour certains nombres, on ne peut pas trouver de représentation exacte d'un nombre par exemple 0.1.
+Étant donné qu'il y a des imprécisions sur les flottants, les égalités sur les flottants ne sont pas forcément exactes.
+
+**Exemple:**
+Par exemple, à l'aide d'un intrepréteur Python, on peut obtenir ce curieux résultat :
+```python
+>>> 0.1 + 0.2
+0.30000000000000004
+```
+
+Cela est du, comme expliqué précédemment, aux imprécisions des représentations des nombres réels.
