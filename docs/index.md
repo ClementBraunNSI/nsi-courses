@@ -17,7 +17,7 @@ Clément Braun
 
 !!! tip
     Ont participé à la création de ces cours:
-    BRAUN Clément : Enseignant d'informatique
-    DELPLACE Nicolas : Enseignant d'informatique
-    RAMSTEIN Stéphane : Enseignant d'informatique au lycée Raymon Queneau
-    PAPEGAY Benoit : Enseignant à l'Université de Lille
+    - BRAUN Clément : Enseignant d'informatique
+    - DELPLACE Nicolas : Enseignant d'informatique
+    - RAMSTEIN Stéphane : Enseignant d'informatique au lycée Raymon Queneau
+    - PAPEGAY Benoit : Enseignant à l'Université de Lille
