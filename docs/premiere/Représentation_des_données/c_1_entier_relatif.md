@@ -1,4 +1,4 @@
-# Entiers négatifs en Binaire et Hexadécimal
+# Entiers négatifs en Binaire
 
 ## Les entiers négatifs
 
@@ -44,4 +44,31 @@ Cela a donc donné l'idée pour représenter les nombres négatifs, on appelle c
 On peut donc représenter :
 $1_{10} = 0001_2 \rightarrow 0_{10} = 0000_2 \rightarrow -1_{10} = 1111_2 \rightarrow -2_{10} = 1110_2 \rightarrow ...$.
 
+Il existe une méthode pour réaliser cette conversion.
 
+**Méthode :**
+
+1 - Convertir le nombre choisi en base 2.
+2 - Inverser chaque bits : 0 devient 1 et inversement.
+3 - Ajouter 1 à la représentation binaire du nombre inversé.
+
+Exemple :
+On souhaite représenter -14 en base 2 :
+Étape 1 : $14_{10} = 1110_2$
+Étape 2 : $1110_2 \rightarrow 0001_2$
+Étape 3 : $0001_2 + 1_2 = 0010_2 = -14_{10}$
+
+Cela permet de résoudre le premier problème, celui de la représentation de 0 mais cela résout-il le problème des opérations ?
+
+On souhaite réaliser l'opération 14 + (-4) sur 4 bits.
+$-4_{10} = 1100_2$
+$14_{10} = 1110_2$
+
+On calcule l'opération : 
+$1110_2 + 1100_2 = 11010_2$
+On remarque que l'on dépasse le nombre de bits aloués, ici 5 bits.
+On a en réalité réalisé l'opération (en décimal) : $14 + (2^5-4) = 26$.
+Il faut donc retrancher $2^5$ à la représentation que l'on avait :
+$11010_2 - 10000_2 = 1010_2 = 10_{10}$.
+
+Cela permet donc de réaliser toutes les opérations possibles sans erreur, on utilisera donc la méthode du complément à 2.
