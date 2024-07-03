@@ -111,3 +111,9 @@ Convertir les nombres binaires négatifs suivants (en complément à deux sur 8 
 3. $1110\ 0111_{2}$
 4. $1100\ 1110_{2}$
 5. $1001\ 1100_{2}$
+
+## Binaire et Python
+
+1. En reprenant l'algorithme des divisions successives, réaliser une fonction base10_vers_binaire. Cette fonction prendra en paramètre un nombre entier et renverra une chaîne de caractère correspondant à la représentation en base 2 de celui-ci.
+
+2. Écrire une fonction binaire_vers_base10. Cette fonction prendra en paramètre une représentation en base 2 d'un nombre (chaîne de caractère) et renverra un nombre entier.

@@ -60,9 +60,41 @@ Pour simplifier, cette norme permet d'écrire chaque nombre comme une écriture 
 
 Un nombre N s'écrit : $N = -1^s * m \times 2^n$ avec $m \in [1;2[$.
 
-- s correspond au signe du nombre : 0 est positif, 1 correspond à un négatif.
-- m correspond à l'écriture scientifique du nombre.
-- n correspond à la puissance permettant de l'écrire en notation scientifique.
+- s correspond au **signe** du nombre : 0 est positif, 1 correspond à un négatif.
+- m correspond à l'écriture scientifique du nombre appelée **mantisse**.
+- n correspond à la **puissance** permettant de l'écrire en notation scientifique.
+
+Cette norme permet de représenter plus de nombres en utilisant le même nombre de bits en faisant varier un exposant (en général 32 bits).
+L'exposant n est l'exposant correspondant à l'écriture scientifique du nombre.
+
+Cette représentation comprend :
+
+- 1 bit de signe
+- 8 bits correspondant à l'exposant dont on retranche 127
+- 23 bits correspondant à la mantisse
+
+Exemple :
+
+On souhaite représenter le nombre 14,75 en utilisant la norme IEEE754.
+
+Étape 1 : **Représenter le nombre en base 2**
+Ici $14_{10} = 1110,110_2$
+
+Étape 2 : **Écrire sous forme "d'écriture scientifique"**
+Ici $1110,110_2 = 1,110110_2 \times 2^{-3}
+
+**On obtient donc $m=110110_2$, $n=-3$ et $s=0$.**
+
+Étape 3 : **L'exposant retranché**
+
+On retranche 127 à notre exposant : $E = 127 - n$.
+On a donc $E = 127 - (-3) = 130$.
+On représente cet exposant en binaire et ici $130_{10} = 1000~0010_{2}$.
+
+Étape 4 : **L'assemblage**
+
+On a donc $14,75_{10} = 0~10000010~110110..._{2}$
+
 
 ### Problème : les imprécisions
 
