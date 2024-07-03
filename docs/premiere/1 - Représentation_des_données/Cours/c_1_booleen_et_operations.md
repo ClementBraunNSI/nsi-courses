@@ -2,7 +2,7 @@
 
 ## Définitions
 
-Une **variable** booléenne est une variable qui peut prendre **deux états** : **Vrai ou Faux**.
+Une **variable** booléenne est une variable qui peut prendre **deux états** : **Vrai ou Faux**. Ces états peuvent être équivalents à des valeurs numériques : Vrai = 1 et Faux = 0.
 Ces états correspondent en machine **à la présence du courant ou non**.
 
 Une **fonction booléenne** est une fonction qui prend en paramètre **des variables booléennes** et en ressort un résultat.
@@ -29,7 +29,7 @@ La fonction NOT prend en paramètre une variable booléenne et renvoie son oppos
 
 ### Fonction AND (ET)
 
-La fonction AND prend en paramètre deux variables booléennes et renvoie en sortie si les deux variables sont à l'état 1.
+La fonction AND prend en paramètre deux variables booléennes et renvoie en sortie si les deux variables sont à l'état 1. L'opérateur est $\times$ ou $\cdot$.
 
 **Table de vérité**
 
@@ -43,6 +43,7 @@ La fonction AND prend en paramètre deux variables booléennes et renvoie en sor
 ### Fonction OR (OU)
 
 La fonction OR prend en paramètre deux variables et renvoie 1 si l'une ou les deux variables booléennes sont à l'état 1.
+L'opérateur est $+$.
 
 **Table de vérité**
 
@@ -70,3 +71,16 @@ La fonction XOR correspond à une fonction booléenne OR mais qui renvoie 1 uniq
 
 On rappelle qu'une équation booléenne est un ensemble de fonctions booléennes.
 Ces fonctions répondent à l'algèbre booléenne créée par George Bool à la fin du XIXème siècle.
+
+Les équastions booléennes se lisent de gauche à droite et dépendent des priorités opératoires PEMDAS comme en mathématiques.
+
+$ S = (a + b)\times c$ se lit "a ou b et c".
+
+Exemple :
+Pour évaluer cette équation booléenne, on a besoin de valeurs pour les variables. On prend pour exemple a = 1, b = 0 et c = 1.
+
+On évalue d'abord l'opération OU. Le résultat de cette opération sera utilisé comme paramètre pour l'opération ET.
+
+$S = (1+0) \times 0 = 1 \times 0 = 0$.
+
+On peut donc évaluer des équations booléennes à l'aide des tables de vérité précédentes.
