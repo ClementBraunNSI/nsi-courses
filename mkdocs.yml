@@ -14,8 +14,8 @@ theme:
     - content.code.copy
   language: fr
   palette:
-    primary: brown
-    accent: amber
+    primary: green
+    accent: teal
 
 markdown_extensions:
   - pymdownx.highlight:
