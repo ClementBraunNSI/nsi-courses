@@ -74,7 +74,7 @@ Ces fonctions répondent à l'algèbre booléenne créée par George Bool à la 
 
 Les équastions booléennes se lisent de gauche à droite et dépendent des priorités opératoires PEMDAS comme en mathématiques.
 
-$ S = (a + b)\times c$ se lit "a ou b et c".
+$S = (a + b)\times c$ se lit "a ou b et c".
 
 Exemple :
 Pour évaluer cette équation booléenne, on a besoin de valeurs pour les variables. On prend pour exemple a = 1, b = 0 et c = 1.
@@ -84,3 +84,24 @@ On évalue d'abord l'opération OU. Le résultat de cette opération sera utilis
 $S = (1+0) \times 0 = 1 \times 0 = 0$.
 
 On peut donc évaluer des équations booléennes à l'aide des tables de vérité précédentes.
+
+## En python
+
+Sur Python, on peut évaluer des équations booléennes. Les opérateurs sont quasiment transparents:
+
+- La fonction OU correspond à l'opérateur **or**.
+- La fonction ET correspond à l'opérateur **and**.
+- La fonction NON correspond à l'opérateur **not**.
+
+On peut associer à une variable en python un état booléen qui sera retranscrit par une valeur **True** (Vrai ou 1) et **False** (Faux ou 0).
+
+En python, on peut écrire l'exemple précédent de cette manière :
+
+```python
+a = True
+b = False
+c = True
+
+S = (a or b) and c
+print(S)
+```
