@@ -90,7 +90,7 @@ Ici $1110,110_2 = 1,110110_2 \times 2^{-3}$
 Étape 3 : **L'exposant retranché**  
 
 On retranche 127 à notre exposant : $E = 127 - n$.
-On a donc $E = 127 - (-3) = 130$.
+On a donc $E = 127 - (-3) = 130$.  
 On représente cet exposant en binaire et ici $130_{10} = 1000~0010_{2}$.
 
 Étape 4 : **L'assemblage**  
