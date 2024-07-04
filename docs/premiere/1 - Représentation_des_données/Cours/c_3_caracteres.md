@@ -55,3 +55,22 @@ Pour faciliter la compréhension, on peut dresser une table de correspondance.
 | 109 | 6D  | m        | 125 | 7D  | }   | 141 | 8D  |    | 157 | 9D  |    |
 | 110 | 6E  | n        | 126 | 7E  | ~   | 142 | 8E  |    | 158 | 9E  |    |
 | 111 | 6F  | o        |     |     |     | 143 | 8F  |    | 159 | 9F  |    |
+
+Cependant, à la vue de cette table, on remarque une chose : il n'y a que des symboles d'alphabets latins.
+Or, il n'existe pas uniquement les alphabets latins mais aussi le cyrillique ou bien les symboles des alphabets chinois ou japonais.
+
+Pour se faire, on a besoin d'un codage permettant de représenter d'avantage de caractères.
+
+## Un système plus inclusif : Unicode
+
+Unicode est un système de codage de caractère qui utilise un certain nombre de bits en fonction de sa version, plus connu sous le nom de UTF.
+
+On utilise plus souvent le système UTF-8 qui utilise 8 bits pour représenter des caractères. Il peut cependant utiliser 1, 2 voire même 3 groupes de 8 bits (octets) pour représenter d'avantages de caractères.
+
+Chaque symbole possède un **point de code**, qui est l'ensemble des bits permettant sa représentation, souvent représenté en **hexadécimal**.
+
+On peut citer par exemple les caractères 풪 pour point de code *052A*, A (a majuscule) pour point de code *41* ou encore ᛒ (lettre B runique) pour point de code **16D2**.
+
+**Remarque :** Python utilise l'encodage UTF-8 pour coder ses symboles et les représenter. Il est possible cependant d'observer un encodage spécial sur une chaîne de caractère en utilisant la méthode `encode` des chaînes de caractères.
+
+On retrouvera la table UTF-8 à cette adresse : [Table UTF-8](https://www.charset.org/utf-8).
