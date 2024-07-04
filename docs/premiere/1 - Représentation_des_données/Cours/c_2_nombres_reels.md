@@ -104,10 +104,18 @@ On a remarqué que pour certains nombres, on ne peut pas trouver de représentat
 Étant donné qu'il y a des imprécisions sur les flottants, les égalités sur les flottants ne sont pas forcément exactes.
 
 **Exemple:**
-Par exemple, à l'aide d'un intrepréteur Python, on peut obtenir ce curieux résultat :
-```python
+Par exemple, à l'aide d'un intrepréteur Python, on peut obtenir de curieux résultats :
+```python{.line-numbers}
 >>> 0.1 + 0.2
 0.30000000000000004
+
+>>> a = 3.3
+>>> b = 2.1
+>>> c = 4.2
+>>> (a+b)*c
+22.680000000000003
+>>> a*c + b*c
+22.68
 ```
 
 Cela est du, comme expliqué précédemment, aux imprécisions des représentations des nombres réels.
