@@ -77,21 +77,23 @@ Exemple :
 
 On souhaite représenter le nombre 14,75 en utilisant la norme IEEE754.
 
-Étape 1 : **Représenter le nombre en base 2**
+Étape 1 : **Représenter le nombre en base 2**  
+
 Ici $14_{10} = 1110,110_2$
 
-Étape 2 : **Écrire sous forme "d'écriture scientifique"**
-Ici $1110,110_2 = 1,110110_2 \times 2^{-3}
+Étape 2 : **Écrire sous forme "d'écriture scientifique"**  
+
+Ici $1110,110_2 = 1,110110_2 \times 2^{-3}$
 
 **On obtient donc $m=110110_2$, $n=-3$ et $s=0$.**
 
-Étape 3 : **L'exposant retranché**
+Étape 3 : **L'exposant retranché**  
 
 On retranche 127 à notre exposant : $E = 127 - n$.
 On a donc $E = 127 - (-3) = 130$.
 On représente cet exposant en binaire et ici $130_{10} = 1000~0010_{2}$.
 
-Étape 4 : **L'assemblage**
+Étape 4 : **L'assemblage**  
 
 On a donc $14,75_{10} = 0~10000010~110110..._{2}$
 
