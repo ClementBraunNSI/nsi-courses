@@ -37,6 +37,18 @@ La NSI (Numérique et Sciences Informatiques) est une spécialité proposée aux
 
 ## Baccalauréat NSI
 
+Le baccalauréat NSI est découpé en deux épreuves.
+
+La première est une épreuve écrite classique reprenant les points de cours, les algorithmes vus ou des problèmes informatiques répondant aux points de cours.
+Cette épreuve dure **3 heures** avec 3 exercices (2 sur 6 points et une sur 8 points).
+Cette épreuve vaut pour $\frac{3}{4}$ des points de la note finale de la matière.
+
+La seconde est une épreuve pratique. Il existe en total une quarantaine de sujets d'algorithmes sélectionnés et vus en cours.
+Cette épreuve dure **1 heure** avec 2 exercices.
+Le premier est un exercice où le candidat doit rédiger un algorithme à l'aide d'une description du problème.
+Le second est un exercice où le candidat doit compléter un algorithme à trou.
+Cette épreuve vaut pour $\frac{1}{4}$ des points de la note finale.
+
 ## Ont contribué à ce site
 
 - BRAUN Clément : Enseignant d'informatique
