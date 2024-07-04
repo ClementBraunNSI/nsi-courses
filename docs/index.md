@@ -20,7 +20,20 @@ La NSI (Numérique et Sciences Informatiques) est une spécialité proposée aux
 
 ## Logiciels utiles
 
+- **[Visual Studio Code (VSCode)](https://code.visualstudio.com/)**
+  - **Description** : Un éditeur de code source développé par Microsoft, qui est très populaire pour le développement en Python, JavaScript, C++, etc. Il offre de nombreuses extensions pour améliorer la productivité.
 
+- **[PyCharm](https://www.jetbrains.com/pycharm/download/)**
+  - **Description** : Un IDE (Integrated Development Environment) pour le développement Python, développé par JetBrains. Il est particulièrement utile pour les projets plus complexes grâce à ses nombreuses fonctionnalités intégrées.
+
+- **[Spyder](https://www.spyder-ide.org/)**
+  - **Description** : Un IDE scientifique open source écrit en Python, conçu pour être utilisé avec des bibliothèques scientifiques telles que NumPy, SciPy, Pandas, Matplotlib, etc. Il est particulièrement populaire dans la communauté scientifique et académique.
+
+- **[Filius](https://www.lernsoftware-filius.de/download.php)**
+  - **Description** : Un logiciel de simulation de réseaux qui permet de créer et de comprendre les réseaux informatiques de manière visuelle. Il est particulièrement utile pour l'apprentissage des concepts de réseaux en NSI.
+
+- **[Thonny](https://thonny.org/)**
+  - **Description** : Un IDE Python simple et facile à utiliser, idéal pour les débutants. Il offre des fonctionnalités de débogage intuitives et est parfait pour l'apprentissage de la programmation en Python.
 
 ## Baccalauréat NSI
 
