@@ -3,9 +3,9 @@
 ## Encodage en table ASCII
 
 1. Décoder les messages suivants en hexadécimal à l'aide de la table ASCII
-   a. `48 65 6C 6C 6F`
-   b. `57 6F 72 6C 64`
-   c. `31 32 33 34 35`
+   - `48 65 6C 6C 6F`
+   - `57 6F 72 6C 64`
+   - `31 32 33 34 35`
 
 2. Encoder les messages suivants à l'aide de la table ASCII
    a. `Hello`
