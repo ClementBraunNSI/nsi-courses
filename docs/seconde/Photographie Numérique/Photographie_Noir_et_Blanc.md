@@ -36,15 +36,22 @@ On définit **le blanc avec le chiffre 1** et **le noir avec le chiffre 0**.
 On peut donc dessiner des images grâce à des tableaux de nombres.
 
 **Exercice** : Donner l’image associée au tableau de 0 et de 1 ci-dessous :
+||||||
+|-|-|-|-|-|
+|1|1|1|1|1|
+|1|0|1|0|1|
+|1|1|1|1|1|
+|0|1|1|1|0|
+|1|0|0|0|1|
 
 **Exercice** : Donner le tableau de 0 et de 1 associé à cette image : 
 
+![img_to_tab](img_to_tab.png)
 
 Les images en noir et blanc sont basiques et n’ont pas par définition une palette de couleur variée.
 Cependant, entre le noir et le blanc existe une quantité de nuances du mélange de celles-ci : le gris.
 
 ## Les images en nuances de gris
-
 
 Pour donner de la profondeur à l’image ainsi que du contraste, on peut dans un premier temps utiliser les couleurs que l’on appelle des nuances de gris.
 Une nuance de gris correspond à du noir auquel on ajoute une certaine luminosité (exprimée en pourcentages).
@@ -59,6 +66,8 @@ Ce pourcentage correspond au nombre entre 0 et 255 qui représente la nuance de 
 **Remarque** : Plus la valeur est grande, plus le gris tendra sur du blanc, plus elle est faible, plus le gris tendra vers du noir.
 
 **Exercice** : Remplir le tableau de droite avec les niveaux de gris correspondants. Aidez vous de la palette au dessus.
+
+![img_nuances](img_nuances.png)
 
 On a vu précédemment qu’un ordinateur ne comprend que des 0 et des 1 en mémoire, on a donc un problème : comment représenter les nombres entre 0 et 255 en mémoire ?
 La solution : convertir les nombres décimaux que nous connaissons en 0 et 1.
