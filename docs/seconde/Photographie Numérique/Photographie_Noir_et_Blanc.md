@@ -36,13 +36,8 @@ On définit **le blanc avec le chiffre 1** et **le noir avec le chiffre 0**.
 On peut donc dessiner des images grâce à des tableaux de nombres.
 
 **Exercice** : Donner l’image associée au tableau de 0 et de 1 ci-dessous :
-||||||
-|-|-|-|-|-|
-|1|1|1|1|1|
-|1|0|1|0|1|
-|1|1|1|1|1|
-|0|1|1|1|0|
-|1|0|0|0|1|
+
+![tab01](tab_01.png)
 
 **Exercice** : Donner le tableau de 0 et de 1 associé à cette image : 
 
