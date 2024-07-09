@@ -105,7 +105,8 @@ On a remarqué que pour certains nombres, on ne peut pas trouver de représentat
 
 **Exemple:**
 Par exemple, à l'aide d'un intrepréteur Python, on peut obtenir de curieux résultats :
-```python{.line-numbers}
+
+```python
 >>> 0.1 + 0.2
 0.30000000000000004
 
