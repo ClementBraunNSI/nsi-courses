@@ -69,7 +69,7 @@ En effet, les opérations **mathématiques** sont réservées à des variables d
 Comme les opérations mathématiques, il est possible de réaliser des comparaisons sur des variables.
 
 !!! danger
-    **On ne peut comparer des éléments uniquement s'ils sont du même type** !
+    **On ne peut comparer des éléments uniquement s'ils sont du même type** !  
     Si jamais lors d'un programme on compare deux éléments de types différents, on pourrait faire face à ce que l'on appelle une erreur (**TypeError**).
 
 Il existe un certain nombre d'opérateurs en python qui permettent de réaliser des comparaisons.  
