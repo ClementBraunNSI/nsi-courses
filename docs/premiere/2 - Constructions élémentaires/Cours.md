@@ -68,7 +68,7 @@ En effet, les opérations **mathématiques** sont réservées à des variables d
 
 Comme les opérations mathématiques, il est possible de réaliser des comparaisons sur des variables.
 
-!!! danger Erreurs de types
+!!! danger
     **On ne peut comparer des éléments uniquement s'ils sont du même type** !
     Si jamais lors d'un programme on compare deux éléments de types différents, on pourrait faire face à ce que l'on appelle une erreur (**TypeError**).
 
@@ -82,7 +82,7 @@ On peut citer :
 - $a <= b$ : Cet opérateur correspond à une comparaison d'ordre (a plus petit ou égal à b).
 - $a == b$ : Cet opérateur correspond à une comparaison : a est égal à b.
 
-!!! Danger Confusion des opérateurs
+!!! Danger
     Il ne faut pas confondre les opérateurs $=$ et $==$.
     En effet, $=$ ne sera utilisé uniquement lors d'instanciation de variables. Utiliser cet opérateur lors d'une comparaison peut mener à des erreurs!
 
