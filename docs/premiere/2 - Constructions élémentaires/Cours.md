@@ -83,7 +83,7 @@ On peut citer :
 - $a == b$ : Cet opérateur correspond à une comparaison : a est égal à b.
 
 !!! Danger
-    Il ne faut pas confondre les opérateurs $=$ et $==$.
+    Il ne faut pas confondre les opérateurs $=$ et $==$.  
     En effet, $=$ ne sera utilisé uniquement lors d'instanciation de variables. Utiliser cet opérateur lors d'une comparaison peut mener à des erreurs!
 
 ## Conditions
