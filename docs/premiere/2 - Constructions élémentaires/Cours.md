@@ -41,10 +41,11 @@ Le langage python est un langage informatique. En informatique, il est nécessai
 
 Il existe un certain nombre d'opérations mathématiques qui sont associées à des opérateurs.
 On peut citer :
-    - $+$: addition
-    - $-$: soustraction
-    - $\ast$: multiplication
-    - $/$ : division
+
+- $+$: addition
+- $-$: soustraction
+- $\ast$: multiplication
+- $/$ : division
 
 Ces opérateurs utilisent 2 valeurs, à l'instar de nos opérations que l'on peut écrire sur papier.
 Il en parait nécessaire d'instancier une variable à une opération, comme par exemple nos fonctions mathématiques $y = 3x+2$.
@@ -73,11 +74,12 @@ Comme les opérations mathématiques, il est possible de réaliser des comparais
 
 Il existe un certain nombre d'opérateurs en python qui permettent de réaliser des comparaisons.
 On peut citer :
-    - $a > b$ : Cet opérateur correspond à une comparaison d'ordre (a plus grand que b).
-    - $a < b$ : Cet opérateur correspond à une comparaison d'ordre (a plus petit que b).
-    - $a >= b$ : Cet opérateur correspond à une comparaison d'ordre (a plus grand ou égal à b).
-    - $a <= b$ : Cet opérateur correspond à une comparaison d'ordre (a plus petit ou égal à b).
-    - $a == b$ : Cet opérateur correspond à une comparaison : a est égal à b.
+
+- $a > b$ : Cet opérateur correspond à une comparaison d'ordre (a plus grand que b).
+- $a < b$ : Cet opérateur correspond à une comparaison d'ordre (a plus petit que b).
+- $a >= b$ : Cet opérateur correspond à une comparaison d'ordre (a plus grand ou égal à b).
+- $a <= b$ : Cet opérateur correspond à une comparaison d'ordre (a plus petit ou égal à b).
+- $a == b$ : Cet opérateur correspond à une comparaison : a est égal à b.
 
 !!! Danger Confusion des opérateurs $==$ et $=$
     Il ne faut pas confondre les opérateurs $=$ et $==$.
