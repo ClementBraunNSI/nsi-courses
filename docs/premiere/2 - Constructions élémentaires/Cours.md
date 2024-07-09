@@ -72,7 +72,8 @@ Comme les opérations mathématiques, il est possible de réaliser des comparais
     **On ne peut comparer des éléments uniquement s'ils sont du même type** !
     Si jamais lors d'un programme on compare deux éléments de types différents, on pourrait faire face à ce que l'on appelle une erreur (**TypeError**).
 
-Il existe un certain nombre d'opérateurs en python qui permettent de réaliser des comparaisons.
+Il existe un certain nombre d'opérateurs en python qui permettent de réaliser des comparaisons.  
+
 On peut citer :
 
 - $a > b$ : Cet opérateur correspond à une comparaison d'ordre (a plus grand que b).
