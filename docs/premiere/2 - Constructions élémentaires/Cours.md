@@ -84,7 +84,7 @@ On peut citer :
 
 !!! Danger
     Il ne faut pas confondre les opérateurs $=$ et $==$.  
-    En effet, $=$ ne sera utilisé uniquement lors d'instanciation de variables. Utiliser cet opérateur lors d'une comparaison peut mener à des erreurs!
+    En effet, $=$ ne sera utilisé uniquement lors d'**instanciation** de variables. Utiliser l'opérateur $=$ lors d'une **comparaison** peut mener à des erreurs! (**SyntaxError**).
 
 ## Conditions
 
