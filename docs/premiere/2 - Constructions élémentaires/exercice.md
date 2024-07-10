@@ -1,4 +1,4 @@
-# Exercices Structures de données linéaires
+# Exercices Boucles et Fonctions
 
 1. Écrire une fonction qui écrit pour une valeur de **1** à **n** avec un pas de **1**, la phrase:
 

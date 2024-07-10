@@ -88,4 +88,69 @@ On peut citer :
 
 ## Conditions
 
+Une condition est réalisable en python grâce à l'instruction `if`.
+
+Cette condition permet d'évaluer des comparaisons, des états de variables ou des valeurs associées à des variables.
+Si cette condition est validée, alors le bout de code associé est exécuté, sinon il peut exister un bloc de code associé au mot-clef `else`.
+
+Par exemple, on souhaite réaliser un affichage suivant une valeur d'une variable âge qui correspond à l'âge de l'utilisateur qu'il renseigne.
+
+```python
+
+# Demander à l'utilisateur son age
+age = input('Quel est votre âge?')
+
+# Lors d'une demande à l'aide d'input, on reçoit une chaîne de caractères, on doit la convertir en entier
+age_entier = int(age)
+
+# Condition d'affichage
+if age_entier > 18 :
+    print('Vous êtes majeur')
+else:
+    print('Vous êtes mineur')
+```
+
+Ce bout de code permet d'afficher si l'utilisateur est majeur ou mineur.
+
+On remarque la présence du bloc else.
+Cependant, il existe un autre bloc permettant de réaliser des conditions si une condition n'est pas déjà validée. Ce bloc est le `elif`.
+
+Par exemple, on va réaliser un programme qui permet de mettre une appréciation à une note.
+
+```python
+# On demande à l'utilisateur une note (A,B,C)
+note = input('Quelle est la note à évaluer?')
+
+if note == 'A' :
+    print('Très bien')
+elif note == 'B':
+    print('Un peu plus pour exceller')
+else:
+    print("Poursuis tes efforts")
+```
+
+!!! Danger
+    On remaraque que l'on a un bloc elif. Celui-ci est exécuté si la première condition n'est pas validée et ainsi de suite. On peut enchaîner autant de bloc `elif` que nécessaire.
+
+    Cependant il faut faire attention au nombre de conditions réalisées car trop détailler peut ralentir la vitesse à laquelle on attend une réponse.
+    Chaque condition est évaluée jusqu'à trouver une qui est valide, ou rentrer dans le `else`.
+
+!!! Tip
+    Le bloc `else` n'est pas obligatoire s'il ne doit rien faire. On peut l'omettre
+    ```python
+    age = 36
+    if age < 40:
+        print("Vous êtes né après 1980")
+    else:
+        print('')
+    ```
+    Ici, print('') ne sert pas à grand chose, on peut l'omettre.
+    ```python
+    age = 36
+    if age < 40 :
+        print('Vous êtes né après 1980')
+    ```
+
+## Boucles
+
 TODO
