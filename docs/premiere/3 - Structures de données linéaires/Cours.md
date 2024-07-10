@@ -1,4 +1,4 @@
-# Cours
+# Structures de données linéaires
 
 ## Définition
 
