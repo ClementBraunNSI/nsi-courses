@@ -153,4 +153,52 @@ else:
 
 ## Boucles
 
-TODO
+Une boucle en python est la répétition d'une certaine partie d'un algorithme un certain nombre de fois ou suivant la validation d'une condition.
+
+Il existe plusieurs types de boucles en python.
+
+### La boucle while
+
+La boucle `while` correspond à une boucle qui s'exécute `tant que` la condition choisie est valide.
+
+Par exemple, on peut réaliser un bout de code tant qu'un nombre est positif, tant qu'un tableau n'est pas vide, tant qu'une chaîne de caractère n'est pas vide ou bien par exemple tant qu'une condition booléenne est valide.
+
+On peut associer la syntaxe python suivante:
+
+```python
+n = 30
+i = 1
+# On veut afficher les nombres de 1 à n choisi en faisant croître un entier i.
+while i <= n:
+    print(i)
+    i = i + 1
+```
+
+Ici, ce bout de code incrémente 1 jusqu'à ce qu'il soit supérieur à n. Cela veut dire que la boucle va se dérouler tant que i est inférieur ou égal à n.
+
+!!! Danger
+    Une boucle `while` peut ne pas s'arrêter !
+    Il faut vérifier que la condition est valide jusqu'au point désiré. On parle de **terminaison de boucle**.
+    Par exemple, on peut réaliser une boucle infinie en écrivant `while True` ou bien en ayant une condition qui traite un entier positif et ne jamais le décrémenter.
+
+### La boucle for
+
+Il existe un autre type de boucle en python : la boucle `for`.
+
+Une boucle for est une boucle que l'on nomme `boucle pour`. Cette boucle s'exécute à l'aide d'une variable qui va évoluer par rapport à un objet itérable ou une valeur.
+Par exemple cette boucle est utilisée peut être utilisée pour chaque valeur d'un tableau, pour une valeur jusqu'une borne etc...
+
+Par exemple :
+
+```python
+n = 30
+for i in range(1,n+1):
+    print(i)
+```
+
+Cette boucle permet d'afficher les entiers de 1 à n.
+Elle va itérer jusqu'à ce que n soit égal à n et s'arrêter à n+1 avec l'utilisation de la fonction `range`.
+
+!!! Tip
+    La boucle `for` a un net avantage : Elle s'arrête forcément.
+    En effet, la boucle `for` itère sur un objet itérable ou sur une variable donc sur un certain nombre d'itération donné.
