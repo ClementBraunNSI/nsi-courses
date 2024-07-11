@@ -15,14 +15,15 @@
 7. Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.
 
 8. À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20
-   - x < 20 and x > - 20
-   - x > 5 or x < 3
-   - `not (x == 10)`
-   - `x >= 0 and x <= 10`
-   - `x % 2 == 0 or x % 3 == 0`
-   - `x < 0 or (x > 0 and x % 2 != 0)`
 
-9. Évaluer les valeurs de result à la fin de chaque programme
+   * x < 20 and x > - 20
+   * x > 5 or x < 3
+   * `not (x == 10)`
+   * `x >= 0 and x <= 10`
+   * `x % 2 == 0 or x % 3 == 0`
+   * `x < 0 or (x > 0 and x % 2 != 0)`
+
+9.  Évaluer les valeurs de result à la fin de chaque programme
 
     ```python
     x = 8
@@ -54,6 +55,6 @@
 10. Écrire une fonction python `factorielle` qui prend en paramètre un nombre entier n et renvoie la factorielle de ce nombre. On rappelle que la factorielle de 5 vaut $1\times2\times3\times4\times5$.
 Tester cette fonction avec les valeurs 5, 6, 8 et 10.
 
-11. Écrire une fonction python `aire_rectangle` qui prend en paramètres deux entiers correspondant à la largeur et la longueur d'un rectangle et renvoie l'aire de ce rectangle.
+1.  Écrire une fonction python `aire_rectangle` qui prend en paramètres deux entiers correspondant à la largeur et la longueur d'un rectangle et renvoie l'aire de ce rectangle.
 
-12. Écrire une fonction `moyenne` qui prend deux nombres en paramètre et renvoie la moyenne de ces deux nombres. 
+2.  Écrire une fonction `moyenne` qui prend deux nombres en paramètre et renvoie la moyenne de ces deux nombres. 
