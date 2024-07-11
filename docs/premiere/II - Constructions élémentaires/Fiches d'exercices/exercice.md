@@ -1,4 +1,4 @@
-# Exercices Boucles et Fonctions
+# Exercices Boucles
 
 1. Écrire une fonction qui écrit pour une valeur de **1** à **n** avec un pas de **1**, la phrase:
 
@@ -12,13 +12,11 @@
     chaine_complete = chaine_1 + chaine_2
     ```
 
-2. Pour une valeur de **n** donner, écrire une fonction qui fait la somme des entiers de **1** à **n** 
+2. Pour une valeur de **n** donnée, écrire une fonction qui fait la somme des entiers de **1** à **n**
 
-3. Écrire une fonction qui additionne les éléments d'une liste mis en paramètre
+3. Écrire une fonction qui additionne les éléments d'une liste de nombres entiers. La tester avec la liste [2,3,5,1,6,7]
 
-4. Faite la somme des éléments de la liste suivante : **[1,2, 7,9, 7,15]**. En utilisant la fonction de la question 3, vérifier que le résultat est correct
-
-_**Exercice boucle while:**_
+**Exercice boucle while:**
 
 1. Réaliser le même programme que pour la question 1 de l'exercice boucle for, en utilisant la boucle **while**, mais cette fois-ci en comptant le nombre de tours restants
 
