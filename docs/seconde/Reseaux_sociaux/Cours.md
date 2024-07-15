@@ -51,9 +51,50 @@ Sur un réseau social, il existe bons nombre de contenus différents qui sont pu
 
 ______________________________________________________________________________________________________________________________________________________________________________
 
+Les contenus sont soumis à un réglement spécifique au réseau social et même à la loi.
+En effet,chaque utilisateur est pénalement responsable de ce qu'il poste sur un réseau social.
+Les contenus publiés sur un réseau social sont considérés publics et à visée de tous.  
+*Par exemple : il est strictement interdit de publier des contenus à caractères discriminatoires, diffamant et à visée de harcèlement envers autrui.*
+
 Ces contenus peuvent être produits par des créateurs qui souhaitent partager leurs passions, des entreprises ou des magasins qui veulent étendre leur clientèle ou par des influenceurs payés par des marques pour réaliser des publicités.
 
+### Réputation de l'utilisateur en ligne
+
+Ces contenus (prises de parole, opinions, photos, vidéo, placements de produits) peuvent notamment affecter la réputation de l'utilisateur en ligne : on l'appelle **e-reputation**.
+Elle renvoie directement à tous les utilisateurs l'image de celui qui publie du contenu en ligne.
+
+Une bonne e-reputation permet de créer un sentiment de confiance à l'égard de l'utilisateur qui poste des contenus en ligne.
+
+
 ## Utilisation d'un réseau social
+
+Après avoir défini ce qu'était un réseau social, comment ils fonctionnent ou comment les contenus sont régis, il faut savoir comment utiliser un réseau social.
+
+### Pré-requis : enfants et réseaux sociaux
+
+Avant toute chose : **Un réseau social est uniquement réservé à tout individu ayant plus de 15 ans. On parle de Majorité numérique**.
+
+Avant cet âge, les réseaux sociaux sont autorisés à :  
+
+* Refuser l'inscription des utilisateurs.
+* Informer les enfants qui tentent une inscription et leurs parents des risques de leurs usages.
+* Activer un dispositif de contrôle de temps.
+
+Cela est décrit par l'article de loi du **7 juillet 2023** sur l'accès des réseaux sociaux par les enfants.
+
+### Un profil pour utiliser un réseau social
+
+Pour utiliser un réseau social, la majorité du temps il est nécessaire de se créer un **profil** et un **compte**. On parle d'**inscription**.
+
+Pour créer un profil en ligne, l'utilisateur doit partager à l'entreprise qui gère le réseau social par exemple :
+
+* Une adresse mail
+* Un mot de passe
+* Son identité : nom, prénom, âge, genre, voir même l'adresse
+* Son numéro de téléphone
+* Un pseudonyme qui permettra d'identifier l'utilisateur en ligne
+
+![inscription](inscription.png)
 
 ## Proximité des utilisateurs : Expérience de Milgram et notion de Graphe
 
