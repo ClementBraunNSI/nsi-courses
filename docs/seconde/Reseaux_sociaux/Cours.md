@@ -116,12 +116,18 @@ En général, il est conseillé pour rendre robuste un mot de passe qu'il répon
 * Contient des chiffres
 * Contient des caractères spéciaux (! ? ; @ # & etc...)
 
-Le but principal pour rendre un mot de passe robuste est d'augmenter un maximum le nombre d'alphabets de caractères utilisés.
+Certains sites internet permettent d'observer la robustesse d'un mot de passe : [testeur de mots de passe](https://www.passwordmonster.com)
 
-Cependant, il faut savoir que même un mot de passe qui contient beaucoup de caractères spéciaux mais ne fait que 10 caractères de long, est moins robuste qu'un mot de passe d'une longueur de 100 caractères alphanumériques.
+**Activité :**
+**Tester les mots de passe suivant sur le site internet de test de mots de passe.**
 
-Certains sites internet permettent d'observer la robustesse d'un mot de passe.
+* **JeSuisUnRenardQuiCourtDanslaForet**
+* **Ren4rDFor3|**  
 
+**Que peut-on en déduire?**
+
+_______________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________________________________________
 
 ## Proximité des utilisateurs : Expérience de Milgram et notion de Graphe
 
