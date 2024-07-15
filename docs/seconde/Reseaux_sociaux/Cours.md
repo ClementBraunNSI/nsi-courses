@@ -95,6 +95,18 @@ Pour créer un profil en ligne, l'utilisateur doit partager à l'entreprise qui 
 * Un pseudonyme qui permettra d'identifier l'utilisateur en ligne
 
 ![inscription](inscription.png)
+Par exemple, voici les données nécessaires pour s'inscrire sur 𝕏 (anciennement Twitter) et Facebook.
+
+Ces informations peuvent aussi être intéressantes pour les publicitaires pour cibler les annonces publicitaires aux utilisateurs.
+Ces informations ne sont pas gratuites pour ces annonceurs, elles sont en général revendues par les entreprises qui gèrent les réseaux sociaux pour un certain montant d'argent.
+
+### Sécurité de son profil en ligne
+
+Les informations transmises à un réseau social sont confidentielles et permettent d'identifier un individu même dans le monde hors numérique.
+Pour les sécuriser, il faut pouvoir rendre l'accès aux pirates informatiques impossible ou très complexes car elles peuvent fuiter lors de grands piratages des bases de données.
+
+Pour se faire, on ne peut pas forcément sécuriser son adresse-mail, on va donc jouer sur le mot de passe.
+
 
 ## Proximité des utilisateurs : Expérience de Milgram et notion de Graphe
 
