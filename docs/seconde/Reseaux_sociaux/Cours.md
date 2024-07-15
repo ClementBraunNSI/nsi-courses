@@ -129,6 +129,9 @@ Certains sites internet permettent d'observer la robustesse d'un mot de passe : 
 _______________________________________________________________________________________
 ______________________________________________________________________________________________________________________________________________________________________________
 
+À l'issue de la création de compte, l'utilisateur doit se connecter.
+Pour se faire, il doit renseigner à minima son adresse mail et son mot de passe dans des champs qui sont spécialement choisis.
+
 ## Proximité des utilisateurs : Expérience de Milgram et notion de Graphe
 
 ## Les fils d'actualité et les messages privés
