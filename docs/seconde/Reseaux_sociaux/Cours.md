@@ -107,6 +107,21 @@ Pour les sécuriser, il faut pouvoir rendre l'accès aux pirates informatiques i
 
 Pour se faire, on ne peut pas forcément sécuriser son adresse-mail, on va donc jouer sur le mot de passe.
 
+On dit qu'un mot de passe est **robuste** s'il est compliqué à retrouver lors d'une recherche exhaustive. Une **recherche exhaustive** correspond à une recherche où l'on teste toutes les combinaisons possibles de caractères.
+
+En général, il est conseillé pour rendre robuste un mot de passe qu'il réponde à ces critères :
+
+* Au moins 10 caractères
+* Contient des minuscules et des majuscules
+* Contient des chiffres
+* Contient des caractères spéciaux (! ? ; @ # & etc...)
+
+Le but principal pour rendre un mot de passe robuste est d'augmenter un maximum le nombre d'alphabets de caractères utilisés.
+
+Cependant, il faut savoir que même un mot de passe qui contient beaucoup de caractères spéciaux mais ne fait que 10 caractères de long, est moins robuste qu'un mot de passe d'une longueur de 100 caractères alphanumériques.
+
+Certains sites internet permettent d'observer la robustesse d'un mot de passe.
+
 
 ## Proximité des utilisateurs : Expérience de Milgram et notion de Graphe
 
