@@ -19,6 +19,13 @@ Il existe bons nombres de réseaux sociaux qui sont tous de formes ou d'utilisat
 **Choisissez un réseau social que vous connaissez et définissez le.**
 **Expliquez en quoi il est différent des autres? comment fonctionne-t-il? Qui l'a fondé? Quand? Pour quel but?**
 
+## Histoire des réseaux sociaux
+
+Les réseaux sociaux ont vu le jour au début des années 2000, en plein dans l'expansion du numérique dans les foyers.
+Certains n'avaient pas forcément comme but d'être ceux qu'ils sont actuellement (comme Facebook qui initialement servait à relier les étudiants de Harvard).
+
+
+
 ## Financement d'un réseau social
 
 Un réseau social est associé à un modèle économique. De grandes sociétés financent des réseaux sociaux à des fins lucratives (pour créer des bénéfices).
@@ -45,3 +52,12 @@ Sur un réseau social, il existe bons nombre de contenus différents qui sont pu
 ______________________________________________________________________________________________________________________________________________________________________________
 
 Ces contenus peuvent être produits par des créateurs qui souhaitent partager leurs passions, des entreprises ou des magasins qui veulent étendre leur clientèle ou par des influenceurs payés par des marques pour réaliser des publicités.
+
+## Utilisation d'un réseau social
+
+## Proximité des utilisateurs : Expérience de Milgram et notion de Graphe
+
+## Les fils d'actualité et les messages privés
+
+Cyberviolence...
+
