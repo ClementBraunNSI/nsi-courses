@@ -1,4 +1,4 @@
-# Les réseaux sociaux
+# Les réseaux sociaux I : Définitions et Principes 
 
 ## Définition
 
@@ -131,10 +131,71 @@ ________________________________________________________________________________
 
 À l'issue de la création de compte, l'utilisateur doit se connecter.
 Pour se faire, il doit renseigner à minima son adresse mail et son mot de passe dans des champs qui sont spécialement choisis.
+On nomme cette étape **l'authentification**.
 
-## Proximité des utilisateurs : Expérience de Milgram et notion de Graphe
+## Proximité des utilisateurs : Notion de Graphe et expérience de Milgram
+
+Précédemment, on parlait d'un réseau social comme étant une manière de relier les personnes dans le monde.
+
+### Les Graphes
+Il existe un modèle mathématique pour représenter ce genre de situation, on appelle cela des **graphes**.
+
+Un graphe correspond à un ensemble de noeuds que l'on relie pour simuler ou représenter graphiquement des liens entre des individus ou des machines par exemple.
+
+Il existe plusieurs types de graphes qui correspondent à des situations particulières :
+
+- Les graphes dits **non orientés** sont des graphes dans lesquels des noeuds appelés **sommets** sont reliés par des arêtes. Ce genre de graphe représente notamment les amitiés sur Facebook car celles-ci sont dites **réflexives** (si A est ami avec B, alors B est ami avec A).
+- Les graphes dit **orientés** sont des graphes dans lesquels des **sommets** sont reliés par des **arcs** qui représentent une direction. Ce genre de graphe représente notamment les liens de *follow* sur Twitter.
+
+**Indiquer sur le dessin ci-dessous, quel graphe est orienté et lequel est non orienté.**
+![rs](rs.png)
+
+
+
+#### Définitions sur les Graphes
+
+
+
+### Petit monde de Milgram
+
+Quel est le lien entre les graphes et les réseaux sociaux hormis la représentation mathématiques?
+On a vu précédement qu'il existe des chemins entre les utilisateurs qui représentent le nombre de personnes dont un utilisateur A a besoin pour contacter un utilisateur B.
+
+Cela a été étudié en 1963 par Stanley Milgram. En effet, il a déterminé qu'il fallait au maximum 6 poignées de mains pour connaître n'importe qui dans le monde.
+
+Par exemple, comment pourriez-vous contacter de manière directe notre président de la République ?
+
+Vous aurez besoin de plusieurs intermédiaires :
+
+![milgram](g_milgram.png)
+
+**Activité : Trouvez un chemin entre vous et Bill Gates, le directeur de Microsoft.**
 
 ## Les fils d'actualité et les messages privés
 
-Cyberviolence...
+Dans tous les réseaux sociaux, tous les utilisateurs peuvent discuter par divers moyens : fils d'actualités, messages privés, groupes privés ou publics.
+Comme énoncé au début de ce cours, tous les utilisateurs sont responsables de leurs mots et de leurs contenus sur les divers réseaux sociaux.
 
+Le fait de harceler sur internet nommé **cyber-harcèlement** est répréhensible par la loi. On parle de l'article 222-33-2-2 du code pénal.
+
+!!! Danger
+    Le fait de harceler une personne par des propos ou comportements répétés ayant pour objet ou pour effet une dégradation de ses conditions de vie se traduisant par une altération de sa santé physique ou mentale est puni d'un an d'emprisonnement et de 15 000 € d'amende lorsque ces faits ont causé une incapacité totale de travail inférieure ou égale à huit jours ou n'ont entraîné aucune incapacité de travail.
+    **...**
+    4° Lorsqu'ils ont été commis par l'utilisation d'un service de communication au public en ligne ou par le biais d'un support numérique ou électronique ;
+
+Il existe différentes formes de **cyberviolence**.
+
+**Définir ces différentes formes de cyberviolences :**
+
+* Harcèlement en ligne
+* Discrimination en ligne
+* Usurpation d'identité
+* Diffamation
+* Cyberintimidation
+
+Il existe diverses ressources disponibles pour lutter contre les cyber-violences comme la plateforme **Pharos**. Elle permet de réaliser des signalements pour des contenus illicites ou illégaux publiés sur les réseaux sociaux.
+Si vous êtes vous même victime de cyber-harcèlement, vous pouvez contacter le **3018** qui est le numéro national contre le harcèlement en ligne.
+
+La cyberviolence est un des plus grands enjeux de notre société car celle-ci est omniprésente. Il est important de savoir l'identifier et de savoir comment lutter contre celle-ci.
+
+**Activité : activité Pix sur les réseaux sociaux**
