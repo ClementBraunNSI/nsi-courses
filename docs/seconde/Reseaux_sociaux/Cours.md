@@ -150,11 +150,29 @@ Il existe plusieurs types de graphes qui correspondent à des situations particu
 **Indiquer sur le dessin ci-dessous, quel graphe est orienté et lequel est non orienté.**
 ![rs](rs.png)
 
+**Activité : À l'aide de ce texte, dessiner le graphe correspondant:**
 
+**Vous avez un groupe de 6 amis : Alice, Bob, Charlie, David, Emma et Frank. Vous devez modéliser leurs amitiés en utilisant un graphe. Un graphe est constitué de sommets (les personnes) et d’arêtes (les relations d’amitié). Voici les informations sur leurs amitiés :**
+
+- Alice est amie avec Bob, Charlie et Emma.
+- Bob est ami avec Alice, David et Frank.
+- Charlie est ami avec Alice et Emma.
+- David est ami avec Bob et Frank.
+- Emma est amie avec Alice et Charlie.
+- Frank est ami avec Bob et David.
 
 #### Définitions sur les Graphes
 
+On a vu précédement que ces graphes pouvaient modéliser des situations de la vie réelle.
+Pour ce faire, on dispose de quelques propriétés sur les graphes.
 
+**Le centre d'un graphe** est le sommet (ou le groupe de sommet) étant relié à tous les autres par une distance minimale.
+
+**Le rayon d'un graphe** correspond à la plus petite distance entre un sommet qui est le centre et les sommets les plus excentrés.
+
+**Le rayon d'un graphe** correspond à la plus petite distance reliant deux sommets excentrés (comme pour un cercle).
+
+Dans notre situation des réseaux sociaux, le centre d'un graphe correspondant est la personne qui est amie avec le plus de personnes par exemple.
 
 ### Petit monde de Milgram
 
