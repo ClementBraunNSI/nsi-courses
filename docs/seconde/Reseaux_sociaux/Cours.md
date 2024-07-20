@@ -138,6 +138,7 @@ On nomme cette étape **l'authentification**.
 Précédemment, on parlait d'un réseau social comme étant une manière de relier les personnes dans le monde.
 
 ### Les Graphes
+
 Il existe un modèle mathématique pour représenter ce genre de situation, on appelle cela des **graphes**.
 
 Un graphe correspond à un ensemble de noeuds que l'on relie pour simuler ou représenter graphiquement des liens entre des individus ou des machines par exemple.
@@ -173,6 +174,15 @@ Pour ce faire, on dispose de quelques propriétés sur les graphes.
 **Le rayon d'un graphe** correspond à la plus petite distance reliant deux sommets excentrés (comme pour un cercle).
 
 Dans notre situation des réseaux sociaux, le centre d'un graphe correspondant est la personne qui est amie avec le plus de personnes par exemple.
+
+**Activité**
+
+* À l'aide du graphe de l'exercice précédent, donner le centre du graphe (c'est à dire la personne qui a le plus d'amis).
+
+* Donner un rayon de ce graphe, donner sa longueur.
+
+* En déduire un diamètre de ce graphe, donner sa longueur.
+
 
 ### Petit monde de Milgram
 
