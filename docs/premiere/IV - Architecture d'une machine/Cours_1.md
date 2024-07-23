@@ -22,6 +22,7 @@ Le modèle de Von Neumann est caractérisé par la présence de 4 composants not
 Le cerveau de la machine, les composants qui réalisent les calculs, résolvent les algorithmes et les ordonnent : **l'Unité Arithmético Logique** et **l'Unité de Contrôle**
 
 L'Unité Arithmético-logique (ou UAL) est une unité de traitement qui sert à réaliser des calculs et opérations de base. Elle peut réaliser des opérations mathématiques, des opérations de logique, de comparaisons ou des décalages.
+L'UAL peut aussi contenir un ensemble d'espaces de données nommé **registres**.
 
 Cette unité est composé de milliards de transistors qui sont des composants électroniques qui servent à réaliser notamment des opérations et comparaisons suivant la logique booléenne. Cet ensemble de transistor peut être appelé **circuit de portes logiques ou circuit logique**.
 
@@ -73,7 +74,28 @@ Elle permet de stocker le système d'exploitation, les applications ou les donn�
 
 ### Les bus et périphériques
 
+On a vu précédemment l'utilité du processeur et de la mémoire mais comment tout cela interragit-il?
+
+Les **bus** permettent de relier tous ces composants pour leur permettre de communiquer. Un bus au sens physique est un ensemble de câbles
+Il existe divers bus :
+
+* Bus de contrôle : Transfère les signaux de contrôle et de commande entre les composants.
+* Bus de données : Transfère les données entre le processeur, la mémoire et les périphériques.
+* Bus d'adresses : Transfère les adresses mémoire ou des périphériques pour avoir accès aux diverses données nécessaires à l'exécution de la machine.
+
+Les périphériques font aussi partie de la machine.
+Qu'ils soient d'entrée comme un clavier, un micro ou des capteures, de sortie comme des enceintes ou un écran, tous permettent de rajouter des fonctionnalités à une machine.
+  
 ### La limite du modèle de Von Neumann
 
-## Le langage machine
+Ce modèle est un modèle efficace et qui a fait ses preuves depuis les années 70.
+Cependant il souffre d'un gros problème : la communication entre les divers composants.
 
+Les composants ont tous des fréquences de fonctionnement ou des débits différents. Le modèle de Von Neumann est confronté à un problème de **goulots d'étranglements** (ou connu sous le nom de **bottleneck** en anglais).
+
+On peut imager cela comme un système de plomberie.
+Imaginons en entrée un tube de 100mm de diamètre qui est alimenté de manière complète. Si celui-ci est suivi d'un tube de 40mm, cette portion va ralentir le debit global. 
+Cela fonctionne pareil avec un ordinateur : si la mémoire fonctionne à une fréquence de 1 GHZ, le processeur à 1 GHz mais que les bus ne transmettent qu'à une fréquence de 20 MHz, l'ensemble de la machine sera ralenti.
+
+*Pour ceux qui jouent sur PC:*
+Il peut arriver qu'il y ait un bottleneck entre le processeur et la carte graphique. Si l'un des deux composants est trop faible comparé à l'autre, il peut ralentir de manière globale les performances en jeu.
