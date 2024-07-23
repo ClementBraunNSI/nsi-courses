@@ -1,4 +1,4 @@
-# Architecture d'une machine I : le modèle de Von Neumann
+# Architecture d'une machine : le modèle de Von Neumann
 
 ## Définition et Histoire
 
