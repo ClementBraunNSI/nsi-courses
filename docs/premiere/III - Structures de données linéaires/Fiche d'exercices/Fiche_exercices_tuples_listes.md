@@ -32,3 +32,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
    3. Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points. On rappelle la formule pour trouver la distance $\sqrt{((x_A+x_B)^2 + (y_A + y_B)^2)}$.  
 
 3. Écrire une fonction `moyenne` qui prend en paramètre un tuple d'entiers et renvoie la moyenne de tous les nombres présents dans ce tuple.
+
+4. Écrire une fonction `inverser_tableau` qui prend en paramètre un tuple et renvoie un autre tuple qui contient tous les éléments de celui en paramètre mais dans le sens inverse.
+
+5. On souhaite modéliser un jeu de carte. Chaque carte sera instanciée par un tuple (nombre, couleur). On souhaite vérifier qu'une carte créée soit valide. Une carte est valide si le nombre est compris entre 1 et 13 et si la couleur est soit "Coeur", "Trèfle", "Pique" ou "Carreaux".
+Créer une fonction `est_valide` qui prend en paramètre un tuple correspondant à un tuple et renvoie **True** si la carte est valide, **False** sinon. Pour faciliter, on peut se munir d'un tuple qui contient toutes les couleurs et de l'opérateur **in** pour vérifier si la couleur est valide.
