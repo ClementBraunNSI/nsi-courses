@@ -1,5 +1,7 @@
 # Fiche d'exercice : Les tuples et les listes
 
+## Exercices d'introduction
+
 1. Créer un tuple nommé  `mon_tuple` qui contient les éléments 1,2,3,4,5 et une liste `ma_liste` qui contient les éléments suivants 'a','b','c','d','e'.  
 Les afficher dans le terminal.
 
@@ -14,10 +16,19 @@ Vérifier les modifications en affichant la liste dans le terminal.
 
 5. Afficher dans le terminal tous les éléments de `mon_tuple` et `ma_liste` un à un à l'aide d'une boucle `for`.
 
-6. Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` la valeur demandée est dans la liste, `False` sinon.  
-Vérifier avec la valeur 'x' et `ma_liste`.
-
-7. Créer une liste `nombres` qui contient les chiffres allant de 1 à 9.  
+6. Créer une liste `nombres` qui contient les chiffres allant de 1 à 9. (Proposer une version par compréhension).
 Afficher dans le terminal les 5 premiers éléments de la liste en utilisant une boucle while.
 Afficher les éléments du quatrième au huitième en utilisant une boucle for.  
 Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant une boucle while.
+
+## Tuples et fonctions
+
+1. Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` la valeur demandée est dans la liste, `False` sinon.  
+
+2. On souhtaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant un tuple (abscisse, ordonnée).
+   1. Instancier un point A d'abscisse -3 et d'ordonnée 2
+      Instancier un point B d'abscisse 4 et d'ordonée 4.
+   2. Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres. On rappelle que la formule pour trouver le point du milieu est $\texttt{milieu}(\frac{x_A + x_B}{2}, \frac{y_A + y_B}{2})$
+   3. Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points. On rappelle la formule pour trouver la distance $\sqrt{((x_A+x_B)^2 + (y_A + y_B)^2)}$.  
+
+3. Écrire une fonction `moyenne` qui prend en paramètre un tuple d'entiers et renvoie la moyenne de tous les nombres présents dans ce tuple.
