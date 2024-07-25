@@ -10,19 +10,10 @@ Utiliser des tableaux permet de ne pas avoir à créer une variable pour chaque 
 
 On peut accéder à une valeur d’un tableau en utilisant des indices. Un indice correspond au numéro de la case du tableau.
 
-Cas particulier, en **python**, comme dans la plupart des autres langages de programmation, les indices de tableaux commencent à 0.
+!!! Danger Important
+	Cas particulier, en **python**, comme dans la plupart des autres langages de programmation, les indices de tableaux commencent à 0.
 
-Un exemple de tableau représenté de manière naturelle :
-
-| indice | valeur |
-| --- | --- |
-| 0 | 312 |
-| 1 | 354 |
-| 2 | 1234 |
-
-L’écriture d’un tableau se fait à l’aide de crochets **( )**. et on ne s’intéresse qu’à la colonne de droite car la colonne de gauche est implicite.
-
-Pour initialiser un tableau vide, on l’associe à une variable. 
+Pour initialiser un tableau vide, on l’associe à une variable.
 
 L’écriture se fait ainsi de cette manière :
 
@@ -33,8 +24,22 @@ L’écriture se fait ainsi de cette manière :
 >>> mon_tableau
 <type 'tuple'>
 ```
+On peut essayer de initialiser un tableau d'entiers en python.
+Munissons-nous d'un exemple de tableau représenté de manière naturelle :
 
-Avoir un tableau vide, c’est bien, mais traiter des valeurs, c’est mieux.
+| indice | valeur |
+| --- | --- |
+| 0 | 312 |
+| 1 | 354 |
+| 2 | 1234 |
+
+L’écriture d’un tableau se fait à l’aide de parenthèses **( )** et on ne s’intéresse qu’à la colonne de droite car la colonne de gauche est implicite.
+
+En python, on l'écrirait de cette manière :
+
+```python
+	mon_tableau = (312,354,1234)
+```
 
 On peut créer des tableaux possédant diverses valeurs, leur taille étant limitée par l’espace mémoire de la machine :
 
@@ -43,9 +48,14 @@ tableau_de_notes = (14,15,20,19)
 tableau_animaux = ("chien", "chat", "oiseau", "poisson")
 ```
 
-Dans la majorité des cas, il est préférable de **créer des tableaux pour des données de même type**.
+!!! Tip
+	Dans la majorité des cas, il est préférable de **créer des tableaux pour des données de même type**.
+	Cela permet d’éviter des erreurs pour l’interpréteur et éviter des incompréhensions pour la suite du code.
 
-Cela permet d’éviter des erreurs pour l’interpréteur et éviter des incompréhensions pour la suite du code.
+!!! Danger Mutabilité d'un tableau
+	Attention ! 
+	Les valeurs d'un tableau ne peuvent pas être modifiées après la création d'un tableau. On peut seulement lui ajouter des éléments ou en retirer mais on ne peut pas en modifier le contenu.
+	On se retrouve avec une erreur **TypeError** qui indique que les valeurs d'un tuple ne supportent pas l'assignation de valeurs.
 
 ## Taille d’un tableau
 
@@ -66,16 +76,16 @@ tableau_animaux = ("chien", "chat", "oiseau", "poisson")
 ### Notion d’indice
 
 Pour accéder à un élément du tableau, on peut s’intéresser à sa position dans le tableau, c’est à dire son **indice**.
-**Important : L’indice commence à 0 !**
+**Rappel important : L’indice commence à 0 !**
 
-On peut accéder à un élément dans une liste avec la syntaxe.
+On peut accéder à un élément dans une liste avec la syntaxe suivante:
 
 ```python
 tableau = ("chien", "chat", "poisson", "vache")
 
 #On veut l'élément à la position 3 du tableau
 
->>>element_3 = tableau[3]
+>>>print(tableau[3])
 vache
 ```
 
@@ -89,6 +99,7 @@ tableau = ("chien", "chat", "poisson", "vache")
 for i in range(len(tableau)):
 	print(tableau[i])
 
+# tant que i est plus petit que la taille du tableau
 i=0
 while i < len(tableau):
 	print(tableau[i])
@@ -103,7 +114,7 @@ Python permet d’utiliser bon nombres de mots-clefs. Le mot-clef ***in*** en fa
 
 Celui ci permet de savoir si un élément fait partie d’une autre variable. On peut l’utiliser notamment pour savoir si un caractère ou un mot fait partie d’une chaîne de caractère.
 
-En reprenant l’exemple précédent:
+En reprenant l’exemple précédent, on veut une autre méthode de parcours de tableau:
 
 ```python
 tableau = ("chien", "chat", "poisson", "vache")
@@ -117,17 +128,11 @@ for element in tableau:
 De ce fait, on accède aussi à tous les éléments du tableau.
 
 On peut aussi fusionner des tableaux. On peut utiliser l'opérateur `+` qui sert à **concaténer** des tableaux.
-Cependant, un tableau ne peut pas être modifié. Cela veut dire que la concaténation de deux tableaux doit être l'issue d'une instanciation.
-En clair :
 
+En clair :
 ```python
 	tableau_1 = (1,2,3)
 	tableau_2 = (4,5,6)
-
-	# Impossible
-	tableau_1 = tableau_1 + tableau_2
-
-	# À faire
 	tableau_3 = tableau_1 + tableau_2
 ```
 
@@ -149,10 +154,10 @@ multiples_de_2 = []
 for i in range(0,11):
 
 	#On ajoute la valeur i dans le tableau.
-	multiples_de_2 = multiples_de_2 + [i]*2
+	multiples_de_2 = multiples_de_2 + [i*2]
 ```
 
-En procédant de cette manière, on créée implicitement un tableau d’une valeur contenant ici notre nombre *i*.
+En procédant de cette manière, on créée implicitement un tableau d’une valeur contenant ici notre nombre *i multiplié par 2*.
 
 Le procédé utilisé ici est la **construction par concaténation**. Cette méthode par concaténation a un inconvénient implicite : elle créée une nouvelle liste à la place de modifier la liste en place.
 
@@ -219,8 +224,11 @@ On a donc :
 On peut simplifier le code utilisé précédemment en une seule ligne. Cela a pour but de rendre le code plus concis, de réduire le nombre de lignes et de se rapprocher de notions et écritures plus mathématiques.
 
 ```python
-#On initialise la liste directement avec les valeurs
 
+# Comment instancier à l'aide de la méthode par compréhension:
+nom_variable = [valeur for _ in nombre_iteration]
+
+# On initialise la liste directement avec les valeurs
 multiples_de_3 = [i for i in range(0,11)]
 ```
 
@@ -228,7 +236,7 @@ L’écriture ici peut être scindée en plusieurs blocs :
 
 - multiple_de_3 : nom de la variable
 - = assignation de la valeur à la variable
-- i : valeur qui sera renseignée dans le tableau
+- i : valeur qui sera renseignée dans le tableau ou la liste
 - for i in range(0,11) : on fait varier i entre 0 et 11 non compris
 
 Cette notation peut être difficile à lire aux premiers abords mais il est utile de la maîtriser pour rendre son code plus aéré.
