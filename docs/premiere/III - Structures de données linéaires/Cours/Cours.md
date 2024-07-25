@@ -2,11 +2,11 @@
 
 ## Définition
 
-Les tableaux de données font partie des collections (structures permettant de stocker des variables). Ce type de structure permet d’organiser et stocker diverses variables. Ces tableaux sont nommés *list* en **python.** 
+Les tableaux de données font partie des collections (structures permettant de stocker des variables). Ce type de structure permet d’organiser et stocker diverses variables. Ces tableaux sont nommés *tuples* en **python.**
 
-Un tableau est une structure mutable. Elle peut changer, ajouter, supprimer des éléments etc… C’est aussi une structure ordonnée et de zone mémoire contigüe. 
+C’est aussi une structure ordonnée et de zone mémoire contigüe.
 
-Utiliser des tableaux / listes permet de ne pas avoir à créer une variable pour chaque valeur pour la stocker.
+Utiliser des tableaux permet de ne pas avoir à créer une variable pour chaque valeur pour la stocker.
 
 On peut accéder à une valeur d’un tableau en utilisant des indices. Un indice correspond au numéro de la case du tableau.
 
@@ -20,7 +20,7 @@ Un exemple de tableau représenté de manière naturelle :
 | 1 | 354 |
 | 2 | 1234 |
 
-L’écriture d’un tableau se fait à l’aide de crochets [ ] et on ne s’intéresse qu’à la colonne bleue car la colonne orange est implicite.
+L’écriture d’un tableau se fait à l’aide de crochets **( )**. et on ne s’intéresse qu’à la colonne de droite car la colonne de gauche est implicite.
 
 Pour initialiser un tableau vide, on l’associe à une variable. 
 
@@ -28,10 +28,10 @@ L’écriture se fait ainsi de cette manière :
 
 ```python
 #instance d'un tableau vide
->>> mon_tableau = []
+>>> mon_tableau = ()
 
 >>> mon_tableau
-<type 'list'>
+<type 'tuple'>
 ```
 
 Avoir un tableau vide, c’est bien, mais traiter des valeurs, c’est mieux.
@@ -39,24 +39,24 @@ Avoir un tableau vide, c’est bien, mais traiter des valeurs, c’est mieux.
 On peut créer des tableaux possédant diverses valeurs, leur taille étant limitée par l’espace mémoire de la machine :
 
 ```python
-tableau_de_notes = [14,15,20,19]
-tableau_animaux = ["chien", "chat", "oiseau", "poisson"]
+tableau_de_notes = (14,15,20,19)
+tableau_animaux = ("chien", "chat", "oiseau", "poisson")
 ```
 
-Dans l’optimal et la majorité des cas, il est préférable de **créer des tableaux pour des données de même type**.
+Dans la majorité des cas, il est préférable de **créer des tableaux pour des données de même type**.
 
 Cela permet d’éviter des erreurs pour l’interpréteur et éviter des incompréhensions pour la suite du code.
 
-## Taille d’une liste
+## Taille d’un tableau
 
-Les listes possèdent des fonctions qui leurs sont propres et qui peuvent être appelées pour elles.
+Les tableaux possèdent des fonctions qui leurs sont propres.
 
 Ces fonctions s’appellent des méthodes.
 
-La méthode len permet d’obtenir la longueur d’un tableau, ie sa taille. Cela fonctionne de la même manière que lorsque l’on souhaite obtenir la longueur d’une chaîne de caractère.
+La méthode `len` permet d’obtenir la longueur d’un tableau, ie sa taille. Cela fonctionne de la même manière que lorsque l’on souhaite obtenir la longueur d’une chaîne de caractère.
 
 ```python
-tableau_animaux = ["chien", "chat", "oiseau", "poisson"]
+tableau_animaux = ("chien", "chat", "oiseau", "poisson")
 >>>print(len(tableaux_animaux))
 4
 ```
@@ -71,7 +71,7 @@ Pour accéder à un élément du tableau, on peut s’intéresser à sa position
 On peut accéder à un élément dans une liste avec la syntaxe.
 
 ```python
-tableau = ["chien", "chat", "poisson", "vache"]
+tableau = ("chien", "chat", "poisson", "vache")
 
 #On veut l'élément à la position 3 du tableau
 
@@ -79,15 +79,20 @@ tableau = ["chien", "chat", "poisson", "vache"]
 vache
 ```
 
-On peut vouloir accéder à tous les éléments d’une liste, ou en partie d’une liste. Pour ce faire, on peut utiliser les boucles **tant que et pour** de manière à accéder aux éléments d’une liste.
+On peut vouloir accéder à tous les éléments d’un tableau, ou en partie d’un tableau.
+Pour se faire, on peut utiliser les boucles **tant que et pour** de manière à accéder aux éléments d’une liste.
 
 ```python
-tableau = ["chien", "chat", "poisson", "vache"]
-chaine = ""
+tableau = ("chien", "chat", "poisson", "vache")
 
 #pour i allant de 0 à la taille du tableau:
 for i in range(len(tableau)):
 	print(tableau[i])
+
+i=0
+while i < len(tableau):
+	print(tableau[i])
+	i = i + 1
 ```
 
 De cette même manière, on fait varier i pour qu’il prenne tous les indices du tableau et on arrive à accéder à tous les éléments du tableau.
@@ -101,7 +106,7 @@ Celui ci permet de savoir si un élément fait partie d’une autre variable. On
 En reprenant l’exemple précédent:
 
 ```python
-tableau = ["chien", "chat", "poisson", "vache"]
+tableau = ("chien", "chat", "poisson", "vache")
 chaine = ""
 
 #pour i allant de 0 à la taille du tableau:
@@ -111,11 +116,24 @@ for element in tableau:
 
 De ce fait, on accède aussi à tous les éléments du tableau.
 
-***Exercice 1***
+On peut aussi fusionner des tableaux. On peut utiliser l'opérateur `+` qui sert à **concaténer** des tableaux.
+Cependant, un tableau ne peut pas être modifié. Cela veut dire que la concaténation de deux tableaux doit être l'issue d'une instanciation.
+En clair :
 
-## Initialisation de listes
+```python
+	tableau_1 = (1,2,3)
+	tableau_2 = (4,5,6)
 
-Pour créer une liste d’entiers, on peut procéder de diverses méthodes.
+	# Impossible
+	tableau_1 = tableau_1 + tableau_2
+
+	# À faire
+	tableau_3 = tableau_1 + tableau_2
+```
+
+## Les listes
+
+Les listes sont des tableaux mutables. Cela veut dire que l'on peut rajouter des éléments, en retirer ou même modifier le contenu de ce tableau.
 
 ### Ajout d’élément dans une liste
 
@@ -131,7 +149,7 @@ multiples_de_2 = []
 for i in range(0,11):
 
 	#On ajoute la valeur i dans le tableau.
-	multiples_de_2 = multiples_de_2 + [i]
+	multiples_de_2 = multiples_de_2 + [i]*2
 ```
 
 En procédant de cette manière, on créée implicitement un tableau d’une valeur contenant ici notre nombre *i*.
@@ -150,7 +168,7 @@ multiples_de_2 = []
 for i in range(0,11):
 
 	#On ajoute la valeur i dans le tableau.
-	multiples_de_2 = multiples_de_2.append(i)
+	multiples_de_2 = multiples_de_2.append(i*2)
 ```
 
 La méthode *append* a l’avantage sur la méthode par concaténation **de modifier en place la liste au lieu d’en créer une autre.**
