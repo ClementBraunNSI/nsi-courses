@@ -1,11 +1,5 @@
 # Terminale NSI
 
-Vous retrouverez les cours sur la barre de navigation sur la gauche.
+Work In Progress
 
-## Devoirs Maison
-
-## Devoirs Surveillés
-
-## Épreuves Pratiques
-
-## Devoirs à réaliser
+![wip](wip.jpeg)
