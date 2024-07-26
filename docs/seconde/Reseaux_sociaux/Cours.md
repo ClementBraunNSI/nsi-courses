@@ -1,4 +1,4 @@
-# Les réseaux sociaux I : Définitions et Principes 
+# Les réseaux sociaux : Définitions et Principes 
 
 ## Définition
 
