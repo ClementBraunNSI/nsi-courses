@@ -1,5 +1,4 @@
 # Terminale NSI
 
-Work In Progress
-
-![wip](wip.jpeg)
+!!! Warning Work in progress
+    ![wip](wip.jpeg)
