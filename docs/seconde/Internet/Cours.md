@@ -93,8 +93,8 @@ ________________________________________________________________________________
 **Exemple :** 
 
 On dispose de l'adresse **128.40.94.3** qui dispose d'un masque de 16 bits.  
-Cela correspond en binaire à $10000000.00101000.01011110.00000100_2$.
-Cela veut dire que le masque est $11111111.11111111.00000000.00000000_2$.
+Cela correspond en binaire à $10000000.00101000.01011110.00000100_2$.  
+Cela veut dire que le masque est $11111111.11111111.00000000.00000000_2$.  
 
 On peut donc définir que l'adresse du serveur est **128.40.0.0** et que cette adresse correspond à la machine **94.3** de ce réseau.
 
