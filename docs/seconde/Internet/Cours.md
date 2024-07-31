@@ -54,7 +54,7 @@ On a défini dans les rôles divers types de réseaux.
 On parle de réseau **local** lorsque dans un réseau, divers machines peuvent communiquer directement entre elles sans passer par d'autres réseaux. Exemple : un réseau domestique.
 
 On peut représenter cela de cette manière :
-![rlinternet](rlinternet.png)
+![rlinternet](img/rlinternet.png)
 
 On dispose de machines, d'un réseau mais, comment se retrouvent-elles pour communiquer? Quelles techniques sont utilisées?
 
