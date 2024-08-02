@@ -52,17 +52,58 @@ Le switch dans un réseau utilise l'adresse MAC de la carte réseau pour retrans
 
 L'adresse IP est l'adresse d'une machine sur un réseau. Elle est attribuée à la première connexion de la machine sur le réseau.
 
-Elle est constituée d'un ensemble de 4 octects représentés en décimal.
-Exemple : 123.32.41.74
+Elle est constituée d'un ensemble de 4 octects représentés en décimal ou pour la machine leur représentation en binaire.
+Exemple : $123.32.41.74_2$ pour les humains et $01111011.00100000.00101001.01001010_2$ pour les machines.
 
 Grâce à ce modèle on peut définir $2^24$ adresse différentes, soient $4 294 967 296$ adresses différentes.
 
-Combien de machines dans le monde en 2024 ? 200 milliards de machines connectées à Internet.
-Comment les identifier ? Plusieurs méthodes : 
+Une adresse IP est composée de deux choses :
 
-**Utilisation de sous-réseaux et de réseaux locaux**
+- Une partie correspondant à l'adresse réseau, c'est à dire à quel réseau elle est rattachée.
+- Une partie machine qui correspond au numéro de la machine dans le réseau précédemment choisi.
 
- #TODO : Classes ip
+Ces deux parties sont distinguées dans l'adresse par le nombre de bits qui leurs sont associés.
+
+On définit un **masque** comme étant le nombre de bits nécessaires pour représenter l'adresse du réseau.
+En général, pour retrouver l'adresse du réseau d'une machine à l'aide de son adresse IP, on réalise une opération logique **ET** sur chacun des bits.
+Ce masque est représenté à la fin de l'adresse IP précédée d'un / (slash), on appelle cela la notation **CIDR** de l'adresse.
+
+Exemple :
+On dispose de l'adresse 123.32.41.74/16.
+Cela veut dire qu'il y a 16 bits réservés pour représenter l'adresse réseau.
+
+On a alors le masque suivant : $11111111.11111111.00000000.00000000_2$ et l'adresse suivante $01111011.00100000.00101001.01001010_2$.
+
+Pour retrouver l'adresse réseau, on réalise une opération **ET logique** (+ ou &) sur les deux adresses.
+
+$~~~~11111111.11111111.00000000.00000000_2\newline\And~01111011.00100000.00101001.01001010_2\newline\texttt{----------------------------------}\newline~~~~01111011.00100000.00000000.00000000_2$
+
+On retrouve l'adresse du réseau qui est 123.32.0.0.
+
+!!! danger Adresses réservées
+    Il existe diverses adresse d'un réseau qui sont réservées.
+    On a :
+    - L'adresse du réseau, explicitée précédemment qui est inutilisable.
+    - L'adresse de multiplexage (ou broadcast) qui se termine par 255. Celle-ci sert à l'envoi de messages sur le réseau entier, donc réservée.
+
+On peut définir un certain nombre de machines pour un réseau et cela est défini par le nombre de bits réservés à la partie machine (moins les 2 précédemment citées).
+
+!!! Tip Calculer le nombre de machines d'un réseau
+    On peut calculer le nombre d'adresses disponibles facilement : $\texttt{nombre d'adresses disponibles} = 2^{\texttt{nombre de bits de la partie machine}}-2$.
+
+Pour notre exemple, on sait que l'on a 16 bits réservés à l'identification de machines, cela revient à $2^{16}-2 = 65536 - 2=  65534$ machines possibles.
+
+Historiquement, on regroupait les adresses IP dans des classes pour les attribuer à divers organismes.
+
+#### Classes d'adresses IP
+
+| Classe | Plage d'adresses            | Nombre de réseaux | Nombre d'hôtes par réseau | Utilisation                            |
+|--------|-----------------------------|-------------------|---------------------------|----------------------------------------|
+| A      | 1.0.0.0 - 126.0.0.0         | 128               | 16 777 214                | Principalement pour des réseaux très grands comme les gouvernements ou les grandes entreprises. |
+| B      | 128.0.0.0 - 191.255.0.0     | 16 384            | 65 534                    | Pour des réseaux de taille moyenne comme les universités ou les entreprises de taille moyenne. |
+| C      | 192.0.0.0 - 223.255.255.0   | 2 097 152         | 254                       | Pour des petits réseaux comme les petites entreprises. |
+| D      | 224.0.0.0 - 239.255.255.255 | -                 | -                         | Pour le multicast (transmission de données à plusieurs destinataires simultanément). |
+| E      | 240.0.0.0 - 255.255.255.255 | -                 | -                         | Réservé pour des utilisations futures et des fins expérimentales. |
 
 
 **IPv6**
