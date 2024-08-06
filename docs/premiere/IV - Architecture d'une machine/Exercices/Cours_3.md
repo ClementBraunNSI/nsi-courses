@@ -76,5 +76,15 @@ L'assembleur n'est pas au programme, mais il permet de mieux comprendre le fonct
 
 Pour illustrer le fonctionnement d'une machine grâce à l'assembleur, on peut réduire l'ordinateur à un tableau de case ordonnées.
 En plus de ce tableau, on se munit d'un jeu d'instructions (pour simplifier : le jeu d'instruction écrit au dessus) et 3 cases supplémentaires représentant 3 registres A B et C.
+On appelle ce petit modèle, **le modèle M10**.
 
-En suivant le modèle ci-dessous,
+**Exercice 1**
+
+1. Recopier le modèle M10 ci-dessous.
+2. Dérouler le jeu d'instruction donné avec les valeurs X = 10 et Y = 2, X = 5 et Y = 4, X = 100 et Y = 10.
+3. En déduire le but de la machine M10 donnée.
+
+**Exercice 2**
+
+1. En reprenant la machine précédente, modifier le modèle M10 pour qu'il donne le carré d'un nombre dans le registre C.
+2. En déduire un modèle M10 qui permet de réaliser l'opération de factorielle d'un nombre dans le registre C.
