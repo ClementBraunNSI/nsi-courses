@@ -64,10 +64,6 @@ La méthode à employer consistera à remplacer les bits de poids faible de la r
 
 En clair :  
 
-- Pixel de l'image de transport : **1100** 1100.
-- Pixel de l'image à cacher : **0110** 0010.
-- Pixel de l'image finale : **1100 1100**
-
 $\texttt{pixel de l'image de transport} : \textbf{1100}~1100$  
 $\texttt{pixel de l'image à cacher} : \textbf{0110}~0010$  
 $\texttt{pixel de l'image finale} : \textbf{1100~0110}$  
