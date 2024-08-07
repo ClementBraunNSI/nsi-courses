@@ -44,7 +44,7 @@ La méthode `bin` permet de retourner la représentation binaire d'un nombre ent
 
 La méthode `int` permet de convertir une variable en type int. Petite aide pour la suite, on peut convertir une représentation en base 2 en base 10 avec la sytaxe : 
 
-```python
+```{.python}
     >>>repr_binaire = "01001110"
     >>>print(repr_binaire)
         "01001110"
