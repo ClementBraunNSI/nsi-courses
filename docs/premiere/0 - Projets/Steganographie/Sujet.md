@@ -32,7 +32,7 @@ $\underbrace{1111}_{\texttt{bits de poids fort}}\overbrace{0000}^{\texttt{bits d
 
 Pour le traitement des images, on utilise le module *Pillow* de Python qui permet de modifier les valeurs de bits, créer de nouvelles images avec des tailles prédéfinies, dans des modes prédéfinis (RGB, Noir et Blanc, Nuances de gris).
 
-On peut retrouver un tutoriel dans le [cours de seconde](../../seconde/Photographie%20Numérique/c_2_Photographie_Couleur).
+On peut retrouver un tutoriel dans le [cours de seconde](../seconde/Photographie%20Numérique/c_2_Photographie_Couleur.md).
 
 ### Méthode Bin et Int de Python
 
@@ -53,3 +53,84 @@ La méthode `int` permet de convertir une variable en type int. Petite aide pour
     >>>print(int(repr_binaire,2))
         78
 ```
+
+## Méthode
+
+Pour réaliser "cacher" le message codé dans une image, il faut pouvoir modifier l'image qui servira de contenant sans que cela se remarque.
+Chaque pixel a une valeur codée sur 8 bits et les bits de poids fort permettent de faire varier la valeur du pixel de 16 à 255.
+Cela veut dire que les bits de poids faible n'ont que peu d'impact sur la représentation de la couleur.
+
+La méthode à employer consistera à remplacer les bits de poids faible de la représentation de chaque pixel par les bits de poids fort de l'image à cacher. Cela n'impactera peu la couleur du pixel et permettra de dissimuler le message à transmettre.
+
+En clair :
+$$
+\texttt{pixel de l'image de transport} : \textbf{1100}~1100 \newline
+\texttt{pixel de l'image à cacher} : \textbf{0110}~0010 \newline
+\texttt{pixel de l'image finale} : \textbf{1100~0110}
+$$
+
+!!! Warning Important
+    Pour que l'opération fonctionne correctement, il faut utiliser des images de départ en format **non compressé**.
+    Utiliser des formats compressés comme le PNG, le JPEG peut poser des problèmes lors de l'opération de chiffrement.
+    *On utilisera le format pgm qui est non compressé.*
+
+
+## À réaliser
+
+On doit manipuler la représentation binaire de nombres.  
+
+### Fonction de représentation des bits d'un pixel
+
+Implanter une fonction `representation_binaire` qui prend en paramètre un entier et renvoie sa représentation binaire en chaine de caractère. 
+**Cette fonction prendra soin de rajouter des 0 au début de la représentation si celle-ci n'est pas déjà sur 8 bits.**
+
+!!! tip Astuce
+    * Vous pouvez utiliser la méthode `bin` qui donne la représentation en chaine de caractère sous forme "**0b**abcd" avec a,b,c et d des bits.  
+    * Pour retrancher les deux caractères **0b**, la syntaxe permet d'avoir une chaîne de caractère omettant les 2 premiers caractères.
+    ``` python 
+        chainte_caractère = "0b1010"
+        chaine_finale = chaine_caractere[2:]
+        >>>print(chaine_finale)
+        "1010"
+    ``` 
+    
+### Chiffrage d'une image dans une autre
+
+Compléter la fonction suivante `chiffrer_image` qui prend en paramètre 2 images du module PIL et renvoie une nouvelle image qui cache l'une des deux dans l'autre.
+
+```python
+def chiffrer_image(img1, img2):
+    """
+    params : 
+    img1 : image du module PIL
+    img2 : image du module PIL
+    returns :
+    image_chiffree : image du module PIL
+
+    Chiffre une image de transport avec une image à transmettre de manière cachée.
+    """
+    largeur, hauteur = img1.size
+    image_chiffree = Image.new("L", (largeur, hauteur))
+    for i in range(...):
+        for j in range(...):
+            pixel_img1 = img1.getpixel((i,j))
+            pixel_img2 = img2.getpixel((i,j))
+            ...
+            ...
+            image_chiffree.putpixel((i,j), ... )
+    return image_chiffree
+```
+
+### Déchiffrage d'une image chiffrée pour récupérer le message.
+
+Pour déchiffrer l'image et récupérer le message, il suffit de retrouver les bits de poids faible de l'image chiffrée pour composer un octet contenant ces bits de poids faible et 4 zéros.
+
+Implanter une fonction `dechiffre_image` qui prend en paramètre une image `img` du module PIL et renvoie une image qui affichera celle qui est cachée.
+
+Vous utiliserez la même structure de fonction que pour la fonction `chiffrer_image`.
+
+### Qui est le coupable?
+
+Vous avez été missionné pour chercher qui a volé le stock de croquette du magasin à côté du lycée.
+
+Une image du ou de la coupable est chiffrée dans l'image `image_chiffree.pgm`.
