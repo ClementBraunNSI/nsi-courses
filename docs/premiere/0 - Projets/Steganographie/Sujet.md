@@ -63,15 +63,14 @@ Cela veut dire que les bits de poids faible n'ont que peu d'impact sur la repré
 La méthode à employer consistera à remplacer les bits de poids faible de la représentation de chaque pixel par les bits de poids fort de l'image à cacher. Cela n'impactera peu la couleur du pixel et permettra de dissimuler le message à transmettre.
 
 En clair :
-$\texttt{pixel de l'image de transport} : \textbf{1100}~1100$
-$\texttt{pixel de l'image à cacher} : \textbf{0110}~0010 \newline$
-$\texttt{pixel de l'image finale} : \textbf{1100~0110}$
+$\texttt{pixel de l'image de transport} : \textbf{1100}~1100$  
+$\texttt{pixel de l'image à cacher} : \textbf{0110}~0010$  
+$\texttt{pixel de l'image finale} : \textbf{1100~0110}$  
 
 !!! Warning Important
     Pour que l'opération fonctionne correctement, il faut utiliser des images de départ en format **non compressé**.
     Utiliser des formats compressés comme le PNG, le JPEG peut poser des problèmes lors de l'opération de chiffrement.
     *On utilisera le format pgm qui est non compressé.*
-
 
 ## À réaliser
 
