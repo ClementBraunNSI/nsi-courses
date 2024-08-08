@@ -119,6 +119,11 @@ def chiffrer_image(img1, img2):
     return image_chiffree
 ```
 
+Tester avec les deux images ci-dessous.
+
+![maya](maya.pgm)
+![lara](lara.pgm)
+
 ### Déchiffrage d'une image chiffrée pour récupérer le message.
 
 Pour déchiffrer l'image et récupérer le message, il suffit de retrouver les bits de poids faible de l'image chiffrée pour composer un octet contenant ces bits de poids faible et 4 zéros.
