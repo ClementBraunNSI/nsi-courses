@@ -19,7 +19,7 @@ On peut, pour un modèle, dresser un tableau des diverses propriétés à modél
 
 Pour créer ce genre d'objets, on utilise donc la structure des dictionnaires.
 
-Pour créer un dictionnaire, on utilise les accolades à la différence des tableaux (parenthèses **(   )**) ou des listes (crochets **[   ]**).
+Pour créer un dictionnaire, on utilise les accolades **{}** la différence des tableaux (parenthèses **(   )**) ou des listes (crochets **[   ]**).
 À l'intérieur de ces crochets, on utilise la syntaxe **attribut : valeurs possibles**. 
 Chacun des attributs sont séparés par des virgules.
 
