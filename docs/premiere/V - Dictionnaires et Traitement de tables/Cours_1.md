@@ -47,6 +47,8 @@ modele_voiture["taille_jantes"] = [16,17,18,19]
 
 Pour accéder à un attribut du dictionnaire, on utilise la structure à crochets comme pour les listes, mais au lieu d'indiquer un indice, on indique l'attribut s'il est déjà renseigné.
 
+Voici l'usage principal des dictionnaires en Python : 
+
 ```python
 # Pour afficher le dictionnaire complet
 print(modele_voiture)
@@ -54,7 +56,7 @@ print(modele_voiture)
 # Pour afficher les couleurs disponibles pour le modèle
 print(modele_voiture["couleurs"])
 
-# Pour rajouter des valeurs à un attribut
+# Pour rajouter des couleurs à celles existantes
 modele_voiture["couleurs"] = modele_voiture["couleurs"] + ["beige"]
 
 # Pour retirer une clef et ses valeurs d'un dictionnaire
