@@ -19,6 +19,8 @@ On peut, pour un modèle, dresser un tableau des diverses propriétés à modél
 
 Pour créer ce genre d'objets, on utilise donc la structure des dictionnaires.
 
+## Les dictionnaires en Python
+
 Pour créer un dictionnaire, on utilise les accolades **{}** la différence des tableaux (parenthèses **(   )**) ou des listes (crochets **[   ]**).
 À l'intérieur de ces crochets, on utilise la syntaxe **attribut : valeurs possibles**. 
 Chacun des attributs sont séparés par des virgules.
@@ -66,3 +68,37 @@ modele_voiture.pop("taille_jantes")
 !!! Warning Attention pour rajouter des valeurs
     Pour rajouter des valeurs à un attribut d'un dictionnaire, il faut bien faire attention aux types.
     Par exemple, pour l'exemple précédent, nos valeurs étaient contenues dans des listes. Il faut donc opérer par concaténation de liste avec l'opérateur **+**.
+
+## Opérations sur les dictionnaires
+
+### Itérations sur un dictionnaire
+
+Tout comme les listes et les tableaux, on peut itérer sur les valeurs d'un dictionnaire. Cela permet de retrouver des valeurs, de faire des traitements sur des bases de données ou retrouver des valeurs suivant certaines conditions.
+
+Le plus simple est d'itérer à l'aide d'une boucle `for`.
+Un dictionnaire est une structure sur laquelle on peut itérer sur les clefs (à l'instar des tuples ou listes où l'on itère sur les indices).
+
+```python
+    # Afficher les clefs du dictionnaire
+    for clef in modele_voiture:
+        print(clef)
+
+    #Afficher toutes les valeurs d'un dictionnaire
+    for clef in modele_voiture:
+        print(clef)
+        for valeur in modele_voiture[clef]:
+            print(valeur)
+```
+
+### Vérification de la présence d'une clef
+
+L'opérateur `in` permet de vérifier si une clef existe dans le dictionnaire.
+
+```python
+    if "couleurs" in modele_voiture:
+        print("La clé 'couleurs' existe dans le dictionnaire")
+    else:
+        print("La clé 'couleurs' n'existe pas dans le dictionnaire")
+```
+
+Cela permet de savoir si, par exemple on modifie une base de données pour la rendre plus conséquente, la modification a bien été réalisée.
