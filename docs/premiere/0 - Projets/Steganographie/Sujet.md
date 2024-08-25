@@ -66,7 +66,7 @@ En clair :
 
 - Pixel de l'image de transport : **1100 1100**
 - Pixel de l'image à cacher : **0110 0010**
-- Pixel de l'image finale : **1100 1100**
+- Pixel de l'image finale : **1100 0110**
 
 !!! Warning Important
     Pour que l'opération fonctionne correctement, il faut utiliser des images de départ en format **non compressé**.

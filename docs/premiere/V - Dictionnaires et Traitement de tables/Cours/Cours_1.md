@@ -1,6 +1,6 @@
 # Dictionnaires en Python
 
-## Défintions
+## Définitions
 
 Une des nombreuses structures de Python est **le dictionnaire**.
 

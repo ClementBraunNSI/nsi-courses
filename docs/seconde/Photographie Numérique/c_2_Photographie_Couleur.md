@@ -65,7 +65,7 @@ La bibliothèque **PIL** permet de réaliser des traitements sur des images grâ
 *Image.size* permet de donner les dimensions de l’image.
 *Image.mode* permet de donner le mode de l’image (RVB, Nuances de Gris).
 *Image.crop*( **(gauche, haut, droite, bas)** ) permet de découper une image grâce aux coordonnées.
-*Image.split*(  ) permet de donner découper les images suivant leurs composantes (rouge, vert, bleu) et les mettre dans 3 variables rouge, vert, bleu.
+*Image.split*(  ) permet d'obtenir chacune des composantes d'un pixel dans 3 variables à définir.
 *Image.rotate*( **angle** ) permet de tourner l’image dans le sens horaire d’un certain angle.
 
 *Grâce à la notice précédente, légender le programme suivant et expliquer ce qu’il fait.*
