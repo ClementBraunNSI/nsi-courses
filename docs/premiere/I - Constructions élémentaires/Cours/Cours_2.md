@@ -1,71 +1,76 @@
-# Fonctions en python
+# Types de données en Python
 
-## Définitions
+Chacun des types représentés dans les cours précédents a son équivalent dans les langages de programmation dont celui que l'on va étudier : Python.
+Ces types sont dits des **types primitifs**, c'est-à-dire qu'ils sont faits pour être rééllement utilisables par le processeur. Ils sont différents des types construits, explicités dans le cours sur les **structures de données linéaires**.
 
-Une fonction en python correspond à un certain bout de code qui est à réaliser plusieurs fois.
-Utiliser une fonction permet de réduire le nombre de lignes de code et de le modulariser.
+## Les booléens
 
-Par exemple, on peut écrire une fonction qui réalise un certain type d'opération en fonction des éléments qu'on lui fournit pour fonctionner.
+Le type booléen en Python est utilisé pour représenter des valeurs de vérité. Il n’a que deux valeurs possibles : True (vrai) et False (faux). Les booléens sont souvent utilisés dans les conditions et les boucles pour contrôler le flux d’exécution d’un programme.
 
-Un paramètre est une variable qui permet le bon fonctionnement d'un algorithme. Ce paramètre répond à un type précisé pour le fonctionnement de la fonction.
-
-Par exemple, on peut écrire une fonction qui calcule la température en Fahrenheit en donnant comme paramètre la température en Celsius.
-
-On connait la fonction mathématique pour passer de l'une à l'autre 
-$Temperature_{Fahrenheit} = (Temperature_{Celsius} \times \frac{9}{5}) + 32$.
-
-On peut l'écrire en python pour pouvoir l'utiliser à plusieurs endroit sans forcément la réécrire à chaque fois.
-On utilisera le mot-clef `def`, qui signifie **define** (définir).
-
-En clair, la structure est :
-
-```python
-
-def nom_de_fonction(variable_1 : type, vartiable_2 : type) -> type_renvoi :
-    '''
-    Explications de la fonctions, paramètres et renvoi
-    '''
-    Corps de la fonction
-    Renvoi ou non de la fonction
+``` python
+    est_jeune = True
+    a_termine_cours = False
 ```
 
-```python
-def celsius_vers_fahrenheit(temp_celsius):
-    '''
-    params:
-        entrée : temp_celsius : entier, température en celsius
-        sortie : temp_fahrenheit : entier, température en Fahrenheit
-    Convertit une température exprimée en Celsius en température exprimée en Fahrenheit.
-    '''
-    temp_fahrenheit = (temp_celsius * (9/5)) + 32
-    return temp_fahrenheit
+Les opérateurs logiques tels que and, or, et not permettent de combiner ou d’inverser les valeurs booléennes :
 
-def afficher_bonjour(prenom):
-    '''
-    params:
-        entrée : prenom : chaine de caractère, un prénom
-        sortie : X
-    Affiche dans le terminal : Bonjour, prenom.
-    '''
-    print('Bonjour, ' + prenom)
-
-print(celsius_vers_fahrenheit(19))
-print(celsius_vers_fahrenheit(25))
-afficher_bonjour('Eudes')
-afficher_bonjour('Germaine')
+``` python
+    est_jeune_et_a_termine_cours = est_jeune and a_termine_cours  # False
+    est_vrai = not a_termine_cours  # True
 ```
 
-On va décortiquer la fonction précédente pour définir ce qu'est une fonction.
+## Les nombres
 
-- Le mot clef def, qui indique que l'on définit une fonction
-- Une fonction est définie par son nom, ici `celsius_vers_fahrenheit`.
-- Des paramètres, ici un unique temp_celsius
-- Une spécification, un bloc de texte qui indique le type des paramètres d'entrée et sortie et ce que fait la fonction. (Cela répond aux bonnes pratiques de développement).
-- Un bloc de code, ici une opération
+### Les entiers
 
-On peut aussi retrouver un retour, ici la fonction renvoie un résultat pour effectuer des traitements. Pour l'exemple précédent, on souhaite l'afficher dans le terminal.
+Il existe plusieurs types en Python pour définir des nombres.
+Il existe le type **int** qui permet d'instancier des nombres.
 
-!!! Danger
-    Attention ! Une fonction peut ne pas retourner quelque chose. Si rien n'est précisé, elle renvoie par défaut None.
-    Cela peut expliquer certains comportements d'affichage ou d'affectation de variables.
-    Par exemple, réaliser `print(afficher_bonjour('Eudes'))` affichera None dans le terminal car elle ne renvoie rien.
+La syntaxe est assez claire : on veut instancier une variable *a* valant 42.
+
+```python
+    a = 42
+    b = -54
+```
+
+On peut réaliser des opérations sur ce type entier, elles sont répertoriées dans le cours sur les **constructions élémentaires**.
+
+### Les flottants
+
+Pour décrire des nombres réels (à virgule), python associe la valeur à un type appelé **flottant** qui correspond à une écriture à virgule flottante (IEEE754).
+
+!!!danger
+    Attention, pour rappel, en informatique pour représenter les nombres réels, il y a des arrondis qui sont réalisés.
+    Ainsi, réaliser des opérations mathématiques sur des flottants **est strictement interdit** car les résultats, même s'ils nous paraissent corrects, ne le seront pas forcément pour la machine.
+
+Comme pour les entiers, l'instanciation est triviale.
+
+```python
+pi = 3.14159
+racine_de_deux = 1.4132
+```
+
+!!! warning Le point
+    Pour décrire un réel, on utilise le point et non la virgule comme habituellement à la main.
+    Cela vient de l'écriture américaine qui utilise les **.** pour les parties entières et décimales et **,** pour les milliers, millions...
+
+## Les caractères et chaînes de caractères
+
+En Python, les caractères sont représentés comme des chaînes de longueur 1, et il n’y a pas de type char distinct comme dans certains autres langages. Les chaînes de caractères sont représentées par le type str.
+
+!!! tip Astuce pour se repérer
+    Il est conseillé pour mieux s'y retrouver, d'écrire les caractères seuls entre **'** et les chaînes de caractère entre **"**
+
+``` python
+    nom = "Alice"
+    lettre = 'a'
+```
+
+On peut aussi accéder aux caractères individuels d’une chaîne en utilisant des indices, commencer par 0 :
+
+```python 
+    premiere_lettre = nom[0]  # 'A'
+    derniere_lettre = nom[-1]  # 'e'
+```
+
+Les chaînes peuvent être concaténées (**opérateur +**), répétées et comparées, et elles offrent une multitude de méthodes pour effectuer diverses opérations telles que la recherche, le remplacement ou la modification de la casse des caractères.

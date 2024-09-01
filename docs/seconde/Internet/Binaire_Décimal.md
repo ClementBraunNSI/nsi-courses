@@ -39,9 +39,3 @@ On répète ces opération jusqu'à ce que le quotient soit 0 et le reste 1.
 ![div_succ](img/div_succ.png)
 
 La représentation du nombre binaire s’obtient en écrivant les restes dans le sens de la flèche ci dessus.
-
-## Conséquences sur les images en niveaux de gris
-
-Chaque pixel d’une image en niveau de gris comportera donc un nombre entre 0 et 255 écrit en binaire.  Ces valeurs iront donc de **0000 0000** à **1111 1111**.
-
-**Exercice:** Pour la palette donnée de niveau de gris, donner l’écriture binaire de chaque nombre décimaux.

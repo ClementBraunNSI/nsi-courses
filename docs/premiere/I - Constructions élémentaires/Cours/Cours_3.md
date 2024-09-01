@@ -1,97 +1,71 @@
-# Pratiques de développement
+# Fonctions en python
 
-## Objectif de cette leçon
+## Définitions
 
-Cette leçon vous servira dans toute votre expérience de développement.
-Le but d'appliquer les bonnes pratiques permet d'avoir un code lisible, compréhensible par d'autres personnes et surtout de comprendre ses propres programmes.
+Une fonction en python correspond à un certain bout de code qui est à réaliser plusieurs fois.
+Utiliser une fonction permet de réduire le nombre de lignes de code et de le modulariser.
 
-Il existe diverses techniques pour rendre son code lisible et compréhensible et elles sont listées dans ce cours.
-Ces bonnes pratiques **seront à appliquer toute l'année** lors des exercices, des évaluations et surtout lors des épreuves pratiques.
+Par exemple, on peut écrire une fonction qui réalise un certain type d'opération en fonction des éléments qu'on lui fournit pour fonctionner.
 
-## Noms de variables
+Un paramètre est une variable qui permet le bon fonctionnement d'un algorithme. Ce paramètre répond à un type précisé pour le fonctionnement de la fonction.
 
-Le nommage des variable est très important lors de la création d'un programme.
-Nommer une variable correctement permet de se rappeler lors de la conception d'un algorithme, à quoi elle correspond.
-Il semble logique lors de la conception d'un algorithme portant sur des conversions de température de nommer ses variables de manière logique.
+Par exemple, on peut écrire une fonction qui calcule la température en Fahrenheit en donnant comme paramètre la température en Celsius.
 
-```python
-# Mauvaise pratique
-x = 34
-y = 'La température est de ' + str(x)
+On connait la fonction mathématique pour passer de l'une à l'autre 
+$Temperature_{Fahrenheit} = (Temperature_{Celsius} \times \frac{9}{5}) + 32$.
 
-# Bonne pratique
-temperature = 34
-affichage = 'La température est de ' + str(temperature)
-```
+On peut l'écrire en python pour pouvoir l'utiliser à plusieurs endroit sans forcément la réécrire à chaque fois.
+On utilisera le mot-clef `def`, qui signifie **define** (définir).
 
-Il existe plusieurs conventions de nommage mais il est plus simple d'utiliser la convention **snake case**.
-Cette convention consiste à écrire des noms de variables explicites avec des _ (underscore ou tiret-du-bas) pour séparer les divers mots du nom.
-
-Par exemple :
+En clair, la structure est :
 
 ```python
-affichage_temperature = 'La température est de '
-```
 
-## Spécification des fonctions
-
-La spécification d'une fonction correspond à écrire un bloc de texte avant le bloc de code d'une fonction. Ce bloc de texte explique ce que sont les paramètres d'entrée, le résultat en sortie s'il y a et explique brièvement ce que la fonction fait.
-
-Cela permet de mettre au propre ce que fait et d'avoir une idée de comment concevoir le programme.
-La spécification permet aussi de rendre compréhensible le programme pour un tiers.
-La spécification est vivement recommandée (pour ne pas dire évaluée) lors des épreuves pratiques.
-
-Par exemple :
-
-```python
-def nombre_impair(nombre):
+def nom_de_fonction(variable_1 : type, vartiable_2 : type) -> type_renvoi :
     '''
-    params : 
-        entrée : nombre, entier
-        sortie : un booléen
-    Renvoie True si le nombre est impair, False sinon.
+    Explications de la fonctions, paramètres et renvoi
     '''
-    if nombre %2 == 0:
-        return False
-    else:
-        return True
+    Corps de la fonction
+    Renvoi ou non de la fonction
 ```
 
-## Comprendre les erreurs
+```python
+def celsius_vers_fahrenheit(temp_celsius):
+    '''
+    params:
+        entrée : temp_celsius : entier, température en celsius
+        sortie : temp_fahrenheit : entier, température en Fahrenheit
+    Convertit une température exprimée en Celsius en température exprimée en Fahrenheit.
+    '''
+    temp_fahrenheit = (temp_celsius * (9/5)) + 32
+    return temp_fahrenheit
 
-Les erreurs sont des événements courants qui surviennent lors de l'exécution d'un programme. Elles peuvent être causées par différents types de problèmes, tels que des erreurs de syntaxe, des erreurs d'exécution ou des erreurs logiques. Chaque type d'erreur correspond à une situation particulière qui peut être identifiée et résolue avec des techniques appropriées.
+def afficher_bonjour(prenom):
+    '''
+    params:
+        entrée : prenom : chaine de caractère, un prénom
+        sortie : X
+    Affiche dans le terminal : Bonjour, prenom.
+    '''
+    print('Bonjour, ' + prenom)
 
-### 1. Erreurs de Syntaxe
+print(celsius_vers_fahrenheit(19))
+print(celsius_vers_fahrenheit(25))
+afficher_bonjour('Eudes')
+afficher_bonjour('Germaine')
+```
 
-Les erreurs de syntaxe surviennent lorsque le code ne respecte pas les règles de la syntaxe du langage Python. Ces erreurs sont détectées lors de la phase d'analyse (ou de parsing) du code avant son exécution. Elles empêchent généralement l'interpréteur Python de comprendre et d'exécuter le programme correctement.
+On va décortiquer la fonction précédente pour définir ce qu'est une fonction.
 
-**Exemples :**
+- Le mot clef def, qui indique que l'on définit une fonction
+- Une fonction est définie par son nom, ici `celsius_vers_fahrenheit`.
+- Des paramètres, ici un unique temp_celsius
+- Une spécification, un bloc de texte qui indique le type des paramètres d'entrée et sortie et ce que fait la fonction. (Cela répond aux bonnes pratiques de développement).
+- Un bloc de code, ici une opération
 
-- Oubli de deux-points ( : ), par exemple dans une déclaration de fonction ou dans une boucle.
-- Utilisation incorrecte des guillemets (", ') autour des chaînes de caractères.
-- Indentation incorrecte, notamment dans les blocs de code tels que les boucles et les fonctions.
+On peut aussi retrouver un retour, ici la fonction renvoie un résultat pour effectuer des traitements. Pour l'exemple précédent, on souhaite l'afficher dans le terminal.
 
-### 2. Erreurs d'Exécution (Exceptions)
-
-Les erreurs d'exécution, également appelées exceptions, surviennent lorsqu'une instruction ou une expression est correctement écrite mais ne peut pas être exécutée correctement à cause d'une situation imprévue pendant l'exécution du programme. Python génère alors une exception et interrompt l'exécution du programme si celle-ci n'est pas gérée.
-
-**Exemples courants d'exceptions :**
-
-- `ZeroDivisionError` : Tentative de division par zéro.
-- `TypeError` : Opération appliquée à un type d'objet inapproprié.
-- `IndexError` : Tentative d'accès à un index inexistant dans une liste ou un tuple.
-
-### 3. Erreurs Logiques (Bugs)
-
-Les erreurs logiques, souvent appelées bugs, sont des erreurs plus subtiles où le programme s'exécute sans générer d'exception mais produit un résultat incorrect. Ces erreurs sont souvent dues à une mauvaise compréhension du problème ou à une mauvaise implémentation de l'algorithme.
-
-**Exemples :**
-
-- Mauvaise gestion des conditions dans une boucle.
-- Utilisation incorrecte des variables dans une fonction.
-- Algorithmes incorrects qui produisent des résultats imprévus.
-
-### 4. L'effet de bord
-
-Un effet de bord est la modification d'une variable qui n'est pas uniquement réservée dans une fonction.
-Ce type d'erreur peut causer des comportements inattendus (suppresion ou mise à None d'un élément qui sera réutilisé par la suite).
+!!! Danger
+    Attention ! Une fonction peut ne pas retourner quelque chose. Si rien n'est précisé, elle renvoie par défaut None.
+    Cela peut expliquer certains comportements d'affichage ou d'affectation de variables.
+    Par exemple, réaliser `print(afficher_bonjour('Eudes'))` affichera None dans le terminal car elle ne renvoie rien.

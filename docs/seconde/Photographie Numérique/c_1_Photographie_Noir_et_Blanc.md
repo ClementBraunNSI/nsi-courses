@@ -66,3 +66,11 @@ Ce pourcentage correspond au nombre entre 0 et 255 qui représente la nuance de 
 
 On a vu précédemment qu’un ordinateur ne comprend que des 0 et des 1 en mémoire, on a donc un problème : comment représenter les nombres entre 0 et 255 en mémoire ?
 La solution : convertir les nombres décimaux que nous connaissons en 0 et 1.
+
+## Conséquences sur les images en niveaux de gris
+
+Chaque pixel d’une image en niveau de gris comportera donc un nombre entre 0 et 255 écrit en binaire.  Ces valeurs iront donc de **0000 0000** à **1111 1111**.
+
+**Exercice:**
+
+Pour la palette donnée de niveau de gris, donner l’écriture binaire de chaque nombre décimaux.  
