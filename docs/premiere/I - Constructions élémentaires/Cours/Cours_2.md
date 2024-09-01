@@ -1,7 +1,8 @@
 # Types de données en Python
 
 Chacun des types représentés dans les cours précédents a son équivalent dans les langages de programmation dont celui que l'on va étudier : Python.
-Ces types sont dits des **types primitifs**, c'est-à-dire qu'ils sont faits pour être rééllement utilisables par le processeur. Ils sont différents des types construits, explicités dans le cours sur les **structures de données linéaires**.
+Ces types sont dits des **types primitifs**, c'est-à-dire qu'ils sont faits pour être directement utilisables par le processeur.  
+Ils sont différents des types construits, explicités dans le cours sur les **structures de données linéaires**.
 
 ## Les booléens
 
@@ -15,8 +16,8 @@ Le type booléen en Python est utilisé pour représenter des valeurs de vérit�
 Les opérateurs logiques tels que and, or, et not permettent de combiner ou d’inverser les valeurs booléennes :
 
 ``` python
-    est_jeune_et_a_termine_cours = est_jeune and a_termine_cours  # False
-    est_vrai = not a_termine_cours  # True
+    est_jeune_et_a_termine_cours = est_jeune and a_termine_cours 
+    est_vrai = not a_termine_cours  
 ```
 
 ## Les nombres
