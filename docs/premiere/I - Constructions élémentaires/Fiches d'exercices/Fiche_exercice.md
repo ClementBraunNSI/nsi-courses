@@ -25,32 +25,32 @@
 
 **Évaluer les valeurs de result à la fin de chaque programme.**  
 
-    ```python
+```python
     x = 8
     y = 6
     if x > y:
         result = x - y
     else:
         result = y - x
-    ```
+```
 
-    ```python
+```python
     a = 4
     b = 9
     if a < b:
         result = a + b
     else:
         result = a * b
-    ```
+```
 
-    ```python
+```python
     m = 7
     n = 3
     if m % 2 == 0:
         result = m * n
     else:
         result = m + n
-    ```
+```
 
 **Écrire une fonction python `factorielle` qui prend en paramètre un nombre entier n et renvoie la factorielle de ce nombre. On rappelle que la factorielle de 5 vaut $1\times2\times3\times4\times5$.**  
 **Tester cette fonction avec les valeurs 5, 6, 8 et 10.**  
