@@ -3,45 +3,40 @@
 ### Conversion binaire, décimal, hexadécimal
 
 1. Convertir les nombres binaires suivants en décimal :
-   - $1101_{2}$
-   - $10101_{2}$
-   - $111000_{2}$
-   - $10010_{2}$
-   - $110110_{2}$
-<br/>
+   1. $1101_{2}$
+   2. $10101_{2}$
+   3. $111000_{2}$
+   4. $10010_{2}$
+   5. $110110_{2}$
 
-1. Convertir les nombres décimaux suivants en binaire :
-   - $13_{10}$
-   - $42_{10}$
-   - $255_{10}$
-   - $76_{10}$
-   - $128_{10}$
-  
-<br/>
 
-<br/>
+2. Convertir les nombres décimaux suivants en binaire :
+   1. $13_{10}$
+   2. $42_{10}$
+   3. $255_{10}$
+   4. $76_{10}$
+   5. $128_{10}$
 
-1. Convertir les nombres décimaux suivants en hexadécimal :
-   - $30_{10}$
-   - $75_{10}$
-   - $128_{10}$
-   - $42_{10}$
-   - $99_{10}$
-<br/>
+3. Convertir les nombres décimaux suivants en hexadécimal :
+   1. $30_{10}$
+   2. $75_{10}$
+   3. $128_{10}$
+   4. $42_{10}$
+   5. $99_{10}$
 
-1. Convertir les nombres hexadécimaux suivants en décimal :
-   - $1A_{16}$
-   - $3F_{16}$
-   - $7D_{16}$
-   - $2A_{16}$
-   - $5E_{16}$
+4. Convertir les nombres hexadécimaux suivants en décimal :
+   1. $1A_{16}$
+   2. $3F_{16}$
+   3. $7D_{16}$
+   4. $2A_{16}$
+   5. $5E_{16}$
 
 <br/>
 
-6. Convertir les nombres décimaux suivants en hexadécimal en utilisant la méthode des divisions successives:
-   - $62_{10}$
-   - $158_{10}$
-   - $255_{10}$
+5. Convertir les nombres décimaux suivants en hexadécimal en utilisant la méthode des divisions successives:
+   1. $62_{10}$
+   2. $158_{10}$
+   3. $255_{10}$
 
 ### Opération en base 2
 
