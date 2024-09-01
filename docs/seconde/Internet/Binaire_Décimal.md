@@ -22,11 +22,11 @@ Pour convertir un nombre binaire en base décimale, on opère comme la décompos
 $11001$ est un nombre représenté en base 2. On peut le décomposer de cette manière :
 $11001_2 = 1 \times 2^4 + 1 \times 2^3 + 0 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 16 + 8 + 1 = 25_{10}$.
 
-**Exercice:** Convertir les nombres binaires suivant en base 10 :
-a. $1101_2$
-b. $10101_2$
-c. $111000_2$
-d. $10010_2$
+**Exercice:** Convertir les nombres binaires suivant en base 10 :  
+a. $1101_2$  
+b. $10101_2$  
+c. $111000_2$  
+d. $10010_2$  
 
 ## Conversion décimal vers binaire
 
