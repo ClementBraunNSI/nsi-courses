@@ -3,15 +3,15 @@
 ## Encodage en table ASCII
 
 1. Décoder les messages suivants en hexadécimal à l'aide de la table ASCII  
-   - `48 65 6C 6C 6F`
-   - `57 6F 72 6C 64`
-   - `31 32 33 34 35`
+   1. `48 65 6C 6C 6F`
+   2. `57 6F 72 6C 64`
+   3. `31 32 33 34 35`
 
 2. Encoder les messages suivants à l'aide de la table ASCII  
-   a. `Hello`  
-   b. `123`  
-   c. `!@#`  
-   d. `Code`  
+   1. `Hello`  
+   2. `123`  
+   3. `!@#`  
+   4. `Code`  
 
 3. Python permet d'encoder des messages à l'aide de divers encodages. Il existe la méthode `encode` des chaînes de caractères. Elle s'utilise de cette manière chaine_de_caractere.encode('Méthode d'encodage').  
    a. Instancier la chaîne de caractère : *La vitesse de la lumière est de 300 000km/s*.
