@@ -86,6 +86,22 @@ On peut citer :
     Il ne faut pas confondre les opérateurs $=$ et $==$.  
     En effet, $=$ ne sera utilisé uniquement lors d'**instanciation** de variables. Utiliser l'opérateur $=$ lors d'une **comparaison** peut mener à des erreurs! (**SyntaxError**).
 
+## Affichage et Demande à l'utilisateur
+
+La fonction `print()` est utilisée pour afficher des informations à l’écran.  
+Elle peut afficher des chaînes de caractères, des nombres, ou même les résultats de calculs.  
+On peut également concaténer plusieurs éléments à afficher en les séparant par des virgules dans l’appel à print().  
+Par exemple, print("Bonjour", "le monde", 42) affichera “Bonjour le monde 42” dans la console.
+
+D’un autre côté, la fonction input() permet de capturer des données saisies par l’utilisateur.  
+Elle prend en argument une chaîne de caractères qui est affichée comme un message à l’utilisateur pour l’inviter à entrer une valeur.  
+La valeur saisie par l’utilisateur est ensuite renvoyée sous forme de chaîne de caractères.  
+Par exemple, nom = input("Quel est votre nom ? ") demandera à l’utilisateur de saisir son nom, qui sera ensuite stocké dans la variable nom.  
+
+!!! Warning
+    Attention ! La fonction input va permet de stocker une valeur dans une variable mais celle-ci sera forcément du type `string`.
+    Si l'on souhaite traiter des nombres, il faudra alors modifier le type de la valeur à l'aide des fonctions le permettant.
+
 ## Conditions
 
 Une condition est réalisable en python grâce à l'instruction `if`.

@@ -6,7 +6,7 @@
 
 **Écrire un programme qui permet d'afficher la somme de deux nombres entiers de la forme 'La somme est x+y' avec x et y défini précédemment.**  
 
-**Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'**  
+**Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'.**  
 
 **Écrire un programme qui étant donné deux valeurs cout_de_production et prix_de_vente, affiche dans le terminal `profit` si le cout est inférieur au prix de vente, `perte` sinon.**  
 
