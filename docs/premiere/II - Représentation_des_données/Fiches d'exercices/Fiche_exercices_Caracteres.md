@@ -23,6 +23,6 @@
 **La méthode `decode` de Python permet de donner le caractère associé à un point de code donné.**  
 **Cela s'utilise de cette manière : chaine_de_caractere.decode('Méthode de décodage').**  
 **Donner les caractères associés à ces points de code :**  
-      a. b'\x41'  
-      b. b'\xce\xa9  
-      c. b'\xe3\x81\x93'  
+      1. b'\x41'  
+      2. b'\xce\xa9  
+      3. b'\xe3\x81\x93'  
