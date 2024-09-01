@@ -1,6 +1,6 @@
 # Fiche d'exercices : Types en python
 
-**Donner les types des valeurs suivantes : 13, 14.5, 'Hello World!', `True`, '15.5'**  
+**Donner les types des valeurs suivantes : `13`, `14.5`, `'Hello World!'`, `True`, `'15.5'`**  
 
 **À l'aide de python, écrire un programme qui affiche dans le terminal la table de vérité de la fonction booléenne `xor`.**  
 
