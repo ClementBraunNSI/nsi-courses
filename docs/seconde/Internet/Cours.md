@@ -23,7 +23,8 @@ Les années 1990 ont permis de faire voir le jour à une des plus grandes techno
 
 ![tblrc](img/tblrc.jpeg)
 
-Depuis, Internet permet de relier plus de 3 à 4 milliards d'internautes pour s'envoyer des mails, des fichiers ou accéder à une quantité de données incommensurable.
+Depuis, Internet permet de relier plus de 3 à 4 milliards d'internautes pour s'envoyer des mails, des fichiers ou accéder à une quantité de données incommensurable à l'aide de plusieurs applications dépendant de protocoles.
+Par exemple, il existe des applications de mail (protocole POP), d'échange de fichier (FTP) ou de navigation sur des pages (WEB).
 
 ![map](img/geo-mercator.svg)
 
@@ -70,13 +71,24 @@ Cette adresse MAC peut aussi être appelée **adresse physique** car elle corres
 
 Cette adresse est composée de 6 blocs de 2 caractères hexadécimaux. `Exemple : a1:b2:c3:d4:e5:f6`.
 
+La base hexadécimale correspond à une représentation en 16 caractères de chiffres ou de nombres.
+
+**Rédiger le tableau de conversion hexadécimal - décimal**.
+
 ### Adressage de machines sur Internet
 
 Chaque réseau doit pouvoir être accessible et reconnaissable.
 Sur Internet, on utilise ce que l'on appelle **l'Adresse IP** (pour Internet Protocole).
 
 Une adresse IP est constituée de 4 nombres allant de 0 à 255 représenté en binaire.
-Par exemple : 127.0.0.1 est une adresse IP.
+
+Le binaire correspond à une représentation en 2 caractères de chiffres ou de nombres (0 et 1).
+
+Par exemple : 127.0.0.1 est une adresse IP écrite en base 10, compréhensible par l'humain mais pas par l'ordinateur.
+
+Il faut pouvoir convertir ces nombres en représentation **décimale** en **binaire**.
+
+**Voir partie binaire.**
 
 L'adresse IP est constituée de 2 parties :
 
@@ -120,3 +132,36 @@ Le protocole TCP-IP fonctionne en plusieurs étapes :
 2. La donnée transite pour partir de la machine de départ à la machine de destination.
 3. Tous les paquets sont reconstruits à l'aide de leur numérotation.
 4. Enfin, un contrôle est réalisé par la machine de réception pour s'assurer que la donnée est bien **intègre**, c'est à dire que la donnée est bien correcte. Si la donnée n'est pas correcte, la machine de reception demande de renvoyer les paquets "défectueux".
+
+## Adresses symboliques
+
+Pour naviguer sur Internet et sur le WEB principalement, on utilise que très peu les adresses IP, pour faciliter les choses, on utilise des adresses dites "symboliques".
+
+Les adresses symboliques sont des adresses qui comportent des mots, des noms par exemple **www.google.fr**.
+
+Il existe cependant un problème : un ordinateur ne comprend que des 0 et des 1.
+Il faut donc pouvoir donner à l'ordinateur une manière de relier les adresses symboliques aux adresses IP.
+
+Cela est le rôle du **serveur DNS**.
+
+Le **serveur DNS** possède une table de correspondance entre les caractères de l'adresse symbolique et l'adresse IP.
+
+Par exemple, pour accéder à l'adresse *www.google.fr*, il faut demander aux serveurs DNS quelle est l'adresse IP correspondante.  
+
+Le fonctionnement des serveurs DNS est dit **récursifs**, c'est à dire que l'on cherche une réponse à un problème en résolvant le problème petit à petit en le divisant suivant plusieurs cas.  
+En utilisant ces divers cas, on résoud le problème en utilisant les diverses réponses précédentes.
+
+On peut en dresser un schéma explicatif :  
+
+**Dessiner le schéma explicatif de serveurs DNS récursifs.**.
+
+## Recherches : Topologie de réseaux
+
+**Réaliser une recherche sur une des topologies de réseaux suivantes :**
+
+* Topologie étoile
+* Topologie anneau
+* Topologie bus
+* Topologie étoile (ou pair à pair)
+
+**Quelle topologie est la plus utilisée dans un usage domestique?**

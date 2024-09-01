@@ -17,6 +17,18 @@ $Temperature_{Fahrenheit} = (Temperature_{Celsius} \times \frac{9}{5}) + 32$.
 On peut l'écrire en python pour pouvoir l'utiliser à plusieurs endroit sans forcément la réécrire à chaque fois.
 On utilisera le mot-clef `def`, qui signifie **define** (définir).
 
+En clair, la structure est :
+
+```python
+
+def nom_de_fonction(variable_1 : type, vartiable_2 : type) -> type_renvoi :
+    '''
+    Explications de la fonctions, paramètres et renvoi
+    '''
+    Corps de la fonction
+    Renvoi ou non de la fonction
+```
+
 ```python
 def celsius_vers_fahrenheit(temp_celsius):
     '''
