@@ -162,6 +162,6 @@ On peut en dresser un schéma explicatif :
 * Topologie étoile
 * Topologie anneau
 * Topologie bus
-* Topologie étoile (ou pair à pair)
+* Topologie maillé (pair à pair)
 
 **Quelle topologie est la plus utilisée dans un usage domestique?**
