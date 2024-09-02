@@ -17,7 +17,7 @@ La manière de communiquer pour les machines est découpées en diverses étapes
 Ces diverses étapes sont catégorisées dans un modèle : le modèle TCP-IP qui explique chaque étape de la communication.
 Chaque étape (ou couche) du modèle TCP-IP correspond à divers protocoles.
 
-Dans les années 1980, le fameux **protocole TCP/IPv4** a vu le jour. Il est installé dans en 1983 sur ARPANET, la même année où ont vu le jour les règles des systèmes de nom de domaine.
+Dans les années 1980, le fameux **protocole TCP/IPv4** a vu le jour. Il est installé en 1983 sur ARPANET, la même année où ont vu le jour les règles des systèmes de nom de domaine (DNS).
 
 Les années 1990 ont permis de faire voir le jour à une des plus grandes technologies jamais créée par l'être humain : le WEB, créé au CERN (en Suisse) par Tim Berners-Lee et Robert Cailliau.
 
