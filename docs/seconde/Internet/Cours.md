@@ -4,7 +4,7 @@
 
 La création d'Internet date du début des années 1960. L'idée était de relier divers machines pour envoyer des données, à l'origine des travaux issus de laboratoires ou des universités.
 
-A l'époque, le projet initial s'appelait ARPANET et était un projet détenu par la Défense des États-Unis.
+A l'époque, le projet initial s'appelait ARPANET et était un projet détenu par la Défense des États-Unis chapeauté par la Defense Advanced Research Projects Agency.
 Le premier objectif était de relier les universités de Stanford, de Los Angeles et celle de l'Utah.
 
 Ce n'est que le 20 septembre 1969 que la première communication voit le jour entre l'université de Californie et celle de Stanford.
@@ -28,7 +28,9 @@ Par exemple, il existe des applications de mail (protocole POP), d'échange de f
 
 ![map](img/geo-mercator.svg)
 
-En clair, **Internet est un réseau informatique sur lequel de nombreuses activités sont basées.**
+En clair, **Internet est un réseau informatique à échelle mondiale sur lequel de nombreuses applications sont basées.**
+
+Pour information, 
 
 ## Notion de réseaux
 
