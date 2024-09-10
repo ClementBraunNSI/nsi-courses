@@ -2,11 +2,11 @@
 
 ## Partie 1 : Introduction aux Booléens
 
-Un booléen est un type de donnée ayant deux valeurs possibles : `True` (vrai) ou `False` (faux). 
+Un booléen est un type de donnée ayant deux valeurs possibles : `True` (vrai) ou `False` (faux).
 
 ### Exercice 1 : Comprendre les booléens
 
-Quel sera le résultat de ces expressions ? Écris `True` ou `False`.
+Quel sera le résultat de ces expressions ? `True` ou `False`.
 
 1. `10 > 5` ➔ `______`
 2. `7 == 9` ➔ `______`
@@ -30,7 +30,7 @@ Les opérateurs de comparaison sont utilisés pour comparer deux valeurs. Le ré
 
 ### Exercice 2 : Comparaisons simples
 
-Donne le résultat des expressions suivantes :
+Donner le résultat des expressions suivantes :
 
 1. `8 == 8` ➔ `______`
 2. `4 != 2` ➔ `______`
@@ -48,7 +48,7 @@ Les opérateurs logiques permettent de combiner plusieurs expressions booléenne
 
 ### Exercice 4 : Utiliser les opérateurs logiques
 
-Pour chaque expression, écris le résultat (`True` ou `False`).
+Pour chaque expression, écrire le résultat (`True` ou `False`).
 
 1. `(5 > 3) and (2 == 2)` ➔ `______`
 2. `(4 < 1) or (6 != 5)` ➔ `______`
