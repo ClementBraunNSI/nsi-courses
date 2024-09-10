@@ -10,7 +10,15 @@
 
 **Écrire un programme qui étant donné deux valeurs cout_de_production et prix_de_vente, affiche dans le terminal `profit` si le cout est inférieur au prix de vente, `perte` sinon.**  
 
-**Écrire un programme qui affiche le maximum entre 3 nombres mis dans des variables.**  
+**Écrire un programme qui lit deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
+
+**Écrire un programme qui prend une note sur 20 et affiche dans le terminal si l'étudiant a obtenu une mention :**
+
+   - `'Très bien'` pour une note supérieure ou égale à 16.
+   - `'Bien'` pour une note entre 14 et 15.
+   - `'Assez bien'` pour une note entre 12 et 13.
+   - `'Passable'` pour une note entre 10 et 11.
+   - `'Échec'` pour une note inférieure à 10.
 
 **Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**  
 
