@@ -30,7 +30,7 @@ def nom_de_fonction(variable_1 : type, vartiable_2 : type) -> type_renvoi :
 ```
 
 ```python
-def celsius_vers_fahrenheit(temp_celsius):
+def celsius_vers_fahrenheit(temp_celsius : int) -> float:
     '''
     params:
         entrée : temp_celsius : entier, température en celsius
@@ -40,7 +40,7 @@ def celsius_vers_fahrenheit(temp_celsius):
     temp_fahrenheit = (temp_celsius * (9/5)) + 32
     return temp_fahrenheit
 
-def afficher_bonjour(prenom):
+def afficher_bonjour(prenom : str) -> None :
     '''
     params:
         entrée : prenom : chaine de caractère, un prénom
