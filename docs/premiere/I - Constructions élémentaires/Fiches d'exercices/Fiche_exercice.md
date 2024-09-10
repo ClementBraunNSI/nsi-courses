@@ -22,6 +22,16 @@
 
 **Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**  
 
+**Écrire un programme qui affiche dans le terminal tous les nombres entre 1 et 100. (à l'aide d'une boucle for puis d'une boucle tant que).**
+
+**Écrire un programme qui affiche dans le terminal tous les nombres pairs entre 1 et 100.**
+
+**Écrire un programme qui prend un nombre entier et affiche sa table de multiplication (jusqu'à 10).**
+
+**Écrire un programme qui lit une chaîne de caractères et affiche le nombre de voyelles présentes dans cette chaîne.**
+
+**Écrire un programme qui calcule la somme des chiffres d'un nombre donné par l'utilisateur (ex : pour 123, il affichera 6).**
+
 **À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20**  
 
    1. x < 20 and x > - 20
