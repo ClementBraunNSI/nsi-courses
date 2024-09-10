@@ -31,6 +31,8 @@
    5. `x % 2 == 0 or x % 3 == 0`
    6. `x < 0 or (x > 0 and x % 2 != 0)`
 
+**Écrire un programme qui prend deux variables `longueur` et `largeur` et qui calcule l'aire d'un rectangle en affichant le résultat sous la forme : `'L'aire du rectangle est : [aire]'`.**
+
 **Évaluer les valeurs de result à la fin de chaque programme.**  
 
 ```python
