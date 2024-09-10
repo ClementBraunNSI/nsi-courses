@@ -58,18 +58,6 @@ On nomme **bit** les chiffres de la représentation en base 2 et un ensemble de 
 
 Pour compter en base 2, on opère de la même manière. On a une colonne qui peut valoir 0 ou 1. Une fois que la colonne atteint 1, on rajoute une colonne à sa gauche à 1 et l'on passe la colonne de droite à 0.
 
-|binaire|décimal|
-|-------|-------|
-| 0000|0|
-| 0001|1|
-| 0010|2|
-| 0011|3|
-| 0100|4|
-| 0101|5|
-| 0110|6|
-| 0111|7|
-| 1000|8|
-
 ### Comment passer de base 2 à base 10?
 
 *Rappel : Compter en base 10*
@@ -175,25 +163,6 @@ Cette base est très utile pour divers usages notamment :
 On peut noter cette base $B_{16} = \lbrace0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\rbrace$
 
 On représente chaque symbole de la représentation en base hexadécimale par un ensemble de 4 bits. On peut donc dresser le tableau suivant :
-
-|base hexadécimale|binaire|décimal|
-|-----------------|-------|-------|
-|0|0000|0
-|1|0001|1
-|2|0010|2
-|3|0011|3
-|4|0100|4
-|5|0101|5
-|6|0110|6
-|7|0111|7
-|8|1000|8
-|9|1001|9
-|A|1010|10
-|B|1011|11
-|C|1100|12
-|D|1101|13
-|E|1110|14
-|F|1111|15
 
 ### Convertir en base hexadécimale
 

@@ -37,7 +37,6 @@ On peut illustrer cela comme un compteur kilométrique de vielle voiture.
 Sur les compteurs des vieilles voitures, faire une marche arrière permettait de réduire le nombre de kilomètres affichés sur le compteur.
 Cependant pour les fourbes voulant trafiquer leur compteurs pour vendre leurs voitures plus chères, ils se sont heurtés au cas où ils reculent au kilomètre $000000$.
 Le compteur étant circulaire, en reculant d'un kilomètre de plus, ce compteur va afficher quelque chose d'étonnant : $999999$.
-
 Malgré cela, cette valeur permet de représenter le kilomètre $-1$.
 Cela a donc donné l'idée pour représenter les nombres négatifs, on appelle cela le complément à 2.
 

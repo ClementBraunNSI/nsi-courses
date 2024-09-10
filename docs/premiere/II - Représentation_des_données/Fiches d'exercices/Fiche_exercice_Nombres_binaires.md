@@ -38,6 +38,8 @@ Convertissez les nombres hexadécimaux suivants en décimal :
 - $2A_{16}$
 - $5E_{16}$
 
+<br/>
+
 **Exercice 5 : Conversion Décimal vers Hexadécimal (Méthode des Divisions Successives)**  
 Convertissez les nombres décimaux suivants en hexadécimal en utilisant la méthode des divisions successives :
 
@@ -77,15 +79,6 @@ Effectuez les multiplications binaires suivantes :
 - $10101_{2} \times 1101_{2}$
 - $11110_{2} \times 110_{2}$
 
-### **Division en Base 2 :**
-
-Effectuez les divisions binaires suivantes :
-
-- $110110_{2} \div 10_{2}$
-- $10101_{2} \div 1_{2}$
-- $1111101_{2} \div 101_{2}$
-- $11001_{2} \div 10_{2}$
-- $100111_{2} \div 1001_{2}$
 
 ## **3. Complément à Deux**
 
@@ -106,8 +99,6 @@ Trouvez le complément à deux des nombres binaires suivants (sur 16 bits) :
 - $0110\ 0101\ 1010\ 1100_{2}$
 - $0001\ 1110\ 0101\ 0111_{2}$
 - $0100\ 1101\ 1011\ 1010_{2}$
-- $0011\ 1010\ 1100\ 0110_{2}$
-- $0111\ 1111\ 1111\ 1111_{2}$
 
 ## **4. Conversion entre Décimal et Complément à Deux**
 
