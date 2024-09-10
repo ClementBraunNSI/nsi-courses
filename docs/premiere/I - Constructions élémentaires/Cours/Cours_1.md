@@ -6,7 +6,7 @@
 
 Le langage python est un langage dit de haut niveau. Cela veut dire qu'il est plus proche de nous (utilisateurs) que de l'ordinateur (du processeur).
 
-Ce langage est basé sur nos ordinateurs qui réalise des instructions de manière séquentielle (c'est à dire réalisées les unes après les autres).
+Ce langage est basé sur nos ordinateurs qui réalisent des instructions de manière séquentielle (c'est à dire réalisées les unes après les autres).
 
 On peut dénombrer un certain nombre d'instructions élémentaires qui permettent de créer un programme.
 Ces instructions élémentaires peuvent utiliser des opérateurs.
@@ -99,7 +99,7 @@ La valeur saisie par l’utilisateur est ensuite renvoyée sous forme de chaîne
 Par exemple, nom = input("Quel est votre nom ? ") demandera à l’utilisateur de saisir son nom, qui sera ensuite stocké dans la variable nom.  
 
 !!! Warning
-    Attention ! La fonction input va permet de stocker une valeur dans une variable mais celle-ci sera forcément du type `string`.
+    Attention ! La fonction input permet de stocker l'entrée de l'utilisateur dans une variable mais celle-ci sera forcément du type `string`.
     Si l'on souhaite traiter des nombres, il faudra alors modifier le type de la valeur à l'aide des fonctions le permettant.
 
 ## Conditions
