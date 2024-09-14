@@ -58,19 +58,18 @@ $$
 
 Voici le pseudo-code associé à la fonction :
 
-```ps
+```pseudo
     fonction nombreLychrel(nb)
         si nb est un palindrome :
             Renvoyer nb
         sinon :
             i <- 0
             tant que nb n'est pas un palindrome
-                ajouter à nb son nombre miroir
-
+                nb_miroir <- nombre_miroir(nb)
+                nb <- nb + nb_miroir
                 si nb est un palindrome:
                     Renvoyer nb
                 i <- i + 1
                 si i > 3000:
                     Renvoyer None
 ```
-
