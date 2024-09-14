@@ -50,8 +50,8 @@ $$
 \begin{equation*}
   {nombreLychrel}=
      \begin{cases}
-        \text{un nombre entier}& \text{si } \text{avant 50 itérations un palindrome est trouvé} \\
-        None & \text{si aucun palindrome n'est trouvé après 50 itérations} 
+        \text{un nombre entier}& \text{si } \text{avant 300 itérations un palindrome est trouvé} \\
+        None & \text{si aucun palindrome n'est trouvé après 300 itérations} 
      \end{cases}
 \end{equation*}
 $$
@@ -70,6 +70,6 @@ Voici le pseudo-code associé à la fonction :
                 si nb est un palindrome:
                     Renvoyer nb
                 i <- i + 1
-                si i > 3000:
+                si i > 300:
                     Renvoyer None
 ```
