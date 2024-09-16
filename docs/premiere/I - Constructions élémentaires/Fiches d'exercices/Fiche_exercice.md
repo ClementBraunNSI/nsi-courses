@@ -1,5 +1,7 @@
 # Fiche d'exercices : Types en python
 
+## Bases de la programmation, blocs conditionnels
+
 **Donner les types des valeurs suivantes : `13`, `14.5`, `'Hello World!'`, `True`, `'15.5'`**  
 
 **À l'aide de python, écrire un programme qui affiche dans le terminal la table de vérité de la fonction booléenne `xor`.**  
@@ -22,26 +24,7 @@
 
 **Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**  
 
-**Écrire un programme qui affiche dans le terminal tous les nombres entre 1 et 100. (à l'aide d'une boucle for puis d'une boucle tant que).**
-
-**Écrire un programme qui affiche dans le terminal tous les nombres pairs entre 1 et 100.**
-
-**Écrire un programme qui prend un nombre entier et affiche sa table de multiplication (jusqu'à 10).**
-
-**Écrire un programme qui lit une chaîne de caractères et affiche le nombre de voyelles présentes dans cette chaîne.**
-
-**Écrire un programme qui calcule la somme des chiffres d'un nombre donné par l'utilisateur (ex : pour 123, il affichera 6).**
-
-**À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20**  
-
-   1. x < 20 and x > - 20
-   2. x > 5 or x < 3
-   3. `not (x == 10)`
-   4. `x >= 0 and x <= 10`
-   5. `x % 2 == 0 or x % 3 == 0`
-   6. `x < 0 or (x > 0 and x % 2 != 0)`
-
-**Écrire un programme qui prend deux variables `longueur` et `largeur` et qui calcule l'aire d'un rectangle en affichant le résultat sous la forme : `'L'aire du rectangle est : [aire]'`.**
+## Étude de code
 
 **Évaluer les valeurs de result à la fin de chaque programme.**  
 
@@ -71,6 +54,31 @@
     else:
         result = m + n
 ```
+
+**À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20**  
+
+   1. x < 20 and x > - 20
+   2. x > 5 or x < 3
+   3. `not (x == 10)`
+   4. `x >= 0 and x <= 10`
+   5. `x % 2 == 0 or x % 3 == 0`
+   6. `x < 0 or (x > 0 and x % 2 != 0)`
+
+## Boucles
+
+**Écrire un programme qui affiche dans le terminal tous les nombres entre 1 et 100. (à l'aide d'une boucle for puis d'une boucle tant que).**
+
+**Écrire un programme qui affiche dans le terminal tous les nombres pairs entre 1 et 100.**
+
+**Écrire un programme qui prend un nombre entier et affiche sa table de multiplication (jusqu'à 10).**
+
+**Écrire un programme qui lit une chaîne de caractères et affiche le nombre de voyelles présentes dans cette chaîne.**
+
+**Écrire un programme qui calcule la somme des chiffres d'un nombre donné par l'utilisateur (ex : pour 123, il affichera 6).**
+
+## Fonctions
+
+**Écrire un programme qui prend deux variables `longueur` et `largeur` et qui calcule l'aire d'un rectangle en affichant le résultat sous la forme : `'L'aire du rectangle est : [aire]'`.**
 
 **Écrire une fonction python `factorielle` qui prend en paramètre un nombre entier n et renvoie la factorielle de ce nombre. On rappelle que la factorielle de 5 vaut $1\times2\times3\times4\times5$.**  
 **Tester cette fonction avec les valeurs 5, 6, 8 et 10.**  
