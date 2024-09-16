@@ -55,6 +55,12 @@
         result = m + n
 ```
 
+## Blocs conditionnels (if)
+
+**Écrire un programme qui permet de trouver la valeur maximale entre trois variables entières. Ce programme affichera dans la console : "Le nombre `x` est plus grand que `y` et `z`.**
+
+**Écrire un programme qui est une calculatrice basique. Elle demandera à l'utilisateur 2 nombres entiers `a` et `b` et un opérateur (`+`,`-`,`*`,`/`). Ce programme affichera : L'opération `a` `operateur` `b` vaut ...**
+
 **À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20**  
 
    1. x < 20 and x > - 20
