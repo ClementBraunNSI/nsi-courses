@@ -10,19 +10,7 @@
 
 **Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'.**  
 
-**Écrire un programme qui étant donné deux valeurs cout_de_production et prix_de_vente, affiche dans le terminal `profit` si le cout est inférieur au prix de vente, `perte` sinon.**  
-
 **Écrire un programme qui lit deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
-
-**Écrire un programme qui prend une note sur 20 et affiche dans le terminal si l'étudiant a obtenu une mention :**
-
-   - `'Très bien'` pour une note supérieure ou égale à 16.
-   - `'Bien'` pour une note entre 14 et 15.
-   - `'Assez bien'` pour une note entre 12 et 13.
-   - `'Passable'` pour une note entre 10 et 11.
-   - `'Échec'` pour une note inférieure à 10.
-
-**Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**  
 
 ## Étude de code
 
@@ -60,6 +48,18 @@
 **Écrire un programme qui permet de trouver la valeur maximale entre trois variables entières. Ce programme affichera dans la console : "Le nombre `x` est plus grand que `y` et `z`.**
 
 **Écrire un programme qui est une calculatrice basique. Elle demandera à l'utilisateur 2 nombres entiers `a` et `b` et un opérateur (`+`,`-`,`*`,`/`). Ce programme affichera : L'opération `a` `operateur` `b` vaut ...**
+
+**Écrire un programme qui étant donné deux valeurs cout_de_production et prix_de_vente, affiche dans le terminal `profit` si le cout est inférieur au prix de vente, `perte` sinon.**  
+
+**Écrire un programme qui prend une note sur 20 et affiche dans le terminal si l'étudiant a obtenu une mention :**
+
+   - `'Très bien'` pour une note supérieure ou égale à 16.
+   - `'Bien'` pour une note entre 14 et 15.
+   - `'Assez bien'` pour une note entre 12 et 13.
+   - `'Passable'` pour une note entre 10 et 11.
+   - `'Échec'` pour une note inférieure à 10.
+
+**Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**  
 
 **À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20**  
 
