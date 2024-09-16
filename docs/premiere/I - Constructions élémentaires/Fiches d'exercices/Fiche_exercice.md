@@ -10,7 +10,7 @@
 
 **Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'.**  
 
-**Écrire un programme qui lit deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
+**Écrire un programme qui instancie deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
 
 ## Étude de code
 
