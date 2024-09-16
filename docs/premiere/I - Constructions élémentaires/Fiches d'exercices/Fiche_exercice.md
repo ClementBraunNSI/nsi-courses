@@ -43,6 +43,15 @@
         result = m + n
 ```
 
+**À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20**  
+
+   1. x < 20 and x > - 20
+   2. x > 5 or x < 3
+   3. `not (x == 10)`
+   4. `x >= 0 and x <= 10`
+   5. `x % 2 == 0 or x % 3 == 0`
+   6. `x < 0 or (x > 0 and x % 2 != 0)`
+
 ## Blocs conditionnels (if)
 
 **Écrire un programme qui permet de trouver la valeur maximale entre trois variables entières. Ce programme affichera dans la console : "Le nombre `x` est plus grand que `y` et `z`.**
@@ -60,15 +69,6 @@
    - `'Échec'` pour une note inférieure à 10.
 
 **Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**  
-
-**À l'aide de python, évaluer les résultats de ces comparaisons avec x = 5, x = 10 et x = -20**  
-
-   1. x < 20 and x > - 20
-   2. x > 5 or x < 3
-   3. `not (x == 10)`
-   4. `x >= 0 and x <= 10`
-   5. `x % 2 == 0 or x % 3 == 0`
-   6. `x < 0 or (x > 0 and x % 2 != 0)`
 
 ## Boucles
 
