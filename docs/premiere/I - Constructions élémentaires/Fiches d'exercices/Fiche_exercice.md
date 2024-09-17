@@ -80,7 +80,12 @@
 
 **Écrire un programme qui lit une chaîne de caractères et affiche le nombre de voyelles présentes dans cette chaîne.**
 
+**Écrire un programme qui affiche les caractères d'une chaîne de caractères dans l'autre sens.**
+*Exemple : si ce programme réalise le traitement sur la chaîne "bonjour", il affichera "ruojnob".
+
 **Écrire un programme qui calcule la somme des chiffres d'un nombre donné par l'utilisateur (ex : pour 123, il affichera 6).**
+
+**Écrire un programme qui demande en boucle un nombre à l'utilisateur. Si le nombre est positif, la boucle continue, si le nombre est négatif, la boucle s'arrête.**
 
 ## Fonctions
 
