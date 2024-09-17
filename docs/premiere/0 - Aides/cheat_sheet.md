@@ -2,7 +2,7 @@
 
 ## Fonctions de base
 
-### `print()`
+### print()
 
 Affiche du texte ou des variables à l'écran.
 
@@ -19,7 +19,7 @@ Bonjour (type => str)
 La somme de 4 + 3 est 7
 ```
 
-### `input()`
+### input()
 
 Demande une entrée à l'utilisateur. Retourne une chaîne de caractères `(str)`.
 
@@ -28,9 +28,7 @@ nom = input("Quel est ton nom ? ")
 # L'utilisateur entre une valeur qui est stockée dans 'nom'
 ```
 
-!!!danger Attention!
 La fonction `input` est une fonction qui renvoie quelque chose. Il faut donc bien penser à stocker dans une variable ce qu'elle renvoie.
-
 
 ### type()
 
@@ -43,9 +41,13 @@ print(type(42))         # Affiche: <class 'int'>
 print(type("Bonjour"))  # Affiche:
 ```
 
+<br/>
+<br/>
+<br/>
+
 ## Les types de base et leurs opérateurs
 
-### `int` (entier)
+### int (entier)
 
 * Opérateurs mathématiques:
   * Addition :  `+`
@@ -61,16 +63,13 @@ print(type("Bonjour"))  # Affiche:
 ```python
 a = 10
 b = 3
-print(a + b)  # 13
-print(a - b)  # 7
-print(a * b)  # 30
-print(a / b)  # 3.3333...
-print(a // b) # 3
-print(a % b)  # 1
-print(a ** b) # 1000
+print(a + b)  -> 13  | print(a * b)  # 30
+print(a - b)  -> 7   | print(a / b)  # 3.3333...
+print(a // b) -> 3   | print(a % b)  # 1
+print(a ** b) ->
 ```
 
-### `str` (chaîne de caractères)
+### str (chaîne de caractères)
 
 * Opérateurs sur les chaînes de caractères:
   * Concaténation : `+`
@@ -85,7 +84,14 @@ print(prenom + " " + nom)  # Affiche: Alice Dupont
 print(prenom * 3)          # Affiche: AliceAliceAlice
 ```
 
-### `bool`
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+### bool
 
 * Valeurs possibles : `True`, `False`
 * Opérateurs logiques :
@@ -119,21 +125,4 @@ a = 10
 b = 20
 print(a == b)  # False
 print(a < b)   # True
-```
-
-## Conversions entre types
-
-* Convertir en entier : `int()`
-* Convertir en chaîne : `str()`
-
-**Exemples:**
-
-```python
-age = "18"
-age_int = int(age)  # Convertit 'age' en entier
-print(type(age_int))  # Affiche: <class 'int'>
-
-num = 42
-num_str = str(num)    # Convertit 'num' en chaîne
-print(type(num_str))  # Affiche: <class 'str'>
 ```
