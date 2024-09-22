@@ -22,7 +22,7 @@ Le logiciel Filius possède 3 modes:
 
 1. Quels sont les éléments de ce réseau?
 2. À quoi sert le routeur?
-3. Dans quels réseaux sont les ordinateurs 1 et 2 ?
+3. Dans quels réseaux sont les ordinateurs 1 et 2 ? (Indication : pour les 2 réseaux, la partie réseau est définie sur 3 octets).
 
 ## Un réseau plus étoffé
 
