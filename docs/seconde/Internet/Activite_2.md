@@ -1,4 +1,4 @@
-# TP ARCHITECTURE RÉSEAU : DNS
+# Activité : Simulation de serveurs WEB et DNS
 
 Nous avons vu au premier TP comment créer un réseau d’ordinateurs et
 comment accéder d’une machine à une autre grâce au routage et aux
