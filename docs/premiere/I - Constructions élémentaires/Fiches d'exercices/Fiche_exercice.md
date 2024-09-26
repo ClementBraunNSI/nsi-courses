@@ -91,7 +91,7 @@
 
 **Écrire un programme qui permet de trouver la valeur maximale entre trois variables entières. Ce programme affichera dans la console : "Le nombre `x` est plus grand que `y` et `z`.**
 
-!!! Note Correction
+??? Note Correction
 
     ```python
     val_1 = int(input("Valeur 1"))
