@@ -19,7 +19,7 @@
 
 **Écrire un programme qui permet d'afficher la somme de deux nombres entiers de la forme 'La somme est x+y' avec x et y défini précédemment.**  
 
-!!! Note Correction
+??? Note "Correction"
 
     ```python
     x = 4
@@ -28,7 +28,7 @@
     ```
 **Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'.**  
 
-!!! Note Correction
+??? Note "Correction"
 
     ```python
     x = 4
@@ -39,7 +39,7 @@
 **Écrire un programme qui instancie deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
 
 
-!!! Note Correction
+??? Note "Correction"
 
     ```python
     chaine_a = "Bonjour"
