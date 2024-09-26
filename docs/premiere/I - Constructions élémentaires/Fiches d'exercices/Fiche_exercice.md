@@ -19,7 +19,7 @@
 
 **Écrire un programme qui permet d'afficher la somme de deux nombres entiers de la forme 'La somme est x+y' avec x et y défini précédemment.**  
 
-??? success "Correction"
+??? fox_correction "Correction"
 
     ```python
     x = 4
@@ -28,7 +28,7 @@
     ```
 **Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'.**  
 
-??? success "Correction"
+??? fox_correction "Correction"
 
     ```python
     x = 4
@@ -39,7 +39,7 @@
 **Écrire un programme qui instancie deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
 
 
-??? success "Correction"
+??? fox_correction "Correction"
 
     ```python
     chaine_a = "Bonjour"
@@ -91,7 +91,7 @@
 
 **Écrire un programme qui permet de trouver la valeur maximale entre trois variables entières. Ce programme affichera dans la console : "Le nombre `x` est plus grand que `y` et `z`.**
 
-??? success "Correction"
+??? fox_correction "Correction"
 
     ```python
     val_1 = int(input("Valeur 1"))
