@@ -6,7 +6,7 @@
 
 **À l'aide de python, écrire un programme qui affiche dans le terminal la table de vérité de la fonction booléenne `xor`.**  
 
-!!! success "Correction"
+??? success "Correction"
 
     ```python
     print('Table de vérité du XOR')
