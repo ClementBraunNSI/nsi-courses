@@ -3,15 +3,15 @@
   }
   .md-typeset .admonition.fox_correction,
   .md-typeset details.fox_correction {
-    border-color: rgb(43, 155, 70);
+    border-color: rgb(242, 117, 0);
   }
   .md-typeset .fox_correction > .admonition-title,
   .md-typeset .fox_correction > summary {
-    background-color: rgba(43, 155, 70, 0.1);
+    background-color: rgba(242, 117, 0,0.1);
   }
   .md-typeset .fox_correction > .admonition-title::before,
   .md-typeset .fox_correction > summary::before {
-    background-color: rgb(43, 155, 70);
+    background-color: rgb(242, 117, 0);
     -webkit-mask-image: var(--md-admonition-icon--fox_correction);
             mask-image: var(--md-admonition-icon--fox_correction);
   }
