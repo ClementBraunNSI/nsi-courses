@@ -6,7 +6,7 @@
 
 **À l'aide de python, écrire un programme qui affiche dans le terminal la table de vérité de la fonction booléenne `xor`.**  
 
-!!! Note Correction
+!!! success "Correction"
 
     ```python
     print('Table de vérité du XOR')
@@ -19,7 +19,7 @@
 
 **Écrire un programme qui permet d'afficher la somme de deux nombres entiers de la forme 'La somme est x+y' avec x et y défini précédemment.**  
 
-??? Note "Correction"
+??? success "Correction"
 
     ```python
     x = 4
@@ -28,7 +28,7 @@
     ```
 **Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'.**  
 
-??? Note "Correction"
+??? success "Correction"
 
     ```python
     x = 4
@@ -39,7 +39,7 @@
 **Écrire un programme qui instancie deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
 
 
-??? Note "Correction"
+??? success "Correction"
 
     ```python
     chaine_a = "Bonjour"
@@ -91,7 +91,7 @@
 
 **Écrire un programme qui permet de trouver la valeur maximale entre trois variables entières. Ce programme affichera dans la console : "Le nombre `x` est plus grand que `y` et `z`.**
 
-??? Note Correction
+??? success "Correction"
 
     ```python
     val_1 = int(input("Valeur 1"))
