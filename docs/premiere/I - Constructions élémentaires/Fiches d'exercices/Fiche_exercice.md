@@ -6,7 +6,7 @@
 
 **À l'aide de python, écrire un programme qui affiche dans le terminal la table de vérité de la fonction booléenne `xor`.**  
 
-!!! Note Correction
+!!! Note Correction d'exercice
 
     ```python
         print('Table de vérité du XOR')
@@ -16,8 +16,6 @@
         print(1,0,1)
         print(1,1,0)
     ```
-
-
 
 **Écrire un programme qui permet d'afficher la somme de deux nombres entiers de la forme 'La somme est x+y' avec x et y défini précédemment.**  
 

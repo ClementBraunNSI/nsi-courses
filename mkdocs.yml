@@ -1,6 +1,7 @@
 site_name: NSI - Clément Braun
 theme:
   name : material
+  custom_dir : my_theme_customizations/
   features :
     - navigation.tabs
     - navigation.tabs.sticky
@@ -38,6 +39,3 @@ copyright: |
   &copy; 2024 <a>Clément Braun</a>
 
 
-plugins:
-    - search
-    - macros
