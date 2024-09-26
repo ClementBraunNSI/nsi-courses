@@ -91,6 +91,21 @@
 
 **Écrire un programme qui permet de trouver la valeur maximale entre trois variables entières. Ce programme affichera dans la console : "Le nombre `x` est plus grand que `y` et `z`.**
 
+!!! Note Correction
+
+    ```python
+    val_1 = int(input("Valeur 1"))
+    val_2 = int(input("Valeur 2"))
+    val_3 = int(input("Valeur 3"))
+
+    if val_1 > val_2 and val_1 > val_3:
+        print(val_1, " est la plus grande")
+    elif val_2 > val_1 and val_2 > val_3:
+        print(val_2, " est la plus grande")
+    elif val_3 > val_1 and val_3 > val_2:
+        print(val_3, " est la plus grande")
+    ```
+
 **Écrire un programme qui est une calculatrice basique. Elle demandera à l'utilisateur 2 nombres entiers `a` et `b` et un opérateur (`+`,`-`,`*`,`/`). Ce programme affichera : L'opération `a` `operateur` `b` vaut ...**
 
 **Écrire un programme qui étant donné deux valeurs cout_de_production et prix_de_vente, affiche dans le terminal `profit` si le cout est inférieur au prix de vente, `perte` sinon.**  
