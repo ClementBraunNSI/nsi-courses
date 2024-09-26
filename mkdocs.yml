@@ -1,6 +1,7 @@
 site_name: NSI - Clément Braun
 theme:
   name : material
+  logo : url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-fox-origami-vitaliy-gorbachev-lineal-vitaly-gorbachev.png')
   features :
     - navigation.tabs
     - navigation.tabs.sticky
