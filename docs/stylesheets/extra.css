@@ -1,0 +1,17 @@
+:root {
+    --md-admonition-icon--fox_correction: url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-fox-origami-vitaliy-gorbachev-lineal-vitaly-gorbachev.png')
+  }
+  .md-typeset .admonition.fox_correction,
+  .md-typeset details.fox_correction {
+    border-color: rgb(43, 155, 70);
+  }
+  .md-typeset .fox_correction > .admonition-title,
+  .md-typeset .fox_correction > summary {
+    background-color: rgba(43, 155, 70, 0.1);
+  }
+  .md-typeset .fox_correction > .admonition-title::before,
+  .md-typeset .fox_correction > summary::before {
+    background-color: rgb(43, 155, 70);
+    -webkit-mask-image: var(--md-admonition-icon--fox_correction);
+            mask-image: var(--md-admonition-icon--fox_correction);
+  }
