@@ -6,15 +6,15 @@
 
 **À l'aide de python, écrire un programme qui affiche dans le terminal la table de vérité de la fonction booléenne `xor`.**  
 
-!!! Note Correction d'exercice
+!!! Note Correction
 
     ```python
-        print('Table de vérité du XOR')
-        print('a','b','s')
-        print(0,0,0)
-        print(0,1,1)
-        print(1,0,1)
-        print(1,1,0)
+    print('Table de vérité du XOR')
+    print('a','b','s')
+    print(0,0,0)
+    print(0,1,1)
+    print(1,0,1)
+    print(1,1,0)
     ```
 
 **Écrire un programme qui permet d'afficher la somme de deux nombres entiers de la forme 'La somme est x+y' avec x et y défini précédemment.**  
