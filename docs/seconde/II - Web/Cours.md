@@ -19,6 +19,8 @@ Pour accéder aux différents serveurs, ces liens *"pointent"* vers les adresses
 
 Pour accéder à toutes ces données, on utilise un **navigateur WEB**, un logiciel qui permet de traiter des demandes de données (appelées **requêtes**), les afficher ou réaliser certains traitement sur celles-ci.
 
+**Anecdote : voici la toute première page WEB, celle créée par les chercheurs du CERN :** [première page web](http://info.cern.ch/hypertext/WWW/TheProject.html)
+
 ## Adresse IP et URL
 
 Il peut être fastidieux de retenir toutes les adresses IP de tous les sites que nous connaissons.
