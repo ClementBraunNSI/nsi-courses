@@ -15,8 +15,8 @@ theme:
     - content.code.copy
   language: fr
   palette:
-    primary: orange
-    accent: amber
+    primary: indigo
+    accent: blue
 
     
 
