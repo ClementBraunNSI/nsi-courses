@@ -24,3 +24,5 @@ Pour accéder à toutes ces données, on utilise un **navigateur WEB**, un logic
 Il peut être fastidieux de retenir toutes les adresses IP de tous les sites que nous connaissons.
 
 Personne n'écrit dans sa barre de recherche dans son navigateur **216.58.214.163** pour accéder à la page WEB associée : celle de *google.fr*
+
+On appelle **URL** (**U**niform **R**essources **L**ocator) l'adresse d'un site WEB, adresse correspondante à l'adresse IP du serveur ou se retrouve la page mais dans des caractères intelligibles par l'être humain.
