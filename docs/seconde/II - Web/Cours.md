@@ -9,7 +9,7 @@ Le but du projet initialement était la création d'une application qui permettr
 La technologie du WEB repose sur l'utilisation d'**hyperliens**. 
 Les hyperliens sont des liens cliquables souvent bleus ressemblant à cela :
 
-[Lien menant à l'acceuil du site](../../index.md)
+[Lien menant à l'accueil du site](../../index.md)
 
 Ces divers **hyperliens** permettent d'accéder à des données qui sont stockées sur des **serveurs**, comme des pages WEB, des images ou tout type de contenu.
 
