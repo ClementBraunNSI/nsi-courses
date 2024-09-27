@@ -108,8 +108,39 @@
 
 **Écrire un programme qui est une calculatrice basique. Elle demandera à l'utilisateur 2 nombres entiers `a` et `b` et un opérateur (`+`,`-`,`*`,`/`). Ce programme affichera : L'opération `a` `operateur` `b` vaut ...**
 
+??? fox_correction "Correction"
+
+    ```python
+        a = int(input("Entrez un premier nombre"))
+        b = int(input("Entrez un second nombre"))
+        operateur = input("Entrez un opérateur : + - / *")
+
+        if operateur == "+":
+            print(a+b)
+        elif operateur == "-":
+            print(a-b)
+        elif operateur == "*":
+            print(a*b)
+        elif operateur == "/":
+            # On ne peut pas diviser par zéro
+            if b != 0:
+                print(a/b)
+    ```
+
 **Écrire un programme qui étant donné deux valeurs cout_de_production et prix_de_vente, affiche dans le terminal `profit` si le cout est inférieur au prix de vente, `perte` sinon.**  
 
+??? fox_correction "Correction"
+
+    ```python
+        prix_de_vente = int(input("Entrez un prix de vente"))
+        cout_de_productioon = int(input("Entrez un coût de production"))
+        if prix_de_vente > cout_de_production:
+            print("profit")
+        elif prix_de_vente == cout_de_production:
+            print("pas de marge")
+        else: 
+            print("perte")
+    ```
 **Écrire un programme qui prend une note sur 20 et affiche dans le terminal si l'étudiant a obtenu une mention :**
 
    - `'Très bien'` pour une note supérieure ou égale à 16.
@@ -119,3 +150,13 @@
    - `'Échec'` pour une note inférieure à 10.
 
 **Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**  
+
+??? fox_correction "Correction"
+
+    ```python
+        a = int(input("Entrez un nombre"))
+        if a % 2 == 0 : # Si le reste de la division de a par 2 est 0 -> Si 2 divise a
+            print("pair")
+        else:
+            print("impair")
+    ```
