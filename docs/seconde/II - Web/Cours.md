@@ -27,6 +27,6 @@ Personne n'écrit dans sa barre de recherche dans son navigateur **216.58.214.16
 
 On appelle **URL** (**U**niform **R**essources **L**ocator) l'adresse d'un site WEB, adresse correspondante à l'adresse IP du serveur ou se retrouve la page mais dans des caractères intelligibles par l'être humain.
 
-Une **URL** est consituée de plusieurs parties :
+Une **URL** est consituée de plusieurs parties séparées par des points:
 
-$\underbrace{\texttt{www}}_{\texttt{sous-domaine}}\overbrace{\texttt{google}}^{\texttt{nom de domaine}}\underbrace{\texttt{com}}_{\texttt{extension du domaine}}$
+$\overbrace{\texttt{http(s)://}}^{\texttt{protocole utilisé}}\underbrace{\texttt{www}}_{\texttt{sous-domaine}}\overbrace{\texttt{google}}^{\texttt{nom de domaine}}\underbrace{\texttt{com}}_{\texttt{extension du domaine}}$
