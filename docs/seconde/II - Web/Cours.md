@@ -63,11 +63,33 @@ Admettons que nous cherchons le site **windows.microsoft.com**
 
 ![dns](dns.png)
 
+## Le langage des pages WEB : HTML
+
+Le **HTML** (HyperText Markup Language) a été créé en **1991** par **Tim Berners-Lee**, alors qu'il travaillait au **CERN**. C'est un langage dit "**à balises**".
+
+Un **langage à balises** est un type de langage informatique utilisé pour structurer et organiser des données en les entourant avec des **balises** ou **tags**.  
+
+Les balises sont des éléments de texte spécifiques, généralement entourés de crochets angulaires (`< >`), qui indiquent comment le contenu doit être interprété ou affiché.
+
+Dans un langage à balises, chaque élément est délimité par une balise d’ouverture et une balise de fermeture.  
+Par exemple, dans **HTML**, la balise `<p>` marque le début d’un paragraphe, et la balise `</p>` marque sa fin :
+
+```html
+<p>Ceci est un paragraphe.</p>
+```
+
+Les balises ne sont pas visibles par l’utilisateur final, elles servent à structurer le document ou à fournir des **informations** sur la manière dont le contenu doit être rendu.  
+
+Les langages à balises sont souvent utilisés dans la **création de documents web** (comme HTML ou XML), car ils permettent d’ajouter une signification **sémantique** aux données et de contrôler la mise en forme ou le comportement du contenu.
+
+
 ## HTTP : protocole des requêtes sur le WEB
 
-**HTTP** (HyperText Transfer Protocol) est un **protocole de communication** qui permet l'échange de données sur le **Web**. 
-Il fonctionne selon un modèle **client-serveur**, où un **client** (par exemple, un navigateur web) envoie une **requête** à un **serveur** pour accéder à une ressource, comme une page web. 
+**HTTP** (HyperText Transfer Protocol) est un **protocole de communication** qui permet l'échange de données ou de pages sur le **WEB**.  
+Il fonctionne selon un modèle **client-serveur**, où un **client** (par exemple, un navigateur web) envoie une **requête** à un **serveur** pour accéder à une ressource, comme une page web.  
 
-Cette requête inclut une méthode, comme **GET** (pour récupérer des données) ou **POST** (pour envoyer des données). 
-Le **serveur** répond avec un **code de statut** (comme **200 OK** si tout se passe bien) et la ressource demandée, qui peut être un fichier **HTML**, une image, ou un autre type de contenu. 
+Cette requête inclut une méthode, comme **GET** (pour récupérer des données) ou **POST** (pour envoyer des données).  
+Le **serveur** répond avec un **code de statut** (comme **200 OK** si tout se passe bien) et la ressource demandée, qui peut être un fichier **HTML**, une image, ou un autre type de contenu.  
+
+
 
