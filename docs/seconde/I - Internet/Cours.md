@@ -135,28 +135,6 @@ Le protocole TCP-IP fonctionne en plusieurs étapes :
 3. Tous les paquets sont reconstruits à l'aide de leur numérotation.
 4. Enfin, un contrôle est réalisé par la machine de réception pour s'assurer que la donnée est bien **intègre**, c'est à dire que la donnée est bien correcte. Si la donnée n'est pas correcte, la machine de reception demande de renvoyer les paquets "défectueux".
 
-## Adresses symboliques
-
-Pour naviguer sur Internet et sur le WEB principalement, on utilise que très peu les adresses IP, pour faciliter les choses, on utilise des adresses dites "symboliques".
-
-Les adresses symboliques sont des adresses qui comportent des mots, des noms par exemple **www.google.fr**.
-
-Il existe cependant un problème : un ordinateur ne comprend que des 0 et des 1.
-Il faut donc pouvoir donner à l'ordinateur une manière de relier les adresses symboliques aux adresses IP.
-
-Cela est le rôle du **serveur DNS**.
-
-Le **serveur DNS** possède une table de correspondance entre les caractères de l'adresse symbolique et l'adresse IP.
-
-Par exemple, pour accéder à l'adresse *www.google.fr*, il faut demander aux serveurs DNS quelle est l'adresse IP correspondante.  
-
-Le fonctionnement des serveurs DNS est dit **récursifs**, c'est à dire que l'on cherche une réponse à un problème en résolvant le problème petit à petit en le divisant suivant plusieurs cas.  
-En utilisant ces divers cas, on résoud le problème en utilisant les diverses réponses précédentes.
-
-On peut en dresser un schéma explicatif :  
-
-**Dessiner le schéma explicatif de serveurs DNS récursifs.**.
-
 ## Recherches : Topologie de réseaux
 
 **Réaliser une recherche sur une des topologies de réseaux suivantes :**
