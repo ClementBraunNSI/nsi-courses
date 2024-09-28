@@ -30,3 +30,44 @@ On appelle **URL** (**U**niform **R**essources **L**ocator) l'adresse d'un site 
 Une **URL** est consituée de plusieurs parties séparées par des points:
 
 $\overbrace{\texttt{http(s)://}}^{\texttt{protocole utilisé}}\underbrace{\texttt{www}}_{\texttt{sous-domaine}}\overbrace{\texttt{google}}^{\texttt{nom de domaine}}\underbrace{\texttt{com}}_{\texttt{extension du domaine}}$
+
+Le serveur **DNS** (**D**omain **N**ame **S**erver) possède une table de correspondance entre l'adresse IP du serveur disposant des informations et d'une adresse dite **symbolique** que nous pouvons retenir plus facilement.
+
+Par exemple, nos navigateurs web possèdent des tables de ce style pour éviter de faire les mêmes requêtes tous les jours.
+
+|Site|Adresse symbolique|Adresse IP|
+|-|-|-|
+|Google|www.google.fr|172.217.20.163|
+|Youtube|www.youtube.fr|142.250.178.142|
+|Leboncoin|www.leboncoin.fr|18.164.52.43|
+|Amazon|www.amazon.fr|52.95.116.113|
+
+## Fonctionnement du serveur DNS
+
+Le serveur DNS permet d'associer une adresse symbolique avec une adresse IP.
+Pour obtenir l'adresse IP d'un serveur disposant d'une ressource que l'on cherche via une adresse symbolique, on peut distinguer plusieurs cas :
+
+### Adresse symbolique connue dans le navigateur
+
+Si l'adresse symbolique est déjà stockée dans le cache du navigateur (ou du système d'exploitation), celui-ci remplace envoie la requête de recherche de la ressource avec l'adresse IP qu'il connait déjà dans sa table.
+
+Par exemple, si l'on cherche à aller sur le site www.google.fr, en dactylographiant notre adresse dans la barre de recherche, le navigateur va envoyer directement la requête de la page du site à l'adresse IP **172.217.20.163**.
+
+### Adresse symbolique non connue dans le navigateur
+
+Si l'adresse symbolique n'est pas connue par le navigateur (ou le système d'exploitation), divers requêtes sont réalisées à la suite pour trouver le bon serveur DNS qui dispose de l'adresse à chercher.
+
+Cela va s'exécuter de manière **récursive**.
+
+Admettons que nous cherchons le site **windows.microsoft.com**
+
+![dns](dns.png)
+
+## HTTP : protocole des requêtes sur le WEB
+
+**HTTP** (HyperText Transfer Protocol) est un **protocole de communication** qui permet l'échange de données sur le **Web**. 
+Il fonctionne selon un modèle **client-serveur**, où un **client** (par exemple, un navigateur web) envoie une **requête** à un **serveur** pour accéder à une ressource, comme une page web. 
+
+Cette requête inclut une méthode, comme **GET** (pour récupérer des données) ou **POST** (pour envoyer des données). 
+Le **serveur** répond avec un **code de statut** (comme **200 OK** si tout se passe bien) et la ressource demandée, qui peut être un fichier **HTML**, une image, ou un autre type de contenu. 
+
