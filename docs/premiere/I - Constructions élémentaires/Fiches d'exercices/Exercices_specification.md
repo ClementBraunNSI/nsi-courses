@@ -66,13 +66,6 @@ def surface(rayon):
     return aire
 ```
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 ## Nommage de variables
 
 Un code peut être documenté correctement mais si les variables et le nom de fonction ne sont pas compréhensibles, cela peut impacter négativement la compréhension du code.
