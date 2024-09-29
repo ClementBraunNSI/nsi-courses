@@ -1,4 +1,6 @@
-# Exercices : Boucles
+# Fiche d'exercices : Boucles
+
+
 
 **Écrire un programme qui affiche dans le terminal tous les nombres entre 1 et 100. (à l'aide d'une boucle for puis d'une boucle tant que).**
 

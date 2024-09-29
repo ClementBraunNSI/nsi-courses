@@ -1,4 +1,4 @@
-## Fonctions
+# Fiche d'exercices : Fonctions
 
 **Écrire un programme qui prend deux variables `longueur` et `largeur` et qui calcule l'aire d'un rectangle en affichant le résultat sous la forme : `'L'aire du rectangle est : [aire]'`.**
 
