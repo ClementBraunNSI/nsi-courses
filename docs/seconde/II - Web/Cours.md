@@ -19,6 +19,20 @@ Pour accéder à toutes ces données, on utilise un **navigateur WEB**, un logic
 
 **Anecdote : voici la toute première page WEB, celle créée par les chercheurs du CERN :** [première page web](http://info.cern.ch/hypertext/WWW/TheProject.html)
 
+## Modèle Client - Serveur
+
+On a vu précédemment dans les échanges TCP, que deux machines communiquaient : **emettrice et réceptrice.**
+
+On appelle **client** une machine qui souhaite recevoir des informations ou des données. Cette machine correspond à la machine que l'on nommait *réceptrice*.
+
+On appelle **serveur** une machine qui dispose d'informations ou de données et qui a pour rôle de les envoyer. Cette machine correspond à ce que l'on nommait *émettrice*.
+
+Lors d'un échange entre un client et un serveur, ceux-ci émettent des échanges formalisés que l'on appelle **requête**.
+
+On peut schématiser cela de cette manière : 
+
+![client_serveur](client_serveur.png)
+
 ## Adresse IP et URL
 
 Il peut être fastidieux de retenir toutes les adresses IP de tous les sites que nous connaissons.
