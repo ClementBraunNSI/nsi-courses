@@ -74,3 +74,7 @@
 
 **Écrire un programme qui demande un nombre `n` à un utilisateur et affiche dans le terminal ses diviseurs (autre que lui-même et 1). S'il n'en a aucun, affiche dans le terminal "Aucun, `n` est premier".**
 *Exemple : $12 \rightarrow 2~3~4~6$ et $13 \rightarrow \texttt{Aucun, 13 est premier}$*
+
+**Écrire un programme qui réalise implémante la conjecture de Syracuse. Tant que le nombre n'est pas 1, s'il est pair on le divise par 2 sinon on le multiplie par 3 et on rajoute 1.**
+
+*Exemple :* $10 \rightarrow 5 \rightarrow 16 \rightarrow 8 \rightarrow 4 \rightarrow 2 \rightarrow 1$.
