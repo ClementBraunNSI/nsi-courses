@@ -1,14 +1,62 @@
 # Fiche d'exercices : Boucles
 
-
-
 **Écrire un programme qui affiche dans le terminal tous les nombres entre 1 et 100. (à l'aide d'une boucle for puis d'une boucle tant que).**
+
+??? fox_correction "Correction"
+
+    ```python
+    # Utilisation d'une boucle for
+    for i in range(1, 101):
+     print(i)
+
+    # Utilisation d'une boucle while
+    i = 1
+    while i <= 100:
+        print(i)
+        i += 1
+    ```
 
 **Écrire un programme qui affiche dans le terminal tous les nombres pairs entre 1 et 100.**
 
+??? fox_correction "Correction"
+
+    ```python
+     # Utilisation d'une boucle for
+    for i in range(1, 101):
+        if i % 2 == 0 :
+            print(i)
+
+    # Utilisation d'une boucle while
+    i = 1
+    while i <= 100:
+        if i % 2 == 0:
+            print(i)
+        i += 1
+    ```
+
 **Écrire un programme qui prend un nombre entier et affiche sa table de multiplication (jusqu'à 10).**
 
+??? fox_correction "Correction"
+
+    ```python
+    # Saisie d'un nombre entier
+    nombre = int(input("Entrez un nombre entier: "))
+
+    # Affichage de la table de multiplication
+    for i in range(1, 11):
+        print(i, " x ", nombre , " = ", i*nombre)
+    ```
+
 **Écrire un programme qui réalise la somme des nombres entiers de 1 jusque 100.**
+
+??? fox_correction "Correction"
+
+    ```python
+    somme = 0
+    for i in range(1,101):
+        somme = somme + i
+    print("La somme de 1 à 100 est", somme)
+    ```
 
 **Écrire un programme qui lit une chaîne de caractères et affiche le nombre de voyelles présentes dans cette chaîne.**
 
