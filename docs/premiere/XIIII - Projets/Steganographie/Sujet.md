@@ -119,8 +119,8 @@ def chiffrer_image(img1, img2):
     return image_chiffree
 ```
 
-Tester avec les deux images ci-dessous (cliquez pour y accéder).
-[maya](maya.pgm)
+Tester avec les deux images ci-dessous (cliquez pour y accéder).  
+[maya](maya.pgm)  
 [lara](lara.pgm)
 
 ### Déchiffrage d'une image chiffrée pour récupérer le message.
