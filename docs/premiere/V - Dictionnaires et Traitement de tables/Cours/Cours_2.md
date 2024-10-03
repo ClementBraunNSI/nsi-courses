@@ -27,3 +27,9 @@ with open('chemin_du_fichier.csv', newline='') as fichier_csv:
    for ligne in lecteur:
       liste_a_remplir.append(dict(ligne))
 ```
+
+### Exemple
+
+Le fichier CSV [commune.csv](./communes.csv) représente l'ensemble des communes de France, associée à leur code postal, département etc...
+
+
