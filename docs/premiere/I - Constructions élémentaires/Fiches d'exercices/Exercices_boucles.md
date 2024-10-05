@@ -163,7 +163,7 @@
     while nombre != 1:
         print(nombre)
         if nombre % 2 == 0 : 
-            nombre == nombre // 2
+            nombre = nombre // 2
         else:
             nombre = (nombre * 3) + 1
     ```
