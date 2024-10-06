@@ -21,6 +21,23 @@ Afficher dans le terminal les 5 premiers éléments de la liste en utilisant une
 Afficher les éléments du quatrième au huitième en utilisant une boucle for.  
 Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant une boucle while.
 
+## Tuples et fonctions
+
+1. Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` la valeur demandée est dans la liste, `False` sinon.  
+
+2. On souhtaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant un tuple (abscisse, ordonnée).
+   1. Instancier un point A d'abscisse -3 et d'ordonnée 2
+      Instancier un point B d'abscisse 4 et d'ordonée 4.
+   2. Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres. On rappelle que la formule pour trouver le point du milieu est $\texttt{milieu}(\frac{x_A + x_B}{2}, \frac{y_A + y_B}{2})$
+   3. Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points. On rappelle la formule pour trouver la distance $\sqrt{((x_A+x_B)^2 + (y_A + y_B)^2)}$.  
+
+3. Écrire une fonction `moyenne` qui prend en paramètre un tuple d'entiers et renvoie la moyenne de tous les nombres présents dans ce tuple.
+
+4. Écrire une fonction `inverser_tableau` qui prend en paramètre un tuple et renvoie un autre tuple qui contient tous les éléments de celui en paramètre mais dans le sens inverse.
+
+5. On souhaite modéliser un jeu de carte. Chaque carte sera instanciée par un tuple (nombre, couleur). On souhaite vérifier qu'une carte créée soit valide. Une carte est valide si le nombre est compris entre 1 et 13 et si la couleur est soit "Coeur", "Trèfle", "Pique" ou "Carreaux".
+Créer une fonction `est_valide` qui prend en paramètre un tuple correspondant à un tuple et renvoie **True** si la carte est valide, **False** sinon. Pour faciliter, on peut se munir d'un tuple qui contient toutes les couleurs et de l'opérateur **in** pour vérifier si la couleur est valide.
+
 ## Listes par compréhension
 
 1. On dispose de la compréhension suivante [i for i in range(10)].
