@@ -13,11 +13,12 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - header.autohide
   language: fr
   palette:
     primary: indigo
     accent: blue
-
+    
     
 
 markdown_extensions:

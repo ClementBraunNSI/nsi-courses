@@ -25,7 +25,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ### Exercice 1
 
-{==Algorithme à savoir==}
+{==Algorithme à savoir==}  
 Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.
 
 ### Exercice 2
