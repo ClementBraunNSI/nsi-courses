@@ -102,6 +102,9 @@ $8208 = 8^4 + 2^4+ 0^4+8^4$
 Vous pourrez utiliser la fonction `est_premier` dans la partie de niveau 2.  
 *Exemple : somme_premiers(10) doit renvoyer 17 car les nombres premiers inférieurs à 10 sont 2,3,5,7 et $$2+3+5+7=17$$*  
 
+**Écrire une fonction `compter_occurences` qui prend en paramètres une chaîne de caractère et un caractère et renvoie le nombre de fois que le caractère apparaît dans la chaîne de caractère.**  
+*Exemple : compter_occurences("programmation", "m") doit renvoyer 2.*
+
 ## Exercices de niveau 4
 
 **Écrire une fonction `tetration` qui prend en paramètre un nombre `n` et son tétré `t` et renvoie la tétration du nombre par le tétré.**
