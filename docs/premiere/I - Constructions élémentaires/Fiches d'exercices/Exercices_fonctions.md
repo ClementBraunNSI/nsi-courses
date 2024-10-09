@@ -91,3 +91,4 @@ On parle de tétration quand on réalise une "tour de puissance", on peut résum
 Par exemple :  
 ${^{3}3} = 3^{3{^3}} = 3^{3\times3} = 3^{27} = 7 625 597 484 987$
 ${^{5}4} = 4^{4^{4^{4^{4}}}} = 4 ^ {4^{4^{4\times4}}} = 4^{4^{4^{16}}} = 4^{4^{4294967296}}\cdots$.$
+*Exemple : tetration(3,3) doit renvoyer 7 625 597 484 987.*
