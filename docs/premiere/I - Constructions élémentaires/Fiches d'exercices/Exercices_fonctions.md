@@ -1,5 +1,7 @@
 # Fiche d'exercices : Fonctions
 
+## Exercices de niveau 1
+
 **Écrire un programme qui prend deux variables `longueur` et `largeur` et qui calcule l'aire d'un rectangle en affichant le résultat sous la forme : `'L'aire du rectangle est : [aire]'`.**
 
 ??? fox_correction "Correction"
@@ -19,6 +21,21 @@
         return aire
     ```
 
+
+**Tester cette fonction avec les valeurs 5, 6, 8 et 10.**  
+
+**Écrire une fonction `moyenne` qui prend deux nombres en paramètre et renvoie la moyenne de ces deux nombres.**
+
+??? fox_correction "Correction"
+
+    ```python
+    def moyenne(note_1 : float, note_2 : float)-> float:
+        moy = (note_1 + note_2)/2
+        return moy
+    ```
+    
+## Exercices de niveau 2
+
 **Écrire une fonction python `factorielle` qui prend en paramètre un nombre entier n et renvoie la factorielle de ce nombre. On rappelle que la factorielle de 5 vaut $1\times2\times3\times4\times5$.**  
 
 ??? fox_correction "Correction"
@@ -32,14 +49,13 @@
         return facto
     ```
 
-**Tester cette fonction avec les valeurs 5, 6, 8 et 10.**  
+## Exercices de niveau 3
 
+## Exercices de niveau 4
 
-**Écrire une fonction `moyenne` qui prend deux nombres en paramètre et renvoie la moyenne de ces deux nombres.**
-??? fox_correction "Correction"
-
-    ```python
-    def moyenne(note_1 : float, note_2 : float)-> float:
-        moy = (note_1 + note_2)/2
-        return moy
-    ```
+**Écrire une fonction `tetration` qui prend en paramètre un nombre `n` et son tétré `t` et renvoie la tétration du nombre par le tétré.**
+La tétration est une opération mathématique se rapprochant des puissances.
+On parle de tétration quand on réalise une "tour de puissance", on peut résumer cela ainsi :
+Par exemple : ${^{3}3} = 3^{3{^3}} = 3^{3\times3} = 3^{27} = 7 625 597 484 987
+\newline
+{^{5}4} = 4^{4^{4^{4^{4}}}} = 4 ^ {4^{4^{4\times4}}} = 4^{4^{4^{16}}} = 4^{4^{4294967296}}\cdots$.
