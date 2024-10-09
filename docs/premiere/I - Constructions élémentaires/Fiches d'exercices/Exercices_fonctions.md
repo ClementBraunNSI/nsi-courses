@@ -31,14 +31,22 @@
         return moy
     ```
 
-**Écrire une fonction `somme` qui prend deux nombres en paramètres et renvoie leur somme.**
-*Exemple : somme(4,5) doit renvoyer 9.*
+**Écrire une fonction `somme` qui prend deux nombres en paramètres et renvoie leur somme.**  
+*Exemple : somme(4,5) doit renvoyer 9.*  
 
-**Écrire une fonction `parite` qui prend en paramètre un nombre et renvoie `True` s'il est pair, `False` sinon.**
-*Exemple : parite(7) doit renvoyer Faux.*
+**Écrire une fonction `parite` qui prend en paramètre un nombre et renvoie `True` s'il est pair, `False` sinon.**  
+*Exemple : parite(7) doit renvoyer Faux.*  
 
-**Écrire une fonction `maximum_deux_nombres` qui prend deux nombres en paramètres et renvoie le plus grand des deux.**
-*Exemple : maximum(10,15) doit renvoyer 15.*
+**Écrire une fonction `maximum_deux_nombres` qui prend deux nombres en paramètres et renvoie le plus grand des deux.**  
+*Exemple : maximum(10,15) doit renvoyer 15.*  
+
+**Écrire une fonction `valeur_absolue` qui prend un nombre en paramètre et renvoie sa valeur absolue.**  
+On rappelle que la valeur absolue d'un nombre correspond à celui-ci peu importe son signe, c'est à dire que la valeur absolue de -8 est 8 et que la valeur absolue de 56 est 56.  
+*Exemple : valeur_absolue(-8) doit renvoyer 8.*
+
+**Écrire une fonction `multiplication_par_addition` qui prend deux nombres en paramètres et renvoie le produit des deux nombres en utilisant une succession d'additions.**  
+On sait que $4\times3 = 4 + 4 + 4 = 12~\texttt{ou}~4\times3 = 3 + 3 + 3 + 3 = 12$  
+*Exemple : multiplication_par_addition(4,3) doit renvoyer 12.*
 
 ## Exercices de niveau 2
 
