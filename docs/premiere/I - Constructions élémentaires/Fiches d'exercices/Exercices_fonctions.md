@@ -107,7 +107,7 @@ Vous pourrez utiliser la fonction `est_premier` dans la partie de niveau 2.
 
 ## Exercices de niveau 4
 
-**Écrire une fonction `tetration` qui prend en paramètre un nombre `n` et son tétré `t` et renvoie la tétration du nombre par le tétré.**
+**Écrire une fonction `tetration` qui prend en paramètre un nombre `n` et son tétré `t` et renvoie la tétration du nombre par le tétré.**  
 La tétration est une opération mathématique se rapprochant des puissances.
 On parle de tétration quand on réalise une "tour de puissance", on peut résumer cela ainsi :
 Par exemple :  
