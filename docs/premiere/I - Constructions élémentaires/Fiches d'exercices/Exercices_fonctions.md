@@ -63,19 +63,19 @@ On sait que $4\times3 = 4 + 4 + 4 = 12~\texttt{ou}~4\times3 = 3 + 3 + 3 + 3 = 12
         return facto
     ```
 
-**Écrire une fonction `somme_n_entiers` qui prend en paramètre un entier `n` et renvoie la somme de tous les entiers de 1 à n.**
+**Écrire une fonction `somme_n_entiers` qui prend en paramètre un entier `n` et renvoie la somme de tous les entiers de 1 à n.**  
 *Exemple : somme_n_entiers(100) doit renvoyer 5050.*
 
-**Écrire une fonction `compter_voyelles` qui prend en paramètre une chaîne de caractère et renvoie le nombre de voyelles.**
+**Écrire une fonction `compter_voyelles` qui prend en paramètre une chaîne de caractère et renvoie le nombre de voyelles.**  
 *Exemple : compteur_voyelles("bonjour") doit renvoyer 3.*
 
-**Écrire une fonction `puissance` qui prend en paramètres deux entiers a et b et renvoie a à la puissance b. Cette fonction n'utilisera pas l'opérateur `**` mais plutôt une boucle.**
+**Écrire une fonction `puissance` qui prend en paramètres deux entiers a et b et renvoie a à la puissance b. Cette fonction n'utilisera pas l'opérateur `**` mais plutôt une boucle.**  
 *Exemple : puissance(3,2) doit renvoyer 9.*
 
-**Écrire une fonction `est_premier` qui prend en paramètre un entier et renvoie `True` s'il est premier, `False` sinon.**
+**Écrire une fonction `est_premier` qui prend en paramètre un entier et renvoie `True` s'il est premier, `False` sinon.**  
 Un nombre est premier uniquement s'il est divisible par 1 et par lui même.  
-Indication : pour réussir cet exercice, vous utiliserez une boucle et vous compterez le nombre de diviseurs.
-Rappel : un nombre en divise un autre si le reste de leur division est 0. En python, l'opérateur qui obtient le reste de la division est `%`.
+Indication : pour réussir cet exercice, vous utiliserez une boucle et vous compterez le nombre de diviseurs.  
+Rappel : un nombre en divise un autre si le reste de leur division est 0. En python, l'opérateur qui obtient le reste de la division est `%`.  
 *Exemple : est_premier(2) doit renvoyer Vrai, est_premier(6) doit renvoyer Faux.*
 
 **Écrire une fonction `somme_chiffres` qui prend un entier en paramètre et renvoie la somme de ses chiffres.**
@@ -89,6 +89,6 @@ Rappel : un nombre en divise un autre si le reste de leur division est 0. En pyt
 La tétration est une opération mathématique se rapprochant des puissances.
 On parle de tétration quand on réalise une "tour de puissance", on peut résumer cela ainsi :
 Par exemple :  
-${^{3}3} = 3^{3{^3}} = 3^{3\times3} = 3^{27} = 7 625 597 484 987$
+${^{3}3} = 3^{3{^3}} = 3^{3\times3} = 3^{27} = 7 625 597 484 987$  
 ${^{5}4} = 4^{4^{4^{4^{4}}}} = 4 ^ {4^{4^{4\times4}}} = 4^{4^{4^{16}}} = 4^{4^{4294967296}}\cdots$.
 *Exemple : tetration(3,3) doit renvoyer 7 625 597 484 987.*
