@@ -29,9 +29,16 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
   - admonition
+
+
 
 extra_css:
   - stylesheets/extra.css
