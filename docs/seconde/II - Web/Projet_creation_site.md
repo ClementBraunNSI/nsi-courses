@@ -48,3 +48,23 @@ On peut associer une **classe** à chacun des attributs que l'on écrit dans un 
 En analysant le fichier de la partie 2 à trouver ([partie 2](./index_partie_2.html)), **ajouter chacune des classes aux balises que vous avez créées.**
 
 Ce fichier de partie 2 correspond aussi à une correction de la partie 1.
+
+Si tout est bien réalisé, que toutes les balises sont bien ajoutées et que tous les styles sont bien ajoutés : 
+
+Vous devrez avoir cet affichage pour le site.
+
+![final](./presque_fini.png)
+
+## Partie 3 : Modifications finales
+
+La dernière étape de ce projet correspond au fait de retirer chacune des bordures.
+Elles sont dans le fichier `style.css` dans chacune des classe. Retirer tous les attributs en rapport à la bordure (indice : `border`).
+
+En vous renseignant sur internet :
+
+- **Ajouter dans la classe container l'instruction qui modifie l'image de fond. Celle-ci est stockée dans le dossier `image` avec pour nom `background.png`**  
+- **Modifier le fichier de style pour avoir les couleurs de texte correspondant à la maquette.**  
+
+Vous devez avoir ainsi :
+
+![fini](./final.png)
