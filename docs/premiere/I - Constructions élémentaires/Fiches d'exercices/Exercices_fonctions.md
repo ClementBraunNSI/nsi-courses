@@ -11,6 +11,8 @@
         print("L'aire du rectangle est ", longueur * largeur)
     ```
 
+---
+
 **Écrire une fonction python `aire_rectangle` qui prend en paramètres deux réels correspondant à la largeur et la longueur d'un rectangle et renvoie l'aire de ce rectangle.**  
 
 ??? fox_correction "Correction"
@@ -20,6 +22,8 @@
         aire = longueur * largeur
         return aire
     ```
+
+---
 
 **Écrire une fonction `moyenne` qui prend deux réels en paramètres et renvoie la moyenne de ces deux nombres.**
 
