@@ -1,1 +1,0 @@
-# Exercices sur les algorithmes des tableaux
