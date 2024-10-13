@@ -29,19 +29,6 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
-On souhaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant une liste (abscisse, ordonnée).
-
-1. Instancier un point A d'abscisse -3 et d'ordonnée 2.  
-   Instancier un point B d'abscisse 4 et d'ordonnée 4.
-
-2. **Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres.**  
-   On rappelle que la formule pour trouver le point du milieu est $\texttt{milieu}(\frac{x_A + x_B}{2}, \frac{y_A + y_B}{2})$.
-
-3. **Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points.**
-   On rappelle la formule pour trouver la distance $\sqrt{((x_A - x_B)^2 + (y_A - y_B)^2)}$.
-
----
-
 **Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans ce liste.**
 
 ---
@@ -60,9 +47,14 @@ On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un li
 
 ---
 
+{==Algorithme à savoir==}  
+
 **Écrire une fonction `minimum_liste` qui prend en paramètre une liste d'entiers et renvoie la valeur minimum de la liste et son indice.**  
 
 ---
+
+{==Algorithme à savoir==}  
+
 **Écrire une fonction `maximum_liste` qui prend en paramètre une liste d'entiers et renvoie la valeur maximum de la liste et son indice.**  
 
 ---
@@ -78,6 +70,17 @@ On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un li
 **Écrire une fonction `est_croissante` qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.**
 
 ---
+
+On souhaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant une liste (abscisse, ordonnée).
+
+1. Instancier un point A d'abscisse -3 et d'ordonnée 2.  
+   Instancier un point B d'abscisse 4 et d'ordonnée 4.
+
+2. **Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres.**  
+   On rappelle que la formule pour trouver le point du milieu est $\texttt{milieu}(\frac{x_A + x_B}{2}, \frac{y_A + y_B}{2})$.
+
+3. **Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points.**
+   On rappelle la formule pour trouver la distance $\sqrt{((x_A - x_B)^2 + (y_A - y_B)^2)}$.
 
 ## Matrices
 
