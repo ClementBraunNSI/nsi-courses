@@ -1,5 +1,18 @@
 # Fiche d'exercice : Les tuples et les listes
 
+!!! danger Attention
+      Tous les exercices, s'ils sont réalisés par des boucles `for`, doivent être faits avec une boucle sur les indices et une boucle sur les valeurs.
+      ```python
+         l = [1,2,3,4]
+         # for par valeur:
+         for elt in l:
+            print(l)
+
+         # for par indice (utilisation de len() qui permet d'avoir la taille d'une séquence):
+         for i in range(len(l)):
+            print(l[i])
+      ```
+
 ## Exercices d'introduction
 
 1. Créer un tuple nommé  `mon_tuple` qui contient les éléments 1,2,3,4,5 et une liste `ma_liste` qui contient les éléments suivants 'a','b','c','d','e'.  
@@ -33,6 +46,19 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
+**Écrire une fonction `somme` qui prend en paramètre une liste d'entiers et renvoie la somme des éléments de cette liste.**
+
+---
+
+**Écrire une fonction `produit` qui prend en paramètre une liste d'entiers et renvoie la produit des éléments de cette liste.**
+
+---
+
+!!! danger Cet exercice met en oeuvre une modification par **effet de bord**.
+      **Écrire une fonction `echange` qui prend en paramètres une liste et deux indices et échange les valeurs aux positions i et j dans la liste passée en paramètres.**
+
+---
+
 **Écrire une fonction `inverser_tableau` qui prend en paramètre un liste et renvoie une autre liste qui contient tous les éléments de celui en paramètre mais dans le sens inverse.**
 
 ---
@@ -44,6 +70,17 @@ On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un li
 ---
 
 **Écrire une fonction `compter_occurrences` qui prend en paramètre une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**
+
+---
+
+**Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément et renvoie 3 listes : une liste contenant les valeurs inférieure à la valeur passée en paramètre, une liste contenant uniquement la valeur passée en paramètre si elle est présente, une dernière contenant tous les éléments supérieurs à la valeur passée en paramètre.**
+*Exemple:*
+```python
+   >>> rangement_valeurs([1,7,4,3,6,2,8],5)
+   [1,4,3,2],[],[7,6,8]
+   >>> rangement_valeurs([1,2,4,3,6,2,8],2)
+   [1],[2,2],[4,3,6,8]
+```
 
 ---
 
