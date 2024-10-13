@@ -30,7 +30,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ### Exercice 2
 
-On souhaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant un tuple (abscisse, ordonnée).
+On souhaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant une liste (abscisse, ordonnée).
 
 1. Instancier un point A d'abscisse -3 et d'ordonnée 2.  
    Instancier un point B d'abscisse 4 et d'ordonnée 4.
@@ -43,17 +43,17 @@ On souhaite réaliser des opérations sur des points d'un plan. On va représent
 
 ### Exercice 3
 
-Écrire une fonction `moyenne` qui prend en paramètre un tuple d'entiers et renvoie la moyenne de tous les nombres présents dans ce tuple.
+Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans ce liste.
 
 ### Exercice 4
 
-Écrire une fonction `inverser_tableau` qui prend en paramètre un tuple et renvoie un autre tuple qui contient tous les éléments de celui en paramètre mais dans le sens inverse.
+Écrire une fonction `inverser_tableau` qui prend en paramètre un liste et renvoie une autre liste qui contient tous les éléments de celui en paramètre mais dans le sens inverse.
 
 ### Exercice 5
 
-On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un tuple (nombre, couleur). On souhaite vérifier qu'une carte créée soit valide. Une carte est valide si le nombre est compris entre 1 et 13 et si la couleur est soit "Coeur", "Trèfle", "Pique" ou "Carreaux".  
+On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un liste (nombre, couleur). On souhaite vérifier qu'une carte créée soit valide. Une carte est valide si le nombre est compris entre 1 et 13 et si la couleur est soit "Coeur", "Trèfle", "Pique" ou "Carreaux".  
 
-Écrire une fonction `est_valide` qui prend en paramètre un tuple correspondant à une carte et renvoie **True** si la carte est valide, **False** sinon.
+Écrire une fonction `est_valide` qui prend en paramètre une liste correspondant à une carte et renvoie **True** si la carte est valide, **False** sinon.
 
 ### Exercice 6
 
@@ -61,7 +61,7 @@ On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un tu
 
 ### Exercice 7
 
-Écrire une fonction `min_max_tuple` qui prend en paramètre un tuple d'entiers et renvoie un tuple contenant le minimum et le maximum de ce tuple.
+Écrire une fonction `min_max_tuple` qui prend en paramètre une liste d'entiers et renvoie une liste contenant le minimum et le maximum de ce tuple.
 
 ### Exercice 8
 
@@ -74,18 +74,6 @@ On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un tu
 ### Exercice 10
 
 Écrire une fonction est_croissante qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.
-
-## Listes par compréhension
-
-1. On dispose de la compréhension suivante [i for i in range(10)].
-   1. Quelle liste est créée par cette compréhension?
-   2. Modifier cette compréhension pour donner le carré de chaque nombre.
-
-2. On peut rajouter des conditions dans des compréhensions pour éviter certaines valeurs.
-   1. Quelle liste est créée par la compréhension suivante : [i for i in range(20) if i %2 == 0] ?
-   2. Modifier cette compréhension pour quelle fasse l'inverse.
-
-3. Créer une liste par compréhension qui contient les racines carrées des nombres allant de 1 jusque 20. On rappelle que le module `math` dispose de la fonction `sqrt` qui permet de calculer les racines carrées.
 
 ## Matrices
 
@@ -102,19 +90,14 @@ On rappelle qu'une matrice est un tableau à deux dimensions. En python, pour le
 
 3. Créer une matrice par compréhension qui contient tous les nombres de 0 à 11. Chacune des lignes de la matrice doivent avoir une taille de 4.
 
-## Tuples et fonctions
+## Listes par compréhension
 
-1. Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` la valeur demandée est dans la liste, `False` sinon.  
+1. On dispose de la compréhension suivante [i for i in range(10)].
+   1. Quelle liste est créée par cette compréhension?
+   2. Modifier cette compréhension pour donner le carré de chaque nombre.
 
-2. On souhtaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant un tuple (abscisse, ordonnée).
-   1. Instancier un point A d'abscisse -3 et d'ordonnée 2
-      Instancier un point B d'abscisse 4 et d'ordonée 4.
-   2. Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres. On rappelle que la formule pour trouver le point du milieu est $\texttt{milieu}(\frac{x_A + x_B}{2}, \frac{y_A + y_B}{2})$
-   3. Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points. On rappelle la formule pour trouver la distance $\sqrt{((x_A+x_B)^2 + (y_A + y_B)^2)}$.  
+2. On peut rajouter des conditions dans des compréhensions pour éviter certaines valeurs.
+   1. Quelle liste est créée par la compréhension suivante : [i for i in range(20) if i %2 == 0] ?
+   2. Modifier cette compréhension pour quelle fasse l'inverse.
 
-3. Écrire une fonction `moyenne` qui prend en paramètre un tuple d'entiers et renvoie la moyenne de tous les nombres présents dans ce tuple.
-
-4. Écrire une fonction `inverser_tableau` qui prend en paramètre un tuple et renvoie un autre tuple qui contient tous les éléments de celui en paramètre mais dans le sens inverse.
-
-5. On souhaite modéliser un jeu de carte. Chaque carte sera instanciée par un tuple (nombre, couleur). On souhaite vérifier qu'une carte créée soit valide. Une carte est valide si le nombre est compris entre 1 et 13 et si la couleur est soit "Coeur", "Trèfle", "Pique" ou "Carreaux".
-Créer une fonction `est_valide` qui prend en paramètre un tuple correspondant à un tuple et renvoie **True** si la carte est valide, **False** sinon. Pour faciliter, on peut se munir d'un tuple qui contient toutes les couleurs et de l'opérateur **in** pour vérifier si la couleur est valide.
+3. Créer une liste par compréhension qui contient les racines carrées des nombres allant de 1 jusque 20. On rappelle que le module `math` dispose de la fonction `sqrt` qui permet de calculer les racines carrées.
