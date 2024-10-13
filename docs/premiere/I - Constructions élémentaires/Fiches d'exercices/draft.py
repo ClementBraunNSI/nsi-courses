@@ -9,5 +9,20 @@ def tetration(nombre, tetre):
             print(puissance)
             cpt += 1
         return nombre**puissance
+    
+def est_premier(n):
+    if n == 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
 
-print(tetration(4, 5))
+def somme_premiers(n):
+    somme = 0
+    for i in range(1, n+1):
+        if est_premier(i):
+            somme += i
+    return somme
+
+print(somme_premiers(10))
