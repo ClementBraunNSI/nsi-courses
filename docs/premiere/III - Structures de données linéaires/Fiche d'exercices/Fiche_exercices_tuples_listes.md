@@ -26,8 +26,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ### Exercice 1
 
 {==Algorithme à savoir==}  
-Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.
-
+**Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.
+**
 ### Exercice 2
 
 On souhaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant une liste (abscisse, ordonnée).
@@ -35,45 +35,46 @@ On souhaite réaliser des opérations sur des points d'un plan. On va représent
 1. Instancier un point A d'abscisse -3 et d'ordonnée 2.  
    Instancier un point B d'abscisse 4 et d'ordonnée 4.
 
-2. Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres.  
+2. **Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres.**  
    On rappelle que la formule pour trouver le point du milieu est $\texttt{milieu}(\frac{x_A + x_B}{2}, \frac{y_A + y_B}{2})$.
 
-3. Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points.  
+3. **Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points.**
    On rappelle la formule pour trouver la distance $\sqrt{((x_A - x_B)^2 + (y_A - y_B)^2)}$.
 
 ### Exercice 3
 
-Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans ce liste.
+**Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans ce liste.**
 
 ### Exercice 4
 
-Écrire une fonction `inverser_tableau` qui prend en paramètre un liste et renvoie une autre liste qui contient tous les éléments de celui en paramètre mais dans le sens inverse.
+**Écrire une fonction `inverser_tableau` qui prend en paramètre un liste et renvoie une autre liste qui contient tous les éléments de celui en paramètre mais dans le sens inverse.**
 
 ### Exercice 5
 
 On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un liste (nombre, couleur). On souhaite vérifier qu'une carte créée soit valide. Une carte est valide si le nombre est compris entre 1 et 13 et si la couleur est soit "Coeur", "Trèfle", "Pique" ou "Carreaux".  
 
-Écrire une fonction `est_valide` qui prend en paramètre une liste correspondant à une carte et renvoie **True** si la carte est valide, **False** sinon.
+**Écrire une fonction `est_valide` qui prend en paramètre une liste correspondant à une carte et renvoie **True** si la carte est valide, **False** sinon.**
 
 ### Exercice 6
 
-Écrire une fonction `compter_occurrences` qui prend en paramètre une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.
+**Écrire une fonction `compter_occurrences` qui prend en paramètre une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**
 
 ### Exercice 7
 
-Écrire une fonction `min_max_tuple` qui prend en paramètre une liste d'entiers et renvoie une liste contenant le minimum et le maximum de ce tuple.
+**Écrire une fonction `minimum_liste` qui prend en paramètre une liste d'entiers et renvoie la valeur minimum de la liste et son indice.**
+**Écrire une fonction `maximum_liste` qui prend en paramètre une liste d'entiers et renvoie la valeur maximum de la liste et son indice.**
 
 ### Exercice 8
 
-Écrire une fonction fusionner_sans_doublons qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.
+**Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**
 
 ### Exercice 9
 
-Écrire une fonction diviseurs qui prend un entier en paramètre et renvoie la liste de ses diviseurs.
+**Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.**
 
 ### Exercice 10
 
-Écrire une fonction est_croissante qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.
+**Écrire une fonction `est_croissante` qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.**
 
 ## Matrices
 
