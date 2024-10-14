@@ -29,7 +29,7 @@ Vous allez devoir pour cette première partie :
 
 **Dans le bloc bleu : Ajouter un paragraphe expliquant la rivalité entre les deux.**
 
-**Dans le bloc à côté de l'image : Ajouter chacune des localisations où l'on peut retrouver votre monstre.**
+**Dans le bloc turquoise : Ajouter chacune des localisations où l'on peut retrouver votre monstre.**
 
 **Dans le bloc précédent : Ajouter une liste à puce correspondant à ses statistiques si l'on souhaite transformer ce bestiaire en un jeu de rôle.**
 
