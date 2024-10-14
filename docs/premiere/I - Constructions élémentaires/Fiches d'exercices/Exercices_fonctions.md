@@ -310,7 +310,7 @@ Vous pourrez utiliser la fonction `est_premier` dans la partie de niveau 2.
 La tétration est une opération mathématique se rapprochant des puissances.
 On parle de tétration quand on réalise une "tour de puissance", on peut résumer cela ainsi :
 Par exemple :  
-${^{3}3} = 3^{3{^3}} = 3^{3\times3} = 3^{27} = 7 625 597 484 987$  
+${^{3}3} = 3^{3{^3}} = 3^{27} = 7 625 597 484 987$  
 ${^{5}4} = 4^{4^{4^{4^{4}}}} = 4 ^ {4^{4^{4\times4}}} = 4^{4^{4^{16}}} = 4^{4^{4294967296}}\cdots$.  
 *Exemple : tetration(3,3) doit renvoyer 7 625 597 484 987.*
 
