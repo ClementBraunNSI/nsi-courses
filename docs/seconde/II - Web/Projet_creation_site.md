@@ -25,11 +25,13 @@ Le site est aussi régi par une feuille de style qui n'est pas à modifier pour 
 
 Vous allez devoir pour cette première partie : 
 
-**Modifier le Nom du monstre pour qu'il corresponde à un titre de niveau 1.**
+**Dans le bloc violet : Modifier le Nom du monstre pour qu'il corresponde à un titre de niveau 1.**
 
-**Ajouter chacune des localisations où l'on peut retrouver votre monstre.**
+**Dans le bloc bleu : Ajouter un paragraphe expliquant la rivalité entre les deux.**
 
-**Ajouter une liste à puce correspondant à ses statistiques si l'on souhaite transformer ce bestiaire en un jeu de rôle.**
+**Dans le bloc à côté de l'image : Ajouter chacune des localisations où l'on peut retrouver votre monstre.**
+
+**Dans le bloc précédent : Ajouter une liste à puce correspondant à ses statistiques si l'on souhaite transformer ce bestiaire en un jeu de rôle.**
 
 **Ajouter dans le bloc contenant la description et l'histoire de son monstre, un petit titre de niveau 3 parlant de sa légende et un paragraphe expliquant l'histoire du monstre.**
 

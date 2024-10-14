@@ -25,4 +25,13 @@ def somme_premiers(n):
             somme += i
     return somme
 
-print(somme_premiers(10))
+def f(n):
+        x = 0
+        y = 1
+        chaine = ''
+        for i in range(n):
+            print(x)
+            y = x + y
+            x = y - x
+
+f(10)
