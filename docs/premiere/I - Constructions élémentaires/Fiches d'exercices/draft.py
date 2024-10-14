@@ -1,3 +1,6 @@
+import sys
+sys.set_int_max_str_digits(10000)
+
 def tetration(nombre, tetre):
     if tetre == 1:
         return nombre
@@ -9,6 +12,20 @@ def tetration(nombre, tetre):
             print(puissance)
             cpt += 1
         return nombre**puissance
+    
+def tetration_2(n,tetre):
+    puissance = n
+    if tetre == 0:
+        return 1
+    elif tetre == 1:
+         return n
+    else:
+        for i in range(2,tetre):
+            puissance = puissance ** n
+    return n**puissance
+
+print(tetration(3,4))
+print(tetration_2(3,4))
     
 def est_premier(n):
     if n == 1:
@@ -70,4 +87,49 @@ def somme_chiffres(nombre : int)-> int:
             somme = somme + int(chiffre)
         return somme
 
-print(somme_chiffres(1234))
+def nombre_parfait(nombre : int)-> int:
+        somme = 0
+        for i in range(1,nombre):
+            if nombre % i == 0:
+                somme = somme + i
+        print(somme)
+        if somme == nombre:
+            return True
+        else:
+            return False
+
+def fibonacci(borne : int)-> None:
+            x = 0
+            y = 1
+            for i in range(borne):
+                print(x)
+                y = x + y
+                x = y - x
+
+def nombre_armstrong(nombre : int)-> bool:
+            str_nombre = str(nombre)
+            somme = 0
+            taille = len(str_nombre)
+            for chiffre in str_nombre:
+                carre = int(chiffre)**taille
+                somme = somme + carre
+            if somme == nombre:
+                return True
+            else:
+                return False
+            
+def somme_premiers(borne : int)-> int:
+            somme = 0
+            for i in range(borne+1):
+                if est_premier(i):
+                    somme = somme + i
+            return somme
+
+def compter_occurences(chaine : str, caractere : str)-> int:
+            compteur = 0
+            for carac in chaine:
+                if carac == caractere:
+                    compteur = compteur + 1
+            return compteur
+
+
