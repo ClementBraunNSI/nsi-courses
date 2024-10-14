@@ -34,4 +34,10 @@ def f(n):
             y = x + y
             x = y - x
 
-f(10)
+def multiplication_par_addition(nombre : int, multiple : int)-> int:
+        resultat = 0
+        for i in range(multiple):
+            resultat = resultat + nombre
+        return resultat
+
+print(multiplication_par_addition(5, 3))

@@ -38,15 +38,43 @@
 **Écrire une fonction `somme` qui prend deux entiers en paramètres et renvoie leur somme.**  
 *Exemple : somme(4,5) doit renvoyer 9.*  
 
+??? fox_correction "Correction"
+
+    ```python
+    def somme(nombre_1 : int, nombre_2 : int)-> int:
+        s = nombre_1 + nombre_2
+        return s
+    ```
+
 ---
 
 **Écrire une fonction `parite` qui prend en paramètre un entier et renvoie `True` s'il est pair, `False` sinon.**  
-*Exemple : parite(7) doit renvoyer Faux.*  
+*Exemple : parite(7) doit renvoyer Faux.* 
+
+??? fox_correction "Correction"
+
+    ```python
+    def parite(nombre : int)-> bool:
+        if nombre % 2 == 0:
+            return True
+        else:
+            return False
+    ```
 
 ---
 
 **Écrire une fonction `maximum_deux_nombres` qui prend deux entiers en paramètres et renvoie le plus grand des deux.**  
 *Exemple : maximum(10,15) doit renvoyer 15.*  
+
+??? fox_correction "Correction"
+
+    ```python
+    def maximum_deux_nombres(nombre_1 : int, nombre_2 : int)-> int:
+        if nombre_1 > nombre_2 : 
+            return nombre_1
+        else : 
+            return nombre_2
+    ```
 
 ---
 
@@ -54,11 +82,31 @@
 On rappelle que la valeur absolue d'un nombre correspond à celui-ci peu importe son signe, c'est à dire que la valeur absolue de -8 est 8 et que la valeur absolue de 56 est 56.  
 *Exemple : valeur_absolue(-8) doit renvoyer 8.*
 
+??? fox_correction "Correction"
+
+    ```python
+    def valeur_absolue(nombre : int)-> int:
+        if nombre >= 0:
+            return nombre
+        else:
+            return -1*nombre
+    ```
+
 ---
 
 **Écrire une fonction `multiplication_par_addition` qui prend deux entiers en paramètres et renvoie le produit des deux nombres en utilisant une succession d'additions.**  
 On sait que $4\times3 = 4 + 4 + 4 = 12~\texttt{ou}~4\times3 = 3 + 3 + 3 + 3 = 12$  
 *Exemple : multiplication_par_addition(4,3) doit renvoyer 12.*
+
+??? fox_correction "Correction"
+
+    ```python
+    def multiplication_par_addition(nombre : int, multiple : int)-> int:
+        resultat = 0
+        for i in range(multiple):
+            resultat = resultat + nombre
+        return resultat
+    ```
 
 ## Exercices de niveau 2
 
@@ -78,8 +126,17 @@ On sait que $4\times3 = 4 + 4 + 4 = 12~\texttt{ou}~4\times3 = 3 + 3 + 3 + 3 = 12
 ---
 
 **Écrire une fonction `somme_n_entiers` qui prend en paramètre un entier `n` et renvoie la somme de tous les entiers de 1 à n.**  
-*Exemple : somme_n_entiers(100) doit renvoyer 5050.*
+*Exemple : somme_n_entiers(100) doit renvoyer 5050.*??? fox_correction "Correction"
 
+??? fox_correction "Correction"
+
+    ```python
+    def somme_n_entiers(borne : int)-> int:
+        resultat = 0
+        for i in range(borne):
+            resultat = resultat + i
+        return resultat
+    ```
 ---
 
 **Écrire une fonction `compter_voyelles` qui prend en paramètre une chaîne de caractère et renvoie le nombre de voyelles.**  
