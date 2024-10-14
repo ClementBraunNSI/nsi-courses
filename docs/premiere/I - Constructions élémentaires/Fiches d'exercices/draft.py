@@ -40,4 +40,34 @@ def multiplication_par_addition(nombre : int, multiple : int)-> int:
             resultat = resultat + nombre
         return resultat
 
-print(multiplication_par_addition(5, 3))
+def compter_voyelles(chaine : str)-> int:
+        voyelles = 0
+        for lettre in chaine:
+            if lettre in 'aeiouAEIOU' :
+                voyelles = voyelles + 1
+        return voyelles
+
+def puissance(nombre_1 : int, nombre_2 : int)-> int:
+        resultat = 1
+        for i in range(nombre_2):
+            resultat = resultat * nombre_1
+        return resultat
+
+def est_premier(nombre : int)-> bool:
+        diviseurs = 0
+        for i in range(1,nombre+1):
+            if nombre%i == 0:
+                diviseurs = diviseurs + 1
+        if diviseurs == 2 :
+            return True
+        else:
+            return False
+        
+def somme_chiffres(nombre : int)-> int:
+        somme = 0
+        str_nombre = str(nombre)
+        for chiffre in str_nombre:
+            somme = somme + int(chiffre)
+        return somme
+
+print(somme_chiffres(1234))

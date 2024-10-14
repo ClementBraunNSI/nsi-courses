@@ -142,10 +142,31 @@ On sait que $4\times3 = 4 + 4 + 4 = 12~\texttt{ou}~4\times3 = 3 + 3 + 3 + 3 = 12
 **Écrire une fonction `compter_voyelles` qui prend en paramètre une chaîne de caractère et renvoie le nombre de voyelles.**  
 *Exemple : compteur_voyelles("bonjour") doit renvoyer 3.*
 
+??? fox_correction "Correction"
+
+    ```python
+    def compter_voyelles(chaine : str)-> int:
+        voyelles = 0
+        for lettre in chaine:
+            if lettre in 'aeiouAEIOU':
+                voyelles = voyelles + 1
+        return voyelles
+    ```
+
 ---
 
 **Écrire une fonction `puissance` qui prend en paramètres deux entiers a et b et renvoie a à la puissance b. Cette fonction n'utilisera pas l'opérateur `**` mais plutôt une boucle.**  
 *Exemple : puissance(3,2) doit renvoyer 9.*
+
+??? fox_correction "Correction"
+
+    ```python
+    def puissance(nombre_1 : int, nombre_2 : int)-> int:
+        resultat = 1
+        for i in range(nombre_2):
+            resultat = resultat * nombre_1
+        return resultat
+    ```
 
 ---
 
@@ -155,10 +176,34 @@ Indication : pour réussir cet exercice, vous utiliserez une boucle et vous comp
 Rappel : un nombre en divise un autre si le reste de leur division est 0. En python, l'opérateur qui obtient le reste de la division est `%`.  
 *Exemple : est_premier(2) doit renvoyer Vrai, est_premier(6) doit renvoyer Faux.*  
 
+??? fox_correction "Correction"
+
+    ```python
+    def est_premier(nombre : int)-> bool:
+        diviseurs = 0
+        for i in range(1,nombre+1):
+            if nombre%i == 0:
+                diviseurs = diviseurs + 1
+        if diviseurs == 2 :
+            return True
+        else:
+            return False
+    ```
 ---
 
 **Écrire une fonction `somme_chiffres` qui prend un entier en paramètre et renvoie la somme de ses chiffres.**  
 *Exemple : somme_chiffres(1234) doit renvoyer 10 (1+2+3+4)* 
+
+??? fox_correction "Correction"
+
+    ```python
+    def somme_chiffres(nombre : int)-> int:
+        somme = 0
+        str_nombre = str(nombre)
+        for chiffre in str_nombre:
+            somme = somme + int(chiffre)
+        return somme
+    ```
 
 ---
 
