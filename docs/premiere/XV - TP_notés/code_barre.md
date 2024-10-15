@@ -91,7 +91,7 @@ Cette fonction va :
       9
 ```
 
-**Écrire une fonction `validation_code_barre` qui prend en paramètre un code barre représenté par une chaîne de caractère et renverra `True` s'il est valide, `False` sinon.**
+**Écrire une fonction `validation_code_barre` qui prend en paramètre un code barre représenté par une chaîne de caractère et renverra `True` s'il est valide, `False` sinon.**  
 Cette fonction utilisera toutes les fonctions précédentes pour réaliser la vérification notée au début de ce TP.
 
 *Exemple d'utilisation*
