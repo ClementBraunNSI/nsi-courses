@@ -18,13 +18,13 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
   *Pour l'exemple : $7+2+9+7+6+4 = 35$.*
 - On multiplie la somme des chiffres de positions paires par 3.
 *Pour l'exemple : $35 \times 3 = 105$.*
-- On additionne la somme multipliée par 3 avec la somme des chiffres à indice impairs.
+- On additionne la somme multipliée par 3 avec la somme des chiffres de positions impaires.
 *Pour l'exemple : $105 + 26 = 131$.*
 - On calcule le reste de la division euclidienne par 10 de ce nombre.
 *Pour l'exemple : $131%10 = 1$.*
 - On retire le reste à 10 pour obtenir la valeur qui servira de vérification.
 *Pour l'exemple : $10-1 = 9$.*
-- Si cette valeur de vérification est égale au dernier chiffre du numéro du code barre. : Le numéro d'EAN est valide, sinon il ne l'est pas.
+- Si cette valeur de vérification est égale au dernier chiffre du code barre. : Le numéro d'EAN est valide, sinon il ne l'est pas.
 *Pour l'exemple : la clef de contrôle calculée est 9, le dernier chiffre du code barre est bien 9, il est donc bien valide.*
 
 ## À réaliser
