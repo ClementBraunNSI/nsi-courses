@@ -29,8 +29,8 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
 
 ## À réaliser
 
-**Écrire une fonction `verifier_longueur` qui prend en paramètre une chaîne de caractères et renvoie `True` si le code-barres contient exactement 13 chiffres, `False` sinon.**.
-*Exemple d'utilisation :*
+**Écrire une fonction `verifier_longueur` qui prend en paramètre une chaîne de caractères et renvoie `True` si le code-barres contient exactement 13 chiffres, `False` sinon.**.  
+*Exemple d'utilisation :*  
 
 ```python
    >>> verifier_longueur('9782091726649')
@@ -39,9 +39,8 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
    False
 ```
 
-**Écrire une fonction `mettre_bonne_longueur` qui prend une chaîne de caractères et renvoie une chaîne de caractères contenant les 12 premiers caractères.**
-
-*Exemple d'utilisation:*
+**Écrire une fonction `mettre_bonne_longueur` qui prend une chaîne de caractères et renvoie une chaîne de caractères contenant les 12 premiers caractères.**  
+*Exemple d'utilisation:*  
 
 ```python
    >>> mettre_bonne_longueur("9782091726649")
@@ -50,16 +49,16 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
    "bonjourjesui"
 ```
 
-**Écrire une fonction `somme_positions_impairs` qui prend en paramètre une chaîne de caractères représentant un code barre et renvoie un entier correspondant à la somme des chiffres de positions impaires.**
-*Exemple d'utilisation:*
+**Écrire une fonction `somme_positions_impairs` qui prend en paramètre une chaîne de caractères représentant un code barre et renvoie un entier correspondant à la somme des chiffres de positions impaires.**  
+*Exemple d'utilisation:*  
 
 ```python
    >>> somme_positions_impairs('9782091726649')
    26
 ```
 
-**Écrire une fonction `somme_positions_pairs` qui prend en paramètre une chaîne de caractère représentant un code barre et renvoie un entier correspondant à la somme des chiffres de positions paires.**
-*Exemple d'utilisation:*
+**Écrire une fonction `somme_positions_pairs` qui prend en paramètre une chaîne de caractère représentant un code barre et renvoie un entier correspondant à la somme des chiffres de positions paires.**  
+*Exemple d'utilisation:*  
 
 ```python
    >>> somme_positions_pairs('9782091726649')
@@ -67,8 +66,8 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
 
 ```
 
-**Écrire une fonction `multiplier_par_trois` qui prend en paramètre un entier et renvoie son produit avec trois.**
-*Exemple d'utilisation:*
+**Écrire une fonction `multiplier_par_trois` qui prend en paramètre un entier et renvoie son produit avec trois.**  
+*Exemple d'utilisation:*  
 
 ```python
    >>>  multiplier_par_trois(35)
@@ -77,12 +76,12 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
    45
 ```
 
-**Écrire une fonction `traitement` qui prend en paramètre deux entiers et renvoie un entier.**
-Cette fonction va :
+**Écrire une fonction `traitement` qui prend en paramètre deux entiers et renvoie un entier.**  
+Cette fonction va :  
 
-- Réaliser la somme de ces deux entiers.
-- Calculer le reste de la division par 10 de cette somme.
-- Soustraire le reste de la division à 10.
+- Réaliser la somme de ces deux entiers.  
+- Calculer le reste de la division par 10 de cette somme.  
+- Soustraire le reste de la division à 10.  
 
 *Exemple d'utilisation*
 
@@ -92,7 +91,7 @@ Cette fonction va :
 ```
 
 **Écrire une fonction `validation_code_barre` qui prend en paramètre un code barre représenté par une chaîne de caractère et renverra `True` s'il est valide, `False` sinon.**  
-Cette fonction utilisera toutes les fonctions précédentes pour réaliser la vérification notée au début de ce TP.
+Cette fonction utilisera toutes les fonctions précédentes pour réaliser la vérification notée au début de ce TP.  
 
 *Exemple d'utilisation*
 
