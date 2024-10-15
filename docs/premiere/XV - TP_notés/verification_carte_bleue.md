@@ -1,4 +1,4 @@
-# Vérification d'un nombre de carte bancaire
+# Vérification d'un numéro de carte bancaire
 
 Un certain nombre d'applications utilise la formule de Luhn pour vérifier si un identifiant ou un nombre est
 utilisable dans certains contextes.  
@@ -9,9 +9,10 @@ Une des application notable de la vérification par la **formule de Luhn** est c
 
 L'algorithme se déroule en 3 étapes : 
 
-- La première : on lit de gauche à droite une chaîne de caractère.
-  - On multiplie un chiffre sur deux par 2 et si celui-ci est supérieur à 10, on additionne les 2 chiffre composant le nombre
-- On additionne l'intégralité des chiffres après la première passe
+- On lit de gauche à droite une chaîne de caractère.
+- On multiplie un chiffre sur deux par 2.
+  - Si celui-ci est supérieur à 10, on additionne les 2 chiffres composant le nombre.
+- On additionne l'intégralité des chiffres après les calculs précédents.
 - Si la somme de tous ses chiffres et divisible par 10, alors la carte bancaire est valide, sinon elle ne l'est pas.
 
 ## A réaliser

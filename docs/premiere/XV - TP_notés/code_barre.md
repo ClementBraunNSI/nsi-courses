@@ -1,58 +1,104 @@
 # Vérification d'un Code-barres
 
-## Contexte :
-Les codes-barres sont omniprésents dans notre quotidien, utilisés pour identifier des produits dans les magasins, les bibliothèques, et bien d'autres domaines. Dans ce TP, vous allez apprendre à vérifier la validité d'un code-barres en vous familiarisant avec son format et ses règles.
-
-## Objectif :
-Développer un programme en Python qui permet de vérifier si un code-barres est correct en fonction des spécifications des codes-barres standards (par exemple, EAN-13).
+Les codes-barres sont omniprésents dans notre quotidien, utilisés pour identifier des produits dans les magasins, les bibliothèques, et bien d'autres domaines.
 
 ## Exemple du calcul de la clé de contrôle
 
-Nous allons étudier  le **Code EAN-13** : **4006381333936**
+Nous allons étudier  le **Code EAN-13** : **9782091726649**
 
-## Décomposition :
-- **400** : 3 chiffres dédié au code pays (ici c'est celui de l'Allemagne);
-- **6381** : 4 chiffres dédidés au code du fabricant;
-- **33393** : 5 chiffre pour le numéro du produit;
-- **6** : 1 chiffre dédié pour la clé de contrôle (qu'on devra vérifier)
+*Rappel : une valeur à la première position est d'indice 0, une valeur à la seconde position est d'indice 1 $\cdots$*
 
-## Calcul de la clé de contrôle :
-1. Prenons les 12 premiers chiffres : **400638133393**.
-2. Calculez la somme des :
-   - Chiffres en position impaire (1, 3, 5, 7, 9, 11) : 4 + 0 + 6 + 1 + 3 + 3 = **17**
-   - Chiffres en position paire (2, 4, 6, 8, 10, 12) : 0 + 6 + 8 + 3 + 9 + 3 = **29**
+## Explication de l'algorithme  
 
-		**attention ce n'est pas les indices dans le sens python ici.**
-3. Multipliez la somme des positions paires par 3 : 29 × 3 = **87**
-4. Additionnez la sommes des positions paires par 3 et la sommes des chiffres en position impaire : 17 + 87 = **104**
-5. Calculez le modulo 10 de la somme trouvé à l'étape précédente : 104 % 10 = **4**
-6. Pour trouver la clé de contrôle il faut soustraire le résultat précédent à 10 : 10 - 4 = **6** (si c'était 10, la clef serait 0)
+- On ne travaille que sur les 12 premiers chiffres.
+- On lit le numéro de gauche à droite
+  - On réalise la somme de tous les chiffres situés à des positions impaires.  
+  *Pour l'exemple : $9+8+0+1+2+6 = 26$.*
+  - On réalise la somme de tous les chiffres situés à des positions paires.  
+  *Pour l'exemple : $7+2+9+7+6+4 = 35$.*
+- On multiplie la somme des chiffres de positions paires par 3.
+*Pour l'exemple : $35 \times 3 = 105$.*
+- On additionne la somme multipliée par 3 avec la somme des chiffres à indice impairs.
+*Pour l'exemple : $105 + 26 = 131$.*
+- On calcule le reste de la division euclidienne par 10 de ce nombre.
+*Pour l'exemple : $131%10 = 1$.*
+- On retire le reste à 10 pour obtenir la valeur qui servira de vérification.
+*Pour l'exemple : $10-1 = 9$.*
+- Si cette valeur de vérification est égale au dernier chiffre du numéro du code barre. : Le numéro d'EAN est valide, sinon il ne l'est pas.
+*Pour l'exemple : la clef de contrôle calculée est 9, le dernier chiffre du code barre est bien 9, il est donc bien valide.*
 
-## Validation :
-Dans cet exemple, la clé de contrôle calculée est **6**, et la clé du code-barres est également **6**. Cela signifie que le code-barres **4006381333936** est **valide**.
+## À réaliser
 
+**Écrire une fonction `verifier_longueur` qui prend en paramètre une chaîne de caractères et renvoie `True` si le code-barres contient exactement 13 chiffres, `False` sinon.**.
+*Exemple d'utilisation :*
 
-## Tâches à réaliser :
+```python
+   >>> verifier_longueur('9782091726649')
+   True
+   >>> verifier_longueur('978209172664')
+   False
+```
 
-1. **Choix du code-barres** :
-   - Pour ce TP, vous travaillerez avec le format EAN-13.
-   - Un code EAN-13 est composé de 13 chiffres.
+**Écrire une fonction `mettre_bonne_longueur` qui prend une chaîne de caractères et renvoie une chaîne de caractères contenant les 12 premiers caractères.**
 
-2. **Vérification du format** :
-   - **Écrire une fonction `verifier_longueur` qui prend en paramètre une chaîne de caractères et renvoie `True` si le code-barres contient exactement 13 chiffres, `False` sinon.**.
-   - Vérifier que tous les caractères du code-barres sont des chiffres.
+*Exemple d'utilisation:*
 
-3. **Calcul de la clé de contrôle** :
-   - Le dernier chiffre d’un code EAN-13 est une clé de contrôle calculée à partir des 12 premiers chiffres.
-   - **Écrire l'algorithme suivant pour calculer la clé de contrôle dans une fonction `verification` qui prend en paramètre un code barre sous forme de chaîne de caractère et renvoie clef associée (entier)**:
-     - Multipliez les chiffres en positions impaires par 1 et ceux en positions paires par 3.
-     - Additionnez tous les résultats.
-     - Calculez le modulo 10 de cette somme.
-     - Soustrayez ce résultat de 10. Si le résultat est 10, la clé de contrôle est 0.
+```python
+   >>> mettre_bonne_longueur("9782091726649")
+   '978209172664'
+   >>> mettre_bonne_longueur("bonjourjesuisletexte")
+   "bonjourjesui"
+```
 
-4. **Validation du code-barres** :
-   - Comparer la clé de contrôle calculée avec le dernier chiffre du code-barres pour déterminer sa validité.
-   - **Écrire une fonction qui renvoie `True` si le code-barres est valide, sinon `False`**.
+**Écrire une fonction `somme_positions_impairs` qui prend en paramètre une chaîne de caractères représentant un code barre et renvoie un entier correspondant à la somme des chiffres de positions impaires.**
+*Exemple d'utilisation:*
 
-5. **Interface utilisateur** :
-   - **Écrire une fonction `main` qui ne prend pas de paramètres, qui demande un numéro de carte bancaire à l'utilisateur et renvoie `True` si elle est valide, `False` sinon. Elle utilisera les fonctions précédentes.**
+```python
+   >>> somme_positions_impairs('9782091726649')
+   26
+```
+
+**Écrire une fonction `somme_positions_pairs` qui prend en paramètre une chaîne de caractère représentant un code barre et renvoie un entier correspondant à la somme des chiffres de positions paires.**
+*Exemple d'utilisation:*
+
+```python
+   >>> somme_positions_pairs('9782091726649')
+   35
+
+```
+
+**Écrire une fonction `multiplier_par_trois` qui prend en paramètre un entier et renvoie son produit avec trois.**
+*Exemple d'utilisation:*
+
+```python
+   >>>  multiplier_par_trois(35)
+   105
+   >>> multiplier_par_trois(15)
+   45
+```
+
+**Écrire une fonction `traitement` qui prend en paramètre deux entiers et renvoie un entier.**
+Cette fonction va :
+
+- Réaliser la somme de ces deux entiers.
+- Calculer le reste de la division par 10 de cette somme.
+- Soustraire le reste de la division à 10.
+
+*Exemple d'utilisation*
+
+```python
+   >>> traitement(26,105)
+      9
+```
+
+**Écrire une fonction `validation_code_barre` qui prend en paramètre un code barre représenté par une chaîne de caractère et renverra `True` s'il est valide, `False` sinon.**
+Cette fonction utilisera toutes les fonctions précédentes pour réaliser la vérification notée au début de ce TP.
+
+*Exemple d'utilisation*
+
+```python
+   >>> validation_code_barre("9782091726649")
+   True
+   >>> validation_code_barre("4006381333936")
+   False
+```
