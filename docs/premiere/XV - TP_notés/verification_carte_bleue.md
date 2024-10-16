@@ -19,7 +19,7 @@ L'algorithme se déroule en 3 étapes :
 
 **Écrire une fonction `multiplier_additionner` qui prend en paramètre un nombre entier int et renvoie un entier.**
 Cette fonction multiplie par deux le chiffre donné en paramètre et si celui-ci est supérieur à 10, additionne les
-deux chiffres le composant (par exemple $\texttt{multiplier\textendash concatener(8)} \rightarrow 8 \times 2 = 16 \rightarrow 1 + 6 = 7$).
+deux chiffres le composant (par exemple $\texttt{multiplier\textendash concatener(8)} \rightarrow 8 \times 2 = 16 \rightarrow 1 + 6 = 7$).  
 *Exemple d'utilisation :*
 
 ```python
@@ -30,7 +30,7 @@ deux chiffres le composant (par exemple $\texttt{multiplier\textendash concatene
 ```
 
 **Compléter la fonction `multiplication_un_sur_deux` suivante qui prend en paramètre un numéro de carte bancaire sous forme de chaîne de caractère et renvoie une chaîne de caractère.**
-Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire un sur deux.
+Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire un sur deux.  
 *Exemple d'utilisation*
 
 ```python
@@ -57,7 +57,7 @@ Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire 
     return res
 ```
 
-**Écrire une fonction `somme_chiffre` qui prend en paramètre une chaîne de caractère représentant un numéro de carte bancaire et renvoie la somme de tous les nombres le composant.**
+**Écrire une fonction `somme_chiffre` qui prend en paramètre une chaîne de caractère représentant un numéro de carte bancaire et renvoie la somme de tous les nombres le composant.**  
 
 *Exemple d'utilisation :*
 
@@ -68,7 +68,7 @@ Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire 
     63
 ```
 
-**Écrire une fonction `divisible_par_10` qui prend en paramètre un nombre entier et renvoie `True` s'il est divisible par 10, `False` sinon.**
+**Écrire une fonction `divisible_par_10` qui prend en paramètre un nombre entier et renvoie `True` s'il est divisible par 10, `False` sinon.**  
 
 *Exemple d'utilisation:*
 
@@ -79,7 +79,7 @@ Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire 
     True
 ``` 
 
-**Écrire une fonction `verification_CB_Luhn` qui prend en paramètre un numéro de carte bancaire sous forme de chaîne de caractère et renvoie `True` s'il est valide, `False` sinon.**
+**Écrire une fonction `verification_CB_Luhn` qui prend en paramètre un numéro de carte bancaire sous forme de chaîne de caractère et renvoie `True` s'il est valide, `False` sinon.**  
 Cette fonction utilisera toutes les fonctions précédemment implémantées.
 
 *Exemple d'utilisation:*
