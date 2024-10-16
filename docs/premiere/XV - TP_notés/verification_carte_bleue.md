@@ -41,7 +41,7 @@ Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire 
 ```
 
 ```python
-    def multiplication_un_sur_deux(numero_cb:str)->int:
+    def multiplication_un_sur_deux(numero_cb:str)->str:
     '''
     entrée:
     numero_cb : numéro de carte bancaire
