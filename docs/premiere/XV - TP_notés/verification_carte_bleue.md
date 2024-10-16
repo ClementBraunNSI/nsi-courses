@@ -29,8 +29,8 @@ deux chiffres le composant (par exemple $\texttt{multiplierconcatener(8)} \right
     7
 ```
 
-**Compléter la fonction `multiplication_un_sur_deux` suivante qui prend en paramètre un numéro de carte bancaire sous forme de chaîne de caractère et renvoie une chaîne de caractère.**
-Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire un sur deux.  
+**Compléter la fonction `multiplication_un_sur_deux` suivante qui prend en paramètre un numéro de carte bancaire sous forme de chaîne de caractère et renvoie une chaîne de caractère.**  
+Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire un sur deux.  Elle réutilisera la fonction précédente.
 *Exemple d'utilisation*
 
 ```python
