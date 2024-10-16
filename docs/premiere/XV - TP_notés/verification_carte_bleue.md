@@ -19,7 +19,7 @@ L'algorithme se déroule en 3 étapes :
 
 **Écrire une fonction `multiplier_additionner` qui prend en paramètre un nombre entier int et renvoie un entier.**
 Cette fonction multiplie par deux le chiffre donné en paramètre et si celui-ci est supérieur à 10, additionne les
-deux chiffres le composant (par exemple $ \texttt{multiplier\textendash concatener(8)} \rightarrow 8 \times 2 = 16 \rightarrow 1 + 6 = 7$).
+deux chiffres le composant (par exemple $\texttt{multiplier\textendash concatener(8)} \rightarrow 8 \times 2 = 16 \rightarrow 1 + 6 = 7$).
 *Exemple d'utilisation :*
 
 ```python
