@@ -53,7 +53,7 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
 *Exemple d'utilisation:*  
 
 ```python
-   >>> somme_positions_impairs('9782091726649')
+   >>> somme_positions_impairs('978209172664')
    26
 ```
 
@@ -61,7 +61,7 @@ Nous allons étudier  le **Code EAN-13** : **9782091726649**
 *Exemple d'utilisation:*  
 
 ```python
-   >>> somme_positions_pairs('9782091726649')
+   >>> somme_positions_pairs('978209172664')
    35
 
 ```
