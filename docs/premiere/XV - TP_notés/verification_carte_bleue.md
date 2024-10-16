@@ -85,7 +85,7 @@ Cette fonction utilisera toutes les fonctions précédemment implémantées.
 *Exemple d'utilisation:*
 
 ```python
-    cb_1 = "4539148803436467"
+    cb_1 = "4539148803236467"
     cb_2 = "3712348123980741"
 
     >>> numero_carte_bancaire_valide(cb_1)
