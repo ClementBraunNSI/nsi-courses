@@ -51,7 +51,7 @@ Cette fonction multiplie et concatène les chiffres du nombre de carte bancaire 
     res = ''
     for i in range(len(...)):
         if i ... 2 == ...:
-            res += str(multiplier_concaténer(numero_cb[...]))
+            res += str(multiplier_additionner(numero_cb[...]))
         else:
             res += numero_cb[...]
     return res
