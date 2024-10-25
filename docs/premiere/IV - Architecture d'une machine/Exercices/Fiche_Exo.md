@@ -35,5 +35,5 @@ Pour les exercices suivants, on utilisera la norme américaine.
 **Pour chacune des équations booléennes proposées, donner le circuit électronique associé.**
 
 1. (a **and** b) **and** (b **and** c)
-2. ((**not**a) **and** b) **or** (a **and** (**not**b))
+2. ((**not** a) **and** b) **or** (a **and** (**not** b))
 3. (a **and** b) **or** (c **and** a **or** b)
