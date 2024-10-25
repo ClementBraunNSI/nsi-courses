@@ -249,7 +249,8 @@ $F(0) = 0 \rightarrow F(1) = 1 \rightarrow F(2) = 1 + 0 = 1 \rightarrow F(3) = F
 ---
 
 **Écrire une fonction `nombre_armstrong` qui prend en paramètre un nombre entier et renvoie `True` s'il est un nombre d'Amstrong, `False` sinon.**  
-Un nombre est un nombre d'Armstrong si la somme des puissances de ses chiffres est égale au nombre lui-même.  
+Un nombre est un nombre d'Armstrong si la somme des puissances de ses chiffres est égale au nombre lui-même.
+Rappel : la fonction `len(sequence)` permet de donner le nombre d'élément dans la séquence : Exemple $len("Bonjour") = 7$.
 $153 = 1^3 + 5^3 + 3^3$  
 $8208 = 8^4 + 2^4+ 0^4+8^4$  
 *Exemple : nombre_armstrong(1634) doit renvoyer True.*
