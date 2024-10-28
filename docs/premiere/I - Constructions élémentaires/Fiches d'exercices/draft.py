@@ -9,7 +9,6 @@ def tetration(nombre, tetre):
         puissance = nombre
         while cpt < tetre:
             puissance = puissance ** nombre
-            print(puissance)
             cpt += 1
         return nombre**puissance
     
@@ -24,8 +23,6 @@ def tetration_2(n,tetre):
             puissance = puissance ** n
     return n**puissance
 
-print(tetration(3,4))
-print(tetration_2(3,4))
     
 def est_premier(n):
     if n == 1:
@@ -47,7 +44,6 @@ def f(n):
         y = 1
         chaine = ''
         for i in range(n):
-            print(x)
             y = x + y
             x = y - x
 
@@ -92,7 +88,6 @@ def nombre_parfait(nombre : int)-> int:
         for i in range(1,nombre):
             if nombre % i == 0:
                 somme = somme + i
-        print(somme)
         if somme == nombre:
             return True
         else:
@@ -102,7 +97,6 @@ def fibonacci(borne : int)-> None:
             x = 0
             y = 1
             for i in range(borne):
-                print(x)
                 y = x + y
                 x = y - x
 
@@ -133,3 +127,24 @@ def compter_occurences(chaine : str, caractere : str)-> int:
             return compteur
 
 
+def somme_chiffres(chaine : str)->int:
+        res = 0
+        for chiffre in chaine:
+            res = res + int(chiffre)
+        return res
+
+
+def valeur_absolue(a:int)->int:
+        if a < 0 : 
+            return -1 * a
+        else:
+            return a
+        
+def puissance_nombre(a:int, b:int)->int:
+        res = 1
+        for i in range(b):
+            res = res * a
+        return res
+
+
+print(somme_chiffres("12345"))
