@@ -27,6 +27,6 @@
   .md-typeset .fox_correction_eval > .admonition-title::before,
   .md-typeset .fox_correction_eval > summary::before {
     background-color: rgb(85, 107, 47);
-    -webkit-mask-image: var(--md-admonition-icon--fox_correction_eval);
-            mask-image: var(--md-admonition-icon--fox_correction_eval);
+    -webkit-mask-image: var(--md-admonition-icon--fox_correction);
+            mask-image: var(--md-admonition-icon--fox_correction);
   }
