@@ -15,3 +15,18 @@
     -webkit-mask-image: var(--md-admonition-icon--fox_correction);
             mask-image: var(--md-admonition-icon--fox_correction);
   }
+
+  .md-typeset .admonition.fox_correction_eval,
+  .md-typeset details.fox_correction {
+    border-color: rgb(85, 107, 47);
+  }
+  .md-typeset .fox_correction_eval > .admonition-title,
+  .md-typeset .fox_correction_eval > summary {
+    background-color: rgba(85, 107, 47,0.1);
+  }
+  .md-typeset .fox_correction_eval > .admonition-title::before,
+  .md-typeset .fox_correction_eval > summary::before {
+    background-color: rgb(85, 107, 47);
+    -webkit-mask-image: var(--md-admonition-icon--fox_correction_eval);
+            mask-image: var(--md-admonition-icon--fox_correction_eval);
+  }
