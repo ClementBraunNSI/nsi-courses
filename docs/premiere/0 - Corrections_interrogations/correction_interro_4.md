@@ -55,14 +55,14 @@ Cette fonction ne répond pas aux bonnes pratiques de développement.
     
     ```python
         def fibonacci(n:int)-> None:
-        x = 0
-        y = 1
-        chaine = ''
-        for i in range(n):
-            chaine = chaine + x + ' '
-            y = x + y
-            x = y - x
-        return chaine
+            x = 0
+            y = 1
+            chaine = ''
+            for i in range(n):
+                chaine = chaine + x + ' '
+                y = x + y
+                x = y - x
+            return chaine
     ```
     
 
