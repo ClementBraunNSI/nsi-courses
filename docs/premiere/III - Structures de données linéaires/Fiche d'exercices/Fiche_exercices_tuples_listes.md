@@ -15,8 +15,15 @@
 
 ## Exercices d'introduction
 
-1. **Créer un tuple nommé  `mon_tuple` qui contient les éléments 1,2,3,4,5 et une liste `ma_liste` qui contient les éléments suivants 'a','b','c','d','e'. ** 
+1. **Créer un tuple nommé  `mon_tuple` qui contient les éléments 1,2,3,4,5 et une liste `ma_liste` qui contient les éléments suivants 'a','b','c','d','e'.** 
 **Les afficher dans le terminal.**
+
+??? fox_correction "Correction"
+
+   ```python
+      mon_tuple = (1,2,3,4,5)
+      ma_liste = ['a','b','c','d','e']
+   ```
 
 2. **Afficher dans le terminal le troisième élément de `mon_tuple`et le premier élément de `ma_liste`.**
 
