@@ -40,35 +40,6 @@ On déclare ce que l'on appelle des **ancres** et si la comparaison donne un ré
 - **JG** : Sauter à une autre instruction si un opérande est supérieur à l'autre (Jump if Greater).
 - **JL** : Sauter à une autre instruction si un opérande est inférieur à l'autre (Jump if Less).
 
-```assembly
-    mov eax, 5      ; x = 5
-    mov ebx, 10     ; y = 10
-
-    cmp eax, ebx    ; Comparer x et y
-    JLE else_part   ; Sauter à else_part si x <= y
-
-    ; Si x > y, exécuter ce code
-    mov eax, 4
-    mov ebx, 1
-    mov ecx, msg_greater
-    mov edx, 20
-    int 0x80
-    JMP end_if      ; Sauter à end_if après le bloc if
-
-    else_part:
-        ; Si x <= y, exécuter ce code
-        mov eax, 4
-        mov ebx, 1
-        mov ecx, msg_not_greater
-        mov edx, 24
-        int 0x80
-
-    end_if:
-        ; Fin du programme
-        mov eax, 1
-        xor ebx, ebx
-        int 0x80
-```
 
 L'assembleur n'est pas au programme, mais il permet de mieux comprendre le fonctionnement d'un ordinateur et le fait qu'il soit un modèle de machine séquentiel.
 
