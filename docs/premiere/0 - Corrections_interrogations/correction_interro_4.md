@@ -32,13 +32,13 @@ Cette fonction ne répond pas aux bonnes pratiques de développement.
 
 1) **Quels principes des bonnes pratiques de développement ne sont pas respectés par cette fonction? Les corriger.**
 
-!!! fox_correction_eval Correction
+!!! fox_correction_eval "Correction"
     Le nom de la fonction n'est pas explicite, les noms de variable non plus.
     La signature de fonction ou la spécification n'est pas non plus présente.
 
 2) **Quels sont les affichages réalisés dans la boucle lorsque l'on souhaite afficher `f(7)`**
 
-!!! fox_correction_eval Correction
+!!! fox_correction_eval "Correction"
     
     ```python
     >>> f(7)
@@ -54,7 +54,7 @@ Cette fonction ne répond pas aux bonnes pratiques de développement.
 
 3) **Modifier la fonction en ajoutant chacune des valeurs de `x` dans la chaîne de caractères `chaine` et la renvoyer. (Si possible rajouter un espace à chaque itération dans `chaine`.)**
 
-!!! fox_correction_eval Correction
+!!! fox_correction_eval "Correction"
     
     ```python
         def fibonacci(n:int)-> None:
@@ -67,15 +67,6 @@ Cette fonction ne répond pas aux bonnes pratiques de développement.
                 x = y - x
             return chaine
     ```
-    
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 ## Exercice 2 : Complétion de code (3 points)
 
@@ -95,7 +86,7 @@ Rappel : Un chiffre/nombre A est un diviseur d'un autre nombre B si le reste de 
         return ...
 ```
 
-!!! fox_correction_eval Correction
+!!! fox_correction_eval "Correction"
     
     ```python
     def nombres_diviseurs(n : int) -> int:
@@ -114,7 +105,7 @@ Contrainte : Vous ne devez pas utiliser l'opérateur `**` mais utiliser une bouc
 *puissance_nombre(3,3) doit renvoyer 27.*
 *puissance_nombre(2,5) doit renvoyer 32.*
 
-!!! fox_correction_eval Correction
+!!! fox_correction_eval "Correction"
     
     ```python
     def puissance_nombre(a:int, b:int)->int:
@@ -130,7 +121,7 @@ Rappel : La valeur absolue d'un nombre correspond à la valeur positive du nombr
 *valeur_absolue(8) doit renvoyer 8.*
 *valeur_absolue(-56) doit renvoyer 56.*
 
-!!! fox_correction_eval Correction
+!!! fox_correction_eval "Correction"
     
     ```python
     def valeur_absolue(a:int)->int:
@@ -145,7 +136,7 @@ Rappel : La valeur absolue d'un nombre correspond à la valeur positive du nombr
 *somme_chiffres('1234') doit renvoyer 10 (car 1+2+3+4 = 10).*  
 *somme_chiffres('56789') doit renvoyer 35 (car 5+6+7+8+9 = 35)*
 
-!!! fox_correction_eval Correction
+!!! fox_correction_eval "Correction"
     
     ```python
     def somme_chiffres(chaine : str)->int:
