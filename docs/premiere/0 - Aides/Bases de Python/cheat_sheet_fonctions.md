@@ -25,7 +25,7 @@ Remplacer arg1 et arg2 par les valeurs des arguments.
 
 ```python
     def addition(a, b):
-    return a + b
+        return a + b
 
     resultat = addition(3, 5)  # Donne 8
 ```
@@ -40,7 +40,7 @@ Remplacer arg1 et arg2 par les valeurs des arguments.
 
 ```python
     def afficher_carre(n):
-    print(n ** 2)
+        print(n ** 2)
 
     afficher_carre(4)  # Affiche 16
 ```
@@ -50,8 +50,8 @@ Remplacer arg1 et arg2 par les valeurs des arguments.
 ```python
     def operations(a, b):
     addition = a + b
-    multiplication = a * b
-    return addition, multiplication
+        multiplication = a * b
+        return addition, multiplication
 
     somme, produit = operations(3, 4)
     # somme = 7, produit = 12
