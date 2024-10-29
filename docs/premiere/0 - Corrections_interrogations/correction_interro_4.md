@@ -11,7 +11,10 @@ La suite de Fibonacci est une séquence de nombres où chaque terme est la somme
 Elle commence généralement par 0 et 1, puis chaque terme suivant est calculé comme :
 
 $F(n) = F(n-1) + F(n-2)$
-$$F(0) = 0\newline F(1) = 1\newline F(2) = 1 + 0 = 1\newline F(3) = 1 + 1 = 2\newline
+$$F(0) = 0 \newline F(1) = 1
+\newline F(2) = 1 + 0 = 1
+\newline F(3) = 1 + 1 = 2
+\newline
 \cdots$$
 
 ```python
