@@ -4,7 +4,7 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 
 ## Corrections interrogations
 
-- [Interrogation 2 : Bases de Pythob](./0%20-%20Corrections_interrogations/trimestre_1/correction_interro_2.md) 
+- [Interrogation 2 : Bases de Python](./0%20-%20Corrections_interrogations/trimestre_1/correction_interro_2.md)  
 
 - [Interrogation 3 : Boucles](./0%20-%20Corrections_interrogations/trimestre_1/correction_interro_3.md)  
 
