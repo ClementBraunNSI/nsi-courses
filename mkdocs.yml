@@ -18,10 +18,6 @@ theme:
   palette:
     primary: indigo
     accent: blue
-    
-plugins:
-  - search
-  - macros
 
 markdown_extensions:
   - pymdownx.highlight:
