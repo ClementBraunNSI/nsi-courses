@@ -4,7 +4,7 @@
 
 Une des nombreuses structures de Python est **le dictionnaire**.
 
-Le dictionnaire est une structure de données qui n'est pas indexée mais organisées suivant des éléments que l'on nomme **attributs**.
+Le dictionnaire est une structure de données qui n'est pas indexée mais organisées suivant des éléments que l'on nomme **attributs (ou descripteur)**.
 Ces attributs correspondent à des propriétés sur l'élément que l'on souhaite modéliser.
 
 *Exemple*:

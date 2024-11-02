@@ -9,3 +9,6 @@ with open('communes.csv', newline='') as fichier_csv:
 for ligne in liste_a_remplir:
    if ligne['code_departement'] == '62':
         print(ligne['nom_commune']) 
+
+print(type(liste_a_remplir))
+print(type(liste_a_remplir[0]))

@@ -14,7 +14,7 @@ Ces formats CSV sont manipulables via des logiciels **tableurs** (Excel, Libre O
 
 La bibliothèque `csv` permet de charger des fichiers et stocke les données sous forme de listes.
 
-On ne traitera que de la fonction `DictReader` qui permet de traduire chaque ligne de notre fichier CSV dans des listes, eux mêmes stockés dans une liste.
+On ne traitera que de la fonction `DictReader` qui permet de traduire chaque ligne de notre fichier CSV dans des dictionnaires, eux mêmes stockés dans une liste.
 
 Voici la structure de l'ouverture d'un fichier CSV et du remplissage d'une liste organisant nos données.
 
@@ -32,4 +32,68 @@ with open('chemin_du_fichier.csv', newline='') as fichier_csv:
 
 Le fichier CSV [commune.csv](./communes.csv) représente l'ensemble des communes de France, associée à leur code postal, département etc...
 
+Pour "ouvrir" ce fichier `csv` et structurer toutes les données le comportant, on utilisera la strucutre ci-dessus.
 
+On aurait
+
+```python
+import csv
+
+def creer_liste_villes(nom_de_fichier : str) -> list:
+   villes = []
+   with open('communes.csv', newline='') as fichier_csv:
+      # Méthode DictReader qui permet de structurer les données contenues dans le fichier CSV en liste de dictionnaires 
+      # où chaque descripteur (ou attribut) est renseigné.
+      lecteur = csv.DictReader(fichier_csv, delimiter=';')   
+      for ligne in lecteur:
+         villes.append(dict(ligne))
+```
+
+Pour ce fichier CSV, il y a les descripteurs suivant (description exhaustive): `code_commune_INSEE,nom_commune_postal,code_postal,latitude,longitude,code_commune,nom_commune,nom_commune_complet,code_departement,nom_departement,code_region,nom_region`.
+
+Grâce à tous ces descripteurs, on peut afficher les lignes de nos fichiers CSV suivant différents critères.
+*Rappel, la fonction DictReader permet de créer une liste de dictionnaires et chaque dictionnaire correspond à une ligne du fichier CSV à laquelle on associe chacun des attributs à chacune des valeurs de la ligne.
+
+On appelle **projection** le fait d'obtenir les valeurs de certains ou tous les attributs d'une table / base de données / fichiers CSV.
+
+
+*Exemple en python*
+
+```python
+
+   # Afficher toutes les infomations de toutes les villes
+   for ligne in villes:
+      print(ligne)
+
+   # Afficher le nom de toutes les villes
+   for ligne in villes:
+      print(ligne["nom_commune"])
+
+   # Afficher le département de chaque ville
+   for ligne in villes:
+      print("La ville ", ligne[nom_commune], " est dans le département : ", ligne["nom_departement"])
+```
+
+Cela permet donc d'obtenir dans notre exemple de villes, le nom de celle-ci, le département etc... de toutes les villes **sans aucune contrainte**.
+
+___
+
+On appelle **sélection** le fait de sélectionner des valeurs suivant certains critères ou condition.
+
+
+
+```python
+   
+   # Afficher le nom des villes qui sont dans le département 59
+   for ligne in villes:
+      if ligne['code_departement'] == '59':
+         print(ligne["nom_commune"])
+
+   # Afficher les noms des villes commençant par la lettre C
+
+   for ligne in villes:
+      if ligne["nom_commune"][0] == "C":
+         print(ligne["nom_commune"])
+```
+
+Cela permet donc d'obtenir des informations ou de réaliser des traitements sur nos villes suivant divers critères.

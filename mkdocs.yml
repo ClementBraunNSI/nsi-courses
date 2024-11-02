@@ -19,7 +19,9 @@ theme:
     primary: indigo
     accent: blue
     
-    
+plugins:
+  - search
+  - macros
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -51,5 +53,4 @@ extra_javascript:
 
 copyright: |
   &copy; 2024 <a>Clément Braun</a>
-
 
