@@ -83,10 +83,9 @@ SELECT nom FROM Etudiants WHERE age > 17;
 
 Ici, on veut afficher le nom des étudiants avec l'instruction `SELECT nom FROM Etudiants` mais en ajouter la contrainte `WHERE age > 17` permet d'obtenir tous les noms uniquement de ceux ayant plus de 17 ans.
 
-
 ## Activité : SQL Murder Mystery
 
 Pour appliquer cela, vous pouvez vous diriger vers le site "SQL Murder Mystery" qui permet de résoudre une enquête d'un crime à l'aide de bases de données et de requête en langage SQL.  
-(Attention, le site est uniquement en anglais).
+*(Attention, le site est uniquement en anglais)*.
 
 Vous pouvez rejoindre le site [en cliquant ici](https://mystery.knightlab.com)
