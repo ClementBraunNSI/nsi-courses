@@ -52,7 +52,7 @@ Le SQL permet de réaliser des requêtes de demande de données suivant des crit
 
 #### Projeter des données : `SELECT`
 
-La commande `SELECT` permet de **récupérer des lignes spécifiques** d'une table en fonction de certaines conditions.
+La commande `SELECT` permet de **récupérer des lignes spécifiques** (appelés **enregistrements**) d'une table.
 
 !!! danger
     Attention, il ne faut pas confondre la commande SELECT avec la sélection. Sélectionner des données revient à réaliser une projection **avec des contraintes**.
@@ -63,7 +63,7 @@ La commande `SELECT` permet de **récupérer des lignes spécifiques** d'une tab
 SELECT * FROM Etudiants;
 ```
 
-`SELECT *` signifie “sélectionne toutes les colonnes”. FROM Etudiants indique que l’on travaille avec la table Etudiants.
+`SELECT *` signifie retourner toutes les colonnes”. FROM Etudiants indique que l’on travaille avec la table Etudiants.
 
 *Exemple* : Supposons que l'on veut afficher uniquement le nom et l'âge des étudiants
 
@@ -80,6 +80,7 @@ Par exemple, si l'on souhaite aficher le nom des étudiants qui ont plus de 17 a
 ```sql
 SELECT nom FROM Etudiants WHERE age > 17;
 ```
+
 Ici, on veut afficher le nom des étudiants avec l'instruction `SELECT nom FROM Etudiants` mais en ajouter la contrainte `WHERE age > 17` permet d'obtenir tous les noms uniquement de ceux ayant plus de 17 ans.
 
 
