@@ -1,5 +1,5 @@
 
-# Fiche d'exercices : Découverte des dictionnaires en Python
+# Fiche d'exercices : Introduction aux dictionnaires en Python
 
 ___
 
