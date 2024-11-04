@@ -16,6 +16,7 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 
 ## Semainier Novembre
 
+- 4 novembre : Rentrée et Exercices rappels ✅
 - 5 novembre : Exercices Listes Python
 - 6 novembre : Exercices Listes Python (2 heures)
 - 11 novembre : férié
