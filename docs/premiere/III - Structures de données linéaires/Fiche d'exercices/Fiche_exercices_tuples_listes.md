@@ -1,4 +1,4 @@
-# Fiche d'exercice : Les tuples et les listes
+# II - Fiche d'exercice : Les tuples et les listes
 
 !!! danger Attention
       Tous les exercices, s'ils sont réalisés par des boucles `for`, doivent être faits avec une boucle sur les indices et une boucle sur les valeurs.
