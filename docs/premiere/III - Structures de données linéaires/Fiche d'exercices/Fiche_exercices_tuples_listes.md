@@ -41,114 +41,153 @@ Afficher dans le terminal les 5 premiers éléments de la liste en utilisant une
 Afficher les éléments du quatrième au huitième en utilisant une boucle for.  
 Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant une boucle while.**
 
-## Tuples et fonctions
+---
 
-{==Algorithme à savoir==}  
+## Niveau Facile
 
-**Écrire une fonction qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
+**Écrire une fonction `somme_elements` qui prend une liste de nombres en paramètre et renvoie la somme de tous les éléments.**  
+*Exemple :*  
+*somme_elements([1, 2, 3, 4]) doit renvoyer 10.*
 
 ---
 
-**Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans ce liste.**
+**Écrire une fonction `compter_pairs` qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.**  
+*Exemple :*  
+*compter_pairs([1, 2, 3, 4, 5, 6]) doit renvoyer 3.*
 
 ---
 
-**Écrire une fonction `somme` qui prend en paramètre une liste d'entiers et renvoie la somme des éléments de cette liste.**
+**Écrire une fonction `longueur_chaines` qui prend une liste de chaînes de caractères et renvoie une liste contenant la longueur de chaque chaîne.**  
+*Exemple :*  
+*longueur_chaines(["abc", "de", "fghi"]) doit renvoyer [3, 2, 4].*
 
 ---
 
-**Écrire une fonction `produit` qui prend en paramètre une liste d'entiers et renvoie la produit des éléments de cette liste.**
+**Écrire une fonction `produit_elements` qui prend une liste d'entiers et renvoie le produit de tous les éléments. Attention aux cas où la liste est vide.**  
+*Exemple :*  
+*produit_elements([2, 3, 4]) doit renvoyer 24.*
 
 ---
 
-!!! danger Cet exercice met en oeuvre une modification par **effet de bord**.
-      **Écrire une fonction `echange` qui prend en paramètres une liste et deux indices et échange les valeurs aux positions i et j dans la liste passée en paramètres.**
+**Écrire une fonction `compter_occurrences` qui prend une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**  
+*Exemple :*  
+*compter_occurrences([1, 2, 2, 3, 2], 2) doit renvoyer 3.*
 
 ---
 
-**Écrire une fonction `inverser_tableau` qui prend en paramètre un liste et renvoie une autre liste qui contient tous les éléments de celui en paramètre mais dans le sens inverse.**
+==***Algorithme à connaître***==
+**Écrire une fonction `presence`qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
+*Exemple :*
+*presence(3, [1, 2, 3, 4]) doit renvoyer True.*
+*presence(5, [1, 2, 3, 4]) doit renvoyer False.*
 
 ---
 
-On souhaite modéliser un jeu de cartes. Chaque carte sera instanciée par un liste (nombre, couleur). On souhaite vérifier qu'une carte créée soit valide. Une carte est valide si le nombre est compris entre 1 et 13 et si la couleur est soit "Coeur", "Trèfle", "Pique" ou "Carreaux".  
-
-**Écrire une fonction `est_valide` qui prend en paramètre une liste correspondant à une carte et renvoie **True** si la carte est valide, **False** sinon.**
-
----
-
-**Écrire une fonction `compter_occurrences` qui prend en paramètre une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**
+**Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans cette liste.**
+*Exemple :*
+*moyenne([1, 2, 3, 4, 5]) doit renvoyer 3.0.*
 
 ---
 
-**Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément et renvoie 3 listes : une liste contenant les valeurs inférieure à la valeur passée en paramètre, une liste contenant uniquement la valeur passée en paramètre si elle est présente, une dernière contenant tous les éléments supérieurs à la valeur passée en paramètre.**
-*Exemple:*
-```python
-   >>> rangement_valeurs([1,7,4,3,6,2,8],5)
-   [1,4,3,2],[],[7,6,8]
-   >>> rangement_valeurs([1,2,4,3,6,2,8],2)
-   [1],[2,2],[4,3,6,8]
-```
+## Niveau Intermédiaire
+
+**Écrire une fonction `filtrer_positifs` qui prend une liste de nombres et renvoie une nouvelle liste contenant uniquement les nombres positifs.**  
+*Exemple :*  
+*filtrer_positifs([-1, 0, 3, -7, 8]) doit renvoyer [3, 8].*
 
 ---
 
-{==Algorithme à savoir==}  
-
-**Écrire une fonction `minimum_liste` qui prend en paramètre une liste d'entiers et renvoie la valeur minimum de la liste et son indice.**  
-
----
-
-{==Algorithme à savoir==}  
-
-**Écrire une fonction `maximum_liste` qui prend en paramètre une liste d'entiers et renvoie la valeur maximum de la liste et son indice.**  
+==***Algorithme à connaître***==
+**Écrire une fonction `maximum` qui prend une liste d'entiers et renvoie l'entier maximum.**  
+*Exemple :*  
+*max_et_min([3, 1, 9, 2]) doit renvoyer 9.*
 
 ---
 
-**Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**
+==***Algorithme à connaître***==
+**Écrire une fonction `minimum` qui prend une liste d'entiers et renvoie l'entier minimum.**  
+*Exemple :*  
+*max_et_min([3, 1, 9, 2]) doit renvoyer 1.*
+
+---
+
+**Écrire une fonction `concatener_chaines` qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.**  
+*Exemple :*  
+*concatener_chaines(["Bonjour", " ", "le", " ", "monde"]) doit renvoyer "Bonjour le monde".*
+
+---
+
+**Écrire une fonction `inverser_liste` qui prend une liste et renvoie une nouvelle liste avec les éléments dans l'ordre inverse.**  
+*Exemple :*  
+*inverser_liste([1, 2, 3]) doit renvoyer [3, 2, 1].*
+
+---
+
+**Écrire une fonction `valeurs_uniques` qui prend une liste et renvoie une nouvelle liste contenant les éléments sans doublons (dans l'ordre d'apparition).**  
+*Exemple :*  
+*valeurs_uniques([1, 2, 2, 3, 4, 4]) doit renvoyer [1, 2, 3, 4].*
+
+---
+
+**Écrire une fonction `moyenne_elements` qui prend une liste de nombres et renvoie la moyenne des éléments. Gérez le cas où la liste est vide.**  
+*Exemple :*  
+*moyenne_elements([5, 10, 15]) doit renvoyer 10.0.*
+
+---
+
+**Écrire une fonction `separer_pairs_impairs` qui prend une liste d'entiers et renvoie deux listes : une avec les éléments pairs et une autre avec les éléments impairs.**  
+*Exemple :*  
+*separer_pairs_impairs([1, 2, 3, 4, 5]) doit renvoyer ([2, 4], [1, 3, 5]).*
 
 ---
 
 **Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.**
-
+*Exemple :*
+*diviseurs(6) doit renvoyer [1, 2, 3, 6] (car 1, 2, 3 et 6 sont les diviseurs de 6).*
+*diviseurs(10) doit renvoyer [1, 2, 5, 10] (car 1, 2, 5 et 10 sont les diviseurs de 10).*
 ---
 
 **Écrire une fonction `est_croissante` qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.**
+*Exemple :*
+*est_croissante([1, 2, 3, 4]) doit renvoyer True.*
+*est_croissante([1, 3, 2, 4]) doit renvoyer False.*
+---
+
+**Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.**
+*Exemple :*
+*echange([1, 2, 3, 4], 1, 2), cela doit modifier la liste pour donner [1, 3, 2, 4].*
+*echange([5, 10, 15], 0, 2), cela doit modifier la liste pour donner [15, 10, 5].*
 
 ---
 
-On souhaite réaliser des opérations sur des points d'un plan. On va représenter un point comme étant une liste (abscisse, ordonnée).
+**Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l’élément, une liste avec l’élément si présent, et une liste avec les valeurs supérieures.**  
+*Exemple :*  
+```python
+rangement_valeurs([1, 7, 4, 3, 6, 2, 8], 5)  # Renvoie: [1, 4, 3, 2], [], [7, 6, 8]
+rangement_valeurs([1, 2, 4, 3, 6, 2, 8], 2)  # Renvoie: [1], [2, 2], [4, 3, 6, 8]
+```
 
-1. Instancier un point A d'abscisse -3 et d'ordonnée 2.  
-   Instancier un point B d'abscisse 4 et d'ordonnée 4.
+## Niveau Difficile
 
-2. **Écrire une fonction `milieu` qui prend 2 points en paramètres et renvoie le point situé au milieu des 2 en paramètres.**  
-   On rappelle que la formule pour trouver le point du milieu est $\texttt{milieu}(\frac{x_A + x_B}{2}, \frac{y_A + y_B}{2})$.
+**Écrire une fonction `compter_voyelles` qui prend une liste de chaînes de caractères et renvoie le nombre total de voyelles présentes dans toutes les chaînes.**
+*Exemple :*
+*compter_voyelles([“chat”, “chien”]) doit renvoyer 3.*
 
-3. **Écrire une fonction `distance` qui prend en paramètres deux points et renvoie la distance entre les deux points.**
-   On rappelle la formule pour trouver la distance $\sqrt{((x_A - x_B)^2 + (y_A - y_B)^2)}$.
+---
 
-## Matrices
+**Écrire une fonction `valeurs_en_double` qui prend une liste et renvoie une nouvelle liste contenant uniquement les éléments qui apparaissent plus d’une fois (sans répétitions supplémentaires).**
+*Exemple :*
+*valeurs_en_double([1, 2, 2, 3, 4, 4, 5]) doit renvoyer [2, 4].*
 
-On rappelle qu'une matrice est un tableau à deux dimensions. En python, pour les représenter, on réalise des listes de listes.
+---
 
-1. On dispose de la matrice [[1,2,3],[4,5,6],[7,8,9]].
-   1. Donner la position (indice de la ligne et de la colonne) de la valeur 2.
-   2. Donner la valeur à la ligne 1 et colonne 2.
-   3. Comment en python retrouver la valeur cherchée en question 2.
+**Écrire une fonction `indice_element` qui prend une liste et un élément, et renvoie l’indice de la première occurrence de cet élément dans la liste, ou -1 s’il n’est pas présent.**
+*Exemple :*
+*indice_element([10, 20, 30], 20) doit renvoyer 1.*
 
-2. On dispose de la matrice [[1,2,3],[4,5,6],[7,8,9]]. 
-   1. Écrire un programme qui permet de donner la somme de tous les nombres de cette matrice.
-   2. Tester avec d'autres matrices plus grandes.
+---
 
-3. Créer une matrice par compréhension qui contient tous les nombres de 0 à 11. Chacune des lignes de la matrice doivent avoir une taille de 4.
-
-## Listes par compréhension
-
-1. On dispose de la compréhension suivante [i for i in range(10)].
-   1. Quelle liste est créée par cette compréhension?
-   2. Modifier cette compréhension pour donner le carré de chaque nombre.
-
-2. On peut rajouter des conditions dans des compréhensions pour éviter certaines valeurs.
-   1. Quelle liste est créée par la compréhension suivante : [i for i in range(20) if i %2 == 0] ?
-   2. Modifier cette compréhension pour quelle fasse l'inverse.
-
-3. Créer une liste par compréhension qui contient les racines carrées des nombres allant de 1 jusque 20. On rappelle que le module `math` dispose de la fonction `sqrt` qui permet de calculer les racines carrées.
+**Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**
+*Exemple :*
+*fusionner_sans_doublons([1, 2, 3], [2, 3, 4]), cela doit renvoyer [1, 2, 3, 4].*
+*fusionner_sans_doublons(['a', 'b'], ['b', 'c', 'a']), cela doit renvoyer ['a', 'b', 'c'].*
