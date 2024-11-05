@@ -75,7 +75,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
-==***Algorithme à connaître***==
+==***Algorithme à connaître***==  
 **Écrire une fonction `presence`qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
 *Exemple :*
 *presence(3, [1, 2, 3, 4]) doit renvoyer True.*
