@@ -55,3 +55,9 @@ Cette épreuve vaut pour $\frac{1}{4}$ des points de la note finale.
 - DELPLACE Nicolas : Enseignant d'informatique
 - RAMSTEIN Stéphane : Enseignant d'informatique au lycée Raymond Queneau de Villeneuve d'Ascq
 - PAPEGAY Benoit : Enseignant à l'Université de Lille
+
+## Sites de collègues de NSI
+
+[RELMY Lucas](http://lucasrelmynsi.gitlab.io/site_cours/)
+[DEMERVILLE Erwan](https://nsi.erwandemerville.fr)
+[RAMSTEIN Stéphane](https://stephane_ramstein.gitlab.io/nsi/)
