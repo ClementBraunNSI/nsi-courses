@@ -4,7 +4,7 @@
 
 L’ASCII art est une forme d’art numérique qui utilise les caractères de la table ASCII pour créer des images ou des illustrations.
 
-### Exemples :
+### Exemples
 
 Quelles formes géométriques sont affichées à l'aide de ces fonctions ?
 
@@ -28,7 +28,7 @@ Quelles formes géométriques sont affichées à l'aide de ces fonctions ?
 
 ### Exercices
 
-Écrire les fonctions qui permettent d'obtenir les figures suivantes: 
+Écrire les fonctions qui permettent d'obtenir les figures suivantes:  
 
 ```python
     >>> triangle2(3)
