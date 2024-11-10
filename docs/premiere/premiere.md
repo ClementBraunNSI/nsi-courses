@@ -17,10 +17,10 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 ## Semainier Novembre
 
 - 4 novembre : Rentrée et Exercices rappels ✅
-- 5 novembre : Exercices Listes Python
-- 6 novembre : Exercices Listes Python (2 heures)
+- 5 novembre : Exercices Listes Python ✅
+- 6 novembre : Exercices Listes Python (2 heures) ✅
 - 11 novembre : férié
-- 12 novembre : Exercices Listes avancées (matrices) ou révisions ou mastermind
+- 12 novembre : Corrections exos listes
 - 13 novembre : DS 2 heures
   - Écrit 1 heure sur binaire et programmation de base
   - Pratique 1 heure sur programmation de base
