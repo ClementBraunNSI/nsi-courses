@@ -15,6 +15,6 @@ def images_par_classes():
                             if ' ' in image:
                                 os.rename('./monstres/' + classe + '/' + image, './monstres/' + classe + '/' + image.replace(' ', '_'))
                             with open('liens.txt', 'a') as f:
-                                f.write("\n### "+image[0:len(image)-4] + '\n')
-                                f.write(f"[{classe}_{image[0:len(image)-4]}]("+'monstres/' + classe + '/' + image + ')\n')
+                                #f.write("\n### "+image[0:len(image)-4] + '\n')
+                                f.write(f"- [{image[0:len(image)-4]}]("+'monstres/' + classe + '/' + image + ')\n')
 images_par_classes()
