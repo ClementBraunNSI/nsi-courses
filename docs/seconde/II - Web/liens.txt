@@ -1,6 +1,6 @@
 # Ensemble des monstres des divers élèves
 
- ## 2DE7
+## 2DE7
 
 ### jade
 ![2DE7_jade](monstres/2DE7/jade.png)
@@ -38,7 +38,7 @@
 ### jules
 ![2DE7_jules](monstres/2DE7/jules.png)
 
- ## 2DE9
+## 2DE9
 
 ### lena_(surement_à_refaire)
 ![2DE9_lena_(surement_à_refaire)](monstres/2DE9/lena_(surement_à_refaire).png)
@@ -58,7 +58,7 @@
 ### lina
 ![2DE9_lina](monstres/2DE9/lina.png)
 
- ## 2DE6
+## 2DE6
 
 ### timoté
 ![2DE6_timoté](monstres/2DE6/timoté.png)
@@ -84,7 +84,7 @@
 ### elsa
 ![2DE6_elsa](monstres/2DE6/elsa.pdf)
 
- ## 2DE1
+## 2DE1
 
 ### louna
 ![2DE1_louna](monstres/2DE1/louna.png)
@@ -113,9 +113,9 @@
 ### sofia
 ![2DE1_sofia](monstres/2DE1/sofia.png)
 
- ## .DS_Store
+## .DS_Store
 
- ## S16
+## S16
 
 ### marie_ellynn
 ![S16_marie_ellynn](monstres/S16/marie_ellynn.png)
@@ -174,7 +174,7 @@
 ### gaspard
 ![S16_gaspard](monstres/S16/gaspard.png)
 
- ## 2DE3
+## 2DE3
 
 ### sasha
 ![2DE3_sasha](monstres/2DE3/sasha.png)
@@ -215,7 +215,7 @@
 ### eline
 ![2DE3_eline](monstres/2DE3/eline.png)
 
- ## S01
+## S01
 
 ### yves
 ![S01_yves](monstres/S01/yves.png)
@@ -280,7 +280,7 @@
 ### thomas
 ![S01_thomas](monstres/S01/thomas.png)
 
- ## 2DE2
+## 2DE2
 
 ### lola
 ![2DE2_lola](monstres/2DE2/lola.png)
@@ -297,7 +297,7 @@
 ### gabriel
 ![2DE2_gabriel](monstres/2DE2/gabriel.png)
 
- ## 2DE10
+## 2DE10
 
 ### jade
 ![2DE10_jade](monstres/2DE10/jade.png)
@@ -326,7 +326,7 @@
 ### semih
 ![2DE10_semih](monstres/2DE10/semih.pdf)
 
- ## 2DE11
+## 2DE11
 
 ### ilann
 ![2DE11_ilann](monstres/2DE11/ilann.png)
