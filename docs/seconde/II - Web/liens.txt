@@ -113,8 +113,6 @@
 ### sofia
 ![2DE1_sofia](monstres/2DE1/sofia.png)
 
-## .DS_Store
-
 ## S16
 
 ### marie_ellynn
