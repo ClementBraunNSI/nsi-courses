@@ -6,7 +6,7 @@ def images_par_classes():
     for classe in os.listdir(('./monstres')):
             print(classe)
             with open('liens.txt', 'a') as f:
-                 f.write(f"\n ## {classe}\n")
+                 f.write(f"\n## {classe}\n")
             if classe != '.DS_Store':
                 for image in os.listdir('./monstres/' + classe):
                     print(image)
