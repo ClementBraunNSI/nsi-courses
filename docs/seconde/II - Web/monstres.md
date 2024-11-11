@@ -1,5 +1,7 @@
 # Ensemble des monstres des divers élèves
 
+Vous retrouverez vos monstres triés par classes.
+
 ## 2DE7
 
 ![2DE7_jade](monstres/2DE7/jade.png)

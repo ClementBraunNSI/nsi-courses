@@ -2,11 +2,11 @@ import os
 
 def images_par_classes():
     with open('liens.txt', 'w') as f:
-        f.write('')
+        f.write('# Ensemble des monstres des divers élèves' + '\n')
     for classe in os.listdir(('./monstres')):
             print(classe)
             with open('liens.txt', 'a') as f:
-                 f.write(f"## {classe}\n")
+                 f.write(f"\n ## {classe}\n")
             if classe != '.DS_Store':
                 for image in os.listdir('./monstres/' + classe):
                     print(image)
