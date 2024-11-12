@@ -25,7 +25,7 @@ Le site est aussi régi par une feuille de style qui n'est pas à modifier pour 
 
 Vous allez devoir pour cette première partie : 
 
-**Dans le bloc violet : Modifier le Nom du monstre pour qu'il corresponde à un titre de niveau 1.**
+**Modifier le Nom du monstre pour qu'il corresponde à un titre de niveau 1.**
 
 **Dans le bloc bleu : Ajouter un paragraphe expliquant la rivalité entre les deux.**
 
