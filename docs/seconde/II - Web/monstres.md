@@ -81,7 +81,7 @@
 - [madeg](monstres/2DE3/madeg.png)
 - [joseph](monstres/2DE3/joseph.png)
 - [mila](monstres/2DE3/mila.png)
-- 
+
 ## S01
 
 - [yves](monstres/S01/yves.png)
