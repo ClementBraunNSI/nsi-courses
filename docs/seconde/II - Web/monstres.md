@@ -74,12 +74,16 @@
 - [nil](monstres/2DE3/nil.png)
 - [enora](monstres/2DE3/enora.png)
 - [ilhan](monstres/2DE3/ilhan.png)
+- [eline_piano](monstres/2DE3/eline_piano.png)
+- [eline_batterie](monstres/2DE3/eline_batterie.png)
+- [eline_trompette](monstres/2DE3/eline_trompette.png)
+- [eline](monstres/2DE3/eline.png)
 - [madeg](monstres/2DE3/madeg.png)
 - [joseph](monstres/2DE3/joseph.png)
 - [mila](monstres/2DE3/mila.png)
-- [eline](monstres/2DE3/eline.png)
-
+- 
 ## S01
+
 - [yves](monstres/S01/yves.png)
 - [jade](monstres/S01/jade.png)
 - [nora-lea](monstres/S01/nora-lea.png)
