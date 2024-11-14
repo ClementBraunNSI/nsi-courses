@@ -20,8 +20,8 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 - 5 novembre : Exercices Listes Python ✅
 - 6 novembre : Exercices Listes Python (2 heures) ✅
 - 11 novembre : férié ✅
-- 12 novembre : Corrections exos listes
-- 13 novembre : DS 2 heures
+- 12 novembre : Corrections exos listes ✅
+- 13 novembre : DS 2 heures ✅
   * Écrit 1 heure sur binaire et programmation de base
   * Pratique 1 heure sur programmation de base
 - 18 novembre : Architecture des machines (introduction)

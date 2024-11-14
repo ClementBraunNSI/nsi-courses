@@ -19,7 +19,8 @@ Le but principal des bases de données est de faciliter :
 
 ## Historique des Bases de Données Relationnelles
 
-### Origines
+### Origines  
+
 Dans les années 1960, les bases de données étaient très basiques et souvent peu optimisées.  
 En 1970, **Edgar F. Codd** propose le **modèle relationnel**. Son idée était de simplifier la gestion des données en les organisant sous forme de tables reliées par des relations logiques.
 

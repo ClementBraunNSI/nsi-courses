@@ -52,7 +52,8 @@ def creer_liste_villes(nom_de_fichier : str) -> list:
 Pour ce fichier CSV, il y a les descripteurs suivant (description exhaustive): `code_commune_INSEE,nom_commune_postal,code_postal,latitude,longitude,code_commune,nom_commune,nom_commune_complet,code_departement,nom_departement,code_region,nom_region`.
 
 Grâce à tous ces descripteurs, on peut afficher les lignes de nos fichiers CSV suivant différents critères.
-*Rappel, la fonction DictReader permet de créer une liste de dictionnaires et chaque dictionnaire correspond à une ligne du fichier CSV à laquelle on associe chacun des attributs à chacune des valeurs de la ligne.
+
+*Rappel, la fonction DictReader permet de créer une liste de dictionnaires et chaque dictionnaire correspond à une ligne du fichier CSV à laquelle on associe chacun des attributs à chacune des valeurs de la ligne.*
 
 On appelle **projection** le fait d'obtenir les valeurs de certains ou tous les attributs d'une table / base de données / fichiers CSV.
 
@@ -80,7 +81,7 @@ ___
 
 On appelle **sélection** le fait de sélectionner des valeurs suivant certains critères ou condition.
 
-
+Cela permet donc d'obtenir des informations ou de réaliser des traitements sur les données d'un fichier suivant divers critères (par exemple sur les villes).
 
 ```python
    
@@ -95,5 +96,3 @@ On appelle **sélection** le fait de sélectionner des valeurs suivant certains 
       if ligne["nom_commune"][0] == "C":
          print(ligne["nom_commune"])
 ```
-
-Cela permet donc d'obtenir des informations ou de réaliser des traitements sur nos villes suivant divers critères.

@@ -22,8 +22,13 @@ Pour créer ce genre d'objets, on utilise donc la structure des dictionnaires.
 ## Les dictionnaires en Python
 
 Pour créer un dictionnaire, on utilise les accolades **{}** la différence des tableaux (parenthèses **(   )**) ou des listes (crochets **[   ]**).
-À l'intérieur de ces crochets, on utilise la syntaxe **attribut : valeurs possibles**. 
-Chacun des attributs sont séparés par des virgules.
+À l'intérieur de ces crochets, on utilise la syntaxe **attribut : valeurs possibles**.
+
+Un attribut correspond donc à une propriété d'un objet que l'on cherche à modéliser et est (très souvent) représenté par une chaîne de caractères.
+
+Les différentes valeurs possibles peuvent être de types simples (entier, chaines de caractère, booléen) mais aussi de types plus complèxes (listes, dictionnaires ou tuples).
+
+Chacun des couples *attributs : valeurs* sont séparés par des virgules.
 
 De base, un dictionnaire lorsqu'on le créée de cette manière, est dépourvu d'attributs.
 Pour créer un dictionnaire avec des attributs déjà connus, il existe deux méthodes :
@@ -65,7 +70,7 @@ modele_voiture["couleurs"] = modele_voiture["couleurs"] + ["beige"]
 modele_voiture.pop("taille_jantes")
 ```
 
-!!! Warning Attention pour rajouter des valeurs
+!!! Warning Ajout de valeurs
     Pour rajouter des valeurs à un attribut d'un dictionnaire, il faut bien faire attention aux types.
     Par exemple, pour l'exemple précédent, nos valeurs étaient contenues dans des listes. Il faut donc opérer par concaténation de liste avec l'opérateur **+**.
 
