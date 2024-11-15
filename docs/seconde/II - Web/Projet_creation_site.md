@@ -31,15 +31,19 @@ Vous allez devoir pour cette première partie :
 
 **Dans le bloc turquoise : Ajouter chacune des localisations où l'on peut retrouver votre monstre (Conservez la liste si vous souhaitez une liste, sinon supprimez la et écrivez un paragraphe).**
 
-**Dans le bloc précédent : Ajouter une liste à puce correspondant à ses statistiques si l'on souhaite transformer ce bestiaire en un jeu de rôle.**
+**Dans le bloc turquoise : Ajouter une liste à puce correspondant à ses statistiques si l'on souhaite transformer ce bestiaire en un jeu de rôle sinon une histoire par rapport à son lieu d'habitat.**
 
-**Ajouter dans le bloc contenant la description et l'histoire de son monstre, un petit titre de niveau 3 parlant de sa légende et un paragraphe expliquant l'histoire du monstre.**
+**Ajouter dans le bloc contenant la description et l'histoire de son monstre, un petit titre de niveau 3 permettant de structurer la page et un paragraphe expliquant l'histoire du monstre/personnage.**
 
-**Modifier chacune `description` de la partie rivaux par la relation de rivalité entre le monstre que vous avez choisi et chacun de ces 3 rivaux.**
-
-Par la suite, on ajoutera les images des rivaux.
+Par la suite, on ajoutera les images des rivaux/personnages (quand votre monstre est disponible [ici](./monstres.md)).
 
 **Ajouter à la place de `image du monstre` l'image du monstre associée (après l'avoir fait générer).**
+
+Pour se faire, vous rajouterez la balise suivante : 
+
+```html
+    <img class = "image_principale" align="left" height="400px" width="400px" src="image/votre_prenom.jpg" alt="nom_du_monstre">
+```
 
 ## Partie 2 : Style du site
 
