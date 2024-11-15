@@ -42,5 +42,36 @@ def images_par_classes_2():
                                 print(chaine)
                                 f.write(chaine)
                                 cpt += 1
+
+def images_par_classes_3():
+    cpt = 0
+    with open('monstres.md', 'w') as f:
+        f.write('# Ensemble des monstres des divers élèves' + '\n')
+    for classe in os.listdir(('./monstres')):
+            print(classe)
+            if classe != '.DS_Store':
+                with open('monstres.md', 'a') as f:
+                    f.write(f"\n## {classe}"+"\n")
+                    f.write("|"*len([name for name in os.listdir("./monstres/"+classe) if os.path.isfile(os.path.join("./monstres/"+classe, name))])+"|")
+                    f.write("\n")
+                    f.write("|---"*len([name for name in os.listdir("./monstres/"+classe) if os.path.isfile(os.path.join("./monstres/"+classe, name))])+"|")
+                    f.write("\n")
+                if classe != '.DS_Store':
+                    chaine = ""
+                    for image in os.listdir('./monstres/' + classe):
+                        if image != '.DS_Store':
+                            chaine += "|"+image[:len(image)-4]
+                    chaine += "|"
+                    with open('monstres.md','a') as f:
+                        f.write(chaine)
+                        f.write("\n")
+                    chaine = ""
+                    for image in os.listdir('./monstres/' + classe):
+                        if image != '.DS_Store':
+                            chaine += "|!["+image[:len(image)-4]+"](./monstres/"+classe+"/"+image+")"
+                    chaine += "|"
+                    with open('monstres.md','a') as f:
+                        f.write(chaine)
+                        f.write("\n")
     print(cpt)
-images_par_classes_2()
+images_par_classes_3()
