@@ -1,4 +1,7 @@
 import os
+from PIL import Image
+
+
 
 def images_par_classes():
     cpt = 0
@@ -88,15 +91,20 @@ def images_par_classes_4():
                     f.write("|---"*5+"|")
                     f.write("\n")
                     liste = [image for image in os.listdir('./monstres/' + classe) if image != '.DS_Store']
+                    for image in os.listdir('./monstres/' + classe):
+                        if image != '.DS_Store' and ".png" in image:
+                            img_path = "./monstres/"+classe+"/"+image
+                            print(img_path)
+                            img = Image.open(img_path)
+                            img = img.convert("P", palette=Image.Palette.ADAPTIVE, colors=256)
+                            img.save("./monstres/"+classe+"/"+image, optimize=True)
                     print(liste)
                     cpt = 0
                     for i,elt in enumerate(liste):
                         if elt == liste[-1]:
                             f.write("|"+str(elt[:len(elt)-4])+"|\n")
-                            #f.write("!["+elt[:len(elt)-4]+"](./monstres/"+classe+"/"+elt+")" + '|')
                         else:
                             f.write("|"+str(elt[:len(elt)-4]))
-                            #f.write("|!["+elt[:len(elt)-4]+"](./monstres/"+classe+"/"+elt+")")
                         if (i+1)%5 == 0:
                             f.write("|\n")
                             j = 0
