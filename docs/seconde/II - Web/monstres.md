@@ -20,6 +20,7 @@
 - [mathys](monstres/2DE9/mathys.png)
 - [nathael](monstres/2DE9/nathael.png)
 - [charlotte](monstres/2DE9/charlotte.pdf)
+- [charlotte](monstres/2DE9/charlotte.png)
 - [lina](monstres/2DE9/lina.png)
 
 ## 2DE6
@@ -29,6 +30,7 @@
 - [aela](monstres/2DE6/aela.png)
 - [lise](monstres/2DE6/lise.png)
 - [haizia](monstres/2DE6/haizia.png)
+- [jeanne](monstres/2DE6/jeanne.png)
 - [mayane](monstres/2DE6/mayane.png)
 - [elsa](monstres/2DE6/elsa.pdf)
 
@@ -75,15 +77,14 @@
 - [enora](monstres/2DE3/enora.png)
 - [ilhan](monstres/2DE3/ilhan.png)
 - [eline_piano](monstres/2DE3/eline_piano.png)
-- [eline_batterie](monstres/2DE3/eline_batterie.png)
-- [eline_trompette](monstres/2DE3/eline_trompette.png)
-- [eline](monstres/2DE3/eline.png)
 - [madeg](monstres/2DE3/madeg.png)
 - [joseph](monstres/2DE3/joseph.png)
 - [mila](monstres/2DE3/mila.png)
+- [eline_batterie](monstres/2DE3/eline_batterie.png)
+- [eline_trompette](monstres/2DE3/eline_trompette.png)
+- [eline](monstres/2DE3/eline.png)
 
 ## S01
-
 - [yves](monstres/S01/yves.png)
 - [jade](monstres/S01/jade.png)
 - [nora-lea](monstres/S01/nora-lea.png)
@@ -128,12 +129,16 @@
 - [ilann](monstres/2DE11/ilann.png)
 - [maylane](monstres/2DE11/maylane.png)
 - [anouk](monstres/2DE11/anouk.png)
+- [maria](monstres/2DE11/maria.png)
 - [hanae](monstres/2DE11/hanae.png)
 - [lucas](monstres/2DE11/lucas.png)
 - [aaron](monstres/2DE11/aaron.png)
 - [titouan_(surement_à_refaire)](monstres/2DE11/titouan_(surement_à_refaire).png)
+- [zoe](monstres/2DE11/zoe.png)
 - [nhayla](monstres/2DE11/nhayla.png)
+- [jeanne](monstres/2DE11/jeanne.png)
 - [malo](monstres/2DE11/malo.png)
+- [tess](monstres/2DE11/tess.png)
 - [servane](monstres/2DE11/servane.png)
 - [anais](monstres/2DE11/anais.png)
 - [melia_(surement_à_refaire)](monstres/2DE11/melia_(surement_à_refaire).png)
