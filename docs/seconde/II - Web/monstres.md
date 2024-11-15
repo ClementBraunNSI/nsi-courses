@@ -88,6 +88,13 @@
 |![lola](./monstres/2DE2/lola.png)|![oscar](./monstres/2DE2/oscar.png)|![camille](./monstres/2DE2/camille.png)|![sirine](./monstres/2DE2/sirine.png)|![gabriel](./monstres/2DE2/gabriel.png)||
 |
 
+## 2DE5
+
+||||||
+|---|---|---|---|---|
+|camille_pluie|
+|![camille_pluie](./monstres/2DE5/camille_pluie.png)|
+
 ## 2DE10
 
 ||||||

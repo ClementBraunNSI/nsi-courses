@@ -1,3 +1,4 @@
+import csv
 import os
 from PIL import Image
 
@@ -78,11 +79,11 @@ def images_par_classes_3():
                         f.write("\n")
 
 def images_par_classes_4():
-    with open('monstres.md', 'w') as f:
+    with open('./monstres.md', 'w') as f:
         f.write('# Ensemble des monstres des divers élèves' + '\n')
     for classe in os.listdir(('./monstres')):
             if classe != '.DS_Store':
-                with open('monstres.md', 'a') as f:
+                with open('./monstres.md', 'a') as f:
                     f.write(f"\n## {classe}")
                     f.write("\n")
                     f.write("\n")
@@ -91,13 +92,7 @@ def images_par_classes_4():
                     f.write("|---"*5+"|")
                     f.write("\n")
                     liste = [image for image in os.listdir('./monstres/' + classe) if image != '.DS_Store']
-                    for image in os.listdir('./monstres/' + classe):
-                        if image != '.DS_Store' and ".png" in image:
-                            img_path = "./monstres/"+classe+"/"+image
-                            print(img_path)
-                            img = Image.open(img_path)
-                            img = img.convert("P", palette=Image.Palette.ADAPTIVE, colors=256)
-                            img.save("./monstres/"+classe+"/"+image, optimize=True)
+
                     print(liste)
                     cpt = 0
                     for i,elt in enumerate(liste):
@@ -121,5 +116,27 @@ def images_par_classes_4():
                         cpt+=1
                     f.write("\n")
 
+def redimensionner_images():
+    dico = []
+    with open('indexation_redimensionnee.csv','r') as f:
+        lecteur = csv.reader(f, delimiter="\n")
+        for ligne in lecteur:
+            dico.append(ligne)
+    print(dico[0])
+    for classe in os.listdir(('./monstres')):
+        if classe != '.DS_Store':
+            for image in os.listdir('./monstres/' + classe):
+                if image != '.DS_Store' and ".pdf" not in image:
+                    print(dico[0] == [classe+" "+image])
+                    if [classe+" "+image] not in dico:
+                        print("bite")
+                        img = Image.open('./monstres/'+classe+"/"+image)
+                        img = img.convert("P", palette=Image.Palette.ADAPTIVE, colors=256)
+                        img.save(f"./monstres/{classe}/{image}", optimize=True)
+                        with open('indexation_redimensionnee.csv','a') as f:
+                            f.write(classe+" "+image)
+                            f.write("\n")
+            
 
-images_par_classes_4()
+redimensionner_images()
+#images_par_classes_4()
