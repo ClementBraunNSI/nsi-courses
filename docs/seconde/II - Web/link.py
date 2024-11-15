@@ -73,5 +73,45 @@ def images_par_classes_3():
                     with open('monstres.md','a') as f:
                         f.write(chaine)
                         f.write("\n")
-    print(cpt)
-images_par_classes_3()
+
+def images_par_classes_4():
+    with open('monstres.md', 'w') as f:
+        f.write('# Ensemble des monstres des divers élèves' + '\n')
+    for classe in os.listdir(('./monstres')):
+            if classe != '.DS_Store':
+                with open('monstres.md', 'a') as f:
+                    f.write(f"\n## {classe}")
+                    f.write("\n")
+                    f.write("\n")
+                    f.write("|"*5+"|")
+                    f.write("\n")
+                    f.write("|---"*5+"|")
+                    f.write("\n")
+                    liste = [image for image in os.listdir('./monstres/' + classe) if image != '.DS_Store']
+                    print(liste)
+                    cpt = 0
+                    for i,elt in enumerate(liste):
+                        if elt == liste[-1]:
+                            f.write("|"+str(elt[:len(elt)-4])+"|\n")
+                            #f.write("!["+elt[:len(elt)-4]+"](./monstres/"+classe+"/"+elt+")" + '|')
+                        else:
+                            f.write("|"+str(elt[:len(elt)-4]))
+                            #f.write("|!["+elt[:len(elt)-4]+"](./monstres/"+classe+"/"+elt+")")
+                        if (i+1)%5 == 0:
+                            f.write("|\n")
+                            j = 0
+                            chaine = "|"
+                            while j < 5:
+                                chaine += "!["+liste[cpt][:len(liste[cpt])-4]+"](./monstres/"+classe+"/"+liste[cpt]+")"+"|"
+                                j += 1
+                                cpt += 1
+                            chaine += "|"
+                            f.write(chaine+"\n")
+                    f.write("|")
+                    while cpt < len(liste):
+                        f.write("!["+liste[cpt][:len(liste[cpt])-4]+"](./monstres/"+classe+"/"+liste[cpt]+")"+"|")
+                        cpt+=1
+                    f.write("\n")
+
+
+images_par_classes_4()
