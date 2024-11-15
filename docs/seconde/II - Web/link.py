@@ -37,8 +37,10 @@ def images_par_classes_2():
                             if ' ' in image:
                                 os.rename('./monstres/' + classe + '/' + image, './monstres/' + classe + '/' + image.replace(' ', '_'))
                             with open('liens.txt', 'a') as f:
-                                #f.write("\n### "+image[0:len(image)-4] + '\n')
-                                f.write(f"<img src='./monstres/{classe}/{image}' width='100' height='100'/>\n")
+                                chaine = "!["+image[:len(image)-4]+"](./monstres/"+classe+"/"+image+")"
+                                chaine += "{"+": style='height:150px;width:150px'"+"}"+'\n'
+                                print(chaine)
+                                f.write(chaine)
                                 cpt += 1
     print(cpt)
 images_par_classes_2()

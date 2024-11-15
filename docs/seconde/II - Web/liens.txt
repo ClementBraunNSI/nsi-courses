@@ -1,147 +1,145 @@
 # Ensemble des monstres des divers élèves
 
 ## 2DE7
-<img src='./monstres/2DE7/jade.png' width='100' height='100'/>
-<img src='./monstres/2DE7/alice.png' width='100' height='100'/>
-<img src='./monstres/2DE7/alan.png' width='100' height='100'/>
-<img src='./monstres/2DE7/orlane.png' width='100' height='100'/>
-<img src='./monstres/2DE7/alou.png' width='100' height='100'/>
-<img src='./monstres/2DE7/mael.png' width='100' height='100'/>
-<img src='./monstres/2DE7/eloa.png' width='100' height='100'/>
-<img src='./monstres/2DE7/lilou.png' width='100' height='100'/>
-<img src='./monstres/2DE7/charline.png' width='100' height='100'/>
-<img src='./monstres/2DE7/nolan.png' width='100' height='100'/>
-<img src='./monstres/2DE7/maelys.png' width='100' height='100'/>
-<img src='./monstres/2DE7/jules.png' width='100' height='100'/>
+![jade](./monstres/2DE7/jade.png){: style='height:150px;width:150px'}
+![alice](./monstres/2DE7/alice.png){: style='height:150px;width:150px'}
+![alan](./monstres/2DE7/alan.png){: style='height:150px;width:150px'}
+![orlane](./monstres/2DE7/orlane.png){: style='height:150px;width:150px'}
+![alou](./monstres/2DE7/alou.png){: style='height:150px;width:150px'}
+![mael](./monstres/2DE7/mael.png){: style='height:150px;width:150px'}
+![eloa](./monstres/2DE7/eloa.png){: style='height:150px;width:150px'}
+![lilou](./monstres/2DE7/lilou.png){: style='height:150px;width:150px'}
+![charline](./monstres/2DE7/charline.png){: style='height:150px;width:150px'}
+![nolan](./monstres/2DE7/nolan.png){: style='height:150px;width:150px'}
+![maelys](./monstres/2DE7/maelys.png){: style='height:150px;width:150px'}
+![jules](./monstres/2DE7/jules.png){: style='height:150px;width:150px'}
 
 ## 2DE9
-<img src='./monstres/2DE9/lena_(surement_à_refaire).png' width='100' height='100'/>
-<img src='./monstres/2DE9/marisa.png' width='100' height='100'/>
-<img src='./monstres/2DE9/mathys.png' width='100' height='100'/>
-<img src='./monstres/2DE9/nathael.png' width='100' height='100'/>
-<img src='./monstres/2DE9/charlotte.pdf' width='100' height='100'/>
-<img src='./monstres/2DE9/charlotte.png' width='100' height='100'/>
-<img src='./monstres/2DE9/lina.png' width='100' height='100'/>
+![lena_(surement_à_refaire)](./monstres/2DE9/lena_(surement_à_refaire).png){: style='height:150px;width:150px'}
+![marisa](./monstres/2DE9/marisa.png){: style='height:150px;width:150px'}
+![mathys](./monstres/2DE9/mathys.png){: style='height:150px;width:150px'}
+![nathael](./monstres/2DE9/nathael.png){: style='height:150px;width:150px'}
+![charlotte](./monstres/2DE9/charlotte.png){: style='height:150px;width:150px'}
+![lina](./monstres/2DE9/lina.png){: style='height:150px;width:150px'}
 
 ## 2DE6
-<img src='./monstres/2DE6/timoté.png' width='100' height='100'/>
-<img src='./monstres/2DE6/sarah.png' width='100' height='100'/>
-<img src='./monstres/2DE6/mael.png' width='100' height='100'/>
-<img src='./monstres/2DE6/aela.png' width='100' height='100'/>
-<img src='./monstres/2DE6/lise.png' width='100' height='100'/>
-<img src='./monstres/2DE6/haizia.png' width='100' height='100'/>
-<img src='./monstres/2DE6/jeanne.png' width='100' height='100'/>
-<img src='./monstres/2DE6/mayane.png' width='100' height='100'/>
-<img src='./monstres/2DE6/elsa.pdf' width='100' height='100'/>
+![timoté](./monstres/2DE6/timoté.png){: style='height:150px;width:150px'}
+![sarah](./monstres/2DE6/sarah.png){: style='height:150px;width:150px'}
+![mael](./monstres/2DE6/mael.png){: style='height:150px;width:150px'}
+![aela](./monstres/2DE6/aela.png){: style='height:150px;width:150px'}
+![lise](./monstres/2DE6/lise.png){: style='height:150px;width:150px'}
+![haizia](./monstres/2DE6/haizia.png){: style='height:150px;width:150px'}
+![jeanne](./monstres/2DE6/jeanne.png){: style='height:150px;width:150px'}
+![mayane](./monstres/2DE6/mayane.png){: style='height:150px;width:150px'}
+![elsa](./monstres/2DE6/elsa.pdf){: style='height:150px;width:150px'}
 
 ## 2DE1
-<img src='./monstres/2DE1/louna.png' width='100' height='100'/>
-<img src='./monstres/2DE1/alexa.png' width='100' height='100'/>
-<img src='./monstres/2DE1/salome.png' width='100' height='100'/>
-<img src='./monstres/2DE1/maxime.png' width='100' height='100'/>
-<img src='./monstres/2DE1/joan.png' width='100' height='100'/>
-<img src='./monstres/2DE1/thibault.png' width='100' height='100'/>
-<img src='./monstres/2DE1/Hayrunnisa.png' width='100' height='100'/>
-<img src='./monstres/2DE1/clemence.png' width='100' height='100'/>
-<img src='./monstres/2DE1/sofia.png' width='100' height='100'/>
+![louna](./monstres/2DE1/louna.png){: style='height:150px;width:150px'}
+![alexa](./monstres/2DE1/alexa.png){: style='height:150px;width:150px'}
+![salome](./monstres/2DE1/salome.png){: style='height:150px;width:150px'}
+![maxime](./monstres/2DE1/maxime.png){: style='height:150px;width:150px'}
+![joan](./monstres/2DE1/joan.png){: style='height:150px;width:150px'}
+![thibault](./monstres/2DE1/thibault.png){: style='height:150px;width:150px'}
+![Hayrunnisa](./monstres/2DE1/Hayrunnisa.png){: style='height:150px;width:150px'}
+![clemence](./monstres/2DE1/clemence.png){: style='height:150px;width:150px'}
+![sofia](./monstres/2DE1/sofia.png){: style='height:150px;width:150px'}
 
 ## S16
-<img src='./monstres/S16/marie_ellynn.png' width='100' height='100'/>
-<img src='./monstres/S16/titouan.png' width='100' height='100'/>
-<img src='./monstres/S16/robin.png' width='100' height='100'/>
-<img src='./monstres/S16/theo.png' width='100' height='100'/>
-<img src='./monstres/S16/gabin.png' width='100' height='100'/>
-<img src='./monstres/S16/maxime.png' width='100' height='100'/>
-<img src='./monstres/S16/emmy.png' width='100' height='100'/>
-<img src='./monstres/S16/lylia.png' width='100' height='100'/>
-<img src='./monstres/S16/tom.png' width='100' height='100'/>
-<img src='./monstres/S16/lillya.png' width='100' height='100'/>
-<img src='./monstres/S16/alex.png' width='100' height='100'/>
-<img src='./monstres/S16/maelys.png' width='100' height='100'/>
-<img src='./monstres/S16/maely.png' width='100' height='100'/>
-<img src='./monstres/S16/louise_r.png' width='100' height='100'/>
-<img src='./monstres/S16/noe.png' width='100' height='100'/>
-<img src='./monstres/S16/noah.png' width='100' height='100'/>
-<img src='./monstres/S16/eliz.png' width='100' height='100'/>
-<img src='./monstres/S16/julia.png' width='100' height='100'/>
-<img src='./monstres/S16/gaspard.png' width='100' height='100'/>
+![marie_ellynn](./monstres/S16/marie_ellynn.png){: style='height:150px;width:150px'}
+![titouan](./monstres/S16/titouan.png){: style='height:150px;width:150px'}
+![robin](./monstres/S16/robin.png){: style='height:150px;width:150px'}
+![theo](./monstres/S16/theo.png){: style='height:150px;width:150px'}
+![gabin](./monstres/S16/gabin.png){: style='height:150px;width:150px'}
+![maxime](./monstres/S16/maxime.png){: style='height:150px;width:150px'}
+![emmy](./monstres/S16/emmy.png){: style='height:150px;width:150px'}
+![lylia](./monstres/S16/lylia.png){: style='height:150px;width:150px'}
+![tom](./monstres/S16/tom.png){: style='height:150px;width:150px'}
+![alex](./monstres/S16/alex.png){: style='height:150px;width:150px'}
+![maelys](./monstres/S16/maelys.png){: style='height:150px;width:150px'}
+![maely](./monstres/S16/maely.png){: style='height:150px;width:150px'}
+![louise_r](./monstres/S16/louise_r.png){: style='height:150px;width:150px'}
+![noe](./monstres/S16/noe.png){: style='height:150px;width:150px'}
+![noah](./monstres/S16/noah.png){: style='height:150px;width:150px'}
+![eliz](./monstres/S16/eliz.png){: style='height:150px;width:150px'}
+![julia](./monstres/S16/julia.png){: style='height:150px;width:150px'}
+![gaspard](./monstres/S16/gaspard.png){: style='height:150px;width:150px'}
 
 ## 2DE3
-<img src='./monstres/2DE3/sasha.png' width='100' height='100'/>
-<img src='./monstres/2DE3/anouk.png' width='100' height='100'/>
-<img src='./monstres/2DE3/rose.png' width='100' height='100'/>
-<img src='./monstres/2DE3/leo.png' width='100' height='100'/>
-<img src='./monstres/2DE3/elisa.png' width='100' height='100'/>
-<img src='./monstres/2DE3/mathys.png' width='100' height='100'/>
-<img src='./monstres/2DE3/nil.png' width='100' height='100'/>
-<img src='./monstres/2DE3/enora.png' width='100' height='100'/>
-<img src='./monstres/2DE3/ilhan.png' width='100' height='100'/>
-<img src='./monstres/2DE3/eline_piano.png' width='100' height='100'/>
-<img src='./monstres/2DE3/madeg.png' width='100' height='100'/>
-<img src='./monstres/2DE3/joseph.png' width='100' height='100'/>
-<img src='./monstres/2DE3/mila.png' width='100' height='100'/>
-<img src='./monstres/2DE3/eline_batterie.png' width='100' height='100'/>
-<img src='./monstres/2DE3/eline_trompette.png' width='100' height='100'/>
-<img src='./monstres/2DE3/eline.png' width='100' height='100'/>
+![sasha](./monstres/2DE3/sasha.png){: style='height:150px;width:150px'}
+![anouk](./monstres/2DE3/anouk.png){: style='height:150px;width:150px'}
+![rose](./monstres/2DE3/rose.png){: style='height:150px;width:150px'}
+![leo](./monstres/2DE3/leo.png){: style='height:150px;width:150px'}
+![elisa](./monstres/2DE3/elisa.png){: style='height:150px;width:150px'}
+![mathys](./monstres/2DE3/mathys.png){: style='height:150px;width:150px'}
+![nil](./monstres/2DE3/nil.png){: style='height:150px;width:150px'}
+![enora](./monstres/2DE3/enora.png){: style='height:150px;width:150px'}
+![ilhan](./monstres/2DE3/ilhan.png){: style='height:150px;width:150px'}
+![eline_piano](./monstres/2DE3/eline_piano.png){: style='height:150px;width:150px'}
+![madeg](./monstres/2DE3/madeg.png){: style='height:150px;width:150px'}
+![joseph](./monstres/2DE3/joseph.png){: style='height:150px;width:150px'}
+![mila](./monstres/2DE3/mila.png){: style='height:150px;width:150px'}
+![eline_batterie](./monstres/2DE3/eline_batterie.png){: style='height:150px;width:150px'}
+![eline_guitare](./monstres/2DE3/eline_guitare.png){: style='height:150px;width:150px'}
+![eline_trompette](./monstres/2DE3/eline_trompette.png){: style='height:150px;width:150px'}
 
 ## S01
-<img src='./monstres/S01/yves.png' width='100' height='100'/>
-<img src='./monstres/S01/jade.png' width='100' height='100'/>
-<img src='./monstres/S01/nora-lea.png' width='100' height='100'/>
-<img src='./monstres/S01/louna_2.png' width='100' height='100'/>
-<img src='./monstres/S01/rose.png' width='100' height='100'/>
-<img src='./monstres/S01/maiann.png' width='100' height='100'/>
-<img src='./monstres/S01/olivia.png' width='100' height='100'/>
-<img src='./monstres/S01/honore.png' width='100' height='100'/>
-<img src='./monstres/S01/jade_2.png' width='100' height='100'/>
-<img src='./monstres/S01/junon.png' width='100' height='100'/>
-<img src='./monstres/S01/clea.png' width='100' height='100'/>
-<img src='./monstres/S01/louise.png' width='100' height='100'/>
-<img src='./monstres/S01/awena.png' width='100' height='100'/>
-<img src='./monstres/S01/tiago.png' width='100' height='100'/>
-<img src='./monstres/S01/zoe.png' width='100' height='100'/>
-<img src='./monstres/S01/melanie.png' width='100' height='100'/>
-<img src='./monstres/S01/louise_2.png' width='100' height='100'/>
-<img src='./monstres/S01/molene.png' width='100' height='100'/>
-<img src='./monstres/S01/charlotte.png' width='100' height='100'/>
-<img src='./monstres/S01/melwynn.png' width='100' height='100'/>
-<img src='./monstres/S01/thomas.png' width='100' height='100'/>
+![yves](./monstres/S01/yves.png){: style='height:150px;width:150px'}
+![jade](./monstres/S01/jade.png){: style='height:150px;width:150px'}
+![nora-lea](./monstres/S01/nora-lea.png){: style='height:150px;width:150px'}
+![louna_2](./monstres/S01/louna_2.png){: style='height:150px;width:150px'}
+![rose](./monstres/S01/rose.png){: style='height:150px;width:150px'}
+![maiann](./monstres/S01/maiann.png){: style='height:150px;width:150px'}
+![olivia](./monstres/S01/olivia.png){: style='height:150px;width:150px'}
+![honore](./monstres/S01/honore.png){: style='height:150px;width:150px'}
+![jade_2](./monstres/S01/jade_2.png){: style='height:150px;width:150px'}
+![junon](./monstres/S01/junon.png){: style='height:150px;width:150px'}
+![clea](./monstres/S01/clea.png){: style='height:150px;width:150px'}
+![louise](./monstres/S01/louise.png){: style='height:150px;width:150px'}
+![awena](./monstres/S01/awena.png){: style='height:150px;width:150px'}
+![tiago](./monstres/S01/tiago.png){: style='height:150px;width:150px'}
+![zoe](./monstres/S01/zoe.png){: style='height:150px;width:150px'}
+![melanie](./monstres/S01/melanie.png){: style='height:150px;width:150px'}
+![louise_2](./monstres/S01/louise_2.png){: style='height:150px;width:150px'}
+![molene](./monstres/S01/molene.png){: style='height:150px;width:150px'}
+![charlotte](./monstres/S01/charlotte.png){: style='height:150px;width:150px'}
+![melwynn](./monstres/S01/melwynn.png){: style='height:150px;width:150px'}
+![thomas](./monstres/S01/thomas.png){: style='height:150px;width:150px'}
 
 ## 2DE2
-<img src='./monstres/2DE2/lola.png' width='100' height='100'/>
-<img src='./monstres/2DE2/oscar.png' width='100' height='100'/>
-<img src='./monstres/2DE2/camille.png' width='100' height='100'/>
-<img src='./monstres/2DE2/sirine.png' width='100' height='100'/>
-<img src='./monstres/2DE2/gabriel.png' width='100' height='100'/>
+![lola](./monstres/2DE2/lola.png){: style='height:150px;width:150px'}
+![oscar](./monstres/2DE2/oscar.png){: style='height:150px;width:150px'}
+![camille](./monstres/2DE2/camille.png){: style='height:150px;width:150px'}
+![sirine](./monstres/2DE2/sirine.png){: style='height:150px;width:150px'}
+![gabriel](./monstres/2DE2/gabriel.png){: style='height:150px;width:150px'}
 
 ## 2DE10
-<img src='./monstres/2DE10/jade.png' width='100' height='100'/>
-<img src='./monstres/2DE10/alexis.png' width='100' height='100'/>
-<img src='./monstres/2DE10/naomée.png' width='100' height='100'/>
-<img src='./monstres/2DE10/melina.png' width='100' height='100'/>
-<img src='./monstres/2DE10/lucas.png' width='100' height='100'/>
-<img src='./monstres/2DE10/nassim.png' width='100' height='100'/>
-<img src='./monstres/2DE10/louise.png' width='100' height='100'/>
-<img src='./monstres/2DE10/nina.png' width='100' height='100'/>
-<img src='./monstres/2DE10/semih.pdf' width='100' height='100'/>
+![jade](./monstres/2DE10/jade.png){: style='height:150px;width:150px'}
+![alexis](./monstres/2DE10/alexis.png){: style='height:150px;width:150px'}
+![naomée](./monstres/2DE10/naomée.png){: style='height:150px;width:150px'}
+![melina](./monstres/2DE10/melina.png){: style='height:150px;width:150px'}
+![lucas](./monstres/2DE10/lucas.png){: style='height:150px;width:150px'}
+![nassim](./monstres/2DE10/nassim.png){: style='height:150px;width:150px'}
+![louise](./monstres/2DE10/louise.png){: style='height:150px;width:150px'}
+![nina](./monstres/2DE10/nina.png){: style='height:150px;width:150px'}
+![semih](./monstres/2DE10/semih.pdf){: style='height:150px;width:150px'}
 
 ## 2DE11
-<img src='./monstres/2DE11/ilann.png' width='100' height='100'/>
-<img src='./monstres/2DE11/maylane.png' width='100' height='100'/>
-<img src='./monstres/2DE11/anouk.png' width='100' height='100'/>
-<img src='./monstres/2DE11/maria.png' width='100' height='100'/>
-<img src='./monstres/2DE11/hanae.png' width='100' height='100'/>
-<img src='./monstres/2DE11/lucas.png' width='100' height='100'/>
-<img src='./monstres/2DE11/aaron.png' width='100' height='100'/>
-<img src='./monstres/2DE11/titouan_(surement_à_refaire).png' width='100px' height='100px'/>
-<img src='./monstres/2DE11/zoe.png' width='100' height='100'/>
-<img src='./monstres/2DE11/nhayla.png' width='100' height='100'/>
-<img src='./monstres/2DE11/jeanne.png' width='100' height='100'/>
-<img src='./monstres/2DE11/malo.png' width='100' height='100'/>
-<img src='./monstres/2DE11/tess.png' width='100' height='100'/>
-<img src='./monstres/2DE11/servane.png' width='100' height='100'/>
-<img src='./monstres/2DE11/anais.png' width='100' height='100'/>
-<img src='./monstres/2DE11/melia_(surement_à_refaire).png' width='100' height='100'/>
-<img src='./monstres/2DE11/jules.png' width='100' height='100'/>
-<img src='./monstres/2DE11/madyar.png' width='100' height='100'/>
-<img src='./monstres/2DE11/quentin.png' width='100' height='100'/>
+![ilann](./monstres/2DE11/ilann.png){: style='height:150px;width:150px'}
+![maylane](./monstres/2DE11/maylane.png){: style='height:150px;width:150px'}
+![anouk](./monstres/2DE11/anouk.png){: style='height:150px;width:150px'}
+![maria](./monstres/2DE11/maria.png){: style='height:150px;width:150px'}
+![hanae](./monstres/2DE11/hanae.png){: style='height:150px;width:150px'}
+![lucas](./monstres/2DE11/lucas.png){: style='height:150px;width:150px'}
+![aaron](./monstres/2DE11/aaron.png){: style='height:150px;width:150px'}
+![titouan_(surement_à_refaire)](./monstres/2DE11/titouan_(surement_à_refaire).png){: style='height:150px;width:150px'}
+![zoe](./monstres/2DE11/zoe.png){: style='height:150px;width:150px'}
+![nhayla](./monstres/2DE11/nhayla.png){: style='height:150px;width:150px'}
+![jeanne](./monstres/2DE11/jeanne.png){: style='height:150px;width:150px'}
+![malo](./monstres/2DE11/malo.png){: style='height:150px;width:150px'}
+![tess](./monstres/2DE11/tess.png){: style='height:150px;width:150px'}
+![servane](./monstres/2DE11/servane.png){: style='height:150px;width:150px'}
+![anais](./monstres/2DE11/anais.png){: style='height:150px;width:150px'}
+![melia_(surement_à_refaire)](./monstres/2DE11/melia_(surement_à_refaire).png){: style='height:150px;width:150px'}
+![jules](./monstres/2DE11/jules.png){: style='height:150px;width:150px'}
+![madyar](./monstres/2DE11/madyar.png){: style='height:150px;width:150px'}
+![quentin](./monstres/2DE11/quentin.png){: style='height:150px;width:150px'}
