@@ -37,7 +37,7 @@ Vous allez devoir pour cette première partie :
 
 Par la suite, on ajoutera les images des rivaux/personnages (quand votre monstre est disponible [ici](./monstres.md)).
 
-**Ajouter à la place de `image du monstre` l'image du monstre associée (après l'avoir fait générer).**
+**Ajouter à la place de `image du monstre` l'image du monstre associée.**
 
 Pour se faire, vous rajouterez la balise suivante : 
 
