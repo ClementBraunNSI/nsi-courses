@@ -89,17 +89,18 @@ def images_par_classes_4():
                     f.write("\n")
                     f.write("|"*5+"|")
                     f.write("\n")
-                    f.write("|---"*5+"|")
+                    f.write("|:---:"*5+"|")
                     f.write("\n")
                     liste = [image for image in os.listdir('./monstres/' + classe) if image != '.DS_Store']
 
                     print(liste)
                     cpt = 0
                     for i,elt in enumerate(liste):
+                        nom = str(elt[:len(elt)-4])[0].upper()+str(elt[:len(elt)-4])[1:]
                         if elt == liste[-1]:
-                            f.write("|"+str(elt[:len(elt)-4])+"|\n")
+                            f.write("|"+nom+"|\n")
                         else:
-                            f.write("|"+str(elt[:len(elt)-4]))
+                            f.write("|"+nom)
                         if (i+1)%5 == 0:
                             f.write("|\n")
                             j = 0
@@ -136,7 +137,6 @@ def redimensionner_images():
                         with open('indexation_redimensionnee.csv','a') as f:
                             f.write(classe+" "+image)
                             f.write("\n")
-            
 
 redimensionner_images()
-#images_par_classes_4()
+images_par_classes_4()
