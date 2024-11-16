@@ -37,10 +37,14 @@
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Louna|Alexa|Salome|Maxime|Joan|
-|![louna](./monstres/2DE1/louna.png)|![alexa](./monstres/2DE1/alexa.png)|![salome](./monstres/2DE1/salome.png)|![maxime](./monstres/2DE1/maxime.png)|![joan](./monstres/2DE1/joan.png)||
-|Thibault|Hayrunnisa|Clemence|Sofia|
-|![thibault](./monstres/2DE1/thibault.png)|![Hayrunnisa](./monstres/2DE1/Hayrunnisa.png)|![clemence](./monstres/2DE1/clemence.png)|![sofia](./monstres/2DE1/sofia.png)|
+|Louna|Alexa|Emlyne|Lylian|Salome|
+|![louna](./monstres/2DE1/louna.png)|![alexa](./monstres/2DE1/alexa.png)|![emlyne](./monstres/2DE1/emlyne.png)|![lylian](./monstres/2DE1/lylian.png)|![salome](./monstres/2DE1/salome.png)||
+|Maxime|Maelle|Cléa|Joan|Thibault|
+|![maxime](./monstres/2DE1/maxime.png)|![maelle](./monstres/2DE1/maelle.png)|![cléa](./monstres/2DE1/cléa.png)|![joan](./monstres/2DE1/joan.png)|![thibault](./monstres/2DE1/thibault.png)||
+|Hayrunnisa|Naome|Quentin|Lina|Clemence|
+|![Hayrunnisa](./monstres/2DE1/Hayrunnisa.png)|![naome](./monstres/2DE1/naome.png)|![quentin](./monstres/2DE1/quentin.png)|![lina](./monstres/2DE1/lina.png)|![clemence](./monstres/2DE1/clemence.png)||
+|Sofia|
+|![sofia](./monstres/2DE1/sofia.png)|
 
 ## S16
 
@@ -63,10 +67,10 @@
 |![sasha](./monstres/2DE3/sasha.png)|![anouk](./monstres/2DE3/anouk.png)|![rose](./monstres/2DE3/rose.png)|![leo](./monstres/2DE3/leo.png)|![elisa](./monstres/2DE3/elisa.png)||
 |Mathys|Nil|Enora|Ilhan|Eline_piano|
 |![mathys](./monstres/2DE3/mathys.png)|![nil](./monstres/2DE3/nil.png)|![enora](./monstres/2DE3/enora.png)|![ilhan](./monstres/2DE3/ilhan.png)|![eline_piano](./monstres/2DE3/eline_piano.png)||
-|Madeg|Joseph|Mila|Eline_batterie|Eline_guitare|
-|![madeg](./monstres/2DE3/madeg.png)|![joseph](./monstres/2DE3/joseph.png)|![mila](./monstres/2DE3/mila.png)|![eline_batterie](./monstres/2DE3/eline_batterie.png)|![eline_guitare](./monstres/2DE3/eline_guitare.png)||
-|Eline_trompette|
-|![eline_trompette](./monstres/2DE3/eline_trompette.png)|
+|Madeg|Joseph|Niev|Mila|Eline_batterie|
+|![madeg](./monstres/2DE3/madeg.png)|![joseph](./monstres/2DE3/joseph.png)|![niev](./monstres/2DE3/niev.png)|![mila](./monstres/2DE3/mila.png)|![eline_batterie](./monstres/2DE3/eline_batterie.png)||
+|Eline_guitare|Eline_trompette|
+|![eline_guitare](./monstres/2DE3/eline_guitare.png)|![eline_trompette](./monstres/2DE3/eline_trompette.png)|
 
 ## S01
 
@@ -96,8 +100,14 @@
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Camille_soleil|Camille_etoile|Camille_pluie|
-|![camille_soleil](./monstres/2DE5/camille_soleil.png)|![camille_etoile](./monstres/2DE5/camille_etoile.png)|![camille_pluie](./monstres/2DE5/camille_pluie.png)|
+|Tino|Alan|Romane|Patricia_zelie|Timeo|
+|![tino](./monstres/2DE5/tino.png)|![alan](./monstres/2DE5/alan.png)|![romane](./monstres/2DE5/romane.png)|![patricia_zelie](./monstres/2DE5/patricia_zelie.png)|![timeo](./monstres/2DE5/timeo.png)||
+|Camille_soleil|Camille_nuage|Allyson_thea|Eva|Milan|
+|![camille_soleil](./monstres/2DE5/camille_soleil.png)|![camille_nuage](./monstres/2DE5/camille_nuage.png)|![allyson_thea](./monstres/2DE5/allyson_thea.png)|![eva](./monstres/2DE5/eva.png)|![milan](./monstres/2DE5/milan.png)||
+|Ilan|Camille_etoile|Anais|Jules|Camille_pluie|
+|![ilan](./monstres/2DE5/ilan.png)|![camille_etoile](./monstres/2DE5/camille_etoile.png)|![anais](./monstres/2DE5/anais.png)|![jules](./monstres/2DE5/jules.png)|![camille_pluie](./monstres/2DE5/camille_pluie.png)||
+|Agathe_maiwen|
+|![agathe_maiwen](./monstres/2DE5/agathe_maiwen.png)|
 
 ## 2DE10
 
@@ -105,8 +115,10 @@
 |:---:|:---:|:---:|:---:|:---:|
 |Jade|Alexis|Naomée|Melina|Lucas|
 |![jade](./monstres/2DE10/jade.png)|![alexis](./monstres/2DE10/alexis.png)|![naomée](./monstres/2DE10/naomée.png)|![melina](./monstres/2DE10/melina.png)|![lucas](./monstres/2DE10/lucas.png)||
-|Nassim|Louise|Nina|Semih|
-|![nassim](./monstres/2DE10/nassim.png)|![louise](./monstres/2DE10/louise.png)|![nina](./monstres/2DE10/nina.png)|![semih](./monstres/2DE10/semih.pdf)|
+|Nassim|Louise|Johan|Margaux|Nina|
+|![nassim](./monstres/2DE10/nassim.png)|![louise](./monstres/2DE10/louise.png)|![johan](./monstres/2DE10/johan.png)|![margaux](./monstres/2DE10/margaux.png)|![nina](./monstres/2DE10/nina.png)||
+|Semih|
+|![semih](./monstres/2DE10/semih.pdf)|
 
 ## 2DE11
 
