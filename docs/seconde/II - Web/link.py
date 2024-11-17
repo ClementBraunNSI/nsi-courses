@@ -131,6 +131,7 @@ def redimensionner_images():
                     print(dico[0] == [classe+" "+image])
                     if [classe+" "+image] not in dico:
                         print("bite")
+                        print(classe+" "+image)
                         img = Image.open('./monstres/'+classe+"/"+image)
                         img = img.convert("P", palette=Image.Palette.ADAPTIVE, colors=256)
                         img.save(f"./monstres/{classe}/{image}", optimize=True)
