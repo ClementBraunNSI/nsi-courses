@@ -99,10 +99,14 @@
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Lola|Oscar|Camille|Sirine|Gabriel|
-|
-|![lola](./monstres/2DE2/lola.png)|![oscar](./monstres/2DE2/oscar.png)|![camille](./monstres/2DE2/camille.png)|![sirine](./monstres/2DE2/sirine.png)|![gabriel](./monstres/2DE2/gabriel.png)||
-|
+|Lola|Loeiz|Antoine|Alyssia|Oscar|
+|![lola](./monstres/2DE2/lola.png)|![loeiz](./monstres/2DE2/loeiz.png)|![antoine](./monstres/2DE2/antoine.png)|![alyssia](./monstres/2DE2/alyssia.png)|![oscar](./monstres/2DE2/oscar.png)||
+|Kylian|Leo|Youn|Baptiste|Camille|
+|![kylian](./monstres/2DE2/kylian.png)|![leo](./monstres/2DE2/leo.png)|![youn](./monstres/2DE2/youn.png)|![baptiste](./monstres/2DE2/baptiste.png)|![camille](./monstres/2DE2/camille.png)||
+|Kyllian|Sirine|Ethan|Lise-anne|Lison|
+|![kyllian](./monstres/2DE2/kyllian.png)|![sirine](./monstres/2DE2/sirine.png)|![ethan](./monstres/2DE2/ethan.png)|![lise-anne](./monstres/2DE2/lise-anne.png)|![lison](./monstres/2DE2/lison.png)||
+|Aya|Gabriel|
+|![aya](./monstres/2DE2/aya.png)|![gabriel](./monstres/2DE2/gabriel.png)|
 
 ## 2DE5
 
