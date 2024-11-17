@@ -129,12 +129,14 @@
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Jade|Alexis|Naomée|Melina|Lucas|
-|![jade](./monstres/2DE10/jade.png)|![alexis](./monstres/2DE10/alexis.png)|![naomée](./monstres/2DE10/naomée.png)|![melina](./monstres/2DE10/melina.png)|![lucas](./monstres/2DE10/lucas.png)||
-|Nassim|Louise|Johan|Margaux|Nina|
-|![nassim](./monstres/2DE10/nassim.png)|![louise](./monstres/2DE10/louise.png)|![johan](./monstres/2DE10/johan.png)|![margaux](./monstres/2DE10/margaux.png)|![nina](./monstres/2DE10/nina.png)||
-|Semih|
-|![semih](./monstres/2DE10/semih.pdf)|
+|Jade|Telio|Alexis|Pierre|Naomée|
+|![jade](./monstres/2DE10/jade.png)|![telio](./monstres/2DE10/telio.png)|![alexis](./monstres/2DE10/alexis.png)|![pierre](./monstres/2DE10/pierre.png)|![naomée](./monstres/2DE10/naomée.png)||
+|Melina|Lucas|Nassim|Anna-rose|Louise|
+|![melina](./monstres/2DE10/melina.png)|![lucas](./monstres/2DE10/lucas.png)|![nassim](./monstres/2DE10/nassim.png)|![anna-rose](./monstres/2DE10/anna-rose.png)|![louise](./monstres/2DE10/louise.png)||
+|Johan|Roxanne|Margaux|Nina|Semih|
+|
+|![johan](./monstres/2DE10/johan.png)|![roxanne](./monstres/2DE10/roxanne.png)|![margaux](./monstres/2DE10/margaux.png)|![nina](./monstres/2DE10/nina.png)|![semih](./monstres/2DE10/semih.pdf)||
+|
 
 ## 2DE11
 
