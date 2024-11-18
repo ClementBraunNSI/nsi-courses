@@ -39,10 +39,16 @@ Par la suite, on ajoutera les images des rivaux/personnages (quand votre monstre
 
 **Ajouter à la place de `image du monstre` l'image du monstre associée.**
 
-Pour se faire, vous rajouterez la balise suivante : 
+Pour se faire, vous rajouterez la balise suivante :  
 
 ```html
-    <img class = "image_principale" align="left" height="400px" width="400px" src="image/votre_prenom.jpg" alt="nom_du_monstre">
+    <img class = "image_principale" align="left" height="400px" width="400px" src="image/votre_prenom.jpg" alt="nom_du_monstre"/>
+```
+
+**Ajouter l'image du rival avec la balise suivante.**
+
+```html
+    <img class = "image_rival" width="30%"  src="image/rival2.jpg" alt="Rival 2"/>
 ```
 
 ## Partie 2 : Style du site
