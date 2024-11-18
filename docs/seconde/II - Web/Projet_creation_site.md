@@ -27,7 +27,7 @@ Vous allez devoir pour cette première partie :
 
 **Modifier le Nom du monstre pour qu'il corresponde à un titre de niveau 1.**
 
-**Dans le bloc bleu : Ajouter un paragraphe expliquant la rivalité/l'amitié entre votre monstre/personnage et ces autres.**
+**Dans le bloc bleu : Ajouter un paragraphe expliquant la rivalité/l'amitié entre votre monstre/personnage et ses rivaux/amis.**
 
 **Dans le bloc turquoise : Ajouter chacune des localisations où l'on peut retrouver votre monstre (Conservez la liste si vous souhaitez une liste, sinon supprimez la et écrivez un paragraphe).**
 
