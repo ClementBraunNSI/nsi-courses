@@ -53,8 +53,8 @@
 |![maxime](./monstres/2DE1/maxime.png)|![clea](./monstres/2DE1/clea.png)|![maelle](./monstres/2DE1/maelle.png)|![joan](./monstres/2DE1/joan.png)|![thibault](./monstres/2DE1/thibault.png)||
 |Hayrunnisa|Naome|Quentin|Lina|Clemence|
 |![Hayrunnisa](./monstres/2DE1/Hayrunnisa.png)|![naome](./monstres/2DE1/naome.png)|![quentin](./monstres/2DE1/quentin.png)|![lina](./monstres/2DE1/lina.png)|![clemence](./monstres/2DE1/clemence.png)||
-|Sofia|
-|![sofia](./monstres/2DE1/sofia.png)|
+|Sofia|Noor|
+|![sofia](./monstres/2DE1/sofia.png)|![noor](./monstres/2DE1/noor.png)|
 
 ## S16
 
