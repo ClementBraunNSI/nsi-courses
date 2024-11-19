@@ -42,13 +42,13 @@ Par la suite, on ajoutera les images des rivaux/personnages (quand votre monstre
 Pour se faire, vous rajouterez la balise suivante :  
 
 ```html
-    <img class = "image_principale" align="left" height="400px" width="400px" src="image/votre_prenom.jpg" alt="nom_du_monstre"/>
+    <img class = "image_principale" align="left" height="400px" width="400px" src="image/votre_prenom.png" alt="nom_du_monstre"/>
 ```
 
 **Ajouter l'image du rival avec la balise suivante.**
 
 ```html
-    <img class = "image_rival" width="30%"  src="image/rival2.jpg" alt="Rival 2"/>
+    <img class = "image_rival" width="30%"  src="image/rival2.png" alt="Rival 2"/>
 ```
 
 ## Partie 2 : Retirer les bordures
