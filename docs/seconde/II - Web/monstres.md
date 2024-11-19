@@ -73,14 +73,16 @@
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Sebastian|Sasha|Anouk|Rose|Leo|
-|![sebastian](./monstres/2DE3/sebastian.png)|![sasha](./monstres/2DE3/sasha.png)|![anouk](./monstres/2DE3/anouk.png)|![rose](./monstres/2DE3/rose.png)|![leo](./monstres/2DE3/leo.png)||
-|Elisa|Mathys|Nil|Enora|Chloe|
-|![elisa](./monstres/2DE3/elisa.png)|![mathys](./monstres/2DE3/mathys.png)|![nil](./monstres/2DE3/nil.png)|![enora](./monstres/2DE3/enora.png)|![chloe](./monstres/2DE3/chloe.png)||
-|Ilhan|Eline_piano|Madeg|Joseph|Niev|
-|![ilhan](./monstres/2DE3/ilhan.png)|![eline_piano](./monstres/2DE3/eline_piano.png)|![madeg](./monstres/2DE3/madeg.png)|![joseph](./monstres/2DE3/joseph.png)|![niev](./monstres/2DE3/niev.png)||
-|Mila|Eline_batterie|Eline_guitare|Eline_trompette|
-|![mila](./monstres/2DE3/mila.png)|![eline_batterie](./monstres/2DE3/eline_batterie.png)|![eline_guitare](./monstres/2DE3/eline_guitare.png)|![eline_trompette](./monstres/2DE3/eline_trompette.png)|
+|Sebastian|Sasha|Anouk|Rose|Gabin|
+|![sebastian](./monstres/2DE3/sebastian.png)|![sasha](./monstres/2DE3/sasha.png)|![anouk](./monstres/2DE3/anouk.png)|![rose](./monstres/2DE3/rose.png)|![gabin](./monstres/2DE3/gabin.png)||
+|Leo|Elisa|Mathys|Nil|Enora|
+|![leo](./monstres/2DE3/leo.png)|![elisa](./monstres/2DE3/elisa.png)|![mathys](./monstres/2DE3/mathys.png)|![nil](./monstres/2DE3/nil.png)|![enora](./monstres/2DE3/enora.png)||
+|Chloe|Ilhan|Eline_piano|Madeg|Joseph|
+|![chloe](./monstres/2DE3/chloe.png)|![ilhan](./monstres/2DE3/ilhan.png)|![eline_piano](./monstres/2DE3/eline_piano.png)|![madeg](./monstres/2DE3/madeg.png)|![joseph](./monstres/2DE3/joseph.png)||
+|Niev|Mila|Eline_batterie|Eline_guitare|Eline_trompette|
+|
+|![niev](./monstres/2DE3/niev.png)|![mila](./monstres/2DE3/mila.png)|![eline_batterie](./monstres/2DE3/eline_batterie.png)|![eline_guitare](./monstres/2DE3/eline_guitare.png)|![eline_trompette](./monstres/2DE3/eline_trompette.png)||
+|
 
 ## S01
 
