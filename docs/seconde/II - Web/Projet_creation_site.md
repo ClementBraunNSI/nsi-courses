@@ -51,31 +51,35 @@ Pour se faire, vous rajouterez la balise suivante :
     <img class = "image_rival" width="30%"  src="image/rival2.jpg" alt="Rival 2"/>
 ```
 
-## Partie 2 : Style du site
+## Partie 2 : Retirer les bordures
 
-Le fichier CSS correspondant à toutes les propriétés de style est déjà fourni pour aligner les éléments au bon endroit.
+Le fichier `style.css` rassemble tous les éléments de style de la page.
 
-On peut associer une **classe** à chacun des attributs que l'on écrit dans un fichier HTML (une division, une image, une liste etc...).
+La syntaxe est telle que : 
 
-En analysant le fichier de la partie 2 à trouver ([partie 2](./index_partie_2.html)), **ajouter chacune des classes aux balises que vous avez créées.**
+```css
+    .classe_de_l_element{
+        propriete_1 : valeurs;
+        propriete_2 : valeurs;
+        ...
+    }
 
-Ce fichier de partie 2 correspond aussi à une correction de la partie 1.
+```
 
-Si tout est bien réalisé, que toutes les balises sont bien ajoutées et que tous les styles sont bien ajoutés : 
+Un des éléments de style présent sur votre maquette est l'ensemble des bordures délimitant les `div` pour que vous puissiez vous repérer.
 
-Vous devrez avoir cet affichage pour le site.
+Consigne : **Dans le fichier `style.css`, retirer l'ensemble des lignes qui ont un rapport avec les bordures.**
+*Vous chercherez sur internet comment réaliser des bordures en CSS pour retrouver les mots-clefs correspondants.*
 
 ![final](./presque_fini.png)
 
-## Partie 3 : Modifications finales
+## Partie 3 : Fond d'écran et couleurs de police d'écriture
 
-La dernière étape de ce projet correspond au fait de retirer chacune des bordures.
-Elles sont dans le fichier `style.css` dans chacune des classe. Retirer tous les attributs en rapport à la bordure (indice : `border`).
+La dernière étape de ce projet correspond à l'ajout du fond d'écran et de la modification de la police d'écriture en blanc.
 
-En vous renseignant sur internet :
+La *classe* `container` est la classe qui contient le plus d'éléments sur lesquels on veut appliquer ces propriété.
 
-- **Ajouter dans la classe container l'instruction qui modifie l'image de fond. Celle-ci est stockée dans le dossier `image` avec pour nom `background.png`**  
-- **Modifier le fichier de style pour avoir les couleurs de texte correspondant à la maquette.**  
+Consigne : **Dans la classe container du fichier `style.css`, rajouter les propriétés permettant de changer le fond d'écran et de mettre la police d'écriture en blanc.**
 
 Vous devez avoir ainsi :
 
