@@ -49,11 +49,32 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 *Exemple :*  
 *somme_elements([1, 2, 3, 4]) doit renvoyer 10.*
 
+??? fox_correction "Correction"
+
+    ```python
+    def somme_elements(liste:list)->int:
+      somme = 0
+      for elt in liste:
+         somme = somme + elt
+      return somme
+    ```
+
 ---
 
 **Écrire une fonction `compter_pairs` qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.**  
 *Exemple :*  
 *compter_pairs([1, 2, 3, 4, 5, 6]) doit renvoyer 3.*
+
+??? fox_correction "Correction"
+
+    ```python
+    def compter_pairs(liste:list)->int:
+      nombre_pairs = 0
+      for elt in liste:
+         if elt % 2 == 0:
+            nombre_pairs = nombre_pairs + 1
+      return nombre_pairs
+    ```
 
 ---
 
@@ -61,11 +82,32 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 *Exemple :*  
 *longueur_chaines(["abc", "de", "fghi"]) doit renvoyer [3, 2, 4].*
 
+??? fox_correction "Correction"
+
+    ```python
+    def longueur_chaines(liste:list)->int:
+      liste_longueurs = []
+      for elt in liste:
+         taille_elt = len(elt)
+         liste_longueurs.append(taille_elt)
+      return liste_longueurs
+    ```
+
 ---
 
 **Écrire une fonction `produit_elements` qui prend une liste d'entiers et renvoie le produit de tous les éléments. Attention aux cas où la liste est vide.**  
 *Exemple :*  
 *produit_elements([2, 3, 4]) doit renvoyer 24.*
+
+??? fox_correction "Correction"
+
+    ```python
+    def produit_elements(liste:list)->int:
+      produit = 0
+      for elt in liste:
+         produit = produit * elt
+      return produit
+    ```
 
 ---
 
@@ -73,13 +115,35 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 *Exemple :*  
 *compter_occurrences([1, 2, 2, 3, 2], 2) doit renvoyer 3.*
 
+??? fox_correction "Correction"
+
+    ```python
+    def compter_occurrences(liste:list, valeur: int)->int:
+      occurences = 0
+      for elt in liste:
+         if elt == valeur:
+            occurences = occurences + 1
+      return occurences
+    ```
+
 ---
 
-==***Algorithme à connaître***==  
+==***🦊 Algorithme à connaître 🦊***==  
 **Écrire une fonction `presence`qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
 *Exemple :*
 *presence(3, [1, 2, 3, 4]) doit renvoyer True.*
 *presence(5, [1, 2, 3, 4]) doit renvoyer False.*
+
+??? fox_correction "Correction"
+
+    ```python
+    def presence(liste:list, valeur: int)->int:
+      present = False
+      for elt in liste:
+         if elt == valeur:
+            present = True
+      return present
+    ```
 
 ---
 
@@ -87,6 +151,15 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 *Exemple :*
 *moyenne([1, 2, 3, 4, 5]) doit renvoyer 3.0.*
 
+??? fox_correction "Correction"
+
+    ```python
+    def moyenne(liste:list)->int:
+      taille_liste = len(liste)
+      somme_liste = somme_elements(liste)
+      moyenne = somme_liste/liste
+      return present
+    ```
 ---
 
 ## Niveau Intermédiaire
