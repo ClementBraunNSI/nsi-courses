@@ -168,21 +168,61 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 *Exemple :*  
 *filtrer_positifs([-1, 0, 3, -7, 8]) doit renvoyer [3, 8].*
 
+??? fox_correction "Correction"
+
+    ```python
+    def filtrer_positifs(liste:list)->int:
+      positifs = []
+      for elt in liste:
+         if elt > 0:
+            positifs.append(elt)
+      return positifs
+    ```
+
 ---
 
-==***Algorithme à connaître***==
-**Écrire une fonction `maximum` qui prend une liste d'entiers et renvoie l'entier maximum.**  
+==***🦊 Algorithme à connaître 🦊***==
+**Écrire une fonction `maximum` qui prend une liste d'entiers prévue non vide et renvoie l'entier maximum.**  
 *Exemple :*  
 *max_et_min([3, 1, 9, 2]) doit renvoyer 9.*
 
+??? fox_correction "Correction"
+
+   Comme on ne sait pas la composition de nos listes, pour éviter des soucis, on initialise notre maximum à la première valeur de la liste.  
+   Exemple, si l'on met 0 à maximum et que la liste est composée de négatifs, on ne trouvera jamais l'élément maximum.  
+
+    ```python
+    def maximum(liste:list)->int:
+      maxi = liste[0]
+      for elt in liste:
+         if elt > maximum:
+            maximum = elt
+      return maximum
+    ```
+
 ---
 
-==***Algorithme à connaître***==
+==***🦊 Algorithme à connaître 🦊***==
 **Écrire une fonction `minimum` qui prend une liste d'entiers et renvoie l'entier minimum.**  
 *Exemple :*  
 *max_et_min([3, 1, 9, 2]) doit renvoyer 1.*
 
+??? fox_correction "Correction"
+
+   Comme on ne sait pas la composition de nos listes, pour éviter des soucis, on initialise notre minimum à la première valeur de la liste.  
+   Exemple, si l'on met une valeur arbitraire et que la liste est composée de nombres supérieurs à celui-ci, on ne trouvera jamais l'élément minimum.  
+
+    ```python
+    def minimum(liste:list)->int:
+      mini = liste[0]
+      for elt in liste:
+         if elt < mini:
+            mini = elt
+      return mini
+    ```
+
 ---
+
 
 **Écrire une fonction `concatener_chaines` qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.**  
 *Exemple :*  
