@@ -16,8 +16,8 @@ Ce projet peut être développé de plusieurs manières mais on va s'interesser 
 
 Pour le but de ce projet, on décide que la combinaison à chercher est définie aléatoirement.
 Les couleurs seront définies comme des chaînes de caractère de cette manière : 'bleu' correspond à la couleur bleue.
-On se munit des couleurs suivantes :
-$bleu,~rouge,~vert,~blanc,~jaune$ et $orange$
+On se munit des couleurs suivantes :  
+$bleu,~rouge,~vert,~blanc,~jaune$ et $orange$  
 D'autres pourront être rajoutées mais cela augmente la difficulté pour gagner.
 
 **Créer la liste des couleurs du jeu comme variable globale.**
