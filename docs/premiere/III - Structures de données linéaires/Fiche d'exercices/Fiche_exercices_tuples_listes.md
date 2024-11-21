@@ -223,10 +223,19 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
-
 **Écrire une fonction `concatener_chaines` qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.**  
 *Exemple :*  
 *concatener_chaines(["Bonjour", " ", "le", " ", "monde"]) doit renvoyer "Bonjour le monde".*
+
+??? fox_correction "Correction"
+
+    ```python
+    def concatener_chaines(liste:list)->int:
+      concatenation = ""
+      for chaine in liste:
+         concatenation = concatenation + chaine + " "
+      return concatenation
+    ```
 
 ---
 
@@ -234,17 +243,31 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 *Exemple :*  
 *inverser_liste([1, 2, 3]) doit renvoyer [3, 2, 1].*
 
+??? fox_correction "Correction"
+
+    ```python
+    def inverser_liste(liste:list)->int:
+      liste_inversee = []
+      for elt in liste:
+         liste_inversee = elt + liste_inversee
+      return liste_inversee
+    ```
 ---
 
 **Écrire une fonction `valeurs_uniques` qui prend une liste et renvoie une nouvelle liste contenant les éléments sans doublons (dans l'ordre d'apparition).**  
 *Exemple :*  
 *valeurs_uniques([1, 2, 2, 3, 4, 4]) doit renvoyer [1, 2, 3, 4].*
 
----
+??? fox_correction "Correction"
 
-**Écrire une fonction `moyenne_elements` qui prend une liste de nombres et renvoie la moyenne des éléments. Gérez le cas où la liste est vide.**  
-*Exemple :*  
-*moyenne_elements([5, 10, 15]) doit renvoyer 10.0.*
+    ```python
+    def valeurs_uniques(liste:list)->int:
+      liste_valeurs = []
+      for elt in liste:
+         if elt not in liste_valeurs:
+            liste_valeurs.append(elt)
+      return liste_valeurs
+    ```
 
 ---
 
@@ -252,24 +275,76 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 *Exemple :*  
 *separer_pairs_impairs([1, 2, 3, 4, 5]) doit renvoyer ([2, 4], [1, 3, 5]).*
 
+??? fox_correction "Correction"
+
+    ```python
+    def separer_pairs_impairs(liste:list)->int:
+      pairs = []
+      impairs = []
+      for elt in liste:
+         if elt % 2 == 0:
+            pairs.append(elt)
+         else:
+            impairs.append(elt)
+      return pairs, impairs
+    ```
+
 ---
 
 **Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.**
 *Exemple :*
 *diviseurs(6) doit renvoyer [1, 2, 3, 6] (car 1, 2, 3 et 6 sont les diviseurs de 6).*
 *diviseurs(10) doit renvoyer [1, 2, 5, 10] (car 1, 2, 5 et 10 sont les diviseurs de 10).*
+
+??? fox_correction "Correction"
+
+    ```python
+    def diviseurs(valeur:int)->int:
+      diviseurs = []
+      for i in range(valeur+1):
+         if valeur % i == 0:
+            diviseurs.append(i)
+      return diviseurs
+    ```
+
 ---
 
 **Écrire une fonction `est_croissante` qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.**
 *Exemple :*
 *est_croissante([1, 2, 3, 4]) doit renvoyer True.*
 *est_croissante([1, 3, 2, 4]) doit renvoyer False.*
+
+??? fox_correction "Correction"
+
+    ```python
+    def est_croissante(liste:list)->int:
+      i = 0
+      while i < len(liste) - 1 and liste[i] <= liste[i+1] :
+         i = i +1
+      return i == len(liste)-1
+    ```
 ---
 
 **Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.**
 *Exemple :*
 *echange([1, 2, 3, 4], 1, 2), cela doit modifier la liste pour donner [1, 3, 2, 4].*
 *echange([5, 10, 15], 0, 2), cela doit modifier la liste pour donner [15, 10, 5].*
+
+??? fox_correction "Correction"
+
+    ```python
+    # 1ère solution : passer par une troisième valeur
+
+    def echange(liste:list, i:int, j:int)->None:
+      temp = liste[i]
+      liste[j] = liste[i]
+      liste[i] = temp
+
+   # 2e solution : solution Python-esque
+    
+    def echange(liste:list, i:int, j:int)->None:
+      liste[i],liste[j] = liste[j],liste[i]
+    ```
 
 ---
 
@@ -279,6 +354,23 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 rangement_valeurs([1, 7, 4, 3, 6, 2, 8], 5)  # Renvoie: [1, 4, 3, 2], [], [7, 6, 8]
 rangement_valeurs([1, 2, 4, 3, 6, 2, 8], 2)  # Renvoie: [1], [2, 2], [4, 3, 6, 8]
 ```
+
+??? fox_correction "Correction"
+
+    ```python
+    def rangement_valeurs(liste:list, valeur:int)->tuple[list]:
+      inferieures = []
+      egales = []
+      superieures = []
+      for elt in liste:
+         if elt > valeur:
+            superieures.append(elt)
+         elif elt == valeur:
+            egales.append(elt)
+         else:
+            inferieures.append(elt)
+      return inferieures, egales, superieures
+    ```
 
 ## Niveau Difficile
 
