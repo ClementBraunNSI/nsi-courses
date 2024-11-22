@@ -122,10 +122,10 @@
 |![tino](./monstres/2DE5/tino.png)|![alan](./monstres/2DE5/alan.png)|![romane](./monstres/2DE5/romane.png)|![patricia_zelie](./monstres/2DE5/patricia_zelie.png)|![timeo](./monstres/2DE5/timeo.png)||
 |Camille_soleil|Camille_nuage|Allyson_thea|Eva|Milan|
 |![camille_soleil](./monstres/2DE5/camille_soleil.png)|![camille_nuage](./monstres/2DE5/camille_nuage.png)|![allyson_thea](./monstres/2DE5/allyson_thea.png)|![eva](./monstres/2DE5/eva.png)|![milan](./monstres/2DE5/milan.png)||
-|Ilan|Camille_etoile|Anais|Jules|Camille_pluie|
-|![ilan](./monstres/2DE5/ilan.png)|![camille_etoile](./monstres/2DE5/camille_etoile.png)|![anais](./monstres/2DE5/anais.png)|![jules](./monstres/2DE5/jules.png)|![camille_pluie](./monstres/2DE5/camille_pluie.png)||
-|Agathe_maiwen|
-|![agathe_maiwen](./monstres/2DE5/agathe_maiwen.png)|
+|Ilan|Camille_etoile|Anais|Timeo_g|Jules|
+|![ilan](./monstres/2DE5/ilan.png)|![camille_etoile](./monstres/2DE5/camille_etoile.png)|![anais](./monstres/2DE5/anais.png)|![timeo_g](./monstres/2DE5/timeo_g.png)|![jules](./monstres/2DE5/jules.png)||
+|Camille_pluie|Agathe_maiwen|
+|![camille_pluie](./monstres/2DE5/camille_pluie.png)|![agathe_maiwen](./monstres/2DE5/agathe_maiwen.png)|
 
 ## 2DE10
 
@@ -137,10 +137,8 @@
 |![melina](./monstres/2DE10/melina.png)|![lucas](./monstres/2DE10/lucas.png)|![nassim](./monstres/2DE10/nassim.png)|![anna-rose](./monstres/2DE10/anna-rose.png)|![louise](./monstres/2DE10/louise.png)||
 |Abigael|Johan|Mailys|Ilyan|Roxanne|
 |![abigael](./monstres/2DE10/abigael.png)|![johan](./monstres/2DE10/johan.png)|![mailys](./monstres/2DE10/mailys.png)|![ilyan](./monstres/2DE10/ilyan.png)|![roxanne](./monstres/2DE10/roxanne.png)||
-|Margaux|Timeo_g|Nina|Esther|Semih|
-|
-|![margaux](./monstres/2DE10/margaux.png)|![timeo_g](./monstres/2DE10/timeo_g.png)|![nina](./monstres/2DE10/nina.png)|![esther](./monstres/2DE10/esther.png)|![semih](./monstres/2DE10/semih.pdf)||
-|
+|Margaux|Nina|Esther|Semih|
+|![margaux](./monstres/2DE10/margaux.png)|![nina](./monstres/2DE10/nina.png)|![esther](./monstres/2DE10/esther.png)|![semih](./monstres/2DE10/semih.pdf)|
 
 ## 2DE11
 
