@@ -13,20 +13,22 @@ Il existe diverses opérations, comme en python, que l'on peut distinguer :
 
 **Opérations liées aux valeurs et aux registres**
 
-- **MOV A B** : Transférer des données d'un registre **A** à un autre **B**, ou entre la mémoire et un registre.
+- **STR X, Val** : Stocke la valeur Val dans le registre X.
+
+- **MOV A B** : Déplace les valeurs d'un registre **A** à un autre **B**.
 
 **Opérations mathématiques**
 
-- **ADD X Y** : Ajouter deux opérandes.
+- **ADD X Y** : Ajouter deux valeurs.
 - **SUB X Y** : Soustraire un opérande d'un autre.
-- **MUL X Y** : Multiplier deux opérandes.
+- **MUL X Y** : Multiplier deux valeurs.
 - **DIV X Y** : Diviser un opérande par un autre.
 
 **Opérations booléennes**
 
-- **AND** : Effectuer une opération logique AND entre deux opérandes.
-- **OR** : Effectuer une opération logique OR entre deux opérandes.
-- **XOR** : Effectuer une opération logique XOR entre deux opérandes.
+- **AND** : Effectuer une opération logique AND entre deux valeurs.
+- **OR** : Effectuer une opération logique OR entre deux valeurs.
+- **XOR** : Effectuer une opération logique XOR entre deux valeurs.
 
 **Boucles et conditions**
 
@@ -34,28 +36,29 @@ Pour les boucles, on saute à une certaine étape indiquée dans le code du prog
 Pour les conditions, l'endroit du saut correspond au résultat que l'on souhaite.
 On déclare ce que l'on appelle des **ancres** et si la comparaison donne un résultat, on saute à un endroit, sinon à un autre.
 
-- **CMP A B** : Comparer deux opérandes.
-- **JE** : Sauter à une autre instruction si les opérandes sont égaux (Jump if Equal).
-- **JNE** : Sauter à une autre instruction si les opérandes ne sont pas égaux (Jump if Not Equal).
+- **CMP A B** : Comparer deux valeurs.
+- **JE** : Sauter à une autre instruction si les valeurs sont égaux (Jump if Equal).
+- **JNE** : Sauter à une autre instruction si les valeurs ne sont pas égaux (Jump if Not Equal).
 - **JG** : Sauter à une autre instruction si un opérande est supérieur à l'autre (Jump if Greater).
 - **JL** : Sauter à une autre instruction si un opérande est inférieur à l'autre (Jump if Less).
 
-
 L'assembleur n'est pas au programme, mais il permet de mieux comprendre le fonctionnement d'un ordinateur et le fait qu'il soit un modèle de machine séquentiel.
 
-## Activité M10
+*Exemple:*
 
-Pour illustrer le fonctionnement d'une machine grâce à l'assembleur, on peut réduire l'ordinateur à un tableau de case ordonnées.
-En plus de ce tableau, on se munit d'un jeu d'instructions (pour simplifier : le jeu d'instruction écrit au dessus) et 3 cases supplémentaires représentant 3 registres A B et C.
-On appelle ce petit modèle, **le modèle M10**.
-
-**Exercice 1**
-
-1. Recopier le modèle M10 ci-dessous.
-2. Dérouler le jeu d'instruction donné avec les valeurs X = 10 et Y = 2, X = 5 et Y = 4, X = 100 et Y = 10.
-3. En déduire le but de la machine M10 donnée.
-
-**Exercice 2**
-
-1. En reprenant la machine précédente, modifier le modèle M10 pour qu'il donne le carré d'un nombre dans le registre C.
-2. En déduire un modèle M10 qui permet de réaliser l'opération de factorielle d'un nombre dans le registre C.
+```python
+    STR A, 15 # Stocke 15 dans A
+    ADD A, 10 # Ajoute 10 à la valeur dans A
+    STR B, 10 # Stocke 10 dans B
+    LOAD A # Met A dans la mémoire active
+    MUL 10 # Multiplie la valeur dans la mémoire active par 10
+    STR A # Stocke le résultat de la mémoire active dans A 
+    CMP A, B
+    boucle:
+    JE fin_boucle
+    STR C, 0
+    ADD B, 1
+    ADD C,1
+    JMP boucle
+    fin_boucle
+```
