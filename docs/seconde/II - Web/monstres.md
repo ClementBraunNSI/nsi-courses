@@ -60,14 +60,16 @@
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Marie_ellynn|Titouan|Robin|Theo|Gabin|
-|![marie_ellynn](./monstres/S16/marie_ellynn.png)|![titouan](./monstres/S16/titouan.png)|![robin](./monstres/S16/robin.png)|![theo](./monstres/S16/theo.png)|![gabin](./monstres/S16/gabin.png)||
-|Maxime|Emmy|Lylia|Tom|Alex|
-|![maxime](./monstres/S16/maxime.png)|![emmy](./monstres/S16/emmy.png)|![lylia](./monstres/S16/lylia.png)|![tom](./monstres/S16/tom.png)|![alex](./monstres/S16/alex.png)||
-|Maelys|Maely|Louise_r|Noe|Noah|
-|![maelys](./monstres/S16/maelys.png)|![maely](./monstres/S16/maely.png)|![louise_r](./monstres/S16/louise_r.png)|![noe](./monstres/S16/noe.png)|![noah](./monstres/S16/noah.png)||
-|Eliz|Julia|Gaspard|
-|![eliz](./monstres/S16/eliz.png)|![julia](./monstres/S16/julia.png)|![gaspard](./monstres/S16/gaspard.png)|
+|Marie_ellynn|Titouan|Robin|Theo|Romane|
+|![marie_ellynn](./monstres/S16/marie_ellynn.png)|![titouan](./monstres/S16/titouan.png)|![robin](./monstres/S16/robin.png)|![theo](./monstres/S16/theo.png)|![romane](./monstres/S16/romane.png)||
+|Gabin|Maxime|Emmy|Lylia|Tom|
+|![gabin](./monstres/S16/gabin.png)|![maxime](./monstres/S16/maxime.png)|![emmy](./monstres/S16/emmy.png)|![lylia](./monstres/S16/lylia.png)|![tom](./monstres/S16/tom.png)||
+|Alex|Maelys|Maely|Louise_r|Marina|
+|![alex](./monstres/S16/alex.png)|![maelys](./monstres/S16/maelys.png)|![maely](./monstres/S16/maely.png)|![louise_r](./monstres/S16/louise_r.png)|![marina](./monstres/S16/marina.png)||
+|Noe|Noah|Eliz|Julia|Gaspard|
+|![noe](./monstres/S16/noe.png)|![noah](./monstres/S16/noah.png)|![eliz](./monstres/S16/eliz.png)|![julia](./monstres/S16/julia.png)|![gaspard](./monstres/S16/gaspard.png)||
+|Liam|
+|![liam](./monstres/S16/liam.png)|
 
 ## 2DE3
 
