@@ -51,10 +51,10 @@
 |![louna](./monstres/2DE1/louna.png)|![alexa](./monstres/2DE1/alexa.png)|![emlyne](./monstres/2DE1/emlyne.png)|![lylian](./monstres/2DE1/lylian.png)|![salome](./monstres/2DE1/salome.png)||
 |Maxime|Clea|Maelle|Joan|Thibault|
 |![maxime](./monstres/2DE1/maxime.png)|![clea](./monstres/2DE1/clea.png)|![maelle](./monstres/2DE1/maelle.png)|![joan](./monstres/2DE1/joan.png)|![thibault](./monstres/2DE1/thibault.png)||
-|Hayrunnisa|Naome|Quentin|Lina|Clemence|
-|![Hayrunnisa](./monstres/2DE1/Hayrunnisa.png)|![naome](./monstres/2DE1/naome.png)|![quentin](./monstres/2DE1/quentin.png)|![lina](./monstres/2DE1/lina.png)|![clemence](./monstres/2DE1/clemence.png)||
-|Sofia|Noor|
-|![sofia](./monstres/2DE1/sofia.png)|![noor](./monstres/2DE1/noor.png)|
+|Acelya|Hayrunnisa|Naome|Quentin|Lina|
+|![acelya](./monstres/2DE1/acelya.png)|![Hayrunnisa](./monstres/2DE1/Hayrunnisa.png)|![naome](./monstres/2DE1/naome.png)|![quentin](./monstres/2DE1/quentin.png)|![lina](./monstres/2DE1/lina.png)||
+|Clemence|Sofia|Noor|
+|![clemence](./monstres/2DE1/clemence.png)|![sofia](./monstres/2DE1/sofia.png)|![noor](./monstres/2DE1/noor.png)|
 
 ## S16
 
@@ -77,14 +77,14 @@
 |:---:|:---:|:---:|:---:|:---:|
 |Sebastian|Sasha|Laureline.|Anouk|Rose|
 |![sebastian](./monstres/2DE3/sebastian.png)|![sasha](./monstres/2DE3/sasha.png)|![laureline.](./monstres/2DE3/laureline.jpeg)|![anouk](./monstres/2DE3/anouk.png)|![rose](./monstres/2DE3/rose.png)||
-|Laureline_2|Gabin|Leo|Elisa|Mathys|
-|![laureline_2](./monstres/2DE3/laureline_2.png)|![gabin](./monstres/2DE3/gabin.png)|![leo](./monstres/2DE3/leo.png)|![elisa](./monstres/2DE3/elisa.png)|![mathys](./monstres/2DE3/mathys.png)||
-|Nil|Enora|Chloe|Ilhan|Eline_piano|
-|![nil](./monstres/2DE3/nil.png)|![enora](./monstres/2DE3/enora.png)|![chloe](./monstres/2DE3/chloe.png)|![ilhan](./monstres/2DE3/ilhan.png)|![eline_piano](./monstres/2DE3/eline_piano.png)||
-|Madeg|Joseph|Niev|Mila|Eline_batterie|
-|![madeg](./monstres/2DE3/madeg.png)|![joseph](./monstres/2DE3/joseph.png)|![niev](./monstres/2DE3/niev.png)|![mila](./monstres/2DE3/mila.png)|![eline_batterie](./monstres/2DE3/eline_batterie.png)||
-|Eline_guitare|Eline_trompette|
-|![eline_guitare](./monstres/2DE3/eline_guitare.png)|![eline_trompette](./monstres/2DE3/eline_trompette.png)|
+|Gabin|Leo|Elisa|Mathys|Nil|
+|![gabin](./monstres/2DE3/gabin.png)|![leo](./monstres/2DE3/leo.png)|![elisa](./monstres/2DE3/elisa.png)|![mathys](./monstres/2DE3/mathys.png)|![nil](./monstres/2DE3/nil.png)||
+|Enora|Chloe|Ilhan|Eline_piano|Madeg|
+|![enora](./monstres/2DE3/enora.png)|![chloe](./monstres/2DE3/chloe.png)|![ilhan](./monstres/2DE3/ilhan.png)|![eline_piano](./monstres/2DE3/eline_piano.png)|![madeg](./monstres/2DE3/madeg.png)||
+|Joseph|Niev|Mila|Eline_batterie|Eline_guitare|
+|![joseph](./monstres/2DE3/joseph.png)|![niev](./monstres/2DE3/niev.png)|![mila](./monstres/2DE3/mila.png)|![eline_batterie](./monstres/2DE3/eline_batterie.png)|![eline_guitare](./monstres/2DE3/eline_guitare.png)||
+|Eline_trompette|
+|![eline_trompette](./monstres/2DE3/eline_trompette.png)|
 
 ## S01
 
