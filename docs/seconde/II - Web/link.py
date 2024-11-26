@@ -127,7 +127,7 @@ def redimensionner_images():
     for classe in os.listdir(('./monstres')):
         if classe != '.DS_Store':
             for image in os.listdir('./monstres/' + classe):
-                if image != '.DS_Store' and ".pdf" not in image:
+                if image != '.DS_Store' and ".pdf" not in image and ".jpeg" not in image and ".jpg" not in image:
                     print(dico[0] == [classe+" "+image])
                     if [classe+" "+image] not in dico:
                         print("bite")
