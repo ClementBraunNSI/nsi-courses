@@ -8,14 +8,14 @@
 |![jade](./monstres/2DE7/jade.png)|![soan](./monstres/2DE7/soan.png)|![alice](./monstres/2DE7/alice.png)|![alan](./monstres/2DE7/alan.png)|![orlane](./monstres/2DE7/orlane.png)||
 |Alou|Maxime|Mael|Karim|Eloa|
 |![alou](./monstres/2DE7/alou.png)|![maxime](./monstres/2DE7/maxime.png)|![mael](./monstres/2DE7/mael.png)|![karim](./monstres/2DE7/karim.png)|![eloa](./monstres/2DE7/eloa.png)||
-|Milo|Lilou|Charline|Mathilde|Talel|
-|![milo](./monstres/2DE7/milo.png)|![lilou](./monstres/2DE7/lilou.png)|![charline](./monstres/2DE7/charline.png)|![mathilde](./monstres/2DE7/mathilde.png)|![talel](./monstres/2DE7/talel.png)||
-|Nolan|Ilan|Ethan|Maelys|Lilie-rose|
-|![nolan](./monstres/2DE7/nolan.png)|![ilan](./monstres/2DE7/ilan.png)|![ethan](./monstres/2DE7/ethan.png)|![maelys](./monstres/2DE7/maelys.png)|![lilie-rose](./monstres/2DE7/lilie-rose.png)||
-|Dalila|Youen|Hugo|Jules|Moncef|
-|![dalila](./monstres/2DE7/dalila.png)|![youen](./monstres/2DE7/youen.png)|![hugo](./monstres/2DE7/hugo.png)|![jules](./monstres/2DE7/jules.png)|![moncef](./monstres/2DE7/moncef.png)||
-|Emma|Younes|
-|![emma](./monstres/2DE7/emma.png)|![younes](./monstres/2DE7/younes.png)|
+|Timeo|Milo|Lilou|Charline|Mathilde|
+|![timeo](./monstres/2DE7/timeo.png)|![milo](./monstres/2DE7/milo.png)|![lilou](./monstres/2DE7/lilou.png)|![charline](./monstres/2DE7/charline.png)|![mathilde](./monstres/2DE7/mathilde.png)||
+|Talel|Nolan|Ilan|Ethan|Maelys|
+|![talel](./monstres/2DE7/talel.png)|![nolan](./monstres/2DE7/nolan.png)|![ilan](./monstres/2DE7/ilan.png)|![ethan](./monstres/2DE7/ethan.png)|![maelys](./monstres/2DE7/maelys.png)||
+|Lilie-rose|Dalila|Youen|Hugo|Jules|
+|![lilie-rose](./monstres/2DE7/lilie-rose.png)|![dalila](./monstres/2DE7/dalila.png)|![youen](./monstres/2DE7/youen.png)|![hugo](./monstres/2DE7/hugo.png)|![jules](./monstres/2DE7/jules.png)||
+|Moncef|Emma|Younes|
+|![moncef](./monstres/2DE7/moncef.png)|![emma](./monstres/2DE7/emma.png)|![younes](./monstres/2DE7/younes.png)|
 
 ## 2DE9
 
