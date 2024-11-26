@@ -115,8 +115,8 @@
 |![camille](./monstres/2DE2/camille.png)|![kyllian](./monstres/2DE2/kyllian.png)|![sirine](./monstres/2DE2/sirine.png)|![ethan](./monstres/2DE2/ethan.png)|![maelys](./monstres/2DE2/maelys.png)||
 |Lise-anne|Zoe_emma|Lison|Aya|Gabriel|
 |![lise-anne](./monstres/2DE2/lise-anne.png)|![zoe_emma](./monstres/2DE2/zoe_emma.png)|![lison](./monstres/2DE2/lison.png)|![aya](./monstres/2DE2/aya.png)|![gabriel](./monstres/2DE2/gabriel.png)||
-|Samira|Eyaelle|Binti|
-|![samira](./monstres/2DE2/samira.png)|![eyaelle](./monstres/2DE2/eyaelle.png)|![binti](./monstres/2DE2/binti.png)|
+|Eyaelle|Binti|
+|![eyaelle](./monstres/2DE2/eyaelle.png)|![binti](./monstres/2DE2/binti.png)|
 
 ## 2DE5
 
@@ -143,10 +143,10 @@
 |![nassim](./monstres/2DE10/nassim.png)|![anna-rose](./monstres/2DE10/anna-rose.png)|![louise](./monstres/2DE10/louise.png)|![abigael](./monstres/2DE10/abigael.png)|![noa.](./monstres/2DE10/noa.jpeg)||
 |Mathys_2.|Johan|Mathys_1.|Mailys|Ilyan|
 |![mathys_2.](./monstres/2DE10/mathys_2.jpeg)|![johan](./monstres/2DE10/johan.png)|![mathys_1.](./monstres/2DE10/mathys_1.jpeg)|![mailys](./monstres/2DE10/mailys.png)|![ilyan](./monstres/2DE10/ilyan.png)||
-|Roxanne|Margaux|Nina|Esther|Semih|
-|
-|![roxanne](./monstres/2DE10/roxanne.png)|![margaux](./monstres/2DE10/margaux.png)|![nina](./monstres/2DE10/nina.png)|![esther](./monstres/2DE10/esther.png)|![semih](./monstres/2DE10/semih.pdf)||
-|
+|Roxanne|Margaux|Nina|Esther|Samira|
+|![roxanne](./monstres/2DE10/roxanne.png)|![margaux](./monstres/2DE10/margaux.png)|![nina](./monstres/2DE10/nina.png)|![esther](./monstres/2DE10/esther.png)|![samira](./monstres/2DE10/samira.png)||
+|Semih|
+|![semih](./monstres/2DE10/semih.pdf)|
 
 ## 2DE11
 
