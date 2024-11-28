@@ -32,16 +32,18 @@
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Jade|Alwena|Timoté|Nathan|Lena|
-|![jade](./monstres/2DE6/jade.png)|![alwena](./monstres/2DE6/alwena.png)|![timoté](./monstres/2DE6/timoté.png)|![nathan](./monstres/2DE6/nathan.png)|![lena](./monstres/2DE6/lena.png)||
-|Salomee|Sarah|Mael|Aela|Lise|
-|![salomee](./monstres/2DE6/salomee.png)|![sarah](./monstres/2DE6/sarah.png)|![mael](./monstres/2DE6/mael.png)|![aela](./monstres/2DE6/aela.png)|![lise](./monstres/2DE6/lise.png)||
-|Rozenn|Elianor|Haizia|Nolan|Merlin|
-|![rozenn](./monstres/2DE6/rozenn.png)|![elianor](./monstres/2DE6/elianor.png)|![haizia](./monstres/2DE6/haizia.png)|![nolan](./monstres/2DE6/nolan.png)|![merlin](./monstres/2DE6/merlin.png)||
-|Joris|Jeanne|Mayane|Leandre|Juliette|
-|![joris](./monstres/2DE6/joris.png)|![jeanne](./monstres/2DE6/jeanne.png)|![mayane](./monstres/2DE6/mayane.png)|![leandre](./monstres/2DE6/leandre.png)|![juliette](./monstres/2DE6/juliette.png)||
-|Nina|Emma|Elsa|Ludmila|
-|![nina](./monstres/2DE6/nina.png)|![emma](./monstres/2DE6/emma.png)|![elsa](./monstres/2DE6/elsa.pdf)|![ludmila](./monstres/2DE6/ludmila.png)|
+|Jade|Alwena|Ethel|Timoté|Nathan|
+|![jade](./monstres/2DE6/jade.png)|![alwena](./monstres/2DE6/alwena.png)|![ethel](./monstres/2DE6/ethel.png)|![timoté](./monstres/2DE6/timoté.png)|![nathan](./monstres/2DE6/nathan.png)||
+|Lena|Salomee|Sarah|Ferdinand|Mael|
+|![lena](./monstres/2DE6/lena.png)|![salomee](./monstres/2DE6/salomee.png)|![sarah](./monstres/2DE6/sarah.png)|![ferdinand](./monstres/2DE6/ferdinand.png)|![mael](./monstres/2DE6/mael.png)||
+|Aela|Lise|Rozenn|Elianor|Haizia|
+|![aela](./monstres/2DE6/aela.png)|![lise](./monstres/2DE6/lise.png)|![rozenn](./monstres/2DE6/rozenn.png)|![elianor](./monstres/2DE6/elianor.png)|![haizia](./monstres/2DE6/haizia.png)||
+|Nolan|Merlin|Joris|Jeanne|Mayane|
+|![nolan](./monstres/2DE6/nolan.png)|![merlin](./monstres/2DE6/merlin.png)|![joris](./monstres/2DE6/joris.png)|![jeanne](./monstres/2DE6/jeanne.png)|![mayane](./monstres/2DE6/mayane.png)||
+|Leandre|Juliette|Nina|Emma|Elsa|
+|![leandre](./monstres/2DE6/leandre.png)|![juliette](./monstres/2DE6/juliette.png)|![nina](./monstres/2DE6/nina.png)|![emma](./monstres/2DE6/emma.png)|![elsa](./monstres/2DE6/elsa.pdf)||
+|Ludmila|
+|![ludmila](./monstres/2DE6/ludmila.png)|
 
 ## 2DE1
 
@@ -115,8 +117,8 @@
 |![camille](./monstres/2DE2/camille.png)|![kyllian](./monstres/2DE2/kyllian.png)|![sirine](./monstres/2DE2/sirine.png)|![ethan](./monstres/2DE2/ethan.png)|![maelys](./monstres/2DE2/maelys.png)||
 |Lise-anne|Zoe_emma|Lison|Aya|Gabriel|
 |![lise-anne](./monstres/2DE2/lise-anne.png)|![zoe_emma](./monstres/2DE2/zoe_emma.png)|![lison](./monstres/2DE2/lison.png)|![aya](./monstres/2DE2/aya.png)|![gabriel](./monstres/2DE2/gabriel.png)||
-|Eyaelle|Binti|
-|![eyaelle](./monstres/2DE2/eyaelle.png)|![binti](./monstres/2DE2/binti.png)|
+|Binti|
+|![binti](./monstres/2DE2/binti.png)|
 
 ## 2DE5
 
@@ -145,20 +147,22 @@
 |![mathys_2.](./monstres/2DE10/mathys_2.jpeg)|![johan](./monstres/2DE10/johan.png)|![mathys_1.](./monstres/2DE10/mathys_1.jpeg)|![mailys](./monstres/2DE10/mailys.png)|![ilyan](./monstres/2DE10/ilyan.png)||
 |Roxanne|Margaux|Nina|Esther|Samira|
 |![roxanne](./monstres/2DE10/roxanne.png)|![margaux](./monstres/2DE10/margaux.png)|![nina](./monstres/2DE10/nina.png)|![esther](./monstres/2DE10/esther.png)|![samira](./monstres/2DE10/samira.png)||
-|Semih|
-|![semih](./monstres/2DE10/semih.png)|
+|Eyaelle|Semih|
+|![eyaelle](./monstres/2DE10/eyaelle.png)|![semih](./monstres/2DE10/semih.png)|
 
 ## 2DE11
 
 ||||||
 |:---:|:---:|:---:|:---:|:---:|
-|Ilann|Titouan|Maylane|Anouk|Melia|
-|![ilann](./monstres/2DE11/ilann.png)|![titouan](./monstres/2DE11/titouan.png)|![maylane](./monstres/2DE11/maylane.png)|![anouk](./monstres/2DE11/anouk.png)|![melia](./monstres/2DE11/melia.png)||
-|Maria|Hanae|Lucas|Aaron|Yoann|
-|![maria](./monstres/2DE11/maria.png)|![hanae](./monstres/2DE11/hanae.png)|![lucas](./monstres/2DE11/lucas.png)|![aaron](./monstres/2DE11/aaron.png)|![yoann](./monstres/2DE11/yoann.png)||
-|Zoe|Nhayla|Jeanne|Shanice|Malo|
-|![zoe](./monstres/2DE11/zoe.png)|![nhayla](./monstres/2DE11/nhayla.png)|![jeanne](./monstres/2DE11/jeanne.png)|![shanice](./monstres/2DE11/shanice.png)|![malo](./monstres/2DE11/malo.png)||
-|Tess|Servane|Anais|Jules|Madyar|
-|![tess](./monstres/2DE11/tess.png)|![servane](./monstres/2DE11/servane.png)|![anais](./monstres/2DE11/anais.png)|![jules](./monstres/2DE11/jules.png)|![madyar](./monstres/2DE11/madyar.png)||
-|Quentin|Lysa|
-|![quentin](./monstres/2DE11/quentin.png)|![lysa](./monstres/2DE11/lysa.png)|
+|Ilann|Titouan|Maylane|Anouk|Alice|
+|![ilann](./monstres/2DE11/ilann.png)|![titouan](./monstres/2DE11/titouan.png)|![maylane](./monstres/2DE11/maylane.png)|![anouk](./monstres/2DE11/anouk.png)|![alice](./monstres/2DE11/alice.png)||
+|Melia|Maria|Hanae|Jorys|Lucas|
+|![melia](./monstres/2DE11/melia.png)|![maria](./monstres/2DE11/maria.png)|![hanae](./monstres/2DE11/hanae.png)|![jorys](./monstres/2DE11/jorys.png)|![lucas](./monstres/2DE11/lucas.png)||
+|Aaron|Yoann|Sham|Zoe|Nhayla|
+|![aaron](./monstres/2DE11/aaron.png)|![yoann](./monstres/2DE11/yoann.png)|![sham](./monstres/2DE11/sham.png)|![zoe](./monstres/2DE11/zoe.png)|![nhayla](./monstres/2DE11/nhayla.png)||
+|Jeanne|Shanice|Mailye|Malo|Tess|
+|![jeanne](./monstres/2DE11/jeanne.png)|![shanice](./monstres/2DE11/shanice.png)|![mailye](./monstres/2DE11/mailye.png)|![malo](./monstres/2DE11/malo.png)|![tess](./monstres/2DE11/tess.png)||
+|Servane|Anais|Jules|Madyar|Quentin|
+|![servane](./monstres/2DE11/servane.png)|![anais](./monstres/2DE11/anais.png)|![jules](./monstres/2DE11/jules.png)|![madyar](./monstres/2DE11/madyar.png)|![quentin](./monstres/2DE11/quentin.png)||
+|Lysa|
+|![lysa](./monstres/2DE11/lysa.png)|
