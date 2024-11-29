@@ -23,10 +23,12 @@
 |:---:|:---:|:---:|:---:|:---:|
 |Aidie|Lena|Marisa|Theo|Yael|
 |![aidie](./monstres/2DE9/aidie.png)|![lena](./monstres/2DE9/lena.png)|![marisa](./monstres/2DE9/marisa.png)|![theo](./monstres/2DE9/theo.png)|![yael](./monstres/2DE9/yael.png)||
-|Mathys|Maxence|Nathael|Mylan_ilyess|Charlotte|
-|![mathys](./monstres/2DE9/mathys.png)|![maxence](./monstres/2DE9/maxence.png)|![nathael](./monstres/2DE9/nathael.png)|![mylan_ilyess](./monstres/2DE9/mylan_ilyess.png)|![charlotte](./monstres/2DE9/charlotte.png)||
-|Iwen|Lina|Elsa|
-|![iwen](./monstres/2DE9/iwen.png)|![lina](./monstres/2DE9/lina.png)|![elsa](./monstres/2DE9/elsa.png)|
+|Marko|Mathys|Maxence|Jeanne|Janelle|
+|![marko](./monstres/2DE9/marko.png)|![mathys](./monstres/2DE9/mathys.png)|![maxence](./monstres/2DE9/maxence.png)|![jeanne](./monstres/2DE9/jeanne.png)|![janelle](./monstres/2DE9/janelle.png)||
+|Nathael|Mylan_ilyess|Charlotte|Iwen|Lina|
+|![nathael](./monstres/2DE9/nathael.png)|![mylan_ilyess](./monstres/2DE9/mylan_ilyess.png)|![charlotte](./monstres/2DE9/charlotte.png)|![iwen](./monstres/2DE9/iwen.png)|![lina](./monstres/2DE9/lina.png)||
+|Elsa|
+|![elsa](./monstres/2DE9/elsa.png)|
 
 ## 2DE6
 
