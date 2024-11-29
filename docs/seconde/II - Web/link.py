@@ -129,15 +129,15 @@ def redimensionner_images():
             for image in os.listdir('./monstres/' + classe):
                 if image != '.DS_Store' and ".pdf" not in image and ".jpeg" not in image and ".jpg" not in image:
                     print(dico[0] == [classe+" "+image])
-                    if [classe+" "+image] not in dico:
-                        print("bite")
-                        print(classe+" "+image)
-                        img = Image.open('./monstres/'+classe+"/"+image)
-                        img = img.convert("P", palette=Image.Palette.ADAPTIVE, colors=256)
-                        img.save(f"./monstres/{classe}/{image}", optimize=True)
-                        with open('indexation_redimensionnee.csv','a') as f:
-                            f.write(classe+" "+image)
-                            f.write("\n")
+                    #if [classe+" "+image] not in dico:
+                    print("bite")
+                    print(classe+" "+image)
+                    img = Image.open('./monstres/'+classe+"/"+image)
+                    img = img.convert("P", palette=Image.Palette.ADAPTIVE, colors=256)
+                    img.save(f"./monstres/{classe}/{image}", optimize=True)
+                    with open('indexation_redimensionnee.csv','a') as f:
+                        f.write(classe+" "+image)                            
+                        f.write("\n")
 
 redimensionner_images()
-images_par_classes_4()
+#images_par_classes_4()
