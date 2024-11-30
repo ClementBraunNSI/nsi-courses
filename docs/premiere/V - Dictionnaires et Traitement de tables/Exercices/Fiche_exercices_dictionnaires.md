@@ -1,9 +1,8 @@
 
 # Fiche d'exercices : Les Dictionnaires en Python
 
-## Partie 1 : Contextes simples
 
-### 1. Gestion des notes d'élèves
+## 1. Gestion des notes d'élèves
 Un dictionnaire `notes` contient les noms des élèves en clés et leurs moyennes en valeurs.  
 ```python
 notes = {'Alice': 15, 'Bob': 12, 'Clara': 17, 'David': 10}
@@ -23,7 +22,7 @@ notes = {'Alice': 15, 'Bob': 12, 'Clara': 17, 'David': 10}
 
 ---
 
-### 2. Gestion d’un concessionnaire automobile
+## 2. Gestion d’un concessionnaire automobile
 
 Un dictionnaire `voitures` contient les modèles en clés et leurs prix en valeurs.
 ```python
@@ -44,9 +43,7 @@ voitures = {'Clio': 15000, 'Megane': 20000, 'Talisman': 35000}
 
 ---
 
-## Partie 2 : Listes de dictionnaires
-
-### 3. Catalogue de produits
+## 3. Catalogue de produits
 Un catalogue est représenté par une liste de dictionnaires.
 ```python
 catalogue = [
@@ -70,9 +67,7 @@ catalogue = [
 
 ---
 
-## Partie 3 : Dictionnaires de dictionnaires
-
-### 4. Réseau de bibliothèques
+## 4. Réseau de bibliothèques
 Un dictionnaire `bibliotheques` contient plusieurs bibliothèques.
 ```python
 bibliotheques = {
@@ -96,9 +91,7 @@ bibliotheques = {
 
 ---
 
-## Partie 4 : Niveau avancé
-
-### 5. Base de données des employés
+## 5. Base de données des employés
 Un dictionnaire `employes` contient les informations des employés.
 ```python
 employes = {
@@ -119,3 +112,4 @@ employes = {
 
 4. **Écrire une fonction `employe_salaire_max(employes)`** qui renvoie l’employé ayant le salaire le plus élevé.
    - Modifier la fonction pour renvoyer également l’employé ayant le salaire le plus bas.
+
