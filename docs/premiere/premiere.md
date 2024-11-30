@@ -14,7 +14,7 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 
 ## Corrections Devoirs Surveillés
 
-- [DS 1 : binaire et baase de programmation](./Aides/Corrections/trimestre_1/correction_ds_1.md)
+- [DS 1 : binaire et base de programmation](./Aides/Corrections/trimestre_1/correction_ds_1.md)
   
 ## Corrections Épreuves Pratiques
 
