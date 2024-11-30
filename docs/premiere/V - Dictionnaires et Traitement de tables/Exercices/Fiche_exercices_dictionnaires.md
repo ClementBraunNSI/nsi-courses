@@ -210,6 +210,3 @@ athletes = {
 4. **Écrire une fonction `ajouter_performance(athletes, nom, sport, temps)`** qui ajoute une nouvelle performance.
    - Créer un nouvel athlète si nécessaire.
    - Vérifier la cohérence des données.
-
----
-
