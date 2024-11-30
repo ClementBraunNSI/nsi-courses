@@ -9,6 +9,8 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 - [Interrogation 3 : Boucles](./Aides/Corrections/trimestre_1/correction_interro_3.md)  
 
 - [Interrogation 4 : Fonctions](./Aides/Corrections/trimestre_1/correction_interro_4.md)
+  
+- [Interrogation 5 : Listes](./Aides/Corrections/trimestre_2/correction_interro_5.md)
 
 ## Corrections Devoirs Surveillés
 
