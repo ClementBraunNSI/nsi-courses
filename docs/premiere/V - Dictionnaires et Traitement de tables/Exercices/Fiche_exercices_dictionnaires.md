@@ -8,7 +8,7 @@ Un dictionnaire `notes` contient les noms des élèves en clés et leurs moyenne
 notes = {'Alice': 15, 'Bob': 12, 'Clara': 17, 'David': 10}
 ```
 
-1. **Écrire une fonction `afficher_notes(notes)`** qui affiche la moyenne de chaque élève sous la forme : `"Alice a une moyenne de 15."`.
+1. **Écrire une fonction `afficher_notes` qui prend en paramètre un dictionnaire et  affiche la moyenne de chaque élève sous la forme : `"Alice a une moyenne de 15."`.** 
    - Ajouter un commentaire selon la moyenne : `"Excellent"` pour une moyenne ≥ 16, `"Bien"` pour une moyenne entre 12 et 15 inclus, et `"À améliorer"` pour une moyenne < 12.
 
 2. **Écrire une fonction `ajouter_eleve(notes, nom, moyenne)`** qui ajoute un nouvel élève au dictionnaire.
