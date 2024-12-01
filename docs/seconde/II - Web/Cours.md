@@ -105,5 +105,48 @@ Il fonctionne selon un modèle **client-serveur**, où un **client** (par exempl
 Cette requête inclut une méthode, comme **GET** (pour récupérer des données) ou **POST** (pour envoyer des données).  
 Le **serveur** répond avec un **code de statut** (comme **200 OK** si tout se passe bien) et la ressource demandée, qui peut être un fichier **HTML**, une image, ou un autre type de contenu.  
 
+### Les Méthodes HTTP
+Lors d'une communication, le client utilise différentes méthodes pour interagir avec le serveur.
 
+La **méthode GET** est utilisée pour récupérer des informations. Elle ne modifie aucune donnée sur le serveur et permet seulement d'obtenir des données comme des pages web, les fichiers necessaires à son affichage ou son fonctionnement etc...
 
+```
+GET /utilisateurs/profil?id=123 HTTP/1.1
+Host: www.reseausocial.com
+User-Agent: Mozilla/5.0
+Accept-Language: fr-FR
+```
+
+La **méthode POST** est utilisée pour envoyer des données au serveur pour en modifier certaines ressources (informations d'un compte par exemple, envoi de fichiers etc...).
+
+```
+POST /utilisateurs/inscription HTTP/1.1
+Host: www.reseausocial.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 54
+
+nom=Dupont&prenom=Jean&email=jean.dupont@email.com
+```
+
+Ces méthodes sont souvent utilisées lors de l'envoi de formulaires ou d'initialisation de la page par le navigateur.
+
+Après chaque requête, le serveur renvoie un code de statut qui indique le résultat du traitement :
+
+200 OK : La requête a réussi
+404 Not Found : La ressource demandée n'existe pas
+500 Internal Server Error : Problème côté serveur
+
+## Page Rank
+
+Le Page Rank est un algorithme révolutionnaire développé par **Larry Page** et **Sergey Brin**, les fondateurs de Google, lors de leurs études à l'Université Stanford en 1996. L'idée était simple mais géniale : classer les pages web non pas uniquement sur leur contenu, mais sur leur importance dans le réseau Internet.
+
+Le fonctionnement du Page Rank est simple. Il fonctionne sur la logique de "votes".
+On considère qu'une page vote pour une autre page lorsqu'elle possède un lien vers celle-ci.
+
+**Cela veut dire que plus une page possède de lien plus elle semble "pertinente".**
+
+Cette logique peut paraître efficace mais si énormément de petits articles sans réelle valeur pointent vers une page moins qualitative, elle peut se retrouver plus haute qu'une page de meilleure qualité.
+
+Pour éviter ce biais, certaines pagent ont des votes plus importants que d'autres (comme le maire pour le Loup-Garou de Thiercelieux).
+
+En calculant le nombre de votes, on peut déterminer la qualité d'une page et si elle est pertinente avec la recherche demandée. Cette logique est utilisée par la plupart des moteurs de recherches.
