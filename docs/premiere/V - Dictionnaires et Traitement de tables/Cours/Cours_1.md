@@ -21,8 +21,8 @@ Pour créer ce genre d'objets, on utilise donc la structure des dictionnaires.
 
 ## Les dictionnaires en Python
 
-Pour créer un dictionnaire, on utilise les accolades **{}** la différence des tableaux (parenthèses **(   )**) ou des listes (crochets **[   ]**).
-À l'intérieur de ces crochets, on utilise la syntaxe **attribut : valeurs possibles**.
+Pour créer un dictionnaire, on utilise les accolades **{}** (à la différence des tableaux (parenthèses **(   )**) ou des listes (crochets **[   ]**)).
+À l'intérieur de ces accolades, on utilise la syntaxe **attribut : valeurs possibles**.
 
 Un attribut correspond donc à une propriété d'un objet que l'on cherche à modéliser et est (très souvent) représenté par une chaîne de caractères.
 
