@@ -147,6 +147,6 @@ On considère qu'une page vote pour une autre page lorsqu'elle possède un lien 
 
 Cette logique peut paraître efficace mais si énormément de petits articles sans réelle valeur pointent vers une page moins qualitative, elle peut se retrouver plus haute qu'une page de meilleure qualité.
 
-Pour éviter ce biais, certaines pagent ont des votes plus importants que d'autres (comme le maire pour le Loup-Garou de Thiercelieux).
+Pour éviter ce biais, certaines pages ont des votes plus importants que d'autres (comme le maire pour le Loup-Garou de Thiercelieux).
 
 En calculant le nombre de votes, on peut déterminer la qualité d'une page et si elle est pertinente avec la recherche demandée. Cette logique est utilisée par la plupart des moteurs de recherches.
