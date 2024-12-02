@@ -72,7 +72,7 @@ modele_voiture.pop("taille_jantes")
 
 !!! Warning Ajout de valeurs
     Pour rajouter des valeurs à un attribut d'un dictionnaire, il faut bien faire attention aux types.
-    Par exemple, pour l'exemple précédent, nos valeurs étaient contenues dans des listes. Il faut donc opérer par concaténation de liste avec l'opérateur **+**.
+    Par exemple, pour l'exemple précédent, nos valeurs étaient contenues dans des listes. Il faut donc opérer par concaténation de liste avec l'opérateur **+** ou la méthode `.append(valeur)`.
 
 ## Opérations sur les dictionnaires
 
