@@ -2,26 +2,29 @@
 
 ## Qu'est ce qu'un réseau internet
 
-Un **réseau internet** est un ensemble de machines reliées entre elles qui échangent des informations sur Internet.
+Un **réseau local** est un ensemble de machines reliées entre elles qui échangent des informations en ne passant que par le routeur ou un switch.
 
-Dans un réseau, on retrouve un certain nombre de machines ...
+Un **réseau internet** est un ensemble de réseaux locaux qui communiquent entre eux en passant par Internet.
+
+Dans un réseau, on retrouve un certain nombre de machines : 
 
 - Des ordinateurs, smartphones, tablettes, consoles ...
 - IOT : ensemble des objets connectés (par exemple : domotique)
-- un (ou plusieurs) switchs est un élément d'un réseau qui permet de relier les machines entre elles pour s'échanger des données dans un réseau local. Un réseau local : ___________________________
+- Un (ou plusieurs) switchs est un élément d'un réseau qui permet de relier les machines entre elles pour s'échanger des données dans un réseau local.
 - un routeur (ou plusieurs) routeur est un élément qui permet de relier plusieurs réseaux entre eux.
 
-... qui sont reliées entre elles par :
+Ces machines sont reliées par :  
 
 - des câbles (RJ45)
-- WiFi (Wireless Fidelity)
+- Ondes (exemple : WiFi (Wireless Fidelity) ou 5G)
 - par fibre optique
 
-La communication est définie et régie par des protocoles. Un protocole <...>
+La communication est définie et régie par des protocoles. 
+Un protocole est un ensemble de règles et d'actions prédéfinies à réaliser dans un ordre précis. 
 
-#### Distinction Web et Internet
+### Distinction Web et Internet
 
-Internet correspond à **l'ensemble des réseaux organisés** de manière réticulaire.
+Internet correspond à **l'ensemble des réseaux organisés** communiquant ensemble.
 
 Le Web correspond à une application d'Internet qui rend accessible des ressources grâce aux **liens hypertextes** (que l'on nomme usellement hyperliens).
 
@@ -29,7 +32,7 @@ Le Web correspond à une application d'Internet qui rend accessible des ressourc
 
 Une topologie dans les réseaux correspond à la disposition des machines dans un réseau. 
 
-On en distingue plusieurs : 
+On en distingue plusieurs :  
 
 - Anneau
 - Étoile (en général celui utilisé de manière domestique)
@@ -84,7 +87,8 @@ On retrouve l'adresse du réseau qui est 123.32.0.0.
     Il existe diverses adresse d'un réseau qui sont réservées.
     On a :
     - L'adresse du réseau, explicitée précédemment qui est inutilisable.
-    - L'adresse de multiplexage (ou broadcast) qui se termine par 255. Celle-ci sert à l'envoi de messages sur le réseau entier, donc réservée.
+    - L'adresse de multiplexage (ou broadcast) qui se termine par 255.  
+        Celle-ci sert à l'envoi de messages sur le réseau entier, donc réservée.
 
 On peut définir un certain nombre de machines pour un réseau et cela est défini par le nombre de bits réservés à la partie machine (moins les 2 précédemment citées).
 
@@ -105,15 +109,11 @@ Historiquement, on regroupait les adresses IP dans des classes pour les attribue
 | D      | 224.0.0.0 - 239.255.255.255 | -                 | -                         | Pour le multicast (transmission de données à plusieurs destinataires simultanément). |
 | E      | 240.0.0.0 - 255.255.255.255 | -                 | -                         | Réservé pour des utilisations futures et des fins expérimentales. |
 
-
-**IPv6**
+#### IPv6
 
 L'adresse IPv6 est composée d'un ensemble de 8 groupes de 4 symboles en hexadécimal.
-Cela revient à $2^{128} \approx 3.40 \times 10^{38}$ adresses différentes.
-
-#### Adresse d'un réseau
-
- #TODO : IP d'un réseau
+Un symbole hexadécimal est composé de 4 bits.
+Cela revient à $2^{8*16} = 2^{128} \approx 3.40 \times 10^{38}$ adresses différentes.
 
 ### Modèle TCP/IP
 
@@ -126,5 +126,3 @@ Chaque couche a sa tâche prédéfinie, notamment grâce aux protocoles qui sont
 #### Accès Réseau
 
 La couche accès réseau explicite la liaison entre les machines de manière physique (câbles, WiFi ...) et  la reception des données brutes (bits, ondes lumineuses, signal analogique) aux machines via les switchs ou les routeurs grâce aux adresses physiques (MAC).
-
-Protocoles de la couche **Accès réseau** :

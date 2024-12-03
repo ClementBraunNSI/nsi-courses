@@ -8,7 +8,7 @@ A chaque message parlé sur le talkie-walkie, l'utilisateur utilise un code spé
 L'autre correspondant, s'il a reçu le message précédent doit bien commencer le sien par "Je reçois" ou "Reçu".
 Cela permettait aux différents communiquants d'accuser réceptions de leurs messages respectifs.
 
-![talkie_walkie](./img/talkie_walkie.png)
+![talkie_walkie](./talkie%20walkie.png)
 
 Cela peut se transposer dans les communications numériques, notamment l'envoi de paquets.
 **Rappel** : Avoir besoin d'un accusé de reception est une des principes fondamentaux du protocole TCP.
@@ -29,7 +29,6 @@ Le serveur, reçoit la requête, analyse la valeur du bit, s'il vaut 0, il envoi
 On distingue deux cas :
 
 - Si le client reçoit la ressource, il s'aperçoit que le bit est à 1, donc que sa requête à bien été traitée par le serveur. Il envoie donc une autre requête avec cette fois-ci ce bit de contrôle à 1 pour indiquer au serveur qu'il a reçu sa réponse.
-<br>
 - L'envoie de paquet est chronométré. Si le serveur n'a accusé de la reception de la ressource par le client, il se passe une TIMEOUT. Le serveur comprend que la ressource n'est pas arrivée et donc la renvoie avec le même bit de contrôle.
 
 Si le client reçoit enfin sa ressource, il réalise une nouvelle requête avec le bit de contrôle reçu. 
