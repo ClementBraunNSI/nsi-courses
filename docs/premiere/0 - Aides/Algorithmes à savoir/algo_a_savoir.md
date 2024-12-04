@@ -10,12 +10,12 @@
 !!! fox_correction "Algorithme de recherche d'une valeur"
 
     ```python
-        def presence(liste:list[int], val:int)->int:
+        def presence(liste:list[int], valeur:int)->int:
             present = False
             for elt in liste:
                 if elt == valeur:
-                    mini = elt
-            return mini
+                    present = True
+            return present
     ```
 
 **Écrire une fonction `minimum` qui prend une liste d'entiers et renvoie l'entier minimum.**  
