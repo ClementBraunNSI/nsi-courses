@@ -79,7 +79,7 @@ On a alors le masque suivant : $11111111.11111111.00000000.00000000_2$ et l'adre
 
 Pour retrouver l'adresse réseau, on réalise une opération **ET logique** (+ ou &) sur les deux adresses.
 
-$~~~~11111111.11111111.00000000.00000000_2\newline\And~01111011.00100000.00101001.01001010_2\newline\texttt{----------------------------------}\newline~~~~01111011.00100000.00000000.00000000_2$
+$~~~~11111111.11111111.00000000.00000000_2\newline\And~01111011.00100000.00101001.01001010_2\newline~~~~01111011.00100000.00000000.00000000_2$
 
 On retrouve l'adresse du réseau qui est 123.32.0.0.
 

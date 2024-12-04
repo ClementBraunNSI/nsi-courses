@@ -30,8 +30,6 @@ Par exemple, il existe des applications de mail (protocole POP), d'échange de f
 
 En clair, **Internet est un réseau informatique à échelle mondiale sur lequel de nombreuses applications sont basées.**
 
-Pour information, 
-
 ## Notion de réseaux
 
 ### Définitions
