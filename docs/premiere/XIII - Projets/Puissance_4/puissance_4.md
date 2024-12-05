@@ -89,8 +89,11 @@ False
 ### 4. Vérification de victoire
 
 **Écrire une fonction `verifier_ligne` qui prend en paramètre une grille et une chaîne de caractère correspondant à un joueur qui vérifie s'il y a un alignement horizontal de 4 jetons.**
+*Indication : Vous devrez vérifier si 4 symboles qui sont alignés horizontalement sont les mêmes. Pour se faire, vous pouvez réaliser une boucle for pour chaque ligne. Il sera plus pratique de réaliser un for par indice qui commencera à 0 et ira jusqu'au maximum la longueur de votre ligne - 3.*
 
 **Écrire une fonction `verifier_colonne` qui prend en paramètre une grille et une chaîne de caractère correspondant à un joueur qui vérifie s'il y a un alignement vertical de 4 jetons.**
+
+*Indication : Vous devrez vérifier si 4 symboles qui sont alignés verticalement sont les mêmes. Pour se faire, vous pouvez réaliser une boucle for pour chaque ligne puis une boucle imbriquée pour chaque colonne. Il sera plus pratique de réaliser ces for par indice qui commenceront à 0 et iront jusqu'à votre nombre de lignes -3 et traitera toutes les colonnes.*
 
 **On dispose d'une fonction `verifier_diagonale`**
 
