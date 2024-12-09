@@ -73,23 +73,6 @@ Le programme devra permettre de modifier le statut, le genre ou tout autre champ
 Créer une fonction supprimer_jeu qui demande à l’utilisateur de saisir le titre d’un jeu à supprimer.
 Le jeu sera retiré de la liste s’il est trouvé. Sinon, un message informera qu’il n’a pas été trouvé.
 
-## Fonctionnalités avancées (optionnelles)
-
-### Filtres de recherche
-
-Créer une fonction filtrer_jeux qui permet d’afficher tous les jeux selon un critère précis (par exemple : afficher les jeux d’une certaine plateforme ou d’un genre particulier).
-
-### Sauvegarde et chargement
-
-Ajouter une fonctionnalité permettant de sauvegarder la collection dans un fichier texte ou JSON et de recharger les données à chaque lancement du programme.
-
-### Statistiques sur la collection
-
-Créer une fonction afficher_statistiques qui calcule et affiche des données utiles :
--	Nombre total de jeux.
--	Nombre de jeux par plateforme.
--	Répartition par genre.
-
 ## Organisation du programme
 
 Créer une fonction menu_principal qui propose à l’utilisateur les différentes actions disponibles :
@@ -118,3 +101,21 @@ Exemple d’affichage pour le menu principal :
 6. Afficher les statistiques
 7. Quitter
 ```
+
+## Fonctionnalités avancées (optionnelles)
+
+### Filtres de recherche
+
+Créer une fonction filtrer_jeux qui permet d’afficher tous les jeux selon un critère précis (par exemple : afficher les jeux d’une certaine plateforme ou d’un genre particulier).
+
+### Sauvegarde et chargement
+
+Ajouter une fonctionnalité permettant de sauvegarder la collection dans un fichier texte ou JSON et de recharger les données à chaque lancement du programme.
+
+### Statistiques sur la collection
+
+Créer une fonction afficher_statistiques qui calcule et affiche des données utiles :
+-	Nombre total de jeux.
+-	Nombre de jeux par plateforme.
+-	Répartition par genre.
+
