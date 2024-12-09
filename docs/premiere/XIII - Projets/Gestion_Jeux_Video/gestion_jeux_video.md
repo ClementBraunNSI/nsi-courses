@@ -47,7 +47,7 @@ Les données saisies seront enregistrées dans une liste ou un dictionnaire.
 
 ## Afficher la collection complète
 
-Créer une fonction afficher_collection qui parcourt la liste des jeux et affiche les informations de manière lisible.
+Créer une fonction `afficher_collection` qui prend en paramètre une ludothèque (dictionnaire) et un nom de jeu et renvoie une chaîne de caractère réalisant l'affichage suivant:
 Exemple d’affichage :
 
 ```
@@ -60,17 +60,17 @@ Statut : Possédé
 
 ## Rechercher un jeu
 
-Créer une fonction rechercher_jeu qui demande à l’utilisateur de saisir le titre du jeu recherché.
+Créer une fonction `rechercher_jeu` qui prend en paramètre une ludothèque (dictionnaire) et un nom de jeu (str).
 Si le jeu est trouvé, ses informations seront affichées. Sinon, un message indiquera qu’il n’existe pas dans la collection.
 
 ## Modifier un jeu
 
-Créer une fonction modifier_jeu qui permet à l’utilisateur de mettre à jour les informations d’un jeu existant.
+Créer une fonction `modifier_jeu` qui prend en paramètre une ludothèque, un jeu, un champ et une valeur et modifie le champ du jeu par la valeur donnée.
 Le programme devra permettre de modifier le statut, le genre ou tout autre champ.
 
 ## Supprimer un jeu
 
-Créer une fonction supprimer_jeu qui demande à l’utilisateur de saisir le titre d’un jeu à supprimer.
+Créer une fonction `supprimer_jeu` qui prend en paramètre une ludothèque et un nom de jeu et retire le jeu de la ludothèque.
 Le jeu sera retiré de la liste s’il est trouvé. Sinon, un message informera qu’il n’a pas été trouvé.
 
 ## Organisation du programme
