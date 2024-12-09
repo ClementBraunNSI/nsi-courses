@@ -106,16 +106,16 @@ Exemple d’affichage pour le menu principal :
 
 ### Filtres de recherche
 
-Créer une fonction filtrer_jeux qui permet d’afficher tous les jeux selon un critère précis (par exemple : afficher les jeux d’une certaine plateforme ou d’un genre particulier).
+Créer une fonction `filtrer_jeux` qui permet d’afficher tous les jeux selon un critère précis (par exemple : afficher les jeux d’une certaine plateforme ou d’un genre particulier).
 
 ### Sauvegarde et chargement
 
-Ajouter une fonctionnalité permettant de sauvegarder la collection dans un fichier texte ou CSV et de recharger les données à chaque lancement du programme.
+Ajouter une fonctionnalité permettant de sauvegarder la ludothèque dans un fichier texte ou CSV et de recharger les données à chaque lancement du programme.
 
 ### Statistiques sur la collection
 
 Créer une fonction afficher_statistiques qui calcule et affiche des données utiles :
+
 -	Nombre total de jeux.
 -	Nombre de jeux par plateforme.
 -	Répartition par genre.
-
