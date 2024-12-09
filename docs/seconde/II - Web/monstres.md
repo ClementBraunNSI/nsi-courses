@@ -38,16 +38,16 @@
 |:---:|:---:|:---:|:---:|:---:|
 |Jade|Alwena|Ethel|Timoté|Nathan|
 |![jade](./monstres/2DE6/jade.png)|![alwena](./monstres/2DE6/alwena.png)|![ethel](./monstres/2DE6/ethel.png)|![timoté](./monstres/2DE6/timoté.png)|![nathan](./monstres/2DE6/nathan.png)||
-|Lena|Salomee|Sarah|Ferdinand|Mael|
-|![lena](./monstres/2DE6/lena.png)|![salomee](./monstres/2DE6/salomee.png)|![sarah](./monstres/2DE6/sarah.png)|![ferdinand](./monstres/2DE6/ferdinand.png)|![mael](./monstres/2DE6/mael.png)||
-|Aela|Lise|Rozenn|Elianor|Haizia|
-|![aela](./monstres/2DE6/aela.png)|![lise](./monstres/2DE6/lise.png)|![rozenn](./monstres/2DE6/rozenn.png)|![elianor](./monstres/2DE6/elianor.png)|![haizia](./monstres/2DE6/haizia.png)||
-|Nolan|Merlin|Joris|Jeanne|Mayane|
-|![nolan](./monstres/2DE6/nolan.png)|![merlin](./monstres/2DE6/merlin.png)|![joris](./monstres/2DE6/joris.png)|![jeanne](./monstres/2DE6/jeanne.png)|![mayane](./monstres/2DE6/mayane.png)||
-|Leandre|Juliette|Nina|Noah|Emma|
-|![leandre](./monstres/2DE6/leandre.png)|![juliette](./monstres/2DE6/juliette.png)|![nina](./monstres/2DE6/nina.png)|![noah](./monstres/2DE6/noah.png)|![emma](./monstres/2DE6/emma.png)||
-|Ludmila|Elsa|
-|![ludmila](./monstres/2DE6/ludmila.png)|![elsa](./monstres/2DE6/elsa.png)|
+|Lena|Salomee|Sarah|Rival_leandre|Ferdinand|
+|![lena](./monstres/2DE6/lena.png)|![salomee](./monstres/2DE6/salomee.png)|![sarah](./monstres/2DE6/sarah.png)|![rival_leandre](./monstres/2DE6/rival_leandre.png)|![ferdinand](./monstres/2DE6/ferdinand.png)||
+|Mael|Aela|Lise|Rozenn|Elianor|
+|![mael](./monstres/2DE6/mael.png)|![aela](./monstres/2DE6/aela.png)|![lise](./monstres/2DE6/lise.png)|![rozenn](./monstres/2DE6/rozenn.png)|![elianor](./monstres/2DE6/elianor.png)||
+|Haizia|Nolan|Merlin|Joris|Jeanne|
+|![haizia](./monstres/2DE6/haizia.png)|![nolan](./monstres/2DE6/nolan.png)|![merlin](./monstres/2DE6/merlin.png)|![joris](./monstres/2DE6/joris.png)|![jeanne](./monstres/2DE6/jeanne.png)||
+|Mayane|Leandre|Juliette|Nina|Noah|
+|![mayane](./monstres/2DE6/mayane.png)|![leandre](./monstres/2DE6/leandre.png)|![juliette](./monstres/2DE6/juliette.png)|![nina](./monstres/2DE6/nina.png)|![noah](./monstres/2DE6/noah.png)||
+|Emma|Ludmila|Elsa|
+|![emma](./monstres/2DE6/emma.png)|![ludmila](./monstres/2DE6/ludmila.png)|![elsa](./monstres/2DE6/elsa.png)|
 
 ## 2DE1
 

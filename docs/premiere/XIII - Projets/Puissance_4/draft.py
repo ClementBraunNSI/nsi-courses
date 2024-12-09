@@ -62,7 +62,7 @@ def jouer()->None:
     joueur = 'X'
     grille = creer_grille()
 
-    while not gagnant and not nul:
+    while not gagnant or not nul:
         afficher_grille(grille)
         print("Tour du joueur",joueur)
         colonne = int(input("Entrez une colonne: "))
@@ -72,19 +72,19 @@ def jouer()->None:
 
         ajouter_jeton(grille,colonne,joueur)
 
-        print(gagnant)
+        print(vainqueur(grille,joueur))
         if vainqueur(grille,joueur) == True:
             print("Victoire du joueur",joueur)
             gagnant = True
         elif match_nul(grille)== True:
             print("Match nul")
             nul = True
-
+        
         if joueur == "X":
             joueur = "O"
         else:
             joueur = "X"
-        
+            
 jouer()
 
 
