@@ -43,7 +43,7 @@ Pour cela, le programme demandera à l’utilisateur de saisir les informations 
 -	Genre
 -	Statut
 
-Les données saisies seront enregistrées dans une liste ou un dictionnaire.
+Les données saisies seront enregistrées dans un dictionnaire.
 
 ## Afficher la collection complète
 
