@@ -140,4 +140,4 @@ def redimensionner_images():
                             f.write("\n")
 
 redimensionner_images()
-#images_par_classes_4()
+images_par_classes_4()
