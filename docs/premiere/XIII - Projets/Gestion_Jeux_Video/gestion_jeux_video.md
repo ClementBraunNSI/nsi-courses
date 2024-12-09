@@ -75,14 +75,15 @@ Le jeu sera retiré de la liste s’il est trouvé. Sinon, un message informera 
 
 ## Organisation du programme
 
-Créer une fonction menu_principal qui propose à l’utilisateur les différentes actions disponibles :
-1.	Ajouter un jeu.
-2.	Afficher la collection complète.
-3.	Rechercher un jeu.
-4.	Modifier un jeu.
-5.	Supprimer un jeu.
-6.	Afficher les statistiques (optionnel).
-7.	Quitter le programme.
+Créer une fonction menu_principal qui propose à l’utilisateur les différentes actions disponibles :  
+
+- 1.Ajouter un jeu.
+- 2.Afficher la collection complète. 
+- 3.Rechercher un jeu.
+- 4.Modifier un jeu.
+- 5.Supprimer un jeu.
+- 6.Afficher les statistiques (optionnel).
+- 7.Quitter le programme.
 
 À chaque choix, le programme devra exécuter la fonction correspondante.
 
