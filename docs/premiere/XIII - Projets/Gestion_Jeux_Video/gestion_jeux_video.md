@@ -110,7 +110,7 @@ Créer une fonction filtrer_jeux qui permet d’afficher tous les jeux selon un 
 
 ### Sauvegarde et chargement
 
-Ajouter une fonctionnalité permettant de sauvegarder la collection dans un fichier texte ou JSON et de recharger les données à chaque lancement du programme.
+Ajouter une fonctionnalité permettant de sauvegarder la collection dans un fichier texte ou CSV et de recharger les données à chaque lancement du programme.
 
 ### Statistiques sur la collection
 
