@@ -81,6 +81,15 @@ La *classe* `container` est la classe qui contient le plus d'éléments sur lesq
 
 Consigne : **Dans la classe container du fichier `style.css`, rajouter les propriétés permettant de changer le fond d'écran et de mettre la police d'écriture en blanc.**
 
+```css
+    .container{
+        background-image : url(../image/background.png);
+        color : white;
+
+    }
+
+```
+
 *Indication : le chemin de l'image du fond d'écran a pour point de départ le dossier style et pour point d'arrivée le dossier image. Pour "remonter" d'un dossier, il faut écrire `../` lors de l'écriture du lien vers l'image de fond d'écran.*
 
 Vous devez avoir ainsi :
