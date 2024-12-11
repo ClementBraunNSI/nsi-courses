@@ -4,6 +4,15 @@
 
 Le jeu du pendu est un jeu de devinettes où le joueur essaie de découvrir un mot en proposant des lettres, avec un nombre limité d'erreurs possibles.
 
+Voici un lexique pour pouvoir y jouer : 
+
+````
+lexique = maison, voiture, arbre, soleil, plage, chat, chien, livre, jardin, porte, table, chaise,
+ ecole, ville, village, chemin, fleur, pont, ballon, fenetre, escalier, travail, famille,
+  ami, enfant, cadeau, fromage, pain, vin, fruit, legume, chocolat, eau, salade, pizza,
+   bonbon, soupe, desert, montagne, mer, foret, lac, riviere, ciel, etoile, lune, feu
+```
+
 ## Fonctions à implémenter
 
 ### 1. `lettre_presente`
