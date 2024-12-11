@@ -23,11 +23,7 @@ Exemple de structure de données pour un jeu vidéo :
 ```python
 
 {
-    "titre": "The Legend of Zelda: Breath of the Wild",
-    "plateforme": "Switch",
-    "annee": 2017,
-    "genre": "Aventure",
-    "statut": "possédé"
+	'The Legend of Zelda : Breath of the Wild' : {'plateforme' : "Switch", "année" : 2017, "genre" : "Aventure", "statut":"possédé"}
 }
 ```
 
