@@ -61,8 +61,8 @@ Liste initiale : [5, 2, 4, 6, 1, 3]
 Le tri par dénombrement est un algorithme de tri non comparatif qui se concentre sur le comptage des occurrences de chaque élément.  
 Son principe repose sur trois étapes essentielles :  
 
-- Premièrement, on parcourt le tableau initial pour déterminer la plage de valeurs des éléments. 
-- Deuxièmement, on crée un tableau de comptage où chaque index représente une valeur possible, et on incrémente un compteur correspondant à chaque fois qu'un élément est rencontré. 
-- Troisièmement, on reconstruit le tableau trié en utilisant ce tableau de comptage, en reproduisant chaque valeur selon son nombre d'occurrences. 
+- Premièrement, on parcourt le tableau initial pour déterminer la plage de valeurs des éléments.  
+- Deuxièmement, on crée un tableau de comptage où chaque index représente une valeur possible, et on incrémente un compteur correspondant à chaque fois qu'un élément est rencontré.  
+- Troisièmement, on reconstruit le tableau trié en utilisant ce tableau de comptage, en reproduisant chaque valeur selon son nombre d'occurrences.  
 
 Cette méthode présente des conditions strictes : elle ne fonctionne qu'avec des données de type entier et nécessite une plage de valeurs limitée.
