@@ -27,8 +27,6 @@ Exemple de structure de données pour un jeu vidéo :
 }
 ```
 
-La gestion des jeux
-
 ## Ajouter un jeu à la collection
 
 Créer une fonction ajouter_jeu qui permet à l’utilisateur d’ajouter un jeu à la collection.
@@ -39,7 +37,7 @@ Pour cela, le programme demandera à l’utilisateur de saisir les informations 
 -	Genre
 -	Statut
 
-Les données saisies seront enregistrées dans un dictionnaire.
+Les données saisies seront enregistrées dans le dictionnaire `ludotheque`.
 
 ## Afficher la collection complète
 
