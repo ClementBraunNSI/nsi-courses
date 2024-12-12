@@ -33,7 +33,7 @@ Vous allez devoir pour cette première partie :
 
 **Dans le bloc turquoise : Ajouter une liste à puce correspondant à ses statistiques si l'on souhaite transformer ce bestiaire en un jeu de rôle sinon une histoire par rapport à son lieu d'habitat.**
 
-**Ajouter dans le bloc contenant la description et l'histoire de son monstre, un petit titre de niveau 3 permettant de structurer la page et un paragraphe expliquant l'histoire du monstre/personnage.**
+**Ajouter dans le bloc contenant la description et l'histoire de son monstre, un titre de niveau 3 permettant de structurer la page et un paragraphe expliquant l'histoire du monstre/personnage.**
 
 Par la suite, on ajoutera les images des rivaux/personnages (quand votre monstre est disponible [ici](./monstres.md)).
 
