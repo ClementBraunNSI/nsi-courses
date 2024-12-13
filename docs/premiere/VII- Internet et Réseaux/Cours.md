@@ -119,15 +119,23 @@ Cela revient à $2^{8*16} = 2^{128} \approx 3.40 \times 10^{38}$ adresses diff�
 
 <img src="Modele_IP.png" align='center' width = 50% />
 
-#### Accès Réseau
-
-La couche accès réseau explicite la liaison entre les machines de manière physique (câbles, WiFi ...) et  la reception des données brutes (bits, ondes lumineuses, signal analogique) aux machines via les switchs ou les routeurs grâce aux adresses physiques (MAC).
-
-Je vais compléter votre document Markdown en suivant votre style d'écriture et la structure que vous avez déjà établie.
-
-### Modèle TCP/IP
-
 Le modèle TCP/IP est un modèle en couche qui permet d'illustrer l'encapsulation des données pour permettre leur envoi, leur réception et leur traitement.
+
+#### Processus d'Encapsulation
+
+L'encapsulation est un concept clé du modèle TCP/IP :
+
+1. Les données sont générées au niveau de la couche Application
+2. Chaque couche inférieure ajoute ses propres informations (en-têtes)
+3. À la réception, chaque couche retire ses informations
+4. Les données sont reconstituées dans leur état original
+
+!!! tip Analogie Postale
+    On peut comparer le modèle TCP/IP à un système postal :
+    - Couche Application = Rédaction de la lettre
+    - Couche Transport = Mise sous enveloppe, numérotation
+    - Couche Internet = Adressage, choix de l'acheminement
+    - Couche Accès Réseau = Distribution physique
 
 #### Structure des Couches
 
@@ -167,19 +175,4 @@ C'est la couche la plus haute qui gère les protocoles spécifiques aux applicat
 - SMTP pour les emails
 - DNS pour la résolution de noms de domaine
 
-#### Processus d'Encapsulation
-
-L'encapsulation est un concept clé du modèle TCP/IP :
-
-1. Les données sont générées au niveau de la couche Application
-2. Chaque couche inférieure ajoute ses propres informations (en-têtes)
-3. À la réception, chaque couche retire ses informations
-4. Les données sont reconstituées dans leur état original
-
-!!! tip Analogie Postale
-    On peut comparer le modèle TCP/IP à un système postal :
-    - Couche Application = Rédaction de la lettre
-    - Couche Transport = Mise sous enveloppe, numérotation
-    - Couche Internet = Adressage, choix de l'acheminement
-    - Couche Accès Réseau = Distribution physique
 
