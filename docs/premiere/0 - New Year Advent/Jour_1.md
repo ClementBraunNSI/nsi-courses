@@ -1,6 +1,6 @@
 # Jour 1 🦊❄️🎉 : Calculer le prix des courses du Réveillon
 
-Le reveillon du Nouvel An est une fête généralement partagée en famille ou entre amis.
+Le réveillon du Nouvel An est une fête généralement partagée en famille ou entre amis.
 
 Une organisation généralement proposée est de partager les frais pour éviter que tout le monde ramène des denrées et limiter les doublons ou le gachis.
 
@@ -41,7 +41,7 @@ Maintenant que nous connaissons le prix global du ticket, on voudrait savoir que
 
 !!! fox_correction "Participation des invités"
 
-    **Écrire une fonction `participation des invités` qui prend en paramètre un ticket de caisse et un nombre d'invités et renvoie la participation de chaque invité.**
+    **Écrire une fonction `participation_des_invites` qui prend en paramètre un ticket de caisse et un nombre d'invités et renvoie la participation de chaque invité.**
 
     *Indication : Cette fonction devra utiliser la fonction précédente.*
 
