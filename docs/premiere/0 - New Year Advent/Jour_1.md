@@ -8,7 +8,7 @@ Vous préparez votre soirée du nouvel an et prévoyez d'inviter 20 personnes.
 
 Le problème est que la machine qui sort le ticket de caisse est tombée en panne à l'édition du ticket et que l'on ne peut pas voir le prix total du ticket.
 
-## Informations necessaires
+## Informations nécessaires
 
 On considère **un ticket de caisse** modélisé sous la forme d'une **liste** Python et le **nombre d'invités** un nombre **entier** (évidemment un personne ne peut pas être divisée).
 Ce ticket de caisse retrace pour chaque article leur prix.
