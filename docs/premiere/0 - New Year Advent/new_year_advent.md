@@ -1,8 +1,8 @@
-# New Year Advent Challenge
+# New Year Advent Challenge 🦊❄️🎉
 
 ## Principe
 
-Le New Year Advent Challenge est un challenge d'algorithmie proposé par les enseignants **M. Braun : enseignant d'informatique à Vannes**, **M. Delplace : enseignant d'informatique dans l'Académie de Versailles** et étudiants **M. Leal : étudiant en master MEEF NSI 2e Année à Lille** et **M. Boulier : étudiant en master MEEF NSI 2e Année à Lille**.
+Le New Year Advent Challenge est un challenge d'algorithmie proposé par les enseignants **M. Braun 🦊 : enseignant d'informatique à Vannes**, **M. Delplace : enseignant d'informatique dans l'Académie de Versailles** et étudiants **M. Leal : étudiant en master MEEF NSI 2e Année à Lille** et **M. Boulier : étudiant en master MEEF NSI 2e Année à Lille**.
 
 Ce challenge de code permet aux élèves de réviser et produire des algorithmes pour fêter le décompte de la nouvelle année.
 
