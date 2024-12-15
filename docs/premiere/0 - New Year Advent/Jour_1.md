@@ -1,4 +1,4 @@
-# Jour 1 : Calculer le prix des courses du Reveillon
+# Jour 1 🦊❄️🎉 : Calculer le prix des courses du Réveillon
 
 Le reveillon du Nouvel An est une fête généralement partagée en famille ou entre amis.
 
