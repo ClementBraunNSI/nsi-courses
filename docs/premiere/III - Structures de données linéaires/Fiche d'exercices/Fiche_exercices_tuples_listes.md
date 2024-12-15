@@ -332,19 +332,20 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ??? fox_correction "Correction"
 
-    ```python
-    # 1ère solution : passer par une troisième valeur
+   ```python
+    #1ère solution : passer par une troisième valeur
 
-    def echange(liste:list, i:int, j:int)->None:
+   def echange(liste:list, i:int, j:int)->None:
       temp = liste[i]
       liste[j] = liste[i]
       liste[i] = temp
+   ```
 
-   # 2e solution : solution Python-esque
-    
-    def echange(liste:list, i:int, j:int)->None:
+   ```python
+   #2e solution : solution Python-esque
+   def echange(liste:list, i:int, j:int)->None:
       liste[i],liste[j] = liste[j],liste[i]
-    ```
+   ```
 
 ---
 
