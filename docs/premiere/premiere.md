@@ -19,3 +19,8 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 ## Corrections Épreuves Pratiques
 
 - [DSP 1 : chaines de caractères et fonctions](./0%20-%20Aides/Corrections/trimestre_1/correction_dsp_1.md)
+
+## New Year Advent
+
+[Explication New Year Advent](./0%20-%20New%20Year%20Advent/new_year_advent.md)
+- [Jour 1](./0%20-%20New%20Year%20Advent/Jour_1.md)
