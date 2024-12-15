@@ -25,7 +25,7 @@ On aimerait savoir quelle somme va dépenser chacun des participant à la petite
 
     *Rappel : Le ticket correspond à une liste de `float`.*
 
-    **Essayer la fonction avec le ticket de caisse suivant : **
+    **Essayer la fonction avec le ticket de caisse suivant :**
 
     ```python
         ticket_caisse = [
