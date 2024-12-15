@@ -1,4 +1,4 @@
-# New Year Advent Challenge 🦊❄️🎉
+# Explications : New Year Advent Challenge 🦊❄️🎉
 
 ## Principe
 
@@ -12,3 +12,4 @@ Chaque jour, un nouvel exercice sera proposé avec une série de tests à passer
 Il faudra rendre à l'enseignant l'algorithme proposé et un code, souvent la réponse à un exercice pour valider la réalisation de celui-ci.
 
 À la fin, les élèves ayant réalisé plus de 9 exercices se verront récompensés d'un petit cadeau 🦊 pour se rappeler de l'évènement.
+
