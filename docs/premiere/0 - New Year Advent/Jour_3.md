@@ -29,7 +29,7 @@ Un paquet de chips est de la forme
 
 !!! fox_correction "Quel paquet de chips prendre?"
 
-    **Écrire une fonction `paquet_de_prix_minimal` qui prend en paramètre un paquet de chips et renvoie le nom du paquet de chips le moins cher.**
+    **Écrire une fonction `paquet_de_prix_minimal` qui prend en paramètre une liste de paquets de chips et renvoie le nom du paquet de chips le moins cher.**
 
     *Rappel :* 
     Un paquet de chips est de la forme
