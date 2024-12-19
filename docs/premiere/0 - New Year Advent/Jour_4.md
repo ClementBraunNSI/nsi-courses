@@ -42,7 +42,7 @@ paquets_de_chips = [paquet_chips_1, paquet_chips_2, paquet_chips_3, paquet_chips
 
     Comme un tuple est **non mutable**, c'est à dire qu'on ne peut en modifier le contenu, on va recréer une liste de tuples avec les bonnes informations.
 
-    Au retour de cette fonction, un paquet de chips sera un **tuple** de 4 éléments : `paquet_chips_1 = ("Chipeur", 0.150, 1.99, 13.27)`.
+    Au retour de cette fonction, un paquet de chips sera une **liste** de 4 éléments : `paquet_chips_1 = ["Chipeur", 0.150, 1.99, 13.27]`.
 
     **Écrire une fonction `prix_kilo` qui prend en paramètre une liste de paquets de chips et renvoie une nouvelle liste contenant des paquets de chips associés à leur prix au kilo.**
 
