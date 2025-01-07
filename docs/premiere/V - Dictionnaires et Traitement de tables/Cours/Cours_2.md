@@ -51,6 +51,12 @@ def creer_liste_villes(nom_de_fichier : str) -> list:
 
 Pour ce fichier CSV, il y a les descripteurs suivant (description exhaustive): `code_commune_INSEE,nom_commune_postal,code_postal,latitude,longitude,code_commune,nom_commune,nom_commune_complet,code_departement,nom_departement,code_region,nom_region`.
 
+```
+code_commune_INSEE;nom_commune_postal;code_postal;latitude;longitude;code_commune;nom_commune;nom_departement
+01001;L'Abergement-Clémenciat;01400;46.1667;4.9;1;L'Abergement-Clémenciat;Ain
+01002;L'Abergement-de-Varey;01640;46.05;5.4833;1;L'Abergement-de-Varey;Ain
+...
+ˋˋˋ
 Grâce à tous ces descripteurs, on peut afficher les lignes de nos fichiers CSV suivant différents critères.
 
 *Rappel, la fonction DictReader permet de créer une liste de dictionnaires et chaque dictionnaire correspond à une ligne du fichier CSV à laquelle on associe chacun des attributs à chacune des valeurs de la ligne.*
