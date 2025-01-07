@@ -96,3 +96,12 @@ Cela permet donc d'obtenir des informations ou de réaliser des traitements sur 
       if ligne["nom_commune"][0] == "C":
          print(ligne["nom_commune"])
 ```
+
+
+### Exercice : 
+
+1. Afficher toutes les communes du département 62.
+2. Afficher toutes les communes ayant plus de 34000 habitants.
+3. Afficher toutes les communes ayant un nom commençant par la lettre C.
+4. Afficher toutes les communes ayant un nom commençant par la lettre V et qui ont plus de 35000 habitants.
+5. Afficher toutes les communes du département `Morbihan`.
