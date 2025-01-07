@@ -68,9 +68,9 @@ On appelle **projection** le fait d'obtenir les valeurs de certains ou tous les 
 
 ```python
 
-   # Afficher toutes les infomations de toutes les villes
-   for ligne in villes:
-      print(ligne)
+   # Exemple : Afficher le nom des villes
+   for ligne in villes:  # Pour chaque ligne dans la liste des villes
+      print(ligne["nom_commune"])  # Affiche la valeur associée à la clé 'nom_commune'
 
    # Afficher le nom de toutes les villes
    for ligne in villes:
