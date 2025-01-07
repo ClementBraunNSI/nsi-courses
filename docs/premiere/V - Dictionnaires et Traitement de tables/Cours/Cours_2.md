@@ -78,7 +78,7 @@ On appelle **projection** le fait d'obtenir les valeurs de certains ou tous les 
 
    # Afficher le département de chaque ville
    for ligne in villes:
-      print("La ville ", ligne[nom_commune], " est dans le département : ", ligne["nom_departement"])
+      print("La ville ", ligne["nom_commune"], " est dans le département : ", ligne["nom_departement"])
 ```
 
 Cela permet donc d'obtenir dans notre exemple de villes, le nom de celle-ci, le département etc... de toutes les villes **sans aucune contrainte**.
