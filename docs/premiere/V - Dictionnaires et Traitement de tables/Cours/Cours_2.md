@@ -32,7 +32,7 @@ with open('chemin_du_fichier.csv', newline='') as fichier_csv:
 
 Le fichier CSV [commune.csv](./communes.csv) représente l'ensemble des communes de France, associée à leur code postal, département etc...
 
-Pour "ouvrir" ce fichier `csv` et structurer toutes les données le comportant, on utilisera la strucutre ci-dessus.
+Pour "ouvrir" ce fichier `csv` et structurer toutes les données le comportant, on utilisera un exemple de code ci-dessus.
 
 On aurait
 
