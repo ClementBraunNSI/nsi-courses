@@ -104,10 +104,20 @@ Cela permet donc d'obtenir des informations ou de réaliser des traitements sur 
 ```
 
 
-### Exercice : 
+### **Exercices faciles**
 
-1. Afficher toutes les communes du département 62.
-2. Afficher toutes les communes ayant plus de 34000 habitants.
-3. Afficher toutes les communes ayant un nom commençant par la lettre C.
-4. Afficher toutes les communes ayant un nom commençant par la lettre V et qui ont plus de 35000 habitants.
-5. Afficher toutes les communes du département `Morbihan`.
+1. **Écrire une fonction `afficher_noms_communes` qui prend une liste de dictionnaires `villes` en paramètre et affiche le nom de toutes les communes.**
+
+2. **Écrire une fonction `afficher_communes_par_code_postal` qui prend une liste de dictionnaires `villes` et une chaîne `code_postal` en paramètre, et affiche les noms des communes ayant ce code postal.**
+
+3. **Écrire une fonction `afficher_communes_avec_coordonnees` qui prend une liste de dictionnaires `villes` en paramètre et affiche pour chaque commune son nom, sa latitude et sa longitude.**
+
+---
+
+### **Exercices intermédiaires**
+
+1. **Écrire une fonction `afficher_communes_par_departement` qui prend une liste de dictionnaires `villes` et une chaîne `departement` en paramètre, et affiche les noms des communes du département donné.**
+
+2. **Écrire une fonction `afficher_noms_longueur_min` qui prend une liste de dictionnaires `villes` et un entier `longueur` en paramètre, et renvoie la liste des noms des communes ayant un nom d'au moins `longueur` caractères.**
+
+3. **Écrire une fonction `afficher_communes_par_latitude` qui prend une liste de dictionnaires `villes` et une latitude maximale `max_latitude` en paramètre, et affiche les noms des communes ayant une latitude inférieure à `max_latitude`.**
