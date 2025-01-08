@@ -77,6 +77,19 @@
 |Liam|
 |![liam](./monstres/S16/liam.png)|
 
+## S18
+
+||||||
+|:---:|:---:|:---:|:---:|:---:|
+|Lola|Nathan|Romane|Gabin|Tahyna|
+|![lola](./monstres/S18/lola.png)|![nathan](./monstres/S18/nathan.png)|![romane](./monstres/S18/romane.png)|![gabin](./monstres/S18/gabin.png)|![tahyna](./monstres/S18/tahyna.png)||
+|Maxence|Lilou|Baptiste|Mathurin|Ethan|
+|![maxence](./monstres/S18/maxence.png)|![lilou](./monstres/S18/lilou.png)|![baptiste](./monstres/S18/baptiste.png)|![mathurin](./monstres/S18/mathurin.png)|![ethan](./monstres/S18/ethan.png)||
+|Joan|Lilwenn|Calie|Anae|Manon|
+|![joan](./monstres/S18/joan.png)|![lilwenn](./monstres/S18/lilwenn.png)|![calie](./monstres/S18/calie.png)|![anae](./monstres/S18/anae.png)|![manon](./monstres/S18/manon.png)||
+|Emma|Sofia|Thais|Renzo|
+|![emma](./monstres/S18/emma.png)|![sofia](./monstres/S18/sofia.png)|![thais](./monstres/S18/thais.png)|![renzo](./monstres/S18/renzo.png)|
+
 ## 2DE3
 
 ||||||
@@ -166,9 +179,9 @@
 |![melia](./monstres/2DE11/melia.png)|![maria](./monstres/2DE11/maria.png)|![hanae](./monstres/2DE11/hanae.png)|![jorys](./monstres/2DE11/jorys.png)|![lucas](./monstres/2DE11/lucas.png)||
 |Aaron|Yoann|Jules_r|Sham|Zoe|
 |![aaron](./monstres/2DE11/aaron.png)|![yoann](./monstres/2DE11/yoann.png)|![jules_r](./monstres/2DE11/jules_r.png)|![sham](./monstres/2DE11/sham.png)|![zoe](./monstres/2DE11/zoe.png)||
-|Nhayla|Jeanne|Shanice|Mailye|Malo|
-|![nhayla](./monstres/2DE11/nhayla.png)|![jeanne](./monstres/2DE11/jeanne.png)|![shanice](./monstres/2DE11/shanice.png)|![mailye](./monstres/2DE11/mailye.png)|![malo](./monstres/2DE11/malo.png)||
-|Tess|Servane|Anais|Jules|Madyar|
-|![tess](./monstres/2DE11/tess.png)|![servane](./monstres/2DE11/servane.png)|![anais](./monstres/2DE11/anais.png)|![jules](./monstres/2DE11/jules.png)|![madyar](./monstres/2DE11/madyar.png)||
-|Quentin|Lysa|
-|![quentin](./monstres/2DE11/quentin.png)|![lysa](./monstres/2DE11/lysa.png)|
+|Nhayla|Jeanne|Shanice|Mailye|Tess|
+|![nhayla](./monstres/2DE11/nhayla.png)|![jeanne](./monstres/2DE11/jeanne.png)|![shanice](./monstres/2DE11/shanice.png)|![mailye](./monstres/2DE11/mailye.png)|![tess](./monstres/2DE11/tess.png)||
+|Servane|Anais|Jules|Madyar|Quentin|
+|![servane](./monstres/2DE11/servane.png)|![anais](./monstres/2DE11/anais.png)|![jules](./monstres/2DE11/jules.png)|![madyar](./monstres/2DE11/madyar.png)|![quentin](./monstres/2DE11/quentin.png)||
+|Lysa|
+|![lysa](./monstres/2DE11/lysa.png)|
