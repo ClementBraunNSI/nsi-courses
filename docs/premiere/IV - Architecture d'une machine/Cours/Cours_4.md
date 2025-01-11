@@ -4,7 +4,17 @@
 
 Minecraft est un jeu vidéo sorti en 2009 qui met le joueur dans un mode en 3D créé aléatoirement en utilisant la méthode procédurale.
 
-Pour faire court, la génération d'un monde Minecraft est aléatoire grâce à du pseudo-aléatoire au niveau de la création des terrains en utilisant un outil mathématique appelé le **bruit de Perlin**. Un algorithme de bruit de Perlin permet de réaliser des calculs dans des matrices (tableaux à 2 dimensions) et permettent de générer des tableaux avec des valeurs ayant des micro-variations permettant pour le jeu de simuler des zones de température, de relief etc...
+Pour faire court, la génération d'un monde Minecraft est aléatoire grâce à du pseudo-aléatoire au niveau de la création des terrains en utilisant un outil mathématique appelé le **bruit de Perlin**.
+
+Le bruit de Perlin est une méthode mathématique utilisée pour générer des paysages réalistes dans les jeux vidéo, comme Minecraft. Il permet de créer des terrains qui semblent naturels, avec des montagnes, des vallées, et d’autres variations progressives.
+
+Dans Minecraft, le bruit de Perlin est utilisé pour :
+    - Simuler les reliefs des terrains (collines, montagnes).
+    - Répartir les biomes (déserts, forêts, océans) en répartissant l'humidité et la température.
+    - Générer des variations progressives et cohérentes dans le monde.
+
+!!! note Bruit de Perlin
+    Cette technique fonctionne en générant des “grilles” de valeurs qui sont mélangées et interpolées pour créer des transitions progressives. Cela permet de créer des terrains où une montagne peut doucement devenir une plaine, au lieu d’avoir des changements brusques.
 
 Minecraft est un jeu particulier car il met le joueur dans un monde composé de ***voxels*** qui ne sont que des pixels dans un univers en 3 dimensions (pixels étant un élément dans un univers de 2 dimensions).
 
@@ -12,15 +22,20 @@ De plus, ce jeu ayant reçu énormément d'évolutions depuis, a rajouté une m�
 
 La redstone (ou poudre rouge en français) permet de simuler des circuits électriques et de réaliser des opérations logiques.
 
-La conséquence directe d'avoir une simulation de circuits électroniques via les composants proposés dans le jeu permettent de le rendre **Turing-complet**.
+## La notion de Turing-complet
 
+Un système est dit Turing-complet s’il peut exécuter tous les calculs possibles qu’un ordinateur peut réaliser, à condition de disposer de suffisamment de temps et de mémoire. Cela signifie qu’il peut simuler une machine théorique appelée machine de Turing.
 
-!!! tip Pour faire très simple
+Minecraft et la redstone sont considérés comme Turing-complets car il est possible, avec les composants du jeu (poudre de redstone, torches, leviers, etc.), de construire des circuits logiques capables d’effectuer des calculs complexes. Par exemple, il est possible de :
+    - Réaliser des additions ou des multiplications.
+    - Créer des mémoires pour stocker des données.
+    - Construire un ordinateur entier dans Minecraft capable de jouer à Minecraft !
 
-    On dit d'un langage de programmation qu'il est **Turing-complet** s'il peut réaliser tous types d'opérations possibles et de simuler des calculs mathématiques et logiques. Le but in-fine d'avoir un langage Turing-Complet est de pouvoir simuler des machines de Turing dans ce langages, mais cela n'est pas au programme du lycée.
+!!! tip Pourquoi est-ce important ?
+    Être Turing-complet signifie que Minecraft avec la redstone peut être utilisé pour simuler n’importe quel calcul ou programme, tout comme un vrai ordinateur.
 
-L'avantage de la redstone de Minecraft est qu'elle peut simuler des circuits logiques complèxes et recréer dans le jeu des modèles de calculs et donc possiblement une machine de Turing ou une machine s'approchant du modèle de Von Neumann (modèle observé dans le cours).
-Il a été prouvé que Minecraft est **Turing-Complet** grâce à ses composants et surtout la possibilité de construire un ordinateur avec 64ko de mémoire dans Minecraft et aussi de pouvoir faire un ordinateur qui joue à Minecraft dans Minecraft.
+!!! note Notion de Turing-Complet
+    La notion de Turing-complet est liée à l’idée de simuler une machine de Turing, un modèle théorique de calcul inventé par Alan Turing. Ce modèle, à proprement parler, n’est pas au programme du lycée, mais il est intéressant de savoir que Minecraft peut être aussi puissant, en théorie, qu’un ordinateur moderne.
 
 ## Composants de redstone
 
