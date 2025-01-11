@@ -1,6 +1,10 @@
-
 # Fiche d'exercices : Les Dictionnaires en Python
 
+!!! danger Attention
+    Dans tous les exercices utilisant des dictionnaires, il faut être particulièrement vigilant à :
+    - La vérification de l'existence des clés avec `in` avant d'y accéder
+    - L'utilisation des bonnes méthodes pour parcourir un dictionnaire : `dico.keys()`, `dico.values()`, `dico.items()`
+    - La distinction entre modification d'un dictionnaire (qui modifie l'original) et création d'un nouveau dictionnaire
 
 ## 1. Gestion des notes d'élèves
 Un dictionnaire `notes` contient les noms des élèves en clés et leurs moyennes en valeurs.  
@@ -8,64 +12,115 @@ Un dictionnaire `notes` contient les noms des élèves en clés et leurs moyenne
 notes = {'Alice': 15, 'Bob': 12, 'Clara': 17, 'David': 10}
 ```
 
-1. **Écrire une fonction `afficher_notes` qui prend en paramètre un dictionnaire et  affiche la moyenne de chaque élève sous la forme : `"Alice a une moyenne de 15."`.** 
+1. **Écrire une fonction `afficher_notes` qui prend en paramètre un dictionnaire et affiche la moyenne de chaque élève sous la forme : `"Alice a une moyenne de 15."`.** 
    - Ajouter un commentaire selon la moyenne : `"Excellent"` pour une moyenne ≥ 16, `"Bien"` pour une moyenne entre 12 et 15 inclus, et `"À améliorer"` pour une moyenne < 12.
 
-2. **Écrire une fonction `ajouter_eleve(notes, nom, moyenne)`** qui ajoute un nouvel élève au dictionnaire.
-   - Vérifier que l’élève n’existe pas déjà avant de l’ajouter.
+??? fox_correction "Correction"
+    ```python
+      def afficher_notes(notes):
+        for eleve in notes:
+            moyenne = notes[eleve]
+            print(eleve + "a une moyenne de "+ str(moyenne)+".")
+            if moyenne >= 16:
+                print("Excellent")
+            elif 12 <= moyenne <= 15:
+                print("Bien")
+            else:
+                print("À améliorer")
+    ```
 
-3. **Écrire une fonction `modifier_moyenne(notes, nom, nouvelle_moyenne)`** qui modifie la moyenne d’un élève.
-   - Gérer le cas où l’élève à modifier n’existe pas.
+1. **Écrire une fonction `ajouter_eleve(notes, nom, moyenne)`** qui ajoute un nouvel élève au dictionnaire.
+   - Vérifier que l'élève n'existe pas déjà avant de l'ajouter.
+
+??? fox_correction "Correction"
+    ```python
+      def ajouter_eleve(notes, nom, moyenne):
+        # On vérifie d'abord si l'élève existe déjà
+        if nom in notes:
+            print("L'élève "+nom+" existe déjà !")
+        else:
+            # Si l'élève n'existe pas, on l'ajoute
+            notes[nom] = moyenne
+            print("L'élève "+nom+" a été ajouté avec la moyenne de "+str(moyenne)")
+    ```
+
+1. **Écrire une fonction `modifier_moyenne(notes, nom, nouvelle_moyenne)`** qui modifie la moyenne d'un élève.
+   - Gérer le cas où l'élève à modifier n'existe pas.
+
+??? fox_correction "Correction"
+    ```python
+      def modifier_moyenne(notes, nom, nouvelle_moyenne):
+        # On vérifie si l'élève existe dans le dictionnaire
+        if nom in notes:
+            # Si oui, on modifie sa moyenne
+            notes[nom] = nouvelle_moyenne
+            print("La moyenne de "+nom+" a été mise à jour à "+nouvelle_moyenne)
+        else:
+            print("L'élève "+ nom + n'existe pas dans la liste")
+    ```
 
 4. **Écrire une fonction `eleves_mention(notes, seuil)`** qui renvoie la liste des élèves ayant une moyenne ≥ seuil.
-   - Afficher également le nombre total d’élèves ayant cette mention.
+   - Afficher également le nombre total d'élèves ayant cette mention.
 
----
+??? fox_correction "Correction"
+    ```python
+    def eleves_mention(notes, seuil):
+        # On crée une liste vide pour stocker les élèves
+        eleves_avec_mention = []
+        # On parcourt le dictionnaire
+        for eleve in notes:
+            if notes[eleve] >= seuil:
+                eleves_avec_mention.append(eleve)
+        # On affiche le résultat
+        print(str(len(eleves_avec_mention))+ "élèves ont une moyenne supérieure ou égale à" + str(seuil)")
+        return eleves_avec_mention
+    ```
 
-## 2. Gestion d’un concessionnaire automobile
-
+## 2. Gestion d'un concessionnaire automobile
 Un dictionnaire `voitures` contient les modèles en clés et leurs prix en valeurs.
 ```python
 voitures = {'Clio': 15000, 'Megane': 20000, 'Talisman': 35000}
 ```
 
 1. **Écrire une fonction `afficher_voitures(voitures)`** qui affiche le prix de chaque modèle avec le texte : `"Le prix de la Clio est de 15000 euros."`.
-   - Ajouter une option pour trier l’affichage des voitures par prix croissant.
 
-2. **Écrire une fonction `ajouter_voiture(voitures, modele, prix)`** qui ajoute un nouveau modèle au dictionnaire.
-   - Vérifier que le modèle n’existe pas déjà avant de l’ajouter.
+??? fox_correction "Correction"
+    ```python
+      def afficher_voitures(voitures, tri=False):
+         for modele in voitures:
+            print("Le prix de la "+modele+" est de "+ str(voitures[modele])+ "euros.")
+    ```
 
-3. **Écrire une fonction `reduction_prix(voitures, pourcentage)`** qui réduit le prix de chaque voiture d’un pourcentage donné.
+1. **Écrire une fonction `ajouter_voiture(voitures, modele, prix)`** qui ajoute un nouveau modèle au dictionnaire.
+   - Vérifier que le modèle n'existe pas déjà avant de l'ajouter.
+
+??? fox_correction "Correction"
+    ```python
+      def ajouter_voiture(voitures, modele, prix):
+        if modele in voitures:
+            print("Le modèle "+modele+ existe déjà !")
+        else:
+            voitures[modele] = prix
+            print("La voiture "+modele+" a été ajoutée au prix de "+str(prix)+ "euros")
+    ```
+
+3. **Écrire une fonction `reduction_prix(voitures, pourcentage)`** qui réduit le prix de chaque voiture d'un pourcentage donné.
    - Afficher les prix avant et après réduction.
 
-4. **Écrire une fonction `voitures_abordables(voitures, budget)`** qui renvoie la liste des modèles dont le prix est ≤ au budget donné.
-   - Calculer combien d’argent il resterait après l’achat de la voiture la moins chère.
+??? fox_correction "Correction"
+    ```python
+      def reduction_prix(voitures, pourcentage):
+        print("Prix avant réduction :")
+        afficher_voitures(voitures)
+        # On parcourt et modifie chaque prix
+        for modele in voitures:
+            prix_initial = voitures[modele]
+            reduction = prix_initial * (pourcentage / 100)
+            voitures[modele] = prix_initial - reduction
+        print("\nPrix après réduction de "+ str(pourcentage)+"% :")
+        afficher_voitures(voitures)
+    ```
 
----
-
-## 3. Catalogue de produits
-Un catalogue est représenté par une liste de dictionnaires.
-```python
-catalogue = [
-    {'nom': 'Stylo', 'quantité': 100, 'prix_unitaire': 1.5},
-    {'nom': 'Cahier', 'quantité': 50, 'prix_unitaire': 3.0},
-    {'nom': 'Crayon', 'quantité': 200, 'prix_unitaire': 0.8}
-]
-```
-
-1. **Écrire une fonction `afficher_catalogue(catalogue)`** qui affiche les détails de chaque produit sous la forme : `"Stylo : 100 unités, prix unitaire 1.5 euros."`.
-   - Afficher également la valeur totale pour chaque produit.
-
-2. **Écrire une fonction `ajouter_produit(catalogue, nom, quantité, prix_unitaire)`** qui ajoute un nouveau produit au catalogue.
-   - Empêcher l’ajout si le produit existe déjà et proposer de mettre à jour les informations.
-
-3. **Écrire une fonction `valeur_totale_produit(produit)`** qui calcule et renvoie la valeur totale d’un produit (`quantité * prix_unitaire`).
-   - Ajouter une fonction `valeur_totale_catalogue(catalogue)` qui calcule la valeur totale de tous les produits.
-
-4. **Écrire une fonction `produit_le_plus_cher(catalogue)`** qui renvoie le produit avec le prix unitaire le plus élevé.
-   - Modifier la fonction pour qu’elle renvoie également le produit le moins cher.
-
----
 
 ## 4. Réseau de bibliothèques
 Un dictionnaire `bibliotheques` contient plusieurs bibliothèques.
