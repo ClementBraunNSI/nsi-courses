@@ -1,6 +1,7 @@
 :root {
     --md-admonition-icon--fox_correction: url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-fox-origami-vitaliy-gorbachev-lineal-vitaly-gorbachev.png');
     --md-admonition-icon--redstone_exo : url('https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png');
+
   }
   .md-typeset .admonition.fox_correction,
   .md-typeset details.fox_correction {
@@ -43,6 +44,6 @@
   .md-typeset .redstone_exo > .admonition-title::before,
   .md-typeset .redstone_exo > summary::before {
     background-color: rgb(178,34,34);
-    -webkit-mask-image: var(--md-admonition-icon--fox_correction);
-            mask-image: var(--md-admonition-icon--fox_correction);
+    -webkit-mask-image: var(--md-admonition-icon--redstone_exo);
+            mask-image: var(--md-admonition-icon--redstone_exo);
   }
