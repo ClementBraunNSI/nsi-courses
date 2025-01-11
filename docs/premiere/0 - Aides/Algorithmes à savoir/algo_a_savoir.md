@@ -83,6 +83,34 @@
 *recherche_dichotomique(3, [1, 2, 3, 4]) doit renvoyer True.*
 *recherche_dichotomique(5, [1, 2, 3, 4]) doit renvoyer False.*
 
+!!! fox_correction "Algorithme de recherche dichotomique"
+    ```python
+        def recherche_dichotomique(liste:list[int], valeur:int) -> bool:
+            # Initialisation des bornes de recherche
+            debut = 0
+            fin = len(liste) -1
+
+            # Recherche des valeurs en séparant la recherche dans les portions où la valeur peut
+            # être présente
+            while debut <= fin:
+                m = (debut+fin)//2
+
+                # Si la valeur est la bonne : bien joué
+                if liste[m] == valeur:
+                    return True
+
+                # Si la valeur est plus grande que la valeur à position médiane
+                elif liste[m] < valeur:
+                    # on décale le début de la zone de recherche à m (car on a déjà comparé à m)
+                    debut = m + 1
+                elif liste[m] > valeur:
+                    # On décale la fin de la zone de recherche à m - 1 (car on a déjà comparé à m)
+                    fin = m - 1
+
+            # Si l'on n'a pas trouvé la valeur:
+            return False
+    ```
+
 **Écrire une fonction `tri_selection` qui prend en paramètre une liste et renvoie une liste correspondant à sa permutation triée dans l'ordre croissant**
 *Exemple:*
 *tri_selection([5,2,4,1,3]) doit renvoyer [1,2,3,4,5]*
