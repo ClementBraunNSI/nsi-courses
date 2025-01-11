@@ -1,6 +1,6 @@
 :root {
-    --md-admonition-icon--fox_correction: url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-fox-origami-vitaliy-gorbachev-lineal-vitaly-gorbachev.png')
-    --md-admonition-icon--redstone_exo : url('https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png')
+    --md-admonition-icon--fox_correction: url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-fox-origami-vitaliy-gorbachev-lineal-vitaly-gorbachev.png');
+    --md-admonition-icon--redstone_exo : url('https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png');
   }
   .md-typeset .admonition.fox_correction,
   .md-typeset details.fox_correction {
