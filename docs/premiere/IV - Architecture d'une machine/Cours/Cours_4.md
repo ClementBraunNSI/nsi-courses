@@ -65,53 +65,61 @@ En adossant ou en posant une torche de redstone sur un bloc, si ce bloc reçoit 
 
 ## Exercices
 
-### Construire une porte NOT
+!!! redstone_exo Porte NOT
 
-- Placez un levier, un bloc et une torche de redstone.
-- Reliez une lampe au circuit.
-- **Question :** Qu'observez-vous lorsque vous actionnez le levier ?
+    - Placez un levier, un bloc et une torche de redstone.
+    - Reliez une lampe au circuit.
+    - **Question :** Qu'observez-vous lorsque vous actionnez le levier ?
 
-### Construire une porte AND
+!!! redstone_exo Porte AND
 
-- Placez deux leviers comme entrées.
-- Reliez-les à un circuit qui inclut deux torches de redstone pour inverser les signaux.
-- Ajoutez une troisième torche sur un bloc pour produire la sortie.
-- **Question :** Quand la lampe s’allume-t-elle ?
+    - Placez deux leviers comme entrées.
+    - Reliez-les à un circuit qui inclut deux torches de redstone pour inverser les signaux.
+    - Ajoutez une troisième torche sur un bloc pour produire la sortie.
+    - **Question :** Quand la lampe s’allume-t-elle ?
 
-### 5. Construire une porte OR
+!!! redstone_exo Porte OR
 
-- Placez deux leviers.
-- Reliez-les à un circuit commun avec de la poudre de redstone.
-- Ajoutez une lampe en sortie.
-- **Question :** Quand la lampe s’allume-t-elle ?
+    - Placez deux leviers.
+    - Reliez-les à un circuit commun avec de la poudre de redstone.
+    - Ajoutez une lampe en sortie.
+    - **Question :** Quand la lampe s’allume-t-elle ?
 
 ---
 
 ## Circuits combinés
 
-### Défi 1 : Construire une porte NAND
+!!! redstone_exo Porte NAND
+    La porte NAND correspond à **l'inverse d'une porte AND**.
+    - Une lampe de redstone reliée à une porte NAND s’éteint uniquement si **au moins une entrée est allumée**, sinon s'allume.
+    
+    - **Consigne :**
+      1. Construisez une porte AND.
+      2. Ajoutez une torche de redstone sur le bloc de sortie pour inverser le signal.
+      - **Question :** Quand la lampe s’éteint-elle ?
 
-- Une porte NAND est l'inverse d'une porte AND : elle s’éteint uniquement si **toutes les entrées** sont activées.
-- **Consigne :**
-  1. Construisez une porte AND.
-  2. Ajoutez une torche de redstone sur le bloc de sortie pour inverser le signal.
-  - **Question :** Quand la lampe s’éteint-elle ?
 
-### Défi 2 : Construire une porte NOR
+!!! redstone_exo Porte XOR
 
-- Une porte NOR est l'inverse d'une porte OR : elle s'allume uniquement si **aucune des entrées** n’est activée.
-- **Consigne :**
-  1. Construisez une porte OR.
-  2. Ajoutez une torche de redstone sur le bloc de sortie pour inverser le signal.
-  - **Question :** Quand la lampe s’allume-t-elle ?
+    La porte XOR correspond au **ou exclusif**.
+    - Une lampe de redstone reliée à une porte XOR est une porte correspondant au **ou exclusif** : elle s'éteint si **toutes les entrées sont allumées ou éteintes** mais s'allume si
+    - **Consigne :**
+      1. Déduire le schéma logique sur papier.
+      2. Réaliser la construction en jeu.
 
 ---
 
 ## Pour aller plus loin : Défis avancés
 
-### Construire un demi-additionneur
+!!! redstone_exo Demi Additionneur
 
-- Un demi-additionneur produit deux sorties :
-  - **Somme (S)** : s’allume si une seule des deux entrées est activée (utilisez une porte XOR).
-  - **Retenue (R)** : s’allume si **les deux** entrées sont activées (utilisez une porte AND).
-- **Consigne :** Construisez un circuit avec deux leviers comme entrées, une lampe pour la somme, et une autre lampe pour la retenue.
+    Un demi-additionneur produit deux sorties :
+    - **Somme (S)** : s’allume si une seule des deux entrées est activée (utilisez une porte XOR).
+    - **Retenue (R)** : s’allume si **les deux** entrées sont activées (utilisez une porte AND).
+    - **Consigne :** Construisez un circuit avec deux leviers comme entrées, une lampe pour la somme, et une autre lampe pour la retenue.
+
+    **Aide:**
+
+    Voici le schéma logique d'un demi-additionneur : 
+
+    ![demi-additionneur](./demi-additionneur.png)
