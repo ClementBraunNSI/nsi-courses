@@ -355,6 +355,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
         return diviseurs
     ```
 
+---
+
 !!! fox_exercice "Liste croissante"
     **Écrire une fonction `est_croissante` qui prend une liste d'entiers en paramètre et renvoie True si les éléments de la liste sont dans l'ordre croissant, False sinon.**
     *Exemple :*
@@ -372,6 +374,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
             i = i + 1
         return i == len(liste)-1
     ```
+
+---
 
 !!! fox_exercice "Échange de valeurs"
     **Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.**
@@ -399,6 +403,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     def echange(liste:list, i:int, j:int)->None:
         liste[i], liste[j] = liste[j], liste[i]
     ```
+
+---
 
 !!! fox_exercice "Rangement de valeurs"
     **Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l'élément, une liste avec l'élément si présent, et une liste avec les valeurs supérieures.**
