@@ -449,6 +449,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
         return nombre_voyelles
     ```
 
+---
+
 !!! fox_exercice "Éléments en double"
     **Écrire une fonction `valeurs_en_double` qui prend une liste et renvoie une nouvelle liste contenant uniquement les éléments qui apparaissent plus d'une fois (sans répétitions supplémentaires).**
     *Exemple :*
@@ -472,6 +474,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
         return doublons
     ```
 
+---
+
 !!! fox_exercice "Recherche d'indice"
     **Écrire une fonction `indice_element` qui prend une liste et un élément, et renvoie l'indice de la première occurrence de cet élément dans la liste, ou -1 s'il n'est pas présent.**
     *Exemple :*
@@ -492,6 +496,8 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
             return -1
         return i
     ```
+
+---
 
 !!! fox_exercice "Fusion sans doublons"
     **Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**
