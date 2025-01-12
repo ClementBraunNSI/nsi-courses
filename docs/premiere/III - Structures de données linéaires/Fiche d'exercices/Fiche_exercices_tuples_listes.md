@@ -407,7 +407,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Rangement de valeurs"
-    **Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l'élément, une liste avec l'élément si présent, et une liste avec les valeurs supérieures.**
+    **Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l'élément, une liste avec l'élément si présent, et une liste avec les valeurs supérieures.**  
     *Exemple :*
     ```python
     >>> rangement_valeurs([1, 7, 4, 3, 6, 2, 8], 5)
@@ -434,7 +434,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ## Niveau Difficile
 
 !!! fox_exercice "Compteur de voyelles"
-    **Écrire une fonction `compter_voyelles` qui prend une liste de chaînes de caractères et renvoie le nombre total de voyelles présentes dans toutes les chaînes.**
+    **Écrire une fonction `compter_voyelles` qui prend une liste de chaînes de caractères et renvoie le nombre total de voyelles présentes dans toutes les chaînes.**  
     *Exemple :*
     ```python
     >>> compter_voyelles(["chat", "chien"])
@@ -458,7 +458,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Éléments en double"
-    **Écrire une fonction `valeurs_en_double` qui prend une liste et renvoie une nouvelle liste contenant uniquement les éléments qui apparaissent plus d'une fois (sans répétitions supplémentaires).**
+    **Écrire une fonction `valeurs_en_double` qui prend une liste et renvoie une nouvelle liste contenant uniquement les éléments qui apparaissent plus d'une fois (sans répétitions supplémentaires).**  
     *Exemple :*
     ```python
     >>> valeurs_en_double([1, 2, 2, 3, 4, 4, 5])
@@ -483,7 +483,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Recherche d'indice"
-    **Écrire une fonction `indice_element` qui prend une liste et un élément, et renvoie l'indice de la première occurrence de cet élément dans la liste, ou -1 s'il n'est pas présent.**
+    **Écrire une fonction `indice_element` qui prend une liste et un élément, et renvoie l'indice de la première occurrence de cet élément dans la liste, ou -1 s'il n'est pas présent.**  
     *Exemple :*
     ```python
     >>> indice_element([10, 20, 30], 20)
@@ -506,7 +506,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Fusion sans doublons"
-    **Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**
+    **Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**  
     *Exemple :*
     ```python
     >>> fusionner_sans_doublons([1, 2, 3], [2, 3, 4])
