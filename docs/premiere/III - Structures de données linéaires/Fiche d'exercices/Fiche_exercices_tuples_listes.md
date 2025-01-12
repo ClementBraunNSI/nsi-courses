@@ -63,104 +63,131 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
-**Écrire une fonction `compter_pairs` qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.**  
-*Exemple :*  
-*compter_pairs([1, 2, 3, 4, 5, 6]) doit renvoyer 3.*
+!!! fox_exercice "Compter les nombres pairs"
+    **Écrire une fonction `compter_pairs` qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.**
+    
+    *Exemple :*
+    ```python
+      >>> compter_pairs([1,2,3,4,5])
+      2
+    ```
 
 ??? fox_correction "Correction"
-
     ```python
     def compter_pairs(liste:list)->int:
-      nombre_pairs = 0
-      for elt in liste:
-         if elt % 2 == 0:
-            nombre_pairs = nombre_pairs + 1
-      return nombre_pairs
+        nombre_pairs = 0
+        for elt in liste:
+            if elt % 2 == 0:
+                nombre_pairs = nombre_pairs + 1
+        return nombre_pairs
     ```
-
 ---
 
-**Écrire une fonction `longueur_chaines` qui prend une liste de chaînes de caractères et renvoie une liste contenant la longueur de chaque chaîne.**  
-*Exemple :*  
-*longueur_chaines(["abc", "de", "fghi"]) doit renvoyer [3, 2, 4].*
-
-??? fox_correction "Correction"
-
+!!! fox_exercice "Longueur des chaînes"
+    **Écrire une fonction `longueur_chaines` qui prend une liste de chaînes de caractères et renvoie une liste contenant la longueur de chaque chaîne.**
+    *Exemple :*
     ```python
-    def longueur_chaines(liste:list)->int:
-      liste_longueurs = []
-      for elt in liste:
-         taille_elt = len(elt)
-         liste_longueurs.append(taille_elt)
-      return liste_longueurs
+    >>> longueur_chaines(["abc", "de", "fghi"])
+    [3, 2, 4]
+    ```
+
+??? fox_correction "Correction"
+    ```python
+    def longueur_chaines(liste:list)->list:
+        liste_longueurs = []
+        for elt in liste:
+            taille_elt = len(elt)
+            liste_longueurs.append(taille_elt)
+        return liste_longueurs
     ```
 
 ---
 
-**Écrire une fonction `produit_elements` qui prend une liste d'entiers et renvoie le produit de tous les éléments. Attention aux cas où la liste est vide.**  
-*Exemple :*  
-*produit_elements([2, 3, 4]) doit renvoyer 24.*
+!!! fox_exercice "Produit d'éléments"
+    **Écrire une fonction `produit_elements` qui prend une liste d'entiers et renvoie le produit de tous les éléments. Attention aux cas où la liste est vide.**
+    *Exemple :*
+    ```python
+    >>> produit_elements([2, 3, 4])
+    24
+    >>> produit_elements([])
+    1
+    ```
 
 ??? fox_correction "Correction"
-
     ```python
     def produit_elements(liste:list)->int:
-      produit = 0
-      for elt in liste:
-         produit = produit * elt
-      return produit
+        if not liste:  # si la liste est vide
+            return 1
+        produit = 1
+        for elt in liste:
+            produit = produit * elt
+        return produit
     ```
 
 ---
 
-**Écrire une fonction `compter_occurrences` qui prend une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**  
-*Exemple :*  
-*compter_occurrences([1, 2, 2, 3, 2], 2) doit renvoyer 3.*
+!!! fox_exercice "Compter les occurrences"
+    **Écrire une fonction `compter_occurrences` qui prend une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**
+    *Exemple :*
+    ```python
+    >>> compter_occurrences([1, 2, 2, 3, 2], 2)
+    3
+    ```
 
 ??? fox_correction "Correction"
-
     ```python
     def compter_occurrences(liste:list, valeur: int)->int:
-      occurences = 0
-      for elt in liste:
-         if elt == valeur:
-            occurences = occurences + 1
-      return occurences
+        occurrences = 0
+        for elt in liste:
+            if elt == valeur:
+                occurrences = occurrences + 1
+        return occurrences
     ```
 
 ---
 
-==***🦊 Algorithme à connaître 🦊***==  
-**Écrire une fonction `presence`qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
-*Exemple :*
-*presence(3, [1, 2, 3, 4]) doit renvoyer True.*
-*presence(5, [1, 2, 3, 4]) doit renvoyer False.*
-
-??? fox_correction "Correction"
-
+!!! fox_exercice_important "Recherche d'un élément : ==Algorithme à connaître=="
+    **Écrire une fonction `presence` qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
+    *Exemple :*
     ```python
-    def presence(liste:list, valeur: int)->int:
-      present = False
-      for elt in liste:
-         if elt == valeur:
-            present = True
-      return present
+    >>> presence(3, [1, 2, 3, 4])
+    True
+    >>> presence(5, [1, 2, 3, 4])
+    False
+    ```
+
+??? fox_exercice_important_correction "Correction"
+    ```python
+    def presence(valeur: int, liste:list)->bool:
+        present = False
+        for elt in liste:
+            if elt == valeur:
+                present = True
+        return present
     ```
 
 ---
 
-**Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans cette liste.**
-*Exemple :*
-*moyenne([1, 2, 3, 4, 5]) doit renvoyer 3.0.*
+!!! fox_exercice "Calcul de moyenne"
+    **Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans cette liste.**
+    *Exemple :*
+    ```python
+    >>> moyenne([1, 2, 3, 4, 5])
+    3.0
+    >>> moyenne([])
+    0
+    ```
 
 ??? fox_correction "Correction"
-
     ```python
-    def moyenne(liste:list)->int:
-      taille_liste = len(liste)
-      somme_liste = somme_elements(liste)
-      moyenne = somme_liste/liste
-      return present
+    def moyenne(liste:list)->float:
+        if not liste:  # si la liste est vide
+            return 0
+        taille_liste = len(liste)
+        somme = 0
+        for elt in liste:
+            somme = somme + elt
+        return somme / taille_liste
     ```
 ---
 

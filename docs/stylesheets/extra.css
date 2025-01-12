@@ -1,6 +1,8 @@
 :root {
-    --md-admonition-icon--fox_correction: url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-fox-origami-vitaliy-gorbachev-lineal-vitaly-gorbachev.png');
-    --md-admonition-icon--redstone_exo : url('https://minecraft.wiki/images/Redstone_Dust_JE2_BE2.png');
+    --md-admonition-icon--fox_correction: url('../images/logo.png');
+    --md-admonition-icon--fox_exercice: url('../images/logo.png');
+    --md-admonition-icon--redstone_exo : url('../images/Redstone_Dust.png');
+    --md-admonition-icon--fox_exercice_important : url('../images/logo_important.png');
 
   }
   .md-typeset .admonition.fox_correction,
@@ -19,18 +21,56 @@
   }
 
   .md-typeset .admonition.fox_exercice,
-  .md-typeset details.fox_exercice {
+  .md-typeset details.fox_exercice_important {
     border-color: rgb(67, 140, 234);
   }
   .md-typeset .fox_exercice > .admonition-title,
-  .md-typeset .fox_exercice > summary {
+  .md-typeset .fox_exercice_important > summary {
     background-color: rgba(67, 140, 234,0.2);
   }
   .md-typeset .fox_exercice > .admonition-title::before,
   .md-typeset .fox_exercice > summary::before {
     background-color: rgb(67, 140, 234);
-    -webkit-mask-image: var(--md-admonition-icon--fox_correction);
-            mask-image: var(--md-admonition-icon--fox_correction);
+    -webkit-mask-image: var(--md-admonition-icon--fox_exercice);
+            mask-image: var(--md-admonition-icon--fox_exercice);
+  }
+
+  .md-typeset .admonition.fox_exercice_important,
+  .md-typeset details.fox_exercice_important {
+    border-color: rgb(211, 73, 27);
+  }
+  .md-typeset .fox_exercice_important > .admonition-title,
+  .md-typeset .fox_exercice_important > summary {
+    background-color: rgba(211, 73, 27,0.2);
+  }
+  .md-typeset .fox_exercice_important > .admonition-title::before,
+  .md-typeset .fox_exercice_important > summary::before {
+    background-color: rgb(211, 73, 27);
+    height: 175%;
+    width: 5rem;
+    margin-left: -4.5%;
+    margin-top: -2.5%;
+    -webkit-mask-image: var(--md-admonition-icon--fox_exercice_important);
+            mask-image: var(--md-admonition-icon--fox_exercice_important);
+  }
+
+  .md-typeset .admonition.fox_exercice_important_correction,
+  .md-typeset details.fox_exercice_important {
+    border-color: rgb(242, 117, 0);
+  }
+  .md-typeset .fox_exercice_important_correction > .admonition-title,
+  .md-typeset .fox_exercice_important_correction > summary {
+    background-color: rgba(242, 117, 0,0.2);
+  }
+  .md-typeset .fox_exercice_important_correction > .admonition-title::before,
+  .md-typeset .fox_exercice_important_correction > summary::before {
+    background-color: rgb(242, 117, 0);
+    height: 175%;
+    width: 5rem;
+    margin-left: -4.5%;
+    margin-top: -2.5%;
+    -webkit-mask-image: var(--md-admonition-icon--fox_exercice_important);
+            mask-image: var(--md-admonition-icon--fox_exercice_important);
   }
 
   .md-typeset .admonition.fox_correction_eval,
@@ -61,4 +101,13 @@
     background-color: rgb(178,34,34);
     -webkit-mask-image: var(--md-admonition-icon--redstone_exo);
             mask-image: var(--md-admonition-icon--redstone_exo);
+  }
+
+  .md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+  }
+  .md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 2.4rem;
+    width: 2.4rem;
   }
