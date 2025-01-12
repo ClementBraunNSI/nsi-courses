@@ -336,86 +336,93 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
-**Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.**  
-*Exemple :*
-*diviseurs(6) doit renvoyer [1, 2, 3, 6] (car 1, 2, 3 et 6 sont les diviseurs de 6).*
-*diviseurs(10) doit renvoyer [1, 2, 5, 10] (car 1, 2, 5 et 10 sont les diviseurs de 10).*
-
-??? fox_correction "Correction"
-
+!!! fox_exercice "Recherche des diviseurs"
+    **Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.**
+    *Exemple :*
     ```python
-    def diviseurs(valeur:int)->int:
-      diviseurs = []
-      for i in range(valeur+1):
-         if valeur % i == 0:
-            diviseurs.append(i)
-      return diviseurs
+    >>> diviseurs(6)
+    [1, 2, 3, 6]
+    >>> diviseurs(10)
+    [1, 2, 5, 10]
+    ```
+??? fox_correction "Correction"
+    ```python
+    def diviseurs(valeur:int)->list:
+        diviseurs = []
+        for i in range(1, valeur+1):  # On commence à 1 pour éviter la division par 0
+            if valeur % i == 0:
+                diviseurs.append(i)
+        return diviseurs
     ```
 
----
-
-**Écrire une fonction `est_croissante` qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.**  
-*Exemple :*
-*est_croissante([1, 2, 3, 4]) doit renvoyer True.*
-*est_croissante([1, 3, 2, 4]) doit renvoyer False.*
-
-??? fox_correction "Correction"
-
+!!! fox_exercice "Liste croissante"
+    **Écrire une fonction `est_croissante` qui prend une liste d'entiers en paramètre et renvoie True si les éléments de la liste sont dans l'ordre croissant, False sinon.**
+    *Exemple :*
     ```python
-    def est_croissante(liste:list)->int:
-      i = 0
-      while i < len(liste) - 1 and liste[i] <= liste[i+1] :
-         i = i +1
-      return i == len(liste)-1
+    >>> est_croissante([1, 2, 3, 4])
+    True
+    >>> est_croissante([1, 3, 2, 4])
+    False
     ```
----
-
-**Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.**  
-*Exemple :*
-*echange([1, 2, 3, 4], 1, 2), cela doit modifier la liste pour donner [1, 3, 2, 4].*
-*echange([5, 10, 15], 0, 2), cela doit modifier la liste pour donner [15, 10, 5].*
-
 ??? fox_correction "Correction"
+    ```python
+    def est_croissante(liste:list)->bool:
+        i = 0
+        while i < len(liste) - 1 and liste[i] <= liste[i+1]:
+            i = i + 1
+        return i == len(liste)-1
+    ```
 
-   ```python
+!!! fox_exercice "Échange de valeurs"
+    **Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.**
+    *Exemple :*
+    ```python
+    >>> liste1 = [1, 2, 3, 4]
+    >>> echange(liste1, 1, 2)
+    >>> liste1
+    [1, 3, 2, 4]
+    >>> liste2 = [5, 10, 15]
+    >>> echange(liste2, 0, 2)
+    >>> liste2
+    [15, 10, 5]
+    ```
+??? fox_correction "Correction"
+    ```python
     #1ère solution : passer par une troisième valeur
-
-   def echange(liste:list, i:int, j:int)->None:
-      temp = liste[i]
-      liste[j] = liste[i]
-      liste[i] = temp
-   ```
-
-   ```python
-   #2e solution : solution Python-esque
-   def echange(liste:list, i:int, j:int)->None:
-      liste[i],liste[j] = liste[j],liste[i]
-   ```
-
----
-
-**Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l’élément, une liste avec l’élément si présent, et une liste avec les valeurs supérieures.**  
-*Exemple :*  
-```python
-rangement_valeurs([1, 7, 4, 3, 6, 2, 8], 5)  # Renvoie: [1, 4, 3, 2], [], [7, 6, 8]
-rangement_valeurs([1, 2, 4, 3, 6, 2, 8], 2)  # Renvoie: [1], [2, 2], [4, 3, 6, 8]
-```
-
-??? fox_correction "Correction"
-
+    def echange(liste:list, i:int, j:int)->None:
+        temp = liste[i]
+        liste[i] = liste[j]
+        liste[j] = temp
+    ```
     ```python
-    def rangement_valeurs(liste:list, valeur:int)->tuple[list]:
-      inferieures = []
-      egales = []
-      superieures = []
-      for elt in liste:
-         if elt > valeur:
-            superieures.append(elt)
-         elif elt == valeur:
-            egales.append(elt)
-         else:
-            inferieures.append(elt)
-      return inferieures, egales, superieures
+    #2e solution : solution Python-esque
+    def echange(liste:list, i:int, j:int)->None:
+        liste[i], liste[j] = liste[j], liste[i]
+    ```
+
+!!! fox_exercice "Rangement de valeurs"
+    **Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l'élément, une liste avec l'élément si présent, et une liste avec les valeurs supérieures.**
+    *Exemple :*
+    ```python
+    >>> rangement_valeurs([1, 7, 4, 3, 6, 2, 8], 5)
+    ([1, 4, 3, 2], [], [7, 6, 8])
+    >>> rangement_valeurs([1, 2, 4, 3, 6, 2, 8], 2)
+    ([1], [2, 2], [4, 3, 6, 8])
+    ```
+??? fox_correction "Correction"
+    ```python
+    def rangement_valeurs(liste:list, valeur:int)->tuple[list, list, list]:
+        inferieures = []
+        egales = []
+        superieures = []
+        for elt in liste:
+            if elt > valeur:
+                superieures.append(elt)
+            elif elt == valeur:
+                egales.append(elt)
+            else:
+                inferieures.append(elt)
+        return inferieures, egales, superieures
     ```
 
 ## Niveau Difficile
