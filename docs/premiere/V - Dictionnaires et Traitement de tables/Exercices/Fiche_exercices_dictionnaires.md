@@ -132,19 +132,65 @@ bibliotheques = {
 }
 ```
 
-1. **Écrire une fonction `afficher_bibliotheques(bibliotheques)`** qui affiche les informations sous la forme : `"Bibliothèque Centrale à Paris : 30000 livres."`.
-   - Afficher uniquement les bibliothèques ayant plus d’un certain nombre de livres.
+1. **Écrire une fonction `afficher_bibliotheques`** qui affiche les informations sous la forme : `"Bibliothèque Centrale à Paris : 30000 livres."`.
 
-2. **Écrire une fonction `ajouter_bibliotheque(bibliotheques, nom, ville, livres)`** qui ajoute une nouvelle bibliothèque au dictionnaire.
-   - Vérifier si une bibliothèque avec le même nom existe déjà.
+??? fox_correction "Correction"
+    ```python
+    def afficher_bibliotheques(bibliotheques):
+        """
+        Affiche les informations de chaque bibliothèque
+        """
+        for code in bibliotheques:
+            biblio = bibliotheques[code]
+            print(biblio['nom'] + " à " + biblio['ville'] + " : " + str(biblio['livres']) + " livres.")
+    ```
 
-3. **Écrire une fonction `plus_grande_bibliotheque(bibliotheques)`** qui renvoie la bibliothèque ayant le plus de livres.
-   - Modifier la fonction pour qu’elle renvoie également la bibliothèque avec le moins de livres.
+2. **Écrire une fonction `ajouter_bibliotheque`** qui ajoute une nouvelle bibliothèque au dictionnaire.
 
-4. **Écrire une fonction `total_livres(bibliotheques)`** qui calcule et renvoie le nombre total de livres.
-   - Afficher également la moyenne de livres par bibliothèque.
+??? fox_correction "Correction"
+    ```python
+    def ajouter_bibliotheque(bibliotheques, code, nom, ville, nb_livres):
+        """
+        Ajoute une nouvelle bibliothèque au dictionnaire
+        """
+        bibliotheques[code] = {
+            'nom': nom,
+            'ville': ville, 
+            'livres': nb_livres
+        }
+        return bibliotheques
+    ```
 
----
+3. **Écrire une fonction `plus_grande_bibliotheque`** qui renvoie la bibliothèque ayant le plus de livres.
+
+??? fox_correction "Correction"
+    ```python
+    def plus_grande_bibliotheque(bibliotheques):
+        """
+        Renvoie la bibliothèque ayant le plus de livres
+        """
+        max_livres = 0
+        biblio_max = None
+        for code in bibliotheques:
+            if bibliotheques[code]['livres'] > max_livres:
+                max_livres = bibliotheques[code]['livres']
+                biblio_max = bibliotheques[code]
+        return biblio_max
+    ```
+
+4. **Écrire une fonction `total_livres`** qui calcule et renvoie le nombre total de livres.
+
+??? fox_correction "Correction"
+    ```python
+    def total_livres(bibliotheques):
+        """
+        Calcule le nombre total de livres dans toutes les bibliothèques
+        """
+        total = 0
+        for code in bibliotheques:
+            total = total + bibliotheques[code]['livres']
+        return total
+    ```
 
 ## 5. Base de données des employés
 Un dictionnaire `employes` contient les informations des employés.
@@ -156,19 +202,69 @@ employes = {
 }
 ```
 
-1. **Écrire une fonction `afficher_employes(employes)`** qui affiche les informations sous la forme : `"Alice est Développeur et gagne 3500 euros."`.
-   - Afficher uniquement les employés ayant un salaire supérieur à un seuil.
+1. **Écrire une fonction `afficher_employes`** qui affiche les informations sous la forme : `"Alice est Développeur et gagne 3500 euros."`.
 
-2. **Écrire une fonction `ajouter_employe(employes, id_employe, nom, poste, salaire)`** qui ajoute un nouvel employé au dictionnaire.
-   - Vérifier que l’`id_employe` n’existe pas déjà.
+??? fox_correction "Correction"
+    ```python
+    def afficher_employes(employes):
+        """
+        Affiche les informations de chaque employé
+        """
+        for code in employes:
+            emp = employes[code]
+            print(emp['nom'] + " est " + emp['poste'] + " et gagne " + str(emp['salaire']) + " euros.")
+    ```
 
-3. **Écrire une fonction `augmenter_salaires(employes, pourcentage)`** qui augmente tous les salaires d’un pourcentage donné.
-   - Ajouter une option pour n’augmenter les salaires que des employés ayant un poste spécifique.
+2. **Écrire une fonction `ajouter_employe`** qui ajoute un nouvel employé au dictionnaire.
 
-4. **Écrire une fonction `employe_salaire_max(employes)`** qui renvoie l’employé ayant le salaire le plus élevé.
-   - Modifier la fonction pour renvoyer également l’employé ayant le salaire le plus bas.
+??? fox_correction "Correction"
+    ```python
+    def ajouter_employe(employes, code, nom, poste, salaire):
+        """
+        Ajoute un nouvel employé au dictionnaire
+        """
+        if code not in employes:
+         employes[code] = {
+               'nom': nom,
+               'poste': poste,
+               'salaire': salaire
+         }
+         return employes
+    ```
+
+3. **Écrire une fonction `augmenter_salaires`** qui augmente tous les salaires d'un pourcentage donné en paramètres.
+
+??? fox_correction "Correction"
+    ```python
+    def augmenter_salaires(employes, pourcentage):
+        """
+        Augmente tous les salaires d'un pourcentage donné
+        """
+        for code in employes:
+            ancien_salaire = employes[code]['salaire']
+            augmentation = ancien_salaire * pourcentage / 100
+            employes[code]['salaire'] = ancien_salaire + augmentation
+    ```
+
+4. **Écrire une fonction `employe_salaire_max`** qui renvoie l'employé ayant le salaire le plus élevé.
+
+??? fox_correction "Correction"
+    ```python
+    def employe_salaire_max(employes):
+        """
+        Renvoie l'employé ayant le salaire le plus élevé
+        """
+        max_salaire = 0
+        emp_max = None
+        for code in employes:
+            if employes[code]['salaire'] > max_salaire:
+                max_salaire = employes[code]['salaire']
+                emp_max = employes[code]
+        return emp_max
+    ```
 
 ## 6. Livre de contacts téléphoniques
+
 Un dictionnaire `contacts` contient les informations personnelles des contacts.
 ```python
 contacts = {
@@ -177,22 +273,66 @@ contacts = {
 }
 ```
 
-1. **Écrire une fonction `rechercher_contact(contacts, nom)`** qui renvoie les détails d'un contact par son nom.
-   - Gérer le cas où le contact n'existe pas avec un message approprié.
+1. **Écrire une fonction `rechercher_contact`** qui renvoie les détails d'un contact par son nom.
 
-2. **Écrire une fonction `ajouter_contact(contacts, nom, telephone, email, ville)`** qui ajoute un nouveau contact.
-   - Vérifier que le contact n'existe pas déjà.
-   - Lever une exception si le contact existe.
+??? fox_correction "Correction"
+    ```python
+    def rechercher_contact(contacts, nom):
+        """
+        Renvoie les détails d'un contact par son nom
+        """
+        if nom in contacts:
+            return contacts[nom]
+        return "Contact non trouvé"
+    ```
 
-3. **Écrire une fonction `contacts_par_ville(contacts, ville)`** qui renvoie la liste des contacts d'une ville donnée.
-   - Retourner une liste vide si aucun contact n'est trouvé.
+2. **Écrire une fonction `ajouter_contact`** qui ajoute un nouveau contact.
 
-4. **Écrire une fonction `mettre_a_jour_contact(contacts, nom, champ, nouvelle_valeur)`** qui permet de modifier un champ spécifique d'un contact.
-   - Gérer les cas où le contact ou le champ n'existe pas.
+??? fox_correction "Correction"
+    ```python
+    def ajouter_contact(contacts, nom, telephone, email, ville):
+        """
+        Ajoute un nouveau contact au dictionnaire
+        """
+        contacts[nom] = {
+            'téléphone': telephone,
+            'email': email,
+            'ville': ville
+        }
+    ```
 
----
+3. **Écrire une fonction `contacts_par_ville`** qui renvoie la liste des contacts d'une ville donnée.
+
+??? fox_correction "Correction"
+    ```python
+    def contacts_par_ville(contacts, ville):
+        """
+        Renvoie la liste des contacts d'une ville donnée
+        """
+        contacts_ville = []
+        for nom in contacts:
+            if contacts[nom]['ville'] == ville:
+                contacts_ville.append(nom)
+        return contacts_ville
+    ```
+
+4. **Écrire une fonction `mettre_a_jour_contact`** qui permet de modifier un champ spécifique d'un contact.
+
+??? fox_correction "Correction"
+    ```python
+    def mettre_a_jour_contact(contacts, nom, champ, nouvelle_valeur):
+        """
+        Modifie un champ spécifique d'un contact
+        """
+        if nom in contacts:
+            if champ in contacts[nom]:
+                contacts[nom][champ] = nouvelle_valeur
+                return "Contact mis à jour"
+        return "Contact ou champ non trouvé"
+    ```
 
 ## 7. Analyse des résultats d'un sondage
+
 Un dictionnaire `resultats_sondage` représente les réponses à un sondage.
 ```python
 resultats_sondage = {
@@ -202,22 +342,78 @@ resultats_sondage = {
 }
 ```
 
-1. **Écrire une fonction `calculer_pourcentages(resultats_sondage)`** qui convertit les nombres en pourcentages.
-   - Arrondir les pourcentages à deux décimales.
-   - Vérifier que le total des résultats est bien de 100%.
+1. **Écrire une fonction `calculer_pourcentages`** qui convertit les nombres en pourcentages et renvoie un dictionnaire avec pour clef la réponse et valeur le pourcentage.
 
-2. **Écrire une fonction `comparer_sondages(sondage1, sondage2)`** qui compare deux sondages.
-   - Calculer les différences de pourcentage pour chaque catégorie.
-   - Identifier la catégorie ayant le plus changé.
+??? fox_correction "Correction"
+    ```python
+    def calculer_pourcentages(resultats):
+        """
+        Convertit les nombres en pourcentages
+        """
+        total = 0
+        pourcentages = {}
+        # Calcul du total
+        for reponse in resultats:
+            total = total + resultats[reponse]
+        # Calcul des pourcentages
+        for reponse in resultats:
+            pourcentage = (resultats[reponse] / total) * 100
+            pourcentages[reponse] = pourcentage
+        return pourcentages
+    ```
 
-3. **Écrire une fonction `visualiser_resultats(resultats_sondage)`** qui génère une représentation textuelle des résultats.
-   - Utiliser des astérisques pour représenter graphiquement les proportions.
+2. **Écrire une fonction `comparer_sondages`** qui compare deux sondages.
 
-4. **Écrire une fonction `sondage_plus_representatif(list_sondages)`** qui identifie le sondage avec l'échantillon le plus grand.
+??? fox_correction "Correction"
+    ```python
+    def comparer_sondages(sondage1, sondage2):
+        """
+        Compare deux sondages et renvoie les différences
+        """
+        differences = {}
+        for reponse in sondage1:
+            if reponse in sondage2:
+                difference = sondage1[reponse] - sondage2[reponse]
+                differences[reponse] = difference
+        return differences
+    ```
 
----
+3. **Écrire une fonction `visualiser_resultats`** qui génère une représentation textuelle des résultats.
+
+??? fox_correction "Correction"
+    ```python
+    def visualiser_resultats(resultats):
+        """
+        Génère une représentation textuelle des résultats
+        """
+        for reponse in resultats:
+            nombre = resultats[reponse]
+            barre = "*" * int(nombre/2)  # Une étoile pour chaque tranche de 2 réponses
+            print(reponse + ": " + barre + " (" + str(nombre) + ")")
+    ```
+
+4. **Écrire une fonction `sondage_plus_representatif`** qui identifie le sondage avec l'échantillon le plus grand.
+
+??? fox_correction "Correction"
+    ```python
+    def sondage_plus_representatif(sondage1, sondage2):
+        """
+        Identifie le sondage avec l'échantillon le plus grand
+        """
+        total1 = 0
+        total2 = 0
+        for reponse in sondage1:
+            total1 = total1 + sondage1[reponse]
+        for reponse in sondage2:
+            total2 = total2 + sondage2[reponse]
+        if total1 > total2:
+            return "sondage1"
+        else:
+            return "sondage2"
+    ```
 
 ## 8. Gestion d'un inventaire de jeux vidéo
+
 Un dictionnaire `jeux` stocke des informations sur différents jeux vidéo.
 ```python
 jeux = {
@@ -226,21 +422,79 @@ jeux = {
 }
 ```
 
-1. **Écrire une fonction `filtrer_jeux(jeux, plateforme=None, genre=None, note_min=0)`** qui filtre les jeux selon différents critères.
-   - Permettre le filtrage par plateforme, genre, et note minimale.
-   - Retourner un nouveau dictionnaire avec les jeux correspondants.
+1. **Écrire une fonction `filtrer_jeux`** qui filtre les jeux selon la plateforme, le genre ou la note minimale.
 
-2. **Écrire une fonction `meilleur_jeu_par_genre(jeux)`** qui renvoie le jeu avec la meilleure note pour chaque genre.
-   - Gérer le cas où un genre n'a qu'un seul jeu.
+??? fox_correction "Correction"
+    ```python
+    def filtrer_jeux(jeux, plateforme=None, genre=None, note_min=None):
+        """
+        Filtre les jeux selon les critères donnés
+        """
+        jeux_filtres = {}
+        for jeu in jeux:
+            valide = True
+            if plateforme and jeux[jeu]['plateforme'] != plateforme:
+                valide = False
+            if genre and jeux[jeu]['genre'] != genre:
+                valide = False
+            if note_min and jeux[jeu]['note'] < note_min:
+                valide = False
+            
+            if valide:
+                jeux_filtres[jeu] = jeux[jeu]
+        
+        return jeux_filtres
+    ```
 
-3. **Écrire une fonction `ajouter_jeu(jeux, nom, plateforme, genre, note)`** qui ajoute un nouveau jeu.
-   - Vérifier que la note est entre 0 et 10.
-   - Empêcher l'ajout de jeux en doublon.
+2. **Écrire une fonction `meilleur_jeu_par_genre`** qui renvoie le jeu avec la meilleure note pour chaque genre.
 
-4. **Écrire une fonction `calculer_moyenne_notes(jeux)`** qui calcule la moyenne des notes pour tous les jeux.
-   - Distinguer entre moyenne générale et moyenne par genre.
+??? fox_correction "Correction"
+    ```python
+    def meilleur_jeu_par_genre(jeux):
+        """
+        Renvoie le jeu avec la meilleure note pour chaque genre
+        """
+        meilleurs = {}
+        for jeu in jeux:
+            genre = jeux[jeu]['genre']
+            note = jeux[jeu]['note']
+            if genre not in meilleurs or note > meilleurs[genre]['note']:
+                meilleurs[genre] = {'nom': jeu, 'note': note}
+        return meilleurs
+    ```
 
----
+3. **Écrire une fonction `ajouter_jeu`** qui ajoute un nouveau jeu.
+
+??? fox_correction "Correction"
+    ```python
+    def ajouter_jeu(jeux, nom, plateforme, genre, note):
+        """
+        Ajoute un nouveau jeu
+        """
+        jeux[nom] = {
+            'plateforme': plateforme,
+            'genre': genre,
+            'note': note
+        }
+    ```
+
+4. **Écrire une fonction `calculer_moyenne_notes`** qui calcule la moyenne des notes pour tous les jeux.
+
+??? fox_correction "Correction"
+    ```python
+    def calculer_moyenne_notes(jeux):
+        """
+        Calcule la moyenne des notes pour tous les jeux
+        """
+        if not jeux:
+            return 0
+        total = 0
+        nombre_jeux = 0
+        for jeu in jeux:
+            total = total + jeux[jeu]['note']
+            nombre_jeux = nombre_jeux + 1
+        return total / nombre_jeux
+    ```
 
 ## 9. Suivi des performances sportives
 Un dictionnaire `athletes` permet de suivre les performances.
@@ -251,17 +505,70 @@ athletes = {
 }
 ```
 
-1. **Écrire une fonction `calculer_moyenne_performances(athlete)`** qui calcule la moyenne des performances.
-   - Gérer les cas de performances manquantes.
-   - Permettre de lisser les résultats en retirant les valeurs extrêmes.
+1. **Écrire une fonction `calculer_moyenne_performances`** qui calcule la moyenne des performances.
 
-2. **Écrire une fonction `meilleur_temps(athletes, sport)`** qui trouve l'athlète avec le meilleur temps pour un sport donné.
-   - Gérer le cas où aucun athlète ne pratique le sport.
+??? fox_correction "Correction"
+    ```python
+    def calculer_moyenne_performances(athletes):
+        """
+        Calcule la moyenne des performances pour chaque athlète
+        """
+        moyennes = {}
+        for athlete in athletes:
+            total = 0
+            nombre_temps = len(athletes[athlete]['temps'])
+            for temps in athletes[athlete]['temps']:
+                total = total + temps 
+            moyennes[athlete] = total / nombre_temps
+        return moyennes
+    ```
 
-3. **Écrire une fonction `progression_athlete(athlete)`** qui calcule la progression entre les performances.
-   - Retourner un pourcentage de progression.
-   - Gérer les cas de performances irrégulières.
+2. **Écrire une fonction `meilleur_temps`** qui trouve l'athlète avec le meilleur temps pour un sport donné.
 
-4. **Écrire une fonction `ajouter_performance(athletes, nom, sport, temps)`** qui ajoute une nouvelle performance.
-   - Créer un nouvel athlète si nécessaire.
-   - Vérifier la cohérence des données.
+??? fox_correction "Correction"
+    ```python
+    def meilleur_temps(athletes, sport):
+        """
+        Trouve l'athlète avec le meilleur temps pour un sport donné
+        """
+        meilleur_athlete = None
+        meilleur_performance = float('inf')  # On initialise avec une valeur infinie car un temps n'est jamais infini
+        for athlete in athletes:
+            if athletes[athlete]['sport'] == sport:
+                for temps in athletes[athlete]['temps']:
+                    if temps < meilleur_performance:
+                        meilleur_performance = temps
+                        meilleur_athlete = athlete
+        return meilleur_athlete, meilleur_performance
+    ```
+
+3. **Écrire une fonction `progression_athlete`** qui calcule la progression entre les performances en calculant le pourcentage d'amélioration entre la première épreuve et la dernière.
+
+??? fox_correction "Correction"
+    ```python
+    def progression_athlete(athletes, nom):
+        """
+        Calcule la progression entre la première et la dernière performance
+        """
+        if nom not in athletes or len(athletes[nom]['temps']) < 2:
+            return 0
+        premier_temps = athletes[nom]['temps'][0]
+        dernier_temps = athletes[nom]['temps'][-1]
+        amelioration = premier_temps - dernier_temps
+        pourcentage = (amelioration / premier_temps) * 100
+        return pourcentage
+    ```
+
+4. **Écrire une fonction `ajouter_performance`** qui ajoute une nouvelle performance.
+
+??? fox_correction "Correction"
+    ```python
+    def ajouter_performance(athletes, nom, nouveau_temps):
+        """
+        Ajoute une nouvelle performance
+        """
+        if nom in athletes:
+            athletes[nom]['temps'].append(nouveau_temps)
+            return "Performance ajoutée"
+        return "Athlète non trouvé"
+    ```
