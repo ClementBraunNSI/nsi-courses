@@ -18,8 +18,23 @@
             mask-image: var(--md-admonition-icon--fox_correction);
   }
 
+  .md-typeset .admonition.fox_exercice,
+  .md-typeset details.fox_exercice {
+    border-color: rgb(67, 140, 234);
+  }
+  .md-typeset .fox_exercice > .admonition-title,
+  .md-typeset .fox_exercice > summary {
+    background-color: rgba(67, 140, 234,0.2);
+  }
+  .md-typeset .fox_exercice > .admonition-title::before,
+  .md-typeset .fox_exercice > summary::before {
+    background-color: rgb(67, 140, 234);
+    -webkit-mask-image: var(--md-admonition-icon--fox_correction);
+            mask-image: var(--md-admonition-icon--fox_correction);
+  }
+
   .md-typeset .admonition.fox_correction_eval,
-  .md-typeset details.fox_correction {
+  .md-typeset details.fox_correction_eval {
     border-color: rgb(85, 107, 47);
   }
   .md-typeset .fox_correction_eval > .admonition-title,

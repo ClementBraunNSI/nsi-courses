@@ -20,10 +20,10 @@
 
 ??? fox_correction "Correction"
 
-   ```python
-      mon_tuple = (1,2,3,4,5)
-      ma_liste = ['a','b','c','d','e']
-   ```
+      ```python
+         mon_tuple = (1,2,3,4,5)
+         ma_liste = ['a','b','c','d','e']
+      ```
 
 2. **Afficher dans le terminal le troisième élément de `mon_tuple`et le premier élément de `ma_liste`.**
 
@@ -45,9 +45,11 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ## Niveau Facile
 
-**Écrire une fonction `somme_elements` qui prend une liste de nombres en paramètre et renvoie la somme de tous les éléments.**  
-*Exemple :*  
-*somme_elements([1, 2, 3, 4]) doit renvoyer 10.*
+!!! fox_exercice "Somme d'éléments"
+
+      **Écrire une fonction `somme_elements` qui prend une liste de nombres en paramètre et renvoie la somme de tous les éléments.**  
+      *Exemple :*  
+      *somme_elements([1, 2, 3, 4]) doit renvoyer 10.*
 
 ??? fox_correction "Correction"
 
