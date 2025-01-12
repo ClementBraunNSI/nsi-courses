@@ -5,6 +5,8 @@
 !!! fox_exercice "Types en Python"
     **Donner les types des valeurs suivantes : `13`, `14.5`, `'Hello World!'`, `True`, `'15.5'`**
 
+---
+
 !!! fox_exercice "Table de vérité XOR"
     **À l'aide de python, écrire un programme qui affiche dans le terminal la table de vérité de la fonction booléenne `xor`.**  
 
@@ -18,6 +20,8 @@
     print(1,1,0)
     ```
 
+---
+
 !!! fox_exercice "Somme de deux nombres"
     **Écrire un programme qui permet d'afficher la somme de deux nombres entiers de la forme 'La somme est x+y' avec x et y défini précédemment.**
 
@@ -28,6 +32,8 @@
     print('La somme est', x+y)
     ```
 
+---
+
 !!! fox_exercice "Affichage amélioré"
     **Améliorer le programme précédent pour qu'il affiche 'La somme de x et y est x+y'.**  
 
@@ -37,6 +43,8 @@
     y = 3
     print('La somme de',x, ' et ', y, ' est ', x+y)
     ```
+
+---
 
 !!! fox_exercice "Concaténation de chaînes"
     **Écrire un programme qui instancie deux chaînes de caractères, les concatène et affiche le résultat sous la forme `'La chaîne résultante est : [résultat]'`.**
@@ -107,6 +115,8 @@
         print(val_3, " est la plus grande")
     ```
 
+---
+
 !!! fox_exercice "Calculatrice basique"
     **Écrire un programme qui est une calculatrice basique. Elle demandera à l'utilisateur 2 nombres entiers `a` et `b` et un opérateur (`+`,`-`,`*`,`/`). Ce programme affichera : L'opération `a` `operateur` `b` vaut ...**
 
@@ -127,6 +137,8 @@
             print(a/b)
     ```
 
+---
+
 !!! fox_exercice "Profit ou perte"
     **Écrire un programme qui étant donné deux valeurs cout_de_production et prix_de_vente, affiche dans le terminal `profit` si le cout est inférieur au prix de vente, `perte` sinon.**
 
@@ -142,6 +154,8 @@
     else:
         print("perte")
     ```
+
+---
 
 !!! fox_exercice "Mentions au baccalauréat"
     **Écrire un programme qui prend une note sur 20 et affiche dans le terminal si l'étudiant a obtenu une mention :**
@@ -169,6 +183,8 @@
     else:
         print("Mention : Échec")
     ```
+
+---
 
 !!! fox_exercice "Parité d'un nombre"
     **Écrire un programme qui affiche dans le terminal si un nombre est pair ou impair.**
