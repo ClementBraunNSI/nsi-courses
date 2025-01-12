@@ -427,25 +427,93 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ## Niveau Difficile
 
-**Écrire une fonction `compter_voyelles` qui prend une liste de chaînes de caractères et renvoie le nombre total de voyelles présentes dans toutes les chaînes.**
-*Exemple :*
-*compter_voyelles([“chat”, “chien”]) doit renvoyer 3.*
+!!! fox_exercice "Compteur de voyelles"
+    **Écrire une fonction `compter_voyelles` qui prend une liste de chaînes de caractères et renvoie le nombre total de voyelles présentes dans toutes les chaînes.**
+    *Exemple :*
+    ```python
+    >>> compter_voyelles(["chat", "chien"])
+    3
+    >>> compter_voyelles(["bonjour", "python"])
+    4
+    ```
 
----
+??? fox_correction "Correction"
+    ```python
+    def compter_voyelles(liste:list)->int:
+        voyelles = "aeiouyAEIOUY"
+        nombre_voyelles = 0
+        for mot in liste:
+            for lettre in mot:
+                if lettre in voyelles:
+                    nombre_voyelles += 1
+        return nombre_voyelles
+    ```
 
-**Écrire une fonction `valeurs_en_double` qui prend une liste et renvoie une nouvelle liste contenant uniquement les éléments qui apparaissent plus d’une fois (sans répétitions supplémentaires).**
-*Exemple :*
-*valeurs_en_double([1, 2, 2, 3, 4, 4, 5]) doit renvoyer [2, 4].*
+!!! fox_exercice "Éléments en double"
+    **Écrire une fonction `valeurs_en_double` qui prend une liste et renvoie une nouvelle liste contenant uniquement les éléments qui apparaissent plus d'une fois (sans répétitions supplémentaires).**
+    *Exemple :*
+    ```python
+    >>> valeurs_en_double([1, 2, 2, 3, 4, 4, 5])
+    [2, 4]
+    >>> valeurs_en_double(["a", "b", "a", "c", "b", "d"])
+    ["a", "b"]
+    ```
 
----
+??? fox_correction "Correction"
+    ```python
+    def valeurs_en_double(liste:list)->list:
+        doublons = []
+        deja_vus = []
+        for elt in liste:
+            if elt in deja_vus and elt not in doublons:
+                doublons.append(elt)
+            else:
+                deja_vus.append(elt)
+        return doublons
+    ```
 
-**Écrire une fonction `indice_element` qui prend une liste et un élément, et renvoie l’indice de la première occurrence de cet élément dans la liste, ou -1 s’il n’est pas présent.**
-*Exemple :*
-*indice_element([10, 20, 30], 20) doit renvoyer 1.*
+!!! fox_exercice "Recherche d'indice"
+    **Écrire une fonction `indice_element` qui prend une liste et un élément, et renvoie l'indice de la première occurrence de cet élément dans la liste, ou -1 s'il n'est pas présent.**
+    *Exemple :*
+    ```python
+    >>> indice_element([10, 20, 30], 20)
+    1
+    >>> indice_element([10, 20, 30], 40)
+    -1
+    ```
 
----
+??? fox_correction "Correction"
+    ```python
+    def indice_element(liste:list, valeur:int)->int:
+        i = 0
+        while i < len(liste) and liste[i] != valeur:
+            i += 1
+        if i == len(liste):
+            return -1
+        return i
+    ```
 
-**Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**
-*Exemple :*
-*fusionner_sans_doublons([1, 2, 3], [2, 3, 4]), cela doit renvoyer [1, 2, 3, 4].*
-*fusionner_sans_doublons(['a', 'b'], ['b', 'c', 'a']), cela doit renvoyer ['a', 'b', 'c'].*
+!!! fox_exercice "Fusion sans doublons"
+    **Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.**
+    *Exemple :*
+    ```python
+    >>> fusionner_sans_doublons([1, 2, 3], [2, 3, 4])
+    [1, 2, 3, 4]
+    >>> fusionner_sans_doublons(['a', 'b'], ['b', 'c', 'a'])
+    ['a', 'b', 'c']
+    ```
+
+??? fox_correction "Correction"
+    ```python
+    def fusionner_sans_doublons(liste1:list, liste2:list)->list:
+        resultat = []
+        # On ajoute les éléments de la première liste
+        for elt in liste1:
+            if elt not in resultat:
+                resultat.append(elt)
+        # On ajoute les éléments de la deuxième liste
+        for elt in liste2:
+            if elt not in resultat:
+                resultat.append(elt)
+        return resultat
+    ```
