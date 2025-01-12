@@ -46,8 +46,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ## Niveau Facile
 
 !!! fox_exercice "Somme d'éléments"
-
-      **Écrire une fonction `somme_elements` qui prend une liste de nombres en paramètre et renvoie la somme de tous les éléments.**  
+      **Écrire une fonction `somme_elements` qui prend une liste de nombres en paramètres et renvoie la somme de tous les éléments.**  
       *Exemple :*  
       *somme_elements([1, 2, 3, 4]) doit renvoyer 10.*
 
@@ -64,8 +63,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Compter les nombres pairs"
-    **Écrire une fonction `compter_pairs` qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.**
-    
+    **Écrire une fonction `compter_pairs` qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.**  
     *Exemple :*
     ```python
       >>> compter_pairs([1,2,3,4,5])
@@ -84,7 +82,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Longueur des chaînes"
-    **Écrire une fonction `longueur_chaines` qui prend une liste de chaînes de caractères et renvoie une liste contenant la longueur de chaque chaîne.**
+    **Écrire une fonction `longueur_chaines` qui prend une liste de chaînes de caractères et renvoie une liste contenant la longueur de chaque chaîne.**  
     *Exemple :*
     ```python
     >>> longueur_chaines(["abc", "de", "fghi"])
@@ -104,7 +102,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Produit d'éléments"
-    **Écrire une fonction `produit_elements` qui prend une liste d'entiers et renvoie le produit de tous les éléments. Attention aux cas où la liste est vide.**
+    **Écrire une fonction `produit_elements` qui prend une liste d'entiers et renvoie le produit de tous les éléments. Attention aux cas où la liste est vide.**  
     *Exemple :*
     ```python
     >>> produit_elements([2, 3, 4])
@@ -127,7 +125,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Compter les occurrences"
-    **Écrire une fonction `compter_occurrences` qui prend une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**
+    **Écrire une fonction `compter_occurrences` qui prend une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.**  
     *Exemple :*
     ```python
     >>> compter_occurrences([1, 2, 2, 3, 2], 2)
@@ -147,7 +145,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice_important "Recherche d'un élément : ==Algorithme à connaître=="
-    **Écrire une fonction `presence` qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
+    **Écrire une fonction `presence` qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**  
     *Exemple :*
     ```python
     >>> presence(3, [1, 2, 3, 4])
@@ -169,7 +167,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Calcul de moyenne"
-    **Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans cette liste.**
+    **Écrire une fonction `moyenne` qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans cette liste.**  
     *Exemple :*
     ```python
     >>> moyenne([1, 2, 3, 4, 5])
@@ -194,7 +192,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ## Niveau Intermédiaire
 
 !!! fox_exercice "Filtrer les nombres positifs"
-    **Écrire une fonction `filtrer_positifs` qui prend une liste de nombres et renvoie une nouvelle liste contenant uniquement les nombres positifs.**
+    **Écrire une fonction `filtrer_positifs` qui prend une liste de nombres et renvoie une nouvelle liste contenant uniquement les nombres positifs.**  
     *Exemple :*
     ```python
     >>> filtrer_positifs([-1, 0, 3, -7, 8])
@@ -214,7 +212,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice_important "Maximum d'une liste : ==Algorithme à connaître=="
-    **Écrire une fonction `maximum` qui prend une liste d'entiers prévue non vide et renvoie l'entier maximum.**
+    **Écrire une fonction `maximum` qui prend une liste d'entiers prévue non vide et renvoie l'entier maximum.**  
     *Exemple :*
     ```python
     >>> maximum([3, 1, 9, 2])
@@ -236,7 +234,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 --- 
 
 !!! fox_exercice_important "Minimum d'une liste : ==Algorithme à connaître=="
-    **Écrire une fonction `minimum` qui prend une liste d'entiers et renvoie l'entier minimum.**
+    **Écrire une fonction `minimum` qui prend une liste d'entiers et renvoie l'entier minimum.**  
     *Exemple :*
     ```python
     >>> minimum([3, 1, 9, 2])
@@ -258,7 +256,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Concaténer des chaînes"
-    **Écrire une fonction `concatener_chaines` qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.**
+    **Écrire une fonction `concatener_chaines` qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.**  
     *Exemple :*
     ```python
     >>> concatener_chaines(["Bonjour", " ", "le", " ", "monde"])
@@ -277,7 +275,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Inverser une liste"
-    **Écrire une fonction `inverser_liste` qui prend une liste et renvoie une nouvelle liste avec les éléments dans l'ordre inverse.**
+    **Écrire une fonction `inverser_liste` qui prend une liste et renvoie une nouvelle liste avec les éléments dans l'ordre inverse.**  
     *Exemple :*
     ```python
     >>> inverser_liste([1, 2, 3])
@@ -296,7 +294,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 ---
 
 !!! fox_exercice "Valeurs uniques"
-    **Écrire une fonction `valeurs_uniques` qui prend une liste et renvoie une nouvelle liste contenant les éléments sans doublons (dans l'ordre d'apparition).**
+    **Écrire une fonction `valeurs_uniques` qui prend une liste et renvoie une nouvelle liste contenant les éléments sans doublons (dans l'ordre d'apparition).**  
     *Exemple :*
     ```python
     >>> valeurs_uniques([1, 2, 2, 3, 4, 4])
@@ -317,7 +315,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 !!! fox_exercice "Séparer pairs et impairs"
     **Écrire une fonction `separer_pairs_impairs` qui prend une liste d'entiers et renvoie deux listes : une avec les éléments pairs et une autre avec les éléments impairs.**
-    *Exemple :*
+    *Exemple :*  
     ```python
     >>> separer_pairs_impairs([1, 2, 3, 4, 5])
     ([2, 4], [1, 3, 5])
@@ -338,7 +336,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
-**Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.**
+**Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.**  
 *Exemple :*
 *diviseurs(6) doit renvoyer [1, 2, 3, 6] (car 1, 2, 3 et 6 sont les diviseurs de 6).*
 *diviseurs(10) doit renvoyer [1, 2, 5, 10] (car 1, 2, 5 et 10 sont les diviseurs de 10).*
@@ -356,7 +354,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ---
 
-**Écrire une fonction `est_croissante` qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.**
+**Écrire une fonction `est_croissante` qui prend une liste d’entiers en paramètre et renvoie True si les éléments de la liste sont dans l’ordre croissant, False sinon.**  
 *Exemple :*
 *est_croissante([1, 2, 3, 4]) doit renvoyer True.*
 *est_croissante([1, 3, 2, 4]) doit renvoyer False.*
@@ -372,7 +370,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     ```
 ---
 
-**Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.**
+**Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.**  
 *Exemple :*
 *echange([1, 2, 3, 4], 1, 2), cela doit modifier la liste pour donner [1, 3, 2, 4].*
 *echange([5, 10, 15], 0, 2), cela doit modifier la liste pour donner [15, 10, 5].*
