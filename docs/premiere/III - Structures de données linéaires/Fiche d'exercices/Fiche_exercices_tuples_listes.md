@@ -193,129 +193,147 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
 
 ## Niveau Intermédiaire
 
-**Écrire une fonction `filtrer_positifs` qui prend une liste de nombres et renvoie une nouvelle liste contenant uniquement les nombres positifs.**  
-*Exemple :*  
-*filtrer_positifs([-1, 0, 3, -7, 8]) doit renvoyer [3, 8].*
+!!! fox_exercice "Filtrer les nombres positifs"
+    **Écrire une fonction `filtrer_positifs` qui prend une liste de nombres et renvoie une nouvelle liste contenant uniquement les nombres positifs.**
+    *Exemple :*
+    ```python
+    >>> filtrer_positifs([-1, 0, 3, -7, 8])
+    [3, 8]
+    ```
 
 ??? fox_correction "Correction"
-
     ```python
-    def filtrer_positifs(liste:list)->int:
-      positifs = []
-      for elt in liste:
-         if elt > 0:
-            positifs.append(elt)
-      return positifs
+    def filtrer_positifs(liste:list)->list:
+        positifs = []
+        for elt in liste:
+            if elt > 0:
+                positifs.append(elt)
+        return positifs
     ```
 
 ---
 
-==***🦊 Algorithme à connaître 🦊***==
-**Écrire une fonction `maximum` qui prend une liste d'entiers prévue non vide et renvoie l'entier maximum.**  
-*Exemple :*  
-*max_et_min([3, 1, 9, 2]) doit renvoyer 9.*
+!!! fox_exercice_important "Maximum d'une liste : ==Algorithme à connaître=="
+    **Écrire une fonction `maximum` qui prend une liste d'entiers prévue non vide et renvoie l'entier maximum.**
+    *Exemple :*
+    ```python
+    >>> maximum([3, 1, 9, 2])
+    9
+    ```
 
-??? fox_correction "Correction"
-
-   Comme on ne sait pas la composition de nos listes, pour éviter des soucis, on initialise notre maximum à la première valeur de la liste.  
-   Exemple, si l'on met 0 à maximum et que la liste est composée de négatifs, on ne trouvera jamais l'élément maximum.  
-
+??? fox_exercice_important_correction "Correction"
+    Comme on ne sait pas la composition de nos listes, pour éviter des soucis, on initialise notre maximum à la première valeur de la liste.
+    Exemple, si l'on met 0 à maximum et que la liste est composée de négatifs, on ne trouvera jamais l'élément maximum.
     ```python
     def maximum(liste:list)->int:
-      maxi = liste[0]
-      for elt in liste:
-         if elt > maximum:
-            maximum = elt
-      return maximum
+        maxi = liste[0]
+        for elt in liste:
+            if elt > maxi:
+                maxi = elt
+        return maxi
     ```
 
----
+--- 
 
-==***🦊 Algorithme à connaître 🦊***==
-**Écrire une fonction `minimum` qui prend une liste d'entiers et renvoie l'entier minimum.**  
-*Exemple :*  
-*max_et_min([3, 1, 9, 2]) doit renvoyer 1.*
+!!! fox_exercice_important "Minimum d'une liste : ==Algorithme à connaître=="
+    **Écrire une fonction `minimum` qui prend une liste d'entiers et renvoie l'entier minimum.**
+    *Exemple :*
+    ```python
+    >>> minimum([3, 1, 9, 2])
+    1
+    ```
 
-??? fox_correction "Correction"
-
-   Comme on ne sait pas la composition de nos listes, pour éviter des soucis, on initialise notre minimum à la première valeur de la liste.  
-   Exemple, si l'on met une valeur arbitraire et que la liste est composée de nombres supérieurs à celui-ci, on ne trouvera jamais l'élément minimum.  
-
+??? fox_exercice_important_correction "Correction"
+    Comme on ne sait pas la composition de nos listes, pour éviter des soucis, on initialise notre minimum à la première valeur de la liste.
+    Exemple, si l'on met une valeur arbitraire et que la liste est composée de nombres supérieurs à celui-ci, on ne trouvera jamais l'élément minimum.
     ```python
     def minimum(liste:list)->int:
-      mini = liste[0]
-      for elt in liste:
-         if elt < mini:
-            mini = elt
-      return mini
+        mini = liste[0]
+        for elt in liste:
+            if elt < mini:
+                mini = elt
+        return mini
     ```
 
 ---
 
-**Écrire une fonction `concatener_chaines` qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.**  
-*Exemple :*  
-*concatener_chaines(["Bonjour", " ", "le", " ", "monde"]) doit renvoyer "Bonjour le monde".*
+!!! fox_exercice "Concaténer des chaînes"
+    **Écrire une fonction `concatener_chaines` qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.**
+    *Exemple :*
+    ```python
+    >>> concatener_chaines(["Bonjour", " ", "le", " ", "monde"])
+    "Bonjour le monde"
+    ```
 
 ??? fox_correction "Correction"
-
     ```python
-    def concatener_chaines(liste:list)->int:
-      concatenation = ""
-      for chaine in liste:
-         concatenation = concatenation + chaine + " "
-      return concatenation
+    def concatener_chaines(liste:list)->str:
+        concatenation = ""
+        for chaine in liste:
+            concatenation = concatenation + chaine
+        return concatenation
     ```
 
 ---
 
-**Écrire une fonction `inverser_liste` qui prend une liste et renvoie une nouvelle liste avec les éléments dans l'ordre inverse.**  
-*Exemple :*  
-*inverser_liste([1, 2, 3]) doit renvoyer [3, 2, 1].*
-
-??? fox_correction "Correction"
-
+!!! fox_exercice "Inverser une liste"
+    **Écrire une fonction `inverser_liste` qui prend une liste et renvoie une nouvelle liste avec les éléments dans l'ordre inverse.**
+    *Exemple :*
     ```python
-    def inverser_liste(liste:list)->int:
-      liste_inversee = []
-      for elt in liste:
-         liste_inversee = elt + liste_inversee
-      return liste_inversee
+    >>> inverser_liste([1, 2, 3])
+    [3, 2, 1]
     ```
----
-
-**Écrire une fonction `valeurs_uniques` qui prend une liste et renvoie une nouvelle liste contenant les éléments sans doublons (dans l'ordre d'apparition).**  
-*Exemple :*  
-*valeurs_uniques([1, 2, 2, 3, 4, 4]) doit renvoyer [1, 2, 3, 4].*
 
 ??? fox_correction "Correction"
-
     ```python
-    def valeurs_uniques(liste:list)->int:
-      liste_valeurs = []
-      for elt in liste:
-         if elt not in liste_valeurs:
-            liste_valeurs.append(elt)
-      return liste_valeurs
+    def inverser_liste(liste:list)->list:
+        liste_inversee = []
+        for i in range(len(liste)-1, -1, -1):
+            liste_inversee.append(liste[i])
+        return liste_inversee
     ```
 
 ---
 
-**Écrire une fonction `separer_pairs_impairs` qui prend une liste d'entiers et renvoie deux listes : une avec les éléments pairs et une autre avec les éléments impairs.**  
-*Exemple :*  
-*separer_pairs_impairs([1, 2, 3, 4, 5]) doit renvoyer ([2, 4], [1, 3, 5]).*
+!!! fox_exercice "Valeurs uniques"
+    **Écrire une fonction `valeurs_uniques` qui prend une liste et renvoie une nouvelle liste contenant les éléments sans doublons (dans l'ordre d'apparition).**
+    *Exemple :*
+    ```python
+    >>> valeurs_uniques([1, 2, 2, 3, 4, 4])
+    [1, 2, 3, 4]
+    ```
 
 ??? fox_correction "Correction"
-
     ```python
-    def separer_pairs_impairs(liste:list)->int:
-      pairs = []
-      impairs = []
-      for elt in liste:
-         if elt % 2 == 0:
-            pairs.append(elt)
-         else:
-            impairs.append(elt)
-      return pairs, impairs
+    def valeurs_uniques(liste:list)->list:
+        liste_valeurs = []
+        for elt in liste:
+            if elt not in liste_valeurs:
+                liste_valeurs.append(elt)
+        return liste_valeurs
+    ```
+
+---
+
+!!! fox_exercice "Séparer pairs et impairs"
+    **Écrire une fonction `separer_pairs_impairs` qui prend une liste d'entiers et renvoie deux listes : une avec les éléments pairs et une autre avec les éléments impairs.**
+    *Exemple :*
+    ```python
+    >>> separer_pairs_impairs([1, 2, 3, 4, 5])
+    ([2, 4], [1, 3, 5])
+    ```
+
+??? fox_correction "Correction"
+    ```python
+    def separer_pairs_impairs(liste:list)->tuple:
+        pairs = []
+        impairs = []
+        for elt in liste:
+            if elt % 2 == 0:
+                pairs.append(elt)
+            else:
+                impairs.append(elt)
+        return pairs, impairs
     ```
 
 ---
