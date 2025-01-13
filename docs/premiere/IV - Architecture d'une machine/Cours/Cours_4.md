@@ -95,6 +95,7 @@ En adossant ou en posant une torche de redstone sur un bloc, si ce bloc reçoit 
       1. Construisez une porte AND.
       2. Retirez la torche de redstone sur le bloc de sortie pour inverser le signal.
 
+---
 
 !!! redstone_exo Porte XOR
     La porte XOR correspond au **ou exclusif**.
@@ -104,6 +105,11 @@ En adossant ou en posant une torche de redstone sur un bloc, si ce bloc reçoit 
       2. Réaliser la construction en jeu.
 
 ---
+
+!!! redstone_exo "Schéma combiné"
+    Réaliser les schémas logiques des expressions booléennes suivantes (indication : chacune des entrées A, B et C sont des leviers ou des boutons):
+    - A **and** **not** B
+    - A **or** C **and** **B**
 
 ## Pour aller plus loin : Défis avancés
 
@@ -119,3 +125,11 @@ En adossant ou en posant une torche de redstone sur un bloc, si ce bloc reçoit 
     Voici le schéma logique d'un demi-additionneur : 
 
     ![demi-additionneur](./demi-additionneur.png)
+
+
+## Correction 
+
+Pour réaliser le demi-additionneur, il faudra que vous ayiez réussi à construire les deux portes précédentes.
+Si besoin, voila la correction :
+
+![Correction de l'exercice](http://www.minecraft101.net/redstone/redstone-logic.html)
