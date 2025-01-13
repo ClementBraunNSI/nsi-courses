@@ -69,12 +69,11 @@ En adossant ou en posant une torche de redstone sur un bloc, si ce bloc reçoit 
 
     - Placez un levier, un bloc et une torche de redstone.
     - Reliez une lampe au circuit.
-    - **Question :** Qu'observez-vous lorsque vous actionnez le levier ?
 
 !!! redstone_exo Porte AND
 
     - Placez deux leviers comme entrées.
-    - Reliez-les à un circuit qui inclut deux torches de redstone pour inverser les signaux.
+    - Reliez-les à un circuit qui inclut deux torches de redstone sur 3 blocs et une poudre entre les deux pour relier les deux torches.
     - Ajoutez une troisième torche sur un bloc pour produire la sortie.
     - **Question :** Quand la lampe s’allume-t-elle ?
 
