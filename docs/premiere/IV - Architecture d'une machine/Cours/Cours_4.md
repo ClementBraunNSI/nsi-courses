@@ -91,17 +91,14 @@ En adossant ou en posant une torche de redstone sur un bloc, si ce bloc reçoit 
 !!! redstone_exo Porte NAND
     La porte NAND correspond à **l'inverse d'une porte AND**.
     - Une lampe de redstone reliée à une porte NAND s’éteint uniquement si **au moins une entrée est allumée**, sinon s'allume.
-    
     - **Consigne :**
       1. Construisez une porte AND.
-      2. Ajoutez une torche de redstone sur le bloc de sortie pour inverser le signal.
-      - **Question :** Quand la lampe s’éteint-elle ?
+      2. Retirez la torche de redstone sur le bloc de sortie pour inverser le signal.
 
 
 !!! redstone_exo Porte XOR
-
     La porte XOR correspond au **ou exclusif**.
-    - Une lampe de redstone reliée à une porte XOR est une porte correspondant au **ou exclusif** : elle s'éteint si **toutes les entrées sont allumées ou éteintes** mais s'allume si
+    - Une lampe de redstone reliée à une porte XOR est une porte correspondant au **ou exclusif** : elle s'éteint si **toutes les entrées sont activées ou fermées** mais s'allume si une seule est activée.
     - **Consigne :**
       1. Déduire le schéma logique sur papier.
       2. Réaliser la construction en jeu.
