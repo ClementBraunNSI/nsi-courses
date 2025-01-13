@@ -167,11 +167,11 @@ Il existe plusieurs types de graphes qui correspondent à des situations particu
 On a vu précédement que ces graphes pouvaient modéliser des situations de la vie réelle.
 Pour ce faire, on dispose de quelques propriétés sur les graphes.
 
-**Le centre d'un graphe** est le sommet (ou le groupe de sommet) étant relié à tous les autres par une distance minimale.
+**Le centre d'un graphe** est le sommet (ou le groupe de sommets) étant relié à tous les autres par une distance minimale.
 
 **Le rayon d'un graphe** correspond à la plus petite distance entre un sommet qui est le centre et les sommets les plus excentrés.
 
-**Le rayon d'un graphe** correspond à la plus petite distance reliant deux sommets excentrés (comme pour un cercle).
+**Le diamètre d'un graphe** correspond à la plus petite distance reliant deux sommets excentrés (comme pour un cercle).
 
 Dans notre situation des réseaux sociaux, le centre d'un graphe correspondant est la personne qui est amie avec le plus de personnes par exemple.
 
