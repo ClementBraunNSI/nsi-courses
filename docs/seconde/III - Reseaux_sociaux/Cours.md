@@ -133,6 +133,35 @@ ________________________________________________________________________________
 Pour se faire, il doit renseigner à minima son adresse mail et son mot de passe dans des champs qui sont spécialement choisis.
 On nomme cette étape **l'authentification**.
 
+## Les fils d'actualité et les messages privés
+
+Dans tous les réseaux sociaux, tous les utilisateurs peuvent discuter par divers moyens : fils d'actualités, messages privés, groupes privés ou publics.
+Comme énoncé au début de ce cours, tous les utilisateurs sont responsables de leurs mots et de leurs contenus sur les divers réseaux sociaux.
+
+Le fait de harceler sur internet nommé **cyber-harcèlement** est répréhensible par la loi. On parle de l'article 222-33-2-2 du code pénal.
+
+!!! Danger
+    Le fait de harceler une personne par des propos ou comportements répétés ayant pour objet ou pour effet une dégradation de ses conditions de vie se traduisant par une altération de sa santé physique ou mentale est puni d'un an d'emprisonnement et de 15 000 € d'amende lorsque ces faits ont causé une incapacité totale de travail inférieure ou égale à huit jours ou n'ont entraîné aucune incapacité de travail.
+    **...**
+    4° Lorsqu'ils ont été commis par l'utilisation d'un service de communication au public en ligne ou par le biais d'un support numérique ou électronique ;
+
+Il existe différentes formes de **cyberviolence**.
+
+**Définir ces différentes formes de cyberviolences :**
+
+* Harcèlement en ligne
+* Discrimination en ligne
+* Usurpation d'identité
+* Diffamation
+* Cyberintimidation
+
+Il existe diverses ressources disponibles pour lutter contre les cyber-violences comme la plateforme **Pharos**. Elle permet de réaliser des signalements pour des contenus illicites ou illégaux publiés sur les réseaux sociaux.
+Si vous êtes vous même victime de cyber-harcèlement, vous pouvez contacter le **3018** qui est le numéro national contre le harcèlement en ligne.
+
+La cyberviolence est un des plus grands enjeux de notre société car celle-ci est omniprésente. Il est important de savoir l'identifier et de savoir comment lutter contre celle-ci.
+
+**Activité : activité Pix sur les réseaux sociaux**
+
 ## Proximité des utilisateurs : Notion de Graphe et expérience de Milgram
 
 Précédemment, on parlait d'un réseau social comme étant une manière de relier les personnes dans le monde.
@@ -150,8 +179,6 @@ Il existe plusieurs types de graphes qui correspondent à des situations particu
 
 **Indiquer sur le dessin ci-dessous, quel graphe est orienté et lequel est non orienté.**
 ![rs](rs.png)
-
-**Activité : À l'aide de ce texte, dessiner le graphe correspondant:**
 
 **Vous avez un groupe de 6 amis : Alice, Bob, Charlie, David, Emma et Frank. Vous devez modéliser leurs amitiés en utilisant un graphe. Un graphe est constitué de sommets (les personnes) et d’arêtes (les relations d’amitié). Voici les informations sur leurs amitiés :**
 
@@ -198,32 +225,3 @@ Vous aurez besoin de plusieurs intermédiaires :
 ![milgram](g_milgram.png)
 
 **Activité : Trouvez un chemin entre vous et Bill Gates, le directeur de Microsoft.**
-
-## Les fils d'actualité et les messages privés
-
-Dans tous les réseaux sociaux, tous les utilisateurs peuvent discuter par divers moyens : fils d'actualités, messages privés, groupes privés ou publics.
-Comme énoncé au début de ce cours, tous les utilisateurs sont responsables de leurs mots et de leurs contenus sur les divers réseaux sociaux.
-
-Le fait de harceler sur internet nommé **cyber-harcèlement** est répréhensible par la loi. On parle de l'article 222-33-2-2 du code pénal.
-
-!!! Danger
-    Le fait de harceler une personne par des propos ou comportements répétés ayant pour objet ou pour effet une dégradation de ses conditions de vie se traduisant par une altération de sa santé physique ou mentale est puni d'un an d'emprisonnement et de 15 000 € d'amende lorsque ces faits ont causé une incapacité totale de travail inférieure ou égale à huit jours ou n'ont entraîné aucune incapacité de travail.
-    **...**
-    4° Lorsqu'ils ont été commis par l'utilisation d'un service de communication au public en ligne ou par le biais d'un support numérique ou électronique ;
-
-Il existe différentes formes de **cyberviolence**.
-
-**Définir ces différentes formes de cyberviolences :**
-
-* Harcèlement en ligne
-* Discrimination en ligne
-* Usurpation d'identité
-* Diffamation
-* Cyberintimidation
-
-Il existe diverses ressources disponibles pour lutter contre les cyber-violences comme la plateforme **Pharos**. Elle permet de réaliser des signalements pour des contenus illicites ou illégaux publiés sur les réseaux sociaux.
-Si vous êtes vous même victime de cyber-harcèlement, vous pouvez contacter le **3018** qui est le numéro national contre le harcèlement en ligne.
-
-La cyberviolence est un des plus grands enjeux de notre société car celle-ci est omniprésente. Il est important de savoir l'identifier et de savoir comment lutter contre celle-ci.
-
-**Activité : activité Pix sur les réseaux sociaux**
