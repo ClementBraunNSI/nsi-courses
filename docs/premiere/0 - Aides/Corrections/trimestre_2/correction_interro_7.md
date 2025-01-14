@@ -7,7 +7,8 @@
 
 1. Un dictionnaire est un couple (... : ...). À quoi correspondent chacun des ... ?
 
-!!! fox_correction_eval '{... / ...}
+!!! fox_correction_eval "{... / ...}"
+
     Couple clef / valeur
 
 
@@ -17,13 +18,17 @@
 |-----|-----------|------------|------|------------------|
 |Vannes|56000, 56001,56002,56003|Morbihan|Bretagne|54420|
 
-!!! fox_correction_eval 'Dictionnaire Vannes'
+!!! fox_correction_eval "Dictionnaire Vannes"
     ```python
-        ville = {'nom':'Vannes','code_postal':[56000,56001,56002,56003], 'departement':'Morbihan', 'region':'Bretagne','nb_habitants':54420}
+        ville = {'nom':'Vannes',
+                'code_postal':[56000,56001,56002,56003], 
+                'departement':'Morbihan',
+                'region':'Bretagne',
+                'nb_habitants':54420}
     ```
 3. Donner l'instruction python qui permet de changer le nombre d'habitant de 54420 à 54532.
 
-!!! fox_correction_eval
+!!! fox_correction_eval "Changer le nombre d'habitants"
     ```python
         ville['nb_habitants'] = 54532
     ```
