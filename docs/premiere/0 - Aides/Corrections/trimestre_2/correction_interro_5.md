@@ -1,4 +1,4 @@
-# Interrogation : Boucles en python
+# Interrogation : Listes en python
 
 **L'évaluation porte sur 3 exercices indépendants.**
 **Les exercices sont notés sur 18 et la rigueur, rédaction et justifications sont notés sur 2 points.**
