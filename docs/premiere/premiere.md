@@ -12,8 +12,8 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
   
 - [Interrogation 5 : Listes](./0%20-%20Aides/Corrections/trimestre_2/correction_interro_5.md)
 
-- [interrogation 7 : Dictionnaires](./0%20-%20Aides/Corrections/trimestre_2/correction_interro_7.md)
-- 
+- [Interrogation 7 : Dictionnaires](./0%20-%20Aides/Corrections/trimestre_2/correction_interro_7.md)
+  
 ## Corrections Devoirs Surveillés
 
 - [DS 1 : binaire et base de programmation](./0%20-%20Aides/Corrections/trimestre_1/correction_ds_1.md)
