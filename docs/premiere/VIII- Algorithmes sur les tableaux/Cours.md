@@ -80,7 +80,9 @@ On va avoir besoin de **trois fonctions** :
 
 ## Tri par Insertion
 
-Le tri par insertion fonctionne comme le tri de cartes à jouer : on prend une carte, on la place au bon endroit dans une main déjà triée.
+On considère que la liste à trier est composée d'**une partie triée composée d'un élément** et **une partie non triée**.  
+On va chercher à chaque itération `i` du tri, on va chercher à déplacer la valeur que l'on retrouve à la position `i` à sa bonne position dans la zone triée.  
+Comme les valeurs de la zone non triée sont plus grandes que toutes les valeurs de la zone triée car sinon elles auraient été selectionnées, cette valeur se rajoute à la zone triée et ainsi de suite.  
 
 ### Exemple Illustratif
 
@@ -95,6 +97,46 @@ Liste initiale : [5, 2, 4, 6, 1, 3]
 | Étape 4 | [1, 2, 4, 5, 6, 3] |       1        |
 | Étape 5 | [1, 2, 3, 4, 5, 6] |       3        |
 |  Final  | [1, 2, 3, 4, 5, 6] |       -        |
+
+### En Python
+
+On va avoir besoin de **trois fonctions** :
+
+- une fonction `echange_valeur` qui échange la valeur à l'indice du début de la zone non triée avec celle qui est la plus petite.
+- une fonction `insertion` qui échange les valeurs dans la partie triée petit à petit jusqu'à trouver la bonne position.
+- une fonction `tri_insertion` qui va réaliser le tri et renvoyer la permutation triée de la liste.
+
+!!! fox_exercice_important "Échange de valeur à l'aide des indices"
+    **Écrire une fonction `echange_valeur` qui prend en paramètre une liste et deux indices et échange les positions des deux valeurs dans la liste**  
+    *Attention, cette fonction fait une modification par effet de bord et ne renvoie rien.*  
+    *Exemple:*  
+    ```python
+    >>>liste = [1,5,2,4,0,8]
+    >>>echange_valeur(liste, 0, 4)
+    >>>print(liste)
+    [0,5,2,4,1,8]
+    ```
+
+!!! for_exercice_important "Insertion d'une valeur dans une zone triée"
+    **Écrire une fonction `insertion_zone_triee` qui prend en paramètre une liste, et un indice correspondant à celui de la valeur qui est juste après la zone triée. Cette fonction échange la valeur à l'indice avec celles qui sont avant elles pour trouver sa bonne place.**
+    *Attention, cette fonction doit bien vérifier que les indices soient bien compris dans la liste pour éviter les erreurs de* ***Out Of Range****.*  
+    *Exemple:*  
+    ```python
+    >>>liste = [1,5,2,4,0,8]
+    >>>insertion_zone_triee(liste,2)
+    >>>print(liste)
+    [1,2,5,4,0,8]
+    ```
+
+!!! fox_exercice_important "Tri par sélection du minimum"
+    **Écrire une fonction `tri_insertion` qui prend en paramètre une liste et renvoie sa permutation triée.**  
+    *Attention, on ne doit pas modifier la liste passée en paramètre car cela pourrait la changer dans toute la suite du programme et il peut y avoir des cas d'usage où cette liste ne doit pas être modifiée.*  
+    *Exemple:*  
+    ```python
+    >>>liste = [1,5,2,4,0,8]
+    >>>print(tri_insertion(liste))
+    [0,1,2,4,5,8]
+    ```
 
 ## Tris Sans Comparaison
 
