@@ -86,13 +86,15 @@ Le tri par insertion fonctionne comme le tri de cartes à jouer : on prend une c
 
 Liste initiale : [5, 2, 4, 6, 1, 3]
 
-| Étapes | Liste en cours | Élément inséré |
-|:------:|:--------------:|:--------------:|
-| Début  | [5] | 2 |
-| Étape 1 | [2, 5] | 4 |
-| Étape 2 | [2, 4, 5] | 6 |
-| Étape 3 | [1, 2, 4, 5] | 3 |
-| Final   | [1, 2, 3, 4, 5, 6] | - |
+| Étapes  |   Liste en cours   | Élément inséré |
+|:-------:|:------------------:|:--------------:|
+|  Début  | [5, 2, 4, 6, 1, 3] |       -        |
+| Étape 1 | [2, 5, 4, 6, 1, 3] |       2        |
+| Étape 2 | [2, 4, 5, 6, 1, 3] |       4        |
+| Étape 3 | [2, 4, 5, 6, 1, 3] |       6        |
+| Étape 4 | [1, 2, 4, 5, 6, 3] |       1        |
+| Étape 5 | [1, 2, 3, 4, 5, 6] |       3        |
+|  Final  | [1, 2, 3, 4, 5, 6] |       -        |
 
 ## Tris Sans Comparaison
 
