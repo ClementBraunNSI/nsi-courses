@@ -1,5 +1,4 @@
 # Modalités de rendu : ***DM OBLIGATOIRE***  
-Ce DM sera à rendre pour le lundi 6 mai 2024 à 23:59 par mail à **clement.braun.etu@univ-lille.fr**.
 
 Le rendu contiendra : 
 - Le fichier python `mesure_tris.py` 
