@@ -142,11 +142,37 @@ On va avoir besoin de **trois fonctions** :
 
 ### Tri par Dénombrement
 
-Le tri par dénombrement est un algorithme de tri non comparatif qui se concentre sur le comptage des occurrences de chaque élément.  
-Son principe repose sur trois étapes essentielles :  
+Le tri par dénombrement est un algorithme de tri qui n'agit pas par comparaisons mais par comptage des éléments de la liste.
 
-- Premièrement, on parcourt le tableau initial pour déterminer la plage de valeurs des éléments.  
-- Deuxièmement, on crée un tableau de comptage où chaque index représente une valeur possible, et on incrémente un compteur correspondant à chaque fois qu'un élément est rencontré.  
-- Troisièmement, on reconstruit le tableau trié en utilisant ce tableau de comptage, en reproduisant chaque valeur selon son nombre d'occurrences.  
+Exemple : Dans la liste L **[3,2,1,2]**, on peut dénombrer les valeurs de cette manière : une occurence de 1, deux occurences de 2 et une occurence de 3.
 
-Cette méthode présente des conditions strictes : elle ne fonctionne qu'avec des données de type entier et nécessite une plage de valeurs limitée.
+*Principe de fonctionnement :*
+On considère la liste L précédente:
+
+* On créée une liste d'occurences contenant un nombre de 0 équivalent à la valeur maximale + 1 de la liste à trier et une liste vide qui contiendra, à la fin, les éléments de la liste de départ triés.
+
+
+    **L = [3, 2, 1, 2]
+    occurences = [0,0,0,0]
+    liste_triee = []**
+
+
+* On parcourt la liste L à trier et à chaque élément, on incrémente la valeur à l'indice du nombre rencontré dans la liste d'occurences.
+
+| itération | L                | occurences   |
+| --------- | ---------------- | ------------ |
+| 0         | [3,2,1,2]        | [0, 0, 0, 0] |
+| 1         | [**3**, 2, 1, 2] | [0, 0, 0, 1] |
+| 2         | [3, **2**, 1, 2] | [0, 0, 1, 1] |
+| 3         | [3, 2, **1**, 2] | [0, 1, 1, 1] |
+| 4         | [3, 2, 1, **2**] | [0, 1, 2, 1] |
+  
+
+* On peuple la liste vide de $x$ fois le nombre rencontré en balayant la liste d'occurences.
+
+| itération | occurences       | liste_triee |
+| --------- | ---------------- | ----------- |
+| 1         | [**0**, 1, 2, 1] | []          |
+| 2         | [0, **1**, 2, 1] | [1]         |
+| 3         | [0, 1, **2**, 1] | [1, 2, 2]   |
+| 4         | [0, 1, 2, **1**] | [1,2,2,3]   |
