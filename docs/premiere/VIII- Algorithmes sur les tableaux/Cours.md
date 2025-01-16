@@ -117,7 +117,7 @@ On va avoir besoin de **trois fonctions** :
     [0,5,2,4,1,8]
     ```
 
-!!! for_exercice_important "Insertion d'une valeur dans une zone triée"
+!!! fox_exercice_important "Insertion d'une valeur dans une zone triée"
     **Écrire une fonction `insertion_zone_triee` qui prend en paramètre une liste, et un indice correspondant à celui de la valeur qui est juste après la zone triée. Cette fonction échange la valeur à l'indice avec celles qui sont avant elles pour trouver sa bonne place.**
     *Attention, cette fonction doit bien vérifier que les indices soient bien compris dans la liste pour éviter les erreurs de* ***Out Of Range****.*  
     *Exemple:*  
