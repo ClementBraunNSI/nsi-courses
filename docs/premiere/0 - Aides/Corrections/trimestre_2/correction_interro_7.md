@@ -54,6 +54,7 @@
 ```
 
 !!! fox_correction_eval "Complétion de code"
+
     ```python
         def filtrer_dictionnaire(dico:dict, seuil:int) -> dict:
             resultat = {}
@@ -65,16 +66,18 @@
 
 ## Exercice 3 : Écriture de programmes (12 points)
 
-**Écrire une fonction compter_occurrences qui prend une liste et renvoie un dictionnaire où les clés sont les éléments de la liste et les valeurs sont leurs nombres d'occurrences.**
+**Écrire une fonction compter_occurrences qui prend une liste et renvoie un dictionnaire où les clés sont les éléments
+de la liste et les valeurs sont leurs nombres d'occurrences.**
 *Exemple :*
 *compter_occurrences(['pomme', 'banane', 'pomme', 'cerise', 'banane', 'pomme']) doit renvoyer {'pomme': 3, 'banane': 2, 'cerise': 1}*.
 
 !!! fox_correction_eval "Compter occurences"
+
     ```python
         def compter_occurences(liste: list)->dict:
             resultat = {}
             for i in liste:
-                if i not in dico:
+                if i not in resultat:
                     resultat[i] = 1
                 else:
                     resultat[i] = resultat[i] + 1
@@ -104,6 +107,7 @@
 ```
 
 !!! fox_correction_eval "Appréciations"
+
     ```python
         def notes_par_appreciations(notes:dict)->dict:
             appreciations = {'Insuffisant'=[],
@@ -131,6 +135,7 @@
 *trouver_max({'X1': 132000, 'Bayon': 25000, 'Paceman': 145000}) doit renvoyer 'Paceman'*.
 
 !!! fox_correction_eval "Voiture la plus kilométrée"
+
     ```python
         def kilometre_max(dico:dict)->str:
             kilometrage = 0
@@ -147,6 +152,7 @@
 *filtrer_par_cle({'a': 1, 'abc': 2, 'de': 3, 'fghi': 4}, 3) doit renvoyer {'abc': 2, 'fghi': 4}*.
 
 !!! fox_correction_eval "Filtrer les clefs"
+
     ```python
         def filtrer_par_clef(dico : dict, longueur:int)->dict:
             resultat = {}
