@@ -143,7 +143,7 @@ de la liste et les valeurs sont leurs nombres d'occurrences.**
             for modele in dico:
                 if dico[modele] > kilometrage:
                     kilometre = dico[modele]
-                    voiture = dico[modele]
+                    voiture = modele
             return voiture
     ```
 
