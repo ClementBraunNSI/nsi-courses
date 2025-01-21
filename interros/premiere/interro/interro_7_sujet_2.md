@@ -33,6 +33,13 @@ def filtrer_dictionnaire_inf(dico: dict, plafond: int) -> dict:
     return resultat
 ```
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## Exercice 3 : Écriture de programmes (12 points)
 
 **Écrire une fonction compter_lettres qui prend une chaîne de caractères et renvoie un dictionnaire où les clés sont les lettres de la chaîne et les valeurs sont leurs nombres d'occurrences (sans tenir compte de la casse).**
@@ -62,6 +69,6 @@ def filtrer_dictionnaire_inf(dico: dict, plafond: int) -> dict:
 *Exemple :*
 *score_min({'Alice': 850, 'Bob': 920, 'Charlie': 740}) doit renvoyer 'Charlie'*
 
-**Écrire une fonction fusionner_dicos qui prend deux dictionnaires et renvoie un nouveau dictionnaire contenant toutes les paires clé-valeur des deux dictionnaires. Si une clé est présente dans les deux dictionnaires, la valeur du second dictionnaire est conservée.**
+**Écrire une fonction filtrer_valeurs qui prend un dictionnaire et une valeur maximale, et renvoie un nouveau dictionnaire ne contenant que les valeurs inférieures à la valeur donnée.**
 *Exemple :*
-*fusionner_dicos({'a': 1, 'b': 2}, {'b': 3, 'c': 4}) doit renvoyer {'a': 1, 'b': 3, 'c': 4}*
+*filtrer_valeurs({'rouge': 100, 'vert': 50, 'bleu': 75, 'jaune': 25}, 60) doit renvoyer {'vert': 50, 'jaune': 25}*
