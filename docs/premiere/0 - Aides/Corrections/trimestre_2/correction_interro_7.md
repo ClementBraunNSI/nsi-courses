@@ -12,7 +12,7 @@
     Couple clef / valeur
 
 
-2. Créer le dictionnaire Python associé à cet objet :  
+2. Créer le dictionnaire Python associé à cet objet :
 
 |ville|code postal|departement|region|nombre d'habitants|
 |-----|-----------|------------|------|------------------|
@@ -21,7 +21,7 @@
 !!! fox_correction_eval "Dictionnaire Vannes"
     ```python
         ville = {'nom':'Vannes',
-                'code_postal':[56000,56001,56002,56003], 
+                'code_postal':[56000,56001,56002,56003],
                 'departement':'Morbihan',
                 'region':'Bretagne',
                 'nb_habitants':54420}
@@ -57,7 +57,7 @@
     ```python
         def filtrer_dictionnaire(dico:dict, seuil:int) -> dict:
             resultat = {}
-            for i in dico:
+            for i in resultat:
                 if dico[i] > seuil:
                     resultat[i] = dico[i]
             return resultat
@@ -94,11 +94,11 @@
 
 ```python
     >>> notes = {'Pierre': 15, 'Marie': 8, 'Jean': 13, 'Sophie': 17}
-    >>> notes_par_appreciation(notes)  
+    >>> notes_par_appreciation(notes)
     {
-         'Insuffisant': ['Marie'], 
-         'Bien': ['Jean'], 
-         'Très bien': ['Pierre'], 
+         'Insuffisant': ['Marie'],
+         'Bien': ['Jean'],
+         'Très bien': ['Pierre'],
          'Excellent': ['Sophie']
      }
 ```

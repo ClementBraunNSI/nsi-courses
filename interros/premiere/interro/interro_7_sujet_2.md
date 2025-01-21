@@ -5,7 +5,7 @@
 
 ## Exercice 1 : Questions de cours (2 points)
 
-1. Quelles sont les deux méthodes principales pour ajouter une nouvelle paire clé-valeur dans un dictionnaire ?
+1. Comment rajouter une clef dans un dictionnaire ? Donner l'instruction Python.
 2. Créer le dictionnaire Python associé à cet objet :
 
 |pays|capitale|population|continent|langues officielles|
@@ -69,6 +69,6 @@ def filtrer_dictionnaire_inf(dico: dict, plafond: int) -> dict:
 *Exemple :*
 *score_min({'Alice': 850, 'Bob': 920, 'Charlie': 740}) doit renvoyer 'Charlie'*
 
-**Écrire une fonction filtrer_valeurs qui prend un dictionnaire et une valeur maximale, et renvoie un nouveau dictionnaire ne contenant que les valeurs inférieures à la valeur donnée.**
-*Exemple :*
-*filtrer_valeurs({'rouge': 100, 'vert': 50, 'bleu': 75, 'jaune': 25}, 60) doit renvoyer {'vert': 50, 'jaune': 25}*
+**Écrire une fonction fusionner_dicos qui prend deux dictionnaires et renvoie un nouveau dictionnaire contenant toutes les paires clé-valeur des deux dictionnaires. Si une clé est présente dans les deux dictionnaires, la valeur du second dictionnaire est conservée.**
+**Exemple :**
+fusionner_dicos({'a': 1, 'b': 2}, {'b': 3, 'c': 4}) doit renvoyer {'a': 1, 'b': 3, 'c': 4}
