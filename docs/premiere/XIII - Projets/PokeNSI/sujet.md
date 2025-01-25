@@ -30,6 +30,13 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
 !!! fox_exercice "Recherche dans le Pokédex"
     **Créer la fonction `pokemon_dans_pokedex` qui prend en paramètre un nom de Pokémon (str) et renvoie le dictionnaire correspondant au Pokémon s'il existe dans le pokédex, None sinon.**
 
+!!! fox_exercice "Test du Pokédex"
+    **Tester vos fonctions de création du Pokédex :**
+    1. Créer le Pokédex vide
+    2. Remplir le Pokédex avec le fichier CSV fourni
+    3. Afficher tous les Pokémon du Pokédex pour vérifier leur importation
+    4. Tester la fonction `pokemon_dans_pokedex` avec "Pikachu" puis avec "Mewtwo"
+
 ## Le système de combat
 
 ### Les attaques
@@ -103,6 +110,14 @@ Avec :
 
     - Si le pokemon peut évoluer, alors on propose au joueur de le faire évoluer avec la fonction `evolution`
     - Augmente les stats du pokemon avec la fonction `augmenter_stats`
+  
+!!! fox_exercice "Test du système d'expérience"
+    **Tester le gain d'expérience et la montée de niveau :**
+    1. Créer un Pikachu niveau 1.
+    2. Attribuer 300 xp au Pikachu.
+    3. Utiliser la fonction `niveau_superieur` et vérifier qu'il passe bien niveau 2.
+    4. Mettre Pikachu niveau 25.
+    5. Utiliser la fonction `evolution` et vérifier, en indiquant le bon choix, qu'il devient bien un Raichu et que ses stats sont bien actualisées en fonction de son niveau.
 
 ### Combat complet
 
@@ -115,3 +130,10 @@ Avec :
     3. Appliquer les dégâts
     4. Déclarer un vainqueur quand un des Pokémon n'a plus de points de vie
     5. Attribuer de l'expérience au vainqueur si c'est le Pokémon du joueur
+
+!!! fox_exercice "Test d'un combat complet"
+    **Réaliser un combat entre deux Pokémon :**
+    1. Créer un Pikachu niveau 5 et un Bulbizarre niveau 5
+    2. Faire combattre ces deux Pokémon
+    3. Observer le déroulement du combat tour par tour
+    4. Vérifier que le vainqueur gagne bien de l'expérience
