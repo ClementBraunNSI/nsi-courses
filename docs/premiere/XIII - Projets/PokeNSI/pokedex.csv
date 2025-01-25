@@ -1,0 +1,11 @@
+nom,hp,atq,def,attaques,evolution,niveau_evolution,niveau,xp
+Pikachu,35,55,40,tonerre;queue de fer,Raichu,25,1,0
+Bulbizarre,45,49,49,fouet lianes;tranch'herbe,Herbizarre,16,1,0
+Herbizarre,60,62,63,fouet lianes;tranch'herbe,Florizarre,32,16,0
+Florizarre,80,82,83,fouet lianes;tranch'herbe,,0,32,0
+Raichu,60,90,55,tonerre;queue de fer,,0,25,0
+Salamèche,39,52,43,flammèche;griffe,Reptincel,16,1,0
+Reptincel,58,64,58,flammèche;griffe,Dracaufeu,36,16,0
+Dracaufeu,78,84,78,lance-flamme;griffe,,0,36,0
+Carapuce,44,48,65,pistolet à o;charge,Carabaffe,16,1,0
+Carabaffe,59,63,80,pistolet à o;charge,Tortank,36,16,0
