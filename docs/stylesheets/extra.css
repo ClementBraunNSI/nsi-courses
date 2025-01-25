@@ -3,6 +3,7 @@
     --md-admonition-icon--fox_exercice: url('../images/logo.png');
     --md-admonition-icon--redstone_exo : url('../images/Redstone_Dust.png');
     --md-admonition-icon--fox_exercice_important : url('../images/logo_important.png');
+    --md-admonition-icon--fox_exercice_test : url('../images/logo_4.png');
 
   }
   .md-typeset .admonition.fox_correction,
@@ -110,4 +111,23 @@
   .md-header__button.md-logo img, .md-header__button.md-logo svg {
     height: 2.4rem;
     width: 2.4rem;
+  }
+
+  .md-typeset .admonition.fox_exercice_test,
+  .md-typeset details.fox_exercice_test {
+    border-color: rgb(100, 193, 76);
+  }
+  .md-typeset .fox_exercice_test > .admonition-title,
+  .md-typeset .fox_exercice_test > summary {
+    background-color: rgba(100, 193, 76,0.2);
+  }
+  .md-typeset .fox_exercice_test > .admonition-title::before,
+  .md-typeset .fox_exercice_test > summary::before {
+    background-color: rgb(100, 193, 76);
+    height: 100%;
+    width: 5rem;
+    margin-left: -4.5%;
+    margin-top: -1%;
+    -webkit-mask-image: var(--md-admonition-icon--fox_exercice_test);
+            mask-image: var(--md-admonition-icon--fox_exercice_test);
   }

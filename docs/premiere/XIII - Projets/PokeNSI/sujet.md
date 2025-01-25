@@ -30,7 +30,7 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
 !!! fox_exercice "Recherche dans le Pokédex"
     **Créer la fonction `pokemon_dans_pokedex` qui prend en paramètre un nom de Pokémon (str) et renvoie le dictionnaire correspondant au Pokémon s'il existe dans le pokédex, None sinon.**
 
-!!! fox_exercice "Test du Pokédex"
+!!! fox_exercice_test "Test du Pokédex"
     **Tester vos fonctions de création du Pokédex :**
     1. Créer le Pokédex vide
     2. Remplir le Pokédex avec le fichier CSV fourni
@@ -72,6 +72,12 @@ Avec :
     2. Calculer les dégâts finaux selon la formule précédente
     3. Retirer les points de vie au défenseur
 
+!!! fox_exercice_test "Test d'une attaque"
+    1. Créer un Pikachu niveau 1.
+    2. Créer un Bulbizarre niveau 1.
+    3. Faire attaquer le Bulbizarre par le Pikachu grâce à son attaque `Tonnerre`.
+    4. Afficher les point de vie du Bulbizarre pour vérifier le bon fonctionnement.
+
 ### Interface de combat
 
 !!! fox_exercice "Affichage des attaques"
@@ -98,7 +104,7 @@ Avec :
     - Si le joueur indique `Oui`, alors cette fonction devra modifier le nom, l'attaque, la défense, le niveau pour sa prochaine évolution et le nom de son évolution
     - Si le joueur indique `Non`, alors il ne se passe rien
 
-!!! tip "Evoluer un pokemon"
+!!! question "Evoluer un pokemon"
     Il existe de nombreuses raisons de ne pas faire évoluer un pokemon. Certains apprennent des attaques plus rapidement que leur version évoluée.
     D'autres comme Ningale, s'il atteint le 20, il évoluera en Munja mais si le joueur a un slot de libre dans son équipe, il obtiendra en plus le pokemon Munjask.
 
@@ -111,7 +117,7 @@ Avec :
     - Si le pokemon peut évoluer, alors on propose au joueur de le faire évoluer avec la fonction `evolution`
     - Augmente les stats du pokemon avec la fonction `augmenter_stats`
   
-!!! fox_exercice "Test du système d'expérience"
+!!! fox_exercice_test "Test du système d'expérience"
     **Tester le gain d'expérience et la montée de niveau :**
     1. Créer un Pikachu niveau 1.
     2. Attribuer 300 xp au Pikachu.
@@ -131,7 +137,7 @@ Avec :
     4. Déclarer un vainqueur quand un des Pokémon n'a plus de points de vie
     5. Attribuer de l'expérience au vainqueur si c'est le Pokémon du joueur
 
-!!! fox_exercice "Test d'un combat complet"
+!!! fox_exercice_test "Test d'un combat complet"
     **Réaliser un combat entre deux Pokémon :**
     1. Créer un Pikachu niveau 5 et un Bulbizarre niveau 5
     2. Faire combattre ces deux Pokémon
