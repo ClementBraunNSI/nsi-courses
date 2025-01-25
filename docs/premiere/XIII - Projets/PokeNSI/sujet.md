@@ -68,8 +68,8 @@ Avec :
     **Créer la fonction `retirer_hp` qui prend en paramètre un Pokémon et un malus, et retire ces points de vie au Pokémon si les dégats est positif, c'est-à-dire si le pokemon defenseur réussit à `tanker` les dégats.**
 
 !!! fox_exercice "Système d'attaque"
-    **Créer la fonction `attaquer` qui prend en paramètre un Pokémon attaquant, un Pokémon défenseur et une attaque.**
-    Cette fonction doit :
+    **Créer la fonction `attaquer` qui prend en paramètre un Pokémon attaquant, un Pokémon défenseur et une attaque.**  
+    Cette fonction doit :  
     1. Récupérer les dégâts de base de l'attaque  
     2. Calculer les dégâts finaux selon la formule précédente  
     3. Retirer les points de vie au défenseur  
@@ -94,7 +94,7 @@ Avec :
 ### Système d'expérience
 
 !!! fox_exercice "Augmentation des statistiques"
-    **Créer la fonction `augmenter_stats` qui prend en paramètre un Pokémon et augmente ses statistiques selon les formules :**
+    **Créer la fonction `augmenter_stats` qui prend en paramètre un Pokémon et augmente ses statistiques selon les formules :**  
     - `hp = hp + (1/50 * hp * niveau)`  
     - `atq = atq + (1/50 * atq * niveau)`  
     - `def = def + (1/50 * def * niveau)`  
@@ -110,10 +110,12 @@ Avec :
     Il existe de nombreuses raisons de ne pas faire évoluer un pokemon. Certains apprennent des attaques plus rapidement que leur version évoluée.
     D'autres comme Ningale, s'il atteint le 20, il évoluera en Munja mais si le joueur a un slot de libre dans son équipe, il obtiendra en plus le pokemon Munjask.
 
+Un pokemon peut monter de niveau si et seulement si :  
+$\texttt{Experience} = 0.8*(\texttt{Niveau} +5)^3$
+
 !!! fox_exercice "Gestion des niveaux"
     **Créer la fonction `niveau_superieur` qui prend en paramètre un Pokemon et augmente son niveau.**
     Cette fonction a un rôle clef dans l'évolution du jeu car elle permet de faire monter les niveaux d'un pokemon, de modifier ses stats comme il monte de niveau et de le faire évoluer.
-    Un pokemon peut monter de niveau si et seulement si : $$\texttt{Experience} = 0.8*(\texttt{Niveau} +5)^3$$
     Cette fonction devra utiliser les 2 précédentes :
 
     - Si le pokemon peut évoluer, alors on propose au joueur de le faire évoluer avec la fonction `evolution`
