@@ -2,11 +2,11 @@
 
 !!! danger "Attention"
     Pour tous les exercices :
-    - N'oubliez pas les guillemets `"` ou `'` pour les chaînes de caractères
-    - Faites attention aux majuscules et minuscules
-    - Testez votre code après chaque modification
-    - Créez un fichier Python différent pour chaque exercice (ex: `exercice1.py`, `exercice2.py`, etc.)
-    - Recopiez vos programmes sur votre cahier pour pouvoir les réviser plus tard
+    - N'oubliez pas les guillemets `"` ou `'` pour les chaînes de caractères  
+    - Faites attention aux majuscules et minuscules  
+    - Testez votre code après chaque modification  
+    - Créez un fichier Python différent pour chaque exercice (ex: `exercice1.py`, `exercice2.py`, etc.)  
+    - Recopiez vos programmes sur votre cahier pour pouvoir les réviser plus tard  
 
 ## Exercices d'introduction
 

@@ -1,12 +1,12 @@
 # Fiche d'exercices : Les boucles en Python
 
 !!! danger "Attention"
-    Pour tous les exercices :
-    - N'oubliez pas les deux points `:` après la boucle
-    - Faites attention à l'indentation dans la boucle
-    - Testez votre code avec différentes valeurs
-    - Créez un fichier Python différent pour chaque exercice (ex: `exercice1.py`, `exercice2.py`, etc.)
-    - Recopiez vos programmes sur votre cahier pour pouvoir les réviser plus tard
+    Pour tous les exercices :  
+    - N'oubliez pas les deux points `:` après la boucle  
+    - Faites attention à l'indentation dans la boucle  
+    - Testez votre code avec différentes valeurs  
+    - Créez un fichier Python différent pour chaque exercice (ex: `exercice1.py`, `exercice2.py`, etc.)  
+    - Recopiez vos programmes sur votre cahier pour pouvoir les réviser plus tard  
 
 ## Boucles while (tant que)
 
