@@ -68,8 +68,6 @@
     - Elle est divisible par 4 mais pas par 100
     - OU elle est divisible par 400
 
-// ... existing content ...
-
 !!! fox_exercice "Distributeur de boissons"
     **Écrire un programme qui simule un distributeur de boissons:**
     - Affiche un menu avec: 1-Eau (1€), 2-Soda (2€), 3-Jus (1.5€)
