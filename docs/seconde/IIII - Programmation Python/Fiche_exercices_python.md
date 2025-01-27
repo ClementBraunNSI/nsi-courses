@@ -13,7 +13,7 @@
 !!! fox_exercice "Premier programme"
     **Écrire un programme qui affiche "Bonjour tout le monde!" dans le terminal.**
 
-??? fox_exercice_correction "Premier programme"
+??? fox_correction "Premier programme"
     ```python
         print("Bonjour tout le monde")
     ```
@@ -22,7 +22,7 @@
     **Créer une variable `age` qui contient votre âge et une variable `prenom` qui contient votre prénom.**
     **Afficher ces variables dans le terminal.**
 
-??? fox_exerice_correction "Variables simples"
+??? fox_correction "Variables simples"
     ```python
         age = 16
         prenom = "Jean"
@@ -33,6 +33,7 @@
     **Créer deux variables `nombre1` et `nombre2` contenant respectivement les valeurs 42 et 7.**
     **Afficher leur somme, leur différence, leur produit et leur division.**
 
+??? fox_correction "Calculs simples"
     ```python
         nombre1 = 42
         nombre2 = 7
