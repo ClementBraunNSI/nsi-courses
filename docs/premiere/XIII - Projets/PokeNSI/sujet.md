@@ -23,7 +23,21 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
     **Créer une liste vide `pokedex` qui contiendra tous les Pokémon du jeu.**
 
 !!! fox_exercice "Remplissage du Pokédex"
-    **Créer la fonction `remplir_pokedex` qui prend en paramètre un nom de fichier CSV et remplit le pokédex avec les Pokémon contenus dans ce fichier.**
+    On dispose de la fonction `remplir_pokedex` suivante. Elle permet de récupérer toutes les informations des pokemons pour en faire une liste de dictionnaires.
+
+    ```python
+        
+        def remplir_pokedex(filename:str)->list:
+            pokedex = []
+            with open(filename,'r') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    if row["nom"] != '' or pokemon_dans_pokedex(row["nom"]) == None:
+                        pokedex.append({"nom":row["nom"],"hp":int(row["hp"]),
+                                        "atq":int(row["atq"]),"def":int(row["def"]),"attaques":row["attaques"].split(";"),
+                                        "evolution":row["evolution"],"niveau_evolution":int(row["niveau_evolution"]),"niveau":int(row["niveau"]), "xp":int(row["xp"])}
+            return pokedex
+    ```
 
     Vous utiliserez le fichier csv suivant : [pokedex.csv](pokedex.csv).
     Vous retrouverez comment importer un fichier `csv` dans le cours suivant : [cours sur le CSV](../../V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_2.md)
