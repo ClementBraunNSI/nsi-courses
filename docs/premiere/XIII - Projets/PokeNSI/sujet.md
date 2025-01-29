@@ -35,7 +35,7 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
                     if row["nom"] != '' or pokemon_dans_pokedex(row["nom"]) == None:
                         pokedex.append({"nom":row["nom"],"hp":int(row["hp"]),
                                         "atq":int(row["atq"]),"def":int(row["def"]),"attaques":row["attaques"].split(";"),
-                                        "evolution":row["evolution"],"niveau_evolution":int(row["niveau_evolution"]),"niveau":int(row["niveau"]), "xp":int(row["xp"])}
+                                        "evolution":row["evolution"],"niveau_evolution":int(row["niveau_evolution"]),"niveau":int(row["niveau"]), "xp":int(row["xp"]})
             return pokedex
     ```
 
