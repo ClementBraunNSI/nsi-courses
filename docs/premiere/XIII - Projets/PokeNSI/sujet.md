@@ -145,19 +145,45 @@ $\texttt{Experience} = 0.8*(\texttt{Niveau} +5)^3$
 
 ### Combat complet
 
-!!! fox_exercice "Système de combat"
-    **Créer la fonction `combat` qui prend en paramètre deux Pokémon (attaquant et défenseur) et gère un combat complet.**
-    La fonction doit :
+!!! fox_exercice "Système de combat contre un Pokémon sauvage"
+    **Créer la fonction `combat_pokemon_sauvage` qui prend en paramètre une équipe de Pokémon et un Pokémon sauvage.**
+    
+    La fonction doit gérer un combat complet selon les étapes suivantes:
 
-    1. Alterner les tours entre les deux Pokémon  
-    2. Permettre de choisir une attaque à chaque tour  
-    3. Appliquer les dégâts  
-    4. Déclarer un vainqueur quand un des Pokémon n'a plus de points de vie  
-    5. Attribuer de l'expérience au vainqueur si c'est le Pokémon du joueur  
+    1. **Initialisation**
+        - Sélectionner le premier Pokémon de l'équipe
+        - Sauvegarder les HP initiaux du Pokémon sauvage
 
-!!! fox_exercice_test "Test d'un combat complet"
-    **Réaliser un combat entre deux Pokémon :**
-    1. Créer un Pikachu niveau 5 et un Bulbizarre niveau 5  
-    2. Faire combattre ces deux Pokémon  
-    3. Observer le déroulement du combat tour par tour  
-    4. Vérifier que le vainqueur gagne bien de l'expérience  
+    2. **Boucle de combat**
+        - Afficher l'état du combat (HP des deux Pokémon)
+        - Tour du joueur:
+            * Choisir une attaque
+            * Appliquer les dégâts au Pokémon sauvage
+            * Vérifier si le Pokémon sauvage est K.O.
+        - Tour du Pokémon sauvage:
+            * Choisir une attaque aléatoire
+            * Appliquer les dégâts au Pokémon du joueur
+            * Vérifier si le Pokémon du joueur est K.O.
+
+    3. **Gestion des K.O.**
+        - Si le Pokémon sauvage est K.O.:
+            * Attribuer l'expérience au Pokémon vainqueur
+            * Vérifier la montée de niveau
+            * Terminer le combat (Victoire)
+        - Si le Pokémon du joueur est K.O.:
+            * Passer au Pokémon suivant dans l'équipe
+            * Si plus de Pokémon disponible, terminer le combat (Défaite)
+            * Sinon, continuer le combat avec le nouveau Pokémon
+
+    La fonction doit renvoyer:
+    - `True` si le joueur gagne
+    - `False` si tous les Pokémon de l'équipe sont K.O.
+
+!!! fox_exercice_test "Test d'un combat contre un Pokémon sauvage"
+    **Réaliser un combat entre votre équipe et un Pokémon sauvage:**
+    1. Créer une équipe avec au moins 2 Pokémon (par exemple: Pikachu niveau 5 et Bulbizarre niveau 5)
+    2. Créer un Pokémon sauvage (par exemple: Salamèche niveau 5)
+    3. Lancer le combat et observer:
+        - L'affichage des états de combat
+        - Le système de changement de Pokémon en cas de K.O.
+        - Le gain d'expérience en cas de victoire

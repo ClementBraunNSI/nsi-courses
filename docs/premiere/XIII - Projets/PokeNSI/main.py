@@ -72,24 +72,47 @@ def choisir_attaque(pokemon,joueur):
         choix = random.randint(0,len(pokemon["attaques"]))
     return pokemon["attaques"][choix-1]
 
-def combat(attaquant, defenseur):
-    participants = {"Joueur": attaquant, "Ordi": defenseur}
-    joueur_actuel = "Joueur"
-    while attaquant["hp"] > 0 and defenseur["hp"] > 0:
-        print(attaquant)
-        print(defenseur)
-        attaque = choisir_attaque(attaquant,joueur_actuel)
-        attaquer(attaquant, defenseur, attaque)
-        attaquant, defenseur = defenseur, attaquant
-        joueur_actuel = "Ordi" if joueur_actuel == "Joueur" else "Joueur"
-    if attaquant["hp"] > 0:
-        gagnant = attaquant
-    else:
-        gagnant = defenseur
-    print(f"{gagnant['nom']} a gagné")
-    if gagnant["nom"] == participants["Joueur"]["nom"]:
-        gagnant["xp"] += participants["Ordi"]["xp"]*(participants["Ordi"]["niveau"]/7)
-        niveau_superieur(gagnant)
+def combat_pokemon_sauvage(equipe, pokemon_sauvage):
+    pokemon_actuel = equipe[0]
+    equipe_index = 0
+    hp_sauvage_initial = pokemon_sauvage["hp"]
+    
+    while True:
+        # Display current battle status
+        print("\n=== État du combat ===")
+        print(f"Votre {pokemon_actuel['nom']} - HP: {pokemon_actuel['hp']}")
+        print(f"{pokemon_sauvage['nom']} sauvage - HP: {pokemon_sauvage['hp']}")
+        print("===================\n")
+        
+        # Player's turn
+        attaque = choisir_attaque(pokemon_actuel, "Joueur")
+        attaquer(pokemon_actuel, pokemon_sauvage, attaque)
+        
+        # Check if wild pokemon is defeated
+        if pokemon_sauvage["hp"] <= 0:
+            print(f"\nVictoire! Le {pokemon_sauvage['nom']} sauvage est K.O!")
+            pokemon_actuel["xp"] += pokemon_sauvage["xp"] * (pokemon_sauvage["niveau"]/7)
+            niveau_superieur(pokemon_actuel)
+            pokemon_sauvage["hp"] = hp_sauvage_initial  # Reset HP for future battles
+            return True
+            
+        # Wild pokemon's turn
+        attaque = choisir_attaque(pokemon_sauvage, "Ordi")
+        attaquer(pokemon_sauvage, pokemon_actuel, attaque)
+        
+        # Check if current pokemon is defeated
+        if pokemon_actuel["hp"] <= 0:
+            print(f"\nVotre {pokemon_actuel['nom']} est K.O!")
+            equipe_index += 1
+            
+            # Check if there are more pokemon in the team
+            if equipe_index >= len(equipe):
+                print("\nDéfaite! Tous vos pokémons sont K.O!")
+                pokemon_sauvage["hp"] = hp_sauvage_initial  # Reset HP for future battles
+                return False
+            
+            pokemon_actuel = equipe[equipe_index]
+            print(f"\n{pokemon_actuel['nom']} entre dans le combat!")
         
 # Carte
 
@@ -133,4 +156,4 @@ afficher_equipe(joueur_1)
 pokemon_sauvage = pokedex[1]
 pokemon_sauvage["xp"] = 5000
 
-combat(joueur_1["equipe"][0], pokemon_sauvage)
+combat_pokemon_sauvage(joueur_1["equipe"][0], pokemon_sauvage)
