@@ -1,0 +1,69 @@
+# QCM - SNT : Graphes et Introduction à Python
+
+## Partie 1 : Les Graphes
+
+1. Dans un graphe non orienté, si A est relié à B :
+    - [ ] A est forcément le seul relié à B
+    - [ ] B est forcément relié à A
+    - [ ] B peut ne pas être relié à A
+    - [ ] Aucune de ces réponses
+
+2. Sur quel réseau social trouve-t-on principalement des graphes orientés ?
+    - [ ] Facebook
+    - [ ] Twitter
+    - [ ] LinkedIn
+    - [ ] WhatsApp
+
+3. Le centre d'un graphe est :
+    - [ ] Toujours unique
+    - [ ] Le sommet avec le plus de connexions
+    - [ ] Le(s) sommet(s) minimisant la distance avec tous les autres
+    - [ ] Le premier sommet créé
+
+4. Le diamètre d'un graphe représente :
+    - [ ] Le nombre total de sommets
+    - [ ] La moyenne des distances entre les sommets
+    - [ ] La plus grande distance entre deux sommets
+    - [ ] Le nombre de connexions du sommet central
+
+5. Dans un graphe orienté, on parle de :
+    - [ ] Chemins et arêtes
+    - [ ] Sommets et arcs
+    - [ ] Nœuds et liens
+    - [ ] Points et flèches
+
+
+6. Quelle instruction permet d'afficher du texte en Python ?
+    - [ ] write()
+    - [ ] display()
+    - [ ] print()
+    - [ ] show()
+
+7. Comment déclarer une variable age contenant le nombre 15 ?
+    - [ ] variable age = 15
+    - [ ] age := 15
+    - [ ] age = 15
+    - [ ] let age = 15
+
+8. Pour demander une saisie à l'utilisateur, on utilise :
+    - [ ] read()
+    - [ ] input()
+    - [ ] get()
+    - [ ] scanf()
+
+9. Quel est le résultat de 7 / 2 en Python ?
+    - [ ] 3
+    - [ ] 3.5
+    - [ ] 3,5
+    - [ ] Une erreur
+
+
+10. Dans le code suivant, que va afficher print(prenom) ?
+
+prenom = input("Votre prénom : ")
+print("Bonjour " + prenom)
+
+- [ ] Votre prénom :
+- [ ] input("Votre prénom : ")
+- [ ] La valeur saisie par l'utilisateur
+- [ ] "Bonjour" + prenom
