@@ -22,6 +22,12 @@ En Python, on peut réaliser des opérations booléennes pour réaliser des **co
 
 En Python, pour indiquer qu'une chose est vraie, on écrit `True` et faux `False`.
 
+Il existe les opérateurs : 
+
+- a == b : qui signifie `Est-ce que a est égal à b?`
+- a != b : qui signifie `Est-ce que a est différent de b?`
+- Les opérateurs mathématiques de base : `> , < , >= , <=`
+ 
 1. `10 > 5` ➔ `True`
 2. `7 == 9` ➔ `False`
 3. `3 <= 3` ➔ `True`
