@@ -72,7 +72,6 @@ un ruban infini
 une tête de lecture qui peut lire et écrire sur ce ruban.
 une table d'état
 
-![](img/turing_1.png)
 La machine se trouve dans un état, elle lis un symbole sur le ruban puis elle effectue les actions associées dans la table d'état.
 La table d'état est composé de deux colonnes :
 Première colonne : etat actuel & symbole lus

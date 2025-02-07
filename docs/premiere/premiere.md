@@ -25,4 +25,4 @@ Vous retrouverez les cours sur la barre de navigation sur la gauche.
 ## New Year Advent
 
 [Explication New Year Advent](./0%20-%20New%20Year%20Advent/new_year_advent.md)
-- [Jour 1](./0%20-%20New%20Year%20Advent/Jour_1.md)
+- [Jour 1](./0%20-%20New%20Year%20Advent/Exercices%20J1%20-%20J9/Jour_1.md)

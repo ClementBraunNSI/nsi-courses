@@ -32,7 +32,7 @@ $\underbrace{1111}_{\texttt{bits de poids fort}}\overbrace{0000}^{\texttt{bits d
 
 Pour le traitement des images, on utilise le module *Pillow* de Python qui permet de modifier les valeurs de bits, créer de nouvelles images avec des tailles prédéfinies, dans des modes prédéfinis (RGB, Noir et Blanc, Nuances de gris).
 
-On peut retrouver un tutoriel dans le [cours de seconde](../seconde/Photographie%20Numérique/c_2_Photographie_Couleur.md).
+On peut retrouver un tutoriel dans le [cours de seconde](../../../../seconde/VI%20-Photographie%20Numérique/c_2_Photographie_Couleur.md).
 
 ### Méthode Bin et Int de Python
 

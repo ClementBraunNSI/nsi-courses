@@ -217,5 +217,3 @@ Convertir le nombre hexadécimal $1F3_{16}$ en décimal.
 **Exercice 2** : Conversion du décimal à l'hexadécimal :
 
 Convertir le nombre décimal $393_{16}$ en hexadécimal.
-
-[Fiche d'exercice entiers en binaire et hexadecimal](Fiche_exercice_Nombres_binaires.md)

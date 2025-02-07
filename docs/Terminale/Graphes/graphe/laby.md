@@ -102,7 +102,7 @@ déplaçant vers le haut, le bas, la gauche ou la droite (mais pas en diagonale)
 L'idée est de parcourir le labyrinthe depuis l'entrée, en utilisant une pile pour stocker le chemin parcouru
 au fur et à mesure, pour pouvoir dépiler lorsque le chemin n'aboutit pas et redémarrer sur une autre voie.
 
-1. Un exemple sera sans doute plus efficace qu'un long discours, pour cela aller consulter le document [exemple](exemple.pdf).
+1. Un exemple sera sans doute plus efficace qu'un long discours, pour cela aller consulter le document.
 2. Si, au cours de l'exécution la pile se trouve vide, que cela signifie-t-il ?
 3. Ecrire et importer un module comportant une classe `Pile`avec les méthodes dont vous aurez besoin.
 4. Ecrire  un programme permettant de trouver la solution d'un labyrinthe.
