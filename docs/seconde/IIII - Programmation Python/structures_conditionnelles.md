@@ -20,7 +20,7 @@ Une **équation booléenne** est un ensemble de fonctions booléenne prenant en 
 
 En Python, on peut réaliser des opérations booléennes pour réaliser des **conditions**. Ces conditions permettent de réaliser du code, comme ce qui a été vu au collège avec les `logigrammes` ou `algorigrammes`.
 
-En Python, pour indiquer qu'une chose est vraie, on écrit `True` et faux `False`.
+En Python, pour indiquer qu'une chose est vraie, on écrit `True` ou fausse `False`.
 
 Il existe les opérateurs : 
 
@@ -31,8 +31,8 @@ Il existe les opérateurs :
 1. `10 > 5` ➔ `True`
 2. `7 == 9` ➔ `False`
 3. `3 <= 3` ➔ `True`
-4. `False != True` ➔ `True`
-5. `not False` ➔ `True`
-6. `5 != 5` ➔ `False`
-7. `False != True and 5 == 5` ➔ `True`
-8. `not True or 4 > 99` ➔ `False`
+4. `False != True` ➔ `_______` 
+5. `not False` ➔ `_______` (Fonction booléenne NOT, voir tableau)
+7. `5 != 5` ➔ `False`
+8. `False != True and 5 == 5` ➔ `True` (Fonction booléenne AND, voir tableau)
+9. `not True or 4 > 99` ➔ `False` (Fonction booléenne OR, voir tableau)
