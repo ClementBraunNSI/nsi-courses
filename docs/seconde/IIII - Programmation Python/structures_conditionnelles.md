@@ -33,6 +33,6 @@ Il existe les opérateurs :
 3. `3 <= 3` ➔ `True`
 4. `False != True` ➔ `_______` 
 5. `not False` ➔ `_______` (Fonction booléenne NOT, voir tableau)
-7. `5 != 5` ➔ `False`
-8. `False != True and 5 == 5` ➔ `True` (Fonction booléenne AND, voir tableau)
-9. `not True or 4 > 99` ➔ `False` (Fonction booléenne OR, voir tableau)
+6. `5 != 5` ➔ `_______`
+7. `False != True and 5 == 5` ➔ `______` (Fonction booléenne AND, voir tableau)
+8. `not True or 4 > 99` ➔ `______` (Fonction booléenne OR, voir tableau)

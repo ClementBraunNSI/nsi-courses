@@ -131,3 +131,49 @@
     -webkit-mask-image: var(--md-admonition-icon--fox_exercice_test);
             mask-image: var(--md-admonition-icon--fox_exercice_test);
   }
+
+  .md-header {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+
+.md-tabs {
+    background-color: #e0e0e0;
+    color : #333333; 
+}
+/*
+.md-tabs__list {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.md-tabs__item {
+    border-radius: 48px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+    margin: 10px;
+    text-decoration: none;
+    color: #333333;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.md-tabs__item:hover {
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+    transform: translateY(-2px);
+}
+
+.md-tabs__item:active {
+    box-shadow: inset 3px 3px 6px #bebebe,
+                inset -3px -3px 6px #ffffff;
+    transform: translateY(0);
+}
+
+*/
