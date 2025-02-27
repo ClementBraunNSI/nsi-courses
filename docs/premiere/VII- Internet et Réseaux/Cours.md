@@ -1,6 +1,6 @@
-# Introduction aux réseaux
+# 🌐 Introduction aux réseaux
 
-## Qu'est ce qu'un réseau internet
+## 🔌 Qu'est ce qu'un réseau internet
 
 Un **réseau local** est un ensemble de machines reliées entre elles qui échangent des informations en ne passant que par le routeur ou un switch.
 
@@ -8,41 +8,41 @@ Un **réseau internet** est un ensemble de réseaux locaux qui communiquent entr
 
 Dans un réseau, on retrouve un certain nombre de machines : 
 
-- Des ordinateurs, smartphones, tablettes, consoles ...
-- IOT : ensemble des objets connectés (par exemple : domotique)
-- Un (ou plusieurs) switchs est un élément d'un réseau qui permet de relier les machines entre elles pour s'échanger des données dans un réseau local.
-- un routeur (ou plusieurs) routeur est un élément qui permet de relier plusieurs réseaux entre eux.
+- 💻 Des ordinateurs, smartphones, tablettes, consoles ...
+- 🏠 IOT : ensemble des objets connectés (par exemple : domotique)
+- 🔄 Un (ou plusieurs) switchs est un élément d'un réseau qui permet de relier les machines entre elles pour s'échanger des données dans un réseau local.
+- 📡 un routeur (ou plusieurs) routeur est un élément qui permet de relier plusieurs réseaux entre eux.
 
 Ces machines sont reliées par :  
 
-- des câbles (RJ45)
-- Ondes (exemple : WiFi (Wireless Fidelity) ou 5G)
-- par fibre optique
+- 🔌 des câbles (RJ45)
+- 📶 Ondes (exemple : WiFi (Wireless Fidelity) ou 5G)
+- 💡 par fibre optique
 
 La communication est définie et régie par des protocoles. 
 Un protocole est un ensemble de règles et d'actions prédéfinies à réaliser dans un ordre précis. 
 
-### Distinction Web et Internet
+### 🌍 Distinction Web et Internet
 
 Internet correspond à **l'ensemble des réseaux organisés** communiquant ensemble.
 
 Le Web correspond à une application d'Internet qui rend accessible des ressources grâce aux **liens hypertextes** (que l'on nomme usellement hyperliens).
 
-#### Topologies de réseaux
+#### 🔄 Topologies de réseaux
 
 Une topologie dans les réseaux correspond à la disposition des machines dans un réseau. 
 
 On en distingue plusieurs :  
 
-- Anneau
-- Étoile (en général celui utilisé de manière domestique)
-- Bus
-- Hierarchique
-- P2P
+- ⭕ Anneau
+- ⭐ Étoile (en général celui utilisé de manière domestique)
+- 📊 Bus
+- 🌳 Hierarchique
+- 🤝 P2P
 
-## Adresse MAC et IP
+## 🔍 Adresse MAC et IP
 
-### Adresse MAC
+### 💳 Adresse MAC
 
 Une adresse MAC (Media Access Control) correspond à l'adresse physique d'une interface d'une carte Réseau qui est **unique** et propre à la carte.
 Elle est constituée d'un ensemble de 6 groupes de 16 bits représentés en hexadécimal.
@@ -51,7 +51,7 @@ Exemple : a8:9f:d9:4c:5c:d9
 
 Le switch dans un réseau utilise l'adresse MAC de la carte réseau pour retransmettre les données à la bonne machine.
 
-### Adresse IP
+### 🌐 Adresse IP
 
 L'adresse IP est l'adresse d'une machine sur un réseau. Elle est attribuée à la première connexion de la machine sur le réseau.
 

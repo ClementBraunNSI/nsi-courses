@@ -1,6 +1,6 @@
 # Fiche d'exercices : Boucles
 
-!!! fox_exercice "Afficher les nombres de 1 à 100"
+!!! fox_exercice "Afficher les nombres de 1 à 100 ⭐"
     **Écrire un programme qui affiche dans le terminal tous les nombres entre 1 et 100. (à l'aide d'une boucle for puis d'une boucle tant que).**
 
 ??? fox_correction "Correction"
@@ -18,7 +18,7 @@
 
 ---
 
-!!! fox_exercice "Afficher les nombres pairs entre 1 et 100"
+!!! fox_exercice "Afficher les nombres pairs entre 1 à 100 ⭐⭐"
     **Écrire un programme qui affiche dans le terminal tous les nombres pairs entre 1 et 100.**
 
 ??? fox_correction "Correction"
@@ -38,7 +38,7 @@
 
 ---
 
-!!! fox_exercice "Table de multiplication"
+!!! fox_exercice "Table de multiplication ⭐"
     **Écrire un programme qui prend un nombre entier et affiche sa table de multiplication (jusqu'à 10).**
 
 ??? fox_correction "Correction"

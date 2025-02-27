@@ -1,6 +1,6 @@
-# II - Fiche d'exercice : Les tuples et les listes
+# 📦 II - Fiche d'exercice : Les tuples et les listes
 
-!!! danger Attention
+!!! danger "⚠️ Attention"
       Tous les exercices, s'ils sont réalisés par des boucles `for`, doivent être faits avec une boucle sur les indices et une boucle sur les valeurs.
       ```python
          l = [1,2,3,4]
@@ -13,44 +13,44 @@
             print(l[i])
       ```
 
-## Exercices d'introduction
+## 🎯 Exercices d'introduction
 
 1. **Créer un tuple nommé  `mon_tuple` qui contient les éléments 1,2,3,4,5 et une liste `ma_liste` qui contient les éléments suivants 'a','b','c','d','e'.** 
-**Les afficher dans le terminal.**
+**Les afficher dans le terminal.** ⭐
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
 
       ```python
          mon_tuple = (1,2,3,4,5)
          ma_liste = ['a','b','c','d','e']
       ```
 
-2. **Afficher dans le terminal le troisième élément de `mon_tuple`et le premier élément de `ma_liste`.**
+2. **Afficher dans le terminal le troisième élément de `mon_tuple`et le premier élément de `ma_liste`.** ⭐
 
 3. **Modifier le deuxième élément de `ma_liste` par 'z'.  
-Vérifier la modification en affichant la liste dans le terminal.**
+Vérifier la modification en affichant la liste dans le terminal.** ⭐
 
 4. **Ajouter l'élément 'f' dans `ma_liste`.
 Supprimer le premier élément de `ma_liste`.  
-Vérifier les modifications en affichant la liste dans le terminal.**
+Vérifier les modifications en affichant la liste dans le terminal.** ⭐
 
-5. **Afficher dans le terminal tous les éléments de `mon_tuple` et `ma_liste` un à un à l'aide d'une boucle `for`.**
+5. **Afficher dans le terminal tous les éléments de `mon_tuple` et `ma_liste` un à un à l'aide d'une boucle `for`.** ⭐
 
 6. **Créer une liste `nombres` qui contient les chiffres allant de 1 à 9. (Proposer une version par compréhension).
 Afficher dans le terminal les 5 premiers éléments de la liste en utilisant une boucle while.
 Afficher les éléments du quatrième au huitième en utilisant une boucle for.  
-Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant une boucle while.**
+Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant une boucle while.** ⭐⭐
 
 ---
 
-## Niveau Facile
+## 🌟 Niveau Facile
 
-!!! fox_exercice "Somme d'éléments"
+!!! fox_exercice "💻 Somme d'éléments ⭐"
       **Écrire une fonction `somme_elements` qui prend une liste de nombres en paramètres et renvoie la somme de tous les éléments.**  
       *Exemple :*  
       *somme_elements([1, 2, 3, 4]) doit renvoyer 10.*
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
 
     ```python
     def somme_elements(liste:list)->int:
@@ -70,7 +70,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
       2
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def compter_pairs(liste:list)->int:
         nombre_pairs = 0
@@ -89,7 +89,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     [3, 2, 4]
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def longueur_chaines(liste:list)->list:
         liste_longueurs = []
@@ -111,7 +111,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     1
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def produit_elements(liste:list)->int:
         if not liste:  # si la liste est vide
@@ -132,7 +132,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     3
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def compter_occurrences(liste:list, valeur: int)->int:
         occurrences = 0
@@ -176,7 +176,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     0
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def moyenne(liste:list)->float:
         if not liste:  # si la liste est vide
@@ -199,7 +199,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     [3, 8]
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def filtrer_positifs(liste:list)->list:
         positifs = []
@@ -263,7 +263,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     "Bonjour le monde"
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def concatener_chaines(liste:list)->str:
         concatenation = ""
@@ -282,7 +282,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     [3, 2, 1]
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def inverser_liste(liste:list)->list:
         liste_inversee = []
@@ -301,7 +301,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     [1, 2, 3, 4]
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def valeurs_uniques(liste:list)->list:
         liste_valeurs = []
@@ -321,7 +321,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     ([2, 4], [1, 3, 5])
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def separer_pairs_impairs(liste:list)->tuple:
         pairs = []
@@ -345,7 +345,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     >>> diviseurs(10)
     [1, 2, 5, 10]
     ```
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def diviseurs(valeur:int)->list:
         diviseurs = []
@@ -366,7 +366,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     >>> est_croissante([1, 3, 2, 4])
     False
     ```
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def est_croissante(liste:list)->bool:
         i = 0
@@ -390,7 +390,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     >>> liste2
     [15, 10, 5]
     ```
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     #1ère solution : passer par une troisième valeur
     def echange(liste:list, i:int, j:int)->None:
@@ -415,7 +415,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     >>> rangement_valeurs([1, 2, 4, 3, 6, 2, 8], 2)
     ([1], [2, 2], [4, 3, 6, 8])
     ```
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def rangement_valeurs(liste:list, valeur:int)->tuple[list, list, list]:
         inferieures = []
@@ -443,7 +443,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     4
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def compter_voyelles(liste:list)->int:
         voyelles = "aeiouyAEIOUY"
@@ -467,7 +467,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     ["a", "b"]
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def valeurs_en_double(liste:list)->list:
         doublons = []
@@ -492,7 +492,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     -1
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def indice_element(liste:list, valeur:int)->int:
         i = 0
@@ -515,7 +515,7 @@ Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant 
     ['a', 'b', 'c']
     ```
 
-??? fox_correction "Correction"
+??? fox_correction "✅ Correction"
     ```python
     def fusionner_sans_doublons(liste1:list, liste2:list)->list:
         resultat = []
