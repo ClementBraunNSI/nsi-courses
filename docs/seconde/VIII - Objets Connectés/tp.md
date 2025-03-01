@@ -86,7 +86,28 @@ Alternez entre deux images toutes les secondes (par exemple un cœur et un carr�
 - Utilisez `Image.HEART` et `Image.SQUARE`
 - N'oubliez pas `sleep(1000)` entre les images
 
-### 🌟 Exercice 5 : Message au bouton
+### 🦊 Exercice 5 : Tête de Renard
+**Difficulté : ⭐⭐⭐**
+
+Recréez la tête de renard montrée dans l'introduction en utilisant le système de pixel art de la Micro:bit.
+
+💡 **Indice :**
+
+- Regardez attentivement l'image du renard dans l'introduction
+- Utilisez différents niveaux de luminosité (0-9) pour créer les détails
+- Commencez par dessiner votre motif sur papier en grille 5x5
+
+```python
+# Structure de base pour la tête de renard
+display.show(Image("00000:"  # Ligne 1
+                "00000:"  # Ligne 2
+                "00000:"  # Ligne 3
+                "00000:"  # Ligne 4
+                "00000"))  # Ligne 5
+# Remplacez les 0 par les bonnes valeurs de luminosité
+```
+
+### 🌟 Exercice 6 : Message au bouton
 **Difficulté : ⭐⭐**
 
 Affichez "A" quand on appuie sur le bouton A, et "B" quand on appuie sur le bouton B.
@@ -95,7 +116,7 @@ Affichez "A" quand on appuie sur le bouton A, et "B" quand on appuie sur le bout
 - Utilisez `button_a.is_pressed()` et `button_b.is_pressed()`
 - Utilisez `display.scroll()`
 
-### 🎵 Exercice Bonus : Images personnalisées
+### Exercice Bonus : Images personnalisées
 **Difficulté : ⭐⭐⭐**
 
 Créez et affichez votre propre motif sur l'écran LED.
@@ -109,6 +130,8 @@ mon_image = Image("09090:" # Ligne 1
                  "00000") # Ligne 5
 # Les chiffres représentent la luminosité (0-9)
 ```
+
+
 
 💡 **Indice :** 
 - Dessinez d'abord votre motif sur papier
