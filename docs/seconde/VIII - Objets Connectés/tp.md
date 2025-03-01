@@ -7,7 +7,7 @@ Les cartes Micro:bit sont des cartes électroniques qui sont une introduction à
 Une carte Micro:bit est consituée de plusieurs éléments :
 
 |Présentation de la carte|Carte avec une tête renard minimaliste en pixel art|
-|-|-|
+|:-:|:-:|
 |![carte](microbit.png)|![fox](fox_microbit.png)|
 
 ## Documentation des fonctionnalités
