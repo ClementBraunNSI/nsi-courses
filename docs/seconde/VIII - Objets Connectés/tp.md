@@ -10,38 +10,106 @@ Une carte Micro:bit est consituée de plusieurs éléments :
 |-|-|
 |![carte](microbit.png)|![fox](fox_microbit.png)|
 
-Pour pouvoir utiliser cette carte et programmer, on utilisera le site [Site de Micro:Bit](https://python.microbit.org/v/3/reference).
+## Documentation des fonctionnalités
+
+| Fonctionnalité | Explication | Exemple |
+|----------------|-------------|----------|
+| Affichage LED | Affiche des motifs sur la grille de LED 5x5 | `display.show(Image.HEART)` |
+| Messages défilants | Fait défiler du texte sur l'écran LED | `display.scroll("Bonjour")` |
+| Boutons | Deux boutons (A et B) pour l'interaction | `button_a.is_pressed()` |
+| Pause | Met en pause le programme | `sleep(1000)` # pause 1 seconde |
+| Images prédéfinies | Motifs LED préenregistrés | `Image.HAPPY`, `Image.SAD`, `Image.HEART` |
+| Boucle infinie | Répète le code en continu | `while True:` |
+
+## Pour commencer
+
+Pour programmer la carte, on utilise le site [Site de Micro:Bit](https://python.microbit.org/v/3/reference).
 
 ![site](editor.png)
 
-Le bloc orange correspond à la bibliothèque des blocs pouvant être utilisés pour profiter de l'ensemble des fonctionnalités de la carte.
+Le bloc orange correspond à la bibliothèque des blocs pouvant être utilisés.
+Le bloc marron est l'éditeur de code.
+Le bloc vert permet d'envoyer le programme à la carte.
 
-Le bloc marron est l'éditeur de code, dans celui-ci vous modifierez le blocs de code que vous choisirez dans la bibliothèque.
-
-Le bloc vert permet d'envoyer le programme à la carte **micro:bit** pour pouvoir l'utiliser.
-
-Ce genre de carte doit être alimenté pour fonctionner car elle ne dispose pas d'une batterie intégrée.  
-Pour faciliter les choses, on utilisera un cable USB pour l'alimenter et pour envoyer les programmes.
-
-Le programme proposé permet d'afficher un coeur sur le panneau de LED.
+Voici un exemple simple pour commencer :
 
 ```python
-# Importer les paquets necessaire au fonctionnement
+# Importer les paquets necessaires
 from microbit import *
 
-
-# Boucle tant que qui est valable tout le temps
+# Boucle infinie
 while True:
-    # On choisit d'afficher un coeur grâce à la bibliothèque display.
-    # Pour choisir ce que l'on souhaite afficher, on regarde dans la bibliothèque ce qui est disponible,
-    # ici, un coeur
+    # Affiche un coeur
     display.show(Image.HEART)
-    # On attend 1 seconde en faisant "dormir" la carte
+    # Attend 1 seconde
     sleep(1000)
-    # On affiche un message 'Hello' sur l'écran de la carte grâce à la fonction 
-    # scroll de la bibliothèque display
+    # Affiche un message
     display.scroll('Hello')
 ```
 
-## À faire
+## Exercices
 
+### 🌟 Exercice 1 : Affichage simple
+**Difficulté : ⭐**
+
+Affichez le motif d'un visage souriant (`Image.HAPPY`) sur l'écran LED.
+
+💡 **Indice :** Utilisez `display.show()` avec `Image.HAPPY`
+
+### 🎨 Exercice 2 : Message défilant
+**Difficulté : ⭐**
+
+Faites défiler votre prénom sur l'écran LED.
+
+💡 **Indice :** Utilisez `display.scroll("votre_prenom")`
+
+### 🎮 Exercice 3 : Premier bouton
+**Difficulté : ⭐⭐**
+
+Affichez un cœur quand on appuie sur le bouton A.
+
+```python
+# Structure de base
+from microbit import *
+
+while True:
+    if button_a.is_pressed():
+        # Votre code ici
+```
+
+### 🎨 Exercice 4 : Alternance simple
+**Difficulté : ⭐⭐**
+
+Alternez entre deux images toutes les secondes (par exemple un cœur et un carré).
+
+💡 **Indice :** 
+- Utilisez `Image.HEART` et `Image.SQUARE`
+- N'oubliez pas `sleep(1000)` entre les images
+
+### 🌟 Exercice 5 : Message au bouton
+**Difficulté : ⭐⭐**
+
+Affichez "A" quand on appuie sur le bouton A, et "B" quand on appuie sur le bouton B.
+
+💡 **Indice :** 
+- Utilisez `button_a.is_pressed()` et `button_b.is_pressed()`
+- Utilisez `display.scroll()`
+
+### 🎵 Exercice Bonus : Images personnalisées
+**Difficulté : ⭐⭐⭐**
+
+Créez et affichez votre propre motif sur l'écran LED.
+
+```python
+# Exemple de création d'image
+mon_image = Image("09090:" # Ligne 1
+                 "00000:" # Ligne 2
+                 "90009:" # Ligne 3
+                 "09990:" # Ligne 4
+                 "00000") # Ligne 5
+# Les chiffres représentent la luminosité (0-9)
+```
+
+💡 **Indice :** 
+- Dessinez d'abord votre motif sur papier
+- Utilisez des chiffres de 0 (éteint) à 9 (luminosité maximale)
