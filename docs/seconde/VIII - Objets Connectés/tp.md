@@ -56,12 +56,16 @@ Affichez le motif d'un visage souriant (`Image.HAPPY`) sur l'écran LED.
 
 💡 **Indice :** Utilisez `display.show()` avec `Image.HAPPY`
 
+---
+
 ### 🎨 Exercice 2 : Message défilant
 **Difficulté : ⭐**
 
 Faites défiler votre prénom sur l'écran LED.
 
 💡 **Indice :** Utilisez `display.scroll("votre_prenom")`
+
+---
 
 ### 🎮 Exercice 3 : Premier bouton
 **Difficulté : ⭐⭐**
@@ -77,6 +81,8 @@ while True:
         # Votre code ici
 ```
 
+---
+
 ### 🎨 Exercice 4 : Alternance simple
 **Difficulté : ⭐⭐**
 
@@ -85,6 +91,8 @@ Alternez entre deux images toutes les secondes (par exemple un cœur et un carr�
 💡 **Indice :** 
 - Utilisez `Image.HEART` et `Image.SQUARE`
 - N'oubliez pas `sleep(1000)` entre les images
+
+---
 
 ### 🦊 Exercice 5 : Tête de Renard
 **Difficulté : ⭐⭐⭐**
@@ -107,6 +115,8 @@ display.show(Image("00000:"  # Ligne 1
 # Remplacez les 0 par les bonnes valeurs de luminosité
 ```
 
+---
+
 ### 🌟 Exercice 6 : Message au bouton
 **Difficulté : ⭐⭐**
 
@@ -115,6 +125,8 @@ Affichez "A" quand on appuie sur le bouton A, et "B" quand on appuie sur le bout
 💡 **Indice :** 
 - Utilisez `button_a.is_pressed()` et `button_b.is_pressed()`
 - Utilisez `display.scroll()`
+
+---
 
 ### Exercice Bonus : Images personnalisées
 **Difficulté : ⭐⭐⭐**
