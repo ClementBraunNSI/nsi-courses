@@ -48,12 +48,12 @@ On va avoir besoin de **trois fonctions** :
 - une fonction `tri_selection` qui va réaliser le tri et renvoyer la permutation triée de la liste.
 
 !!! fox_exercice_important "Indice de la valeur minimum dans une tranche"
-    **Écrire une fonction `indice_minimum_tranche` qui prend en paramètres une liste, un indice de début et un indice de fin et qui renvoie l'indice de la valeur la plus petite dans la tranche donnée.**  
+    **Écrire une fonction `indice_minimum_tranche` qui prend en paramètres une liste, un indice de début et qui renvoie l'indice de la valeur la plus petite dans la tranche donnée.**  
     *Attention, cette fonction doit bien vérifier que les indices soient bien compris dans la liste pour éviter les erreurs de* ***Out Of Range****.*  
     *Exemple:*  
     ```python
     >>>liste = [1,5,2,4,0,8]
-    >>> indice_minimum_tranche(liste,1,4)
+    >>> indice_minimum_tranche(liste,1)
     4
     ```
 

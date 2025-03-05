@@ -57,13 +57,18 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
 ### Les attaques 💥
 
 !!! fox_exercice "Dictionnaire d'attaques"
-    **Créer un dictionnaire `attaques` qui contient les noms des attaques comme clés et leur puissance comme valeurs.**
+    L'ensemble des attaques des pokemons est disponible dans le fichier CSV suivant [Attaques des pokemons](attaques.csv).
+    Le bloc de code suivant permet de créer le dictionnaire des attaques à l'instar des pokemon ci dessus:
 
-    Exemple d'attaques à implémenter :  
-    - tonerre ⚡: 40 points de dégâts  
-    - queue de fer 🔨: 20 points de dégâts  
-    - fouet lianes 🌿: 10 points de dégâts  
-    - tranch'herbe 🌱: 20 points de dégâts  
+    ```python
+        def encyclopedies_attaques():
+            with open("attaques.csv",'r') as f:
+                attaques = []
+                reader = csv.DictReader(f)
+                for row in reader:
+                    attaques.append({row["nom_attaque"]:row["degats"]})
+            return attaques
+    ```
 
 ### Gestion des dégâts 💢
 

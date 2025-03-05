@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question type="category">
+		<category>
+			<text><![CDATA[<infos><name>Structures Conditionnelles</name><answernumbering>123</answernumbering><niveau></niveau><matiere></matiere></infos>]]></text>
+		</category>
+	</question>
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Qu'est-ce qu'une variable booléenne ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Une variable qui peut prendre une infinité de valeurs]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[Une variable qui peut prendre uniquement deux états : Vrai ou Faux]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Une variable qui ne peut prendre que des valeurs numériques]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Une variable qui stocke uniquement du texte]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Qu'est-ce qu'un logigramme (ou algorigramme) ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Un graphique représentant des données statistiques]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Un type de variable en programmation]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[Une représentation graphique d'un algorithme utilisant des symboles, des flèches, losanges et rectangles]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Un système de codage binaire]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Quel est le résultat de l'opération booléenne : not (True and False) ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[False]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[True]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[None]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Error]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Complétez la condition suivante pour que le code affiche "Correct" uniquement si x est compris entre 0 et 10 inclus :]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[x = 5
+if _______ :
+    print("Correct")]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[x > 0 and x < 10]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[x >= 0 and x <= 10]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[x > 0 or x < 10]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[x >= 0 or x <= 10]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Quel opérateur Python permet de vérifier si deux valeurs sont égales ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[<>]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[/=]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[!=]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[==]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Quel est le résultat de : 5 <= 5 en Python ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[True]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[False]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[1]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Error]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Quelle fonction booléenne renvoie True uniquement si les deux opérandes sont True ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[OR]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[AND]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[NOT]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[XOR]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+</quiz>

@@ -146,9 +146,19 @@ def afficher_equipe(joueur):
     for pokemon in joueur["equipe"]:
         print(f"{pokemon['nom']} :\n {pokemon['hp']} hp\n {pokemon['atq']} atq\n {pokemon['def']} def\n Niveau :{pokemon['niveau']} \n {pokemon["xp"]}:xp")
 
+def encyclopedies_attaques():
+    with open("attaques.csv",'r') as f:
+        attaques = []
+        reader = csv.DictReader(f)
+        for row in reader:
+            attaques.append({row["nom_attaque"]:row["degats"]})
+    return attaques
+
 
 # Tests
-remplir_pokedex("pokemons.csv")
+remplir_pokedex("pokedex.csv")
+encyclopedie_attaque= encyclopedies_attaques()
+print(encyclopedie_attaque)
 joueur_1 = {"nom":"Joueur 1", "equipe":[]}
 ajouter_pokemon_equipe(joueur_1,"Pikachu")
 afficher_equipe(joueur_1)
@@ -156,4 +166,4 @@ afficher_equipe(joueur_1)
 pokemon_sauvage = pokedex[1]
 pokemon_sauvage["xp"] = 5000
 
-combat_pokemon_sauvage(joueur_1["equipe"][0], pokemon_sauvage)
+#combat_pokemon_sauvage(joueur_1["equipe"][0], pokemon_sauvage)
