@@ -42,8 +42,8 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
     Vous utiliserez le fichier csv suivant : [pokedex.csv](pokedex.csv).
     Vous retrouverez comment importer un fichier `csv` dans le cours suivant : [cours sur le CSV](../../V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_2.md)
 
-!!! fox_exercice "Recherche dans le Pokédex 🔍"
-    **Créer la fonction `pokemon_dans_pokedex` qui prend en paramètre un nom de Pokémon (str) et renvoie le dictionnaire correspondant au Pokémon s'il existe dans le pokédex, None sinon.**
+!!! fox_exercice "Créer un Pokemon 🔍"
+    **Créer la fonction `creer_pokemon` qui prend en paramètre un nom de Pokémon (str) et renvoie le dictionnaire correspondant au Pokémon s'il existe dans le pokédex, None sinon.**
 
 !!! fox_exercice_test "Test du Pokédex ✅"
     **Tester vos fonctions de création du Pokédex :**
