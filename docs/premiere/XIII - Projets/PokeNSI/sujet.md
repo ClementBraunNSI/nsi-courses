@@ -154,7 +154,7 @@ $\texttt{Experience} = 0.8*(\texttt{Niveau} +5)^3$
 
 !!! fox_exercice "Système de combat contre un Pokémon sauvage 🆚"
     **Créer la fonction `combat_pokemon_sauvage` qui prend en paramètre une équipe de Pokémon et un Pokémon sauvage.**
-    
+
     La fonction doit gérer un combat complet selon les étapes suivantes:
 
     1. **Initialisation** 🎬
