@@ -8,8 +8,6 @@
     - Créez un fichier Python différent pour chaque exercice (ex: `exercice1.py`, `exercice2.py`, etc.)  
     - Recopiez vos programmes sur votre cahier pour pouvoir les réviser plus tard  
 
-## Boucles while (tant que)
-
 !!! fox_exercice "Compte à rebours"
     **Écrire un programme qui:**
     - Demande un nombre de départ
@@ -28,8 +26,6 @@
     - Affiche le résultat
     - Demande si on veut continuer (oui/non)
     - Recommence si la réponse est "oui"
-
-## Boucles for (pour)
 
 !!! fox_exercice "Tables de multiplication"
     **Écrire un programme qui:**
