@@ -37,6 +37,14 @@
     - Demande un nombre n
     - Affiche un escalier de n marches avec des étoiles
     
+    *Astuce : pour afficher `x` fois un caractère, on peut utiliser la syntaxe `'x' * n`.*
+    *La chaîne de caractère "XXXXX" peut être créée via la syntaxe python suivante :*
+
+    ```python
+        chaine_1 = "XXXXX"
+        chaine_2 = "X"*5
+        # avec chaine_1 == chaine_2
+    ```
     *Exemple pour n=3:*
     ```
     *
