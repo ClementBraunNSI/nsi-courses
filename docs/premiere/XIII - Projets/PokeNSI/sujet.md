@@ -66,7 +66,7 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
                 attaques = []
                 reader = csv.DictReader(f)
                 for row in reader:
-                    attaques.append({row["nom_attaque"]:row["degats"]})
+                    attaques.append({row["nom_attaque"]:int(row["degats"])})
             return attaques
     ```
 

@@ -177,3 +177,22 @@
 }
 
 */
+
+.md-footer {
+    text-align: center;
+}
+
+.md-footer-meta__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.md-footer-copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.md-footer-social {
+    padding: 0.5rem 0;
+}
