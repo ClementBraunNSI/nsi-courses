@@ -72,7 +72,7 @@ Le Pokédex est une base de données qui contient tous les Pokémon du jeu. Chaq
 
 ### Gestion des dégâts 💢
 
-Lors d'un combat, un pokemon doit en attaquer un autre avec une attaque. Cette attaque retire des points de vie au pokemon et les dégats sont calculés suivant la formule ci-après : 
+Lors d'un combat, un pokemon doit en attaquer un autre avec une attaque. Cette attaque retire des points de vie au pokemon et les dégats sont calculés suivant la formule ci-après :  
 
 $$\texttt{dégats}=\frac{(((N*0.4)+2)*\texttt{Atq}*\texttt{Deg})}{\texttt{Def}*50}+2$$
 
