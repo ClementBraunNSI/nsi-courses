@@ -2,9 +2,13 @@
 
 ## Définitions et Concepts
 
-Les algorithmes gloutons répondent au problème d'optimisation en cherchant à trouver la meilleure solution à un problème en utilisant un minimum de ressources.
+Un algorithme glouton est un algorithme qui a pour principe de choisir à chaque étapes de résolution d'un problème la meilleure solution locale.
 
-On cherche à maximiser ou minimiser de résultats.
+Ils peuvent répondre **au problème d'optimisation** en cherchant pour chaque itération un extremum qui **minimise ou maximise (suivant le problème) chacune des sous-étapes**.
+En général, ces opérations de recherche d'extremum ne sont pas couteuses mais **l'ensemble de celles-ci n'est pas forcément la solution optimale globale**.
+
+Cette méthode est en générale plus efficace que la méthode par **force brute**.  
+La méthode **bruteforce** donnera (théoriquement) la solution optimale en testant toutes les combinaisons possibles si la machine a les ressources necessaires.
 
 On peut illustrer cela par deux exemples simples.
 
@@ -16,18 +20,6 @@ On peut illustrer cela par deux exemples simples.
     On dispose d'une liste de chiffres quelconques et on cherche à construire le nombre le plus grand sans trier la liste.  
     Une solution à ce problème est de trouver le chiffre le plus grand de la liste, le mettre la "colonne" la plus à gauche du nombre et le retirer de la liste.  
     On réalise cette opération jusqu'à ce que la liste soit vide.
-
-### Méthodes de recherche de solutions optimales ou presques optimales
-
-- **Bruteforce** : On cherche toutes les solutions possibles, ce qui requiert beaucoup de temps et de ressources.
-- **Algorithmes Gloutons** : On cherche à obtenir la meilleure solution à chaque étape du programme, c'est-à-dire des meilleures solutions locales.
-
-### Caractéristiques principales
-
-- Facilité de mise en place
-- Choix optimal à chaque étape
-- Décision irréversible
-- Objectif : solution satisfaisante rapidement
 
 ## Le problème du rendu de monnaie
 
@@ -56,21 +48,21 @@ On peut illustrer cela par deux exemples simples.
 ### Exercices de réflexion
 
 !!! fox_exercice "Exercices rendu de monnaie"
-    On souhaite rendre 53€ a un client.
+    On souhaite rendre 49€ a un client.
 
     1. On dispose d'un système monaitaire tel que Système 1 = {1,2,5,10,20,50}.  
     **Quelle solution serait obtenue par l'algorithme glouton grâce au Système 1 ?  
     Est-elle optimale?  
     Si non, donner une solution optimale.**  
     <br/>
-    2. On dispose d'un système monaitaire tel que Système 2 = {1,4,9,15,28,35}.  
+    2. On dispose d'un système monaitaire tel que Système 2 = {1,3,6,12,24,30}.  
     **Quelle solution serait obtenue par l'algorithme glouton grâce au Système 2 ?  
     Est-elle optimale?  
     Si non, donner une solution optimale.** 
 
 ### Système canonique
 
-On appelle **soluition canonique**, une solution pour laquelle un algorithme glouton donne la solution globalement optimale.
+On appelle **système canonique**, un système qui permet à un algorithme glouton de donner la solution optimale.
 
 ### Idée de l'algorithme
 
