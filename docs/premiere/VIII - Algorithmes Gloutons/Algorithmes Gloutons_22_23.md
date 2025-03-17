@@ -15,7 +15,7 @@ La méthode **bruteforce** donnera (théoriquement) la solution optimale en test
 On peut illustrer cela par deux exemples simples.
 
 !!! fox_exercice "Alpiniste"
-    Prenons le cas d'un alpiniste qui gravit la chaîne de montagne *Kaisen*.  
+    Prenons le cas d'un alpiniste qui gravit la chaîne de montagne *Kaizen*.  
     Il cherche à monter par les plus grands sommets qui se trouvent à sa droite ou sa gauche.  
     Les conditions météorologiques ne sont pas les meilleures et il y a beaucoup de nuages par plateau qui l'empêchent de voir derrière chacun des pics qu'il rencontre.
 
