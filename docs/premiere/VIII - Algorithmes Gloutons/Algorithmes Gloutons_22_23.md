@@ -21,6 +21,10 @@ On peut illustrer cela par deux exemples simples.
     Une solution à ce problème est de trouver le chiffre le plus grand de la liste, le mettre la "colonne" la plus à gauche du nombre et le retirer de la liste.  
     On réalise cette opération jusqu'à ce que la liste soit vide.
 
+### Système canonique
+
+On appelle **système canonique**, un système qui permet à un algorithme glouton de donner la solution optimale.
+
 ## Le problème du rendu de monnaie
 
 ### Principe
@@ -60,10 +64,6 @@ On peut illustrer cela par deux exemples simples.
     Est-elle optimale?  
     Si non, donner une solution optimale.** 
 
-### Système canonique
-
-On appelle **système canonique**, un système qui permet à un algorithme glouton de donner la solution optimale.
-
 ### Idée de l'algorithme
 
 L'algorithme de rendu de monnaie suit une approche gloutonne en sélectionnant à chaque étape la plus grande pièce ou billet possible ne dépassant pas le montant restant à rendre. Voici les étapes principales :
@@ -80,6 +80,21 @@ L'algorithme de rendu de monnaie suit une approche gloutonne en sélectionnant �
       - On soustrait sa valeur du montant restant   
  
     **On continue jusqu'à ce que le montant restant soit nul et on renvoie la liste de billets / pièces à rendre.**
+
+### Exercice : Rendu de monnaie
+
+Implémentez une fonction `rendu_monnaie(montant, systeme)` qui :
+
+- Prend en paramètre un montant à rendre et un système monétaire
+- Retourne la liste des pièces/billets à rendre
+- Utilise le moins de pièces possible
+
+**Exemple** :
+```python
+systeme = [1, 2, 5, 10, 20, 50]
+print(rendu_monnaie(53, systeme))  # Devrait afficher [50, 2, 1]
+```
+
 
 ## Le problème du sac à dos
 
@@ -145,23 +160,7 @@ Il existe trois stratégies principales pour résoudre ce problème de manière 
     3. Appliquer l'algorithme glouton en utilisant la stratégie par rapport valeur/masse.
     **Quelle stratégie semble donner les meilleurs résultats ?**
 
-## Travail Pratique : Implémentation des algorithmes gloutons
-
-### Exercice 1 : Rendu de monnaie
-
-Implémentez une fonction `rendu_monnaie(montant, systeme)` qui :
-
-- Prend en paramètre un montant à rendre et un système monétaire
-- Retourne la liste des pièces/billets à rendre
-- Utilise le moins de pièces possible
-
-**Exemple** :
-```python
-systeme = [1, 2, 5, 10, 20, 50]
-print(rendu_monnaie(53, systeme))  # Devrait afficher [50, 2, 1]
-```
-
-### Exercice 2 : Sac à dos
+### Exercice : Sac à dos
 
 !!! fox_exercice_important
     Cet exercice ressemble beaucoup à l'exercice réalisé au [**Jour 3**](../0%20-%20New%20Year%20Advent/Exercices%20J1%20-%20J9/Jour_3.md) et au [**Jour 4**](../0%20-%20New%20Year%20Advent/Exercices%20J1%20-%20J9/Jour_4.md) du calendrier de l'avant [**New Year Advent**](../0%20-%20New%20Year%20Advent/new_year_advent.md)
@@ -195,19 +194,4 @@ print(sac_a_dos_valeur(10, objets))  # Affiche les objets choisis et la valeur t
 
 # Stratégie par rapport valeur/masse
 print(sac_a_dos_rapport(10, objets))  # Affiche les objets choisis et la valeur totale
-```
-
-### Exercice 3 : Compression de Huffman
-
-Implémentez les fonctions suivantes pour la compression de Huffman :
-
-1. `calculer_frequences(texte)` : Calcule la fréquence de chaque caractère
-2. `construire_arbre(frequences)` : Construit l'arbre de Huffman
-3. `generer_codes(arbre)` : Génère les codes binaires pour chaque caractère
-4. `compresser(texte)` : Compresse le texte en utilisant l'algorithme de Huffman
-
-**Exemple** :
-```python
-texte = "abracadabra"
-print(compresser(texte))  # Affiche le texte compressé et le taux de compression
 ```
