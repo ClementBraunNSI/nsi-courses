@@ -1,6 +1,7 @@
 # Algorithmes à savoir pour le BAC
 
 ## Algorithme sur les listes
+
 **Écrire une fonction `presence`qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.**
 *Exemple :*
 *presence(3, [1, 2, 3, 4]) doit renvoyer True.*
@@ -120,3 +121,20 @@
 *Exemple:*
 *tri_insertion([5,2,4,1,3]) doit renvoyer [1,2,3,4,5]*
 *tri_insertion([]) doit renvoyer []*
+
+**Compléter la fonction `rendu_monnaie` qui prend en paramètre une liste (système monétaire) et un montant et renvoie une liste contenant les billets/pièces utiles pour rendre la monnaie.**
+
+!!! fox_correction "Algorithme de rendu de monnaie"
+
+    ```python
+        def rendu_monnaie(montant:int, systeme:list[int])-> list[int]:
+            solution = ...
+            for ... in systeme:
+                while montant - ... >= 0:
+                    solution = ... + [...] #Quelle est l'utilité de mettre des crochets autour de la valeur à rajouter?
+                    montant = montant - ...
+            return ...
+
+        systeme = [50,20,10,5,2,1]
+        print(rendu_monnaie(53, systeme)) 
+    ```
