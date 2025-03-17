@@ -21,7 +21,7 @@ On peut illustrer cela par deux exemples simples.
 
 !!! fox_exercice "Nombre le plus grand construit avec des chiffres"
     On dispose d'une liste de chiffres quelconques et on cherche à construire le nombre le plus grand sans trier la liste.  
-    Une solution à ce problème est de trouver le chiffre le plus grand de la liste, le mettre la "colonne" la plus à gauche du nombre et le retirer de la liste.  
+    Une solution à ce problème est de trouver le chiffre le plus grand de la liste, le mettre dans la "colonne" la plus à gauche du nombre et le retirer de la liste.  
     On réalise cette opération jusqu'à ce que la liste soit vide.
 
     *Exemple :*
