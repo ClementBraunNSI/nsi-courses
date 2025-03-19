@@ -8,7 +8,7 @@ Chaque pixel est assigné à une position que l’on nomme **coordonnées**.
 Ces coordonnées sont un couple *( i , j )* où i est une valeur comprise sur la largeur (axe des abscisses) et j est une valeur comprise sur la hauteur (axe des ordonnées).
 
 La **définition** d’une image correspond au nombre de pixels de celle-ci.
-On la calcule : $\texttt{résolution} = \texttt{hauteur} \times \texttt{largeur}$.
+On la calcule : $\texttt{definition} = \texttt{hauteur} \times \texttt{largeur}$.
 Par exemple, une image ayant 800 pixels de hauteur et 600 pixels de largeur a une définition de 480 000 pixels.
 
 La **résolution** d’une image correspond au nombre de pixels sur une longueur donnée. Son unité est le ppp (pixels par pouce). Un pouce est une longueur correspondant à 2,54cm.

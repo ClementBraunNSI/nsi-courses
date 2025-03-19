@@ -2,7 +2,7 @@
 
 ## Définitions et Concepts
 
-Un algorithme glouton est un algorithme qui a pour principe de choisir à chaque étapes de résolution d'un problème la meilleure solution à chacune de ses étapes.
+Les algorithmes gloutons sont des algorithmes qui ont pour principe de choisir à chaques étapes de leur résolution la meilleure solution locale.
 
 Ils peuvent répondre **au problème d'optimisation** en cherchant pour chaque itération un extremum qui **minimise ou maximise (suivant le problème) chacune des sous-étapes**.
 
