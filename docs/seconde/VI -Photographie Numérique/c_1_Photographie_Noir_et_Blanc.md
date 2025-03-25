@@ -48,10 +48,7 @@ Cependant, entre le noir et le blanc existe une quantité de nuances du mélange
 
 ## Les images en nuances de gris
 
-Pour donner de la profondeur à l’image ainsi que du contraste, on peut dans un premier temps utiliser les couleurs que l’on appelle des nuances de gris.
-Une nuance de gris correspond à du noir auquel on ajoute une certaine luminosité (exprimée en pourcentages).
-
-Une image en niveaux de gris est donc un tableau à deux dimensions dont chaque pixel qui la compose contient une valeur entre 0 et 255 (256 valeurs).
+Une image en nuances de gris est donc un tableau à deux dimensions dont chaque pixel qui la compose contient une valeur entre 0 et 255 (256 valeurs).
 
 Ainsi 100% de luminosité correspond à du blanc et 0% correspond à du noir.
 Ce pourcentage correspond au nombre entre 0 et 255 qui représente la nuance de gris associée.
