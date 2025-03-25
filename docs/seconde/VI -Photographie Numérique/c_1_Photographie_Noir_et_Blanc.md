@@ -53,14 +53,12 @@ Une nuance de gris correspond à du noir auquel on ajoute une certaine luminosit
 
 Une image en niveaux de gris est donc un tableau à deux dimensions dont chaque pixel qui la compose contient une valeur entre 0 et 255 (256 valeurs).
 
-On a dit précédemment que plus on rajoutait de pourcentage de luminosité. Ainsi 100% de luminosité correspond à du blanc et 0% correspond à du noir.
+Ainsi 100% de luminosité correspond à du blanc et 0% correspond à du noir.
 Ce pourcentage correspond au nombre entre 0 et 255 qui représente la nuance de gris associée.
 
 ![nuances](nuances_gris.png)
 
 **Remarque** : Plus la valeur est grande, plus le gris tendra sur du blanc, plus elle est faible, plus le gris tendra vers du noir.
-
-**Exercice** : Remplir le tableau de droite avec les niveaux de gris correspondants. Aidez vous de la palette au dessus.
 
 ![img_nuances](img_nuances.png)
 
