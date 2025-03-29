@@ -61,3 +61,4 @@ Cette épreuve vaut pour $\frac{1}{4}$ des points de la note finale.
 - [RELMY Lucas](http://lucasrelmynsi.gitlab.io/site_cours/)
 - [DEMERVILLE Erwan](https://nsi.erwandemerville.fr)
 - [RAMSTEIN Stéphane](https://stephane_ramstein.gitlab.io/nsi/)
+- [MARCHAND Mathieu](https://mmarchand-nsi.github.io)
