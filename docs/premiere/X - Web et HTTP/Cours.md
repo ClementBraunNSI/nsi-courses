@@ -150,6 +150,7 @@ Caractéristiques :
 Les **cookies** sont de petits fichiers texte stockés par le navigateur sur l'ordinateur de l'utilisateur. Ils permettent aux sites web de stocker des informations sur l'utilisateur et de les récupérer lors de visites ultérieures.
 
 Types de cookies :
+
 - **Cookies de session** : Supprimés à la fermeture du navigateur
 - **Cookies persistants** : Conservés jusqu'à une date d'expiration spécifiée
 - **Cookies first-party** : Créés par le site visité
