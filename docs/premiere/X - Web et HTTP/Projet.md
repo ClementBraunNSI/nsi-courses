@@ -63,7 +63,7 @@ tableauImage.addEventListener('mouseout', function() {
 });
 ```
 
-### Quiz sur le tableau original
+### Pour aller plus loin : Quiz sur le tableau original
 
 Créez un petit quiz avec quelques questions sur le tableau original :
 
@@ -98,4 +98,3 @@ quizForm.addEventListener('submit', function(event) {
 
 - [MDN Web Docs - JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 - [W3Schools - JavaScript Tutorial](https://www.w3schools.com/js/)
-- [CSS-Tricks](https://css-tricks.com/)

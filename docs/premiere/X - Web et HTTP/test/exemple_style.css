@@ -187,18 +187,3 @@ footer {
 #bouton-mode:hover {
     background-color: #555;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .tableau-section, .info-tableau {
-        flex-direction: column;
-    }
-    
-    .miniatures {
-        justify-content: center;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-}
