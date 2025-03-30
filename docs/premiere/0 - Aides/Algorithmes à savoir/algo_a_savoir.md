@@ -9,7 +9,7 @@
 
 !!! fox_correction "Algorithme de recherche d'une valeur"
     ```python
-        def presence(liste:list[int], valeur:int)->int:
+        def presence(liste:list[int], valeur:int)->bool:
             present = False
             for elt in liste:
                 if elt == valeur:
@@ -49,7 +49,7 @@
 *Exemple :*  
 *max_et_min([3, 1, 9, 2]) doit renvoyer 1.*
 
-!!! fox_correction "Algorithme de recherche de l'indice du minimum d'une liste"
+!!! fox_correction "Algorithme de recherche de l'indice du maximum d'une liste"
     ```python
         def indice_minimum(liste:list[int])->int:
             mini = liste[0]
@@ -65,7 +65,7 @@
 *Exemple :*  
 *max_et_min([3, 1, 9, 2]) doit renvoyer 2.*
 
-!!! fox_correction "Algorithme de recherche de l'indice du minimum d'une liste"
+!!! fox_correction "Algorithme de recherche de l'indice du maximum d'une liste"
     ```python
         def indice_maximum(liste:list[int])->int:
             maxi = liste[0]

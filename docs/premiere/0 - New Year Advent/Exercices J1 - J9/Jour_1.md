@@ -2,7 +2,7 @@
 
 Le réveillon du Nouvel An est une fête généralement partagée en famille ou entre amis.
 
-Une organisation généralement proposée est de partager les frais pour éviter que tout le monde ramène des denrées et limiter les doublons ou le gachis.
+Une organisation généralement proposée est de partager les frais pour éviter que tout le monde ramène des denrées et limiter les doublons ou le gâchis.
 
 Vous préparez votre soirée du nouvel an et prévoyez d'inviter 20 personnes.
 

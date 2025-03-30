@@ -11,7 +11,7 @@ Une **équation booléenne** est un ensemble de fonctions booléenne prenant en 
 
 ## Fonctions booléennes
 
-Il existe un certain nombre d'opérations booléennes. Dans ce cours, on s'interessera aux principales.
+Il existe un certain nombre d'opérations booléennes. Dans ce cours, on s'intéressera aux principales.
 
 Ces fonctions donnent un résultat fini dépendant de l'état des variables en paramètre.
 On appelle cet ensemble de couples états/résultat **une table de vérité**.
@@ -72,7 +72,7 @@ La fonction XOR correspond à une fonction booléenne OR mais qui renvoie 1 uniq
 On rappelle qu'une équation booléenne est un ensemble de fonctions booléennes.
 Ces fonctions répondent à l'algèbre booléenne créée par George Bool à la fin du XIXème siècle.
 
-Les équastions booléennes se lisent de gauche à droite et dépendent des priorités opératoires PEMDAS comme en mathématiques.
+Les équations booléennes se lisent de gauche à droite et dépendent des priorités opératoires PEMDAS comme en mathématiques.
 
 $S = (a + b)\times c$ se lit "a ou b et c".
 
