@@ -2,7 +2,7 @@
 
 Le but de ce projet est de créer une page web présentant un tableau de maître revisité avec des renards. Chaque élève travaillera sur un tableau différent, qu'il choisira ou tirera au sort parmi une sélection de 18 tableaux.
 
-## 1 - La page Web et son style
+## La page Web et son style
 
 Vous devrez créer une page web présentant le tableau revisité qui vous a été attribué. Votre page devra inclure :
 
@@ -36,9 +36,9 @@ projet-tableau-renard/
 
 Pour rendre votre page plus interactive, vous allez implémenter quelques fonctionnalités JavaScript simples. Vous n'avez pas besoin d'avoir des connaissances avancées en JavaScript, des modèles de code vous seront fournis que vous pourrez adapter à votre projet.
 
-Voici les fonctionnalités que vous pourrez implémenter (choisissez-en au moins deux) :
+Voici les fonctionnalités que vous devrez implémenter  :
 
-### 1. Effet de survol sur le tableau
+### Effet de survol sur le tableau
 
 Lorsque l'utilisateur passe la souris sur l'image du tableau, vous pouvez :
 
@@ -63,7 +63,7 @@ tableauImage.addEventListener('mouseout', function() {
 });
 ```
 
-### 2. Quiz sur le tableau original
+### Quiz sur le tableau original
 
 Créez un petit quiz avec quelques questions sur le tableau original :
 
@@ -91,28 +91,6 @@ quizForm.addEventListener('submit', function(event) {
   // Afficher le résultat
   resultatQuiz.textContent = `Vous avez obtenu ${score} point(s) sur 2 !`;
   resultatQuiz.style.display = 'block';
-});
-```
-
-### 3. Mode jour/nuit
-
-Ajoutez un bouton permettant de basculer entre un mode jour et un mode nuit pour votre page :
-
-```javascript
-
-const boutonMode = document.getElementById('bouton-mode');
-const body = document.body;
-
-boutonMode.addEventListener('click', function() {
-  
-  body.classList.toggle('mode-nuit');
-  
-  
-  if (body.classList.contains('mode-nuit')) {
-    boutonMode.textContent = 'Mode jour';
-  } else {
-    boutonMode.textContent = 'Mode nuit';
-  }
 });
 ```
 
