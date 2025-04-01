@@ -6,10 +6,9 @@
 
 Avant de comprendre comment une image est formée, il faut comprendre comment l’oeil voit ce qui l’entoure.
 
-La cornée sert de lentille. Elle permet de faire la mise au point pour voir de manière nette.
+La cornée sert à faire converger les rayons de la lumière.
 L’iris permet d’ajuster la quantité de lumière qui rentre dans la pupille.
-
-Les rayons lumineux traversent le cristallin et sont projetés sur la rétine.
+Le cristallin permet de faire la mise au point pour voir de manière nette en projettant les rayons lumineux sur la rétine.
 La rétine contient de nombreuses cellules qui réagissent à la lumières. Ce sont les cônes.
 Il existe trois types de cônes : les verts, les bleus et les rouge.
 **Remarque** : Il y a plus de cônes verts que de bleus et rouges.

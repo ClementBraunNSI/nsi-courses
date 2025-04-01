@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <question type="multichoice">
+        <name><text>Représentation des images en niveaux de gris</text></name>
+        <questiontext>
+            <text>Quelle est la valeur d'un pixel totalement blanc dans une image en nuances de gris ?</text>
+        </questiontext>
+        <answer fraction="100"><text>255</text></answer>
+        <answer fraction="0"><text>128</text></answer>
+        <answer fraction="0"><text>0</text></answer>
+        <answer fraction="0"><text>512</text></answer>
+    </question>
+
+    <question type="multichoice">
+        <name><text>Représentation du noir</text></name>
+        <questiontext>
+            <text>Quelle est la valeur d'un pixel totalement noir en niveaux de gris ?</text>
+        </questiontext>
+        <answer fraction="100"><text>0</text></answer>
+        <answer fraction="0"><text>255</text></answer>
+        <answer fraction="0"><text>128</text></answer>
+        <answer fraction="0"><text>64</text></answer>
+    </question>
+
+    <question type="multichoice">
+        <name><text>Conversion en mémoire</text></name>
+        <questiontext>
+            <text>Comment un ordinateur stocke-t-il les valeurs des pixels en niveaux de gris ?</text>
+        </questiontext>
+        <answer fraction="100"><text>En les convertissant en binaire (0 et 1)</text></answer>
+        <answer fraction="0"><text>En utilisant directement des nombres décimaux</text></answer>
+        <answer fraction="0"><text>En les stockant sous forme de lettres</text></answer>
+        <answer fraction="0"><text>En les enregistrant sous forme d'images JPEG</text></answer>
+    </question>
+
+    <question type="multichoice">
+        <name><text>Rôle de la cornée</text></name>
+        <questiontext>
+            <text>Quel est le rôle de la cornée dans l'œil humain ?</text>
+        </questiontext>
+        <answer fraction="100"><text>Faire converger les rayons lumineux</text></answer>
+        <answer fraction="0"><text>Ajuster la quantité de lumière entrant</text></answer>
+        <answer fraction="0"><text>Protéger l'œil contre les infections</text></answer>
+        <answer fraction="0"><text>Envoyer l'information au cerveau</text></answer>
+    </question>
+
+    <question type="multichoice">
+        <name><text>Fonction de l'iris</text></name>
+        <questiontext>
+            <text>Quel est le rôle principal de l'iris ?</text>
+        </questiontext>
+        <answer fraction="100"><text>Réguler la quantité de lumière entrant dans l'œil</text></answer>
+        <answer fraction="0"><text>Faire la mise au point sur les objets</text></answer>
+        <answer fraction="0"><text>Convertir la lumière en impulsions électriques</text></answer>
+        <answer fraction="0"><text>Modifier la forme du cristallin</text></answer>
+    </question>
+
+    <question type="multichoice">
+        <name><text>Les cônes</text></name>
+        <questiontext>
+            <text>Quel type de cellules de la rétine est responsable de la perception des couleurs ?</text>
+        </questiontext>
+        <answer fraction="100"><text>Les cônes</text></answer>
+        <answer fraction="0"><text>Les bâtonnets</text></answer>
+        <answer fraction="0"><text>Les neurones optiques</text></answer>
+        <answer fraction="0"><text>Les cellules ciliées</text></answer>
+    </question>
+</quiz>
