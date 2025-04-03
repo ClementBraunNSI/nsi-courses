@@ -38,6 +38,9 @@ markdown_extensions:
   - admonition
   - attr_list
 
+plugins:
+  - mkdocs-pdf
+
 
 
 extra_css:
