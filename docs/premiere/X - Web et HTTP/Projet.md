@@ -2,7 +2,8 @@
 
 Le but de ce projet est de créer une page web présentant un tableau de maître revisité avec des renards. Chaque élève travaillera sur un tableau différent, qu'il choisira ou tirera au sort parmi une sélection de 18 tableaux.
 
-Vous retrouverez un dossier contenant une exemple de CSS, une fonction javascript pouvant gérant le changement d'images et le formulaire.
+Vous retrouverez un dossier contenant une exemple de CSS, une fonction javascript pouvant gérant le changement d'images et le formulaire.  
+
 Voici la maquette [**maquette**](maquette_.zip).
 
 ## La page Web et son style
