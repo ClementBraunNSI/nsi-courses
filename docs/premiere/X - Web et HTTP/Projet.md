@@ -38,7 +38,7 @@ projet-tableau-renard/
 
 Voici un exemple de structure de fichiers pour votre projet :
 
-<img src="exemple_kanagafox.png" width="30%"/>
+![exemple](./exemple_kanagafox.png)
 
 ## 2 - Dynamiser la page
 
