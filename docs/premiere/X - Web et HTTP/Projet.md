@@ -50,21 +50,29 @@ Voici les fonctionnalités que vous devrez implémenter  :
 
 Vous devrez rajouter une de ces fonctionnalités à votre projet :
 
-1. **Mode Jour/Nuit**
-   - Ajoutez un bouton permettant de basculer entre un thème clair et sombre
-   - Modifiez les couleurs de fond, du texte et des bordures
-   - Sauvegardez la préférence de l'utilisateur dans le localStorage
+#### Mode Jour/Nuit
 
-2. **Galerie de détails**
-   - Créez une section avec des miniatures de détails du tableau
-   - Au clic sur une miniature, affichez une version agrandie dans une fenêtre modale
-   - Ajoutez des effets de transition fluides
+- Ajoutez un bouton permettant de basculer entre un thème clair et sombre  
 
-3. **Comparaison interactive**
-   - Créez un curseur (slider) pour faire apparaître progressivement la version renard
-   - Ajoutez des points d'intérêt cliquables sur l'image
-   - Affichez des informations au survol des points
+- Modifiez les couleurs de fond, du texte et des bordures  
 
+- Sauvegardez la préférence de l'utilisateur dans le localStorage
+
+#### Galerie de détails
+
+- Créez une section avec des miniatures de détails du tableau  
+
+- Au clic sur une miniature, affichez une version agrandie dans une fenêtre modale  
+
+- Ajoutez des effets de transition fluides
+
+#### Comparaison interactive
+
+- Créez un curseur (slider) pour faire apparaître progressivement la version renard  
+
+- Ajoutez des points d'intérêt cliquables sur l'image  
+
+- Affichez des informations au survol des points
 
 ## Ressources
 
