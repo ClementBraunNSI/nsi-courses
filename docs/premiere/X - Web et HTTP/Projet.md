@@ -2,6 +2,9 @@
 
 Le but de ce projet est de créer une page web présentant un tableau de maître revisité avec des renards. Chaque élève travaillera sur un tableau différent, qu'il choisira ou tirera au sort parmi une sélection de 18 tableaux.
 
+Vous retrouverez un dossier contenant une exemple de CSS, une fonction javascript pouvant gérant le changement d'images et le formulaire.
+Voici la maquette [**maquette**](maquette_.zip).
+
 ## La page Web et son style
 
 Vous devrez créer une page web présentant le tableau revisité qui vous a été attribué. Votre page devra inclure :
@@ -38,61 +41,25 @@ Pour rendre votre page plus interactive, vous allez implémenter quelques foncti
 
 Voici les fonctionnalités que vous devrez implémenter  :
 
-### Effet de survol sur le tableau
+### Démarche de projet
 
-Lorsque l'utilisateur passe la souris sur l'image du tableau, vous pouvez :
+Vous devrez rajouter une de ces fonctionnalités à votre projet :
 
-- Afficher le tableau original à la place du tableau revisité
-- Afficher une légende ou une information supplémentaire
-- Zoomer légèrement sur l'image
+1. **Mode Jour/Nuit**
+   - Ajoutez un bouton permettant de basculer entre un thème clair et sombre
+   - Modifiez les couleurs de fond, du texte et des bordures
+   - Sauvegardez la préférence de l'utilisateur dans le localStorage
 
-```javascript
+2. **Galerie de détails**
+   - Créez une section avec des miniatures de détails du tableau
+   - Au clic sur une miniature, affichez une version agrandie dans une fenêtre modale
+   - Ajoutez des effets de transition fluides
 
-const tableauImage = document.getElementById('tableau-image');
-const tableauOriginal = 'images/tableau-original.jpg';
-const tableauRenard = 'images/tableau-renard.jpg';
+3. **Comparaison interactive**
+   - Créez un curseur (slider) pour faire apparaître progressivement la version renard
+   - Ajoutez des points d'intérêt cliquables sur l'image
+   - Affichez des informations au survol des points
 
-
-tableauImage.addEventListener('mouseover', function() {
-  tableauImage.src = tableauOriginal;
-});
-
-
-tableauImage.addEventListener('mouseout', function() {
-  tableauImage.src = tableauRenard;
-});
-```
-
-### Pour aller plus loin : Quiz sur le tableau original
-
-Créez un petit quiz avec quelques questions sur le tableau original :
-
-```javascript
-
-const quizForm = document.getElementById('quiz-form');
-const resultatQuiz = document.getElementById('resultat-quiz');
-
-quizForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Empêche l'envoi du formulaire
-  
-  
-  const reponse1 = document.querySelector('input[name="question1"]:checked');
-  const reponse2 = document.querySelector('input[name="question2"]:checked');
-  
-  
-  let score = 0;
-  if (reponse1 && reponse1.value === 'correct') {
-    score++;
-  }
-  if (reponse2 && reponse2.value === 'correct') {
-    score++;
-  }
-  
-  // Afficher le résultat
-  resultatQuiz.textContent = `Vous avez obtenu ${score} point(s) sur 2 !`;
-  resultatQuiz.style.display = 'block';
-});
-```
 
 ## Ressources
 

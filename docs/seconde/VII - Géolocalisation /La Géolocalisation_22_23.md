@@ -31,6 +31,21 @@ Cependant, il faut noter l'utilisation d'un quatrième satellite qui sert à la 
 
 [Activité : Trilatération](https://parcours.algorea.org/fr/a/88752303685492924;p=4702,1067253748629066205,183305583351435935,1207970506541061357,237778358454750514;a=0)
 
+### 2.1 - Le calcul d'itinéraires
+
+Une fois la position déterminée grâce à la trilatération, les systèmes de navigation peuvent calculer des itinéraires optimaux entre deux points. Pour ce faire, ils utilisent des algorithmes sophistiqués qui prennent en compte plusieurs paramètres :
+
+- La distance à parcourir
+- Le temps de trajet estimé
+- Les conditions de circulation en temps réel
+- Les travaux et déviations
+- Le type de route (autoroute, route nationale, chemin...)
+- Le mode de transport choisi (voiture, vélo, marche à pied...)
+
+Des applications comme Google Maps, Waze ou Plans utilisent ces données pour proposer plusieurs itinéraires possibles, avec pour chacun une estimation du temps de trajet. Ces applications mettent régulièrement à jour leurs suggestions en fonction des informations transmises par les autres utilisateurs sur le trafic, les accidents ou les ralentissements.
+
+__________
+
 ### 3 - Le protocole NMEA-0183
 
 Le protocole NMEA-0183 est un protocole mis en place par la National Marine Electronics Association (NMEA). Ce protocole permet de fournir la localisation d'un objet ou d'une personne en trames facilement décodables.
@@ -51,7 +66,6 @@ $GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E
 - **04** : nombre de satellites utilisés
 - **3.2** : précision horizontale
 - **200.2, M** : altitude, ici 200 mètres
-
 
 Cette trame NMEA donne la localisation de Paris.
 
@@ -94,4 +108,4 @@ $GPGGA,175736.303,4533.786,N,00554.803,E,1,05,1.0,154.3,M,0.0,M,,*68
 
 *A quelle hauteur est située l'objet? _________________________________________________*
 
-*A quelle ville correspondent ces coordonnées : 41.921; 8.735 ?* 
+*A quelle ville correspondent ces coordonnées : 41.921; 8.735 ?*
