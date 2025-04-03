@@ -8,37 +8,28 @@
 
 Indiquer quel schéma représente la latitude et lequel représente la longitude.
 
-La ....................... est une technique permettant de situer de manière précise un lieu, une personne, un objet sur la planète. Pour se faire, on doit connaître au moins trois coordonnées géographiques.
+La géolocalisation est une technique permettant de situer de manière précise un lieu, une personne, un objet sur la planète. Pour ce faire, on doit connaître au moins trois coordonnées géographiques.
 
-La .......................... est la mesure de l'angle formé entre le point extrême de l'équateur, le centre de la terre et la position de ce que l'on cherche à localiser exprimée en degrés. La  .......(longitude)................... est une mesure faite par rapport à un des méridien de la Terre sur 360° exprimée en degrés. L' .......................... est la hauteur du point maximal de l'objet que l'on cherche à situer par rapport au niveau 0 de la mer, elle est exprimée en mètres.
-
+La latitude est la mesure de l'angle formé entre le point extrême de l'équateur, le centre de la terre et la position de ce que l'on cherche à localiser exprimée en degrés. La longitude est une mesure faite par rapport à un des méridiens de la Terre sur 360° exprimée en degrés. L'altitude est la hauteur du point maximal de l'objet que l'on cherche à situer par rapport au niveau 0 de la mer, elle est exprimée en mètres.
 
 ![im1](im1.png)
 ![im2](im2.png)
 
-
-
-Cette géolocalisation est permise grâce à un système mondialement connu le **GPS (Global Positioning System)**. Le .......(GPS)....... a été développé en 1960 par l'armée américaine mais le premier satellite GPS a été envoyé dans l'espace en dans les années 1980. D'autres systèmes ont été mis en place par d'autres pays et notamment **Galileo** le système de navigation européen qui est plus précis que son homologue américain.
+Cette géolocalisation est permise grâce à un système mondialement connu le **GPS (Global Positioning System)**. Le GPS a été développé en 1960 par l'armée américaine mais le premier satellite GPS a été envoyé dans l'espace dans les années 1980. D'autres systèmes ont été mis en place par d'autres pays et notamment **Galileo** le système de navigation européen qui est plus précis que son homologue américain.
 
 Par exemple, la position de la ville de Paris est **48.8588897 (latitude) et 2.320041 (longitude)**.
 
 __________
 
-
-
 ### 2 - La trilatération
-
-
 
 <img src="https://gisgeography.com/wp-content/uploads/2016/11/Trilateration-4.png" alt="How GPS Receivers Work - Trilateration vs Triangulation - GIS Geography" style="zoom:30%;" />
 
-
-
-La **trilatération** est l'utilisation de 3 satellites pour déterminer une position. À intervalles réguliers, plusieurs satellites emettent des ............(signaux)....... sur la Terre. Les .......(récepteurs)....... GPS placés dans nos divers ......(appareils)...... domestiques ou personnels reçoivent ces signaux et cela permet de localiser plus ou moins précisément ce que l'on chercahe.
+La **trilatération** est l'utilisation de 3 satellites pour déterminer une position. À intervalles réguliers, plusieurs satellites émettent des signaux sur la Terre. Les récepteurs GPS placés dans nos divers appareils domestiques ou personnels reçoivent ces signaux et cela permet de localiser plus ou moins précisément ce que l'on cherche.
 
 Cependant, il faut noter l'utilisation d'un quatrième satellite qui sert à la synchronisation des autres pour éviter de mauvais envois de signaux (comme un diapason).
 
-
+[Activité : Trilatération](https://parcours.algorea.org/fr/a/88752303685492924;p=4702,1067253748629066205,183305583351435935,1207970506541061357,237778358454750514;a=0)
 
 ### 3 - Le protocole NMEA-0183
 
@@ -47,6 +38,10 @@ Le protocole NMEA-0183 est un protocole mis en place par la National Marine Elec
 Généralement, on exprime les coordonnées géographiques dans le système sexagésimal, noté DMS pour degrés, minutes, secondes. Par exemple 49°30'30'' pour 49 degrés, 30 minutes et 30 secondes. Une minute d'angle vaut 1/60 degrés tandis qu'une seconde d'angle vaut 1/3600 degrés.
 
 Un exemple de trame NMEA-0183 :
+
+```
+$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E
+```
 
 - **GPGGA** : type de la trame
 - **064036.289** : heure d'envoi de la trame, ici 06h 40min 36,289s (UTC)
@@ -57,37 +52,24 @@ Un exemple de trame NMEA-0183 :
 - **3.2** : précision horizontale
 - **200.2, M** : altitude, ici 200 mètres
 
-```
-$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E
-```
 
 Cette trame NMEA donne la localisation de Paris.
-
-
-
-### Exercices : 
 
 #### Les coordonnées GPS
 
 1. Sur votre téléphone ou sur Google Maps, retrouvez les coordonnées GPS du lycée.
 
-	
-	
 2. Voici des coordonnées GPS : , donnez le nombre de restaurants et de boutiques aux alentours.
 
-	
-	
 3. Retrouver les coordonnées GPS des lieux où ont été prises les photos fournies en annexe grâce aux propriétés de celles-ci et donner les lieux où elles ont été prises.
 
-	
-	
 4. Donnez les coordonnées GPS de la Tour Eiffel à Paris et de la Statue de la Liberté à New York. Calculez la distance entre ces deux lieux en kilomètres en utilisant de l'outil lexilogos[^1].
-
-
-
 
 [^1]:https://www.lexilogos.com/calcul_distances.htm
 
+### Activités sur Algorea
+
+[Calcul d'itinéraires](**https://parcours.algorea.org/fr/a/73021242266738836;p=4702,1067253748629066205,183305583351435935,1207970506541061357,1896542330140252255;pa=0**)
 
 
 #### Décoder des trames NMEA
@@ -113,15 +95,3 @@ $GPGGA,175736.303,4533.786,N,00554.803,E,1,05,1.0,154.3,M,0.0,M,,*68
 *A quelle hauteur est située l'objet? _________________________________________________*
 
 *A quelle ville correspondent ces coordonnées : 41.921; 8.735 ?* 
-
-
-
-### Activités sur Algorea
-
-Localisation d'un point gràce à la latitude et la longitude sur la planète  :
-
-https://parcours.algorea.org/contents/4707-4702-1067253748629066205-183305583351435935-1207970506541061357-237778358454750514-380941821572110134/
-
-La trilatération concrètement:
-
-https://parcours.algorea.org/contents/4707-4702-1067253748629066205-183305583351435935-1207970506541061357-237778358454750514-88752303685492924/

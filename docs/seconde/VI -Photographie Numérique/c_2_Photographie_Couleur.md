@@ -23,13 +23,14 @@ Les cônes transforment l’énergie lumineuse en impulsion électriques qui son
 
 Le fonctionnement du capteur d’un appareil photo est très similaire au fonctionnement de l’oeil.
 
-La lumière suit un chemin particulier. Elle traverse dans un premier temps l’objectif (une série de lentilles qui permet d’adapter ce que l’on veut photographier).
+La lumière suit un chemin particulier. Elle traverse dans un premier temps **l’objectif** (une série de lentilles qui permet d’adapter la netteté et faire converger la lumière vers le capteur.
 
-Elle continue son chemin à travers **l’obturateur** qui permet d’adapter la **quantité de lumière** qui se dirige vers le capteur numérique.
+Elle continue son chemin à travers **le diaphragme** qui permet d’adapter la **quantité de lumière** qui se dirige vers le capteur numérique.
 
 Elle traverse ce que l’on appelle la **matrice de Bayer** qui est un filtre qui permet de scinder les différentes couleurs de la lumière. Ce filtre est superposé au **capteur numérique**.
 
-Ce capteur est composé d’énormément de cellules qui réagissent à la lumière : on les appelle **photosites**. Les photosites transforment l’énergie lumineuse en signal électrique (à la manière des cônes).
+Ce capteur est composé de beaucoup de cellules qui réagissent à la lumière : on les appelle **photosites**.  
+Les photosites transforment l’énergie lumineuse (Rouge, Bleu et Vert) en signal électrique (à la manière des cônes rétiniens).
 
 **Grâce au paragraphe précédent, remplir le schéma suivant :**
 

@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else if (score === 1) {
                     message = 'Vous avez obtenu 1 point sur 2. Pas mal!';
                 } else {
-                    message = 'Bravo! Vous avez obtenu 2 points sur 2!';
+                    message = "Bravo! Vous avez obtenu 2 points sur 2! La lettre est A";
                 }
             }
             
