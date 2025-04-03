@@ -35,6 +35,10 @@ projet-tableau-renard/
     └── script.js
 ```
 
+Voici un exemple de structure de fichiers pour votre projet :
+
+<img src="exemple_kanagafox.png" width="30%"/>
+
 ## 2 - Dynamiser la page
 
 Pour rendre votre page plus interactive, vous allez implémenter quelques fonctionnalités JavaScript simples. Vous n'avez pas besoin d'avoir des connaissances avancées en JavaScript, des modèles de code vous seront fournis que vous pourrez adapter à votre projet.
