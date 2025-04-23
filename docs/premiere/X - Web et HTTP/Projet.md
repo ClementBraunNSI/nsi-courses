@@ -56,7 +56,25 @@ Vous devrez rajouter une de ces fonctionnalités à votre projet :
 
 - Modifiez les couleurs de fond, du texte et des bordures  
 
-- Sauvegardez la préférence de l'utilisateur dans le localStorage
+```javascript
+const boutonMode = document.getElementById('bouton-mode');
+    const body = document.body;
+    
+    if (boutonMode) {
+        boutonMode.addEventListener('click', function() {
+            // Ajouter ou retirer la classe 'mode-nuit' au body
+            body.classList.toggle('mode-nuit');
+            
+            // Changer le texte du bouton
+            if (body.classList.contains('mode-nuit')) {
+                boutonMode.textContent = 'Mode jour';
+            } else {
+                boutonMode.textContent = 'Mode nuit';
+            }
+        });
+    }
+
+```
 
 #### Galerie de détails
 
