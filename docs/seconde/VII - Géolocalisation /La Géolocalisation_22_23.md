@@ -83,7 +83,7 @@ Cette trame NMEA donne la localisation de Paris.
 
 ### Activités sur Algorea
 
-[Calcul d'itinéraires](**https://parcours.algorea.org/fr/a/73021242266738836;p=4702,1067253748629066205,183305583351435935,1207970506541061357,1896542330140252255;pa=0**)
+[Calcul d'itinéraires](**https://parcours.algorea.org/fr/a/305211257887472178;p=4702,1067253748629066205,183305583351435935,1207970506541061357,1896542330140252255;a=0;pa=0**)
 
 
 #### Décoder des trames NMEA
