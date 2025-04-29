@@ -43,7 +43,7 @@ Pour l’image en couleur, le pixel comprend trois composantes qui permettent de
 Chaque pixel est composé d’un ensemble de **trois valeurs** représentant la quantité de rouge, de vert et de bleu qui le compose entre 0 et 255.
 On peut définir le pixel Rouge par les valeurs (255, 0, 0), le vert (0,255,0) et le bleu (0,0,255)
 
-Les couleurs sont donc des additions de ces composantes en faisant varier leur intensité.
+Les couleurs sont donc des combinaisons de ces composantes en faisant varier leur intensité.
 
 On peut définir d’autres couleurs comme le :
 
@@ -52,6 +52,7 @@ On peut définir d’autres couleurs comme le :
 - **Jaune ( 255, 255, 0)**
 - **Blanc (255, 255, 255)**
 - **Noir (0, 0, 0)**
+- **Orange Renard (195, 88, 23)**
 
 **Colorier les cases en fonction de la valeur du pixel:**
 
