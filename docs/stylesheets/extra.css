@@ -1,198 +1,198 @@
 :root {
-    --md-admonition-icon--fox_correction: url('../images/logo.png');
-    --md-admonition-icon--fox_exercice: url('../images/logo.png');
-    --md-admonition-icon--redstone_exo : url('../images/Redstone_Dust.png');
-    --md-admonition-icon--fox_exercice_important : url('../images/logo_important.png');
-    --md-admonition-icon--fox_exercice_test : url('../images/logo_4.png');
+  --md-admonition-icon--fox_correction: url('../images/logo.png');
+  --md-admonition-icon--fox_exercice: url('../images/logo.png');
+  --md-admonition-icon--redstone_exo : url('../images/Redstone_Dust.png');
+  --md-admonition-icon--fox_exercice_important : url('../images/logo_important.png');
+  --md-admonition-icon--fox_exercice_test : url('../images/logo_4.png');
 
-  }
-  .md-typeset .admonition.fox_correction,
-  .md-typeset details.fox_correction {
-    border-color: rgb(242, 117, 0);
-  }
-  .md-typeset .fox_correction > .admonition-title,
-  .md-typeset .fox_correction > summary {
-    background-color: rgba(242, 117, 0,0.1);
-  }
-  .md-typeset .fox_correction > .admonition-title::before,
-  .md-typeset .fox_correction > summary::before {
-    background-color: rgb(242, 117, 0);
-    -webkit-mask-image: var(--md-admonition-icon--fox_correction);
-            mask-image: var(--md-admonition-icon--fox_correction);
-  }
+}
+.md-typeset .admonition.fox_correction,
+.md-typeset details.fox_correction {
+  border-color: rgb(242, 117, 0);
+}
+.md-typeset .fox_correction > .admonition-title,
+.md-typeset .fox_correction > summary {
+  background-color: rgba(242, 117, 0,0.1);
+}
+.md-typeset .fox_correction > .admonition-title::before,
+.md-typeset .fox_correction > summary::before {
+  background-color: rgb(242, 117, 0);
+  -webkit-mask-image: var(--md-admonition-icon--fox_correction);
+          mask-image: var(--md-admonition-icon--fox_correction);
+}
 
-  .md-typeset .admonition.fox_exercice,
-  .md-typeset details.fox_exercice_important {
-    border-color: rgb(67, 140, 234);
-  }
-  .md-typeset .fox_exercice > .admonition-title,
-  .md-typeset .fox_exercice_important > summary {
-    background-color: rgba(67, 140, 234,0.2);
-  }
-  .md-typeset .fox_exercice > .admonition-title::before,
-  .md-typeset .fox_exercice > summary::before {
-    background-color: rgb(67, 140, 234);
-    -webkit-mask-image: var(--md-admonition-icon--fox_exercice);
-            mask-image: var(--md-admonition-icon--fox_exercice);
-  }
+.md-typeset .admonition.fox_exercice,
+.md-typeset details.fox_exercice_important {
+  border-color: rgb(67, 140, 234);
+}
+.md-typeset .fox_exercice > .admonition-title,
+.md-typeset .fox_exercice_important > summary {
+  background-color: rgba(67, 140, 234,0.2);
+}
+.md-typeset .fox_exercice > .admonition-title::before,
+.md-typeset .fox_exercice > summary::before {
+  background-color: rgb(67, 140, 234);
+  -webkit-mask-image: var(--md-admonition-icon--fox_exercice);
+          mask-image: var(--md-admonition-icon--fox_exercice);
+}
 
-  .md-typeset .admonition.fox_exercice_important,
-  .md-typeset details.fox_exercice_important {
-    border-color: rgb(211, 73, 27);
-  }
-  .md-typeset .fox_exercice_important > .admonition-title,
-  .md-typeset .fox_exercice_important > summary {
-    background-color: rgba(211, 73, 27,0.2);
-  }
-  .md-typeset .fox_exercice_important > .admonition-title::before,
-  .md-typeset .fox_exercice_important > summary::before {
-    background-color: rgb(211, 73, 27);
-    height: 175%;
-    width: 5rem;
-    margin-left: -4.5%;
-    margin-top: -2.5%;
-    -webkit-mask-image: var(--md-admonition-icon--fox_exercice_important);
-            mask-image: var(--md-admonition-icon--fox_exercice_important);
-  }
+.md-typeset .admonition.fox_exercice_important,
+.md-typeset details.fox_exercice_important {
+  border-color: rgb(211, 73, 27);
+}
+.md-typeset .fox_exercice_important > .admonition-title,
+.md-typeset .fox_exercice_important > summary {
+  background-color: rgba(211, 73, 27,0.2);
+}
+.md-typeset .fox_exercice_important > .admonition-title::before,
+.md-typeset .fox_exercice_important > summary::before {
+  background-color: rgb(211, 73, 27);
+  height: 175%;
+  width: 5rem;
+  margin-left: -4.5%;
+  margin-top: -2.5%;
+  -webkit-mask-image: var(--md-admonition-icon--fox_exercice_important);
+          mask-image: var(--md-admonition-icon--fox_exercice_important);
+}
 
-  .md-typeset .admonition.fox_exercice_important_correction,
-  .md-typeset details.fox_exercice_important {
-    border-color: rgb(242, 117, 0);
-  }
-  .md-typeset .fox_exercice_important_correction > .admonition-title,
-  .md-typeset .fox_exercice_important_correction > summary {
-    background-color: rgba(242, 117, 0,0.2);
-  }
-  .md-typeset .fox_exercice_important_correction > .admonition-title::before,
-  .md-typeset .fox_exercice_important_correction > summary::before {
-    background-color: rgb(242, 117, 0);
-    height: 175%;
-    width: 5rem;
-    margin-left: -4.5%;
-    margin-top: -2.5%;
-    -webkit-mask-image: var(--md-admonition-icon--fox_exercice_important);
-            mask-image: var(--md-admonition-icon--fox_exercice_important);
-  }
+.md-typeset .admonition.fox_exercice_important_correction,
+.md-typeset details.fox_exercice_important {
+  border-color: rgb(242, 117, 0);
+}
+.md-typeset .fox_exercice_important_correction > .admonition-title,
+.md-typeset .fox_exercice_important_correction > summary {
+  background-color: rgba(242, 117, 0,0.2);
+}
+.md-typeset .fox_exercice_important_correction > .admonition-title::before,
+.md-typeset .fox_exercice_important_correction > summary::before {
+  background-color: rgb(242, 117, 0);
+  height: 175%;
+  width: 5rem;
+  margin-left: -4.5%;
+  margin-top: -2.5%;
+  -webkit-mask-image: var(--md-admonition-icon--fox_exercice_important);
+          mask-image: var(--md-admonition-icon--fox_exercice_important);
+}
 
-  .md-typeset .admonition.fox_correction_eval,
-  .md-typeset details.fox_correction_eval {
-    border-color: rgb(85, 107, 47);
-  }
-  .md-typeset .fox_correction_eval > .admonition-title,
-  .md-typeset .fox_correction_eval > summary {
-    background-color: rgba(85, 107, 47,0.1);
-  }
-  .md-typeset .fox_correction_eval > .admonition-title::before,
-  .md-typeset .fox_correction_eval > summary::before {
-    background-color: rgb(85, 107, 47);
-    -webkit-mask-image: var(--md-admonition-icon--fox_correction);
-            mask-image: var(--md-admonition-icon--fox_correction);
-  }
+.md-typeset .admonition.fox_correction_eval,
+.md-typeset details.fox_correction_eval {
+  border-color: rgb(85, 107, 47);
+}
+.md-typeset .fox_correction_eval > .admonition-title,
+.md-typeset .fox_correction_eval > summary {
+  background-color: rgba(85, 107, 47,0.1);
+}
+.md-typeset .fox_correction_eval > .admonition-title::before,
+.md-typeset .fox_correction_eval > summary::before {
+  background-color: rgb(85, 107, 47);
+  -webkit-mask-image: var(--md-admonition-icon--fox_correction);
+          mask-image: var(--md-admonition-icon--fox_correction);
+}
 
-  .md-typeset .admonition.redstone_exo,
-  .md-typeset details.redstone_exo {
-    border-color: rgb(178,34,34);
-  }
-  .md-typeset .redstone_exo > .admonition-title,
-  .md-typeset .redstone_exo > summary {
-    background-color: rgba(178,34,34,0.1);
-  }
-  .md-typeset .redstone_exo > .admonition-title::before,
-  .md-typeset .redstone_exo > summary::before {
-    background-color: rgb(178,34,34);
-    -webkit-mask-image: var(--md-admonition-icon--redstone_exo);
-            mask-image: var(--md-admonition-icon--redstone_exo);
-  }
+.md-typeset .admonition.redstone_exo,
+.md-typeset details.redstone_exo {
+  border-color: rgb(178,34,34);
+}
+.md-typeset .redstone_exo > .admonition-title,
+.md-typeset .redstone_exo > summary {
+  background-color: rgba(178,34,34,0.1);
+}
+.md-typeset .redstone_exo > .admonition-title::before,
+.md-typeset .redstone_exo > summary::before {
+  background-color: rgb(178,34,34);
+  -webkit-mask-image: var(--md-admonition-icon--redstone_exo);
+          mask-image: var(--md-admonition-icon--redstone_exo);
+}
 
-  .md-header__button.md-logo {
-    margin: 0;
-    padding: 0;
-  }
-  .md-header__button.md-logo img, .md-header__button.md-logo svg {
-    height: 2.4rem;
-    width: 2.4rem;
-  }
+.md-header__button.md-logo {
+  margin: 0;
+  padding: 0;
+}
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
 
-  .md-typeset .admonition.fox_exercice_test,
-  .md-typeset details.fox_exercice_test {
-    border-color: rgb(100, 193, 76);
-  }
-  .md-typeset .fox_exercice_test > .admonition-title,
-  .md-typeset .fox_exercice_test > summary {
-    background-color: rgba(100, 193, 76,0.2);
-  }
-  .md-typeset .fox_exercice_test > .admonition-title::before,
-  .md-typeset .fox_exercice_test > summary::before {
-    background-color: rgb(100, 193, 76);
-    height: 100%;
-    width: 5rem;
-    margin-left: -4.5%;
-    margin-top: -1%;
-    -webkit-mask-image: var(--md-admonition-icon--fox_exercice_test);
-            mask-image: var(--md-admonition-icon--fox_exercice_test);
-  }
+.md-typeset .admonition.fox_exercice_test,
+.md-typeset details.fox_exercice_test {
+  border-color: rgb(100, 193, 76);
+}
+.md-typeset .fox_exercice_test > .admonition-title,
+.md-typeset .fox_exercice_test > summary {
+  background-color: rgba(100, 193, 76,0.2);
+}
+.md-typeset .fox_exercice_test > .admonition-title::before,
+.md-typeset .fox_exercice_test > summary::before {
+  background-color: rgb(100, 193, 76);
+  height: 100%;
+  width: 5rem;
+  margin-left: -4.5%;
+  margin-top: -1%;
+  -webkit-mask-image: var(--md-admonition-icon--fox_exercice_test);
+          mask-image: var(--md-admonition-icon--fox_exercice_test);
+}
 
-  .md-header {
-    background-color: #f1aa46;
-    color: #e5e5e5;
+.md-header {
+  background-color: #f1aa46;
+  color: #e5e5e5;
 }
 
 
 .md-tabs {
-    background-color: #f1aa46;
-    color : #e5e5e5; 
+  background-color: #f1aa46;
+  color : #e5e5e5; 
 }
 /*
 .md-tabs__list {
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .md-tabs__item {
-    border-radius: 48px;
-    background: #e0e0e0;
-    box-shadow: 5px 5px 10px #bebebe,
-                -5px -5px 10px #ffffff;
-    margin: 10px;
-    text-decoration: none;
-    color: #333333;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 48px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+  margin: 10px;
+  text-decoration: none;
+  color: #333333;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .md-tabs__item:hover {
-    box-shadow: inset 5px 5px 10px #bebebe,
-                inset -5px -5px 10px #ffffff;
-    transform: translateY(-2px);
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+  transform: translateY(-2px);
 }
 
 .md-tabs__item:active {
-    box-shadow: inset 3px 3px 6px #bebebe,
-                inset -3px -3px 6px #ffffff;
-    transform: translateY(0);
+  box-shadow: inset 3px 3px 6px #bebebe,
+              inset -3px -3px 6px #ffffff;
+  transform: translateY(0);
 }
 
 */
 
 .md-footer {
-    text-align: center;
+  text-align: center;
 }
 
 .md-footer-meta__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .md-footer-copyright {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .md-footer-social {
-    padding: 0.5rem 0;
+  padding: 0.5rem 0;
 }
