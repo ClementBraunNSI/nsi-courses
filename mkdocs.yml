@@ -1,7 +1,7 @@
 site_name: NSI - Clément Braun
 theme:
   name : material
-  logo : images/logo_2.png
+  logo : images/test.png
   features :
     - navigation.tabs
     - navigation.tabs.sticky

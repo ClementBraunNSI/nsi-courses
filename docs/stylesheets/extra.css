@@ -109,8 +109,11 @@
   padding: 0;
 }
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 6rem !important;
+  width: 5rem !important;
+  object-fit: contain !important; /* Conserve les proportions */
+  display: block !important; /* Évite l'espace résiduel */
+  
 }
 
 .md-typeset .admonition.fox_exercice_test,
@@ -133,50 +136,43 @@
 }
 
 .md-header {
-  background-color: #f1aa46;
-  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.md-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    background-color :#f1aa46;
+}
+
+.md-header__title {
+    order: 1;
+    margin-bottom: 0.5rem;
+    background-color :#f1aa46;
+}
+
+.md-header__button.md-logo {
+    order: 2;
+    margin-top: 0.5rem;
+    background-color :#f1aa46;
+}
+
+.md-tabs__list {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
 
 .md-tabs {
   background-color: #f1aa46;
   color : #e5e5e5; 
 }
-/*
-.md-tabs__list {
-  background-color: #e0e0e0;
-  border-radius: 15px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.md-tabs__item {
-  border-radius: 48px;
-  background: #e0e0e0;
-  box-shadow: 5px 5px 10px #bebebe,
-              -5px -5px 10px #ffffff;
-  margin: 10px;
-  text-decoration: none;
-  color: #333333;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.md-tabs__item:hover {
-  box-shadow: inset 5px 5px 10px #bebebe,
-              inset -5px -5px 10px #ffffff;
-  transform: translateY(-2px);
-}
-
-.md-tabs__item:active {
-  box-shadow: inset 3px 3px 6px #bebebe,
-              inset -3px -3px 6px #ffffff;
-  transform: translateY(0);
-}
-
-*/
 
 .md-footer {
   text-align: center;
@@ -195,4 +191,119 @@
 
 .md-footer-social {
   padding: 0.5rem 0;
+}
+
+/* Suppression de la barre de recherche */
+.md-search {
+    display: none !important;
+}
+
+.md-header {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(8px);
+
+    border-left: 2px solid #f1aa46;
+    border-right: 2px solid #f1aa46;
+    border-bottom: none!important;
+    border-top: none!important;
+}
+
+.md-tabs {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(8px);
+}
+
+.md-header__title,
+.md-header__button.md-logo {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(6px);
+}
+
+.md-header__title {
+    color: #000000 !important; /* Texte noir */
+    background-color: #ffffff !important;
+}
+
+.md-header__button.md-logo {
+    background-color: #ffffff !important;
+}
+
+.md-tabs {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-left: none!important;
+    border-right: none!important;
+    border-bottom: 2px solid #f1aa46;
+    border-top: 2px solid #f1aa46 !important;
+}
+
+.md-tabs__link {
+    color: #000000 !important;
+    transition: color 0.2s ease-in-out !important;
+}
+
+.md-tabs__link:hover {
+    color: #f1aa46 !important;
+}
+
+.md-tabs__link {
+    font-family: 'Segoe UI', 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.025em !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.md-tabs__list {
+    gap: 1.8rem !important;
+}
+
+.md-header__button.md-logo {
+    border-radius: 50% !important;
+    padding: 1rem !important;
+    overflow: hidden !important;
+    background-color: rgb(241, 170, 70,0)!important;
+    border: #f1aa46 solid 2px!important;
+}
+
+.md-typeset h1{
+    text-align: center !important;
+    width: 100%;
+}
+
+.md-sidebar {
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1) !important;
+    margin-right: 1rem !important;
+}
+
+.md-content {
+    margin-left: 2rem !important;
+    padding-left: 2rem !important;
+    border-left: 1px solid rgba(241, 170, 70, 0.1) !important;
+}
+
+.md-sidebar {
+    --md-sidebar-width: 12rem !important; /* Largeur réduite */
+    width: var(--md-sidebar-width) !important;
+}
+
+.md-sidebar__scrollwrap {
+    max-width: 100% !important;
+}
+
+.md-content {
+    margin-left: 3rem !important;
+    padding-left: 3rem !important;
+    border-left: 2px solid rgba(241, 170, 70, 0.3) !important;
+}
+
+.md-sidebar, .md-sidebar__scrollwrap {
+    box-shadow: -4px 0 8px rgba(241, 170, 70, 0.1) !important;
+}
+
+.md-typeset pre > code {
+  background-color: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  border: 1px solid rgba(241, 170, 70, 0.3); /* Ajout de la couleur principale */
+  box-shadow: -2px 2px 6px rgba(241, 170, 70, 0.1); /* Harmonisation avec le sidebar */
 }
