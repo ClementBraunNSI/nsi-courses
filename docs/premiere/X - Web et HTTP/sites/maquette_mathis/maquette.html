@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tableau : </title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+    </head>
+
+    <body>
+    
+        <button id="bouton-mode" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+            Mode nuit
+        </button>
+        
+        <div class="container">
+            <div class="fenetre titre_tableau">
+                <p style="font-size: 36px; font-weight: bold">
+                Renartumne
+                <p class="sous-titre">
+                D'après Vertumne, Arcimboldo, 1590</p>
+            </div>
+
+            <div class="histoire_tableau_revisite fenetre">
+                <img id="tableau" src="images/Renartumne de Arcimboldo.png" style="max-width: 40%; height: auto;">
+                
+
+                <p class="titre_tableau1" style="font-size: 24px; font-weight: 600">
+                L'histoire de Renartumne de Arcimboldo
+
+                <p>
+
+                Renartumne, dit "empereur renard des récoltes", est une divinité revenant tous les 100 ans sur Terre afin de faire croître à une vitesse extraordinaire les plantes, et grâce à qui une carotte ne prend pas 2 ans et demi à venir à maturité. Lorsqu'il arrive, ce dernier n'apparait quelque part que deux petites heures pour transmettre son énergie aux plantes, et uniquement dans n'importe quel bosquets reculés sur Terre, à l'abri des regards.
+                
+                <p>
+
+                C'est sans aucune hésitation que Giuseppe Arcimboldo, peintre agé à la recherche d'inspiration dans des bois Italiens, prit son crayon et ses pinceaux, et s'empressa de représenter cette divinité dont personne n'a même vu l'ombre ou la forme. Cette rencontre est d'une telle rareté et majestée qu'Arcimboldo, émeirveillé par ce spectacle, continuera et terminera son oeuvre deux semaines plus tard.
+                
+                <p>
+
+                C'est grâce à lui que l'on a l'unique représentation de Renartumne, étant donc un renard dont le corps est composé de fruits et légumes variés (citrouilles, poires, baies, petits pois), permettant la croissance exponentielle de nos plantation, et empêchant donc la famine mondiale.
+
+                </div>
+
+            <div class="tableau_original fenetre">
+
+                <p class="titre_tableau1" style="font-size: 36px; font-weight: 600">Vertumne
+
+                <div class="info-tableau">
+                    
+                    <div class="info-texte">
+                    <p style="font-weight: 600"> Titre : Vertumne
+                    <p style="font-weight: 600"> Artiste : Giuseppe Arcimboldo
+                    <p style="font-weight: 600"> Date : 1590
+                    <p style="font-weight: 600"> Technique : Huile sur toile
+                    <p style="font-weight: 600"> Dimensions : 70x58
+                    <p style="font-weight: 600"> Lieu de conservation : Château de Skokloster dans Håbo en Suède
+                    </div>
+                    'Vertumne' est réalisé en 1590 par Giuseppe Arcimboldo, et représente l'empereur Rodolphe II, déguisé en Vertumne. Vertumne est une divinité de la mythologie romaine maître des saisons, du changement, et contrôlant la croissance des plantes.
+                    <p><b>Le corps de l'empereur est fait de plusieurs fruits, légumes, et fleurs des 4 saisons :</b><br> La couronne qui est portée est composée de céréales et fruits d'<b>été</b> commes du blé, et des prunes, des cerises, de la grenades... <br> La tête est faite de fruits et légumes d'<b>automne</b>, comme des pommes pour ses joues, des cosses petits pois pour les sourcils, de châtaignes pour le menton... <br> Le torse et les épaules sont fait de légumes <b>hivernaux</b> tels que de choux, de poireaux, d'oignons et de navets... <br> L'écharpe est composée de fleurs <b>printanières</b> et peut faire penser à un uniforme noble ou de soldat.
+                    <p>"Vertumne" faisait partie de la collection d'oeuvres d'art assemblées par Rodolphe II au château de Prague, plus tard pillée par les Suédois lors du siège de Prague pendant la guerre de Trente ans, d'où la raison de son lieu de conservation.
+                </div>
+            </div>  
+
+            <div class="questionnaire fenetre">
+                <h2>Testez vos connaissances</h2>
+                <form id="quiz-form">
+                    <div class="question">
+                        <p>Vertumne serait une divinité accélérant la croissance...</p>
+                        <label><input type="radio" name="question1" value="correct"> des plantes</label><br>
+                        <label><input type="radio" name="question1" value="incorrect"> des mammiphères</label><br>
+                        <label><input type="radio" name="question1" value="incorrect"> des vues d'astérion</label><br>
+                    </div>
+                    <div class="question">
+                        <p>L'écharpe qu'il porte est composée de quoi ?</p>
+                        <label><input type="radio" name="question2" value="incorrect"> de baies estivales</label><br>
+                        <label><input type="radio" name="question2" value="incorrect"> de pâtes (bah oui c'est peint en Italie)</label><br>
+                        <label><input type="radio" name="question2" value="correct"> de diverses fleurs</label><br>
+                    </div>
+                    <div class="question">
+                        <p>L'hiver, le printemps, l'été, l'automne sont, respectivement, quels éléments de l'oeuvre ?</p>
+                        <label><input type="radio" name="question3" value="correct"> torse, écharpes, tête, couronne</label><br>
+                        <label><input type="radio" name="question3" value="incorrect"> Pouaaaa, Steve, poisson, le</label><br>
+                        <label><input type="radio" name="question3" value="incorrect"> écharpes, tête, couronne, torse</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Qui est le sujet de l'oeuvre ?</p>
+                        <label><input type="radio" name="question4" value="incorrect"> Mastu déguisé en carotte</label><br>
+                        <label><input type="radio" name="question4" value="incorrect"> Vertumne</label><br>
+                        <label><input type="radio" name="question4" value="correct"> Un empereur</label><br>
+
+                        <div class="bouton_valider">
+                            <button type="submit" style="background: none; border: none; padding: 0;">
+                                <img id="bouton-valider" src="images/bouton.png" style="max-width: 15%; height: auto;" alt="Valider">
+
+                            </button>
+                        </div>
+                        
+                </form>
+
+                <div id="resultat-quiz" style="display: none;"></div>
+
+            </div>
+
+        </div>
+
+        
+        <script src="script/script.js"></script>
+    
+        <div id="animation-container" style="position: fixed; pointer-events: none; top: 0; left: 0; width: 100%; height: 100%; z-index: 999;"></div>
+
+    </body>
+</html>

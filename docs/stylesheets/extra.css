@@ -242,6 +242,7 @@
     transition: color 0.2s ease-in-out !important;
 }
 
+
 .md-tabs__link:hover {
     color: #f1aa46 !important;
 }
@@ -301,11 +302,34 @@
 }
 
 .md-typeset pre > code {
-  background-color: rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(5px);
-  border-radius: 8px;
-  border: 1px solid rgba(241, 170, 70, 0.3); /* Ajout de la couleur principale */
-  box-shadow: -2px 2px 6px rgba(241, 170, 70, 0.1); /* Harmonisation avec le sidebar */
+    /* Couleurs de base */
+    color: #2d2d2d; /* Noir principal */
+}
+
+/* Strings - Vert */
+.highlight .s,
+.highlight .sb,
+.highlight .dl {
+    color: #2d2d2d !important; /* Vert DA */
+}
+
+/* Nombres - Bleu */
+.highlight .mi,
+.highlight .mf,
+.highlight .m {
+    color: #2d2d2d !important; /* Bleu DA */
+}
+
+/* Noms de fonctions - Orange */
+.highlight .nf,
+.highlight .nc,
+.highlight .nn {
+    color: #f1aa46 !important; /* Orange principal */
+}
+
+/* Mots-clés */
+.highlight .k {
+    color: #2d2d2d !important; /* Noir avec 70% d'opacité */
 }
 
 .md-typeset a {
@@ -325,9 +349,54 @@
     
 }
 
-
 @media screen and (max-width:76.234375em){
    .md-overlay {
       display: none!important;
   ;
+   }
+}
+
+.md-typeset .admonition-danger,
+.md-typeset details.danger {
+  border-color: #f1aa46; /* Orange principal */
+  
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc */
+  color: #2d2d2d; /* Texte noir */
+}
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before {
+  background-color: #2d2d2d; /* Icône noire */
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc */
+  color: #2d2d2d; /* Texte noir */
+}
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: #2d2d2d; /* Icône noire */
+}
+
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc */
+  color: #2d2d2d; /* Texte noir */
+}
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+  background-color: #2d2d2d; /* Icône noire */
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc */
+  color: #2d2d2d; /* Texte noir */
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: #2d2d2d; /* Icône noire */
 }

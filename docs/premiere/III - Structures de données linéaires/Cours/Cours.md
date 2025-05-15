@@ -2,43 +2,59 @@
 
 ## Définition
 
-Les tableaux de données font partie des collections (structures permettant de stocker des variables). Ce type de structure permet d’organiser et stocker diverses variables. Ces tableaux sont nommés *tuples* en **python.**
+Une **structure de données linéaire** est une collection d'**éléments** stockés séquentiellement. En Python, les deux principales implémentations de tableaux (un concept général de structure de données linéaire) sont les **listes** (mutables, c'est-à-dire modifiables après création) et les **tuples** (immuables, c'est-à-dire non modifiables après création).
 
-C’est aussi une structure ordonnée et de zone mémoire contigüe.
+Ces structures permettent d’organiser et de stocker divers éléments. Elles sont ordonnées, ce qui signifie que chaque élément a une position spécifiques (indice), et les éléments sont généralement stockés dans des zones mémoires contiguës ou liées.
 
-Utiliser des tableaux permet de ne pas avoir à créer une variable pour chaque valeur pour la stocker.
+Utiliser des tableaux (listes ou tuples) permet de ne pas avoir à créer une variable distincte pour chaque élément à stocker.
 
-On peut accéder à une valeur d’un tableau en utilisant des indices. Un indice correspond au numéro de la case du tableau.
+On peut accéder à un élément d'un tableau en utilisant son **indice**. Un indice correspond à la position de l'élément dans le tableau.
 
 !!! Danger Important
 	Cas particulier, en **python**, comme dans la plupart des autres langages de programmation, les indices de tableaux commencent à 0.
 
-Pour initialiser un tableau vide, on l’associe à une variable.
-
-L’écriture se fait ainsi de cette manière :
+Pour initialiser un **tuple** vide (un type de tableau immuable), on l’associe à une variable :
 
 ```python
-#instance d'un tableau vide
->>> mon_tableau = ()
-
->>> mon_tableau
-<type 'tuple'>
+# Instance d'un tuple vide
+>>> mon_tuple_vide = ()
+>>> print(type(mon_tuple_vide))
+<class 'tuple'>
+>>> print(mon_tuple_vide)
+()
 ```
-On peut essayer de initialiser un tableau d'entiers en python.
-Munissons-nous d'un exemple de tableau représenté de manière naturelle :
 
-| indice | valeur |
+Pour initialiser une **liste** vide (un type de tableau mutable), on utilise des crochets `[]` :
+
+```python
+# Instance d'une liste vide
+>>> ma_liste_vide = []
+>>> print(type(ma_liste_vide))
+<class 'list'>
+>>> print(ma_liste_vide)
+[]
+```
+
+Considérons un exemple de tableau d'entiers :
+
+| indice | élément |
 | --- | --- |
 | 0 | 312 |
 | 1 | 354 |
 | 2 | 1234 |
 
-L’écriture d’un tableau se fait à l’aide de parenthèses **( )** et on ne s’intéresse qu’à la colonne de droite car la colonne de gauche est implicite.
-
-En python, on l'écrirait de cette manière :
+En Python, pour un **tuple**, on l'écrirait avec des parenthèses `()` :
 
 ```python
-	mon_tableau = (312,354,1234)
+mon_tuple = (312, 354, 1234)
+# print(mon_tuple) # Pourrait afficher (312, 354, 1234)
+```
+
+Pour une **liste**, on l'écrirait avec des crochets `[]` :
+
+```python
+ma_liste = [312, 354, 1234]
+# print(ma_liste) # Pourrait afficher [312, 354, 1234]
 ```
 
 On peut créer des tableaux possédant diverses valeurs, leur taille étant limitée par l’espace mémoire de la machine :
@@ -52,10 +68,28 @@ tableau_animaux = ("chien", "chat", "oiseau", "poisson")
 	Dans la majorité des cas, il est préférable de **créer des tableaux pour des données de même type**.
 	Cela permet d’éviter des erreurs pour l’interpréteur et éviter des incompréhensions pour la suite du code.
 
-!!! Danger Mutabilité d'un tableau
-	Attention ! 
-	Les valeurs d'un tableau ne peuvent pas être modifiées après la création d'un tableau. On peut seulement lui ajouter des éléments ou en retirer mais on ne peut pas en modifier le contenu.
-	On se retrouve avec une erreur **TypeError** qui indique que les valeurs d'un tuple ne supportent pas l'assignation de valeurs.
+!!! Danger Mutabilité : Tuples (immuables) vs Listes (mutables)
+	Attention à la distinction entre tuples et listes concernant la mutabilité !
+
+	**Tuples (immuables) :**
+	Un tuple est **immuable**. Cela signifie qu'une fois qu'un tuple est créé, ses éléments ne peuvent pas être modifiés, ajoutés ou supprimés directement. Toute tentative de modifier un élément d'un tuple existant résultera en une erreur `TypeError`.
+	Par exemple :
+	```python
+	mon_tuple = (10, 20, 30)
+	# mon_tuple[0] = 5 # Ceci lèverait une TypeError: 'tuple' object does not support item assignment
+	```
+	Pour "modifier" un tuple, on doit en réalité créer un nouveau tuple.
+
+	**Listes (mutables) :**
+	Une liste est **mutable**. Cela signifie que l'on peut modifier ses éléments, en ajouter ou en supprimer après sa création.
+	Par exemple :
+	```python
+	ma_liste = [10, 20, 30]
+	ma_liste[0] = 5  # Modifie l'élément à l'indice 0
+	ma_liste.append(40) # Ajoute un élément à la fin
+	# print(ma_liste) # Afficherait [5, 20, 30, 40]
+	```
+	L'erreur `TypeError` mentionnée dans le contexte original ("les valeurs d'un tuple ne supportent pas l'assignation de valeurs") s'applique spécifiquement aux tuples.
 
 ## Taille d’un tableau
 
@@ -78,19 +112,21 @@ tableau_animaux = ("chien", "chat", "oiseau", "poisson")
 Pour accéder à un élément du tableau, on peut s’intéresser à sa position dans le tableau, c’est à dire son **indice**.
 **Rappel important : L’indice commence à 0 !**
 
-On peut accéder à un élément dans une liste avec la syntaxe suivante:
+On peut accéder à un élément d'un tableau (liste ou tuple) en utilisant son indice avec la syntaxe `nom_du_tableau[indice]`:
 
 ```python
-tableau = ("chien", "chat", "poisson", "vache")
+# Exemple avec un tuple
+mon_tuple_animaux = ("chien", "chat", "poisson", "vache")
+# On veut l'élément à la position 3 du tuple (le quatrième élément)
+# >>> print(mon_tuple_animaux[3]) # Afficherait 'vache'
 
-#On veut l'élément à la position 3 du tableau
-
->>>print(tableau[3])
-vache
+# Exemple avec une liste
+ma_liste_animaux = ["chien", "chat", "poisson", "vache"]
+# >>> print(ma_liste_animaux[1]) # Afficherait 'chat'
 ```
 
-On peut vouloir accéder à tous les éléments d’un tableau, ou en partie d’un tableau.
-Pour se faire, on peut utiliser les boucles **tant que et pour** de manière à accéder aux éléments d’une liste.
+On peut vouloir accéder à tous les éléments d’un tableau (liste ou tuple), ou à une partie de celui-ci.
+Pour ce faire, on peut utiliser les boucles **`while` (tant que) et `for` (pour)** afin de parcourir les éléments.
 
 ```python
 tableau = ("chien", "chat", "poisson", "vache")
@@ -170,10 +206,13 @@ Au lieu de créer des “sous-listes” de taille 1, on peut utiliser la méthod
 multiples_de_2 = []
 
 #Boucle for pour remplir notre liste
-for i in range(0,11):
+for i in range(0,11): # i prendra les valeurs de 0 à 10
 
-	#On ajoute la valeur i dans le tableau.
-	multiples_de_2 = multiples_de_2.append(i*2)
+	#On ajoute la valeur i*2 à la fin de la liste.
+	#La méthode append() modifie la liste en place et retourne None.
+	multiples_de_2.append(i*2)
+
+# print(multiples_de_2) # Pourrait afficher [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 ```
 
 La méthode *append* a l’avantage sur la méthode par concaténation **de modifier en place la liste au lieu d’en créer une autre.**
@@ -226,10 +265,13 @@ On peut simplifier le code utilisé précédemment en une seule ligne. Cela a po
 ```python
 
 # Comment instancier à l'aide de la méthode par compréhension:
-nom_variable = [valeur for _ in nombre_iteration]
+# nom_variable = [expression for element in iterable]
+# ou avec une condition:
+# nom_variable = [expression for element in iterable if condition]
 
-# On initialise la liste directement avec les valeurs
-multiples_de_3 = [i for i in range(0,11)]
+# Exemple: On initialise la liste directement avec les multiples de 3 de 0*3 à 10*3
+multiples_de_3 = [i * 3 for i in range(0, 11)] # i prend les valeurs de 0 à 10
+# print(multiples_de_3) # Afficherait [0, 3, 6, ..., 30]
 ```
 
 L’écriture ici peut être scindée en plusieurs blocs :
