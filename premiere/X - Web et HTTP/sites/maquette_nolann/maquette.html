@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>La Laitière</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+       
+    </head>
+
+    <body>
+   
+        <div class="container">
+            <div class="fenetre titre_tableau">
+                <h1>La Laitière<h1>
+                <h4>d'après La Laitière, Johannes Vermeer, 1658<h4>
+
+            </div>
+
+            <div class="histoire_tableau_revisite fenetre">
+                <img id="tableau" src="images/laitière_renard.png" width="50%" height="auto" alt="Version revisitée de La Laitière">
+				<p style="text-align:center"><img src="images/laitière.jpg" width="30%" alt="La Laitière originale"></p>
+
+
+<h2>Histoire du tableau</h2>
+
+                <p>*La Laitière* est un tableau réalisé par Johannes Vermeer vers 1658-1660.
+L'œuvre représente une jeune femme versant du lait dans un intérieur simple.
+Le tableau est reconnu pour son usage magistral de la lumière et des couleurs,
+symbolisant la vie domestique paisible aux Pays-Bas du XVIIᵉ siècle.</p>
+
+            </div>
+
+            <div class="tableau_original fenetre">
+                <h2>À propos du tableau original</h2>
+
+                <div class="info-tableau">
+                    <div class="info-texte">
+                    <p><strong>Titre :</strong> La Laitière</p>
+                    <p><strong>Artiste :</strong> Johannes Vermeer</p>
+                    <p><strong>Date :</strong> Vers 1658-1660</p>
+                    <p><strong>Taille :</strong> 45,5 cm × 41 cm</p>
+                    <p><strong>Technique :</strong> Huile sur toile</p>
+                    <p><strong>Dimensions :</strong> 45,5 cm × 41 cm</p>
+                    <p><strong>Lieu de conservation :</strong> Rijksmuseum, Amsterdam</p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="questionnaire fenetre">
+                <h2>Testez vos connaissances</h2>
+                <form id="quiz-form">
+                    <div class="question">
+                        <p>Qui est l'artiste de *La Laitière* ?</p>
+                        <label><input type="radio" name="question1" value="incorrect"> Léonard de Vinci</label><br>
+                        <label><input type="radio" name="question1" value="correct"> Johannes Vermeer</label><br>
+                        <label><input type="radio" name="question1" value="incorrect"> Rembrandt</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Dans quel musée est exposé *La Laitière* ?</p>
+                        <label><input type="radio" name="question2" value="correct"> Rijksmuseum, Amsterdam</label><br>
+                        <label><input type="radio" name="question2" value="incorrect"> Le Louvre, Paris</label><br>
+                        <label><input type="radio" name="question2" value="incorrect"> Le Prado, Madrid</label><br>
+                    </div>
+
+                    <div class="bouton_valider">
+                        <button type="submit">Vérifier mes réponses</button>
+                    </div>
+                </form>
+
+                <div id="resultat-quiz" style="display: none;"></div>
+
+            </div>
+
+        </div>
+
+       
+        <script src="script/script.js"></script>
+   
+
+    </body>
+</html>

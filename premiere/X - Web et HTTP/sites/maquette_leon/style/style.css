@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-image: url("../images/fond.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bouton-nuit{
+    color:#c0bbbb;
+    font-size: 14px;
+    background-color: #49423c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px;
+    border:2px solid #c0bbbb;
+    width: 130px;
+    height: 40px;
+}
+h2, .titre_tableau{
+    color:#ea8100;
+    font-size:20px;
+}
+
+.sous-titre{
+    color:#a7a7a7;
+}
+
+.tableau_original, histoire_tableau_revisite, questionnaire{
+    justify-content: center;
+}
+.TableauOriginal{
+    width:629.1px;
+    height:749.1px;
+}
+
+.bouton_valider{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:5%;
+    color:#ea8100;
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #ea8100
+
+}
+
+#tableau{
+    width:700;
+    height:700px;
+}
+
+.fenetre{
+    background-color: #ebddd1;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+#resultat-quiz{
+    margin-top: 5%;
+}
+
+body.mode-nuit {
+    background-image: url("../images/fond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #e0e0e0; 
+}
+body.mode-nuit .bouton-nuit {
+    background-color: #2e2822;
+    color: #c0bbbb;
+    border: 2px solid #c0bbbb;
+}
+
+body.mode-nuit h2,
+body.mode-nuit .titre_tableau {
+    color: #dfad6f;
+}
+
+
+body.mode-nuit .sous-titre {
+    color: #a7a7a7;
+}
+
+body.mode-nuit .fenetre {
+    background-color: #2e2822;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.mode-nuit .bouton_valider {
+    border: 2px solid #dfad6f;
+    color: #dfad6f;
+    background-color: #2e2822;
+}

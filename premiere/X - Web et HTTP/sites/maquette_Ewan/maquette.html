@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tableau : Fallen angel</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+    </head>
+
+    <body>
+    
+        <div class="container">
+            <div class="fenetre titre_tableau">
+                <h1>L'Ange déchu<h1>
+                <h3>d'après l'Ange déchu de Alexandre Cabanel<h3>
+
+            </div>
+
+            <div class="histoire_tableau_revisite fenetre">
+				<img src="images\fallenangel.jpg" width=60% height=60%/>
+
+                <h2>Histoire du tableau</h2>
+            <p>
+                <em>L’Ange déchu</em> est une œuvre emblématique peinte par Alexandre Cabanel en 1847. 
+                Elle représente un ange déchu venant d’être expulsé du paradis, assis, la tête détournée, 
+                les yeux embués de larmes. L'œuvre saisit par son mélange de beauté, de mélancolie et de révolte.
+                C’est un exemple parfait du romantisme français du XIXe siècle, conjuguant esthétique classique et 
+                émotion dramatique.
+            </p>
+
+                </div>
+
+            <div class="tableau_original fenetre">
+                <h2>À propos du tableau original</h2>
+
+                <div class="info-tableau">
+                    <div class="info-texte">
+                        <p><strong>Titre :</strong> L’Ange déchu</p>
+                    <p><strong>Artiste :</strong> Alexandre Cabanel</p>
+                    <p><strong>Date :</strong> 1847</p>
+                    <p><strong>Taille :</strong> 121 × 189.7 cm</p>
+                    <p><strong>Technique :</strong> Huile sur toile</p>
+                    <p><strong>Lieu de conservation :</strong> Musée Fabre, Montpellier</p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="questionnaire fenetre">
+                <h2>Testez vos connaissances</h2>
+                <form id="quiz-form">
+                    <div class="question">
+                         <div class="question">
+                    <p>Quel est le thème principal du tableau ?</p>
+                    <label><input type="radio" name="question1" value="incorrect"> La joie céleste</label><br>
+                    <label><input type="radio" name="question1" value="incorrect"> Une bataille mythologique</label><br>
+                    <label><input type="radio" name="question1" value="correct"> La chute d’un ange du paradis</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Où le tableau est-il conservé aujourd’hui ?</p>
+                    <label><input type="radio" name="question2" value="incorrect"> Le Louvre</label><br>
+                    <label><input type="radio" name="question2" value="incorrect"> Le Musée d’Orsay</label><br>
+                    <label><input type="radio" name="question2" value="correct"> Le Musée Fabre à Montpellier</label><br>
+                    </div>
+
+                    <div class="bouton_valider">
+                        <button type="submit">Vérifier mes réponses</button>
+                    </div>
+                </form>
+
+                <div id="resultat-quiz" style="display: none;"></div>
+
+            </div>
+
+        </div>
+
+        
+        <script src="script/script.js"></script>
+    
+
+    </body>
+</html>

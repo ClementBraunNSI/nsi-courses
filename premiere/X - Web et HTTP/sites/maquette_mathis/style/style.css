@@ -1,0 +1,116 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+h2, .titre_tableau{
+    color:#ea8100;
+}
+
+.sous-titre{
+    color: #a7a7a7;
+    font-style: italic;
+    
+}
+
+h3, .titre_tableau1{
+    color:#ea8100;
+}
+
+.tableau_original, histoire_tableau_revisite, questionnaire{
+    justify-content: center;
+}
+
+.bouton_valider{
+    margin-top:5%;
+}
+
+#tableau{
+    padding:10%;
+    max-width: 50%;
+}
+
+.fenetre{
+    background-color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+}
+
+#resultat-quiz{
+    margin-top: 5%;
+}
+
+.mode-nuit {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+.mode-nuit .fenetre {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+.mode-nuit h2,
+.mode-nuit .titre_tableau,
+.mode-nuit .titre_tableau1 {
+    color: #ffa500;
+}
+
+.mode-nuit .sous-titre {
+    color: #ccc;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.fenetre {
+    background-color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+
+.fly-image {
+  position: absolute;
+  left: 100%; /* place l'image juste à droite du label */
+  top: 0;
+  width: 300px;
+  height: auto;
+  pointer-events: none;
+  animation: fly 1s ease-out;
+  z-index: 1000;
+}
+
+@keyframes fly {
+  0% { transform: translateX(0) translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateX(50px) translateY(-50px) scale(0.5); opacity: 0; }
+}
+
+#gif-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#gif-animation {
+    max-width: 90%;
+    max-height: 90%;
+}
