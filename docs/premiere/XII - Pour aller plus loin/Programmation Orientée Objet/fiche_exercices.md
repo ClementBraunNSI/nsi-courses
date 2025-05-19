@@ -59,7 +59,7 @@ class Voiture:
     *   Afficher ces voitures en utilisant `print()`.
     *   Essayer de démarrer une voiture déjà démarrée.
     *   Essayer d'arrêter une voiture déjà arrêtée.
-    *   Repeindre une de vos voitures et afficher-la à nouveau pour vérifier le changement de couleur.
+    *   Repeindre une de vos voitures et l'afficher à nouveau pour vérifier le changement de couleur.
 
 ## Partie 2 : La Classe `Concessionnaire`
 
