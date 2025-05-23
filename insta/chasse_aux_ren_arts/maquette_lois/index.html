@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/ia_texte.png">
+    <title>Tableau Malcesine klimt</title>
+</head>
+<body>
+
+    <div id="bandeau" >
+        <button id="boutonmode" >☀️ Mode Jour</button>
+        <a href="page.html" class="change_page">Répondre au quiz !</a>
+    </div>
+
+
+    <div id="ia_case" class="case">
+        <div class="haut_page_ia">
+            <h1><font size="40">Tableau généré par IA</font></h1>
+        </div>
+        <hr>
+        <div>
+            <br>
+            <img src="images/klimt_IA.png" alt="tableau de Klimt" height="500" class="images" id="image_ia">
+            <br>
+        </div>
+        
+        <hr>
+    </div>
+
+
+    <div id = "reel_case" class="case">
+        <div class="haut_page_original">
+            <h1><font size="40">Tableau Original</font></h1>
+        </div>
+        <hr>
+        <div>
+            <br>
+                <img src="images/Klimt.webp" alt="tableau de Klimt" height="500" class="images" id="peinture">
+            <br>
+        </div>
+        <hr>
+        <div class="para_texte_original">
+            <p><strong>Auteur : </strong> Gustav Klimt <br>
+                <strong>Nom du tableau : </strong> Malcesine sur le lac de Garde <br>
+                <strong>Dimensions : </strong>110 × 110 cm
+            </p>
+        </div>
+    </div>
+
+    
+    <footer>Nishirouille</footer>
+    <script src="script/script.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('boutonmode');
+        const boxes = document.querySelectorAll('.case');
+
+        toggleBtn.addEventListener('click', () => {
+            boxes.forEach(box => {
+                box.classList.toggle('dark-mode');
+            });
+            if (boxes[0].classList.contains('dark-mode')) {
+                toggleBtn.textContent = '🌙 Mode Nuit';
+            } else {
+                toggleBtn.textContent = '☀️ Mode Jour';
+            }
+        });
+    </script>
+</body>
+</html>

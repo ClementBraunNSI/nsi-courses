@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Fils du Renard</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Le Fils du Renard</h1>
+      <h2>D'après Le Fils de l'homme, René Magritte, 1964</h2>
+      <button id="toggle-theme">Mode Jour/Nuit</button>
+    </header>
+
+    <section class="image">
+      <img id="image-renard" src="images/tableau-renard.jpg" alt="Le Fils du Renard - version revisitée" />
+    </section>
+
+    <section class="histoire">
+      <h3>L'histoire du Fils du Renard</h3>
+      <p id="texte-renard">
+        Dans une réalité parallèle où les renards ont développé leur propre société secrète, un individu énigmatique nommé L le Renard est devenu le symbole du mystère et de la dualité du monde visible et invisible. Il portait toujours un costume élégant et un chapeau melon, se promenant silencieusement sur les quais d’une ville au bord de la mer.
+      </p>
+      <p>
+        Un jour, L découvrit une pomme enchantée capable de dissimuler l’âme de celui qui la fixait. Il la plaça devant son museau, masquant son identité à jamais. Depuis, on dit qu’il apparaît aux moments charnières de la vie, quand les grandes décisions doivent être prises, silencieux, observateur, éternellement renard.
+      </p>
+    </section>
+
+    <section class="original">
+      <h3>Le tableau original</h3>
+      <img src="images/tableau-original.jpg" alt="Le Fils de l'homme par Magritte" />
+      <p>
+        <strong>Titre :</strong> Le Fils de l'homme<br />
+        <strong>Auteur :</strong> René Magritte<br />
+        <strong>Date :</strong> 1964<br />
+        <strong>Contexte :</strong> Une œuvre emblématique du surréalisme représentant un homme dont le visage est masqué par une pomme, symbolisant l'idée de ce qui est visible mais dissimulé.
+      </p>
+    </section>
+
+    <section class="quiz">
+      <h3>Quiz : Le Fils de l'homme</h3>
+      <div id="quiz-container">
+        <p id="quiz-question"></p>
+        <div id="quiz-options"></div>
+        <button id="next-question" style="display:none;">Question suivante</button>
+        <p id="quiz-result"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Projet artistique - 2025</p>
+    </footer>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

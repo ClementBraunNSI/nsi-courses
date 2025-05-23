@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Renard au ballon BANSKY</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fenetre titre_tableau">
+            <button id="bouton-mode" class="texte">Mode nuit</button>
+            <h2><strong>Renard au ballon</strong></h2>
+            <p class="texte">"Il suffit parfois d’un fil rouge entre les pattes et le ciel pour s’échapper du béton."</p>
+        </div>
+
+        <div class="histoire_tableau_revisite fenetre">
+            <img id="tableau" src="images/renard_au_ballon.png" width="550" height="550" />
+            <h3 class="texte"><u>Description :</u></h3>
+            <p class="texte">L'œuvre représente un renard tenant un ballon, un mélange subtil de poésie et de rébellion à la manière de Banksy...</p>
+        </div>
+
+        <div>
+            <button id="bouton-musique" class="texte" type="button">Lancer la musique🎵💀</button>
+        </div>
+
+        <audio id="musique-pirates" src="images/werenoi.mp3"></audio>
+
+        <div class="tableau_original fenetre">
+            <h2><strong>La Petite Fille au Ballon</strong></h2>
+            <img src="images/la_fille.png" width="550" height="550" />
+            <div class="info-tableau">
+                <div class="info-texte">
+                    <p class="texte">La Petite Fille au Ballon est une œuvre emblématique de Banksy...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="questionnaire fenetre">
+            <h2>Testez vos connaissances</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <p class="texte">1. Quel est le rôle symbolique du ballon dans chacune des œuvres ?</p>
+                    <label class="option"><input type="radio" name="question1" value="incorrect"></label><p class="texte">Un jouet amusant, sans signification.</p>
+                    <label class="option"><input type="radio" name="question1" value="correct"></label><p class="texte">Il symbolise l’espoir, les rêves ou la liberté.</p>
+                    <label class="option"><input type="radio" name="question1" value="incorrect"></label><p class="texte">Un message sur les ballons de fête.</p>
+                </div>
+
+                <div class="question">
+                    <p class="texte">2. Comment les deux œuvres utilisent-elles des personnages ?</p>
+                    <label class="option"><input type="radio" name="question2" value="correct"></label><p class="texte">L’innocence face à un monde injuste.</p>
+                    <label class="option"><input type="radio" name="question2" value="incorrect"></label><p class="texte">Les animaux dominent l'art urbain.</p>
+                    <label class="option"><input type="radio" name="question2" value="incorrect"></label><p class="texte">Les personnages sont purement décoratifs.</p>
+                </div>
+
+                <div class="bouton_valider">
+                    <button id="valide" type="submit" class="texte">Vérifier mes réponses</button>
+                </div>
+            </form>
+
+            <div id="resultat-quiz" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Survol image tableau
+            const tableauImage = document.getElementById('tableau');
+            if (tableauImage) {
+                const tableauOriginal = 'images/bansky_1ere.jpg';
+                const tableauRenard = 'images/renard_au_ballon.png';
+
+                tableauImage.addEventListener('mouseover', function () {
+                    tableauImage.src = tableauOriginal;
+                });
+
+                tableauImage.addEventListener('mouseout', function () {
+                    tableauImage.src = tableauRenard;
+                });
+            }
+
+            // Quiz
+            const quizForm = document.getElementById('quiz-form');
+            const resultatQuiz = document.getElementById('resultat-quiz');
+
+            quizForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const reponse1 = document.querySelector('input[name="question1"]:checked');
+                const reponse2 = document.querySelector('input[name="question2"]:checked');
+
+                let score = 0;
+                let message = '';
+
+                if (!reponse1 || !reponse2) {
+                    message = 'Veuillez répondre à toutes les questions.';
+                } else {
+                    if (reponse1.value === 'correct') score++;
+                    if (reponse2.value === 'correct') score++;
+
+                    message = score === 0 ? 'Vous avez obtenu 0 point sur 2. Réessayez!'
+                        : score === 1 ? 'Vous avez obtenu 1 point sur 2. Pas mal!'
+                        : "Bravo! Vous avez obtenu 2 points sur 2! La lettre est A";
+                }
+
+                resultatQuiz.textContent = message;
+                resultatQuiz.style.display = 'block';
+                resultatQuiz.classList.add('resultat-anime');
+
+                setTimeout(() => resultatQuiz.classList.remove('resultat-anime'), 1000);
+            });
+
+            // Mode nuit
+            const boutonMode = document.getElementById('bouton-mode');
+            const body = document.body;
+
+            boutonMode.addEventListener('click', () => {
+                body.classList.toggle('mode-nuit');
+                boutonMode.textContent = body.classList.contains('mode-nuit') ? 'Mode jour🦊' : 'Mode nuit🛌';
+            });
+
+            // Musique
+            document.getElementById("bouton-musique").addEventListener("click", function () {
+                const audio = document.getElementById("musique-pirates");
+
+                if (audio.paused) {
+                    audio.play();
+                    this.textContent = "Pause musique";
+                } else {
+                    audio.pause();
+                    this.textContent = "Lancer la musique";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

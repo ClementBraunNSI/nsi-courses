@@ -1,0 +1,195 @@
+body{
+    background-image: url("../images/background.png");
+    background-attachment:fixed;
+        background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: 50% 75%; 
+}
+
+
+
+footer {
+    width: 100%;
+    position: absolute;
+    color: red;
+    top: 270%;
+}
+
+#bandeau{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    padding: 15px 10px;
+    z-index: 1;
+    transition: all 1.5s ease;
+}
+
+#bandeau.dark-mode{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.97);
+
+}
+
+
+
+
+#bandeau_page{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    padding: 26.8px 10px;
+    z-index: 1;
+    transition: all 1.5s ease;
+}
+
+
+
+
+
+#ia_case{
+    width: 500px;
+    padding: 70px 100px;
+    position: absolute;
+    left: 50%; /* Centre horizontalement */
+    top: 70%;
+    transform: translate(-50%, -50%); /* Ajuste pour que le centre de l'élément soit au centre de la page */
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    border: solid 2px ;
+    border-radius: 10px;
+
+}
+
+
+#reel_case{
+    width: 500px;
+    padding: 70px 100px;
+    position: absolute;
+    left: 50%; /* Centre horizontalement */
+    top: 200%;
+    transform: translate(-50%, -50%); /* Ajuste pour que le centre de l'élément soit au centre de la page */
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    border: solid 2px ;
+    border-radius: 10px;
+}
+
+
+#boutonmode{
+    padding: 10px 10px;
+    background: rgba(255, 0, 0,1);
+    color: white;
+    border-radius: 10px;
+    border: solid 2px ;
+    transition: all 1.5s ease;
+}
+
+
+#boutonmode.dark-mode{
+    background: rgba(255, 255, 255,1);
+    color: red;
+
+}
+
+
+
+
+.change_page{
+    padding: 10px 10px;
+    text-decoration: none;
+    background: rgba(255, 0, 0,1);
+    color: white;
+    border-radius: 10px;
+    border: solid 2px ;
+    transition: all 1.5s ease;    
+}
+
+.change.dark-mode{
+    background: rgba(255, 255, 255,1);
+    color: red;
+
+}
+
+
+.case{
+    background: rgba(0, 0, 0, 0.5);
+    color: red;
+    transition: all 1.5s ease;
+}
+
+.case.dark-mode{
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+
+
+.questionnaire_fenetre{
+    width: 500px;
+    padding: 70px 100px;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    border: solid 2px ;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: red;
+    transition: all 1.5s ease;
+
+}
+
+
+
+.questionnaire_fenetre.dark-mode{
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+#verif_quiz{
+    padding: 10px 10px;
+    background: rgba(255, 0, 0,1);
+    color: white;
+    border-radius: 10px;
+    border: solid 2px ;
+}
+
+/*
+
+css de l'envoi de mail
+
+.send{
+    width: 500px;
+    padding: 70px 100px;
+    position: absolute;
+    left: 50%; 
+    top: 110%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    border: solid 2px ;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: red;
+    transition: all 1.5s ease;
+
+}
+
+.send.dark-mode{
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+*/
+
+
+
