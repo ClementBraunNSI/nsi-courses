@@ -1,0 +1,504 @@
+/* Styles spécifiques pour les pages de niveau (seconde, première, terminale) */
+
+/* Hero section spécifique aux pages de niveau */
+.level-hero {
+    padding: 4rem 0;
+    background: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.level-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+}
+
+.level-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.level-hero .level-mascot {
+    flex: 0 0 200px;
+}
+
+.level-hero .level-mascot img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+}
+
+.level-hero .level-mascot img:hover {
+    transform: translateY(-10px);
+}
+
+.level-hero .level-info {
+    flex: 1;
+}
+
+.level-hero .level-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--fox-orange);
+}
+
+.level-hero .level-info p {
+    font-size: 1.2rem;
+    color: var(--fox-orange);
+}
+
+/* Styles spécifiques selon le niveau */
+.level-hero[data-level="seconde"] {
+    background: linear-gradient(135deg, var(--seconde-light) 0%, var(--seconde-dark) 100%);
+}
+
+.level-hero[data-level="premiere"] {
+    background: linear-gradient(135deg, var(--premiere-light) 0%, var(--premiere-dark) 100%);
+}
+
+.level-hero[data-level="terminale"] {
+    background: linear-gradient(135deg, var(--terminale-light) 0%, var(--terminale-dark) 100%);
+}
+
+.level-hero[data-level="seconde"] .level-info h2,
+.level-hero[data-level="premiere"] .level-info h2,
+.level-hero[data-level="terminale"] .level-info h2,
+.level-hero[data-level="seconde"] .level-info p,
+.level-hero[data-level="premiere"] .level-info p,
+.level-hero[data-level="terminale"] .level-info p {
+    color: var(--fox-orange);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Section de description */
+.level-description {
+    padding: 4rem 0;
+}
+
+.level-description .neumorphic-card {
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    background: var(--bg-color);
+    box-shadow: var(--shadow-soft);
+}
+
+.level-description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color-primary);
+}
+
+.level-description p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--text-color-secondary);
+}
+
+.level-description ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.level-description li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+}
+
+/* Section des thématiques */
+.level-themes {
+    padding: 4rem 0;
+    background-color: var(--bg-color-alt);
+}
+
+.level-themes .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--text-color-primary);
+}
+
+.theme-cards {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.theme-card {
+    background-color: var(--bg-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--nm-shadow-light);
+    padding: var(--spacing-xl);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Ajout de bordures colorées selon le niveau */
+[data-level="seconde"] .theme-card {
+    border-top: 5px solid var(--seconde-color);
+}
+
+[data-level="premiere"] .theme-card {
+    border-top: 5px solid var(--premiere-color);
+}
+
+[data-level="terminale"] .theme-card {
+    border-top: 5px solid var(--terminale-color);
+}
+
+.theme-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--fox-orange);
+}
+
+.theme-card p {
+    color: var(--text-color-light);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.5;
+}
+
+/* Section des ressources */
+.level-resources {
+    padding: 4rem 0;
+}
+
+.level-resources .neumorphic-card {
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    background: var(--bg-color);
+    box-shadow: var(--shadow-soft);
+}
+
+.level-resources h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color-primary);
+}
+
+.level-resources h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+    color: var(--text-color-primary);
+}
+
+.level-resources p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--text-color-secondary);
+}
+
+.level-resources ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.level-resources li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+}
+
+/* Styles pour les liens actifs dans la navigation */
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .level-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .level-hero .level-mascot {
+        flex: 0 0 150px;
+    }
+    
+    .theme-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .level-hero .level-info h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Styles pour les éléments strong */
+strong {
+    font-weight: 600;
+    color: var(--text-color-primary);
+}
+
+/* Styles pour les boutons */
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-btn);
+}
+
+.btn-primary:hover {
+    background: var(--primary-color-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-btn-hover);
+}
+
+/* Styles spécifiques pour chaque niveau */
+[data-level="seconde"] .btn-primary {
+    background: var(--seconde-color);
+}
+
+[data-level="seconde"] .btn-primary:hover {
+    background: var(--seconde-dark);
+}
+
+[data-level="premiere"] .btn-primary {
+    background: var(--premiere-color);
+}
+
+[data-level="premiere"] .btn-primary:hover {
+    background: var(--premiere-dark);
+}
+
+[data-level="terminale"] .btn-primary {
+    background: var(--terminale-color);
+}
+
+[data-level="terminale"] .btn-primary:hover {
+    background: var(--terminale-dark);
+}
+
+/* Styles pour le système d'onglets */
+.level-tabs {
+    margin-top: 2rem;
+}
+
+.tabs-navigation {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--nm-shadow-light);
+}
+
+.tab-button:hover {
+    transform: translateY(-2px);
+}
+
+.tab-button.active {
+    background-color: var(--fox-orange);
+    color: white;
+    box-shadow: 0 4px 6px rgba(255, 127, 42, 0.3);
+}
+
+[data-level="seconde"] .tab-button.active {
+    background-color: var(--seconde-color);
+    box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3);
+}
+
+[data-level="premiere"] .tab-button.active {
+    background-color: var(--premiere-color);
+    box-shadow: 0 4px 6px rgba(33, 150, 243, 0.3);
+}
+
+[data-level="terminale"] .tab-button.active {
+    background-color: var(--terminale-color);
+    box-shadow: 0 4px 6px rgba(156, 39, 176, 0.3);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Styles pour les cartes dans les onglets */
+.tab-content .neumorphic-card {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    background: var(--bg-color);
+    box-shadow: var(--nm-shadow-light);
+    margin-bottom: 1rem;
+}
+
+.tab-content .neumorphic-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--fox-orange);
+}
+
+.tab-content .neumorphic-card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--text-color-secondary);
+}
+
+.tab-content .neumorphic-card ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab-content .neumorphic-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+}
+
+/* Responsive pour les onglets */
+@media (max-width: 768px) {
+    .tabs-navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .tab-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Styles pour les tableaux */
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--nm-shadow-light);
+}
+
+.course-table th,
+.course-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-color-dark);
+}
+
+.course-table th {
+    background-color: var(--fox-orange-light);
+    color: white;
+    font-weight: var(--font-weight-medium);
+}
+
+.course-table tr:nth-child(even) {
+    background-color: var(--bg-color-dark);
+}
+
+.course-table tr:hover {
+    background-color: rgba(255, 127, 42, 0.1);
+}
+
+[data-level="seconde"] .course-table th {
+    background-color: var(--seconde-color);
+}
+
+[data-level="premiere"] .course-table th {
+    background-color: var(--premiere-color);
+}
+
+[data-level="terminale"] .course-table th {
+    background-color: var(--terminale-color);
+}
+
+/* Styles pour les images */
+.image-container {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.course-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--nm-shadow-light);
+}
+
+/* Styles pour les exercices */
+.exercise-box {
+    background-color: var(--bg-color-dark);
+    border-left: 4px solid var(--fox-orange);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+[data-level="seconde"] .exercise-box {
+    border-left-color: var(--seconde-color);
+}
+
+[data-level="premiere"] .exercise-box {
+    border-left-color: var(--premiere-color);
+}
+
+[data-level="terminale"] .exercise-box {
+    border-left-color: var(--terminale-color);
+}
+
+.exercise-box h4 {
+    color: var(--fox-orange);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+[data-level="seconde"] .exercise-box h4 {
+    color: var(--seconde-color);
+}
+
+[data-level="premiere"] .exercise-box h4 {
+    color: var(--premiere-color);
+}
+
+[data-level="terminale"] .exercise-box h4 {
+    color: var(--terminale-color);
+}
