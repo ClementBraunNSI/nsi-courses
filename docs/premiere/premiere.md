@@ -86,6 +86,7 @@
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_1/" class="btn">Fonctionnement processeur</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_2/" class="btn">Portes logiques</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Exercices/Fiche_Exo/" class="btn">TP architecture</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_4/" class="btn">Ludopédagogie : Minecraft et Redstone</a>
         </div>
     </div>
 
