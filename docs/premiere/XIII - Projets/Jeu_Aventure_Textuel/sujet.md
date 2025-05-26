@@ -17,15 +17,15 @@ L'objectif de ce projet est de développer un jeu d'aventure textuel où le joue
 Le monde du jeu est composé de plusieurs lieux interconnectés. Chaque lieu a une description, des sorties possibles vers d'autres lieux, et potentiellement des objets à ramasser ou des personnages à rencontrer.
 
 !!! fox_exercice "Structure d'un lieu"
-    Définissez une structure pour représenter un lieu. Un dictionnaire est un bon choix. Chaque lieu devrait avoir au moins :
+    Définir une structure pour représenter un lieu. Un dictionnaire est un bon choix. Chaque lieu devrait avoir au moins :
     - `nom` (chaîne de caractères, ex: "Forêt Sombre")
     - `description` (chaîne de caractères, ex: "Vous êtes dans une forêt sombre et menaçante. Un sentier part vers le nord.")
     - `sorties` (un dictionnaire où les clés sont des directions, ex: "nord", "sud", et les valeurs sont les noms des lieux correspondants, ex: "Clairière Ensoleillée")
     - `objets` (une liste de chaînes de caractères représentant les objets présents dans le lieu, ex: ["épée rouillée", "potion de soin"])
 
 !!! fox_exercice "Création de la carte du jeu"
-    Créez un dictionnaire principal nommé `carte_du_jeu` où les clés sont les noms des lieux et les valeurs sont les dictionnaires de lieu que vous avez définis.
-    Créez au moins 3-4 lieux interconnectés pour commencer.
+    Créer un dictionnaire principal nommé `carte_du_jeu` où les clés sont les noms des lieux et les valeurs sont les dictionnaires de lieu que vous avez définis.
+    Créer au moins 3-4 lieux interconnectés pour commencer.
     Par exemple :
     ```python
     carte_du_jeu = {
@@ -48,39 +48,39 @@ Le monde du jeu est composé de plusieurs lieux interconnectés. Chaque lieu a u
 Le joueur a un état qui doit être suivi : son lieu actuel et son inventaire.
 
 !!! fox_exercice "État du joueur"
-    Créez un dictionnaire `joueur` pour stocker les informations du joueur :
+    Créer un dictionnaire `joueur` pour stocker les informations du joueur :
     - `lieu_actuel` (chaîne de caractères, le nom du lieu où se trouve le joueur, initialisé au lieu de départ)
     - `inventaire` (une liste de chaînes de caractères, initialement vide)
 
 ### 3. Mécaniques de Jeu de Base
 
 !!! fox_exercice "Afficher le lieu actuel"
-    Créez une fonction `afficher_lieu(carte, nom_lieu)` qui affiche la description du lieu actuel et les objets visibles.
+    Créer une fonction `afficher_lieu(carte, nom_lieu)` qui affiche la description du lieu actuel et les objets visibles.
 
 !!! fox_exercice "Déplacement du joueur"
-    Créez une fonction `se_deplacer(joueur, carte, direction)` qui :
+    Créer une fonction `se_deplacer(joueur, carte, direction)` qui :
     1. Vérifie si la `direction` est une sortie valide depuis le `lieu_actuel` du joueur.
     2. Si oui, met à jour `joueur['lieu_actuel']` avec le nouveau lieu et renvoie `True`.
     3. Si non, affiche un message d'erreur (ex: "Vous ne pouvez pas aller par là.") et renvoie `False`.
 
 !!! fox_exercice "Ramasser un objet"
-    Créez une fonction `ramasser_objet(joueur, carte, nom_objet)` qui :
+    Créer une fonction `ramasser_objet(joueur, carte, nom_objet)` qui :
     1. Vérifie si `nom_objet` est présent dans la liste `objets` du `lieu_actuel`.
     2. Si oui, ajoute l'objet à `joueur['inventaire']`, le retire du lieu, affiche un message (ex: "Vous avez ramassé : épée rouillée") et renvoie `True`.
     3. Si non, affiche un message d'erreur et renvoie `False`.
 
 !!! fox_exercice "Afficher l'inventaire"
-    Créez une fonction `afficher_inventaire(joueur)` qui affiche le contenu de l'inventaire du joueur.
+    Créer une fonction `afficher_inventaire(joueur)` qui affiche le contenu de l'inventaire du joueur.
 
 ### 4. Boucle de Jeu et Analyseur de Commandes
 
 !!! fox_exercice "Analyseur de commandes simples"
-    Créez une fonction `analyser_commande(commande_str)` qui prend la chaîne de caractères entrée par le joueur (ex: "aller nord", "prendre épée") et la décompose en un verbe d'action (ex: "aller", "prendre") et un argument optionnel (ex: "nord", "épée").
+    Créer une fonction `analyser_commande(commande_str)` qui prend la chaîne de caractères entrée par le joueur (ex: "aller nord", "prendre épée") et la décompose en un verbe d'action (ex: "aller", "prendre") et un argument optionnel (ex: "nord", "épée").
     La fonction devrait renvoyer un tuple, par exemple `("aller", "nord")` ou `("inventaire", None)`.
-    Gérez au moins les commandes : `aller <direction>`, `prendre <objet>`, `inventaire`, `regarder` (pour ré-afficher la description du lieu), `quitter`.
+    Gérer au moins les commandes : `aller <direction>`, `prendre <objet>`, `inventaire`, `regarder` (pour ré-afficher la description du lieu), `quitter`.
 
 !!! fox_exercice "Boucle de jeu principale"
-    Créez la boucle principale du jeu qui :
+    Créer la boucle principale du jeu qui :
     1. Affiche le lieu actuel du joueur.
     2. Demande au joueur d'entrer une commande.
     3. Analyse la commande.
@@ -88,38 +88,38 @@ Le joueur a un état qui doit être suivi : son lieu actuel et son inventaire.
     5. Continue jusqu'à ce que le joueur tape "quitter" ou qu'une condition de fin de jeu soit atteinte (non implémenté dans cette étape).
 
 !!! fox_exercice_test "Test des mécaniques de base"
-    1. Initialisez la `carte_du_jeu` et le `joueur`.
-    2. Lancez la boucle de jeu.
-    3. Testez les déplacements entre les lieux.
-    4. Essayez de vous déplacer dans des directions invalides.
-    5. Ramassez des objets présents dans les lieux.
-    6. Essayez de ramasser des objets qui ne sont pas là ou déjà pris.
-    7. Affichez votre inventaire.
-    8. Utilisez la commande `regarder`.
-    9. Quittez le jeu.
+    1. Initialiser la `carte_du_jeu` et le `joueur`.
+    2. Lancer la boucle de jeu.
+    3. Tester les déplacements entre les lieux.
+    4. Essayer de vous déplacer dans des directions invalides.
+    5. Ramasser des objets présents dans les lieux.
+    6. Essayer de ramasser des objets qui ne sont pas là ou déjà pris.
+    7. Afficher votre inventaire.
+    8. Utiliser la commande `regarder`.
+    9. Quitter le jeu.
 
 ### 5. Sauvegarde et Chargement de la Partie
 
 !!! fox_exercice "Sauvegarder la partie"
-    Créez une fonction `sauvegarder_partie(joueur, carte, nom_fichier)` qui sauvegarde l'état actuel du `joueur` (lieu actuel, inventaire) et l'état de la `carte` (notamment les objets qui ont été déplacés des lieux vers l'inventaire) dans un fichier.
+    Créer une fonction `sauvegarder_partie(joueur, carte, nom_fichier)` qui sauvegarde l'état actuel du `joueur` (lieu actuel, inventaire) et l'état de la `carte` (notamment les objets qui ont été déplacés des lieux vers l'inventaire) dans un fichier.
     Le format JSON est recommandé pour sa lisibilité.
     *Astuce : Vous aurez besoin de sauvegarder `joueur['lieu_actuel']`, `joueur['inventaire']`, et l'état actuel de `carte_du_jeu[lieu]['objets']` pour chaque lieu.*
 
 !!! fox_exercice "Charger une partie"
-    Créez une fonction `charger_partie(nom_fichier)` qui lit les données depuis le fichier de sauvegarde et restaure l'état du `joueur` et de la `carte`.
+    Créer une fonction `charger_partie(nom_fichier)` qui lit les données depuis le fichier de sauvegarde et restaure l'état du `joueur` et de la `carte`.
     La fonction doit renvoyer le `joueur` et la `carte` chargés. Si le fichier de sauvegarde n'existe pas, elle peut initialiser une nouvelle partie ou renvoyer des valeurs indiquant qu'aucune sauvegarde n'a été trouvée.
 
 !!! fox_exercice "Intégration dans la boucle de jeu"
-    Modifiez la boucle de jeu pour :
+    Modifier la boucle de jeu pour :
     - Au démarrage, demander à l'utilisateur s'il veut charger une partie sauvegardée ou commencer une nouvelle partie.
     - Ajouter une commande "sauvegarder" que le joueur peut taper pour sauvegarder sa progression.
 
 !!! fox_exercice_test "Test de la sauvegarde et du chargement"
-    1. Commencez une nouvelle partie, déplacez-vous, ramassez quelques objets.
-    2. Sauvegardez la partie.
-    3. Quittez le jeu.
-    4. Relancez le jeu et chargez la partie sauvegardée.
-    5. Vérifiez que vous êtes au bon endroit, avec le bon inventaire, et que les objets ramassés ne sont plus dans leurs lieux d'origine.
+    1. Commencer une nouvelle partie, déplacez-vous, ramassez quelques objets.
+    2. Sauvegarder la partie.
+    3. Quitter le jeu.
+    4. Relancer le jeu et charger la partie sauvegardée.
+    5. Vérifier que vous êtes au bon endroit, avec le bon inventaire, et que les objets ramassés ne sont plus dans leurs lieux d'origine.
 
 ## Pour aller plus loin (Optionnel)
 
@@ -127,4 +127,3 @@ Le joueur a un état qui doit être suivi : son lieu actuel et son inventaire.
 - **Énigmes simples** : Introduisez des énigmes qui nécessitent d'utiliser des objets de l'inventaire (commande `utiliser <objet> sur <cible>`).
 - **Conditions de victoire/défaite** : Définissez un objectif pour le jeu.
 - **Plus de commandes** : `examiner <objet>`, `lacher <objet>`.
-- **Combat simple** : Si le jeu a une thématique d'aventure/combat.

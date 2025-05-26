@@ -16,8 +16,8 @@ Ce projet vise à simuler les fonctionnalités de base d'un réseau social en mo
 
 Chaque utilisateur aura un profil.
 
-!!! fox_exercice "Structure d'un profil utilisateur"
-    Définissez une structure pour un profil utilisateur. Un dictionnaire est approprié :
+!!! fox_exercice "Structure d'un profil utilisateur 🧑‍💻"
+    **Définir la structure de données pour représenter un profil utilisateur.** Chaque profil doit contenir au moins :
     - `nom_utilisateur` (chaîne de caractères, unique)
     - `mot_de_passe` (chaîne de caractères - pour la simplicité, nous ne nous préoccuperons pas du hachage sécurisé dans ce projet de base)
     - `amis` (une liste de `nom_utilisateur`)
@@ -26,8 +26,8 @@ Chaque utilisateur aura un profil.
 !!! fox_exercice "Base de données des utilisateurs"
     Créez une liste globale (ou une structure de données équivalente) nommée `utilisateurs_db` pour stocker tous les profils utilisateurs.
 
-!!! fox_exercice "Création de compte (Inscription)"
-    Créez une fonction `creer_compte(utilisateurs_db, nom_utilisateur, mot_de_passe)` qui :
+!!! fox_exercice "Création de compte et Connexion 🔑"
+    **Créer les fonctions suivantes :
     1. Vérifie si `nom_utilisateur` existe déjà dans `utilisateurs_db`.
     2. Si non, crée un nouveau profil utilisateur (avec une liste d'amis et de messages vide) et l'ajoute à `utilisateurs_db`.
     3. Renvoie `True` si le compte est créé, `False` sinon (nom d'utilisateur déjà pris).
@@ -39,16 +39,16 @@ Chaque utilisateur aura un profil.
     3. Renvoie le dictionnaire du profil utilisateur si la connexion réussit, `None` sinon.
     Gérez une variable globale `utilisateur_connecte` qui stockera le profil de l'utilisateur actuellement connecté (ou `None` si personne n'est connecté).
 
-!!! fox_exercice_test "Tests de gestion des utilisateurs"
-    1. Initialisez `utilisateurs_db`.
+!!! fox_exercice_test "Test de la gestion des utilisateurs ✅"
+    **Tester les fonctions :
     2. Créez plusieurs comptes utilisateurs. Essayez de créer un compte avec un nom d'utilisateur existant.
     3. Tentez de vous connecter avec des identifiants corrects et incorrects.
     4. Vérifiez l'état de `utilisateur_connecte` après une connexion réussie et une déconnexion (implicite ou explicite si vous ajoutez une fonction de déconnexion).
 
 ### 2. Gestion des Amitiés
 
-!!! fox_exercice "Envoyer une demande d'ami"
-    Pour simplifier, nous allons considérer que les amitiés sont bidirectionnelles et instantanées (pas de système de demande/acceptation).
+!!! fox_exercice "Gestion des amitiés 🤝"
+    **Créer les fonctions suivantes :
     Créez une fonction `ajouter_ami(utilisateurs_db, nom_utilisateur_connecte, nom_nouvel_ami)` qui :
     1. Vérifie que `nom_nouvel_ami` existe et n'est pas déjà ami avec `nom_utilisateur_connecte`.
     2. Ajoute `nom_nouvel_ami` à la liste `amis` de `nom_utilisateur_connecte`.
@@ -58,8 +58,8 @@ Chaque utilisateur aura un profil.
 !!! fox_exercice "Voir la liste d'amis"
     Créez une fonction `voir_amis(profil_utilisateur)` qui affiche la liste des amis de l'utilisateur dont le profil est fourni.
 
-!!! fox_exercice_test "Tests de gestion des amitiés"
-    1. Connectez-vous avec un utilisateur.
+!!! fox_exercice_test "Test de la gestion des amitiés ✅"
+    **Tester les fonctions :
     2. Ajoutez plusieurs amis. Essayez d'ajouter un ami inexistant ou déjà ami.
     3. Connectez-vous avec un autre utilisateur et vérifiez que l'amitié est bien réciproque.
     4. Affichez les listes d'amis des utilisateurs concernés.
@@ -68,8 +68,8 @@ Chaque utilisateur aura un profil.
 
 Chaque message aura un contenu, un auteur, et une date de publication.
 
-!!! fox_exercice "Structure d'un message"
-    Définissez une structure pour un message (dictionnaire) :
+!!! fox_exercice "Structure d'un message ✉️"
+    **Définir la structure de données pour représenter un message.** Chaque message doit contenir au moins :
     - `id_message` (entier, unique, peut être généré automatiquement)
     - `auteur` (chaîne de caractères, `nom_utilisateur`)
     - `contenu` (chaîne de caractères)
@@ -79,8 +79,8 @@ Chaque message aura un contenu, un auteur, et une date de publication.
     Créez une liste globale `messages_db` pour stocker tous les messages.
     Créez un compteur global `prochain_id_message` initialisé à 1.
 
-!!! fox_exercice "Publier un message"
-    Créez une fonction `publier_message(utilisateur_connecte, messages_db, contenu)` qui :
+!!! fox_exercice "Publication et Affichage des messages 📢"
+    **Créer les fonctions suivantes :
     1. Crée un nouveau dictionnaire de message avec un `id_message` unique (utilisez et incrémentez `prochain_id_message`), l'`auteur` (nom de l'utilisateur connecté), le `contenu`, et le `timestamp` actuel.
     2. Ajoute le message à `messages_db`.
     3. Ajoute l'`id_message` (ou une référence au message) à la liste `messages_publies` du profil de l'`utilisateur_connecte`.
@@ -93,8 +93,8 @@ Chaque message aura un contenu, un auteur, et une date de publication.
     3. Trie ces messages par `timestamp` (du plus récent au plus ancien).
     4. Affiche les messages de manière lisible (par exemple: "[Timestamp] Auteur: Contenu").
 
-!!! fox_exercice_test "Tests des messages et du fil d'actualité"
-    1. Connectez-vous avec un utilisateur A.
+!!! fox_exercice_test "Test de la gestion des messages ✅"
+    **Tester les fonctions :
     2. Publiez plusieurs messages.
     3. Connectez-vous avec un utilisateur B, ami avec A.
     4. Publiez plusieurs messages avec B.
@@ -105,14 +105,14 @@ Chaque message aura un contenu, un auteur, et une date de publication.
 
 ### 4. Interface Utilisateur (Menu Principal)
 
-!!! fox_exercice "Menu principal"
-    Créez une fonction `menu_principal()` qui gère l'état connecté/déconnecté.
+!!! fox_exercice "Menu principal et Boucle du programme 🔄"
+    **Créer un menu principal qui permet à l'utilisateur de naviguer dans l'application.** Le menu doit proposer les options suivantes :
     - Si déconnecté, propose : "1. Créer un compte", "2. Se connecter", "3. Quitter".
     - Si connecté, propose : "1. Publier un message", "2. Voir mon fil d'actualité", "3. Ajouter un ami", "4. Voir mes amis", "5. Se déconnecter", "6. Quitter".
-    La fonction doit lire le choix de l'utilisateur et appeler les fonctions correspondantes.
+    **Implémenter la boucle principale du programme qui affiche le menu et traite les choix de l'utilisateur.**
 
-!!! fox_exercice_test "Test de l'interface complète"
-    Simulez une session complète :
+!!! fox_exercice_test "Test du menu principal ✅"
+    **Lancer le programme et tester toutes les fonctionnalités du menu principal.** S'assurer que la navigation est fluide et que les actions sont correctement exécutées.
     1. Créez deux ou trois utilisateurs.
     2. Connectez l'utilisateur A.
     3. Faites-lui ajouter l'utilisateur B comme ami.

@@ -1,7 +1,63 @@
-# Cours de SNT et NSI
+<style>
+.level-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
 
-Clément Braun
-*Enseignant d'Informatique*
+.level-card {
+    background: var(--md-default-bg-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+}
+
+.level-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--md-primary-fg-color);
+    color: white !important;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+</style>
+
+<section class="level-cards">
+    <div class="level-card">
+        <img src="images/fox_seconde.png" alt="SNT Seconde">
+        <h2>Seconde - SNT</h2>
+        <p>Sciences Numériques et Technologie</p>
+        <a href="seconde/seconde.md" class="btn">Accéder aux cours</a>
+    </div>
+
+    <div class="level-card">
+        <img src="images/fox_premiere.png" alt="NSI Première">
+        <h2>Première</h2>
+        <p>Numérique et Sciences Informatiques</p>
+        <a href="premiere/premiere.md" class="btn">Accéder aux cours</a>
+    </div>
+
+    <div class="level-card">
+        <img src="images/fox_terminale.png" alt="NSI Terminale">
+        <h2>Terminale</h2>
+        <p>Numérique et Sciences Informatiques</p>
+        <a href="terminale/terminale.md" class="btn">Accéder aux cours</a>
+    </div>
+</section>
 
 ## Présentation des enseignements
 
