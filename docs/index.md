@@ -13,10 +13,12 @@
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(193, 131, 38, 0.93);
+    text-align: center;
     transition: transform 0.3s ease;
 }
 
 .level-card:hover {
+    transition: transform 0.6s ease;
     transform: translateY(-15px);
 }
 
