@@ -110,7 +110,7 @@
         <h3>🔍 VII - Algorithmes tableaux</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/Cours/" class="btn">Cours algorithmique</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/Mesures_de_complexite/mesure_tris/" class="btn">Mesures de complexité</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/Mesures_de_complexite/mesure_tris/sujets_mesure_tris/" class="btn">Mesures de complexité</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/dicho/" class="btn">Recherche dichotomique</a>
         </div>
     </div>
