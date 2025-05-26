@@ -35,7 +35,6 @@
     margin-top: 1rem;
 }
 
-
 .md-sidebar--primary { display: none !important; }
 .md-sidebar--secondary { display: none !important; }
 .md-content { margin-left: 0 !important; }
