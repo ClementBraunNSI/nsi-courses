@@ -66,7 +66,7 @@
         <h3>📸 V - Photographie Numérique</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/V%20-%20Photographie%20Numerique/c_1_Photographie_Noir_et_Blanc/" class="btn">Photo Noir et Blanc</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/V%20-%20Photographie%20Numerique/c_2_Photographie_Couleur/" class="btn">Photo Couleur</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/V%20-%20Photographie%20Numerique/c_2_Photographie_Couleur" class="btn">Photo Couleur</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/V%20-%20Photographie%20Numerique/c_3_Metadonnees/" class="btn">Métadonnées</a>
         </div>
     </div>
