@@ -35,7 +35,7 @@
     <div class="chapter-card">
         <h3>🎄 New Year Advent</h3>
         <div class="chapter-links">
-            <a href="New_Year_Advent/new_year_advent" class="btn">Explication et calendrier</a>
+            <a href="/docs/premiere/New_Year_Advent/new_year_advent" class="btn">Explication et calendrier</a>
             <a href="New_Year_Advent/Exercices_J1-J9/Jour_1" class="btn">Jour 1</a>
             <a href="New_Year_Advent/Exercices_J10-J14/Jour_2" class="btn">Jour 2</a>
         </div>
