@@ -44,20 +44,20 @@
     <div class="chapter-card">
         <h3>📚 Aides et Corrections</h3>
         <div class="chapter-links">
-            <a href="0-Aides/Corrections/trimestre_1/correction_interro_2/" class="btn">Correction Interro 2</a>
-            <a href="0-Aides/Corrections/trimestre_1/correction_ds_1/" class="btn">Correction DS 1</a>
-            <a href="0-Aides/Algorithmes_a_savoir/algo_a_savoir/" class="btn">Algorithmes à savoir</a>
-            <a href="0-Aides/Cheat_Sheets/cheat_sheet/" class="btn">Cheat Sheet</a>
-            <a href="0-Aides/Revisions/exos_boucles/" class="btn">Exercices révisions</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Corrections/trimestre_1/correction_interro_2/" class="btn">Correction Interro 2</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Corrections/trimestre_1/correction_ds_1/" class="btn">Correction DS 1</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Algorithmes_a_savoir/algo_a_savoir/" class="btn">Algorithmes à savoir</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Cheat_Sheets/cheat_sheet/" class="btn">Cheat Sheet</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Revisions/exos_boucles/" class="btn">Exercices révisions</a>
         </div>
     </div>
     <!-- Début carte chapitre I -->
     <div class="chapter-card">
         <h3>🛠️ I - Constructions élémentaires</h3>
         <div class="chapter-links">
-            <a href="I-Constructions_elementaires/Cours/Cours_1/" class="btn">Cours 1 - Bases</a>
-            <a href="I-Constructions_elementaires/Fiches_d_exercices/Exercices_boucles/" class="btn">Exercices boucles</a>
-            <a href="I-Constructions_elementaires/Fiches_d_exercices/Exercices_fonctions/" class="btn">Exercices fonctions</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_1/" class="btn">Cours 1 - Bases</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_boucles/" class="btn">Exercices boucles</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_fonctions/" class="btn">Exercices fonctions</a>
         </div>
     </div>
     <!-- Fin carte chapitre I -->
