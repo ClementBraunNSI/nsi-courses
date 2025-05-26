@@ -1,5 +1,7 @@
 # Clément Braun - NSI
 
+---
+
 <style>
 .level-cards {
     display: grid;
@@ -70,6 +72,8 @@
         <a href="Terminale/terminale" class="btn">Accéder aux cours</a>
     </div>
 </section>
+
+---
 
 ## Présentation des enseignements
 

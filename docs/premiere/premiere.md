@@ -1,6 +1,6 @@
 # 🎓 Première NSI
 
-## 📚 Chapitres
+---
 
 <style>
 .chapter-cards {
