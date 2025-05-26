@@ -41,21 +41,21 @@
         <img src="images/fox_seconde.png" alt="SNT Seconde">
         <h2>Seconde - SNT</h2>
         <p>Sciences Numériques et Technologie</p>
-        <a href="seconde/seconde.md" class="btn">Accéder aux cours</a>
+        <a href="seconde/seconde" class="btn">Accéder aux cours</a>
     </div>
 
     <div class="level-card">
         <img src="images/fox_premiere.png" alt="NSI Première">
         <h2>Première</h2>
         <p>Numérique et Sciences Informatiques</p>
-        <a href="premiere/premiere.md" class="btn">Accéder aux cours</a>
+        <a href="premiere/premiere" class="btn">Accéder aux cours</a>
     </div>
 
     <div class="level-card">
         <img src="images/fox_terminale.png" alt="NSI Terminale">
         <h2>Terminale</h2>
         <p>Numérique et Sciences Informatiques</p>
-        <a href="terminale/terminale.md" class="btn">Accéder aux cours</a>
+        <a href="terminale/terminale" class="btn">Accéder aux cours</a>
     </div>
 </section>
 
