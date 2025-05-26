@@ -52,7 +52,7 @@
     <div class="chapter-card">
         <h3>🛠️ I - Constructions élémentaires</h3>
         <div class="chapter-links">
-            <a href="./I%20-%20Constructions%20élémentaires/Cours/Cours_1" class="btn">Cours 1 - Bases</a>
+            <a href="/docs/premiere/I - Constructions élémentaires/Cours/Cours_1" class="btn">Cours 1 - Bases</a>
             <a href="./I%20-%20Constructions%20élémentaires/Fiches%20d'exercices/Exercices_boucles" class="btn">Exercices boucles</a>
             <a href="./I%20-%20Constructions%20élémentaires/Fiches%20d'exercices/Exercices_fonctions" class="btn">Exercices fonctions</a>
         </div>
