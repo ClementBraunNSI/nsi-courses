@@ -55,7 +55,7 @@
         <img src="images/fox_terminale.png" alt="NSI Terminale">
         <h2>Terminale</h2>
         <p>Numérique et Sciences Informatiques</p>
-        <a href="terminale/terminale" class="btn">Accéder aux cours</a>
+        <a href="Terminale/terminale" class="btn">Accéder aux cours</a>
     </div>
 </section>
 
