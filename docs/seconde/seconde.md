@@ -18,6 +18,7 @@
 
 .chapter-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 198, 55, 0.8);
 }
 
 .chapter-links {

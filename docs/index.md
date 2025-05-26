@@ -1,3 +1,5 @@
+# Clément Braun - NSI
+
 <style>
 .level-cards {
     display: grid;
@@ -10,12 +12,18 @@
     background: var(--md-default-bg-color);
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(193, 131, 38, 0.93);
     transition: transform 0.3s ease;
 }
 
 .level-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
+}
+
+.level-card:hover img {
+    box-shadow: 0 0 15px rgba(255, 127, 42, 0);
+    filter: drop-shadow(0 0 10px rgba(255, 198, 55, 0.8));
+    transition: box-shadow 0.3s ease;
 }
 
 .level-card img {
@@ -34,13 +42,13 @@
     border-radius: 5px;
     text-decoration: none;
     margin-top: 1rem;
-}
 
+}
 </style>
 
 <section class="level-cards">
     <div class="level-card">
-        <img src="images/fox_seconde.png" alt="SNT Seconde">
+        <img src="images/fox_seconde.png" class="simple"alt="SNT Seconde">
         <h2>Seconde - SNT</h2>
         <p>Sciences Numériques et Technologie</p>
         <a href="seconde/seconde" class="btn">Accéder aux cours</a>
