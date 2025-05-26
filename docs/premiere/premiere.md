@@ -29,8 +29,63 @@
 
 ### 💻 IV - Architecture machine
 - **Cours**  
-    - [Fonctionnement processeur](./IV%20-%20Architecture%20d'une%20machine/Cours/Cours_1.md) ⚡
-    - [Portes logiques](./IV%20-%20Architecture%20d'une%20machine/Cours/Cours_2.md) 🎚️
+    - [Cours 1 - Fonctionnement processeur](./IV%20-%20Architecture%20d'une%20machine/Cours/Cours_1.md) ⚡
+    - [Cours 2 - Portes logiques](./IV%20-%20Architecture%20d'une%20machine/Cours/Cours_2.md) 🎚️
+    - [Cours 3 - Circuits combinatoires](./IV%20-%20Architecture%20d'une%20machine/Cours/Cours_3.md) 🎛️
+    - [Cours 4 - Mémoire et stockage](./IV%20-%20Architecture%20d'une%20machine/Cours/Cours_4.md) 💾
+
+- **Exercices**  
+    - [TP architecture machine](./IV%20-%20Architecture%20d'une%20machine/Exercices/Fiche_Exo.md) 🔌
+
+### 📊 V - Traitement de données
+- **Cours**  
+    - [Cours 1 - Dictionnaires](./V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_1.md) 📖
+    - [Cours 2 - Manipulation de tables](./V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_2.md) 🗃️
+    - [Cours 3 - Méthodes de tri](./V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_3.md) 🔢
+
+- **Exercices**  
+    - [Exercices dictionnaires](./V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Exercices/Fiche_exercices_dictionnaires.md) 📑
+
+### 🌐 VI- Internet et Réseaux
+- **Cours**  
+    - [Cours principal](./VI-%20Internet%20et%20Réseaux/Cours.md) 🌍
+
+- **Exercices**  
+    - [Exercices réseau TCP/IP](./VI-%20Internet%20et%20Réseaux/bit_alterne.md) 📡
+
+### 🔍 VII- Algorithmes sur les tableaux
+- **Cours**  
+    - [Cours algorithmique](./VII-%20Algorithmes%20sur%20les%20tableaux/Cours.md) 🧮
+
+- **Exercices**  
+    - [Recherche dichotomique](./VII-%20Algorithmes%20sur%20les%20tableaux/dicho.md) 🎯
+
+### 🧠 VIII - Algorithmes Gloutons
+- **Cours**  
+    - [Stratégies gloutonnes](./VIII%20-%20Algorithmes%20Gloutons/Algorithmes%20Gloutons_22_23.md) 💡
+
+### 🐧 VIIII - Systèmes d'exploitation
+- **Cours**  
+    - [Cours 1 - Principes de base](./VIIII%20-%20Systèmes%20d'exploitation%20et%20commandes%20Linux/Cours/Cours_1.md) 🖥️
+    - [Cours 2 - Commandes avancées](./VIIII%20-%20Systèmes%20d'exploitation%20et%20commandes%20Linux/Cours/Cours_2.md) ⌨️
+
+- **TP**  
+    - [TP Commandes Linux](./VIIII%20-%20Systèmes%20d'exploitation%20et%20commandes%20Linux/TP%20:%20Commandes%20Linux/TP_commandes_linux.md) 🐚
+
+### 🌍 X - Web et HTTP
+- **Cours**  
+    - [Fonctionnement HTTP](./X%20-%20Web%20et%20HTTP/Cours/Cours.md) 🌐
+    - [Introduction au HTML](./X%20-%20Web%20et%20HTTP/Cours/cours_html.md) 📄
+
+- **Projets**  
+    - [Création de site web](./X%20-%20Web%20et%20HTTP/TP/Projet.md) 🎨
+
+### 🤖 XI - K plus proches voisins
+- **Cours**  
+    - [Algorithme KNN](./XI%20-%20K%20plus%20proches%20voisins/Cours.md) 📈
+
+- **TP**  
+    - [Application pratique](./XI%20-%20K%20plus%20proches%20voisins/TP_KNN.md) 🔧
 
 ### 📊 V - Traitement de données
 - **Cours**  
