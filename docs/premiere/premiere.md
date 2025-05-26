@@ -37,7 +37,7 @@
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/new_year_advent/" class="btn">Explication et calendrier</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_1/" class="btn">Jour 1</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J10-J14/Jour_2/" class="btn">Jour 2</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_2/" class="btn">Jour 2</a>
         </div>
     </div>
 
@@ -67,7 +67,7 @@
         <h3>🔢 II - Représentation des données</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_1_booleen_et_operations/" class="btn">Cours booléens</a>
-            <a href="II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_Nombres_binaires/" class="btn">Exercices binaires</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_Nombres_binaires/" class="btn">Exercices binaires</a>
         </div>
     </div>
     <!-- Ajouter les autres chapitres suivant le même modèle -->
@@ -75,25 +75,25 @@
     <div class="chapter-card">
         <h3>🧱 III - Structures de données linéaires</h3>
         <div class="chapter-links">
-            <a href="III-Structures_de_donnees_lineaires/Cours/Cours/" class="btn">Cours listes/tuples</a>
-            <a href="III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes/" class="btn">Exercices pratiques</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Cours/Cours/" class="btn">Cours listes/tuples</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes/" class="btn">Exercices pratiques</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>💻 IV - Architecture machine</h3>
         <div class="chapter-links">
-            <a href="IV-Architecture_d_une_machine/Cours/Cours_1/" class="btn">Fonctionnement processeur</a>
-            <a href="IV-Architecture_d_une_machine/Cours/Cours_2/" class="btn">Portes logiques</a>
-            <a href="IV-Architecture_d_une_machine/Exercices/Fiche_Exo/" class="btn">TP architecture</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_1/" class="btn">Fonctionnement processeur</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_2/" class="btn">Portes logiques</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Exercices/Fiche_Exo/" class="btn">TP architecture</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>📊 V - Traitement de données</h3>
         <div class="chapter-links">
-            <a href="V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_1/" class="btn">Cours dictionnaires</a>
-            <a href="V-Dictionnaires_et_Traitement_de_tables/Exercices/Fiche_exercices_dictionnaires/" class="btn">Exercices dictionnaires</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_1/" class="btn">Cours dictionnaires</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/V-Dictionnaires_et_Traitement_de_tables/Exercices/Fiche_exercices_dictionnaires/" class="btn">Exercices dictionnaires</a>
         </div>
     </div>
 
