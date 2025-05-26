@@ -35,7 +35,6 @@
     margin-top: 1rem;
 }
 
-
 </style>
 
 <section class="level-cards">

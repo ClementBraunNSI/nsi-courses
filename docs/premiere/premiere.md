@@ -37,6 +37,12 @@
     - [Dictionnaires](./V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_1.md) 📖
     - [Manipulation de tables](./V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_2.md) 🗃️
 
+### XII - Pour aller plus loin
+- **Cours**
+    - [Programmation Orientée Objet : Cours](./XII%20-%20Pour%20aller%20plus%20loin/Programmation%20Orientée%20Objet/fiche_cours.md)
+- **Exercices**
+    - [Programmation Orientée Objet : Exercices](./XII%20-%20Pour%20aller%20plus%20loin/Programmation%20Orientée%20Objet/fiche_exercices.md)
+
 ## 📝 Corrections
   - [Interrogation 2 : Bases de Python](./0%20-%20Aides/Corrections/trimestre_1/correction_interro_2.md) 🐍
   - [DS 1 : binaire et programmation](./0%20-%20Aides/Corrections/trimestre_1/correction_ds_1.md) 💡
