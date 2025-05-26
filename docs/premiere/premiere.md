@@ -66,7 +66,7 @@
     <div class="chapter-card">
         <h3>🔢 II - Représentation des données</h3>
         <div class="chapter-links">
-            <a href="II-Representation_des_donnees/Cours/c_1_booleen_et_operations/" class="btn">Cours booléens</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_1_booleen_et_operations/" class="btn">Cours booléens</a>
             <a href="II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_Nombres_binaires/" class="btn">Exercices binaires</a>
         </div>
     </div>
