@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sky palace</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <header>Sky palace
+        <h1>Tableau revisité : </h1>
+        <button id="modeToggle">🌙 Mode Nuit</button>
+    </header>
+    <div class="audio-controls">
+        <audio id="background-music" loop>
+            <source src="audio/f.mp3 type="audio/mp3>
+            Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+        <div class="audio-buttons">
+            <button id="playPauseBtn">▶️ Lecture</button>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50">
+            <span id="volumeValue">50%</span>
+        </div>
+    </div>
+
+    <section class="presentation">
+        </strong><h2>Le tableau revisité</h2><strong>
+        <img src= "image/1.jpg"  alt= Sky palace
+        <p><strong>Titre :</strong> Sky palace<br>
+        <strong>Auteur :</strong> Lowen Lino<br>
+        <strong>Date :</strong> 2024<br>
+        <strong>Contexte :</strong> Sky palace est un groupe de 6 musiciens du lycée, guitare, bass, batterie, piano, trombone et enfin chant. Le groupe s'est formé en ce début d'année scolaire 2024/2025 et joue de la soul, du funk, de la bossa etc... Où suivre sky palace ? Sur instagram : Skyyypalace 
+        Retrouvez nous sur la scène en suivant notre compte</p>
+    </section>
+    <section class="histoire">
+        <h2>Histoire inventée</h2>
+        <p></p>Dans un lycée animé par la passion de la musique, six âmes créatives se sont rencontrées par hasard dans la salle de musique. Un guitariste rêveur, un bassiste au groove contagieux, un batteur énergique, un pianiste aux doigts de fée, un tromboniste passionné et une voix envoûtante. Ensemble, ils ont donné naissance à Sky Palace, un groupe qui mélange les genres avec audace. Comme le renard qui suivait le semeur pour protéger les graines sacrées, ces six musiciens veillent sur leurs compositions, semant jour après jour des notes de soul, de funk et de bossa dans les cœurs de leur public. Leur musique, tel un jardin en pleine croissance, fleurit et s'épanouit, créant une harmonie unique qui résonne dans les couloirs du lycée et au-delà. Suivez leur aventure musicale sur Instagram @Skyyypalace, où chaque publication raconte un nouveau chapitre de leur histoire</p>
+    </section>
+
+    <script src="scripts/script.js"></script>
+    <div class="questionnaire fenetre">
+        <h2>Testez vos connaissances</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <p>Combien de musiciens composent le groupe Sky Palace ?</p>
+                <label><input type="radio" name="question1" value="incorrect"> 5 musiciens</label><br>
+                <label><input type="radio" name="question1" value="incorrect"> 7 musiciens</label><br>
+                <label><input type="radio" name="question1" value="correct"> 6 musiciens</label><br>
+            </div>
+            <div class="question">
+                <p>Quels styles de musique joue Sky Palace ?</p>
+                <label><input type="radio" name="question2" value="incorrect"> Rock et metal uniquement</label><br>
+                <label><input type="radio" name="question2" value="incorrect"> Jazz et classique</label><br>
+                <label><input type="radio" name="question2" value="correct"> Soul, funk et bossa</label><br>
+            </div>
+            <div class="question">
+                <p>Où peut-on suivre Sky Palace sur les réseaux sociaux ?</p>
+                <label><input type="radio" name="question3" value="correct"> Sur Instagram @Skyyypalace</label><br>
+                <label><input type="radio" name="question3" value="incorrect"> Sur Facebook uniquement</label><br>
+                <label><input type="radio" name="question3" value="incorrect"> Sur Twitter @SkyPalace</label><br>
+            </div>
+            <div class="question">
+                <p>Quand le groupe Sky Palace s'est-il formé ?</p>
+                <label><input type="radio" name="question4" value="incorrect"> En 2023</label><br>
+                <label><input type="radio" name="question4" value="correct"> Au début de l'année scolaire 2024/2025</label><br>
+                <label><input type="radio" name="question4" value="incorrect"> À la fin de l'année 2022</label><br>
+            </div>
+            <div class="bouton_valider">
+                <button type="button" onclick="resultatQuiz()">Vérifier mes réponses</button>
+            </div>
+        </form>
+
+        <div id="resultat-quiz" style="display: none;"></div>
+
+    </div>
+
+</div>
+</body>
+</html>
