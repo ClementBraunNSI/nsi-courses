@@ -100,17 +100,17 @@
     <div class="chapter-card">
         <h3>🌐 VI - Internet et Réseaux</h3>
         <div class="chapter-links">
-            <a href="VI-Internet_et_Reseaux/Cours/" class="btn">Cours principal</a>
-            <a href="VI-Internet_et_Reseaux/bit_alterne/" class="btn">Exercices réseau</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VI-Internet_et_Reseaux/Cours/" class="btn">Cours principal</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VI-Internet_et_Reseaux/bit_alterne/" class="btn">Exercices réseau</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🔍 VII - Algorithmes tableaux</h3>
         <div class="chapter-links">
-            <a href="VII-Algorithmes_sur_les_tableaux/Cours/" class="btn">Cours algorithmique</a>
-            <a href="VII-Algorithmes_sur_les_tableaux/Mesures_de_complexite/mesure_tris/" class="btn">Mesures de complexité</a>
-            <a href="VII-Algorithmes_sur_les_tableaux/dicho/" class="btn">Recherche dichotomique</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/Cours/" class="btn">Cours algorithmique</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/Mesures_de_complexite/mesure_tris/" class="btn">Mesures de complexité</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/dicho/" class="btn">Recherche dichotomique</a>
         </div>
     </div>
 
@@ -124,50 +124,51 @@
     <div class="chapter-card">
         <h3>🐧 VIIII - Systèmes d'exploitation</h3>
         <div class="chapter-links">
-            <a href="VIIII-Systemes_d_exploitation_et_commandes_Linux/Cours/Cours_1/" class="btn">Principes de base</a>
-            <a href="VIIII-Systemes_d_exploitation_et_commandes_Linux/TP_Commandes_Linux/TP_commandes_linux/" class="btn">TP Commandes Linux</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VIIII-Systemes_d_exploitation_et_commandes_Linux/Cours/Cours_1/" class="btn">Principes de base</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VIIII-Systemes_d_exploitation_et_commandes_Linux/TP_Commandes_Linux/TP_commandes_linux/" class="btn">TP Commandes Linux</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🌍 X - Web et HTTP</h3>
         <div class="chapter-links">
-            <a href="X-Web_et_HTTP/Cours/Cours/" class="btn">Fonctionnement HTTP</a>
-            <a href="X-Web_et_HTTP/TP/Projet/" class="btn">Création de site web</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/X-Web_et_HTTP/Cours/" class="btn">Fonctionnement HTTP</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/X-Web_et_HTTP/TP/Projet/" class="btn">Création de site web</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🤖 XI - K plus proches voisins</h3>
         <div class="chapter-links">
-            <a href="XI-K_plus_proches_voisins/Cours/" class="btn">Algorithme KNN</a>
-            <a href="XI-K_plus_proches_voisins/TP_KNN/" class="btn">TP application</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XI-K_plus_proches_voisins/Cours/" class="btn">Algorithme KNN</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XI-K_plus_proches_voisins/TP_KNN/" class="btn">TP application</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🚀 XII - Pour aller plus loin</h3>
         <div class="chapter-links">
-            <a href="XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_cours/" class="btn">Programmation Orientée Objet</a>
-            <a href="XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_exercices/" class="btn">Exercices POO</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_cours/" class="btn">Programmation Orientée Objet</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_exercices/" class="btn">Exercices POO</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🎨 XIII - Projets</h3>
         <div class="chapter-links">
-            <a href="XIII-Projets/" class="btn">Voir tous les projets</a>
-            <a href="XIII-Projets/Application_bancaire/sujet/" class="btn">Application bancaire</a>
-            <a href="XIII-Projets/Mini_Projets/Devinette/sujet/" class="btn">Mini Projets</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/" class="btn">Voir tous les projets</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/Application_bancaire/sujet/" class="btn">Application bancaire</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/Mini_Projets/Devinette/sujet/" class="btn">Mini Projets</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🎨 XIII - Projets</h3>
         <div class="chapter-links">
-            <a href="XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
-            <a href="XIIII-TP_notes/Code_Barre/code_barre/" class="btn">Code Barre</a>
-            <a href="XIIII-TP_notes/Interro_Algo_a_savoir/sujet1_md/" class="btn">Interro Algo à savoir</a>
+            <a href="XIIII-TP_notes: https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Code_Barre/code_barre/" class="btn">Code Barre</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Interro_Algo_a_savoir/sujet1_md/" class="btn">Interro Algo à savoir</a>
         </div>
     </div>
 </section>
