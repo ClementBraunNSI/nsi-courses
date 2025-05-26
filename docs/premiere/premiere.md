@@ -35,9 +35,9 @@
     <div class="chapter-card">
         <h3>🎄 New Year Advent</h3>
         <div class="chapter-links">
-            <a href="/docs/premiere/New_Year_Advent/new_year_advent" class="btn">Explication et calendrier</a>
-            <a href="../New_Year_Advent/Exercices_J1-J9/Jour_1" class="btn">Jour 1</a>
-            <a href="New_Year_Advent/Exercices_J10-J14/Jour_2" class="btn">Jour 2</a>
+            <a href="0-New_Year_Advent/new_year_advent/" class="btn">Explication et calendrier</a>
+            <a href="0-New_Year_Advent/Exercices_J1-J9/Jour_1/" class="btn">Jour 1</a>
+            <a href="0-New_Year_Advent/Exercices_J10-J14/Jour_2/" class="btn">Jour 2</a>
         </div>
     </div>
 
@@ -55,8 +55,8 @@
     <div class="chapter-card">
         <h3>🛠️ I - Constructions élémentaires</h3>
         <div class="chapter-links">
-            <a href="premiere/I-Constructions_elementaires/Cours/Cours_1/" class="btn">Cours 1 - Bases</a>
-            <a href="premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_boucles/" class="btn">Exercices boucles</a>
+            <a href="I-Constructions_elementaires/Cours/Cours_1/" class="btn">Cours 1 - Bases</a>
+            <a href="I-Constructions_elementaires/Fiches_d_exercices/Exercices_boucles/" class="btn">Exercices boucles</a>
             <a href="I-Constructions_elementaires/Fiches_d_exercices/Exercices_fonctions/" class="btn">Exercices fonctions</a>
         </div>
     </div>
