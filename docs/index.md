@@ -28,8 +28,9 @@
 .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: var(--md-primary-fg-color);
-    color: white !important;
+    background: white !important;
+    color: orange !important;
+    border: 2px solid orange;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 1rem;

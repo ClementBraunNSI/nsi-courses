@@ -43,7 +43,7 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/glassmorphism.css
+  - dostylesheets/glassmorphism.css
 
 extra_javascript:
   - javascripts/mathjax.js
