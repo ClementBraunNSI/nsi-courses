@@ -12,13 +12,13 @@ Ce challenge de code permet aux élèves de réviser et produire des algorithmes
 
 - [Jour 1 : Calculer le prix des courses du Réveillon](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_1)
 - [Jour 2 : Calculer le prix de chaque catégorie](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_2)
-- [Jour 3 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_3)
-- [Jour 4 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_4)
+- [Jour 3 : Pas de bol, il manque des chips](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_3)
+- [Jour 4 : Une soirée de gloutons de chips](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_4)
 - [Jour 5 : Où est passée la liste de courses ?](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_5)
 - [Jour 6 : Le compte à rebours jusqu'à minuit](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_6)
 - [Jour 7 : Composer le menu du Réveillon](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_7)
-- [Jour 8 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_8)
-- [Jour 9 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_9)
+- [Jour 8 : La playlist de la soirée](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_8)
+- [Jour 9 : Le karaoké du Nouvel An](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_9)
 
 ### Jours 10 à 14
 
