@@ -159,12 +159,12 @@
     <div class="chapter-card">
         <h3>🎨 XIII - Projets</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/index/" class="btn">Voir tous les projets</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/" class="btn">Voir tous les projets</a>
         </div>
     </div>
 
     <div class="chapter-card">
-        <h3>🎨 XIII - Projets</h3>
+        <h3>🎨 XIIII - TP-Notés</h3>
         <div class="chapter-links">
             <a href="XIIII-TP_notes: https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Code_Barre/code_barre/" class="btn">Code Barre</a>
