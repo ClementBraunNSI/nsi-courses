@@ -159,9 +159,7 @@
     <div class="chapter-card">
         <h3>🎨 XIII - Projets</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/" class="btn">Voir tous les projets</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/Application_bancaire/sujet/" class="btn">Application bancaire</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/Mini_Projets/Devinette/sujet/" class="btn">Mini Projets</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/index/" class="btn">Voir tous les projets</a>
         </div>
     </div>
 
