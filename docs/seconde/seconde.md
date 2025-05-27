@@ -91,7 +91,7 @@
     <div class="chapter-card">
         <h3>💡 VIII - Objets Connectés</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/VIII%20-%20Objets%20Connectés/activite/" class="btn">Activité</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/VIII%20-%20Objets%20Connectés/activite/" class="btn">Activité Blockly</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/VIII%20-%20Objets%20Connectés/tp/" class="btn">TP Micro:bit</a>
         </div>
     </div>
