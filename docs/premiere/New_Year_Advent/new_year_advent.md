@@ -6,10 +6,28 @@ Le New Year Advent Challenge est un challenge d'algorithmie proposé par les ens
 
 Ce challenge de code permet aux élèves de réviser et produire des algorithmes pour fêter le décompte de la nouvelle année.
 
-Chaque jour, un nouvel exercice sera proposé avec une série de tests à passer. La correction de l'exercice sera proposée 2 jours après la publication de celui-ci pour laisser le temps à tout le monde de réfléchir à son exécution.
+## Édition 2024-2025
 
-**Les exercices peuvent être à tiroir** : c'est-à-dire qu'un algorithme peut servir d'une question à une autre ou d'une journée à une autre.
-Il faudra rendre à l'enseignant l'algorithme proposé et un code, souvent la réponse à un exercice pour valider la réalisation de celui-ci.
+### Jours 1 à 9
 
-À la fin, les élèves ayant réalisé plus de 9 exercices se verront récompensés d'un petit cadeau 🦊 pour se rappeler de l'évènement.
+- [Jour 1 : Calculer le prix des courses du Réveillon](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_1)
+- [Jour 2 : Calculer le prix de chaque catégorie](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_2)
+- [Jour 3 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_3)
+- [Jour 4 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_4)
+- [Jour 5 : Où est passée la liste de courses ?](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_5)
+- [Jour 6 : Le compte à rebours jusqu'à minuit](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_6)
+- [Jour 7 : Composer le menu du Réveillon](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_7)
+- [Jour 8 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_8)
+- [Jour 9 : ...](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_9)
+
+### Jours 10 à 14
+
+- [Jour 10 : Le Quizz du Nouvel An](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J10-J14/Jour_10)
+- [Jour 11 : Les photos du réveillon](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J10-J14/Jour_11)
+- [Jour 12 : Le budget du réveillon](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J10-J14/Jour_12)
+- [Jour 13 : Les résolutions du Nouvel An](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J10-J14/Jour_13)
+- [Jour 14 : Messages secrets du Réveillon](https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J10-J14/Jour_14)
+
+## Édition 2025-2026 (Préparation)
+
 
