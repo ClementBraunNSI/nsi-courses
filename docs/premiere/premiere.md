@@ -153,6 +153,7 @@
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_cours/" class="btn">Programmation Orientée Objet</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_exercices/" class="btn">Exercices POO</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_piles_files/" class="btn">Les piles et les files</a>
         </div>
     </div>
 

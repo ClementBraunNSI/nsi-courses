@@ -202,8 +202,6 @@
     background-color: rgba(255, 255, 255, 0.8) !important;
     backdrop-filter: blur(8px);
 
-    border-left: 2px solid #f1aa46;
-    border-right: 2px solid #f1aa46;
     border-bottom: none!important;
     border-top: none!important;
 }
@@ -233,8 +231,6 @@
     color: #000000 !important;
     border-left: none!important;
     border-right: none!important;
-    border-bottom: 2px solid #f1aa46;
-    border-top: 2px solid #f1aa46 !important;
 }
 
 .md-tabs__link {
@@ -263,7 +259,6 @@
     padding: 1rem !important;
     overflow: hidden !important;
     background-color: rgb(241, 170, 70,0)!important;
-    border: #f1aa46 solid 2px!important;
 }
 
 .md-typeset h1{
