@@ -50,28 +50,35 @@
 }
 </style>
 
-<section class="level-cards">
+<div class="level-cards-container">
     <div class="level-card">
-        <img src="images/fox_seconde.png" class="simple"alt="SNT Seconde">
-        <h2>Seconde - SNT</h2>
-        <p>Sciences Numériques et Technologie</p>
-        <a href="seconde/seconde" class="btn">Accéder aux cours</a>
+        <img src="images/fox_seconde.png" alt="Seconde">
+        <h2>Seconde</h2>
+        <p>Le programme de seconde</p>
+        <a href="seconde/seconde" class="btn">Accéder au cours</a>
     </div>
 
     <div class="level-card">
-        <img src="images/fox_premiere.png" alt="NSI Première">
+        <img src="images/fox_premiere.png" alt="Première">
         <h2>Première</h2>
-        <p>Numérique et Sciences Informatiques</p>
-        <a href="premiere/premiere" class="btn">Accéder aux cours</a>
+        <p>Le programme de première année</p>
+        <a href="premiere/premiere" class="btn">Accéder au cours</a>
     </div>
 
     <div class="level-card">
-        <img src="images/fox_terminale.png" alt="NSI Terminale">
+        <img src="images/fox_terminale.png" alt="Terminale">
         <h2>Terminale</h2>
-        <p>Numérique et Sciences Informatiques</p>
-        <a href="Terminale/terminale" class="btn">Accéder aux cours</a>
+        <p>Le programme de terminale</p>
+        <a href="terminale/terminale" class="btn">Accéder au cours</a>
     </div>
-</section>
+
+    <div class="level-card">
+        <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
+        <h2>Chasse aux Ren'arts</h2>
+        <p>Un défi spécial pour les élèves</p>
+        <a href="temporaire" class="btn">Accéder au défi</a>
+    </div>
+</div>
 
 ---
 
