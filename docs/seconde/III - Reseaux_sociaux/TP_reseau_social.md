@@ -53,7 +53,7 @@ Suis les étapes ci-dessous dans la partie "Exemple de code à compléter" :
 
 1.  **Crée un réseau social** : Utilise `reseau = ReseauSocial()` pour commencer.
 2.  **Crée trois personnes (utilisateurs)** : Donne-leur des noms comme "Alice", "Bob" et "Charlie" en utilisant `Utilisateur("Nom")`.
-3.  **Ajoute ces personnes à ton réseau social** : Utilise la fonction `reseau.ajouter_utilisateur()` pour chaque personne.
+3.  **Ajoute ces personnes à ton réseau social** : Utilise la fonction `reseau.ajouter_utilisateur(*utilisateur*)` pour chaque personne.
 4.  **Crée des liens d'amitié** : Utilise la fonction `reseau.lier_amis()` pour connecter Alice et Bob, puis Bob et Charlie.
 5.  **Affiche le réseau** : Utilise `reseau.afficher_reseau()` pour voir qui est ami avec qui.
 
