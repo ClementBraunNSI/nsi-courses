@@ -11,31 +11,31 @@ Dans ce TP, tu vas utiliser des outils Python (appelés "classes") pour simuler 
 class Utilisateur:
     # Quand tu crées un Utilisateur, tu lui donnes un nom.
     # Il n'a pas encore d'amis au début.
-    def __init__(self, nom):
-        self.nom = nom
-        self.amis = []
+    def __init__(self, nom: str):
+        self.nom: str = nom
+        self.amis: list['Utilisateur'] = []
 
     # Cette fonction permet d'ajouter un ami à un utilisateur.
-    def ajouter_ami(self, autre_utilisateur):
+    def ajouter_ami(self, autre_utilisateur: 'Utilisateur'):
         if autre_utilisateur not in self.amis:
             self.amis.append(autre_utilisateur)
 
     # Permet d'afficher l'utilisateur de manière simple (ex: Utilisateur(Alice))
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Utilisateur({self.nom})"
 
 class ReseauSocial:
     # Quand tu crées un ReseauSocial, il est vide au début.
     def __init__(self):
-        self.utilisateurs = []
+        self.utilisateurs: list['Utilisateur'] = []
 
     # Cette fonction permet d'ajouter un utilisateur au réseau social.
-    def ajouter_utilisateur(self, utilisateur):
+    def ajouter_utilisateur(self, utilisateur: 'Utilisateur'):
         if utilisateur not in self.utilisateurs:
             self.utilisateurs.append(utilisateur)
 
     # Cette fonction permet de créer un lien d'amitié entre deux utilisateurs.
-    def lier_amis(self, utilisateur1, utilisateur2):
+    def lier_amis(self, utilisateur1: 'Utilisateur', utilisateur2: 'Utilisateur'):
         utilisateur1.ajouter_ami(utilisateur2)
         utilisateur2.ajouter_ami(utilisateur1)
 
