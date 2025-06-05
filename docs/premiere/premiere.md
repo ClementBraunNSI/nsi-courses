@@ -57,8 +57,14 @@
         <h3>🛠️ I - Constructions élémentaires</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_1/" class="btn">Cours 1 - Bases</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_2/" class="btn">Cours 2</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_3/" class="btn">Cours 3</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_4/" class="btn">Cours 4</a>
+            <hr>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_boucles/" class="btn">Exercices boucles</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_fonctions/" class="btn">Exercices fonctions</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_specification/" class="btn">Exercices spécification</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Fiche_exercice/" class="btn">Fiche exercice</a>
         </div>
     </div>
     <!-- Fin carte chapitre I -->
@@ -68,7 +74,14 @@
         <h3>🔢 II - Représentation des données</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_1_booleen_et_operations/" class="btn">Cours booléens</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_2_entier_binaire_hexa/" class="btn">Cours binaire/hexa</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_2_entier_relatif/" class="btn">Cours entiers relatifs</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_2_nombres_reels/" class="btn">Cours nombres réels</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_3_caracteres/" class="btn">Cours caractères</a>
+            <hr>
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_Nombres_binaires/" class="btn">Exercices binaires</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_bool/" class="btn">Exercices booléens</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercices_Caracteres/" class="btn">Exercices caractères</a>
         </div>
     </div>
     <!-- Ajouter les autres chapitres suivant le même modèle -->
@@ -77,7 +90,11 @@
         <h3>🧱 III - Structures de données linéaires</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Cours/Cours/" class="btn">Cours listes/tuples</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes/" class="btn">Exercices pratiques</a>
+            <hr>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes/" class="btn">Exercices tuples/listes</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes_v2/" class="btn">Exercices tuples/listes v2</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercice_supplementaire/" class="btn">Exercices supplémentaires</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_papier/" class="btn">Exercices papier</a>
         </div>
     </div>
 
@@ -103,7 +120,7 @@
         <h3>🌐 VI - Internet et Réseaux</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VI-Internet_et_Reseaux/Cours/" class="btn">Cours principal</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VI-Internet_et_Reseaux/bit_alterne/" class="btn">Exercices réseau</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VI-Internet_et_Reseaux/bit_alterne/" class="btn">Bit alterné</a>
         </div>
     </div>
 

@@ -53,12 +53,15 @@
         <h3>📱 III - Réseaux sociaux</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/III%20-%20Reseaux_sociaux/Cours/" class="btn">Cours réseaux sociaux</a>
+            <hr>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/III%20-%20Reseaux_sociaux/TP_reseau_social/" class="btn">TP : Modéliser un réseau social</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🐍 IIII - Programmation Python</h3>
         <div class="chapter-links">
+            <hr>
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/IIII%20-%20Programmation%20Python/Fiche_exercices_python/" class="btn">Exercices Python</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/IIII%20-%20Programmation%20Python/Fiche_exercices_boucles/" class="btn">Exercices boucles</a>
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/IIII%20-%20Programmation%20Python/Fiche_exercices_conditions/" class="btn">Exercices conditions</a>
@@ -92,6 +95,7 @@
         <h3>💡 VIII - Objets Connectés</h3>
         <div class="chapter-links">
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/VIII%20-%20Objets%20Connectés/activite/" class="btn">Activité Blockly</a>
+            <hr>
             <a href="https://clementbraunnsi.github.io/nsi-courses/seconde/VIII%20-%20Objets%20Connectés/tp/" class="btn">TP Micro:bit</a>
         </div>
     </div>
