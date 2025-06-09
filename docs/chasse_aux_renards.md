@@ -1,5 +1,9 @@
 # Chasse aux renards
 
+!!! fox_correction "Voir les tableaux entièrement"
+
+    Passez votre souris au dessus d'un tableau pour le voir entièrement.
+
 ## Édition 2024-2025
 
 <div class="gallery">
@@ -170,16 +174,22 @@
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 300px; /* Largeur fixe pour chaque card */
+  transition: all 0.5s ease;
+  width: 220px; /* Largeur réduite pour 4 cards par ligne */
   border-radius: 5px; /* Coins arrondis */
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 10px;
 }
 
 .card img {
@@ -188,7 +198,29 @@
   object-fit: cover; /* Assure que l'image couvre la zone sans être déformée */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+.card:hover img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 60vw;
+  max-height: 60vh;
+  object-fit: contain;
+  z-index: 10000;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  background-color: white;
+  padding: 10px;
+  pointer-events: none;
+}
+
+
 
 .card-container {
   padding: 10px 16px;
@@ -203,6 +235,7 @@
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 1.1em;
+  color: rgb(242, 117, 0);
 }
 
 .card-container p {
