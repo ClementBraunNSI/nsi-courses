@@ -7,34 +7,34 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/raw.png" alt="Le Semeur et le Renard">
     <div class="card-container">
-      <h4><b>Le Semeur et le Renard</b></h4>
+      <h4><b>Le Semeur et le Renard (Christopher)</b></h4>
       <p>d'après "Le Semeur" de Vincent van Gogh (1888)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/1000051534.png" alt="La Création du Renard">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/tableau-renard.jpg" alt="La Création du Renard">
     <div class="card-container">
-      <h4><b>La Création du Renard</b></h4>
+      <h4><b>La Création du Renard (Elliott)</b></h4>
       <p>d'après "La Création d’Adam" de Michel-Ange (vers 1511)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/tableau-renard_2.jpg" alt="La fable du renard et de la proie">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/1000051534.png" alt="La fable du renard et de la proie">
     <div class="card-container">
-      <h4><b>La fable du renard et de la proie</b></h4>
+      <h4><b>La fable du renard et de la proie (Ethan)</b></h4>
       <p>d'après "La fable du chien et de la proie" de Paul de Vos (17e siècle)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/tableau-renard_3.jpg" alt="Conversation de renards dans un patio">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/tableau-renard_2.jpg" alt="Conversation de renards dans un patio">
     <div class="card-container">
-      <h4><b>Conversation de renards dans un patio</b></h4>
+      <h4><b>Conversation de renards dans un patio (Enzo)</b></h4>
       <p>d'après "Conversation dans un patio à Alger" de Rudolf Ernst (Fin XIXe)</p>
 
     </div>
@@ -43,16 +43,16 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/fallenangelfox.png" alt="L'Ange renard déchu">
     <div class="card-container">
-      <h4><b>L'Ange renard déchu</b></h4>
+      <h4><b>L'Ange renard déchu (Ewan)</b></h4>
       <p>d'après "L’Ange déchu" d'Alexandre Cabanel (1847)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/imageia.jpg" alt="Kitagawa UtamaRen'Art">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/modifie.png" alt="Kitagawa UtamaRen'Art">
     <div class="card-container">
-      <h4><b>Kitagawa UtamaRen'Art</b></h4>
+      <h4><b>Kitagawa UtamaRen'Art (Hugo)</b></h4>
       <p>d'après "Kōmei San Bijin - Trois beautés célèbres" d'Utamaro (1792-1793)</p>
 
     </div>
@@ -61,16 +61,16 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/renard_a_la_perle.jpg" alt="Le renard à la perle">
     <div class="card-container">
-      <h4><b>Le renard à la perle</b></h4>
+      <h4><b>Le renard à la perle (Léon)</b></h4>
       <p>d'après "La Jeune Fille à la perle" de Johannes Vermeer (1665)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/fox.png" alt="Autoportrait du renard à l'oreille bandée">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/imageia.jpg" alt="Autoportrait du renard à l'oreille bandée">
     <div class="card-container">
-      <h4><b>Autoportrait du renard à l'oreille bandée</b></h4>
+      <h4><b>Autoportrait du renard à l'oreille bandée (Lino)</b></h4>
       <p>d'après "Autoportrait à l'oreille bandée" de Vincent van Gogh (1889)</p>
 
     </div>
@@ -79,16 +79,16 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/klimt_IA.png" alt="Malcesine aux renards">
     <div class="card-container">
-      <h4><b>Malcesine aux renards</b></h4>
+      <h4><b>Malcesine aux renards (Lois)</b></h4>
       <p>d'après "Malcesine sur le lac de Garde" de Gustav Klimt</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/raw.png" alt="Sky Palace Renardisé">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/1.jpg" alt="Sky Palace Renardisé">
     <div class="card-container">
-      <h4><b>Sky Palace Renardisé</b></h4>
+      <h4><b>Sky Palace Renardisé (Lowen)</b></h4>
       <p>Création originale de Lowen L. (2024)</p>
 
     </div>
@@ -97,7 +97,7 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/renard_au_ballon.png" alt="Renard au ballon">
     <div class="card-container">
-      <h4><b>Renard au ballon</b></h4>
+      <h4><b>Renard au ballon (Lucas)</b></h4>
       <p>d'après "La Petite Fille au Ballon" de Banksy</p>
 
     </div>
@@ -106,7 +106,7 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/kanagafox_wave.png" alt="La Vague de Kanagafox">
     <div class="card-container">
-      <h4><b>La Vague de Kanagafox</b></h4>
+      <h4><b>La Vague de Kanagafox (M. Braun)</b></h4>
       <p>d'après "La Grande Vague de Kanagawa" de Katsushika Hokusai (1830-1833)</p>
 
     </div>
@@ -115,25 +115,25 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/Renartumne_de_Arcimboldo.png" alt="Renartumne">
     <div class="card-container">
-      <h4><b>Renartumne</b></h4>
+      <h4><b>Renartumne (Mathis)</b></h4>
       <p>d'après "Vertumne" de Giuseppe Arcimboldo (1590)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/modifie.png" alt="Le Fils du Renard">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/tableau-renard_3.jpg" alt="Le Fils du Renard">
     <div class="card-container">
-      <h4><b>Le Fils du Renard</b></h4>
+      <h4><b>Le Fils du Renard (Maxime)</b></h4>
       <p>d'après "Le Fils de l'homme" de René Magritte (1964)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/modifie 2.png" alt="Foxes around the mountains">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/fox.png" alt="Foxes around the mountains">
     <div class="card-container">
-      <h4><b>Foxes around the mountains</b></h4>
+      <h4><b>Foxes around the mountains (Nathan)</b></h4>
       <p>d'après "Among the Sierra Nevada, California" d'Albert Bierstadt (1868)</p>
 
     </div>
@@ -142,16 +142,16 @@
   <div class="card">
     <img src="../images/chasse_aux_ren_arts/2024_2025/laitièrenard.png" alt="La Laitière aux aguets">
     <div class="card-container">
-      <h4><b>La Laitière aux aguets</b></h4>
+      <h4><b>La Laitière aux aguets (Nolann)</b></h4>
       <p>d'après "La Laitière" de Johannes Vermeer (vers 1658-1660)</p>
 
     </div>
   </div>
 
   <div class="card">
-    <img src="../images/chasse_aux_ren_arts/2024_2025/1.jpg" alt="The Fox of Babylone">
+    <img src="../images/chasse_aux_ren_arts/2024_2025/modifie_2.png" alt="The Fox of Babylone">
     <div class="card-container">
-      <h4><b>The Fox of Babylone</b></h4>
+      <h4><b>The Fox of Babylone (Terry)</b></h4>
       <p>d'après "The Fall of Babylon" de John Martin (1831)</p>
 
     </div>
