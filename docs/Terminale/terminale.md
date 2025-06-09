@@ -35,14 +35,14 @@
     <div class="chapter-card">
         <h3>I. 🏗️ Structures de données</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/Cours/listes_piles_files/" class="btn">Listes, piles et files</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/Cours/dictionnaires/" class="btn">Dictionnaires</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/Cours/arbres/" class="btn">Arbres</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/Cours/graphes/" class="btn">Graphes</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/Exercices/fiche_exercices/" class="btn">Fiche d'exercices (Générale)</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/Exercices/graphes_exercices/" class="btn">Exercices Graphes</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/Exercices/graphes_exercices_parcours/" class="btn">Exercices Parcours de Graphes</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/I-Structures_de_donnees/TP/tp_structures/" class="btn">TP Structures de données</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/Cours/listes_piles_files/" class="btn">Listes, piles et files</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/Cours/dictionnaires/" class="btn">Dictionnaires</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/Cours/arbres/" class="btn">Arbres</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/Cours/graphes/" class="btn">Graphes</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/Exercices/fiche_exercices/" class="btn">Fiche d'exercices (Générale)</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/Exercices/graphes_exercices/" class="btn">Exercices Graphes</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/Exercices/graphes_exercices_parcours/" class="btn">Exercices Parcours de Graphes</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/I-Structures_de_donnees/TP/tp_structures/" class="btn">TP Structures de données</a>
         </div>
     </div>
 
@@ -50,10 +50,10 @@
     <div class="chapter-card">
         <h3>II. 🗄️ Bases de données</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/II-Bases_de_donnees/Cours/modele_relationnel/" class="btn">Modèle relationnel</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/II-Bases_de_donnees/Cours/langage_sql/" class="btn">Langage SQL</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/II-Bases_de_donnees/Exercices/fiche_exercices_sql/" class="btn">Exercices SQL</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/II-Bases_de_donnees/TP/tp_gestion_bibliotheque/" class="btn">TP Gestion bibliothèque</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/II-Bases_de_donnees/Cours/modele_relationnel/" class="btn">Modèle relationnel</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/II-Bases_de_donnees/Cours/langage_sql/" class="btn">Langage SQL</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/II-Bases_de_donnees/Exercices/fiche_exercices_sql/" class="btn">Exercices SQL</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/II-Bases_de_donnees/TP/tp_gestion_bibliotheque/" class="btn">TP Gestion bibliothèque</a>
         </div>
     </div>
 
@@ -61,11 +61,11 @@
     <div class="chapter-card">
         <h3>III. 🖥️ Architectures et réseaux</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/III-Architectures_et_reseaux/Cours/systemes_sur_puce/" class="btn">Systèmes sur puce</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/III-Architectures_et_reseaux/Cours/processus/" class="btn">Gestion des processus</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/III-Architectures_et_reseaux/Cours/protocoles_routage/" class="btn">Protocoles de routage</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/III-Architectures_et_reseaux/Cours/securisation/" class="btn">Sécurisation des communications</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/III-Architectures_et_reseaux/TP/tp_simulation_reseau/" class="btn">TP Simulation réseau</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Architectures_et_reseaux/Cours/systemes_sur_puce/" class="btn">Systèmes sur puce</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Architectures_et_reseaux/Cours/processus/" class="btn">Gestion des processus</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Architectures_et_reseaux/Cours/protocoles_routage/" class="btn">Protocoles de routage</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Architectures_et_reseaux/Cours/securisation/" class="btn">Sécurisation des communications</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Architectures_et_reseaux/TP/tp_simulation_reseau/" class="btn">TP Simulation réseau</a>
         </div>
     </div>
 
@@ -73,12 +73,12 @@
     <div class="chapter-card">
         <h3>IV. 💻 Langages et programmation</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/IV-Langages_et_programmation/Cours/calculabilite_decidabilite/" class="btn">Calculabilité et décidabilité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/IV-Langages_et_programmation/Cours/recursivite/" class="btn">Récursivité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/IV-Langages_et_programmation/Cours/paradigmes/" class="btn">Paradigmes de programmation</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/IV-Langages_et_programmation/Cours/poo/" class="btn">Programmation orientée objet</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/IV-Langages_et_programmation/Exercices/fiche_recursivite/" class="btn">Exercices récursivité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/IV-Langages_et_programmation/TP/tp_poo_avance/" class="btn">TP POO avancé</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Langages_et_programmation/Cours/calculabilite_decidabilite/" class="btn">Calculabilité et décidabilité</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Langages_et_programmation/Cours/recursivite/" class="btn">Récursivité</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Langages_et_programmation/Cours/paradigmes/" class="btn">Paradigmes de programmation</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Langages_et_programmation/Cours/poo/" class="btn">Programmation orientée objet</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Langages_et_programmation/Exercices/fiche_recursivite/" class="btn">Exercices récursivité</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Langages_et_programmation/TP/tp_poo_avance/" class="btn">TP POO avancé</a>
         </div>
     </div>
 
@@ -86,13 +86,13 @@
     <div class="chapter-card">
         <h3>V. 🧮 Algorithmique</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/V-Algorithmique/Cours/algorithmes_arbres/" class="btn">Algorithmes sur les arbres</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/V-Algorithmique/Cours/algorithmes_graphes/" class="btn">Algorithmes sur les graphes</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/V-Algorithmique/Cours/diviser_pour_regner/" class="btn">Diviser pour régner</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/V-Algorithmique/Cours/programmation_dynamique/" class="btn">Programmation dynamique</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/V-Algorithmique/Cours/recherche_textuelle/" class="btn">Recherche textuelle</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/V-Algorithmique/Exercices/fiche_complexite/" class="btn">Exercices complexité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/V-Algorithmique/TP/tp_algorithmes_avances/" class="btn">TP Algorithmes avancés</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Algorithmique/Cours/algorithmes_arbres/" class="btn">Algorithmes sur les arbres</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Algorithmique/Cours/algorithmes_graphes/" class="btn">Algorithmes sur les graphes</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Algorithmique/Cours/diviser_pour_regner/" class="btn">Diviser pour régner</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Algorithmique/Cours/programmation_dynamique/" class="btn">Programmation dynamique</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Algorithmique/Cours/recherche_textuelle/" class="btn">Recherche textuelle</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Algorithmique/Exercices/fiche_complexite/" class="btn">Exercices complexité</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Algorithmique/TP/tp_algorithmes_avances/" class="btn">TP Algorithmes avancés</a>
         </div>
     </div>
 
@@ -100,11 +100,11 @@
     <div class="chapter-card">
         <h3>VI. 🚀 Projets</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VI-Projets/reseau_social_avance/" class="btn">Réseau social avancé</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VI-Projets/moteur_recherche/" class="btn">Moteur de recherche</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VI-Projets/jeu_strategie/" class="btn">Jeu de stratégie</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VI-Projets/analyse_donnees/" class="btn">Analyse de données</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VI-Projets/cryptographie/" class="btn">Projet cryptographie</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Projets/reseau_social_avance/" class="btn">Réseau social avancé</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Projets/moteur_recherche/" class="btn">Moteur de recherche</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Projets/jeu_strategie/" class="btn">Jeu de stratégie</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Projets/analyse_donnees/" class="btn">Analyse de données</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Projets/cryptographie/" class="btn">Projet cryptographie</a>
         </div>
     </div>
 
@@ -112,10 +112,10 @@
     <div class="chapter-card">
         <h3>📝 Préparation au bac</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VII-Preparation_bac/sujets_types/" class="btn">Sujets types</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VII-Preparation_bac/epreuve_pratique/" class="btn">Épreuve pratique</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VII-Preparation_bac/methodologie/" class="btn">Méthodologie</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/Terminale/VII-Preparation_bac/revisions/" class="btn">Fiches de révisions</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Preparation_bac/sujets_types/" class="btn">Sujets types</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Preparation_bac/epreuve_pratique/" class="btn">Épreuve pratique</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Preparation_bac/methodologie/" class="btn">Méthodologie</a>
+            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Preparation_bac/revisions/" class="btn">Fiches de révisions</a>
         </div>
     </div>
 </section>
