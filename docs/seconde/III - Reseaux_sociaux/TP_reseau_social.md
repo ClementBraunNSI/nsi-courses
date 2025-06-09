@@ -1,16 +1,16 @@
 # TP : Modéliser un réseau social en Python
 
-Dans ce TP, tu vas utiliser des outils Python (appelés "classes") pour simuler un réseau social. Deux outils sont déjà prêts pour toi : `Utilisateur` (pour créer des personnes) et `ReseauSocial` (pour gérer le réseau). Ton travail sera d'utiliser ces outils pour ajouter des personnes et créer des liens d'amitié entre elles.
+Dans ce TP, tu vas utiliser des "moules" Python (appelés "classes") pour créer des objets et simuler un réseau social. Imagine que tu as deux types de moules : un moule `Utilisateur` pour fabriquer des personnes, et un moule `ReseauSocial` pour construire le réseau qui les relie. Ton travail sera d'utiliser ces moules pour créer des personnes et les connecter entre elles pour former un réseau d'amis.
 
 ---
 
 ```python
-# Voici les deux outils (classes) que tu vas utiliser :
-# Tu n'as pas besoin de comprendre comment ils sont faits, juste comment les utiliser !
+# Voici les deux "moules" (classes) que tu vas utiliser :
+# Tu n'as pas besoin de comprendre comment ils sont fabriqués, juste comment les utiliser pour créer tes objets !
 
 class Utilisateur:
-    # Quand tu crées un Utilisateur, tu lui donnes un nom.
-    # Il n'a pas encore d'amis au début.
+    # Quand tu utilises le moule `Utilisateur` pour créer une personne, tu lui donnes un nom.
+    # Au début, cette personne n'a pas encore d'amis.
     def __init__(self, nom: str):
         self.nom: str = nom
         self.amis: list['Utilisateur'] = []
@@ -25,21 +25,24 @@ class Utilisateur:
         return f"Utilisateur({self.nom})"
 
 class ReseauSocial:
-    # Quand tu crées un ReseauSocial, il est vide au début.
+    # Ce moule `ReseauSocial` va te permettre de gérer l'ensemble de ton réseau.
+    # Il contient la liste de toutes les personnes (Utilisateur) que tu as créées.
+    # Quand tu utilises ce moule, il crée un réseau social tout neuf, sans aucun utilisateur au départ.
     def __init__(self):
         self.utilisateurs: list['Utilisateur'] = []
 
-    # Cette fonction permet d'ajouter un utilisateur au réseau social.
+    # Cette fonction te permet d'ajouter une personne que tu as créée (un objet `Utilisateur`)
+    # à ton réseau social.
     def ajouter_utilisateur(self, utilisateur: 'Utilisateur'):
         if utilisateur not in self.utilisateurs:
             self.utilisateurs.append(utilisateur)
 
-    # Cette fonction permet de créer un lien d'amitié entre deux utilisateurs.
+    # Cette fonction permet de créer un lien d'amitié entre deux personnes déjà présentes dans ton réseau.
     def lier_amis(self, utilisateur1: 'Utilisateur', utilisateur2: 'Utilisateur'):
         utilisateur1.ajouter_ami(utilisateur2)
         utilisateur2.ajouter_ami(utilisateur1)
 
-    # Cette fonction affiche tous les utilisateurs du réseau et leurs amis.
+    # Cette fonction te permet de voir qui est ami avec qui dans ton réseau social.
     def afficher_reseau(self):
         for utilisateur in self.utilisateurs:
             print(f"{utilisateur.nom} a pour amis : {[ami.nom for ami in utilisateur.amis]}")

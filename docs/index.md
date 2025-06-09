@@ -76,7 +76,7 @@
         <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
         <h2>Chasse aux Ren'arts</h2>
         <p>Un défi spécial pour les élèves</p>
-        <a href="temporaire" class="btn">Accéder au défi</a>
+        <a href="chasse_aux_renards" class="btn">Accéder au défi</a>
     </div>
 </div>
 
