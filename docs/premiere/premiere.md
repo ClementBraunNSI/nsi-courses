@@ -36,35 +36,35 @@
     <div class="chapter-card">
         <h3>🎄 New Year Advent</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/new_year_advent/" class="btn">Explication et calendrier</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_1/" class="btn">Jour 1</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/New_Year_Advent/Exercices_J1-J9/Jour_2/" class="btn">Jour 2</a>
+            <a href="../New_Year_Advent/new_year_advent/" class="btn">Explication et calendrier</a>
+            <a href="../New_Year_Advent/Exercices_J1-J9/Jour_1/" class="btn">Jour 1</a>
+            <a href="../New_Year_Advent/Exercices_J1-J9/Jour_2/" class="btn">Jour 2</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>📚 Aides et Corrections</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Corrections/trimestre_1/correction_interro_2/" class="btn">Correction Interro 2</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Corrections/trimestre_1/correction_ds_1/" class="btn">Correction DS 1</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Algorithmes_a_savoir/algo_a_savoir/" class="btn">Algorithmes à savoir</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Cheat_Sheets/cheat_sheet/" class="btn">Cheat Sheet</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/Aides/Revisions/exos_boucles/" class="btn">Exercices révisions</a>
+            <a href="../Aides/Corrections/trimestre_1/correction_interro_2/" class="btn">Correction Interro 2</a>
+            <a href="../Aides/Corrections/trimestre_1/correction_ds_1/" class="btn">Correction DS 1</a>
+            <a href="../Aides/Algorithmes_a_savoir/algo_a_savoir/" class="btn">Algorithmes à savoir</a>
+            <a href="../Aides/Cheat_Sheets/cheat_sheet/" class="btn">Cheat Sheet</a>
+            <a href="../Aides/Revisions/exos_boucles/" class="btn">Exercices révisions</a>
         </div>
     </div>
     <!-- Début carte chapitre I -->
     <div class="chapter-card">
         <h3>🛠️ I - Constructions élémentaires</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_1/" class="btn">Cours 1 - Bases</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_2/" class="btn">Cours 2</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_3/" class="btn">Cours 3</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Cours/Cours_4/" class="btn">Cours 4</a>
+            <a href="../I-Constructions_elementaires/Cours/Cours_1/" class="btn">Cours 1 - Bases</a>
+            <a href="../I-Constructions_elementaires/Cours/Cours_2/" class="btn">Cours 2</a>
+            <a href="../I-Constructions_elementaires/Cours/Cours_3/" class="btn">Cours 3</a>
+            <a href="../I-Constructions_elementaires/Cours/Cours_4/" class="btn">Cours 4</a>
             <hr>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_boucles/" class="btn">Exercices boucles</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_fonctions/" class="btn">Exercices fonctions</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Exercices_specification/" class="btn">Exercices spécification</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/I-Constructions_elementaires/Fiches_d_exercices/Fiche_exercice/" class="btn">Fiche exercice</a>
+            <a href="../I-Constructions_elementaires/Fiches_d_exercices/Exercices_boucles/" class="btn">Exercices boucles</a>
+            <a href="../I-Constructions_elementaires/Fiches_d_exercices/Exercices_fonctions/" class="btn">Exercices fonctions</a>
+            <a href="../I-Constructions_elementaires/Fiches_d_exercices/Exercices_specification/" class="btn">Exercices spécification</a>
+            <a href="../I-Constructions_elementaires/Fiches_d_exercices/Fiche_exercice/" class="btn">Fiche exercice</a>
         </div>
     </div>
     <!-- Fin carte chapitre I -->
@@ -73,15 +73,15 @@
     <div class="chapter-card">
         <h3>🔢 II - Représentation des données</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_1_booleen_et_operations/" class="btn">Cours booléens</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_2_entier_binaire_hexa/" class="btn">Cours binaire/hexa</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_2_entier_relatif/" class="btn">Cours entiers relatifs</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_2_nombres_reels/" class="btn">Cours nombres réels</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Cours/c_3_caracteres/" class="btn">Cours caractères</a>
+            <a href="../II-Representation_des_donnees/Cours/c_1_booleen_et_operations/" class="btn">Cours booléens</a>
+            <a href="../II-Representation_des_donnees/Cours/c_2_entier_binaire_hexa/" class="btn">Cours binaire/hexa</a>
+            <a href="../II-Representation_des_donnees/Cours/c_2_entier_relatif/" class="btn">Cours entiers relatifs</a>
+            <a href="../II-Representation_des_donnees/Cours/c_2_nombres_reels/" class="btn">Cours nombres réels</a>
+            <a href="../II-Representation_des_donnees/Cours/c_3_caracteres/" class="btn">Cours caractères</a>
             <hr>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_Nombres_binaires/" class="btn">Exercices binaires</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_bool/" class="btn">Exercices booléens</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercices_Caracteres/" class="btn">Exercices caractères</a>
+            <a href="../II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_Nombres_binaires/" class="btn">Exercices binaires</a>
+            <a href="../II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercice_bool/" class="btn">Exercices booléens</a>
+            <a href="../II-Representation_des_donnees/Fiches_d_exercices/Fiche_exercices_Caracteres/" class="btn">Exercices caractères</a>
         </div>
     </div>
     <!-- Ajouter les autres chapitres suivant le même modèle -->
@@ -89,104 +89,104 @@
     <div class="chapter-card">
         <h3>🧱 III - Structures de données linéaires</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Cours/Cours/" class="btn">Cours listes/tuples</a>
+            <a href="../III-Structures_de_donnees_lineaires/Cours/Cours/" class="btn">Cours listes/tuples</a>
             <hr>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes/" class="btn">Exercices tuples/listes</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes_v2/" class="btn">Exercices tuples/listes v2</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercice_supplementaire/" class="btn">Exercices supplémentaires</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_papier/" class="btn">Exercices papier</a>
+            <a href="../III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes/" class="btn">Exercices tuples/listes</a>
+            <a href="../III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_tuples_listes_v2/" class="btn">Exercices tuples/listes v2</a>
+            <a href="../III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercice_supplementaire/" class="btn">Exercices supplémentaires</a>
+            <a href="../III-Structures_de_donnees_lineaires/Fiche_d_exercices/Fiche_exercices_papier/" class="btn">Exercices papier</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>💻 IV - Architecture machine</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_1/" class="btn">Fonctionnement processeur</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_2/" class="btn">Portes logiques</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Exercices/Fiche_Exo/" class="btn">TP architecture</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/IV-Architecture_d_une_machine/Cours/Cours_4/" class="btn">Ludopédagogie : Minecraft et Redstone</a>
+            <a href="../IV-Architecture_d_une_machine/Cours/Cours_1/" class="btn">Fonctionnement processeur</a>
+            <a href="../IV-Architecture_d_une_machine/Cours/Cours_2/" class="btn">Portes logiques</a>
+            <a href="../IV-Architecture_d_une_machine/Exercices/Fiche_Exo/" class="btn">TP architecture</a>
+            <a href="../IV-Architecture_d_une_machine/Cours/Cours_4/" class="btn">Ludopédagogie : Minecraft et Redstone</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>📊 V - Traitement de données</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_1/" class="btn">Cours dictionnaires</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/V-Dictionnaires_et_Traitement_de_tables/Exercices/Fiche_exercices_dictionnaires/" class="btn">Exercices dictionnaires</a>
+            <a href="../V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_1/" class="btn">Cours dictionnaires</a>
+            <a href="../V-Dictionnaires_et_Traitement_de_tables/Exercices/Fiche_exercices_dictionnaires/" class="btn">Exercices dictionnaires</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🌐 VI - Internet et Réseaux</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VI-Internet_et_Reseaux/Cours/" class="btn">Cours principal</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VI-Internet_et_Reseaux/bit_alterne/" class="btn">Bit alterné</a>
+            <a href="../VI-Internet_et_Reseaux/Cours/" class="btn">Cours principal</a>
+            <a href="../VI-Internet_et_Reseaux/bit_alterne/" class="btn">Bit alterné</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🔍 VII - Algorithmes tableaux</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/Cours/" class="btn">Cours algorithmique</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/Mesures_de_complexite/mesure_tris/sujets_mesure_tris/" class="btn">Mesures de complexité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VII-Algorithmes_sur_les_tableaux/dicho/" class="btn">Recherche dichotomique</a>
+            <a href="../VII-Algorithmes_sur_les_tableaux/Cours/" class="btn">Cours algorithmique</a>
+            <a href="../VII-Algorithmes_sur_les_tableaux/Mesures_de_complexite/mesure_tris/sujets_mesure_tris/" class="btn">Mesures de complexité</a>
+            <a href="../VII-Algorithmes_sur_les_tableaux/dicho/" class="btn">Recherche dichotomique</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🧠 VIII - Algorithmes Gloutons</h3>
         <div class="chapter-links">
-            <a href="VIII-Algorithmes_Gloutons/Algorithmes%20Gloutons_22_23/" class="btn">Stratégies gloutonnes</a>
+            <a href="../VIII-Algorithmes_Gloutons/Algorithmes%20Gloutons_22_23/" class="btn">Stratégies gloutonnes</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🐧 VIIII - Systèmes d'exploitation</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VIIII-Systemes_d_exploitation_et_commandes_Linux/Cours/Cours_1/" class="btn">Principes de base</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/VIIII-Systemes_d_exploitation_et_commandes_Linux/TP_Commandes_Linux/TP_commandes_linux/" class="btn">TP Commandes Linux</a>
+            <a href="../VIIII-Systemes_d_exploitation_et_commandes_Linux/Cours/Cours_1/" class="btn">Principes de base</a>
+            <a href="../VIIII-Systemes_d_exploitation_et_commandes_Linux/TP_Commandes_Linux/TP_commandes_linux/" class="btn">TP Commandes Linux</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🌍 X - Web et HTTP</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/X-Web_et_HTTP/Cours/" class="btn">Fonctionnement HTTP</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/X-Web_et_HTTP/TP/Projet/" class="btn">Création de site web</a>
+            <a href="../X-Web_et_HTTP/Cours/" class="btn">Fonctionnement HTTP</a>
+            <a href="../XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
+            <a href="../X-Web_et_HTTP/TP/Projet/" class="btn">Création de site web</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🤖 XI - K plus proches voisins</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XI-K_plus_proches_voisins/Cours/" class="btn">Algorithme KNN</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XI-K_plus_proches_voisins/TP_KNN/" class="btn">TP application</a>
+            <a href="../XI-K_plus_proches_voisins/Cours/" class="btn">Algorithme KNN</a>
+            <a href="../XI-K_plus_proches_voisins/TP_KNN/" class="btn">TP application</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🚀 XII - Pour aller plus loin</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_cours/" class="btn">Programmation Orientée Objet</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_exercices/" class="btn">Exercices POO</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_piles_files/" class="btn">Les piles et les files</a>
+            <a href="../XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_cours/" class="btn">Programmation Orientée Objet</a>
+            <a href="../XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_exercices/" class="btn">Exercices POO</a>
+            <a href="../XII-Pour_aller_plus_loin/Programmation_Orientee_Objet/fiche_piles_files/" class="btn">Les piles et les files</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>🎨 XIII - Projets</h3>
         <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIII-Projets/" class="btn">Voir tous les projets</a>
+            <a href="../XIII-Projets/" class="btn">Voir tous les projets</a>
         </div>
     </div>
 
     <div class="chapter-card">
         <h3>📝 XIIII - TP Notés</h3>
         <div class="chapter-links">
-            <a href="XIIII-TP_notes: https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Code_Barre/code_barre/" class="btn">Code Barre</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/premiere/XIIII-TP_notes/Interro_Algo_a_savoir/sujet1_md/" class="btn">Interro Algo à savoir</a>
+            <a href="../XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
+            <a href="../XIIII-TP_notes/Code_Barre/code_barre/" class="btn">Code Barre</a>
+            <a href="../XIIII-TP_notes/Interro_Algo_a_savoir/sujet1_md/" class="btn">Interro Algo à savoir</a>
         </div>
     </div>
 </section>
