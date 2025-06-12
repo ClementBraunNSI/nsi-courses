@@ -282,14 +282,14 @@ document.addEventListener('DOMContentLoaded', function() {
     <button class="section-tab" onclick="showSection('easy-section')">🌟 Niveau Facile</button>
     <button class="section-tab" onclick="showSection('medium-section')">🔥 Niveau Intermédiaire</button>
     <button class="section-tab" onclick="showSection('hard-section')">🚀 Niveau Difficile</button>
-    <button class="section-tab" onclick="showSection('important-section')">⭐ Algorithmes Importants</button>
+    <button class="section-tab" onclick="showSection('important-section')">🦊 Algorithmes Importants</button>
 </div>
 
 <div id="intro-section" class="section-content">
 <div class="exercise-cards">
     <div class="exercise-card intro">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge intro">Introduction ⭐</div>
+            <div class="difficulty-badge intro">Introduction 🦊</div>
             <h4 class="exercise-title">Exercice 1 - Création de structures</h4>
             <div class="exercise-content">
                 <strong>Créer un tuple nommé <code>mon_tuple</code> qui contient les éléments 1,2,3,4,5 et une liste <code>ma_liste</code> qui contient les éléments suivants 'a','b','c','d','e'.</strong><br>
@@ -311,7 +311,7 @@ print(ma_liste)</code></pre>
 
     <div class="exercise-card intro">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge intro">Introduction ⭐</div>
+            <div class="difficulty-badge intro">Introduction 🦊</div>
             <h4 class="exercise-title">Exercice 2 - Accès aux éléments</h4>
             <div class="exercise-content">
                 <strong>Afficher dans le terminal le troisième élément de <code>mon_tuple</code> et le premier élément de <code>ma_liste</code>.</strong>
@@ -330,7 +330,7 @@ print(ma_liste[0])   # Premier élément (index 0)</code></pre>
 
     <div class="exercise-card intro">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge intro">Introduction ⭐</div>
+            <div class="difficulty-badge intro">Introduction 🦊</div>
             <h4 class="exercise-title">Exercice 3 - Modification d'éléments</h4>
             <div class="exercise-content">
                 <strong>Modifier le deuxième élément de <code>ma_liste</code> par 'z'.<br>
@@ -350,7 +350,7 @@ print(ma_liste)     # Vérification</code></pre>
 
     <div class="exercise-card intro">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge intro">Introduction ⭐</div>
+            <div class="difficulty-badge intro">Introduction 🦊</div>
             <h4 class="exercise-title">Exercice 4 - Ajout et suppression</h4>
             <div class="exercise-content">
                 <strong>Ajouter l'élément 'f' dans <code>ma_liste</code>.<br>
@@ -372,7 +372,7 @@ print(ma_liste)       # Vérification</code></pre>
 
     <div class="exercise-card intro">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge intro">Introduction ⭐</div>
+            <div class="difficulty-badge intro">Introduction 🦊</div>
             <h4 class="exercise-title">Exercice 5 - Parcours avec boucles</h4>
             <div class="exercise-content">
                 <strong>Afficher dans le terminal tous les éléments de <code>mon_tuple</code> et <code>ma_liste</code> un à un à l'aide d'une boucle <code>for</code>.</strong>
@@ -402,7 +402,7 @@ for i in range(len(ma_liste)):
 
     <div class="exercise-card intro">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge intro">Introduction ⭐⭐</div>
+            <div class="difficulty-badge intro">Introduction 🦊🦊</div>
             <h4 class="exercise-title">Exercice 6 - Exercice complet</h4>
             <div class="exercise-content">
                 <strong>Créer une liste <code>nombres</code> qui contient les chiffres allant de 1 à 9. (Proposer une version par compréhension).<br>
@@ -446,7 +446,7 @@ while i >= 0:
 <div class="exercise-cards">
     <div class="exercise-card easy">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge easy">Facile ⭐</div>
+            <div class="difficulty-badge easy">Facile 🦊</div>
             <h4 class="exercise-title">💻 Somme d'éléments</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>somme_elements</code> qui prend une liste de nombres en paramètres et renvoie la somme de tous les éléments.</strong><br>
@@ -469,7 +469,7 @@ while i >= 0:
 
     <div class="exercise-card easy">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge easy">Facile ⭐</div>
+            <div class="difficulty-badge easy">Facile 🦊</div>
             <h4 class="exercise-title">Compter les nombres pairs</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>compter_pairs</code> qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.</strong><br>
@@ -495,7 +495,7 @@ while i >= 0:
 
     <div class="exercise-card easy">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge easy">Facile ⭐</div>
+            <div class="difficulty-badge easy">Facile 🦊</div>
             <h4 class="exercise-title">Longueur des chaînes</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>longueur_chaines</code> qui prend une liste de chaînes de caractères et renvoie une liste contenant la longueur de chaque chaîne.</strong><br>
@@ -521,7 +521,7 @@ while i >= 0:
 
     <div class="exercise-card easy">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge easy">Facile ⭐</div>
+            <div class="difficulty-badge easy">Facile 🦊</div>
             <h4 class="exercise-title">Produit d'éléments</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>produit_elements</code> qui prend une liste d'entiers et renvoie le produit de tous les éléments. Attention aux cas où la liste est vide.</strong><br>
@@ -550,7 +550,7 @@ while i >= 0:
 
     <div class="exercise-card easy">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge easy">Facile ⭐</div>
+            <div class="difficulty-badge easy">Facile 🦊</div>
             <h4 class="exercise-title">Compter les occurrences</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>compter_occurrences</code> qui prend une liste et un élément, et renvoie le nombre de fois que cet élément apparaît dans la liste.</strong><br>
@@ -578,7 +578,7 @@ while i >= 0:
 
     <div class="exercise-card easy">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge easy">Facile ⭐</div>
+            <div class="difficulty-badge easy">Facile 🦊</div>
             <h4 class="exercise-title">Calcul de moyenne</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>moyenne</code> qui prend en paramètre une liste d'entiers et renvoie la moyenne de tous les nombres présents dans cette liste.</strong><br>
@@ -612,7 +612,7 @@ while i >= 0:
 <div class="exercise-cards">
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Filtrer les nombres positifs</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>filtrer_positifs</code> qui prend une liste de nombres et renvoie une nouvelle liste contenant uniquement les nombres positifs.</strong><br>
@@ -640,7 +640,7 @@ while i >= 0:
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Concaténer des chaînes</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>concatener_chaines</code> qui prend une liste de chaînes de caractères et renvoie une seule chaîne qui est la concaténation de toutes les chaînes de la liste.</strong><br>
@@ -665,7 +665,7 @@ while i >= 0:
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Inverser une liste</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>inverser_liste</code> qui prend une liste et renvoie une nouvelle liste avec les éléments dans l'ordre inverse.</strong><br>
@@ -690,7 +690,7 @@ while i >= 0:
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Valeurs uniques</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>valeurs_uniques</code> qui prend une liste et renvoie une nouvelle liste contenant les éléments sans doublons (dans l'ordre d'apparition).</strong><br>
@@ -716,7 +716,7 @@ while i >= 0:
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Séparer pairs et impairs</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>separer_pairs_impairs</code> qui prend une liste d'entiers et renvoie deux listes : une avec les éléments pairs et une autre avec les éléments impairs.</strong><br>
@@ -745,7 +745,7 @@ while i >= 0:
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Recherche des diviseurs</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>diviseurs</code> qui prend un entier en paramètre et renvoie la liste de ses diviseurs.</strong><br>
@@ -773,7 +773,7 @@ while i >= 0:
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Liste croissante</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>est_croissante</code> qui prend une liste d'entiers en paramètre et renvoie True si les éléments de la liste sont dans l'ordre croissant, False sinon.</strong><br>
@@ -800,7 +800,7 @@ False</code></pre>
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Échange de valeurs</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>echange</code> qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.</strong><br>
@@ -834,7 +834,7 @@ def echange(liste:list, i:int, j:int)->None:
 
     <div class="exercise-card medium">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge medium">Intermédiaire ⭐⭐</div>
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
             <h4 class="exercise-title">Rangement de valeurs</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>rangement_valeurs</code> qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l'élément, une liste avec l'élément si présent, et une liste avec les valeurs supérieures.</strong><br>
@@ -872,7 +872,7 @@ def echange(liste:list, i:int, j:int)->None:
 <div class="exercise-cards">
     <div class="exercise-card important">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge important">Algorithme Important ⭐</div>
+            <div class="difficulty-badge important">Algorithme Important 🦊</div>
             <h4 class="exercise-title">🔍 Recherche d'un élément</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>presence</code> qui prend en paramètre une valeur et une liste et renvoie <code>True</code> si la valeur demandée est dans la liste, <code>False</code> sinon.</strong><br>
@@ -900,7 +900,7 @@ False</code></pre>
 
     <div class="exercise-card important">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge important">Algorithme Important ⭐</div>
+            <div class="difficulty-badge important">Algorithme Important 🦊</div>
             <h4 class="exercise-title"> Minimum d'une liste</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>minimum</code> qui prend en paramètre une liste et renvoie la valeur minimale dans la liste.</strong><br>
@@ -925,7 +925,7 @@ False</code></pre>
 
     <div class="exercise-card important">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge important">Algorithme Important ⭐</div>
+            <div class="difficulty-badge important">Algorithme Important 🦊</div>
             <h4 class="exercise-title"> Maximum d'une liste</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>maximum</code> qui prend en paramètre une liste et renvoie la valeur maximale dans la liste.</strong><br>
@@ -954,7 +954,7 @@ False</code></pre>
 <div class="exercise-cards">
     <div class="exercise-card hard">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge hard">Difficile ⭐⭐⭐</div>
+            <div class="difficulty-badge hard">Difficile 🦊🦊🦊</div>
             <h4 class="exercise-title">Compteur de voyelles</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>compter_voyelles</code> qui prend une liste de chaînes de caractères et renvoie le nombre total de voyelles présentes dans toutes les chaînes.</strong><br>
@@ -984,7 +984,7 @@ False</code></pre>
 
     <div class="exercise-card hard">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge hard">Difficile ⭐⭐⭐</div>
+            <div class="difficulty-badge hard">Difficile 🦊🦊🦊</div>
             <h4 class="exercise-title">Éléments en double</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>valeurs_en_double</code> qui prend une liste et renvoie une nouvelle liste contenant uniquement les éléments qui apparaissent plus d'une fois (sans répétitions supplémentaires).</strong><br>
@@ -1015,7 +1015,7 @@ False</code></pre>
 
     <div class="exercise-card hard">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge hard">Difficile ⭐⭐⭐</div>
+            <div class="difficulty-badge hard">Difficile 🦊🦊🦊</div>
             <h4 class="exercise-title">Recherche d'indice</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>indice_element</code> qui prend une liste et un élément, et renvoie l'indice de la première occurrence de cet élément dans la liste, ou -1 s'il n'est pas présent.</strong><br>
@@ -1044,7 +1044,7 @@ False</code></pre>
 
     <div class="exercise-card hard">
         <div class="exercise-content-wrapper">
-            <div class="difficulty-badge hard">Difficile ⭐⭐⭐</div>
+            <div class="difficulty-badge hard">Difficile 🦊🦊🦊</div>
             <h4 class="exercise-title">Fusion sans doublons</h4>
             <div class="exercise-content">
                 <strong>Écrire une fonction <code>fusionner_sans_doublons</code> qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.</strong><br>
