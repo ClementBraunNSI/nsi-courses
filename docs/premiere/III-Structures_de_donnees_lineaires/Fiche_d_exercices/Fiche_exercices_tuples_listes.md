@@ -14,6 +14,8 @@
       ```
 
 <style>
+/* Styles pour les fiches d'exercices avec système de cartes et onglets */
+
 .exercise-cards {
     display: flex;
     flex-direction: column;
@@ -189,10 +191,6 @@
     font-size: 0.85rem;
 }
 
-.solution pre {
-    margin: 0;
-}
-
 .section-tabs {
     display: flex;
     flex-wrap: wrap;
@@ -239,9 +237,16 @@
 .section-content.active {
     display: block;
 }
+
+/* JavaScript pour les fonctionnalités interactives */
+.exercise-script {
+    display: none;
+}
 </style>
 
 <script>
+// JavaScript pour les fonctionnalités interactives des fiches d'exercices
+
 function toggleSolution(button) {
     const card = button.closest('.exercise-card');
     const solutionWrapper = card.querySelector('.solution-wrapper');
@@ -273,7 +278,10 @@ function showSection(sectionId) {
 
 // Afficher la première section par défaut
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.section-tab').click();
+    const firstTab = document.querySelector('.section-tab');
+    if (firstTab) {
+        firstTab.click();
+    }
 });
 </script>
 

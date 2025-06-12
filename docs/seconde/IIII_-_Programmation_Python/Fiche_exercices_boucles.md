@@ -1,87 +1,473 @@
 # Fiche d'exercices : Les boucles en Python
 
-!!! danger "Attention"
-    Pour tous les exercices :  
-    - N'oubliez pas les deux points `:` après la boucle  
-    - Faites attention à l'indentation dans la boucle  
-    - Testez votre code avec différentes valeurs  
-    - Créez un fichier Python différent pour chaque exercice (ex: `exercice1.py`, `exercice2.py`, etc.)  
-    - Recopiez vos programmes sur votre cahier pour pouvoir les réviser plus tard  
+<style>
+/* Styles pour les fiches d'exercices avec système de cartes et onglets */
 
-!!! fox_exercice "Compte à rebours"
-    **Écrire un programme qui:**  
-    - Demande un nombre de départ  
-    - Affiche le compte à rebours jusqu'à 0  
+.exercise-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    max-width: 100%;
+}
 
-!!! fox_exercice "Calculatrice continue"
-    **Écrire un programme qui:**  
-    - Demande deux nombres et une opération  
-    - Affiche le résultat  
-    - Demande si on veut continuer (oui/non)  
-    - Recommence si la réponse est "oui"  
+.exercise-card {
+    background: var(--md-default-bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
 
-!!! fox_exercice "Tables de multiplication"
-    **Écrire un programme qui:**  
-    - Demande un nombre  
-    - Affiche sa table de multiplication de 1 à 10  
+.exercise-content-wrapper {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-right: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+}
 
-!!! fox_exercice "Escalier d'étoiles"
-    **Écrire un programme qui:**  
-    - Demande un nombre n  
-    - Affiche un escalier de n marches avec des étoiles  
-    *Astuce : pour afficher `x` fois un caractère, on peut utiliser la syntaxe `'x' * n`.*  
-    *La chaîne de caractère "XXXXX" peut être créée via la syntaxe python suivante :*  
+.solution-wrapper {
+    flex: 0 0 0;
+    width: 0;
+    overflow: hidden;
+    transition: flex 0.4s ease, width 0.4s ease;
+    border-left: 1px solid #e0e0e0;
+    background: rgba(0, 0, 0, 0.02);
+}
 
-    ```python
-        chaine_1 = "XXXXX"
-        chaine_2 = "X"*5
-        # avec chaine_1 == chaine_2
-    ```
-    *Exemple pour n=3:*
-    ```
-    *
-    **
-    ***
-    ```
+.solution-wrapper.show {
+    flex: 0 0 40%;
+    width: 40%;
+    padding-left: 1rem;
+}
 
-!!! fox_exercice "Somme des nombres"
-    **Écrire un programme qui:**
-    - Demande un nombre n  
-    - Calcule la somme des nombres de 1 à n  
-    - Affiche le résultat  
+.exercise-card.intro {
+    border-left-color: #4CAF50;
+}
 
-!!! fox_exercice "Puissance de 2"
-    **Écrire un programme qui:**  
-    - Demande un nombre n  
-    - Affiche les puissances de 2 jusqu'à 2^n  
+.exercise-card.intro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+}
 
-!!! fox_exercice "Message répété"
-    **Écrire un programme qui:**  
-    - Demande une phrase  
-    - Demande un nombre de répétitions  
-    - Affiche la phrase autant de fois que demandé  
+.exercise-card.easy {
+    border-left-color: #2196F3;
+}
 
-!!! fox_exercice "Devinette avec limite"
-    **Écrire un programme qui:**  
-    - Donne 5 essais pour deviner un nombre entre 1 et 100  
-    - Affiche "Perdu!" si le nombre n'est pas trouvé après 5 essais  
-    - Affiche le nombre d'essais utilisés en cas de victoire  
+.exercise-card.easy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.4);
+}
 
-!!! fox_exercice "Caisse enregistreuse"
-    **Écrire un programme qui:**  
-    - Demande le prix des articles un par un  
-    - S'arrête quand on entre 0  
-    - Affiche le total des achats  
-    - Affiche la monnaie à rendre sur un billet de 50€  
+.exercise-card.medium {
+    border-left-color: #FF9800;
+}
 
-!!! fox_exercice "Pyramide de nombres"
-    **Écrire un programme qui:**  
-    - Demande un nombre n  
-    - Affiche une pyramide de nombres  
+.exercise-card.medium:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
+}
+
+.exercise-card.hard {
+    border-left-color: #F44336;
+}
+
+.exercise-card.hard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.4);
+}
+
+.exercise-card.important {
+    border-left-color: #ff8c42;
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.05) 0%, rgba(255, 140, 66, 0.02) 100%);
+}
+
+.exercise-card.important:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 140, 66, 0.4);
+}
+
+.exercise-title {
+    margin: 0 0 1rem 0;
+    color: var(--md-primary-fg-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.exercise-content {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.difficulty-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty-badge.intro {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.difficulty-badge.easy {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+}
+
+.difficulty-badge.medium {
+    background: rgba(255, 152, 0, 0.1);
+    color: #FF9800;
+}
+
+.difficulty-badge.hard {
+    background: rgba(244, 67, 54, 0.1);
+    color: #F44336;
+}
+
+.difficulty-badge.important {
+    background: rgba(255, 140, 66, 0.1);
+    color: #ff8c42;
+}
+
+.toggle-solution {
+    background: linear-gradient(135deg, #ffb347 0%, #ff8c42 100%);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.toggle-solution:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
+}
+
+.toggle-solution.active {
+    background: linear-gradient(135deg, #ff7f50 0%, #ff6347 100%);
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.solution {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.solution pre {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.section-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.section-tab {
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.section-tab:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.section-tab.active {
+    background: linear-gradient(135deg, #ffb347 0%, #ff8c42 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
+}
+
+.section-content {
+    display: none;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.section-content.active {
+    display: block;
+}
+
+/* JavaScript pour les fonctionnalités interactives */
+.exercise-script {
+    display: none;
+}
+</style>
+
+<script>
+// JavaScript pour les fonctionnalités interactives des fiches d'exercices
+
+function toggleSolution(button) {
+    const card = button.closest('.exercise-card');
+    const solutionWrapper = card.querySelector('.solution-wrapper');
+    const arrow = button.querySelector('.arrow');
     
-    *Exemple pour n=3:*
-    ```
-    1
-    22
-    333
-    ```
+    if (solutionWrapper.classList.contains('show')) {
+        solutionWrapper.classList.remove('show');
+        button.classList.remove('active');
+        button.innerHTML = '<span class="arrow">→</span> Voir la correction';
+    } else {
+        solutionWrapper.classList.add('show');
+        button.classList.add('active');
+        button.innerHTML = '<span class="arrow">←</span> Masquer la correction';
+    }
+}
+
+function showSection(sectionId) {
+    // Masquer toutes les sections
+    const allContents = document.querySelectorAll('.section-content');
+    const allTabs = document.querySelectorAll('.section-tab');
+    
+    allContents.forEach(content => content.classList.remove('active'));
+    allTabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Afficher la section sélectionnée
+    document.getElementById(sectionId).classList.add('active');
+    event.target.classList.add('active');
+}
+
+// Afficher la première section par défaut
+document.addEventListener('DOMContentLoaded', function() {
+    const firstTab = document.querySelector('.section-tab');
+    if (firstTab) {
+        firstTab.click();
+    }
+});
+</script>
+
+<div class="section-tabs">
+    <button class="section-tab" onclick="showSection('intro-section')">🎯 Exercices d'introduction</button>
+    <button class="section-tab" onclick="showSection('easy-section')">🌟 Niveau Facile</button>
+    <button class="section-tab" onclick="showSection('medium-section')">🔥 Niveau Intermédiaire</button>
+    <button class="section-tab" onclick="showSection('hard-section')">🚀 Niveau Difficile</button>
+</div>
+
+<div id="intro-section" class="section-content">
+<div class="exercise-cards">
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Important ⚠️</div>
+            <h4 class="exercise-title">Consignes importantes</h4>
+            <div class="exercise-content">
+                <p><strong>Pour tous les exercices :</strong></p>
+                <ul>
+                    <li>N'oubliez pas les deux points <code>:</code> après la boucle</li>
+                    <li>Faites attention à l'indentation dans la boucle</li>
+                    <li>Testez votre code avec différentes valeurs</li>
+                    <li>Créez un fichier Python différent pour chaque exercice (ex: <code>exercice1.py</code>, <code>exercice2.py</code>, etc.)</li>
+                    <li>Recopiez vos programmes sur votre cahier pour pouvoir les réviser plus tard</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Compte à rebours</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande un nombre de départ</li>
+                    <li>Affiche le compte à rebours jusqu'à 0</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Tables de multiplication</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande un nombre</li>
+                    <li>Affiche sa table de multiplication de 1 à 10</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Escalier d'étoiles</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande un nombre n</li>
+                    <li>Affiche un escalier de n marches avec des étoiles</li>
+                </ul>
+                <p><em>Astuce : pour afficher <code>x</code> fois un caractère, on peut utiliser la syntaxe <code>'x' * n</code>.</em></p>
+                <p><em>La chaîne de caractère "XXXXX" peut être créée via la syntaxe python suivante :</em></p>
+                <pre><code>chaine_1 = "XXXXX"
+chaine_2 = "X"*5
+# avec chaine_1 == chaine_2</code></pre>
+                <p><em>Exemple pour n=3:</em></p>
+                <pre><code>*
+**
+***</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Somme des nombres</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande un nombre n</li>
+                    <li>Calcule la somme des nombres de 1 à n</li>
+                    <li>Affiche le résultat</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Puissance de 2</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande un nombre n</li>
+                    <li>Affiche les puissances de 2 jusqu'à 2^n</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Message répété</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande une phrase</li>
+                    <li>Demande un nombre de répétitions</li>
+                    <li>Affiche la phrase autant de fois que demandé</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="easy-section" class="section-content">
+<div class="exercise-cards">
+    <div class="exercise-card easy">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge easy">Facile 🦊</div>
+            <h4 class="exercise-title">Calculatrice continue</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande deux nombres et une opération</li>
+                    <li>Affiche le résultat</li>
+                    <li>Demande si on veut continuer (oui/non)</li>
+                    <li>Recommence si la réponse est "oui"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="medium-section" class="section-content">
+<div class="exercise-cards">
+    <div class="exercise-card medium">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
+            <h4 class="exercise-title">Devinette avec limite</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Donne 5 essais pour deviner un nombre entre 1 et 100</li>
+                    <li>Affiche "Perdu!" si le nombre n'est pas trouvé après 5 essais</li>
+                    <li>Affiche le nombre d'essais utilisés en cas de victoire</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card medium">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge medium">Intermédiaire 🦊🦊</div>
+            <h4 class="exercise-title">Caisse enregistreuse</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande le prix des articles un par un</li>
+                    <li>S'arrête quand on entre 0</li>
+                    <li>Affiche le total des achats</li>
+                    <li>Affiche la monnaie à rendre sur un billet de 50€</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="hard-section" class="section-content">
+<div class="exercise-cards">
+    <div class="exercise-card hard">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge hard">Difficile 🦊🦊🦊</div>
+            <h4 class="exercise-title">Pyramide de nombres</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui :</strong></p>
+                <ul>
+                    <li>Demande un nombre n</li>
+                    <li>Affiche une pyramide de nombres</li>
+                </ul>
+                <p><em>Exemple pour n=3:</em></p>
+                <pre><code>1
+22
+333</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
