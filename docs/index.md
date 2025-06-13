@@ -65,7 +65,7 @@
     </div>
     <div class="level-card">
         <img src="images/fox_terminale.png" alt="Première">
-        <h2>Première</h2>
+        <h2>Terminale</h2>
         <p>Le programme de deuxième année</p>
         <a href="terminale/terminale" class="btn">Accéder au cours</a>
     </div>
