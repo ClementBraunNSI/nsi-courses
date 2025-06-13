@@ -69,7 +69,7 @@
         <img src="images/fox_terminale.png" alt="Terminale">
         <h2>Terminale</h2>
         <p>Le programme de terminale</p>
-        <a href="terminale/terminale" class="btn">Accéder au cours</a>
+        <a href="terminale/terminale/" class="btn">Accéder au cours</a>
     </div>
 
     <div class="level-card">
