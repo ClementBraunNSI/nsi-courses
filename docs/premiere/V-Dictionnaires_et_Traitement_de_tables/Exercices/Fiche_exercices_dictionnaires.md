@@ -95,37 +95,83 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 3px solid;
-    display: flex;
-    overflow: hidden;
     width: 100%;
     max-width: 100%;
     min-height: fit-content;
 }
 
 .exercise-content-wrapper {
-    flex: 1 1 auto;
-    min-width: 0;
-    padding-right: 1rem;
-    max-width: 100%;
-    overflow: hidden;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.solution-wrapper {
-    flex: 0 0 0;
-    width: 0;
-    overflow: hidden;
-    transition: flex 0.4s ease, width 0.4s ease;
-    border-left: 1px solid #e0e0e0;
-    background: rgba(0, 0, 0, 0.02);
-    min-height: 0;
+/* Modal pour les solutions */
+.solution-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
 }
 
-.solution-wrapper.show {
-    flex: 0 0 40%;
-    width: 40%;
-    padding-left: 1rem;
+.solution-modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.solution-content {
+    background: var(--md-default-bg-color);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
+
+.solution-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.solution-close:hover {
+    background: #d32f2f;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.solution-wrapper {
+    display: none;
 }
 
 .exercise-card.intro {
@@ -318,18 +364,54 @@
 function toggleSolution(button) {
     const card = button.closest('.exercise-card');
     const solutionWrapper = card.querySelector('.solution-wrapper');
-    const arrow = button.querySelector('.arrow');
     
-    if (solutionWrapper.classList.contains('show')) {
-        solutionWrapper.classList.remove('show');
-        button.classList.remove('active');
-        button.innerHTML = '<span class="arrow">→</span> Voir la correction';
-    } else {
-        solutionWrapper.classList.add('show');
-        button.classList.add('active');
-        button.innerHTML = '<span class="arrow">←</span> Masquer la correction';
+    // Créer la modal si elle n'existe pas déjà
+    let modal = document.getElementById('solution-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'solution-modal';
+        modal.className = 'solution-modal';
+        document.body.appendChild(modal);
+        
+        // Fermer la modal en cliquant à l'extérieur
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeSolutionModal();
+            }
+        });
+    }
+    
+    // Créer le contenu de la modal
+    const exerciseTitle = card.querySelector('.exercise-title').textContent;
+    const solutionContent = solutionWrapper.innerHTML;
+    
+    modal.innerHTML = `
+        <div class="solution-content">
+            <button class="solution-close" onclick="closeSolutionModal()">×</button>
+            <h3>Correction : ${exerciseTitle}</h3>
+            ${solutionContent}
+        </div>
+    `;
+    
+    // Afficher la modal
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Empêcher le scroll de la page
+}
+
+function closeSolutionModal() {
+    const modal = document.getElementById('solution-modal');
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restaurer le scroll de la page
     }
 }
+
+// Fermer la modal avec la touche Échap
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeSolutionModal();
+    }
+});
 
 function showSection(sectionId) {
     // Masquer toutes les sections
