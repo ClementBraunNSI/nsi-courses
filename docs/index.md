@@ -64,9 +64,9 @@
         <a href="premiere/premiere" class="btn">Accéder au cours</a>
     </div>
     <div class="level-card">
-        <img src="images/fox_premiere.png" alt="Première">
+        <img src="images/fox_terminale_.png" alt="Première">
         <h2>Première</h2>
-        <p>Le programme de première année</p>
+        <p>Le programme de deuxième année</p>
         <a href="terminale/terminale" class="btn">Accéder au cours</a>
     </div>
     <div class="level-card">
