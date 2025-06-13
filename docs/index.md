@@ -64,10 +64,10 @@
         <a href="premiere/premiere" class="btn">Accéder au cours</a>
     </div>
     <div class="level-card">
-        <img src="images/fox_terminale.png" alt="Terminale">
-        <h2>Terminale</h2>
-        <p>Le programme de terminale</p>
-        <a href="terminale" class="btn">Accéder au cours</a>
+        <img src="images/fox_premiere.png" alt="Première">
+        <h2>Première</h2>
+        <p>Le programme de première année</p>
+        <a href="premiere/premiere" class="btn">Accéder au cours</a>
     </div>
     <div class="level-card">
         <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
