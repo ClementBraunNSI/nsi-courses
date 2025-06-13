@@ -76,8 +76,6 @@
         <a href="chasse_aux_renards" class="btn">Accéder au défi</a>
     </div>
 </div>
-test
-
 ---
 
 ## Présentation des enseignements
