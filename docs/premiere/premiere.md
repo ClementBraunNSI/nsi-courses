@@ -152,7 +152,6 @@
         <h3>🌍 X - Web et HTTP</h3>
         <div class="chapter-links">
             <a href="../X-Web_et_HTTP/Cours/" class="btn">Fonctionnement HTTP</a>
-            <a href="../XIIII-TP_notes/Carte_Bleue/verification_carte_bleue/" class="btn">Carte Bleue</a>
             <a href="../X-Web_et_HTTP/TP/Projet/" class="btn">Création de site web</a>
         </div>
     </div>
