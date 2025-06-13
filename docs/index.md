@@ -57,21 +57,18 @@
         <p>Le programme de seconde</p>
         <a href="seconde/seconde" class="btn">Accéder au cours</a>
     </div>
-
     <div class="level-card">
         <img src="images/fox_premiere.png" alt="Première">
         <h2>Première</h2>
         <p>Le programme de première année</p>
         <a href="premiere/premiere" class="btn">Accéder au cours</a>
     </div>
-
     <div class="level-card">
         <img src="images/fox_terminale.png" alt="Terminale">
         <h2>Terminale</h2>
         <p>Le programme de terminale</p>
-        <a href="terminale/terminale/" class="btn">Accéder au cours</a>
+        <a href="/docs/terminale/terminale.md" class="btn">Accéder au cours</a>
     </div>
-
     <div class="level-card">
         <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
         <h2>Chasse aux Ren'arts</h2>
