@@ -1,6 +1,6 @@
----
-
 # Terminale NSI
+
+---
 
 <style>
 .chapter-cards {
