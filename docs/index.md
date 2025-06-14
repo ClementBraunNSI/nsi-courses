@@ -492,13 +492,231 @@
      display: block;
  }
 
+/* Media queries pour mobile */
 @media (max-width: 768px) {
-    .exam-grid {
+    /* Section principale des cartes de niveau */
+    .level-cards {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .level-card {
+        padding: 1rem;
+    }
+    
+    .level-card img {
+        height: 150px;
+    }
+    
+    .level-card h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* Section enseignements */
+    .teaching-overview {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .teaching-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .teaching-card {
+        padding: 1rem;
+    }
+    
+    .teaching-title {
+        font-size: 1rem;
+    }
+    
+    .teaching-description {
+        font-size: 0.85rem;
+    }
+    
+    /* Section logiciels */
+    .software-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .software-card {
+        padding: 1.5rem;
+    }
+    
+    .software-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .software-logo img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .software-name {
+        font-size: 1rem;
+    }
+    
+    .software-description {
+        font-size: 0.85rem;
+    }
+    
+    /* Section baccalauréat */
+    .bac-section {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
     }
     
     .bac-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .exam-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .exam-card {
+        padding: 1.5rem;
+    }
+    
+    .exam-header {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .exam-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .exam-title {
+        font-size: 1.1rem;
+    }
+    
+    .weight-fraction {
+        font-size: 1.5rem;
+    }
+    
+    /* Section contributeurs */
+    .contributors-section {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contributors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contributor-card {
+        padding: 1rem;
+    }
+    
+    .contributor-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .contributor-name {
+        font-size: 0.9rem;
+    }
+    
+    .contributor-role {
+        font-size: 0.8rem;
+    }
+    
+    /* Section collègues */
+    .colleagues-section {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .colleagues-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .colleague-card {
+        padding: 1rem;
+        min-height: auto;
+    }
+    
+    .colleague-header {
+        margin-bottom: 0.5rem;
+    }
+    
+    .colleague-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .colleague-name {
+        font-size: 1rem;
+    }
+    
+    .colleague-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media queries pour très petits écrans */
+@media (max-width: 480px) {
+    .level-card {
+        padding: 0.8rem;
+    }
+    
+    .level-card h2 {
+        font-size: 1.1rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .teaching-overview {
+        padding: 1rem;
+    }
+    
+    .bac-section {
+        padding: 1rem;
+    }
+    
+    .bac-title {
+        font-size: 1.5rem;
+    }
+    
+    .contributors-section {
+        padding: 1rem;
+    }
+    
+    .colleagues-section {
+        padding: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
     }
 }
 </style>
