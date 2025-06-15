@@ -46,6 +46,7 @@
         <div class="chapter-links">
             <a href="../II_-_Web/Cours/" class="btn">Cours HTML</a>
             <a href="../II_-_Web/Projet_creation_site/" class="btn">Projet création site</a>
+            <a href="../II_-_Web/monstres" class="btn">Ensemble des monstres des élèves</a>
         </div>
     </div>
 

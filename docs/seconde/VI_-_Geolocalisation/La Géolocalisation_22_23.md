@@ -81,11 +81,6 @@ Cette trame NMEA donne la localisation de Paris.
 
 [^1]:https://www.lexilogos.com/calcul_distances.htm
 
-### Activités sur Algorea
-
-[Calcul d'itinéraires](**https://parcours.algorea.org/fr/a/305211257887472178;p=4702,1067253748629066205,183305583351435935,1207970506541061357,1896542330140252255;a=0;pa=0**)
-
-
 #### Décoder des trames NMEA
 
 A l'aide du site https://rl.se/gprmc, donner la ville dont la localisation est donnée par les trames NMEA suivantes :

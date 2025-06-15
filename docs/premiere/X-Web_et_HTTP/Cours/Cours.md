@@ -21,7 +21,7 @@ Le processus de communication se déroule ainsi :
 3. Le serveur traite la requête et renvoie une réponse
 4. Le client (navigateur) interprète la réponse et affiche le contenu à l'utilisateur
 
-![client_serveur](client_serveur.png)
+
 
 ## Les URL et le système DNS
 

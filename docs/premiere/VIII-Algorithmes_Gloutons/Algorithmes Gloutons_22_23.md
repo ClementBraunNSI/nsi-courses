@@ -182,7 +182,7 @@ Il existe trois stratégies principales pour résoudre ce problème de manière 
 ### Exercice : Sac à dos
 
 !!! fox_exercice_important
-    Cet exercice ressemble beaucoup à l'exercice réalisé au [**Jour 3**](../0%20-%20New%20Year%20Advent/Exercices%20J1%20-%20J9/Jour_3.md) et au [**Jour 4**](../0%20-%20New%20Year%20Advent/Exercices%20J1%20-%20J9/Jour_4.md) du calendrier de l'avant [**New Year Advent**](../0%20-%20New%20Year%20Advent/new_year_advent.md)
+    Cet exercice ressemble beaucoup à l'exercice réalisé au [**Jour 3**](../New_Year_Advent/Exercices_J1-J9/Jour_3.md) et au [**Jour 4**](../New_Year_Advent/Exercices_J1-J9/Jour_4.md) du calendrier de l'avant [**New Year Advent**](../New_Year_Advent/new_year_advent.md)
 
 !!! fox_exercice "Problème du sac à dos par masse"
     **Écrire une fonction `sac_a_dos_masse(capacite, objets)` qui :**

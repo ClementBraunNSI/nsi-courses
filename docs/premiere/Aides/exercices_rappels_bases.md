@@ -1,7 +1,7 @@
 # Exercices de rappel - Les bases de Python 🐍
 
 ## 1. Les boucles `for` et `while` 🔄
-[📚 Voir le cours sur les boucles](../I%20-%20Constructions%20élémentaires/Cours/Cours_1.md#les-boucles)
+[📚 Voir le cours sur les boucles](../I-Constructions_elementaires/Cours/Cours_1.md#boucles)
 
 ### Exercice 1.1 - Compter jusqu'à 10
 **Objectif**: Écrire un programme qui affiche les nombres de 1 à 10.
@@ -45,7 +45,7 @@ Pour l'entrée 7:
 
 ## 2. Les conditions `if` 🤔
 
-[📚 Voir le cours sur les conditions](../I%20-%20Constructions%20élémentaires/Cours/Cours_1.md#les-conditions)
+[📚 Voir le cours sur les conditions](../I-Constructions_elementaires/Cours/Cours_1.md#conditions)
 
 ### Exercice 2.1 - Pair ou Impair
 
@@ -75,7 +75,7 @@ Pour l'entrée 7:
 
 ## 3. Les listes 📝
 
-[📚 Voir le cours sur les listes](../III%20-%20Structures%20de%20données%20linéaires/Cours/Cours.md)
+[📚 Voir le cours sur les listes](../III-Structures_de_donnees_lineaires/Cours/Cours.md)
 
 ### Exercice 3.1 - Manipulation de liste
 
@@ -104,7 +104,7 @@ Pour l'entrée 7:
 
 ## 4. Les dictionnaires 📚
 
-[📚 Voir le cours sur les dictionnaires](../V%20-%20Dictionnaires%20et%20Traitement%20de%20tables/Cours/Cours_1.md)
+[📚 Voir le cours sur les dictionnaires](../V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_1.md)
 
 ### Exercice 4.1 - Carnet d'adresses
 

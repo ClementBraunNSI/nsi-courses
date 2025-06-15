@@ -235,6 +235,7 @@
 }
 
 .md-header__title {
+    display: none !important; /* Désactivation complète pour éviter le décalage du logo */
     color: #000000 !important; /* Texte noir */
     background-color: #ffffff !important;
 }
