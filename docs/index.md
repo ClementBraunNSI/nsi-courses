@@ -966,7 +966,7 @@
 }
 
 .colleague-link:hover {
-    background: #ff6b35;
+    background:rgba(255, 188, 53, 0.26);
     color: white;
     text-decoration: none;
     transform: translateY(-2px);
