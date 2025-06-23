@@ -52,28 +52,28 @@
 
 <div class="level-cards-container">
     <div class="level-card">
-        <img src="images/fox_seconde.png" alt="Seconde">
-        <h2>Seconde</h2>
-        <p>Le programme de seconde</p>
-        <a href="seconde/seconde" class="btn">Accéder au cours</a>
+        <img src="images/fox_seconde.png" alt="SNT Seconde">
+        <h2>SNT - Seconde</h2>
+        <p>Sciences Numériques et Technologie : découverte des enjeux du numérique dans notre société</p>
+        <a href="seconde/seconde" class="btn">Accéder aux ressources</a>
     </div>
     <div class="level-card">
-        <img src="images/fox_premiere.png" alt="Première">
-        <h2>Première</h2>
-        <p>Le programme de première année</p>
-        <a href="premiere/premiere" class="btn">Accéder au cours</a>
+        <img src="images/fox_premiere.png" alt="NSI Première">
+        <h2>NSI - Première</h2>
+        <p>Numérique et Sciences Informatiques : initiation à la programmation et aux concepts fondamentaux</p>
+        <a href="premiere/premiere" class="btn">Accéder aux ressources</a>
     </div>
     <div class="level-card">
-        <img src="images/fox_terminale.png" alt="Première">
-        <h2>Terminale</h2>
-        <p>Le programme de deuxième année</p>
-        <a href="terminale/terminale" class="btn">Accéder au cours</a>
+        <img src="images/fox_terminale.png" alt="NSI Terminale">
+        <h2>NSI - Terminale</h2>
+        <p>Approfondissement en informatique : structures de données, bases de données et projets avancés</p>
+        <a href="terminale/terminale" class="btn">Accéder aux ressources</a>
     </div>
     <div class="level-card">
         <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
         <h2>Chasse aux Ren'arts</h2>
-        <p>Un défi spécial pour les élèves</p>
-        <a href="chasse_aux_renards" class="btn">Accéder au défi</a>
+        <p>Défi ludique et pédagogique pour mettre en pratique les compétences NSI de manière créative</p>
+        <a href="chasse_aux_renards" class="btn">Participer au défi</a>
     </div>
 </div>
 ---
@@ -82,114 +82,338 @@
 .teaching-overview {
     background: linear-gradient(135deg, #ffb347 0%, #ff8c42 50%, #ff6b35 100%);
     border-radius: 15px;
-    padding: 2rem;
+    padding: 3rem;
     margin: 2rem 0;
-}
-
-.teaching-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.teaching-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(255, 127, 42, 0.2);
-}
-
-.teaching-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(255, 127, 42, 0.3);
-}
-
-.teaching-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 1rem;
-    border-radius: 50%;
+    position: relative;
     overflow: hidden;
 }
 
-.teaching-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.pathway-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
 }
 
-.teaching-title {
+.pathway-title h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pathway-title p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.horizontal-pathway {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pathway-circle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
+}
+
+.pathway-circle:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 15px 50px rgba(255, 107, 53, 0.3);
+    border-color: rgba(255, 127, 42, 0.6);
+    z-index: 20;
+}
+
+.pathway-circle img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.pathway-circle .level-name {
+    font-size: 0.9rem;
+    font-weight: bold;
     color: #333;
-    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.pathway-circle .level-short {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 0.2rem;
+}
+
+.superieur-circle {
+    opacity: 0.8;
+    border-style: dashed;
+}
+
+/* Flèches de connexion */
+.pathway-arrow {
+    position: relative;
+    flex: 1;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80px;
+}
+
+.pathway-arrow::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid rgba(255, 255, 255, 0.4);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.pathway-arrow.dashed {
+    background: repeating-linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.4) 0px,
+        rgba(255, 255, 255, 0.4) 8px,
+        transparent 8px,
+        transparent 16px
+    );
+}
+
+.pathway-arrow.dashed::after {
+    border-left-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 1024px) {
+    .horizontal-pathway {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .pathway-arrow {
+        width: 2px;
+        height: 30px;
+        transform: rotate(90deg);
+        margin: 0;
+    }
+    
+    .pathway-arrow::after {
+        right: 50%;
+        top: -5px;
+        transform: translateX(50%) rotate(-90deg);
+    }
+    
+    .pathway-circle {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.terminale-circle {
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.superieur-circle {
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    border-style: dashed;
+}
+
+/* Lignes de connexion */
+.pathway-line {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+.line-1 {
+    top: 120px;
+    left: 50%;
+    width: 2px;
+    height: 100px;
+    transform: translateX(-50%) rotate(45deg);
+    transform-origin: top;
+}
+
+.line-2 {
+    top: 50%;
+    right: 120px;
+    width: 100px;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.line-3 {
+    bottom: 120px;
+    left: 50%;
+    width: 2px;
+    height: 100px;
+    transform: translateX(-50%) rotate(-45deg);
+    transform-origin: bottom;
+}
+
+.line-4 {
+    top: 50%;
+    left: 120px;
+    width: 100px;
+    height: 2px;
+    transform: translateY(-50%);
+    border-style: dashed;
+    opacity: 0.6;
+}
+
+/* Tooltip détaillé */
+.pathway-tooltip {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    max-width: 320px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 30;
+    border: 1px solid rgba(255, 127, 42, 0.2);
+}
+
+.pathway-circle:hover .pathway-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.tooltip-title {
+    color: #ff6b35;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-.teaching-description {
-    color: #666;
+.tooltip-subtitle {
+    color: #333;
     font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.teaching-level {
-    display: inline-block;
-    background: rgba(255, 127, 42, 0.1);
-    color: #ff7f2a;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
-</style>
 
-## 📚 Présentation des enseignements
+.tooltip-content {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
 
-<div class="teaching-overview">
-    <h3 style="color: white; text-align: center; margin-bottom: 0.5rem;">Parcours Numérique et Sciences Informatiques</h3>
-    <p style="color: rgba(255,255,255,0.9); text-align: center; margin-bottom: 1.5rem;">De la découverte à la spécialisation, un apprentissage progressif des sciences du numérique</p>
+.tooltip-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.tooltip-list li {
+    padding: 0.2rem 0;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.tooltip-list li::before {
+    content: '•';
+    color: #ff6b35;
+    position: absolute;
+    left: 0;
+}
+
+/* Positionnement des tooltips */
+.snt-circle .pathway-tooltip {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    margin-top: 1rem;
+}
+
+.snt-circle:hover .pathway-tooltip {
+    transform: translateX(-50%) translateY(0);
+}
+
+.premiere-circle .pathway-tooltip {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%) translateX(-20px);
+    margin-right: 1rem;
+}
+
+.premiere-circle:hover .pathway-tooltip {
+    transform: translateY(-50%) translateX(0);
+}
+
+.terminale-circle .pathway-tooltip {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    margin-bottom: 1rem;
+}
+
+.terminale-circle:hover .pathway-tooltip {
+    transform: translateX(-50%) translateY(0);
+}
+
+.superieur-circle .pathway-tooltip {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%) translateX(20px);
+    margin-left: 1rem;
+}
+
+.superieur-circle:hover .pathway-tooltip {
+    transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 768px) {
+    .circular-pathway {
+        height: 500px;
+        max-width: 500px;
+    }
     
-    <div class="teaching-grid">
-        <div class="teaching-card">
-            <div class="teaching-level">Seconde</div>
-            <div class="teaching-icon">
-                <img src="images/fox_seconde.png" alt="SNT">
-            </div>
-            <h4 class="teaching-title">Sciences Numériques et Technologie</h4>
-            <p class="teaching-description">Découverte des enjeux du numérique : internet, données, réseaux sociaux, objets connectés et cybersécurité.</p>
-        </div>
-        
-        <div class="teaching-card">
-            <div class="teaching-level">Première</div>
-            <div class="teaching-icon">
-                <img src="images/fox_premiere.png" alt="Première NSI">
-            </div>
-            <h4 class="teaching-title">NSI - Spécialité</h4>
-            <p class="teaching-description">Initiation à la programmation Python, algorithmes, structures de données et bases de données.</p>
-        </div>
-        
-        <div class="teaching-card">
-             <div class="teaching-level">Terminale</div>
-             <div class="teaching-icon">
-                 <img src="images/fox_terminale.png" alt="Terminale NSI">
-             </div>
-             <h4 class="teaching-title">NSI - Approfondissement</h4>
-             <p class="teaching-description">Programmation orientée objet, récursivité, graphes, réseaux et développement de projets.</p>
-         </div>
-         
-         <div class="teaching-card" style="opacity: 0.8; border: 2px dashed rgba(255, 127, 42, 0.4);">
-             <div class="teaching-level" style="background: rgba(255, 127, 42, 0.2);">Post-Bac</div>
-             <div class="teaching-icon">
-                 <div style="width: 60px; height: 60px; background: linear-gradient(45deg, #ff8c42, #ff6b35); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold;">🎓</div>
-             </div>
-             <h4 class="teaching-title">Études Supérieures</h4>
-             <p class="teaching-description">Licence informatique, IUT, écoles d'ingénieurs, BTS SIO - Approfondissement en algorithmique, systèmes et réseaux.</p>
-         </div>
-     </div>
- </div>
+    .pathway-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .pathway-tooltip {
+        max-width: 280px;
+        padding: 1rem;
+    }
+}
+</style>
 
 ### 📋 Programmes officiels
 - [Bulletin officiel de la SNT](https://www.education.gouv.fr/bo/19/Special1/MENE1901641A.htm)
@@ -797,13 +1021,13 @@
 
 <style>
 .contributors-section {
-    background: linear-gradient(135deg, #ffb347 0%, #ff6b35 100%);
-    border-radius: 20px;
-    padding: 3rem;
-    margin: 3rem 0;
-    color: white;
+    background: linear-gradient(135deg, rgba(255, 127, 42, 0.1), rgba(255, 107, 53, 0.05));
+    border: 1px solid rgba(255, 127, 42, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
     position: relative;
-    overflow: hidden;
 }
 
 .contributors-section::before {
@@ -824,56 +1048,98 @@
 
 .section-title {
     text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: white;
-}
-
-.contributors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.contributor-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.contributor-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.25);
-}
-
-.contributor-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--md-default-fg-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1rem;
-    font-size: 1.5rem;
+    gap: 0.5rem;
+}
+
+.contributors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.contributor-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 127, 42, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 140px;
+    max-width: 160px;
+    box-shadow: 0 2px 8px rgba(255, 127, 42, 0.1);
+}
+
+.contributor-card:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(255, 127, 42, 0.2);
+    border-color: rgba(255, 127, 42, 0.4);
+}
+
+@media (max-width: 768px) {
+    .contributors-grid {
+        gap: 0.8rem;
+    }
+    
+    .contributor-card {
+        min-width: 120px;
+        max-width: 140px;
+        padding: 0.8rem;
+    }
+    
+    .contributor-avatar {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .contributor-name {
+        font-size: 0.8rem;
+    }
+    
+    .contributor-role {
+        font-size: 0.7rem;
+    }
+}
+
+.contributor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 127, 42, 0.2), rgba(255, 107, 53, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.8rem;
+    font-size: 1.2rem;
+    border: 2px solid rgba(255, 127, 42, 0.3);
 }
 
 .contributor-name {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: white;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--md-default-fg-color);
+    font-size: 0.9rem;
+    line-height: 1.2;
 }
 
 .contributor-role {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.75rem;
+    opacity: 0.8;
+    color: var(--md-default-fg-color--light);
+    line-height: 1.3;
 }
 
 .colleagues-section {
@@ -883,12 +1149,103 @@
     margin: 2rem 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.colleagues-carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .colleagues-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.2rem;
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 1.5rem;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 127, 42, 0.95);
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 100;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(255, 127, 42, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.carousel-nav:hover {
+    background: rgba(255, 127, 42, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 127, 42, 0.4);
+}
+
+.carousel-nav.prev {
+    left: 10px;
+}
+
+.carousel-nav.next {
+    right: 10px;
+}
+
+.carousel-nav:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(0.9);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 127, 42, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.carousel-indicator.active {
+    background: rgba(255, 127, 42, 1);
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .colleagues-grid {
+        gap: 1rem;
+    }
+    
+    .carousel-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .carousel-nav.prev {
+        left: 5px;
+    }
+    
+    .carousel-nav.next {
+        right: 5px;
+    }
 }
 
 .colleague-card {
@@ -896,14 +1253,23 @@
     border-radius: 15px;
     padding: 1.5rem;
     border: 1px solid rgba(255, 127, 42, 0.2);
-    transition: all 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 200px;
+    min-width: 280px;
+    flex-shrink: 0;
+    opacity: 1;
+    transform: translateY(0);
 }
+
+.colleague-card:nth-child(1) { animation-delay: 0.1s; }
+.colleague-card:nth-child(2) { animation-delay: 0.2s; }
+.colleague-card:nth-child(3) { animation-delay: 0.3s; }
+.colleague-card:nth-child(4) { animation-delay: 0.4s; }
 
 .colleague-card::before {
     content: '';
@@ -1025,41 +1391,113 @@
 <div class="colleagues-section">
     <h2 class="section-title" style="color: var(--md-default-fg-color); margin-bottom: 2rem;">🌐 Sites de collègues de NSI</h2>
     
-    <div class="colleagues-grid">
-        <div class="colleague-card">
-            <div class="colleague-header">
-                <div class="colleague-icon">📚</div>
-                <h3 class="colleague-name">RELMY Lucas</h3>
-            </div>
-            <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Ressources complètes et exercices pratiques pour NSI</p>
-            <a href="http://lucasrelmynsi.gitlab.io/site_cours/" class="colleague-link" target="_blank">Visiter le site</a>
-        </div>
+    <div class="colleagues-carousel">
+        <button class="carousel-nav prev" onclick="moveCarousel(-1)">‹</button>
+        <button class="carousel-nav next" onclick="moveCarousel(1)">›</button>
         
-        <div class="colleague-card">
-            <div class="colleague-header">
-                <div class="colleague-icon">🔬</div>
-                <h3 class="colleague-name">DEMERVILLE Erwan</h3>
+        <div class="colleagues-grid" id="colleaguesGrid">
+            <div class="colleague-card">
+                <div class="colleague-header">
+                    <div class="colleague-icon">📚</div>
+                    <h3 class="colleague-name">RELMY Lucas</h3>
+                </div>
+                <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Ressources complètes et exercices pratiques pour NSI</p>
+                <a href="http://lucasrelmynsi.gitlab.io/site_cours/" class="colleague-link" target="_blank">Visiter le site</a>
             </div>
-            <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Cours détaillés et projets innovants en NSI</p>
-            <a href="https://nsi.erwandemerville.fr" class="colleague-link" target="_blank">Visiter le site</a>
-        </div>
-        
-        <div class="colleague-card">
-            <div class="colleague-header">
-                <div class="colleague-icon">⚡</div>
-                <h3 class="colleague-name">RAMSTEIN Stéphane</h3>
+            
+            <div class="colleague-card">
+                <div class="colleague-header">
+                    <div class="colleague-icon">🔬</div>
+                    <h3 class="colleague-name">DEMERVILLE Erwan</h3>
+                </div>
+                <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Cours détaillés et projets innovants en NSI</p>
+                <a href="https://nsi.erwandemerville.fr" class="colleague-link" target="_blank">Visiter le site</a>
             </div>
-            <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Approche pédagogique moderne et interactive</p>
-            <a href="https://stephane_ramstein.gitlab.io/nsi/" class="colleague-link" target="_blank">Visiter le site</a>
-        </div>
-        
-        <div class="colleague-card">
-            <div class="colleague-header">
-                <div class="colleague-icon">🚀</div>
-                <h3 class="colleague-name">MARCHAND Mathieu</h3>
+            
+            <div class="colleague-card">
+                <div class="colleague-header">
+                    <div class="colleague-icon">⚡</div>
+                    <h3 class="colleague-name">RAMSTEIN Stéphane</h3>
+                </div>
+                <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Approche pédagogique moderne et interactive</p>
+                <a href="https://stephane_ramstein.gitlab.io/nsi/" class="colleague-link" target="_blank">Visiter le site</a>
             </div>
-            <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
-            <a href="https://mmarchand-nsi.github.io" class="colleague-link" target="_blank">Visiter le site</a>
+            
+            <div class="colleague-card">
+                <div class="colleague-header">
+                    <div class="colleague-icon">🚀</div>
+                    <h3 class="colleague-name">MARCHAND Mathieu</h3>
+                </div>
+                <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
+                <a href="https://mmarchand-nsi.github.io" class="colleague-link" target="_blank">Visiter le site</a>
+            </div>
         </div>
     </div>
+    
+    <div class="carousel-indicators" id="carouselIndicators">
+        <button class="carousel-indicator active" onclick="goToSlide(0)"></button>
+        <button class="carousel-indicator" onclick="goToSlide(1)"></button>
+        <button class="carousel-indicator" onclick="goToSlide(2)"></button>
+        <button class="carousel-indicator" onclick="goToSlide(3)"></button>
+    </div>
 </div>
+
+<script>
+let currentSlide = 0;
+const totalSlides = 4;
+const slideWidth = 300; // largeur d'une carte + gap
+
+function updateCarousel() {
+    const grid = document.getElementById('colleaguesGrid');
+    const indicators = document.querySelectorAll('.carousel-indicator');
+    const prevBtn = document.querySelector('.carousel-nav.prev');
+    const nextBtn = document.querySelector('.carousel-nav.next');
+    
+    // Mise à jour de la position
+    grid.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    
+    // Mise à jour des indicateurs
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+    });
+    
+    // Mise à jour des boutons
+    prevBtn.disabled = currentSlide === 0;
+    nextBtn.disabled = currentSlide === totalSlides - 1;
+}
+
+function moveCarousel(direction) {
+    const newSlide = currentSlide + direction;
+    if (newSlide >= 0 && newSlide < totalSlides) {
+        currentSlide = newSlide;
+        updateCarousel();
+    }
+}
+
+function goToSlide(slideIndex) {
+    if (slideIndex >= 0 && slideIndex < totalSlides) {
+        currentSlide = slideIndex;
+        updateCarousel();
+    }
+}
+
+// Auto-play optionnel
+setInterval(() => {
+    if (currentSlide < totalSlides - 1) {
+        moveCarousel(1);
+    } else {
+        currentSlide = 0;
+        updateCarousel();
+    }
+}, 5000);
+
+// Initialisation
+document.addEventListener('DOMContentLoaded', updateCarousel);
+</script>
+
+<style>
+/* Masquer le footer par défaut de MkDocs */
+.md-footer-meta__inner {
+    display: none !important;
+}
+</style>
