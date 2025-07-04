@@ -1,8 +1,66 @@
-# Terminale NSI
-
----
-
 <style>
+/* Bandeau de niveau */
+.level-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 5px solid #9C27B0;
+}
+
+.level-header-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.level-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.level-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #9C27B0;
+}
+
+.level-header p {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.level-description {
+  font-style: italic;
+  color: #555 !important;
+}
+
+@media (max-width: 768px) {
+  .level-header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .level-header h1 {
+    font-size: 2rem;
+  }
+  
+  .level-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Styles existants */
 .chapter-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -96,6 +154,20 @@
     }
 }
 </style>
+
+<!-- Bandeau de niveau -->
+<div class="level-header">
+  <div class="level-header-content">
+    <img src="../../images/fox_terminale.png" alt="Terminale" class="level-logo" />
+    <div>
+      <h1>Terminale NSI</h1>
+      <p>Numérique et Sciences Informatiques</p>
+      <p class="level-description">
+        Maîtrise des concepts avancés et préparation au supérieur
+      </p>
+    </div>
+  </div>
+</div>
 
 <section class="chapter-cards">
     <!-- I. Rappels de Première -->

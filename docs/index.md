@@ -1,10 +1,5 @@
 # Clément Braun - NSI
 
-<div style="text-align: center; margin: 3rem 0;">
-  <h2 style="font-size: 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem;">Numérique et Sciences Informatiques</h2>
-  <p style="font-size: 1.2rem; color: #4a5568; max-width: 600px; margin: 0 auto;">Découvrez l'informatique à travers des cours interactifs, des exercices pratiques et des projets passionnants.</p>
-</div>
-
 ---
 
 <style>
@@ -31,8 +26,9 @@
 
 .level-card:hover img {
     box-shadow: 0 0 15px rgba(255, 127, 42, 0);
-    filter: drop-shadow(0 0 10px rgba(255, 198, 55, 0.8));
-    transition: box-shadow 0.3s ease;
+~~~~    filter: drop-shadow(0 0 10px rgba(255, 198, 55, 0.8));
+    transform: scale(1.1) rotate(5deg);
+    transition: all 0.3s ease;
 }
 
 .level-card img {

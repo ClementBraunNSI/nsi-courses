@@ -1,35 +1,18 @@
 site_name: NSI - Clément Braun
 theme:
-  name: material
-  logo: assets/logo.png
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - navigation.path
-    - toc.integrate
-    - navigation.top
+  name : material
+  logo : images/test.png
+  features :
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - navigation.instant
-    - navigation.tracking
+    - header.autohide
   language: fr
   palette:
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-      primary: deep purple
-      accent: orange
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-      primary: deep purple
-      accent: orange
+    primary: indigo
+    accent: blue
     
 markdown_extensions:
   - pymdownx.highlight:
@@ -55,15 +38,12 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/glassmorphism.css
-  - stylesheets/modern-design.css
-  - stylesheets/animations.css
+# - stylesheets/glassmorphism.css
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - javascripts/modern-interactions.js
 
 site_url: https://clementbraunnsi.github.io/nsi-courses/
 
