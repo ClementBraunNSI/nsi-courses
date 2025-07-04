@@ -60,25 +60,21 @@
   }
 }
 
-/* Styles modernes pour les cartes */
+/* Design moderne et épuré */
 .chapter-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.5rem;
     padding: 2rem 0;
 }
 
 .chapter-card {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
+    background: #ffffff;
+    border-radius: 16px;
     padding: 2rem;
-    box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.1),
-        0 2px 8px rgba(0, 0, 0, 0.05),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
     overflow: hidden;
 }
@@ -89,91 +85,73 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #4CAF50, #66BB6A, #4CAF50);
-    background-size: 200% 100%;
-    animation: shimmer 3s ease-in-out infinite;
+    height: 3px;
+    background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
-@keyframes shimmer {
-    0%, 100% { background-position: 200% 0; }
-    50% { background-position: -200% 0; }
+.chapter-card:hover::before {
+    transform: scaleX(1);
 }
 
 .chapter-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 
-        0 20px 60px rgba(76, 175, 80, 0.15),
-        0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
-    border-color: rgba(76, 175, 80, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(72, 187, 120, 0.15);
+    border-color: #48bb78;
 }
 
 .chapter-card h3 {
     margin: 0 0 1rem 0;
-    font-size: 1.4rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #4CAF50, #388E3C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2d3748;
+    letter-spacing: -0.025em;
 }
 
 .chapter-card p {
-    color: #555;
+    color: #718096;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    font-size: 0.95rem;
 }
 
 .chapter-links {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
     margin-top: 1rem;
 }
 
 .chapter-links .btn {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    color: #4CAF50;
-    border: 2px solid rgba(76, 175, 80, 0.2);
-    border-radius: 12px;
+    background: #f7fafc;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
     padding: 0.75rem 1rem;
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
     position: relative;
-    overflow: hidden;
-}
-
-.chapter-links .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(76, 175, 80, 0.1), transparent);
-    transition: left 0.5s ease;
+    text-align: left;
 }
 
 .chapter-links .btn:hover {
-    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    background: #48bb78;
     color: white;
-    border-color: #4CAF50;
-    transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-}
-
-.chapter-links .btn:hover::before {
-    left: 100%;
+    border-color: #48bb78;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(72, 187, 120, 0.25);
 }
 
 .chapter-links hr {
     border: none;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(76, 175, 80, 0.3), transparent);
-    margin: 0.5rem 0;
+    background: #e2e8f0;
+    margin: 0.75rem 0;
+    opacity: 0.6;
 }
 </style>
 
