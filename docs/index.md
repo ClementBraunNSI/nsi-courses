@@ -1,5 +1,10 @@
 # Clément Braun - NSI
 
+<div style="text-align: center; margin: 3rem 0;">
+  <h2 style="font-size: 2.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem;">Numérique et Sciences Informatiques</h2>
+  <p style="font-size: 1.2rem; color: #4a5568; max-width: 600px; margin: 0 auto;">Découvrez l'informatique à travers des cours interactifs, des exercices pratiques et des projets passionnants.</p>
+</div>
+
 ---
 
 <style>
