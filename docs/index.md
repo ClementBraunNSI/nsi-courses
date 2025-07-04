@@ -26,7 +26,7 @@
 
 .level-card:hover img {
     box-shadow: 0 0 15px rgba(255, 127, 42, 0);
-~~~~    filter: drop-shadow(0 0 10px rgba(255, 198, 55, 0.8));
+    filter: drop-shadow(0 0 10px rgba(255, 198, 55, 0.8));
     transform: scale(1.1) rotate(5deg);
     transition: all 0.3s ease;
 }
