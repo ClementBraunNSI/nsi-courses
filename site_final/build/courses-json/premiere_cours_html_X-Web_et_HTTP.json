@@ -1,0 +1,61 @@
+{
+  "title": "Le Web et HTTP",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Historique et définitions",
+      "content": "Le Web (World Wide Web) a été créé en 1989 au CERN (Centre Européen pour la Recherche Nucléaire) par une équipe dirigée par **Tim Berners-Lee** et **Robert Cailliau**. L'objectif initial était de développer une application permettant l'échange de données scientifiques sur Internet.\nLa technologie du Web repose sur l'utilisation d'**hyperliens**, qui sont des liens cliquables permettant de naviguer entre différentes ressources. Ces hyperliens permettent d'accéder à des données stockées sur des **serveurs**, comme des pages web, des images ou tout autre type de contenu.\n**Anecdote :** La toute première page web, créée par Tim Berners-Lee, est toujours accessible à l'adresse : [première page web](http://info.cern.ch/hypertext/WWW/TheProject.html)"
+    },
+    {
+      "level": 2,
+      "title": "Architecture client-serveur",
+      "content": "Le Web fonctionne selon un modèle **client-serveur** :\n- Le **client** est généralement un navigateur web (Chrome, Firefox, Safari, etc.) qui envoie des requêtes pour obtenir des ressources.\n- Le **serveur** est un ordinateur qui héberge les ressources web et répond aux requêtes des clients.\nLe processus de communication se déroule ainsi :\n1. L'utilisateur saisit une URL ou clique sur un lien dans son navigateur (client)\n2. Le client envoie une requête au serveur approprié\n3. Le serveur traite la requête et renvoie une réponse\n4. Le client (navigateur) interprète la réponse et affiche le contenu à l'utilisateur"
+    },
+    {
+      "level": 2,
+      "title": "Les URL et le système DNS",
+      "content": "Une **URL** (Uniform Resource Locator) est l'adresse qui permet de localiser une ressource sur le Web. Elle est composée de plusieurs parties :\n```\nprotocole://sous-domaine.nom-de-domaine.extension/chemin/ressource\n```\nExemple : `https://www.example.com/dossier/page.html`\n- **Protocole** : `https://` (indique le protocole de communication utilisé)\n- **Sous-domaine** : `www` (subdivision du domaine principal)\n- **Nom de domaine** : `example` (nom unique identifiant le site)\n- **Extension** : `.com` (catégorie du domaine)\n- **Chemin** : `/dossier/page.html` (localisation de la ressource sur le serveur)\nLe système **DNS** (Domain Name System) est un service qui traduit les noms de domaine en adresses IP. Sans DNS, nous devrions mémoriser les adresses IP de chaque site web (par exemple, 172.217.20.163 pour Google).\nLorsqu'un utilisateur saisit une URL :\n1. Le navigateur vérifie d'abord son cache local pour voir s'il connaît déjà l'adresse IP correspondante\n2. Si non, une requête DNS est envoyée à un serveur DNS\n3. Le serveur DNS renvoie l'adresse IP correspondante\n4. Le navigateur peut alors établir une connexion avec le serveur web à cette adresse IP"
+    },
+    {
+      "level": 2,
+      "title": "Le protocole HTTP",
+      "content": "**HTTP** (HyperText Transfer Protocol) est le protocole de communication utilisé pour échanger des informations sur le Web. Il définit comment les messages sont formatés et transmis entre clients et serveurs."
+    },
+    {
+      "level": 3,
+      "title": "Fonctionnement général",
+      "content": "HTTP fonctionne selon un principe de **requête-réponse** :\n1. Le client envoie une **requête HTTP** au serveur\n2. Le serveur traite la requête et renvoie une **réponse HTTP**\nChaque requête et réponse HTTP contient :\n- Une **ligne de départ** (méthode, URL, version pour les requêtes ; version, code d'état pour les réponses)\n- Des **en-têtes** (headers) contenant des métadonnées\n- Un **corps** (body) optionnel contenant les données"
+    },
+    {
+      "level": 3,
+      "title": "Les méthodes HTTP",
+      "content": "Les principales méthodes HTTP sont :\n- **GET** : Demande une ressource au serveur (sans modifier les données)\n  ```\n  GET /utilisateurs/profil?id=123 HTTP/1.1\n  Host: www.example.com\n  User-Agent: Mozilla/5.0\n  Accept-Language: fr-FR\n  ```\n- **POST** : Envoie des données au serveur (pour créer ou modifier une ressource)\n  ```\n  POST /utilisateurs/inscription HTTP/1.1\n  Host: www.example.com\n  Content-Type: application/x-www-form-urlencoded\n  Content-Length: 54\n  nom=Dupont&prenom=Jean&email=jean.dupont@email.com\n  ```\n- **PUT** : Remplace complètement une ressource existante\n- **DELETE** : Supprime une ressource"
+    },
+    {
+      "level": 3,
+      "title": "Les codes de statut HTTP",
+      "content": "Les réponses HTTP contiennent un code de statut qui indique le résultat du traitement de la requête :\n- **1xx** : Information (la requête a été reçue et le processus continue)\n- **2xx** : Succès\n  - 200 OK : La requête a réussi\n  - 201 Created : La ressource a été créée avec succès\n- **3xx** : Redirection\n  - 301 Moved Permanently : La ressource a été déplacée définitivement\n  - 304 Not Modified : La ressource n'a pas été modifiée depuis la dernière requête\n- **4xx** : Erreur client\n  - 400 Bad Request : La requête est mal formée\n  - 403 Forbidden : Accès refusé\n  - 404 Not Found : La ressource demandée n'existe pas\n- **5xx** : Erreur serveur\n  - 500 Internal Server Error : Erreur interne du serveur\n  - 503 Service Unavailable : Le serveur est temporairement indisponible"
+    },
+    {
+      "level": 3,
+      "title": "HTTP et sécurité : HTTPS",
+      "content": "**HTTPS** (HTTP Secure) est une version sécurisée du protocole HTTP qui utilise le chiffrement SSL/TLS pour protéger les communications entre le client et le serveur.\nAvantages de HTTPS :\n- **Confidentialité** : Les données échangées sont chiffrées et ne peuvent pas être lues par des tiers\n- **Intégrité** : Garantit que les données n'ont pas été modifiées pendant la transmission\n- **Authentification** : Vérifie l'identité du serveur auquel le client se connecte\nLe fonctionnement de HTTPS repose sur des certificats numériques délivrés par des autorités de certification (CA) qui attestent de l'identité du site web."
+    },
+    {
+      "level": 3,
+      "title": "Pages Web statiques",
+      "content": "Une **page web statique** est une page dont le contenu est fixe et identique pour tous les utilisateurs. Elle est généralement écrite en HTML et CSS, et son contenu ne change pas à moins que le développeur ne modifie manuellement le code source.\nCaractéristiques :\n- Contenu identique pour tous les utilisateurs\n- Ne nécessite pas de traitement côté serveur\n- Chargement rapide\n- Facile à mettre en cache\n- Idéale pour les sites informatifs qui changent rarement"
+    },
+    {
+      "level": 3,
+      "title": "Pages Web dynamiques",
+      "content": "Une **page web dynamique** est générée à la volée, souvent en fonction des actions de l'utilisateur ou d'autres paramètres. Elle utilise généralement des langages de programmation côté serveur (PHP, Python, JavaScript avec Node.js, etc.) et peut interagir avec des bases de données. \nExemple : \nCaractéristiques :\n- Contenu personnalisé selon l'utilisateur ou d'autres paramètres\n- Nécessite un traitement côté serveur\n- Peut inclure des interactions utilisateur complexes\n- Permet la gestion de contenu, l'authentification des utilisateurs, etc.\n- Utilisée pour les applications web, les réseaux sociaux, les sites e-commerce, etc."
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

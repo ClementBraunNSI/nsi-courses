@@ -1,0 +1,76 @@
+{
+  "title": "🌐 Introduction aux réseaux",
+  "sections": [
+    {
+      "level": 2,
+      "title": "🔌 Qu'est ce qu'un réseau internet",
+      "content": "Un **réseau local** est un ensemble de machines reliées entre elles qui échangent des informations en ne passant que par le routeur ou un switch.\nUn **réseau internet** est un ensemble de réseaux locaux qui communiquent entre eux en passant par Internet.\nDans un réseau, on retrouve un certain nombre de machines : \n- 💻 Des ordinateurs, smartphones, tablettes, consoles ...\n- 🏠 IOT : ensemble des objets connectés (par exemple : domotique)\n- 🔄 Un (ou plusieurs) switchs est un élément d'un réseau qui permet de relier les machines entre elles pour s'échanger des données dans un réseau local.\n- 📡 un routeur (ou plusieurs) routeur est un élément qui permet de relier plusieurs réseaux entre eux.\nCes machines sont reliées par :  \n- 🔌 des câbles (RJ45)\n- 📶 Ondes (exemple : WiFi (Wireless Fidelity) ou 5G)\n- 💡 par fibre optique\nLa communication est définie et régie par des protocoles. \nUn protocole est un ensemble de règles et d'actions prédéfinies à réaliser dans un ordre précis."
+    },
+    {
+      "level": 3,
+      "title": "🌍 Distinction Web et Internet",
+      "content": "Internet correspond à **l'ensemble des réseaux organisés** communiquant ensemble.\nLe Web correspond à une application d'Internet qui rend accessible des ressources grâce aux **liens hypertextes** (que l'on nomme usellement hyperliens)."
+    },
+    {
+      "level": 4,
+      "title": "🔄 Topologies de réseaux",
+      "content": "Une topologie dans les réseaux correspond à la disposition des machines dans un réseau. \nOn en distingue plusieurs :  \n- ⭕ Anneau\n- ⭐ Étoile (en général celui utilisé de manière domestique)\n- 📊 Bus\n- 🌳 Hierarchique\n- 🤝 P2P"
+    },
+    {
+      "level": 3,
+      "title": "💳 Adresse MAC",
+      "content": "Une adresse MAC (Media Access Control) correspond à l'adresse physique d'une interface d'une carte Réseau qui est **unique** et propre à la carte.\nElle est constituée d'un ensemble de 6 groupes de 16 bits représentés en hexadécimal.\nExemple : a8:9f:d9:4c:5c:d9\n**Remarque : Un ordinateur possède une carte réseau qui a plusieurs interfaces.**\nLe switch dans un réseau utilise l'adresse MAC de la carte réseau pour retransmettre les données à la bonne machine."
+    },
+    {
+      "level": 3,
+      "title": "🌐 Adresse IP",
+      "content": "L'adresse IP est l'adresse d'une machine sur un réseau. Elle est attribuée à la première connexion de la machine sur le réseau.\nElle est constituée d'un ensemble de 4 octects représentés en décimal ou pour la machine leur représentation en binaire.\nExemple : $123.32.41.74_2$ pour les humains et $01111011.00100000.00101001.01001010_2$ pour les machines.\nGrâce à ce modèle on peut définir $2^24$ adresse différentes, soient $4 294 967 296$ adresses différentes.\nUne adresse IP est composée de deux choses :\n- Une partie correspondant à l'adresse réseau, c'est à dire à quel réseau elle est rattachée.\n- Une partie machine qui correspond au numéro de la machine dans le réseau précédemment choisi.\nCes deux parties sont distinguées dans l'adresse par le nombre de bits qui leurs sont associés.\nOn définit un **masque** comme étant le nombre de bits nécessaires pour représenter l'adresse du réseau.\nEn général, pour retrouver l'adresse du réseau d'une machine à l'aide de son adresse IP, on réalise une opération logique **ET** sur chacun des bits.\nCe masque est représenté à la fin de l'adresse IP précédée d'un / (slash), on appelle cela la notation **CIDR** de l'adresse.\nExemple :\nOn dispose de l'adresse 123.32.41.74/16.\nCela veut dire qu'il y a 16 bits réservés pour représenter l'adresse réseau.\nOn a alors le masque suivant : $11111111.11111111.00000000.00000000_2$ et l'adresse suivante $01111011.00100000.00101001.01001010_2$.\nPour retrouver l'adresse réseau, on réalise une opération **ET logique** (+ ou &) sur les deux adresses.\n$~~~~11111111.11111111.00000000.00000000_2\\newline\\And~01111011.00100000.00101001.01001010_2\\newline~~~~01111011.00100000.00000000.00000000_2$\nOn retrouve l'adresse du réseau qui est 123.32.0.0.\n!!! danger Adresses réservées\n    Il existe diverses adresse d'un réseau qui sont réservées.\n    On a :\n    - L'adresse du réseau, explicitée précédemment qui est inutilisable.\n    - L'adresse de multiplexage (ou broadcast) qui se termine par 255.  \n        Celle-ci sert à l'envoi de messages sur le réseau entier, donc réservée.\nOn peut définir un certain nombre de machines pour un réseau et cela est défini par le nombre de bits réservés à la partie machine (moins les 2 précédemment citées).\n!!! Tip Calculer le nombre de machines d'un réseau\n    On peut calculer le nombre d'adresses disponibles facilement : $\\texttt{nombre d'adresses disponibles} = 2^{\\texttt{nombre de bits de la partie machine}}-2$.\nPour notre exemple, on sait que l'on a 16 bits réservés à l'identification de machines, cela revient à $2^{16}-2 = 65536 - 2=  65534$ machines possibles.\nHistoriquement, on regroupait les adresses IP dans des classes pour les attribuer à divers organismes."
+    },
+    {
+      "level": 4,
+      "title": "Classes d'adresses IP",
+      "content": "| Classe | Plage d'adresses            | Nombre de réseaux | Nombre d'hôtes par réseau | Utilisation                            |\n|--------|-----------------------------|-------------------|---------------------------|----------------------------------------|\n| A      | 1.0.0.0 - 126.0.0.0         | 128               | 16 777 214                | Principalement pour des réseaux très grands comme les gouvernements ou les grandes entreprises. |\n| B      | 128.0.0.0 - 191.255.0.0     | 16 384            | 65 534                    | Pour des réseaux de taille moyenne comme les universités ou les entreprises de taille moyenne. |\n| C      | 192.0.0.0 - 223.255.255.0   | 2 097 152         | 254                       | Pour des petits réseaux comme les petites entreprises. |\n| D      | 224.0.0.0 - 239.255.255.255 | -                 | -                         | Pour le multicast (transmission de données à plusieurs destinataires simultanément). |\n| E      | 240.0.0.0 - 255.255.255.255 | -                 | -                         | Réservé pour des utilisations futures et des fins expérimentales. |"
+    },
+    {
+      "level": 4,
+      "title": "IPv6",
+      "content": "L'adresse IPv6 est composée d'un ensemble de 8 groupes de 4 symboles en hexadécimal.\nUn symbole hexadécimal est composé de 4 bits.\nCela revient à $2^{8*16} = 2^{128} \\approx 3.40 \\times 10^{38}$ adresses différentes."
+    },
+    {
+      "level": 3,
+      "title": "Modèle TCP/IP",
+      "content": "<img src=\"Modele_IP.png\" align='center' width = 50% />\nLe modèle TCP/IP est un modèle en couche qui permet d'illustrer l'encapsulation des données pour permettre leur envoi, leur réception et leur traitement."
+    },
+    {
+      "level": 4,
+      "title": "Processus d'Encapsulation",
+      "content": "L'encapsulation est un concept clé du modèle TCP/IP :\n1. Les données sont générées au niveau de la couche Application\n2. Chaque couche inférieure ajoute ses propres informations (en-têtes)\n3. À la réception, chaque couche retire ses informations\n4. Les données sont reconstituées dans leur état original\n!!! tip Analogie Postale\n    On peut comparer le modèle TCP/IP à un système postal :\n    - Couche Application = Rédaction de la lettre\n    - Couche Transport = Mise sous enveloppe, numérotation\n    - Couche Internet = Adressage, choix de l'acheminement\n    - Couche Accès Réseau = Distribution physique"
+    },
+    {
+      "level": 4,
+      "title": "Structure des Couches",
+      "content": "Chaque couche a sa tâche prédéfinie, notamment grâce aux protocoles qui sont en jeu."
+    },
+    {
+      "level": 5,
+      "title": "Couche Accès Réseau",
+      "content": "La couche accès réseau explicite la liaison entre les machines de manière physique (câbles, WiFi...) et la réception des données brutes (bits, ondes lumineuses, signal analogique) aux machines via les switchs ou les routeurs grâce aux adresses physiques (MAC)."
+    },
+    {
+      "level": 5,
+      "title": "Couche Internet",
+      "content": "La couche Internet assure le routage des paquets de données. Elle utilise les adresses IP pour identifier et acheminer les paquets entre différents réseaux. Les protocoles principaux de cette couche sont :\n- IP (Internet Protocol) pour l'adressage et le routage\n- ICMP (Internet Control Message Protocol) pour les messages de contrôle et de diagnostic"
+    },
+    {
+      "level": 5,
+      "title": "Couche Transport",
+      "content": "Cette couche garantit la qualité et la fiabilité de la transmission des données. Deux protocoles principaux existent :\n- TCP (Transmission Control Protocol) \n    - Offre une transmission fiable\n    - Garantit l'ordre et l'intégrité des données\n    - Adapté aux transmissions nécessitant une précision (web, emails)\n- UDP (User Datagram Protocol)\n    - Transmission rapide\n    - Sans garantie de réception\n    - Utilisé pour les flux temps réel (streaming, jeux en ligne)"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "VI-Internet_et_Reseaux",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

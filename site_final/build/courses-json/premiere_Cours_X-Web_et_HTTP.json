@@ -1,0 +1,26 @@
+{
+  "title": "HTML : le langage du Web",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Structure d'un document HTML",
+      "content": "Voici la structure de base d'un document HTML :\n```html\n<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Titre de la page</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <header>\n        <h1>Titre principal</h1>\n        <nav>\n            <ul>\n                <li><a href=\"#\">Accueil</a></li>\n                <li><a href=\"#\">À propos</a></li>\n                <li><a href=\"#\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    <main>\n        <section>\n            <h2>Section 1</h2>\n            <p>Contenu de la section 1.</p>\n        </section>\n        <section>\n            <h2>Section 2</h2>\n            <p>Contenu de la section 2.</p>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2023 Mon Site Web</p>\n    </footer>\n</body>\n</html>\n```"
+    },
+    {
+      "level": 2,
+      "title": "Les principales balises HTML",
+      "content": "- **Balises de structure** :\n  - `<!DOCTYPE html>` : Déclare le type de document (HTML5)\n  - `<html>` : Élément racine du document\n  - `<head>` : Contient les métadonnées\n  - `<body>` : Contient le contenu visible\n  - `<header>`, `<main>`, `<footer>`, `<section>`, `<article>`, `<nav>` : Balises sémantiques pour structurer le contenu\n- **Balises de texte** :\n  - `<h1>` à `<h6>` : Titres de différents niveaux\n  - `<p>` : Paragraphe\n  - `<strong>` : Texte important (généralement en gras)\n  - `<em>` : Texte mis en emphase (généralement en italique)\n- **Balises de lien et média** :\n  - `<a href=\"url\">` : Lien hypertexte\n  - `<img src=\"image.jpg\" alt=\"description\">` : Image\n  - `<video>`, `<audio>` : Éléments multimédias\n- **Balises de liste** :\n  - `<ul>` : Liste non ordonnée (à puces)\n  - `<ol>` : Liste ordonnée (numérotée)\n  - `<li>` : Élément de liste\n- **Balises de tableau** :\n  - `<table>` : Définit un tableau\n  - `<tr>` : Ligne de tableau\n  - `<th>` : Cellule d'en-tête\n  - `<td>` : Cellule de données\n- **Balises de formulaire** :\n  - `<form>` : Définit un formulaire\n  - `<input>` : Champ de saisie\n  - `<textarea>` : Zone de texte multiligne\n  - `<button>` : Bouton\n  - `<select>` et `<option>` : Liste déroulante"
+    },
+    {
+      "level": 2,
+      "title": "Formulaires et transmission de données",
+      "content": "Les formulaires HTML permettent aux utilisateurs d'envoyer des données au serveur. Ils sont définis par la balise `<form>` et contiennent divers éléments interactifs comme des champs de texte, des cases à cocher, des boutons radio, etc."
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Travaux Pratiques : Algorithme des K Plus Proches Voisins (KNN)",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Objectif",
+      "content": "L'objectif de ce TP est de mettre en pratique l'algorithme des K Plus Proches Voisins (KNN) sur un petit ensemble de données."
+    },
+    {
+      "level": 3,
+      "title": "Contexte",
+      "content": "Imaginons que nous ayons des données sur des fruits, caractérisés par leur **douceur** (sur une échelle de 1 à 10) et leur **acidité** (sur une échelle de 1 à 10). Nous voulons prédire si un nouveau fruit est une \"Pomme\" ou une \"Orange\".\nNos données d'entraînement sont :\n| Fruit   | Douceur | Acidité | Type   |\n|---------|---------|---------|--------|\n| Fruit 1 | 7       | 3       | Pomme  |\n| Fruit 2 | 8       | 2       | Pomme  |\n| Fruit 3 | 3       | 7       | Orange |\n| Fruit 4 | 4       | 8       | Orange |\n| Fruit 5 | 6       | 4       | Pomme  |\n| Fruit 6 | 2       | 6       | Orange |\nNouveau fruit à classifier : **Fruit X (Douceur = 5, Acidité = 5)**\n!!! fox_exercice \"À réaliser\"\n    1.  **Représenter les données** :\n        Créer une liste de dictionnaires pour stocker les données d'entraînement.\n    2.  **Calculer la distance euclidienne** :\n        Écrire une fonction `distance_euclidienne(point1, point2)` qui prend deux points (chacun étant un tuple ou une liste de coordonnées, par exemple `(douceur, acidite)` et retourne leur distance euclidienne).\n        Rappel : `d = √((x2-x1)² + (y2-y1)²) `\n    3.  **Trouver les K voisins** :\n        Écrire une fonction `trouver_voisins(donnees_entrainement, point_test, k)` qui :\n        *   Calcule la distance entre `point_test` et chaque point dans `donnees_entrainement`.\n        *   Stocke ces distances avec les types de fruits correspondants.\n        *   Trie les voisins par distance croissante.\n        *   Retourne les `k` premiers voisins (les plus proches).\n    4.  **Prédire la classe** :\n        Écrire une fonction `predire_classe(voisins)` qui prend la liste des `k` voisins et retourne la classe majoritaire parmi eux.\n    5.  **Mettre tout ensemble** :\n        Utiliser les fonctions précédentes pour prédire la classe du **Fruit X** avec K=3."
+    },
+    {
+      "level": 3,
+      "title": "Contexte",
+      "content": "Nous allons appliquer l'algorithme KNN à un ensemble de données simplifié de fleurs Iris, caractérisées par la longueur de leurs sépales et de leurs pétales. Nous voulons distinguer deux types de fleurs : Setosa et Versicolor.\nNos données d'entraînement sont :\n| Fleur      | Longueur Sépale | Longueur Pétale | Type       |\n|------------|-----------------|-----------------|------------|\n| Fleur A    | 5.1             | 1.4             | Setosa     |\n| Fleur B    | 4.9             | 1.4             | Setosa     |\n| Fleur C    | 6.0             | 5.1             | Versicolor |\n| Fleur D    | 5.5             | 4.0             | Versicolor |\n| Fleur E    | 5.2             | 1.5             | Setosa     |\n| Fleur F    | 6.3             | 4.8             | Versicolor |\nNouvelle fleur à classifier : **Fleur Y (Longueur Sépale = 5.8, Longueur Pétale = 3.5)**\n!!! fox_exercice \"À réaliser\"\n    1.  **Représenter les données** :\n        Créer une liste de dictionnaires pour stocker les données d'entraînement, incluant les mesures et le type de fleur.\n    2.  **Calculer la distance euclidienne** :\n        Écrire la fonction `distance_euclidienne` de l'Exercice 1 pour calculer la distance entre deux points (ici, `(longueur_sepale, longueur_petale)`).\n    3.  **Trouver les K voisins** :\n        Écrire la fonction `trouver_voisins` pour trouver les K voisins les plus proches de la **Fleur Y** dans les données d'entraînement.\n    4.  **Prédire la classe** :\n        Écrire la fonction `predire_classe` pour déterminer la classe majoritaire parmi les K voisins.\n    5.  **Mettre tout ensemble** :\n        Utiliser les fonctions précédentes pour prédire la classe de la **Fleur Y** avec K=5."
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "XI-K_plus_proches_voisins",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

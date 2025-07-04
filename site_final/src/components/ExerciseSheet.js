@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/ExerciseSheet.css';
 
 const ExerciseSheet = ({ jsonData, title = "Fiche d'exercices" }) => {
@@ -48,13 +48,7 @@ const ExerciseSheet = ({ jsonData, title = "Fiche d'exercices" }) => {
     return formattedCode;
   };
 
-  // Fonction pour échapper le HTML
-  const escapeHtml = (text) => {
-    if (!text) return '';
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-  };
+
 
   // Configuration des icônes et couleurs par difficulté
   const difficultyConfig = {

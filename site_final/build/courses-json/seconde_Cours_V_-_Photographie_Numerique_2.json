@@ -1,0 +1,36 @@
+{
+  "title": "Photographie Numérique 2 : Les images couleurs",
+  "sections": [
+    {
+      "level": 2,
+      "title": "La vision humaine et les capteurs d'appareils photo",
+      "content": ""
+    },
+    {
+      "level": 3,
+      "title": "Le fonctionnement de l'oeil",
+      "content": "Avant de comprendre comment une image est formée, il faut comprendre comment l’oeil voit ce qui l’entoure.\nLa cornée sert à faire converger les rayons de la lumière.\nL’iris permet d’ajuster la quantité de lumière qui rentre dans la pupille.\nLe cristallin permet de faire la mise au point pour voir de manière nette en projettant les rayons lumineux sur la rétine.\nLa rétine contient de nombreuses cellules qui réagissent à la lumières. Ce sont les cônes.\nIl existe trois types de cônes : les verts, les bleus et les rouge.\n**Remarque** : Il y a plus de cônes verts que de bleus et rouges.\nLes cônes transforment l’énergie lumineuse en impulsion électriques qui sont transmises au cerveau grâce au nerf optique. Le cerveau à l’aide des impulsions électriques qui sont dépendantes les proportions de vert, bleu et rouge, les additionne et permet de reconstituer toutes les couleurs.\n**Grâce au paragraphe précédent, remplir le schéma suivant :**\n![oeil](/courses-json/images/oeil.png)"
+    },
+    {
+      "level": 2,
+      "title": "Le capteur photo",
+      "content": "Le fonctionnement du capteur d’un appareil photo est très similaire au fonctionnement de l’oeil.\nLa lumière suit un chemin particulier. Elle traverse dans un premier temps **l’objectif** (une série de lentilles qui permet d’adapter la netteté et faire converger la lumière vers le capteur.\nElle continue son chemin à travers **le diaphragme** qui permet d’adapter la **quantité de lumière** qui se dirige vers le capteur numérique.\nElle traverse ce que l’on appelle la **matrice de Bayer** qui est un filtre qui permet de scinder les différentes couleurs de la lumière. Ce filtre est superposé au **capteur numérique**.\nCe capteur est composé de beaucoup de cellules qui réagissent à la lumière : on les appelle **photosites**.  \nLes photosites transforment l’énergie lumineuse (Rouge, Bleu et Vert) en signal électrique (à la manière des cônes rétiniens).\n**Grâce au paragraphe précédent, remplir le schéma suivant :**\n![apphoto](/courses-json/images/apphoto.png)"
+    },
+    {
+      "level": 2,
+      "title": "L'image en couleur",
+      "content": "Pour l’image en couleur, le pixel comprend trois composantes qui permettent de recréer une couleur : **le rouge, le vert et le bleu**. On parle de composantes **R V B**.\nChaque pixel est composé d’un ensemble de **trois valeurs** représentant la quantité de rouge, de vert et de bleu qui le compose entre 0 et 255.\nOn peut définir le pixel Rouge par les valeurs (255, 0, 0), le vert (0,255,0) et le bleu (0,0,255)\nLes couleurs sont donc des combinaisons de ces composantes en faisant varier leur intensité.\nOn peut définir d’autres couleurs comme le :\n- **Cyan (0 , 255, 255)**\n- **Magenta (255, 255, 0)**\n- **Jaune ( 255, 255, 0)**\n- **Blanc (255, 255, 255)**\n- **Noir (0, 0, 0)**\n- **Orange Renard (195, 88, 23)**\n**Colorier les cases en fonction de la valeur du pixel:**\n![pix_coul](/courses-json/images/pix_to_couleur.png)"
+    },
+    {
+      "level": 2,
+      "title": "Les images et Python",
+      "content": "La bibliothèque **PIL** permet de réaliser des traitements sur des images grâce à des fonctions.\n*Image.open*(**chemin de l’image**) permet d’associer à une variable une image grâce à son chemin.\n*Image.format* permet de donner le format de l’image.\n*Image.size* permet de donner les dimensions de l’image.\n*Image.mode* permet de donner le mode de l’image (RVB, Nuances de Gris).\n*Image.crop*( **(gauche, haut, droite, bas)** ) permet de découper une image grâce aux coordonnées.\n*Image.split*(  ) permet d'obtenir chacune des composantes d'un pixel dans 3 variables à définir.\n*Image.rotate*( **angle** ) permet de tourner l’image dans le sens horaire d’un certain angle.\n*Grâce à la notice précédente, légender le programme suivant et expliquer ce qu’il fait.*\n![progpil](/courses-json/images/prog_pil.png)\n_______________________________________________________________________________________\n______________________________________________________________________________________________________________________________________________________________________________\n_______________________________________________________________________________________\n_______________________________________________________________________________________\n_______________________________________________________________________________________\n*Ecrire un programme qui permet d’ouvrir l’image fournie, la tourne de 45 degrés et l’affiche.*\n*Écrire un programme qui permet d’ouvrir l’image fournie et d’afficher les trois composantes rouge, bleu et vert.*\n*Écrire un programme qui permet de convertir l’image fournie en nuances de gris. Vous utiliserez Image.convert( ).*"
+    }
+  ],
+  "metadata": {
+    "level": "seconde",
+    "chapter": "V_-_Photographie_Numerique",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

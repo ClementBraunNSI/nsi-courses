@@ -1,0 +1,103 @@
+{"facile": [
+      {
+        "id": "afficher_notes",
+        "title": "Création et accès",
+        "enonce": "Écrire une fonction `afficher_notes` qui prend en paramètre un dictionnaire de notes et affiche la moyenne de chaque élève sous la forme : \"Alice a une moyenne de 15.\". Ajouter un commentaire selon la moyenne : \"Excellent\" pour une moyenne ≥ 16, \"Bien\" pour une moyenne entre 12 et 15 inclus, et \"À améliorer\" pour une moyenne < 12.",
+        "exemple": "notes = {'Alice': 15, 'Bob': 12, 'Charlie': 18, 'Diana': 14}",
+        "correction": "def afficher_notes(notes):\n    for eleve in notes:\n        moyenne = notes[eleve]\n        print(eleve + \" a une moyenne de \" + str(moyenne) + \".\")\n        if moyenne >= 16:\n            print(\"Excellent\")\n        elif 12 <= moyenne <= 15:\n            print(\"Bien\")\n        else:\n            print(\"À améliorer\")",
+        "explication": "On parcourt le dictionnaire avec une boucle for et on accède aux valeurs avec la clé."
+      },
+      {
+        "id": "ajouter_eleve",
+        "title": "Modification et ajout",
+        "enonce": "Écrire une fonction `ajouter_eleve(notes, nom, moyenne)` qui ajoute un nouvel élève au dictionnaire.",
+        "exemple": "",
+        "correction": "def ajouter_eleve(notes, nom, moyenne):\n    # On vérifie d'abord si l'élève existe déjà\n    if nom in notes:\n        print(\"L'élève \" + nom + \" existe déjà !\")\n    else:\n        # Si l'élève n'existe pas, on l'ajoute\n        notes[nom] = moyenne\n        print(\"L'élève \" + nom + \" a été ajouté avec la moyenne de \" + str(moyenne))",
+        "explication": "On utilise l'opérateur 'in' pour vérifier l'existence d'une clé avant d'ajouter."
+      },
+      {
+        "id": "modifier_moyenne",
+        "title": "Parcours de dictionnaire",
+        "enonce": "Écrire une fonction `modifier_moyenne(notes, nom, nouvelle_moyenne)` qui modifie la moyenne d'un élève. Gérer le cas où l'élève à modifier n'existe pas.",
+        "exemple": "",
+        "correction": "def modifier_moyenne(notes, nom, nouvelle_moyenne):\n    # On vérifie si l'élève existe dans le dictionnaire\n    if nom in notes:\n        # Si oui, on modifie sa moyenne\n        notes[nom] = nouvelle_moyenne\n        print(\"La moyenne de \" + nom + \" a été mise à jour à \" + str(nouvelle_moyenne))\n    else:\n        print(\"L'élève \" + nom + \" n'existe pas dans la liste\")",
+        "explication": "Toujours vérifier l'existence d'une clé avant de la modifier pour éviter les erreurs."
+      },
+      {
+        "id": "eleves_mention",
+        "title": "Dictionnaire de notes",
+        "enonce": "Écrire une fonction `eleves_mention(notes, seuil)` qui renvoie la liste des élèves ayant une moyenne ≥ seuil. Afficher également le nombre total d'élèves ayant cette mention.",
+        "exemple": "",
+        "correction": "def eleves_mention(notes, seuil):\n    # On crée une liste vide pour stocker les élèves\n    eleves_avec_mention = []\n    # On parcourt le dictionnaire\n    for eleve in notes:\n        if notes[eleve] >= seuil:\n            eleves_avec_mention.append(eleve)\n    # On affiche le résultat\n    print(str(len(eleves_avec_mention)) + \" élèves ont une mention\")\n    return eleves_avec_mention",
+        "explication": "On filtre les élèves selon un critère et on les stocke dans une liste."
+      },
+      {
+        "id": "voitures_couleur",
+        "title": "Gestion d'un concessionnaire",
+        "enonce": "Un dictionnaire `voitures` stocke des informations sur les voitures d'un concessionnaire. Écrire une fonction `voitures_par_couleur` qui renvoie la liste des voitures d'une couleur donnée.",
+        "exemple": "voitures = {'Peugeot 208': {'prix': 15000, 'couleur': 'rouge', 'année': 2020}, 'Renault Clio': {'prix': 12000, 'couleur': 'bleu', 'année': 2019}}",
+        "correction": "def voitures_par_couleur(voitures, couleur_recherchee):\n    voitures_trouvees = []\n    for modele in voitures:\n        if voitures[modele]['couleur'] == couleur_recherchee:\n            voitures_trouvees.append(modele)\n    return voitures_trouvees",
+        "explication": "On accède aux dictionnaires imbriqués avec plusieurs niveaux de clés."
+      }
+    ],
+    "moyen": [
+      {
+        "id": "inventaire_magasin",
+        "title": "Gestion d'inventaire",
+        "enonce": "Un dictionnaire `inventaire` représente le stock d'un magasin. Écrire une fonction `produits_en_rupture` qui renvoie la liste des produits ayant un stock ≤ seuil.",
+        "exemple": "inventaire = {'pommes': 50, 'bananes': 3, 'oranges': 0, 'poires': 15}",
+        "correction": "def produits_en_rupture(inventaire, seuil):\n    produits_rupture = []\n    for produit in inventaire:\n        if inventaire[produit] <= seuil:\n            produits_rupture.append(produit)\n    return produits_rupture",
+        "explication": "On filtre les produits selon leur niveau de stock."
+      },
+      {
+        "id": "statistiques_notes",
+        "title": "Statistiques de classe",
+        "enonce": "Écrire une fonction `statistiques_classe` qui prend un dictionnaire de notes et renvoie un dictionnaire contenant la moyenne générale, la note maximale, la note minimale et le nombre d'élèves.",
+        "exemple": "",
+        "correction": "def statistiques_classe(notes):\n    if len(notes) == 0:\n        return {'moyenne': 0, 'max': 0, 'min': 0, 'nombre_eleves': 0}\n    \n    total = 0\n    note_max = list(notes.values())[0]\n    note_min = list(notes.values())[0]\n    \n    for note in notes.values():\n        total += note\n        if note > note_max:\n            note_max = note\n        if note < note_min:\n            note_min = note\n    \n    moyenne = total / len(notes)\n    \n    return {\n        'moyenne': moyenne,\n        'max': note_max,\n        'min': note_min,\n        'nombre_eleves': len(notes)\n    }",
+        "explication": "On calcule plusieurs statistiques en parcourant une seule fois le dictionnaire."
+      },
+      {
+        "id": "fusion_dictionnaires",
+        "title": "Fusion de dictionnaires",
+        "enonce": "Écrire une fonction `fusionner_notes` qui prend deux dictionnaires de notes et renvoie un nouveau dictionnaire contenant toutes les notes. En cas de conflit (même élève dans les deux dictionnaires), prendre la moyenne des deux notes.",
+        "exemple": "",
+        "correction": "def fusionner_notes(notes1, notes2):\n    resultat = {}\n    \n    # Ajouter toutes les notes du premier dictionnaire\n    for eleve in notes1:\n        resultat[eleve] = notes1[eleve]\n    \n    # Ajouter les notes du second dictionnaire\n    for eleve in notes2:\n        if eleve in resultat:\n            # Si l'élève existe déjà, faire la moyenne\n            resultat[eleve] = (resultat[eleve] + notes2[eleve]) / 2\n        else:\n            # Sinon, ajouter directement\n            resultat[eleve] = notes2[eleve]\n    \n    return resultat",
+        "explication": "On gère les conflits de clés lors de la fusion de deux dictionnaires."
+      },
+      {
+        "id": "grouper_par_mention",
+        "title": "Groupement par mention",
+        "enonce": "Écrire une fonction `grouper_par_mention` qui prend un dictionnaire de notes et renvoie un dictionnaire où les clés sont les mentions ('Excellent', 'Bien', 'À améliorer') et les valeurs sont les listes d'élèves correspondantes.",
+        "exemple": "",
+        "correction": "def grouper_par_mention(notes):\n    mentions = {\n        'Excellent': [],\n        'Bien': [],\n        'À améliorer': []\n    }\n    \n    for eleve in notes:\n        moyenne = notes[eleve]\n        if moyenne >= 16:\n            mentions['Excellent'].append(eleve)\n        elif 12 <= moyenne <= 15:\n            mentions['Bien'].append(eleve)\n        else:\n            mentions['À améliorer'].append(eleve)\n    \n    return mentions",
+        "explication": "On crée un dictionnaire de listes pour regrouper les éléments par catégorie."
+      }
+    ],
+    "difficile": [
+      {
+        "id": "analyse_ventes",
+        "title": "Analyse des ventes",
+        "enonce": "Un dictionnaire `ventes` contient les ventes par mois et par produit. Écrire une fonction `analyser_ventes` qui renvoie le produit le plus vendu, le mois avec le plus de ventes totales, et le chiffre d'affaires total.",
+        "exemple": "ventes = {'janvier': {'pommes': 100, 'bananes': 80}, 'février': {'pommes': 120, 'bananes': 90, 'oranges': 50}}",
+        "correction": "def analyser_ventes(ventes):\n    # Calculer les ventes totales par produit\n    ventes_produits = {}\n    ventes_mois = {}\n    chiffre_total = 0\n    \n    for mois in ventes:\n        total_mois = 0\n        for produit in ventes[mois]:\n            quantite = ventes[mois][produit]\n            total_mois += quantite\n            chiffre_total += quantite\n            \n            if produit in ventes_produits:\n                ventes_produits[produit] += quantite\n            else:\n                ventes_produits[produit] = quantite\n        \n        ventes_mois[mois] = total_mois\n    \n    # Trouver le produit le plus vendu\n    produit_max = max(ventes_produits, key=ventes_produits.get)\n    \n    # Trouver le mois avec le plus de ventes\n    mois_max = max(ventes_mois, key=ventes_mois.get)\n    \n    return {\n        'produit_plus_vendu': produit_max,\n        'meilleur_mois': mois_max,\n        'chiffre_total': chiffre_total\n    }",
+        "explication": "Analyse complexe de données imbriquées avec calculs d'agrégation."
+      },
+      {
+        "id": "cache_fibonacci",
+        "title": "Cache pour Fibonacci",
+        "enonce": "Implémenter une fonction `fibonacci_cache` qui utilise un dictionnaire comme cache pour mémoriser les résultats déjà calculés de la suite de Fibonacci.",
+        "exemple": "",
+        "correction": "def fibonacci_cache(n, cache=None):\n    if cache is None:\n        cache = {}\n    \n    # Cas de base\n    if n <= 1:\n        return n\n    \n    # Vérifier si le résultat est déjà en cache\n    if n in cache:\n        return cache[n]\n    \n    # Calculer et mettre en cache\n    resultat = fibonacci_cache(n-1, cache) + fibonacci_cache(n-2, cache)\n    cache[n] = resultat\n    \n    return resultat",
+        "explication": "Utilisation d'un dictionnaire pour la mémoïsation et l'optimisation d'algorithmes récursifs."
+      },
+      {
+        "id": "index_inverse",
+        "title": "Index inversé",
+        "enonce": "Écrire une fonction `creer_index_inverse` qui prend un dictionnaire où les clés sont des documents et les valeurs sont des listes de mots, et renvoie un index inversé où les clés sont les mots et les valeurs sont les listes de documents contenant ce mot.",
+        "exemple": "documents = {'doc1': ['python', 'programmation'], 'doc2': ['python', 'web'], 'doc3': ['programmation', 'algorithme']}",
+        "correction": "def creer_index_inverse(documents):\n    index = {}\n    \n    for doc_id in documents:\n        for mot in documents[doc_id]:\n            if mot in index:\n                if doc_id not in index[mot]:\n                    index[mot].append(doc_id)\n            else:\n                index[mot] = [doc_id]\n    \n    return index",
+        "explication": "Création d'une structure de données inversée pour l'indexation et la recherche."
+      }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Stratégie par rapport valeur/masse",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Définitions et Concepts",
+      "content": "Les algorithmes gloutons sont des algorithmes qui ont pour principe de choisir à chaques étapes de leur résolution la meilleure solution locale.\nIls peuvent répondre **au problème d'optimisation** en cherchant pour chaque itération un extremum qui **minimise ou maximise (suivant le problème) chacune des sous-étapes**.\nOn peut faire le lien avec un algorithme vu dans le chapitre précédent : _______  \nEn général, ces opérations de recherche d'extremum ne sont pas couteuses mais **l'ensemble de celles-ci n'est pas forcément la solution optimale globale**.\nCette méthode est en générale plus efficace que la méthode par **force brute**.  \nLa méthode **bruteforce** donnera (théoriquement) la solution optimale en testant toutes les combinaisons possibles si la machine a les ressources necessaires.\nOn peut illustrer cela par deux exemples simples.\n!!! fox_exercice \"Alpiniste\"\n    Prenons le cas d'un alpiniste qui gravit la chaîne de montagne *Kaizen*.  \n    Il cherche à monter par les plus grands sommets qui se trouvent à sa droite ou sa gauche.  \n    Les conditions météorologiques ne sont pas les meilleures et il y a beaucoup de nuages par plateau qui l'empêchent de voir derrière chacun des pics qu'il rencontre.\n!!! fox_exercice \"Nombre le plus grand construit avec des chiffres\"\n    On dispose d'une liste de chiffres quelconques et on cherche à construire le nombre le plus grand sans trier la liste.  \n    Une solution à ce problème est de trouver le chiffre le plus grand de la liste, le mettre dans la \"colonne\" la plus à gauche du nombre et le retirer de la liste.  \n    On réalise cette opération jusqu'à ce que la liste soit vide.\n    *Exemple :*\n    Liste de départ = [4,2,9,6]  \n    On cherche le chiffre le plus grand : ___  \n    On le retire de la liste et on le rajoute dans une chaîne de caractères.  \n    On réalise cela pour chaque chiffre dans la liste, tant que celle-ci n'est pas vide.  \n    On obtient : \"9642\"\n______"
+    },
+    {
+      "level": 3,
+      "title": "Principe",
+      "content": "!!! fox_exercice \"Problème du rendu de monnaie\"\n    Le problème du rendu de monnaie consiste à rendre une certaine somme en limitant le nombre de pièces (ou billets) à rendre.  \n    On a une somme qui nous est donnée et on doit rendre la monnaie.  \n    On considère que (dans ce monde utopique), on dispose d'une infinité de billets/pièces de chaque coupure."
+    },
+    {
+      "level": 3,
+      "title": "Système monétaire de référence",
+      "content": "||||||||||\n|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|\n| 1    | 2    | 5    | 10   | 20   | 50   | 100  | 200  | 500  |"
+    },
+    {
+      "level": 3,
+      "title": "Exemple : Rendre 42€",
+      "content": "|     Étapes     | Liste de monnaies rendues | Somme restante à vendre |\n| :------------: | :-----------------------: | :---------------------: |\n| Initialisation |    monnaie =  [      ]    |  Monnaie_restante = ... |\n|    Étape 1     |      monnaie = [     ]       |  Monnaie_restante = ...  |\n|    Étape 2     |    monnaie = [     ]      |  Monnaie_restante = ...   |\n|    Étape 3     |   Monnaie = [     ]    |  Monnaie_restante = ...   |"
+    },
+    {
+      "level": 3,
+      "title": "Exercices de réflexion",
+      "content": "!!! fox_exercice \"Exercices rendu de monnaie\"\n    On souhaite rendre 49€ a un client.\n    1. On dispose d'un système monaitaire tel que Système 1 = {1,2,5,10,20,50}.  \n    **Quelle solution serait obtenue par l'algorithme glouton grâce au Système 1 ?  \n    Est-elle optimale?  \n    Si non, donner une solution optimale.**  \n    <br/>\n    2. On dispose d'un système monaitaire tel que Système 2 = {1,3,6,12,24,30}.  \n    **Quelle solution serait obtenue par l'algorithme glouton grâce au Système 2 ?  \n    Est-elle optimale?  \n    Si non, donner une solution optimale.**"
+    },
+    {
+      "level": 3,
+      "title": "Idée de l'algorithme",
+      "content": "L'algorithme de rendu de monnaie suit une approche gloutonne en sélectionnant à chaque étape la plus grande pièce ou billet possible ne dépassant pas le montant restant à rendre. Voici les étapes principales :\n!!! fox_exercice_test \"Idée de l'algorithme\"\n    **On initialise une liste vide pour stocker les pièces/billets à rendre triée.**  \n    **Pour chaque valeur de pièce/billet, en commençant par la plus grande :**  \n      - Tant que la valeur de la pièce/billet est inférieure ou égale au montant restant  \n      - On ajoute cette pièce/billet à la solution  \n      - On soustrait sa valeur du montant restant   \n    **On continue jusqu'à ce que le montant restant soit nul et on renvoie la liste de billets / pièces à rendre.**"
+    },
+    {
+      "level": 3,
+      "title": "Exercice : Rendu de monnaie",
+      "content": "!!! fox_exercice\n    **Écrire une fonction `rendu_monnaie(montant, systeme)` qui :**\n    - Prend en paramètre un montant à rendre et un système monétaire\n    - Retourne la liste des pièces/billets à rendre\n    - Utilise le moins de pièces possible\n    **Exemple** :\n    ```python\n    systeme = [50,20,10,5,2,1]\n    print(rendu_monnaie(53, systeme))  # Devrait afficher [50, 2, 1]\n    ```\n!!! fox_exercice_test \"Tester différents systèmes et montants\"\n    **Tester votre fonction avec les systèmes monnaie suivants :**  \n    - Système 1 = [50, 20, 10, 5, 2, 1]  \n    - Système 2 = [25, 20, 10, 5, 4, 1]  \n    - Système 3 = [100, 50, 20, 12, 7, 1]  \n    **Pour chaque système, tester avec différents montants et analyser si la solution trouvée est optimale.**\n______"
+    },
+    {
+      "level": 3,
+      "title": "Principe",
+      "content": "!!! fox_exercice \"Problème du sac à dos\"\n    Le problème du sac à dos consiste à remplir un sac avec une capacité maximale donnée en choisissant parmi différents objets ayant chacun une masse et une valeur.  \n    L'objectif est de maximiser la valeur totale des objets dans le sac tout en respectant la contrainte de capacité.  \n    On considère que chaque objet est unique et ne peut être fractionné."
+    },
+    {
+      "level": 3,
+      "title": "Exemple : Sac à dos de capacité 15kg",
+      "content": "| Objet  | A    | B    | C    | D    |\n| ------ | ---- | ---- | ---- | ---- |\n| Masse  | 4    | 7    | 5    | 3    |\n| Valeur | 10   | 15   | 8    | 5    |\n|     Étapes     | Objets dans le sac | Masse totale | Valeur totale |\n| :------------: | :----------------: | :----------: | :-----------: |\n| Initialisation |         []         |      0       |       0       |\n|    Étape 1     |        [B]         |      7       |      15       |\n|    Étape 2     |      [B, A]        |     11       |      25       |\n|    Étape 3     |    [B, A, D]       |     14       |      30       |"
+    },
+    {
+      "level": 3,
+      "title": "Stratégies de remplissage",
+      "content": "Il existe trois stratégies principales pour résoudre ce problème de manière gloutonne :\n1. **Par masse** : Choisir d'abord les objets les plus légers\n2. **Par valeur** : Choisir d'abord les objets de plus grande valeur\n3. **Par rapport valeur/masse** : Choisir les objets ayant le meilleur rapport valeur/masse"
+    },
+    {
+      "level": 3,
+      "title": "Idée de l'algorithme",
+      "content": "!!! fox_exercice_test \"Idée de l'algorithme\"\n    **On initialise un sac vide avec une masse totale et une valeur totale à 0.**\n    **Pour chaque objet selon la stratégie choisie :**\n    - Si l'ajout de l'objet ne dépasse pas la capacité du sac :\n        - On ajoute l'objet au sac\n        - On met à jour la masse totale\n        - On met à jour la valeur totale\n    **On continue jusqu'à ce qu'aucun objet ne puisse plus être ajouté.**"
+    },
+    {
+      "level": 3,
+      "title": "Exercices de réflexion",
+      "content": "!!! fox_exercice \"Exercices sac à dos\"\n    Soit un sac à dos de capacité 20kg et les objets suivants :\n    | Objet  | 1    | 2    | 3    | 4    | 5    |\n    | ------ | ---- | ---- | ---- | ---- | ---- |\n    | Masse  | 6    | 8    | 4    | 10   | 7    |\n    | Valeur | 12   | 20   | 6    | 18   | 15   |\n    1. Appliquer l'algorithme glouton en utilisant la stratégie par masse.\n    **La solution est-elle optimale ? Si non, donner une meilleure solution.**\n    2. Appliquer l'algorithme glouton en utilisant la stratégie par valeur.\n    **La solution est-elle optimale ? Si non, donner une meilleure solution.**\n    3. Appliquer l'algorithme glouton en utilisant la stratégie par rapport valeur/masse.\n    **Quelle stratégie semble donner les meilleurs résultats ?**"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "VIII-Algorithmes_Gloutons",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

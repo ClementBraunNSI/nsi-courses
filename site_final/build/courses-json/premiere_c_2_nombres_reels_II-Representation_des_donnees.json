@@ -1,0 +1,26 @@
+{
+  "title": "Nombres réels en Binaire",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Les nombres réels en binaire",
+      "content": "Après avoir représenté les nombres entiers, il est necessaire de représenter les nombres réels, nombres dits décimaux ou à virgule.\nLes nombres décimaux permettent de représenter des valeurs qui peuvent être analogiques (pi, température, altitude etc...).\nLa représentation des nombres réels a été approchée de plusieurs manières différentes."
+    },
+    {
+      "level": 3,
+      "title": "Écriture en binaire de la partie réelle",
+      "content": "Il a été proposé d'écrire un nombre réel en convertissant la partie à gauche de la virgule (la partie entière) et la partie à droite de la virugle (la partie décimale) de manière indépendante en binaire.\nOn peut par exemple chercher à représenter $14,75$ en binaire.\nOn cherche dans un premier temps la partie entière (la partie à gauche de la virgule).\nIci, on sait que $14_{10} = 1110_2$\nPour représenter la représentation de la partie réelle (la partie à droite de la virgule), on va devoir retrouver les puissances correspondante et ce grâce à la méthode des multiplications successives.\nOn va multiplier par 2 successivement la partie réelle et ainsi, on retrouvera à la manière des divisions successives, la représentation des puissances négatives.\n|partie décimale|bit de la représentation|multiplication successive|\n|-|-|-|\n|0,75|x|0,75|\n|**1**,5|1|0,5|\n|**1**,0|1|0,0|\n|**0**,0|0|0|\nOn a donc pour représentation de $0,75_{10} \\rightarrow 0,110_2$.\nOn peut donc représenter $14,25_{10}$ en binaire avec $14_{10} + 0,75_{10} \\rightarrow 1110_2 + 0,110_2 = 1110,110_2$.\nOn a vu dans le cours précédent que pour qu'une représentation soit utilisable, elle doit permettre les opérations sans erreurs.\nFaisons un test sur l'opération $14,75 + 1,25$.\nOn cherche la représentation de $1,25_{10}$ en binaire.\n$1_{10} = 1_2$\n|partie décimale|bit de la représentation|multiplication successive|\n|-|-|-|\n|0,25|x|0,25|\n|**0**,5|0|0,5|\n|**1**,0|1|0,0|\n|**0**,0|0|0|\n$0,25_{10} = 0,010_{2}$.\nOn a donc : $1,75_{10} = 1,110_{2}$.\nAprès réalisation de l'opération, on obtient le résultat : $1110,110_2 + 1,110_2 = 10000,000_2 = 16_{10}$. C'est bien le bon résultat.\nCependant, les machines (ordinateurs et smartphones) n'utilisent pas cette méthode mais utilise la méthode de la **virgule flottante**."
+    },
+    {
+      "level": 3,
+      "title": "La Norme IEEE754",
+      "content": "La norme IEEE754 permet de représenter les nombres réels en utilisant le principe de virgule flottante.\nPour simplifier, cette norme permet d'écrire chaque nombre comme une écriture scientifique d'un nombre avec pour base 2.\nUn nombre N s'écrit : $N = -1^s * m \\times 2^n$ avec $m \\in [1;2[$.\n- s correspond au **signe** du nombre : 0 est positif, 1 correspond à un négatif.\n- m correspond à l'écriture scientifique du nombre appelée **mantisse**.\n- n correspond à la **puissance** permettant de l'écrire en notation scientifique.\nCette norme permet de représenter plus de nombres en utilisant le même nombre de bits en faisant varier un exposant (en général 32 bits).\nL'exposant n est l'exposant correspondant à l'écriture scientifique du nombre.\nCette représentation comprend :\n- 1 bit de signe\n- 8 bits correspondant à l'exposant dont on retranche 127\n- 23 bits correspondant à la mantisse\nExemple :\nOn souhaite représenter le nombre 14,75 en utilisant la norme IEEE754.\nÉtape 1 : **Représenter le nombre en base 2**  \nIci $14_{10} = 1110,110_2$\nÉtape 2 : **Écrire sous forme \"d'écriture scientifique\"**  \nIci $1110,110_2 = 1,110110_2 \\times 2^{-3}$\n**On obtient donc $m=110110_2$, $n=-3$ et $s=0$.**\nÉtape 3 : **L'exposant retranché**  \nOn retranche 127 à notre exposant : $E = 127 - n$.\nOn a donc $E = 127 - (-3) = 130$.  \nOn représente cet exposant en binaire et ici $130_{10} = 1000~0010_{2}$.\nÉtape 4 : **L'assemblage**  \nOn a donc $14,75_{10} = 0~10000010~110110..._{2}$"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

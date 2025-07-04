@@ -1,0 +1,200 @@
+{
+    "facile": [
+      {
+        "id": "python_1",
+        "title": "Premier programme",
+        "enonce": "Écrire un programme qui affiche 'Bonjour tout le monde!' dans le terminal.",
+        "example": "Le programme doit simplement afficher le message",
+        "solution": "print(\"Bonjour tout le monde!\")",
+        "hints": [
+          "Utilisez la fonction print()",
+          "N'oubliez pas les guillemets autour du texte",
+          "Les guillemets simples ' ou doubles \" fonctionnent"
+        ]
+      },
+      {
+        "id": "python_2",
+        "title": "Variables simples",
+        "enonce": "Créer une variable 'age' qui contient votre âge et une variable 'prenom' qui contient votre prénom. Afficher ces variables dans le terminal.",
+        "example": "Si age=16 et prenom='Jean', afficher : Jean 16",
+        "solution": "age = 16\nprenom = \"Jean\"\nprint(prenom, age)",
+        "hints": [
+          "Les nombres n'ont pas besoin de guillemets",
+          "Les textes doivent être entre guillemets",
+          "Séparez les variables par une virgule dans print()"
+        ]
+      },
+      {
+        "id": "python_3",
+        "title": "Calculs simples",
+        "enonce": "Créer deux variables 'nombre1' et 'nombre2' contenant respectivement les valeurs 42 et 7. Afficher leur somme, leur différence, leur produit et leur division.",
+        "example": "Afficher : 49 35 294 6.0 (résultats des 4 opérations)",
+        "solution": "nombre1 = 42\nnombre2 = 7\nprint(nombre1 + nombre2, nombre1 - nombre2, nombre1 * nombre2, nombre1 / nombre2)",
+        "hints": [
+          "Utilisez +, -, *, / pour les opérations",
+          "Séparez les calculs par des virgules dans print()",
+          "La division donne un nombre décimal"
+        ]
+      },
+      {
+        "id": "python_4",
+        "title": "Demander le prénom",
+        "enonce": "Écrire un programme qui demande le prénom de l'utilisateur et affiche 'Bonjour' suivi du prénom.",
+        "example": "Si l'utilisateur tape 'Marie', afficher 'Bonjour Marie'",
+        "solution": "prenom = input(\"Quel est ton prénom ? \")\nprint(\"Bonjour\", prenom)",
+        "hints": [
+          "Utilisez input() pour demander une saisie",
+          "Le texte dans input() est le message affiché",
+          "Stockez la réponse dans une variable"
+        ]
+      },
+      {
+        "id": "python_5",
+        "title": "Calculatrice simple",
+        "enonce": "Écrire un programme qui demande deux nombres à l'utilisateur et affiche leur somme. Attention : la fonction input() renvoie une chaîne de caractères, il faut convertir en nombre avec int().",
+        "example": "Si l'utilisateur tape 5 et 3, afficher 'La somme est 8'",
+        "solution": "nombre1 = int(input(\"Premier nombre : \"))\nnombre2 = int(input(\"Deuxième nombre : \"))\nsomme = nombre1 + nombre2\nprint(\"La somme est\", somme)",
+        "hints": [
+          "Utilisez int() pour convertir en nombre entier",
+          "Ou float() pour les nombres décimaux",
+          "Stockez le résultat dans une variable"
+        ]
+      },
+      {
+        "id": "python_6",
+        "title": "Présentation complète",
+        "enonce": "Écrire un programme qui demande le nom, l'âge et la classe d'un élève, puis affiche une phrase de présentation complète.",
+        "example": "Exemple : 'Je m'appelle Jean, j'ai 15 ans et je suis en seconde.'",
+        "solution": "nom = input(\"Quel est ton nom ? \")\nage = input(\"Quel est ton âge ? \")\nclasse = input(\"En quelle classe es-tu ? \")\nprint(\"Je m'appelle\", nom + \", j'ai\", age, \"ans et je suis en\", classe + \".\")",
+        "hints": [
+          "Demandez chaque information séparément",
+          "Utilisez + pour coller du texte à une variable",
+          "Mélangez texte et variables dans print()"
+        ]
+      }
+    ],
+    "moyen": [
+      {
+        "id": "python_7",
+        "title": "Convertisseur d'euros",
+        "enonce": "Écrire un programme qui convertit un montant en euros vers des dollars (1 euro = 1.09 dollars). Le programme doit demander le montant en euros et afficher le résultat en dollars.",
+        "example": "100 euros = 109.0 dollars",
+        "solution": "euros = float(input(\"Montant en euros : \"))\ntaux = 1.09\ndollars = euros * taux\nprint(euros, \"euros équivalent à\", dollars, \"dollars\")",
+        "hints": [
+          "Utilisez float() pour les nombres décimaux",
+          "Stockez le taux de change dans une variable",
+          "Multipliez le montant par le taux"
+        ]
+      },
+      {
+        "id": "python_8",
+        "title": "Calcul d'âge",
+        "enonce": "Écrire un programme qui demande l'année de naissance d'une personne et calcule son âge en 2024.",
+        "example": "Né en 2008 → âge = 2024 - 2008 = 16 ans",
+        "solution": "annee_naissance = int(input(\"Année de naissance : \"))\nannee_actuelle = 2024\nage = annee_actuelle - annee_naissance\nprint(\"Vous avez\", age, \"ans en 2024\")",
+        "hints": [
+          "Soustrayez l'année de naissance à l'année actuelle",
+          "Stockez 2024 dans une variable",
+          "Utilisez int() pour l'année de naissance"
+        ]
+      },
+      {
+        "id": "python_9",
+        "title": "Message personnalisé",
+        "enonce": "Écrire un programme qui demande le prénom de l'utilisateur, sa matière préférée et sa note dans cette matière, puis affiche un message personnalisé comme : 'Bravo [prénom], tu as eu [note]/20 en [matière]!'",
+        "example": "Bravo Marie, tu as eu 16/20 en mathématiques!",
+        "solution": "prenom = input(\"Quel est ton prénom ? \")\nmatiere = input(\"Quelle est ta matière préférée ? \")\nnote = input(\"Quelle note as-tu eu dans cette matière ? \")\nprint(\"Bravo\", prenom + \", tu as eu\", note + \"/20 en\", matiere + \"!\")",
+        "hints": [
+          "Demandez chaque information une par une",
+          "Utilisez + pour coller la ponctuation",
+          "Mélangez variables et texte fixe"
+        ]
+      },
+      {
+        "id": "python_10",
+        "title": "Calculateur de moyenne",
+        "enonce": "Écrire un programme qui demande 3 notes à l'utilisateur, calcule la moyenne de ces notes et affiche la moyenne avec un message approprié. N'oubliez pas de convertir les entrées en nombres décimaux avec float().",
+        "example": "Notes 15, 12, 18 → moyenne = (15+12+18)/3 = 15.0",
+        "solution": "note1 = float(input(\"Première note : \"))\nnote2 = float(input(\"Deuxième note : \"))\nnote3 = float(input(\"Troisième note : \"))\nmoyenne = (note1 + note2 + note3) / 3\nprint(\"Ta moyenne est de\", round(moyenne, 2))",
+        "hints": [
+          "Utilisez float() pour les notes décimales",
+          "Divisez la somme par le nombre de notes",
+          "round(moyenne, 2) arrondit à 2 décimales"
+        ]
+      },
+      {
+        "id": "python_11",
+        "title": "Générateur de pseudo",
+        "enonce": "Écrire un programme qui crée un pseudo à partir des 3 premières lettres du prénom, des 2 premières lettres du nom et de l'âge.",
+        "example": "Pour 'Thomas Dupont, 15 ans' → 'ThoDu15'",
+        "solution": "prenom = input(\"Prénom : \")\nnom = input(\"Nom : \")\nage = input(\"Âge : \")\npseudo = prenom[:3] + nom[:2] + age\nprint(\"Votre pseudo :\", pseudo)",
+        "hints": [
+          "Utilisez [début:fin] pour extraire des caractères",
+          "[:3] prend les 3 premiers caractères",
+          "Concaténez avec + les différentes parties"
+        ]
+      },
+      {
+        "id": "python_12",
+        "title": "Calculateur de périmètre et aire",
+        "enonce": "Écrire un programme qui demande le rayon d'un cercle et calcule son périmètre (2πr) et son aire (πr²). Utilisez 3.14159 pour π.",
+        "example": "Rayon 5 → périmètre ≈ 31.42, aire ≈ 78.54",
+        "solution": "rayon = float(input(\"Rayon du cercle : \"))\npi = 3.14159\nperimetre = 2 * pi * rayon\naire = pi * rayon ** 2\nprint(\"Périmètre :\", round(perimetre, 2))\nprint(\"Aire :\", round(aire, 2))",
+        "hints": [
+          "Stockez π dans une variable",
+          "Utilisez ** 2 pour élever au carré",
+          "round() arrondit les résultats"
+        ]
+      }
+    ],
+    "difficile": [
+      {
+        "id": "python_13",
+        "title": "Convertisseur de température",
+        "enonce": "Créer un programme qui convertit une température de Celsius vers Fahrenheit et Kelvin. Formules : F = C × 9/5 + 32, K = C + 273.15",
+        "example": "20°C = 68°F = 293.15K",
+        "solution": "celsius = float(input(\"Température en Celsius : \"))\nfahrenheit = celsius * 9/5 + 32\nkelvin = celsius + 273.15\nprint(f\"{celsius}°C = {fahrenheit}°F = {kelvin}K\")",
+        "hints": [
+          "Appliquez les formules de conversion",
+          "Utilisez f\"\" pour formater l'affichage",
+          "Attention à l'ordre des opérations"
+        ]
+      },
+      {
+        "id": "python_14",
+        "title": "Calculateur de facture",
+        "enonce": "Créer un programme qui calcule le prix total d'un achat avec TVA. Demander le prix HT, le taux de TVA (en %), calculer la TVA et le prix TTC.",
+        "example": "Prix HT 100€, TVA 20% → TVA = 20€, TTC = 120€",
+        "solution": "prix_ht = float(input(\"Prix HT : \"))\ntaux_tva = float(input(\"Taux de TVA (%) : \"))\nmontant_tva = prix_ht * taux_tva / 100\nprix_ttc = prix_ht + montant_tva\nprint(f\"Prix HT : {prix_ht}€\")\nprint(f\"TVA ({taux_tva}%) : {montant_tva}€\")\nprint(f\"Prix TTC : {prix_ttc}€\")",
+        "hints": [
+          "Divisez le pourcentage par 100",
+          "TVA = prix_ht × taux / 100",
+          "TTC = HT + TVA"
+        ]
+      },
+      {
+        "id": "python_15",
+        "title": "Analyseur de texte",
+        "enonce": "Créer un programme qui analyse une phrase : compter le nombre de caractères, de mots, de voyelles et afficher la phrase en majuscules et en minuscules.",
+        "example": "'Bonjour tout le monde' → 21 caractères, 4 mots, 8 voyelles",
+        "solution": "phrase = input(\"Entrez une phrase : \")\nnb_caracteres = len(phrase)\nnb_mots = len(phrase.split())\nvoyelles = \"aeiouAEIOU\"\nnb_voyelles = sum(1 for c in phrase if c in voyelles)\n\nprint(f\"Phrase : {phrase}\")\nprint(f\"Caractères : {nb_caracteres}\")\nprint(f\"Mots : {nb_mots}\")\nprint(f\"Voyelles : {nb_voyelles}\")\nprint(f\"Majuscules : {phrase.upper()}\")\nprint(f\"Minuscules : {phrase.lower()}\")",
+        "hints": [
+          "len() donne la longueur",
+          ".split() sépare les mots",
+          "Comptez les voyelles avec une boucle"
+        ]
+      },
+      {
+        "id": "python_16",
+        "title": "Calculateur de temps",
+        "enonce": "Créer un programme qui convertit un nombre de secondes en heures, minutes et secondes. Par exemple, 3661 secondes = 1h 1min 1s.",
+        "example": "7265 secondes = 2h 1min 5s",
+        "solution": "secondes_total = int(input(\"Nombre de secondes : \"))\n\nheures = secondes_total // 3600\nminutes = (secondes_total % 3600) // 60\nsecondes = secondes_total % 60\n\nprint(f\"{secondes_total} secondes = {heures}h {minutes}min {secondes}s\")",
+        "hints": [
+          "1 heure = 3600 secondes",
+          "Utilisez // pour la division entière",
+          "Utilisez % pour le reste de la division"
+        ]
+      }
+    ]
+  }

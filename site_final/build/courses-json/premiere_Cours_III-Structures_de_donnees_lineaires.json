@@ -1,0 +1,56 @@
+{
+  "title": "Structures de données Linéaires : Tuples et Listes",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Définition",
+      "content": "Une **structure de données linéaire** est une collection d'**éléments** stockés séquentiellement. En Python, les deux principales implémentations de tableaux (un concept général de structure de données linéaire) sont les **listes** (mutables, c'est-à-dire modifiables après création) et les **tuples** (immuables, c'est-à-dire non modifiables après création).\nCes structures permettent d’organiser et de stocker divers éléments. Elles sont ordonnées, ce qui signifie que chaque élément a une position spécifiques (indice), et les éléments sont généralement stockés dans des zones mémoires contiguës ou liées.\nUtiliser des tableaux (listes ou tuples) permet de ne pas avoir à créer une variable distincte pour chaque élément à stocker.\nOn peut accéder à un élément d'un tableau en utilisant son **indice**. Un indice correspond à la position de l'élément dans le tableau.\n!!! Danger Important\n\tCas particulier, en **python**, comme dans la plupart des autres langages de programmation, les indices de tableaux commencent à 0.\nPour initialiser un **tuple** vide (un type de tableau immuable), on l’associe à une variable :\n```python\n>>> mon_tuple_vide = ()\n>>> print(type(mon_tuple_vide))\n<class 'tuple'>\n>>> print(mon_tuple_vide)\n()\n```\nPour initialiser une **liste** vide (un type de tableau mutable), on utilise des crochets `[]` :\n```python\n>>> ma_liste_vide = []\n>>> print(type(ma_liste_vide))\n<class 'list'>\n>>> print(ma_liste_vide)\n[]\n```\nConsidérons un exemple de tableau d'entiers :\n| indice | élément |\n| --- | --- |\n| 0 | 312 |\n| 1 | 354 |\n| 2 | 1234 |\nEn Python, pour un **tuple**, on l'écrirait avec des parenthèses `()` :\n```python\nmon_tuple = (312, 354, 1234)\n```\nPour une **liste**, on l'écrirait avec des crochets `[]` :\n```python\nma_liste = [312, 354, 1234]\n```\nOn peut créer des tableaux possédant diverses valeurs, leur taille étant limitée par l’espace mémoire de la machine :\n```python\ntableau_de_notes = (14,15,20,19)\ntableau_animaux = (\"chien\", \"chat\", \"oiseau\", \"poisson\")\n```\n!!! Tip\n\tDans la majorité des cas, il est préférable de **créer des tableaux pour des données de même type**.\n\tCela permet d’éviter des erreurs pour l’interpréteur et éviter des incompréhensions pour la suite du code.\n!!! Danger Mutabilité : Tuples (immuables) vs Listes (mutables)\n\tAttention à la distinction entre tuples et listes concernant la mutabilité !\n\t**Tuples (immuables) :**\n\tUn tuple est **immuable**. Cela signifie qu'une fois qu'un tuple est créé, ses éléments ne peuvent pas être modifiés, ajoutés ou supprimés directement. Toute tentative de modifier un élément d'un tuple existant résultera en une erreur `TypeError`.\n\tPar exemple :\n\t```python\n\tmon_tuple = (10, 20, 30)\n\t```\n\tPour \"modifier\" un tuple, on doit en réalité créer un nouveau tuple.\n\t**Listes (mutables) :**\n\tUne liste est **mutable**. Cela signifie que l'on peut modifier ses éléments, en ajouter ou en supprimer après sa création.\n\tPar exemple :\n\t```python\n\tma_liste = [10, 20, 30]\n\tma_liste[0] = 5  # Modifie l'élément à l'indice 0\n\tma_liste.append(40) # Ajoute un élément à la fin\n\t```\n\tL'erreur `TypeError` mentionnée dans le contexte original (\"les valeurs d'un tuple ne supportent pas l'assignation de valeurs\") s'applique spécifiquement aux tuples."
+    },
+    {
+      "level": 2,
+      "title": "Taille d’un tableau",
+      "content": "Les tableaux possèdent des fonctions qui leurs sont propres.\nCes fonctions s’appellent des méthodes.\nLa méthode `len` permet d’obtenir la longueur d’un tableau, ie sa taille. Cela fonctionne de la même manière que lorsque l’on souhaite obtenir la longueur d’une chaîne de caractère.\n```python\ntableau_animaux = (\"chien\", \"chat\", \"oiseau\", \"poisson\")\n>>>print(len(tableaux_animaux))\n4\n```"
+    },
+    {
+      "level": 3,
+      "title": "Notion d’indice",
+      "content": "Pour accéder à un élément du tableau, on peut s’intéresser à sa position dans le tableau, c’est à dire son **indice**.\n**Rappel important : L’indice commence à 0 !**\nOn peut accéder à un élément d'un tableau (liste ou tuple) en utilisant son indice avec la syntaxe `nom_du_tableau[indice]`:\n```python\nmon_tuple_animaux = (\"chien\", \"chat\", \"poisson\", \"vache\")\nma_liste_animaux = [\"chien\", \"chat\", \"poisson\", \"vache\"]\n```\nOn peut vouloir accéder à tous les éléments d’un tableau (liste ou tuple), ou à une partie de celui-ci.\nPour ce faire, on peut utiliser les boucles **`while` (tant que) et `for` (pour)** afin de parcourir les éléments.\n```python\ntableau = (\"chien\", \"chat\", \"poisson\", \"vache\")\n#pour i allant de 0 à la taille du tableau:\nfor i in range(len(tableau)):\n\tprint(tableau[i])\ni=0\nwhile i < len(tableau):\n\tprint(tableau[i])\n\ti = i + 1\n```\nDe cette même manière, on fait varier i pour qu’il prenne tous les indices du tableau et on arrive à accéder à tous les éléments du tableau."
+    },
+    {
+      "level": 3,
+      "title": "Notion de *in*",
+      "content": "Python permet d’utiliser bon nombres de mots-clefs. Le mot-clef ***in*** en fait partie.\nCelui ci permet de savoir si un élément fait partie d’une autre variable. On peut l’utiliser notamment pour savoir si un caractère ou un mot fait partie d’une chaîne de caractère.\nEn reprenant l’exemple précédent, on veut une autre méthode de parcours de tableau:\n```python\ntableau = (\"chien\", \"chat\", \"poisson\", \"vache\")\nchaine = \"\"\n#pour i allant de 0 à la taille du tableau:\nfor element in tableau:\n\tprint(element)\n```\nDe ce fait, on accède aussi à tous les éléments du tableau.\nOn peut aussi fusionner des tableaux. On peut utiliser l'opérateur `+` qui sert à **concaténer** des tableaux.\nEn clair :\n```python\n\ttableau_1 = (1,2,3)\n\ttableau_2 = (4,5,6)\n\ttableau_3 = tableau_1 + tableau_2\n```"
+    },
+    {
+      "level": 2,
+      "title": "Les listes",
+      "content": "Les listes sont des tableaux mutables. Cela veut dire que l'on peut rajouter des éléments, en retirer ou même modifier le contenu de ce tableau."
+    },
+    {
+      "level": 3,
+      "title": "Ajout d’élément dans une liste",
+      "content": "On peut rajouter des éléments dans une liste créée de diverses manières.\nExemple : *On veut créer une liste qui correspond à la table de multiplication de 2*\n```python\n#Initialisation d'une liste vide\nmultiples_de_2 = []\n#Boucle for pour remplir notre liste\nfor i in range(0,11):\n\t#On ajoute la valeur i dans le tableau.\n\tmultiples_de_2 = multiples_de_2 + [i*2]\n```\nEn procédant de cette manière, on créée implicitement un tableau d’une valeur contenant ici notre nombre *i multiplié par 2*.\nLe procédé utilisé ici est la **construction par concaténation**. Cette méthode par concaténation a un inconvénient implicite : elle créée une nouvelle liste à la place de modifier la liste en place.\nL’avantage d’utiliser des listes en python pour créer des tableaux provient de l’essence de la liste : **utiliser les méthodes** de listes.\nAu lieu de créer des “sous-listes” de taille 1, on peut utiliser la méthode *append* qui permet d’ajouter une variable à la fin du tableau.\n```python\n#Initialisation d'une liste vide\nmultiples_de_2 = []\n#Boucle for pour remplir notre liste\nfor i in range(0,11): # i prendra les valeurs de 0 à 10\n\t#On ajoute la valeur i*2 à la fin de la liste.\n\t#La méthode append() modifie la liste en place et retourne None.\n\tmultiples_de_2.append(i*2)\n```\nLa méthode *append* a l’avantage sur la méthode par concaténation **de modifier en place la liste au lieu d’en créer une autre.**"
+    },
+    {
+      "level": 2,
+      "title": "Retirer des éléments d’une liste",
+      "content": "Pour retirer des éléments d’une liste, on peut utiliser les méthodes des listes / tableaux."
+    },
+    {
+      "level": 3,
+      "title": "La méthode pop",
+      "content": "La méthode pop est utilisable dans 2 cas:\n$$\n\\begin{equation*}\n  {element~retiré}=\n     \\begin{cases}\n        tableau[i] & \\text{si } tableau.pop(i) \\\\\n        tableau[len(tableau)] & \\text{si } tableau.pop(~)\n     \\end{cases}\n\\end{equation*}\n$$\n```python\ntableau = [1,2,3,4]\n>>> print(tableau.pop(1))\n2\n>>> print(tableau.pop())\n4\n```"
+    },
+    {
+      "level": 3,
+      "title": "La méthode remove",
+      "content": "La méthode remove permet de retirer la première occurence d’un élément passé en paramètre.\nOn a donc :\n```python\n>>> tableau = [1,2,2,3,4,4]\n>>> tableau.remove(2)\n>>> print(tableau)\n[1,2,3,4,4]\n```"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Afficher les clefs du dictionnaire",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Définitions",
+      "content": "Une des nombreuses structures de Python est **le dictionnaire**.\nLe dictionnaire est une structure de données qui n'est pas indexée mais organisées suivant des éléments que l'on nomme **attributs (ou descripteur)**.\nCes attributs correspondent à des propriétés sur l'élément que l'on souhaite modéliser.\n*Exemple*:\nPar exemple, on souhaite modéliser un modèle de voiture. Lors de la conception d'une voiture, on peut modifier des éléments pour en créer des déclinaisons.\nOn peut, pour un modèle, dresser un tableau des diverses propriétés à modéliser :\n|propriété|valeurs possibles|\n|---------|-----------------|\n|couleurs | rouge, bleu, vert, noir, blanc, gris|\n|motorisations (en ch)| 100, 110,120,200|\n|taille de jantes|16,17,18,19|\nPour créer ce genre d'objets, on utilise donc la structure des dictionnaires."
+    },
+    {
+      "level": 2,
+      "title": "Les dictionnaires en Python",
+      "content": "Pour créer un dictionnaire, on utilise les accolades **{}** (à la différence des tableaux (parenthèses **(   )**) ou des listes (crochets **[   ]**)).\nÀ l'intérieur de ces accolades, on utilise la syntaxe **attribut : valeurs possibles**.\nUn attribut correspond donc à une propriété d'un objet que l'on cherche à modéliser et est représenté par une chaîne de caractères.\nLes différentes valeurs possibles peuvent être de types simples (entier, chaines de caractère, booléen) mais aussi de types plus complèxes (listes, dictionnaires ou tuples).\nChacun des couples *attributs : valeurs* sont séparés par des virgules.\nDe base, un dictionnaire lorsqu'on le créée de cette manière, est dépourvu d'attributs.\nPour créer un dictionnaire avec des attributs déjà connus, il existe deux méthodes :\n**Écrire les propriétés déjà connues à l'instanciation**\n```python\nmodele_voiture = {  \"couleurs\" : [\"rouge\", \"bleu\", \"vert\", \"noir\", \"blanc\", \"gris\"],\n                    \"motorisation_en_ch\" : [100,110,120,200],\n                    \"taille_jantes\" : [16,17,18,19]\n                 }\n```\n**Rajouter petit à petit les propriétés**\n```python\nmodele_voiture = {}\nmodele_voiture[\"couleurs\"] = [\"rouge\", \"bleu\", \"vert\", \"noir\", \"blanc\", \"gris\"]\nmodele_voiture[\"motorisation_en_ch\"] = [100,110,120,200]\nmodele_voiture[\"taille_jantes\"] = [16,17,18,19]\n```\nPour accéder à un attribut du dictionnaire, on utilise la structure à crochets comme pour les listes, mais au lieu d'indiquer un indice, on indique l'attribut s'il est déjà renseigné.\nVoici l'usage principal des dictionnaires en Python : \n```python\nprint(modele_voiture)\nprint(modele_voiture[\"couleurs\"])\nmodele_voiture[\"couleurs\"] = modele_voiture[\"couleurs\"] + [\"beige\"]\nmodele_voiture.pop(\"taille_jantes\")\n```\n!!! Warning Ajout de valeurs\n    Pour rajouter des valeurs à un attribut d'un dictionnaire, il faut bien faire attention aux types.\n    Par exemple, pour l'exemple précédent, nos valeurs étaient contenues dans des listes. Il faut donc opérer par concaténation de liste avec l'opérateur **+** ou la méthode `.append(valeur)`."
+    },
+    {
+      "level": 3,
+      "title": "Itérations sur un dictionnaire",
+      "content": "Tout comme les listes et les tableaux, on peut itérer sur les valeurs d'un dictionnaire. Cela permet de retrouver des valeurs, de faire des traitements sur des bases de données ou retrouver des valeurs suivant certaines conditions.\nLe plus simple est d'itérer à l'aide d'une boucle `for`.\nUn dictionnaire est une structure sur laquelle on peut itérer sur les clefs (à l'instar des tuples ou listes où l'on itère sur les indices).\n```python\n    for clef in modele_voiture:\n        print(clef)\n    #Afficher toutes les valeurs d'un dictionnaire\n    for clef in modele_voiture:\n        print(clef)\n        for valeur in modele_voiture[clef]:\n            print(valeur)\n```"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

@@ -1,0 +1,143 @@
+{ "facile": [
+      {
+        "id": "creation_structures",
+        "title": "Création de structures",
+        "enonce": "Créer un tuple nommé `mon_tuple` qui contient les éléments 1,2,3,4,5 et une liste `ma_liste` qui contient les éléments suivants 'a','b','c','d','e'. Les afficher dans le terminal.",
+        "exemple": "",
+        "correction": "mon_tuple = (1,2,3,4,5)\nma_liste = ['a','b','c','d','e']\nprint(mon_tuple)\nprint(ma_liste)",
+        "explication": "Les tuples sont créés avec des parenthèses et les listes avec des crochets. Les deux sont des séquences ordonnées."
+      },
+      {
+        "id": "acces_elements",
+        "title": "Accès aux éléments",
+        "enonce": "Afficher dans le terminal le troisième élément de `mon_tuple` et le premier élément de `ma_liste`.",
+        "exemple": "",
+        "correction": "print(mon_tuple[2])  # Troisième élément (index 2)\nprint(ma_liste[0])   # Premier élément (index 0)",
+        "explication": "L'indexation commence à 0 en Python. Le troisième élément a donc l'index 2."
+      },
+      {
+        "id": "modification_elements",
+        "title": "Modification d'éléments",
+        "enonce": "Modifier le deuxième élément de `ma_liste` par 'z'. Vérifier la modification en affichant la liste dans le terminal.",
+        "exemple": "",
+        "correction": "ma_liste[1] = 'z'  # Modification du deuxième élément\nprint(ma_liste)     # Vérification",
+        "explication": "Les listes sont mutables, on peut modifier leurs éléments. Les tuples sont immutables."
+      },
+      {
+        "id": "ajout_suppression",
+        "title": "Ajout et suppression",
+        "enonce": "Ajouter l'élément 'f' dans `ma_liste`. Supprimer le premier élément de `ma_liste`. Vérifier les modifications en affichant la liste dans le terminal.",
+        "exemple": "",
+        "correction": "ma_liste.append('f')  # Ajout de 'f'\nma_liste.pop(0)       # Suppression du premier élément\nprint(ma_liste)       # Vérification",
+        "explication": "append() ajoute un élément à la fin, pop(index) supprime l'élément à l'index donné."
+      },
+      {
+        "id": "parcours_boucles",
+        "title": "Parcours avec boucles",
+        "enonce": "Afficher dans le terminal tous les éléments de `mon_tuple` et `ma_liste` un à un à l'aide d'une boucle `for`.",
+        "exemple": "",
+        "correction": "# Parcours par valeur\nfor elt in mon_tuple:\n    print(elt)\n\nfor elt in ma_liste:\n    print(elt)\n\n# Parcours par indice\nfor i in range(len(mon_tuple)):\n    print(mon_tuple[i])\n\nfor i in range(len(ma_liste)):\n    print(ma_liste[i])",
+        "explication": "On peut parcourir par valeur (for elt in liste) ou par indice (for i in range(len(liste)))."
+      },
+      {
+        "id": "somme_elements",
+        "title": "Somme d'éléments",
+        "enonce": "Écrire une fonction `somme_elements` qui prend une liste de nombres en paramètres et renvoie la somme de tous les éléments.",
+        "exemple": "somme_elements([1, 2, 3, 4]) doit renvoyer 10.",
+        "correction": "def somme_elements(liste:list)->int:\n    somme = 0\n    for elt in liste:\n        somme = somme + elt\n    return somme",
+        "explication": "On initialise une variable somme à 0 et on ajoute chaque élément de la liste."
+      },
+      {
+        "id": "compter_pairs",
+        "title": "Compter les nombres pairs",
+        "enonce": "Écrire une fonction `compter_pairs` qui prend une liste d'entiers et renvoie le nombre d'éléments pairs dans cette liste.",
+        "exemple": "compter_pairs([1,2,3,4,5]) renvoie 2",
+        "correction": "def compter_pairs(liste:list)->int:\n    nombre_pairs = 0\n    for elt in liste:\n        if elt % 2 == 0:\n            nombre_pairs = nombre_pairs + 1\n    return nombre_pairs",
+        "explication": "On utilise l'opérateur modulo (%) pour tester si un nombre est pair (reste de la division par 2 égal à 0)."
+      },
+      {
+        "id": "longueur_chaines",
+        "title": "Longueur des chaînes",
+        "enonce": "Écrire une fonction `longueur_chaines` qui prend une liste de chaînes de caractères et renvoie une liste contenant la longueur de chaque chaîne.",
+        "exemple": "longueur_chaines([\"abc\", \"de\", \"fghi\"]) renvoie [3, 2, 4]",
+        "correction": "def longueur_chaines(liste:list)->list:\n    longueurs = []\n    for chaine in liste:\n        longueurs.append(len(chaine))\n    return longueurs",
+        "explication": "On utilise la fonction len() pour obtenir la longueur de chaque chaîne et on l'ajoute à une nouvelle liste."
+      }
+    ],
+    "moyen": [
+      {
+        "id": "exercice_complet",
+        "title": "Exercice complet",
+        "enonce": "Créer une liste `nombres` qui contient les chiffres allant de 1 à 9. (Proposer une version par compréhension). Afficher dans le terminal les 5 premiers éléments de la liste en utilisant une boucle while. Afficher les éléments du quatrième au huitième en utilisant une boucle for. Afficher les éléments de la liste `nombres` dans le sens inverse en utilisant une boucle while.",
+        "exemple": "",
+        "correction": "# Création de la liste\nnombres = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n# Ou par compréhension :\nnombres = [i for i in range(1, 10)]\n\n# 5 premiers éléments avec while\ni = 0\nwhile i < 5:\n    print(nombres[i])\n    i += 1\n\n# Éléments du 4ème au 8ème avec for\nfor i in range(3, 8):  # indices 3 à 7\n    print(nombres[i])\n\n# Sens inverse avec while\ni = len(nombres) - 1\nwhile i >= 0:\n    print(nombres[i])\n    i -= 1",
+        "explication": "Cet exercice combine plusieurs concepts : création de liste, compréhension de liste, boucles while et for, indexation."
+      },
+      {
+        "id": "valeurs_uniques",
+        "title": "Valeurs uniques",
+        "enonce": "Écrire une fonction `valeurs_uniques` qui prend une liste et renvoie une nouvelle liste contenant les éléments uniques (sans doublons) dans l'ordre d'apparition.",
+        "exemple": "valeurs_uniques([1, 2, 2, 3, 1, 4]) renvoie [1, 2, 3, 4]",
+        "correction": "def valeurs_uniques(liste:list)->list:\n    liste_valeurs = []\n    for elt in liste:\n        if elt not in liste_valeurs:\n            liste_valeurs.append(elt)\n    return liste_valeurs",
+        "explication": "On parcourt la liste et on ajoute chaque élément à la nouvelle liste seulement s'il n'y est pas déjà."
+      },
+      {
+        "id": "separer_pairs_impairs",
+        "title": "Séparer pairs et impairs",
+        "enonce": "Écrire une fonction `separer_pairs_impairs` qui prend une liste d'entiers et renvoie deux listes : une avec les éléments pairs et une autre avec les éléments impairs.",
+        "exemple": "separer_pairs_impairs([1, 2, 3, 4, 5]) renvoie ([2, 4], [1, 3, 5])",
+        "correction": "def separer_pairs_impairs(liste:list)->tuple:\n    pairs = []\n    impairs = []\n    for elt in liste:\n        if elt % 2 == 0:\n            pairs.append(elt)\n        else:\n            impairs.append(elt)\n    return pairs, impairs",
+        "explication": "On crée deux listes vides et on ajoute chaque élément dans la liste appropriée selon sa parité."
+      },
+      {
+        "id": "diviseurs",
+        "title": "Recherche des diviseurs",
+        "enonce": "Écrire une fonction `diviseurs` qui prend un entier en paramètre et renvoie la liste de ses diviseurs.",
+        "exemple": "diviseurs(6) renvoie [1, 2, 3, 6]\ndiviseurs(10) renvoie [1, 2, 5, 10]",
+        "correction": "def diviseurs(valeur:int)->list:\n    diviseurs = []\n    for i in range(1, valeur+1):\n        if valeur % i == 0:\n            diviseurs.append(i)\n    return diviseurs",
+        "explication": "On teste tous les nombres de 1 à valeur et on garde ceux qui divisent valeur (reste de la division égal à 0)."
+      },
+      {
+        "id": "liste_croissante",
+        "title": "Liste croissante",
+        "enonce": "Écrire une fonction `est_croissante` qui prend une liste d'entiers en paramètre et renvoie True si les éléments de la liste sont dans l'ordre croissant, False sinon.",
+        "exemple": "est_croissante([1, 2, 3, 4]) renvoie True\nest_croissante([1, 3, 2, 4]) renvoie False",
+        "correction": "def est_croissante(liste:list)->bool:\n    i = 0\n    while i < len(liste) - 1 and liste[i] <= liste[i+1]:\n        i = i + 1\n    return i == len(liste)-1",
+        "explication": "On compare chaque élément avec le suivant. Si on arrive à la fin sans trouver d'inversion, la liste est croissante."
+      },
+      {
+        "id": "echange_valeurs",
+        "title": "Échange de valeurs",
+        "enonce": "Écrire une fonction `echange` qui prend en paramètres une liste et deux indices, et échange les valeurs aux positions i et j dans la liste passée en paramètres.",
+        "exemple": "liste1 = [1, 2, 3, 4]\nechange(liste1, 1, 2)\nliste1 devient [1, 3, 2, 4]",
+        "correction": "# 1ère solution : passer par une troisième valeur\ndef echange(liste:list, i:int, j:int)->None:\n    temp = liste[i]\n    liste[i] = liste[j]\n    liste[j] = temp\n\n# 2e solution : solution Python-esque\ndef echange(liste:list, i:int, j:int)->None:\n    liste[i], liste[j] = liste[j], liste[i]",
+        "explication": "Deux méthodes : utiliser une variable temporaire ou l'affectation multiple de Python."
+      }
+    ],
+    "difficile": [
+      {
+        "id": "rangement_valeurs",
+        "title": "Rangement de valeurs",
+        "enonce": "Écrire une fonction `rangement_valeurs` qui prend en paramètre une liste et un élément, et renvoie 3 listes : une liste contenant les valeurs inférieures à l'élément, une liste avec l'élément si présent, et une liste avec les valeurs supérieures.",
+        "exemple": "rangement_valeurs([1, 7, 4, 3, 6, 2, 8], 5) renvoie ([1, 4, 3, 2], [], [7, 6, 8])\nrangement_valeurs([1, 2, 4, 3, 6, 2, 8], 2) renvoie ([1], [2, 2], [4, 3, 6, 8])",
+        "correction": "def rangement_valeurs(liste:list, valeur:int)->tuple[list, list, list]:\n    inferieures = []\n    egales = []\n    superieures = []\n    for elt in liste:\n        if elt > valeur:\n            superieures.append(elt)\n        elif elt == valeur:\n            egales.append(elt)\n        else:\n            inferieures.append(elt)\n    return inferieures, egales, superieures",
+        "explication": "On crée trois listes et on classe chaque élément selon sa relation avec la valeur de référence."
+      },
+      {
+        "id": "presence_element",
+        "title": "Recherche d'un élément",
+        "enonce": "Écrire une fonction `presence` qui prend en paramètre une valeur et une liste et renvoie `True` si la valeur demandée est dans la liste, `False` sinon.",
+        "exemple": "presence(3, [1, 2, 3, 4]) renvoie True\npresence(5, [1, 2, 3, 4]) renvoie False",
+        "correction": "def presence(valeur: int, liste: list) -> bool:\n    present = False\n    for elt in liste:\n        if elt == valeur:\n            present = True\n    return present",
+        "explication": "Algorithme de recherche linéaire : on parcourt la liste et on vérifie si on trouve la valeur."
+      },
+      {
+        "id": "minimum_liste",
+        "title": "Minimum d'une liste",
+        "enonce": "Écrire une fonction `minimum` qui prend en paramètre une liste et renvoie la valeur minimale dans la liste.",
+        "exemple": "minimum([3, 1, 9, 2]) renvoie 1",
+        "correction": "def minimum(liste: list) -> int:\n    if len(liste) == 0:\n        return None\n    min_val = liste[0]\n    for elt in liste:\n        if elt < min_val:\n            min_val = elt\n    return min_val",
+        "explication": "On initialise le minimum avec le premier élément, puis on compare avec tous les autres éléments."
+      }
+    ]
+  }

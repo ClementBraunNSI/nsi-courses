@@ -1,0 +1,81 @@
+{
+  "title": "Les circuits électroniques",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Définitions",
+      "content": "Les circuits logiques sont des éléments fondamentaux de l'informatique, qui permettent de traiter l'information de manière numérique. Ils sont utilisés dans une multitude d'applications, allant des ordinateurs et des téléphones portables aux dispositifs de contrôle de la circulation et des systèmes de sécurité. Les circuits logiques sont construits à partir de composants électroniques, tels que des transistors, qui sont les briques de base des portes logiques.\nLes transistors sont des dispositifs électroniques qui permettent de contrôler le flux de courant électrique. Ils peuvent être utilisés pour amplifier un signal ou pour activer ou désactiver un circuit. Les portes logiques sont des circuits électroniques qui effectuent des opérations logiques de base, telles que la conjonction, la disjonction, l'inversion, etc. Les portes logiques sont construites à partir de transistors, et peuvent être combinées pour former des circuits logiques plus complexes.\n![transistor](transistor.png)"
+    },
+    {
+      "level": 2,
+      "title": "Les portes logiques",
+      "content": "Une porte logique est un composant électronique qui effectue une opération logique sur un ou plusieurs signaux d'entrée pour produire un signal de sortie. Les portes logiques sont les briques de base des circuits logiques, et sont utilisées pour construire des circuits plus complexes.\nOn peut associer à une porte logique une **table de vérité**. Elle retranscrit les résultats de l'opération suivant chaque combinaison possible des variables d'entrée."
+    },
+    {
+      "level": 3,
+      "title": "Porte NOT",
+      "content": "Cette porte logique produit un signal de sortie qui est l'inverse du signal d'entrée. Si le signal d'entrée est \"1\", le signal de sortie est \"0\", et vice versa. L’écriture de l’opération logique est :\n$S = \\overline{A}$."
+    },
+    {
+      "level": 4,
+      "title": "Table de vérité",
+      "content": "|entrée|sortie|\n|------|------|\n|0|1|\n|1|0|"
+    },
+    {
+      "level": 4,
+      "title": "Représentation",
+      "content": "![rprnot](repr_not.png)"
+    },
+    {
+      "level": 3,
+      "title": "Porte AND",
+      "content": "Cette porte logique produit un signal de sortie \"1\" uniquement si tous les signaux d'entrée sont \"1\". Sinon, le signal de sortie est \"0\". L’écriture de l’opération logique est :\n$S = A \\vee B$ ou $S = A \\times B$"
+    },
+    {
+      "level": 4,
+      "title": "Table de vérité",
+      "content": "|a|b|sortie|\n|-|-|------|\n|0|0|0|\n|0|1|0|\n|1|0|0|\n|1|1|1|"
+    },
+    {
+      "level": 4,
+      "title": "Représentation électronique",
+      "content": "![rprand](repr_and.png)"
+    },
+    {
+      "level": 3,
+      "title": "Porte OR",
+      "content": "Cette porte logique produit un signal de sortie \"1\" si l'un des signaux d'entrée est \"1\" ou si les deux signaux d’entrée sont “1”. Si tous les signaux d'entrée sont \"0\", le signal de sortie est \"0\".\nL’écriture de l’opération logique est :\n$S = A \\wedge B$ ou $S = A + B$"
+    },
+    {
+      "level": 4,
+      "title": "Table de vérité",
+      "content": "|a|b|sortie|\n|-|-|------|\n|0|0|0|\n|0|1|1|\n|1|0|1|\n|1|1|1|"
+    },
+    {
+      "level": 4,
+      "title": "Représentation électronique",
+      "content": "![rpror](repr_or.png)"
+    },
+    {
+      "level": 3,
+      "title": "Porte XOR",
+      "content": "Cette porte logique produit un signal de sortie \"1\" si un seul des signaux d'entrée est \"1\". Si tous les signaux d'entrée sont \"0\" ou \"1\", le signal de sortie est \"0\".\nLa porte XOR est une porte de combinaison.\nElle est équivalente à l'équation logique $S = \\overline{A}B + A \\overline{B}$.\nOn l'écrit $A \\oplus B$."
+    },
+    {
+      "level": 4,
+      "title": "Table de vérité",
+      "content": "|a|b|sortie|\n|-|-|------|\n|0|0|0|\n|0|1|1|\n|1|0|1|\n|1|1|0|"
+    },
+    {
+      "level": 4,
+      "title": "Représentation électronique",
+      "content": "![rprxor](repr_xor.png)"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "facile": [
+    {
+      "nom": "Décodage ASCII depuis hexadécimal",
+      "enonce": "Décoder les messages suivants en hexadécimal à l'aide de la table ASCII :\n\n1. `48 65 6C 6C 6F`\n2. `57 6F 72 6C 64`\n3. `31 32 33 34 35`",
+      "exemple": "1. Hello\n2. World\n3. 12345",
+      "correction": "# Décodage hexadécimal vers ASCII :\n# 1. 48₁₆ = 72₁₀ = 'H', 65₁₆ = 101₁₀ = 'e', 6C₁₆ = 108₁₀ = 'l', 6C₁₆ = 108₁₀ = 'l', 6F₁₆ = 111₁₀ = 'o'\n#    → 'Hello'\n# 2. 57₁₆ = 87₁₀ = 'W', 6F₁₆ = 111₁₀ = 'o', 72₁₆ = 114₁₀ = 'r', 6C₁₆ = 108₁₀ = 'l', 64₁₆ = 100₁₀ = 'd'\n#    → 'World'\n# 3. 31₁₆ = 49₁₀ = '1', 32₁₆ = 50₁₀ = '2', 33₁₆ = 51₁₀ = '3', 34₁₆ = 52₁₀ = '4', 35₁₆ = 53₁₀ = '5'\n#    → '12345'"
+    },
+    {
+      "nom": "Encodage ASCII vers hexadécimal",
+      "enonce": "Encoder les messages suivants à l'aide de la table ASCII (donner le résultat en hexadécimal) :\n\n1. `Hello`\n2. `123`\n3. `!@#`\n4. `Code`",
+      "exemple": "1. 48 65 6C 6C 6F\n2. 31 32 33\n3. 21 40 23\n4. 43 6F 64 65",
+      "correction": "# Encodage ASCII vers hexadécimal :\n# 1. 'H' = 72₁₀ = 48₁₆, 'e' = 101₁₀ = 65₁₆, 'l' = 108₁₀ = 6C₁₆, 'l' = 108₁₀ = 6C₁₆, 'o' = 111₁₀ = 6F₁₆\n#    → 48 65 6C 6C 6F\n# 2. '1' = 49₁₀ = 31₁₆, '2' = 50₁₀ = 32₁₆, '3' = 51₁₀ = 33₁₆\n#    → 31 32 33\n# 3. '!' = 33₁₀ = 21₁₆, '@' = 64₁₀ = 40₁₆, '#' = 35₁₀ = 23₁₆\n#    → 21 40 23\n# 4. 'C' = 67₁₀ = 43₁₆, 'o' = 111₁₀ = 6F₁₆, 'd' = 100₁₀ = 64₁₆, 'e' = 101₁₀ = 65₁₆\n#    → 43 6F 64 65"
+    }
+  ],
+  "moyen": [
+    {
+      "nom": "Encodage Python avec méthodes",
+      "enonce": "Utiliser Python pour encoder et décoder :\n\n1. Instancier la chaîne : 'La vitesse de la lumière est de 300 000km/s'\n2. Que se passe-t-il si l'on veut afficher l'encodage en ASCII de cette chaîne ? Comment l'expliquer ?\n3. Encoder cette chaîne en UTF-8",
+      "exemple": "1. chaine = 'La vitesse de la lumière est de 300 000km/s'\n2. Erreur car 'è' et 'é' ne sont pas dans ASCII\n3. chaine.encode('utf-8')",
+      "correction": "# 1. Instanciation de la chaîne\nchaine = 'La vitesse de la lumière est de 300 000km/s'\n\n# 2. Tentative d'encodage ASCII\ntry:\n    ascii_encode = chaine.encode('ascii')\nexcept UnicodeEncodeError as e:\n    print(f\"Erreur : {e}\")\n    # Les caractères 'è' et 'é' ne sont pas dans la table ASCII (0-127)\n    # ASCII ne peut encoder que les caractères de base anglais\n\n# 3. Encodage UTF-8\nutf8_encode = chaine.encode('utf-8')\nprint(utf8_encode)"
+    },
+    {
+      "nom": "Décodage de points de code",
+      "enonce": "Donner les caractères associés à ces points de code en utilisant Python :\n\n1. b'\\x41'\n2. b'\\xce\\xa9'\n3. b'\\xe3\\x81\\x93'",
+      "exemple": "1. 'A'\n2. 'Ω' (oméga grec)\n3. 'こ' (hiragana japonais)",
+      "correction": "# Décodage de points de code\n\n# 1. Décodage ASCII\ncode1 = b'\\x41'\ncaractere1 = code1.decode('ascii')\nprint(f\"b'\\x41' → '{caractere1}'\")  # 'A'\n\n# 2. Décodage UTF-8 (caractère grec)\ncode2 = b'\\xce\\xa9'\ncaractere2 = code2.decode('utf-8')\nprint(f\"b'\\xce\\xa9' → '{caractere2}'\")  # 'Ω'\n\n# 3. Décodage UTF-8 (caractère japonais)\ncode3 = b'\\xe3\\x81\\x93'\ncaractere3 = code3.decode('utf-8')\nprint(f\"b'\\xe3\\x81\\x93' → '{caractere3}'\")  # 'こ'"
+    }
+  ],
+  "difficile": [
+    {
+      "nom": "Analyse d'encodages multiples",
+      "enonce": "Créer un programme Python qui :\n\n1. Prend une chaîne contenant des caractères internationaux\n2. Teste différents encodages (ASCII, Latin-1, UTF-8, UTF-16)\n3. Affiche les résultats et gère les erreurs d'encodage",
+      "exemple": "Chaîne : 'Café français 日本語'\nASCII : Erreur\nLatin-1 : Erreur (日本語)\nUTF-8 : Succès\nUTF-16 : Succès",
+      "correction": "def tester_encodages(texte):\n    encodages = ['ascii', 'latin-1', 'utf-8', 'utf-16']\n    \n    print(f\"Test d'encodages pour : '{texte}'\")\n    print(\"-\" * 50)\n    \n    for encodage in encodages:\n        try:\n            encode = texte.encode(encodage)\n            decode = encode.decode(encodage)\n            print(f\"{encodage:10} : Succès - {len(encode)} octets\")\n            print(f\"           Encodé : {encode[:50]}...\")\n        except UnicodeEncodeError as e:\n            print(f\"{encodage:10} : Erreur d'encodage - {e}\")\n        except UnicodeDecodeError as e:\n            print(f\"{encodage:10} : Erreur de décodage - {e}\")\n        print()\n\n# Test\ntexte = 'Café français 日本語'\ntester_encodages(texte)"
+    }
+  ]
+}

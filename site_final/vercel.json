@@ -1,0 +1,48 @@
+{
+  "rewrites": [
+    {
+      "source": "/static/(.*)",
+      "destination": "/static/$1"
+    },
+    {
+      "source": "/courses-json/(.*)",
+      "destination": "/courses-json/$1"
+    },
+    {
+      "source": "/courses-markdown/(.*)",
+      "destination": "/courses-markdown/$1"
+    },
+    {
+      "source": "/exercises/(.*)",
+      "destination": "/exercises/$1"
+    },
+    {
+      "source": "/stylesheets/(.*)",
+      "destination": "/stylesheets/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

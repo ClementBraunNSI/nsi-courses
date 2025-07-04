@@ -1,0 +1,27 @@
+{
+  "title": "Projet : Création du Bestiaire",
+  "sections": [
+    {
+      "level":2,
+      "title": "Partie 1 : Remplir le site comme la maquette",
+      "content": "Voici ce que vous devez reproduire lors de la première séance: \n\n![a_reproduire](./a_reproduire.png)\n\nChacun des blocs de couleur correspond à une partie bien précise du site.\nOn les nomme `div` pour division d'une page web. Ils permettent de scinder la page en diverses parties.\n\nLe site est aussi régi par une feuille de style qui n'est pas à modifier pour cette première étape.\n\n![base](./base.png)\n\nÀ cause d'un soucis d'affichage, le Nom du monstre correspond au bloc violet.\n\nVous allez devoir pour cette première partie : \n\n**Modifier le Nom du monstre pour qu'il corresponde à un titre de niveau 1.**\n\n**Dans le bloc bleu : Ajouter un paragraphe expliquant la rivalité/l'amitié entre votre monstre/personnage et ses rivaux/amis.**\n\n**Dans le bloc turquoise : Ajouter chacune des localisations où l'on peut retrouver votre monstre (Conservez la liste si vous souhaitez une liste, sinon supprimez la et écrivez un paragraphe).**\n\n**Dans le bloc turquoise : Ajouter une liste à puce correspondant à ses statistiques si l'on souhaite transformer ce bestiaire en un jeu de rôle sinon une histoire par rapport à son lieu d'habitat.**\n\n**Ajouter dans le bloc contenant la description et l'histoire de son monstre, un titre de niveau 3 permettant de structurer la page et en dessous un paragraphe expliquant l'histoire du monstre/personnage.**\n\nPar la suite, on ajoutera les images des rivaux/personnages (quand votre monstre est disponible [ici](./monstres.md)).\n\n**Ajouter à la place de `image du monstre` l'image du monstre associée.**\n\nPour se faire, vous rajouterez la balise suivante :  \n\n```html\n    <img class = \"image_principale\" align=\"left\" height=\"400px\" width=\"400px\" src=\"image/votre_prenom.png\" alt=\"nom_du_monstre\"/>\n```\n\n**Ajouter l'image du rival avec la balise suivante.**\n\n```html\n    <img class = \"image_rival\" width=\"30%\"  src=\"image/rival2.png\" alt=\"Rival 2\"/>\n```"
+    },
+    {
+      "level":2,
+      "title": "Partie 2 : Retirer les bordures",
+      "content": "Le fichier `style.css` rassemble tous les éléments de style de la page.\n\nLa syntaxe est telle que : \n\n```css\n    .classe_de_l_element{\n        propriete_1 : valeurs;\n        propriete_2 : valeurs;\n        ...\n    }\n\n```\n\nUn des éléments de style présent sur votre maquette est l'ensemble des bordures délimitant les `div` pour que vous puissiez vous repérer.\n\nConsigne : **Dans le fichier `style.css`, retirer l'ensemble des lignes qui ont un rapport avec les bordures.**\n*Vous chercherez sur internet comment réaliser des bordures en CSS pour retrouver les mots-clefs correspondants.*\n\n![final](./presque_fini.png)"
+    },
+    {
+      "level":2,
+      "title": "Partie 3 : Fond d'écran et couleurs de police d'écriture",
+      "content": "La dernière étape de ce projet correspond à l'ajout du fond d'écran et de la modification de la police d'écriture en blanc.\n\nLa *classe* `container` est la classe qui contient le plus d'éléments sur lesquels on veut appliquer ces propriété.\n\nConsigne : **Dans la classe container du fichier `style.css`, rajouter les propriétés permettant de changer le fond d'écran et de mettre la police d'écriture en blanc.**\n\n```css\n    .container{\n        background-image : url(../image/background.png);\n        color : white;\n\n    }\n\n```\n\n*Indication : le chemin de l'image du fond d'écran a pour point de départ le dossier style et pour point d'arrivée le dossier image. Pour \"remonter\" d'un dossier, il faut écrire `../` lors de l'écriture du lien vers l'image de fond d'écran.*\n\nVous devez avoir ainsi :\n\n![fini](./final.png)"
+    }
+  ],
+  "metadata": {
+    "level": "seconde",
+    "chapter": "II_-_Web",
+    "hasStyles": false,
+    "cardTypes": [],
+    "sourceFile": "II_-_Web/Projet_creation_site_II_Web.md"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "facile": [
+    {
+      "nom": "Conversion Binaire vers Décimal",
+      "enonce": "Convertissez les nombres binaires suivants en décimal :\n\n- 1101₂\n- 10101₂\n- 111000₂\n- 10010₂\n- 110110₂",
+      "exemple": "1101₂ = 13₁₀\n10101₂ = 21₁₀\n111000₂ = 56₁₀\n10010₂ = 18₁₀\n110110₂ = 54₁₀",
+      "correction": "# Conversion binaire vers décimal :\n# 1101₂ = 1×2³ + 1×2² + 0×2¹ + 1×2⁰ = 8 + 4 + 0 + 1 = 13₁₀\n# 10101₂ = 1×2⁴ + 0×2³ + 1×2² + 0×2¹ + 1×2⁰ = 16 + 0 + 4 + 0 + 1 = 21₁₀\n# 111000₂ = 1×2⁵ + 1×2⁴ + 1×2³ + 0×2² + 0×2¹ + 0×2⁰ = 32 + 16 + 8 = 56₁₀\n# 10010₂ = 1×2⁴ + 0×2³ + 0×2² + 1×2¹ + 0×2⁰ = 16 + 0 + 0 + 2 + 0 = 18₁₀\n# 110110₂ = 1×2⁵ + 1×2⁴ + 0×2³ + 1×2² + 1×2¹ + 0×2⁰ = 32 + 16 + 0 + 4 + 2 + 0 = 54₁₀"
+    },
+    {
+      "nom": "Conversion Décimal vers Binaire",
+      "enonce": "Convertissez les nombres décimaux suivants en binaire :\n\n- 13₁₀\n- 42₁₀\n- 255₁₀\n- 76₁₀\n- 128₁₀",
+      "exemple": "13₁₀ = 1101₂\n42₁₀ = 101010₂\n255₁₀ = 11111111₂\n76₁₀ = 1001100₂\n128₁₀ = 10000000₂",
+      "correction": "# Conversion décimal vers binaire (divisions successives) :\n# 13 ÷ 2 = 6 reste 1\n# 6 ÷ 2 = 3 reste 0\n# 3 ÷ 2 = 1 reste 1\n# 1 ÷ 2 = 0 reste 1\n# → 13₁₀ = 1101₂\n\n# 42 ÷ 2 = 21 reste 0\n# 21 ÷ 2 = 10 reste 1\n# 10 ÷ 2 = 5 reste 0\n# 5 ÷ 2 = 2 reste 1\n# 2 ÷ 2 = 1 reste 0\n# 1 ÷ 2 = 0 reste 1\n# → 42₁₀ = 101010₂"
+    },
+    {
+      "nom": "Conversion Hexadécimal vers Décimal",
+      "enonce": "Convertissez les nombres hexadécimaux suivants en décimal :\n\n- 1A₁₆\n- 3F₁₆\n- 7D₁₆\n- 2A₁₆\n- 5E₁₆",
+      "exemple": "1A₁₆ = 26₁₀\n3F₁₆ = 63₁₀\n7D₁₆ = 125₁₀\n2A₁₆ = 42₁₀\n5E₁₆ = 94₁₀",
+      "correction": "# Conversion hexadécimal vers décimal :\n# 1A₁₆ = 1×16¹ + A×16⁰ = 1×16 + 10×1 = 16 + 10 = 26₁₀\n# 3F₁₆ = 3×16¹ + F×16⁰ = 3×16 + 15×1 = 48 + 15 = 63₁₀\n# 7D₁₆ = 7×16¹ + D×16⁰ = 7×16 + 13×1 = 112 + 13 = 125₁₀\n# 2A₁₆ = 2×16¹ + A×16⁰ = 2×16 + 10×1 = 32 + 10 = 42₁₀\n# 5E₁₆ = 5×16¹ + E×16⁰ = 5×16 + 14×1 = 80 + 14 = 94₁₀"
+    }
+  ],
+  "moyen": [
+    {
+      "nom": "Addition en Base 2",
+      "enonce": "Effectuez les additions binaires suivantes :\n\n- 1101₂ + 101₂\n- 10000₂ + 1101₂\n- 1111₂ + 10₂\n- 10101₂ + 1101₂\n- 11110₂ + 110₂",
+      "exemple": "1101₂ + 101₂ = 10010₂\n10000₂ + 1101₂ = 11101₂\n1111₂ + 10₂ = 10001₂",
+      "correction": "# Addition binaire :\n#   1101\n# +  101\n# ------\n#  10010\n\n#  10000\n# + 1101\n# ------\n#  11101\n\n#   1111\n# +   10\n# ------\n#  10001\n\n# Règles : 0+0=0, 0+1=1, 1+0=1, 1+1=10 (0 avec retenue 1)"
+    },
+    {
+      "nom": "Complément à deux (8 bits)",
+      "enonce": "Trouvez le complément à deux des nombres binaires suivants (sur 8 bits) :\n\n- 01100101₂\n- 00011110₂\n- 01001101₂\n- 00111010₂\n- 01111111₂",
+      "exemple": "01100101₂ → 10011011₂\n00011110₂ → 11100010₂\n01001101₂ → 10110011₂",
+      "correction": "# Complément à deux = complément à un + 1\n# 01100101₂ → complément à un : 10011010₂ → +1 : 10011011₂\n# 00011110₂ → complément à un : 11100001₂ → +1 : 11100010₂\n# 01001101₂ → complément à un : 10110010₂ → +1 : 10110011₂\n# 00111010₂ → complément à un : 11000101₂ → +1 : 11000110₂\n# 01111111₂ → complément à un : 10000000₂ → +1 : 10000001₂"
+    },
+    {
+      "nom": "Conversion Décimal vers Hexadécimal",
+      "enonce": "Convertissez les nombres décimaux suivants en hexadécimal en utilisant la méthode des divisions successives :\n\n- 62₁₀\n- 158₁₀\n- 255₁₀",
+      "exemple": "62₁₀ = 3E₁₆\n158₁₀ = 9E₁₆\n255₁₀ = FF₁₆",
+      "correction": "# Conversion par divisions successives :\n# 62 ÷ 16 = 3 reste 14 (E)\n# 3 ÷ 16 = 0 reste 3\n# → 62₁₀ = 3E₁₆\n\n# 158 ÷ 16 = 9 reste 14 (E)\n# 9 ÷ 16 = 0 reste 9\n# → 158₁₀ = 9E₁₆\n\n# 255 ÷ 16 = 15 reste 15 (F)\n# 15 ÷ 16 = 0 reste 15 (F)\n# → 255₁₀ = FF₁₆"
+    }
+  ],
+  "difficile": [
+    {
+      "nom": "Nombres négatifs en complément à deux",
+      "enonce": "Convertissez les nombres décimaux négatifs suivants en leur représentation binaire sur 8 bits en utilisant le complément à deux :\n\n- -5₁₀\n- -18₁₀\n- -25₁₀\n- -50₁₀\n- -100₁₀",
+      "exemple": "-5₁₀ = 11111011₂\n-18₁₀ = 11101110₂\n-25₁₀ = 11100111₂",
+      "correction": "# Pour -5₁₀ :\n# 5₁₀ = 00000101₂\n# Complément à un : 11111010₂\n# +1 : 11111011₂\n\n# Pour -18₁₀ :\n# 18₁₀ = 00010010₂\n# Complément à un : 11101101₂\n# +1 : 11101110₂\n\n# Pour -25₁₀ :\n# 25₁₀ = 00011001₂\n# Complément à un : 11100110₂\n# +1 : 11100111₂"
+    },
+    {
+      "nom": "Programmation Python - Conversions",
+      "enonce": "Écrivez deux fonctions Python :\n\n1. `base10_vers_binaire(n)` : convertit un entier en chaîne binaire\n2. `binaire_vers_base10(binaire)` : convertit une chaîne binaire en entier",
+      "exemple": "base10_vers_binaire(13) → '1101'\nbinaire_vers_base10('1101') → 13",
+      "correction": "def base10_vers_binaire(n):\n    if n == 0:\n        return '0'\n    binaire = ''\n    while n > 0:\n        binaire = str(n % 2) + binaire\n        n = n // 2\n    return binaire\n\ndef binaire_vers_base10(binaire):\n    decimal = 0\n    puissance = 0\n    for i in range(len(binaire) - 1, -1, -1):\n        if binaire[i] == '1':\n            decimal += 2 ** puissance\n        puissance += 1\n    return decimal"
+    }
+  ]
+}
