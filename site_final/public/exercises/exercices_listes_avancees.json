@@ -1,0 +1,140 @@
+{"facile": [
+      {
+        "id": "matrices_1",
+        "title": "Position dans une matrice",
+        "enonce": "On dispose de la matrice [[1,2,3],[4,5,6],[7,8,9]].\n1. Donner la position (indice de la ligne et de la colonne) de la valeur 2.\n2. Donner la valeur à la ligne 1 et colonne 2.\n3. Comment en python retrouver la valeur cherchée en question 2.",
+        "example": "matrice = [[1,2,3],[4,5,6],[7,8,9]]",
+        "correction": "1. La valeur 2 se trouve à la ligne 0, colonne 1\n2. La valeur à la ligne 1 et colonne 2 est 6\n3. En Python : matrice[1][2]"
+      },
+      {
+        "id": "matrices_2",
+        "title": "Somme des éléments d'une matrice",
+        "enonce": "On dispose de la matrice [[1,2,3],[4,5,6],[7,8,9]].\n1. Écrire un programme qui permet de donner la somme de tous les nombres de cette matrice.\n2. Tester avec d'autres matrices plus grandes.",
+        "example": "matrice = [[1,2,3],[4,5,6],[7,8,9]]",
+        "correction": "def somme_matrice(matrice):\n    somme = 0\n    for ligne in matrice:\n        for element in ligne:\n            somme += element\n    return somme\n\n# Test\nmatrice = [[1,2,3],[4,5,6],[7,8,9]]\nprint(somme_matrice(matrice))  # Résultat: 45"
+      },
+      {
+        "id": "comprehension_1",
+        "title": "Compréhension de liste basique",
+        "enonce": "On dispose de la compréhension suivante [i for i in range(10)].\n1. Quelle liste est créée par cette compréhension?\n2. Modifier cette compréhension pour donner le carré de chaque nombre.",
+        "example": "[i for i in range(10)]",
+        "correction": "1. Cette compréhension crée la liste [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n2. Pour les carrés : [i**2 for i in range(10)]\n   Résultat : [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
+      },
+      {
+        "id": "comprehension_2",
+        "title": "Compréhension avec condition",
+        "enonce": "On peut rajouter des conditions dans des compréhensions pour éviter certaines valeurs.\n1. Quelle liste est créée par la compréhension suivante : [i for i in range(20) if i %2 == 0] ?\n2. Modifier cette compréhension pour qu'elle fasse l'inverse.",
+        "example": "[i for i in range(20) if i %2 == 0]",
+        "correction": "1. Cette compréhension crée la liste des nombres pairs de 0 à 19 : [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]\n2. Pour les nombres impairs : [i for i in range(20) if i %2 == 1]\n   Résultat : [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]"
+      }
+    ],
+    "moyen": [
+      {
+        "id": "matrices_3",
+        "title": "Sous-matrice",
+        "enonce": "Écrire une fonction `sous_matrice` qui prend en paramètre une matrice et deux indices (ligne et colonne), et renvoie une sous-matrice 2x2 commençant à cette position.",
+        "example": "sous_matrice([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1, 1) doit renvoyer [[5, 6], [8, 9]]",
+        "correction": "def sous_matrice(matrice, ligne, colonne):\n    sous_mat = []\n    for i in range(ligne, ligne + 2):\n        ligne_sous_mat = []\n        for j in range(colonne, colonne + 2):\n            ligne_sous_mat.append(matrice[i][j])\n        sous_mat.append(ligne_sous_mat)\n    return sous_mat\n\n# Test\nmatrice = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nprint(sous_matrice(matrice, 1, 1))  # [[5, 6], [8, 9]]"
+      },
+      {
+        "id": "matrices_4",
+        "title": "Valeurs uniques dans une matrice",
+        "enonce": "Écrire une fonction `valeurs_uniques_matrice` qui prend en paramètre une matrice et renvoie une liste des valeurs uniques présentes dans la matrice.",
+        "example": "valeurs_uniques_matrice([[1, 2, 2], [3, 4, 4], [5, 1, 3]]) doit renvoyer [1, 2, 3, 4, 5]",
+        "correction": "def valeurs_uniques_matrice(matrice):\n    valeurs = set()\n    for ligne in matrice:\n        for element in ligne:\n            valeurs.add(element)\n    return sorted(list(valeurs))\n\n# Test\nmatrice = [[1, 2, 2], [3, 4, 4], [5, 1, 3]]\nprint(valeurs_uniques_matrice(matrice))  # [1, 2, 3, 4, 5]"
+      },
+      {
+        "id": "matrices_5",
+        "title": "Somme des diagonales",
+        "enonce": "Écrire une fonction `somme_diagonales` qui prend une matrice carrée et renvoie la somme des éléments de ses deux diagonales.",
+        "example": "somme_diagonales([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) doit renvoyer 30 (1 + 5 + 9 + 3 + 7)",
+        "correction": "def somme_diagonales(matrice):\n    n = len(matrice)\n    somme = 0\n    for i in range(n):\n        somme += matrice[i][i]  # Diagonale principale\n        somme += matrice[i][n-1-i]  # Diagonale secondaire\n    # Si la matrice a une taille impaire, soustraire l'élément central compté deux fois\n    if n % 2 == 1:\n        centre = n // 2\n        somme -= matrice[centre][centre]\n    return somme\n\n# Test\nmatrice = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nprint(somme_diagonales(matrice))  # 30"
+      },
+      {
+        "id": "comprehension_3",
+        "title": "Double d'une liste",
+        "enonce": "Écrire une fonction `double_liste` qui prend une liste d'entiers en paramètre et utilise une compréhension de liste pour renvoyer une nouvelle liste contenant le double de chaque élément.",
+        "example": "double_liste([1, 2, 3, 4]) doit renvoyer [2, 4, 6, 8]",
+        "correction": "def double_liste(liste):\n    return [x * 2 for x in liste]\n\n# Test\nprint(double_liste([1, 2, 3, 4]))  # [2, 4, 6, 8]"
+      },
+      {
+        "id": "comprehension_4",
+        "title": "Enlever les négatifs",
+        "enonce": "Écrire une fonction `enlever_negatifs` qui prend une liste de nombres et renvoie une nouvelle liste sans les nombres négatifs, en utilisant une compréhension de liste.",
+        "example": "enlever_negatifs([-3, 0, 5, -1, 7]) doit renvoyer [0, 5, 7]",
+        "correction": "def enlever_negatifs(liste):\n    return [x for x in liste if x >= 0]\n\n# Test\nprint(enlever_negatifs([-3, 0, 5, -1, 7]))  # [0, 5, 7]"
+      },
+      {
+        "id": "comprehension_5",
+        "title": "Longueur des chaînes",
+        "enonce": "Écrire une fonction `longueur_liste` qui prend une liste de chaînes et renvoie une liste des longueurs de chaque chaîne, en utilisant une compréhension de liste.",
+        "example": "longueur_liste([\"chat\", \"chien\", \"poisson\"]) doit renvoyer [4, 5, 7]",
+        "correction": "def longueur_liste(liste):\n    return [len(chaine) for chaine in liste]\n\n# Test\nprint(longueur_liste([\"chat\", \"chien\", \"poisson\"]))  # [4, 5, 7]"
+      },
+      {
+        "id": "comprehension_6",
+        "title": "Cubes des nombres pairs",
+        "enonce": "Écrire une fonction `cubes_pairs` qui génère une liste des cubes des nombres pairs de 1 à 10 à l'aide d'une compréhension de liste.",
+        "example": "cubes_pairs() doit renvoyer [0, 8, 64]",
+        "correction": "def cubes_pairs():\n    return [x**3 for x in range(1, 11) if x % 2 == 0]\n\n# Test\nprint(cubes_pairs())  # [8, 64, 216, 512, 1000]"
+      }
+    ],
+    "difficile": [
+      {
+        "id": "matrices_6",
+        "title": "Transposée d'une matrice",
+        "enonce": "Écrire une fonction `transpose_matrice` qui prend en paramètre une matrice et renvoie sa transposée.",
+        "example": "transpose_matrice([[1, 2, 3], [4, 5, 6]]) doit renvoyer [[1, 4], [2, 5], [3, 6]]",
+        "correction": "def transpose_matrice(matrice):\n    if not matrice:\n        return []\n    nb_lignes = len(matrice)\n    nb_colonnes = len(matrice[0])\n    transposee = []\n    for j in range(nb_colonnes):\n        nouvelle_ligne = []\n        for i in range(nb_lignes):\n            nouvelle_ligne.append(matrice[i][j])\n        transposee.append(nouvelle_ligne)\n    return transposee\n\n# Test\nmatrice = [[1, 2, 3], [4, 5, 6]]\nprint(transpose_matrice(matrice))  # [[1, 4], [2, 5], [3, 6]]"
+      },
+      {
+        "id": "matrices_7",
+        "title": "Produit de matrices",
+        "enonce": "Écrire une fonction `produit_matrices` qui prend deux matrices et renvoie leur produit (en supposant qu'elles sont conformes).",
+        "example": "produit_matrices([[1, 2], [3, 4]], [[5, 6], [7, 8]]) doit renvoyer [[19, 22], [43, 50]]",
+        "correction": "def produit_matrices(A, B):\n    lignes_A = len(A)\n    colonnes_A = len(A[0])\n    colonnes_B = len(B[0])\n    \n    # Initialiser la matrice résultat\n    resultat = [[0 for _ in range(colonnes_B)] for _ in range(lignes_A)]\n    \n    # Calcul du produit\n    for i in range(lignes_A):\n        for j in range(colonnes_B):\n            for k in range(colonnes_A):\n                resultat[i][j] += A[i][k] * B[k][j]\n    \n    return resultat\n\n# Test\nA = [[1, 2], [3, 4]]\nB = [[5, 6], [7, 8]]\nprint(produit_matrices(A, B))  # [[19, 22], [43, 50]]"
+      },
+      {
+        "id": "comprehension_7",
+        "title": "Multiples de 3",
+        "enonce": "Écrire une fonction `nombres_multiples_3` qui crée une liste des nombres multiples de 3 de 0 à 30 à l'aide d'une compréhension de liste.",
+        "example": "nombres_multiples_3() doit renvoyer [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30]",
+        "correction": "def nombres_multiples_3():\n    return [i for i in range(31) if i % 3 == 0]\n\n# Test\nprint(nombres_multiples_3())  # [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30]"
+      },
+      {
+        "id": "comprehension_8",
+        "title": "Carrés des nombres pairs",
+        "enonce": "Écrire une fonction `squares_pairs` qui crée une liste des carrés des nombres pairs de 1 à 20 en utilisant une compréhension de liste.",
+        "example": "squares_pairs() doit renvoyer [0, 4, 16, 36, 64, 100, 144, 196]",
+        "correction": "def squares_pairs():\n    return [i**2 for i in range(1, 21) if i % 2 == 0]\n\n# Test\nprint(squares_pairs())  # [4, 16, 36, 64, 100, 144, 196, 256, 324, 400]"
+      },
+      {
+        "id": "comprehension_9",
+        "title": "Pairs ou impairs",
+        "enonce": "Écrire une fonction `pairs_ou_impairs` qui prend une liste d'entiers et renvoie une liste de chaînes indiquant si chaque nombre est pair ou impair.",
+        "example": "pairs_ou_impairs([1, 2, 3, 4]) doit renvoyer [\"impair\", \"pair\", \"impair\", \"pair\"]",
+        "correction": "def pairs_ou_impairs(liste):\n    return [\"pair\" if x % 2 == 0 else \"impair\" for x in liste]\n\n# Test\nprint(pairs_ou_impairs([1, 2, 3, 4]))  # [\"impair\", \"pair\", \"impair\", \"pair\"]"
+      },
+      {
+        "id": "comprehension_10",
+        "title": "Inverser les chaînes",
+        "enonce": "Écrire une fonction `inverser_chaînes` qui prend une liste de chaînes de caractères et renvoie une nouvelle liste contenant ces chaînes inversées.",
+        "example": "inverser_chaînes([\"abc\", \"def\", \"ghi\"]) doit renvoyer [\"cba\", \"fed\", \"ihg\"]",
+        "correction": "def inverser_chaînes(liste):\n    return [chaine[::-1] for chaine in liste]\n\n# Test\nprint(inverser_chaînes([\"abc\", \"def\", \"ghi\"]))  # [\"cba\", \"fed\", \"ihg\"]"
+      },
+      {
+        "id": "comprehension_11",
+        "title": "Fusionner sans doublons",
+        "enonce": "Écrire une fonction `fusionner_sans_doublons` qui prend en paramètres deux listes et renvoie une nouvelle liste contenant tous les éléments des deux listes sans doublons.",
+        "example": "fusionner_sans_doublons([1, 2, 3], [3, 4, 5]) doit renvoyer [1, 2, 3, 4, 5]",
+        "correction": "def fusionner_sans_doublons(liste1, liste2):\n    return list(set(liste1 + liste2))\n\n# Ou avec compréhension de liste pour garder l'ordre:\ndef fusionner_sans_doublons(liste1, liste2):\n    resultat = []\n    for element in liste1 + liste2:\n        if element not in resultat:\n            resultat.append(element)\n    return resultat\n\n# Test\nprint(fusionner_sans_doublons([1, 2, 3], [3, 4, 5]))  # [1, 2, 3, 4, 5]"
+      },
+      {
+        "id": "comprehension_12",
+        "title": "Préfixes de mots",
+        "enonce": "Écrire une fonction `prefixes` qui prend une liste de mots et renvoie une liste contenant tous les préfixes possibles pour chaque mot.",
+        "example": "prefixes([\"chat\", \"chien\"]) doit renvoyer [\"\", \"c\", \"ch\", \"cha\", \"chat\", \"\", \"c\", \"ch\", \"chi\", \"chien\"]",
+        "correction": "def prefixes(liste_mots):\n    resultat = []\n    for mot in liste_mots:\n        for i in range(len(mot) + 1):\n            resultat.append(mot[:i])\n    return resultat\n\n# Ou avec compréhension de liste imbriquée:\ndef prefixes(liste_mots):\n    return [mot[:i] for mot in liste_mots for i in range(len(mot) + 1)]\n\n# Test\nprint(prefixes([\"chat\", \"chien\"]))  # [\"\", \"c\", \"ch\", \"cha\", \"chat\", \"\", \"c\", \"ch\", \"chi\", \"chien\"]"
+      }
+    ]
+}

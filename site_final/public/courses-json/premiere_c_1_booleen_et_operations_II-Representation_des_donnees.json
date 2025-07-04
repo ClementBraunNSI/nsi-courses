@@ -1,0 +1,46 @@
+{
+  "title": "Booléens et Fonctions booléennes",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Définitions",
+      "content": "Une **variable** booléenne est une variable qui peut prendre **deux états** : **Vrai ou Faux**. Ces états peuvent être équivalents à des valeurs numériques : Vrai = 1 et Faux = 0.\nCes états correspondent en machine **à la présence du courant ou non**.\nUne **fonction booléenne** est une fonction qui prend en paramètre **des variables booléennes** et en ressort un résultat.\nUne **équation booléenne** est un ensemble de fonctions booléenne prenant en paramètre un certain nombre de variables et renvoie un résultat en sortie."
+    },
+    {
+      "level": 2,
+      "title": "Fonctions booléennes",
+      "content": "Il existe un certain nombre d'opérations booléennes. Dans ce cours, on s'intéressera aux principales.\nCes fonctions donnent un résultat fini dépendant de l'état des variables en paramètre.\nOn appelle cet ensemble de couples états/résultat **une table de vérité**."
+    },
+    {
+      "level": 3,
+      "title": "Fonction NOT (NON)",
+      "content": "La fonction NOT prend en paramètre une variable booléenne et renvoie son opposé.\n**Table de vérité**\n|a|s|\n|-|-|\n|0|1|\n|1|0|"
+    },
+    {
+      "level": 3,
+      "title": "Fonction AND (ET)",
+      "content": "La fonction AND prend en paramètre deux variables booléennes et renvoie en sortie si les deux variables sont à l'état 1. L'opérateur est $\\times$ ou $\\cdot$.\n**Table de vérité**\n|a|b|s|\n|-|-|-|\n|0|0|0|\n|0|1|0|\n|1|0|0|\n|1|1|1|"
+    },
+    {
+      "level": 3,
+      "title": "Fonction OR (OU)",
+      "content": "La fonction OR prend en paramètre deux variables et renvoie 1 si l'une ou les deux variables booléennes sont à l'état 1.\nL'opérateur est $+$.\n**Table de vérité**\n|a|b|s|\n|-|-|-|\n|0|0|0|\n|0|1|1|\n|1|0|1|\n|1|1|1|"
+    },
+    {
+      "level": 3,
+      "title": "Fonction XOR (OU Exclusif)",
+      "content": "La fonction XOR correspond à une fonction booléenne OR mais qui renvoie 1 uniquement si un des deux paramètre est à l'état 1.\n**Table de vérité**\n|a|b|s|\n|-|-|-|\n|0|0|0|\n|0|1|1|\n|1|0|1|\n|1|1|0|"
+    },
+    {
+      "level": 2,
+      "title": "Équations booléennes",
+      "content": "On rappelle qu'une équation booléenne est un ensemble de fonctions booléennes.\nCes fonctions répondent à l'algèbre booléenne créée par George Bool à la fin du XIXème siècle.\nLes équations booléennes se lisent de gauche à droite et dépendent des priorités opératoires PEMDAS comme en mathématiques.\n$S = (a + b)\\times c$ se lit \"a ou b et c\".\nExemple :\nPour évaluer cette équation booléenne, on a besoin de valeurs pour les variables. On prend pour exemple a = 1, b = 0 et c = 1.\nOn évalue d'abord l'opération OU. Le résultat de cette opération sera utilisé comme paramètre pour l'opération ET.\n$S = (1+0) \\times 0 = 1 \\times 0 = 0$.\nOn peut donc évaluer des équations booléennes à l'aide des tables de vérité précédentes."
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

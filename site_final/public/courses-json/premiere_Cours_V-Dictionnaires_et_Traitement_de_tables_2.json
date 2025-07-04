@@ -1,0 +1,31 @@
+{
+  "title": "Afficher les noms des villes commençant par la lettre C",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Objectifs",
+      "content": "Les dictionnaires de Python permettent de réaliser des traitements sur des données. Ces traitements permettent notamment de trier, organiser, sélectionenr des données en fonction de critères.\nIl existe un bon nombre de manières de structurer des données en informatique, celle qui nous sera utile sera permise grâce aux fichiers **CSV**.\nLe format CSV (*Comma Separated Values*) correspond à un format où les données sont structurées par des virgules (ou des points-virgules).\nCes formats CSV sont manipulables via des logiciels **tableurs** (Excel, Libre Office etc...) mais on peut également réaliser des traitements sur ces fichiers à l'aide de bibliothèques *Python*."
+    },
+    {
+      "level": 2,
+      "title": "La bibliothèque `CSV`",
+      "content": "La bibliothèque `csv` permet de charger des fichiers et stocke les données sous forme de listes.\nOn ne traitera que de la fonction `DictReader` qui permet de traduire chaque ligne de notre fichier CSV dans des dictionnaires, eux mêmes stockés dans une liste.\nVoici la structure de l'ouverture d'un fichier CSV et du remplissage d'une liste organisant nos données.\n```python\nimport csv\nliste_a_remplir = []\nwith open('communes.csv', newline='') as fichier_csv:\n   lecteur = csv.DictReader(fichier_csv, delimiter=',')   # Objet DictReader (itérateur)\n   for ligne in lecteur:\n      liste_a_remplir.append(dict(ligne))\n```"
+    },
+    {
+      "level": 3,
+      "title": "Exemple",
+      "content": "Le fichier CSV [commune.csv](./communes.csv) représente l'ensemble des communes de France, associée à leur code postal, département etc...\nPour \"ouvrir\" ce fichier `csv` et structurer toutes les données le comportant, on utilisera un exemple de code ci-dessus.\nOn aurait\n```python\nimport csv\ndef creer_liste_villes(nom_de_fichier : str) -> list:\n   villes = []\n   with open('communes.csv', newline='') as fichier_csv:\n      lecteur = csv.DictReader(fichier_csv, delimiter=';')   \n      for ligne in lecteur:\n         villes.append(dict(ligne))\n```\nPour ce fichier CSV, il y a les descripteurs suivant (description exhaustive): `code_commune_INSEE,nom_commune_postal,code_postal,latitude,longitude,code_commune,nom_commune,nom_commune_complet,code_departement,nom_departement,code_region,nom_region`.\n```\ncode_commune_INSEE;nom_commune_postal;code_postal;latitude;longitude;code_commune;nom_commune;nom_departement\n01001;L'Abergement-Clémenciat;01400;46.1667;4.9;1;L'Abergement-Clémenciat;Ain\n01002;L'Abergement-de-Varey;01640;46.05;5.4833;1;L'Abergement-de-Varey;Ain\n...\n```\nGrâce à tous ces descripteurs, on peut afficher les lignes de nos fichiers CSV suivant différents critères.\n*Rappel, la fonction DictReader permet de créer une liste de dictionnaires et chaque dictionnaire correspond à une ligne du fichier CSV à laquelle on associe chacun des attributs à chacune des valeurs de la ligne.*\nOn appelle **projection** le fait d'obtenir les valeurs de certains ou tous les attributs d'une table / base de données / fichiers CSV.\n*Exemple en python*\n```python\n   for ligne in villes:  # Pour chaque ligne dans la liste des villes\n      print(ligne[\"nom_commune\"])  # Affiche la valeur associée à la clé 'nom_commune'\n   for ligne in villes:\n      print(ligne[\"nom_commune\"])\n   for ligne in villes:\n      print(\"La ville \", ligne[\"nom_commune\"], \" est dans le département : \", ligne[\"nom_departement\"])\n```\nCela permet donc d'obtenir dans notre exemple de villes, le nom de celle-ci, le département etc... de toutes les villes **sans aucune contrainte**.\n___\nOn appelle **sélection** le fait de sélectionner des valeurs suivant certains critères ou condition.\nCela permet donc d'obtenir des informations ou de réaliser des traitements sur les données d'un fichier suivant divers critères (par exemple sur les villes).\n```python\n   for ligne in villes:\n      if ligne['code_departement'] == '59':\n         print(ligne[\"nom_commune\"])\n   for ligne in villes:\n      if ligne[\"nom_commune\"][0] == \"C\":\n         print(ligne[\"nom_commune\"])\n```"
+    },
+    {
+      "level": 3,
+      "title": "**Exercices faciles**",
+      "content": "1. **Écrire une fonction `afficher_noms_communes` qui prend une liste de dictionnaires `villes` en paramètre et affiche le nom de toutes les communes.**\n2. **Écrire une fonction `afficher_communes_par_code_postal` qui prend une liste de dictionnaires `villes` et une chaîne `code_postal` en paramètre, et affiche les noms des communes ayant ce code postal.**\n3. **Écrire une fonction `afficher_communes_avec_coordonnees` qui prend une liste de dictionnaires `villes` en paramètre et affiche pour chaque commune son nom, sa latitude et sa longitude.**\n---"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

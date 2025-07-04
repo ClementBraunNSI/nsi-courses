@@ -1,0 +1,31 @@
+{
+  "title": "Utiliser les méthodes",
+  "sections": [
+    {
+      "level": 2,
+      "title": "1. Qu'est-ce que la Programmation Orientée Objet ?",
+      "content": "La Programmation Orientée Objet (POO) est une manière de concevoir et d'écrire des programmes informatiques. Au lieu de penser en termes de fonctions et de procédures, on pense en termes d'**objets**.\nUn **objet** est une entité qui possède des **attributs** (des données qui le caractérisent) et des **méthodes** (des actions qu'il peut effectuer)."
+    },
+    {
+      "level": 2,
+      "title": "2. Les Classes : Modèles pour les Objets",
+      "content": "En POO, on utilise des **classes** pour créer des objets. Une classe est comme un plan ou un moule qui définit comment les objets de ce type seront structurés et comment ils se comporteront."
+    },
+    {
+      "level": 3,
+      "title": "Exemple : La classe `Voiture`",
+      "content": "Regardons un exemple concret avec une classe `Voiture`. Imaginons que nous voulons représenter des voitures dans notre programme.\n```python\nclass Voiture:\n    def __init__(self, immatriculation, marque, modele, annee, couleur):\n        self.immatriculation = immatriculation\n        self.marque = marque\n        self.modele = modele\n        self.annee = annee\n        self.couleur = couleur\n        self.est_demarre = False # Par défaut, une voiture est arrêtée\n    def __str__(self):\n        return f\"Voiture {self.immatriculation} de marque {self.marque} et de modèle {self.modele}.\"\n    def demarrer(self):\n        self.est_demarre = True\n        print(f\"La voiture {self.immatriculation} démarre.\")\n    def arreter(self):S\n        self.est_demarre = False\n        print(f\"La voiture {self.immatriculation} s'arrête.\")\n```\n**Explications :**\n*   **`class Voiture:`** : Définit une nouvelle classe nommée `Voiture`.\n*   **`__init__(self, ...)`** : C'est le **constructeur**. Il est appelé automatiquement lorsqu'on crée une nouvelle instance (un nouvel objet) de la classe `Voiture`. Le mot-clé `self` fait référence à l'instance de l'objet qui est en train d'être créé. Les autres paramètres (`immatriculation`, `marque`, etc.) sont les valeurs que l'on fournira pour initialiser les attributs de la voiture.\n*   **`self.immatriculation = immatriculation`** : Crée un **attribut** `immatriculation` pour l'objet `self` et lui assigne la valeur passée en paramètre.\n*   **`__str__(self)`** : C'est une **méthode spéciale**. Python l'appelle quand on essaie de convertir un objet `Voiture` en chaîne de caractères (par exemple, avec `print(ma_voiture)`).\n*   **`demarrer(self)`** et **`arreter(self)`** : Ce sont des **méthodes** que les objets `Voiture` peuvent exécuter. Elles modifient l'attribut `est_demarre` et affichent un message."
+    },
+    {
+      "level": 2,
+      "title": "3. Créer et Utiliser des Objets (Instances)",
+      "content": "Une fois la classe définie, on peut créer des **instances** (des objets spécifiques) de cette classe.\n```python\nma_voiture_bleue = Voiture(\"AB-123-CD\", \"Renault\", \"Clio\", 2020, \"bleu\")\nune_autre_voiture = Voiture(\"XY-789-ZW\", \"Peugeot\", \"3008\", 2022, \"gris\")\nprint(f\"La couleur de ma première voiture est : {ma_voiture_bleue.couleur}\") # Affiche: bleu\nprint(f\"L'année de l'autre voiture est : {une_autre_voiture.annee}\") # Affiche: 2022\nprint(ma_voiture_bleue) # Appelle la méthode __str__\nma_voiture_bleue.demarrer() # Affiche: La voiture AB-123-CD démarre.\nprint(f\"Ma voiture bleue est démarrée : {ma_voiture_bleue.est_demarre}\") # Affiche: True\nune_autre_voiture.arreter() # La méthode arreter n'affiche rien par défaut dans notre exemple, mais modifie self.est_demarre\nprint(f\"L'autre voiture est démarrée : {une_autre_voiture.est_demarre}\") # Affiche: False\n```"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "Programmation_Orientee_Objet",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

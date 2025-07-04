@@ -1,0 +1,36 @@
+{
+  "title": "Photographie Numérique 3 : Extension, Format, Traitement et Métadonnées",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Extension et format d'une image",
+      "content": "Une image comme tout fichier possède une **extension**.\n**Définitions:**\nUne extension est une **suite de caractère précédée d’un point**. Elle permet de retrouver quel est le format d’un fichier et d’associer une application à un type de fichier.\nLe **format d’un fichier** quant à lui correspond à la **manière d’encoder les bits de la donnée** pour les lire.\nOn retrouve divers formats d’image qui ont leur propre caractéristiques.\nGrâce à la vidéo *taille*, *poids* et *format* d’images de DLT (Digital Learning Tribe), relier le format à sa bonne définition.\n![relier](/courses-json/images/exo_relier.png)\n*Indiquer quel est l’utilisation principale de chaque format d’image :*\n- Le JPEG est populaire sur les sites internet et sur les réseaux sociaux.\n- Le PNG sert notamment à réaliser des logos pour les entreprises ou des illustrations grâce à la transparence.\n- Le GIF permet de créer des images avec peu de couleurs ou animées."
+    },
+    {
+      "level": 2,
+      "title": "Traitement et Algorithmes",
+      "content": ""
+    },
+    {
+      "level": 3,
+      "title": "Traitement sur des images : Conversion nuances de gris et Négatifs",
+      "content": "On peut réaliser un bon nombre de traitements sur les images.\nPar exemple, la conversion d’une image couleur en image en niveaux de gris permet de bien définir les zones d’ombres ou par exemple de calibrer les appareils photos.\nIl existe 3 manières pour convertir une image couleur vers nuances de gris :\n**Méthode de la moyenne :**\nOn réalise la moyenne des composantes de chaque pixels. Cette moyenne correspondra à la valeur de la nuance de gris du pixel.\n**Méthode de la couleur vraie :**\nCette méthode prend en compte la vision humaine et sa perception des couleurs. Il a été défini des coefficients pour chaque valeur de pixel.\n$I_{pixel} = 0,2126*V_{rouge} + 0,7152*V_{vert} + 0,0722*V_{bleu}$\n**Méthode rapide :**\nCette méthode utilise la proportion de vert pour donner la nuance de gris correspondante. Cette méthode permet d’approximer la nuance car l’oeil est beaucoup plus sensible au vert qu’aux autres couleurs.\nOn utilisera la photo de Maya comme exemple:\n![mayagris](/courses-json/images/maya_gris.png)\nOn remarque que les différences sont infimes entre les trois modèles mais qu’ils mettent bien en avant les zones de contraste, d’ombre et de lumière de l’image.\nGrâce aux valeurs de chaque composantes de pixels, on peut donner le négatif d’une image.\nL’inverse d’une composante de couleur se calcule de cette manière :\n$\\texttt{Inverse couleur} = 255 -\\texttt{Valeur de la couleur}$.\n![mayainv](/courses-json/images/mayainv.png)\nEn inversant chaque composante de chaque pixels, on retrouve l’inverse d’une image.\nCe procédé a été utilisé notamment à l’invention des photos car le négatif des images se retrouvait sur les bandes magnétiques qui recevaient la lumière.\nEn inversant les négatifs, on retrouvait les images normales."
+    },
+    {
+      "level": 3,
+      "title": "Algorithmes de prise de vue (mise au point, stabilisation)",
+      "content": "Il existe divers algorithmes qui opèrent de la prise de l’image au traitement de celle-ci.\nLes **algorithmes de prise de vue** opèrent à la prise de la photo. Il existe l’a**lgorithme de stabilisation** qui compense le mouvement du photographe et évite le **flou de bougé**.\n![stab](/courses-json/images/stab.png)\nL’**algorithme de mise au point** permet d’adapter la distance de la lentille par rapport au capteur pour adapter la **netteté** ou **se mettre au point** sur un objet particulier.\n![map](/courses-json/images/map.png)"
+    },
+    {
+      "level": 3,
+      "title": "Métadonnées EXIF",
+      "content": "Les métadonnées sont des données qui fournissent des informations sur d’autres données.\nPour des images, les métadonnées permettent de tracer une image et aider à leur traitement.\nCes informations sont au standard EXIF et sont produites lors de la prise de vue.\nElles permettent de retrouver par exemple : \n- Les coordonnées GPS du lieu de la prise, le lieu en lui même s’il est connu, la date de prise de vue\n- Les données techniques : le poids de l’image, la résolution, les dimensions\n- Les paramètres et configuration de l’appareil : référence et marque de l’appareil, l’ouverture, la distance focale, la sensibilité.\n- Les données du photographe : le nom, prénom, le nom de la photo, le droit d’usage etc.\nCes données sont accessibles facilement, par exemple sur la photo de Maya :\n![exif](/courses-json/images/exif.png)"
+    }
+  ],
+  "metadata": {
+    "level": "seconde",
+    "chapter": "V_-_Photographie_Numerique",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

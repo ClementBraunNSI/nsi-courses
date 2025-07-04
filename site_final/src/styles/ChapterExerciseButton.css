@@ -1,0 +1,86 @@
+.chapter-exercise-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 0.75rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.chapter-exercise-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+.chapter-exercise-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-icon {
+  font-size: 1.1rem;
+}
+
+.exercise-text {
+  font-weight: 600;
+}
+
+/* Variantes de couleur pour différents chapitres */
+.chapter-exercise-btn.constructions {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+.chapter-exercise-btn.constructions:hover {
+  background: linear-gradient(135deg, #ff5252 0%, #d63031 100%);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.chapter-exercise-btn.donnees {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+}
+
+.chapter-exercise-btn.donnees:hover {
+  background: linear-gradient(135deg, #26d0ce 0%, #2d8a7b 100%);
+  box-shadow: 0 4px 12px rgba(78, 205, 196, 0.3);
+}
+
+.chapter-exercise-btn.structures {
+  background: linear-gradient(135deg, #a8e6cf 0%, #7fcdcd 100%);
+}
+
+.chapter-exercise-btn.structures:hover {
+  background: linear-gradient(135deg, #88d8a3 0%, #6bb6b6 100%);
+  box-shadow: 0 4px 12px rgba(168, 230, 207, 0.3);
+}
+
+.chapter-exercise-btn.algorithmes {
+  background: linear-gradient(135deg, #ffd93d 0%, #ff6b35 100%);
+}
+
+.chapter-exercise-btn.algorithmes:hover {
+  background: linear-gradient(135deg, #ffcd02 0%, #e55039 100%);
+  box-shadow: 0 4px 12px rgba(255, 217, 61, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chapter-exercise-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .exercise-icon {
+    font-size: 1rem;
+  }
+}

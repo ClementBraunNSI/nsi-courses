@@ -1,0 +1,20 @@
+{
+  "title": "New Year Advent Challenge 🦊❄️🎉",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Principe",
+      "content": "Le New Year Advent Challenge est un challenge d'algorithmie proposé par les enseignants **M. Delplace : enseignant d'informatique dans l'Académie de Versailles** et **M. Braun 🦊 : enseignant d'informatique à Vannes** et étudiants **M. Leal : étudiant en master MEEF NSI 2e Année à Lille** et **M. Boulier : étudiant en master MEEF NSI 2e Année à Lille**.\n\nCe challenge de code permet aux élèves de réviser et produire des algorithmes pour fêter le décompte de la nouvelle année."
+    },
+    {
+      "level": 2,
+      "title": "Éditions disponibles",
+      "content": "<style>\n.edition-cards {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));\n    gap: 2rem;\n    padding: 2rem 0;\n}\n\n.edition-card {\n    background: linear-gradient(135deg, #ffb347 0%, #ff6b35 100%);\n    border-radius: 16px;\n    padding: 2rem;\n    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);\n    transition: all 0.3s ease;\n    color: white;\n    text-align: center;\n}\n\n.edition-card:hover {\n    transform: translateY(-8px);\n    box-shadow: 0 12px 24px rgba(255, 107, 53, 0.3);\n}\n\n.edition-card h3 {\n    margin: 0 0 1rem 0;\n    font-size: 1.5rem;\n    font-weight: bold;\n}\n\n.edition-card p {\n    margin: 0 0 1.5rem 0;\n    opacity: 0.9;\n    line-height: 1.6;\n}\n\n.edition-links {\n    display: flex;\n    flex-direction: column;\n    gap: 0.75rem;\n}\n\n.edition-links .btn {\n    background: white;\n    color: #ff6b35;\n    border: 2px solid #ff6b35;\n    padding: 0.75rem 1.5rem;\n    border-radius: 8px;\n    text-decoration: none;\n    font-weight: 500;\n    transition: all 0.3s ease;\n}\n\n.edition-links .btn:hover {\n    background: #ff6b35;\n    color: white;\n    border-color: #ff6b35;\n    transform: translateY(-2px);\n}\n\n@media (max-width: 768px) {\n    .edition-cards {\n        grid-template-columns: 1fr;\n        gap: 1.5rem;\n    }\n    \n    .edition-card {\n        padding: 1.5rem;\n    }\n}\n</style>\n\n<section class=\"edition-cards\">\n    <div class=\"edition-card\">\n        <h3>🎊 Édition 2025-2026</h3>\n        <p>La nouvelle édition avec 14 exercices inédits sur l'organisation d'événements, la gestion des invités et l'analyse de données.</p>\n        <div class=\"edition-links\">\n            <a href=\"/premiere/new_year_advent_25_26/New_Year_Advent\" class=\"btn\">📋 Voir tous les exercices</a>\n        </div>\n    </div>\n\n    <div class=\"edition-card\">\n        <h3>🎄 Édition 2024-2025</h3>\n        <p>L'édition originale avec 14 exercices sur la gestion des courses, des budgets et l'organisation de soirées.</p>\n        <div class=\"edition-links\">\n            <a href=\"/premiere/new_year_advent_24_25/New_Year_Advent\" class=\"btn\">📋 Voir tous les exercices</a>\n        </div>\n    </div>\n</section>"
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "New_Year_Advent",
+    "course_type": "landing"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Bonne pratique",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Objectif de cette leçon",
+      "content": "Cette leçon vous servira dans toute votre expérience de développement.\nLe but d'appliquer les bonnes pratiques permet d'avoir un code lisible, compréhensible par d'autres personnes et surtout de comprendre ses propres programmes.\nIl existe diverses techniques pour rendre son code lisible et compréhensible et elles sont listées dans ce cours.\nCes bonnes pratiques **seront à appliquer toute l'année** lors des exercices, des évaluations et surtout lors des épreuves pratiques."
+    },
+    {
+      "level": 2,
+      "title": "Noms de variables",
+      "content": "Le nommage des variable est très important lors de la création d'un programme.\nNommer une variable correctement permet de se rappeler lors de la conception d'un algorithme, à quoi elle correspond.\nIl semble logique lors de la conception d'un algorithme portant sur des conversions de température de nommer ses variables de manière logique.\n```python\nx = 34\ny = 'La température est de ' + str(x)\ntemperature = 34\naffichage = 'La température est de ' + str(temperature)\n```\nIl existe plusieurs conventions de nommage mais il est plus simple d'utiliser la convention **snake case**.\nCette convention consiste à écrire des noms de variables explicites avec des _ (underscore ou tiret-du-bas) pour séparer les divers mots du nom.\nPar exemple :\n```python\naffichage_temperature = 'La température est de '\n```"
+    },
+    {
+      "level": 2,
+      "title": "Spécification des fonctions",
+      "content": "La spécification d'une fonction correspond à écrire un bloc de texte avant le bloc de code d'une fonction. Ce bloc de texte explique ce que sont les paramètres d'entrée, le résultat en sortie s'il y a et explique brièvement ce que la fonction fait.\nCela permet de mettre au propre ce que fait et d'avoir une idée de comment concevoir le programme.\nLa spécification permet aussi de rendre compréhensible le programme pour un tiers.\nLa spécification est vivement recommandée (pour ne pas dire évaluée) lors des épreuves pratiques.\nPar exemple :\n```python\ndef nombre_impair(nombre):\n    '''\n    params : \n        entrée : nombre, entier\n        sortie : un booléen\n    Renvoie True si le nombre est impair, False sinon.\n    '''\n    if nombre %2 == 0:\n        return False\n    else:\n        return True\n```"
+    },
+    {
+      "level": 2,
+      "title": "Comprendre les erreurs",
+      "content": "Les erreurs sont des événements courants qui surviennent lors de l'exécution d'un programme. Elles peuvent être causées par différents types de problèmes, tels que des erreurs de syntaxe, des erreurs d'exécution ou des erreurs logiques. Chaque type d'erreur correspond à une situation particulière qui peut être identifiée et résolue avec des techniques appropriées."
+    },
+    {
+      "level": 3,
+      "title": "1. Erreurs de Syntaxe",
+      "content": "Les erreurs de syntaxe surviennent lorsque le code ne respecte pas les règles de la syntaxe du langage Python. Ces erreurs sont détectées lors de la phase d'analyse (ou de parsing) du code avant son exécution. Elles empêchent généralement l'interpréteur Python de comprendre et d'exécuter le programme correctement.\n**Exemples :**\n- Oubli de deux-points ( : ), par exemple dans une déclaration de fonction ou dans une boucle.\n- Utilisation incorrecte des guillemets (\", ') autour des chaînes de caractères.\n- Indentation incorrecte, notamment dans les blocs de code tels que les boucles et les fonctions."
+    },
+    {
+      "level": 3,
+      "title": "2. Erreurs d'Exécution (Exceptions)",
+      "content": "Les erreurs d'exécution, également appelées exceptions, surviennent lorsqu'une instruction ou une expression est correctement écrite mais ne peut pas être exécutée correctement à cause d'une situation imprévue pendant l'exécution du programme. Python génère alors une exception et interrompt l'exécution du programme si celle-ci n'est pas gérée.\n**Exemples courants d'exceptions :**\n- `ZeroDivisionError` : Tentative de division par zéro.\n- `TypeError` : Opération appliquée à un type d'objet inapproprié.\n- `IndexError` : Tentative d'accès à un index inexistant dans une liste ou un tuple."
+    },
+    {
+      "level": 3,
+      "title": "3. Erreurs Logiques (Bugs)",
+      "content": "Les erreurs logiques, souvent appelées bugs, sont des erreurs plus subtiles où le programme s'exécute sans générer d'exception mais produit un résultat incorrect. Ces erreurs sont souvent dues à une mauvaise compréhension du problème ou à une mauvaise implémentation de l'algorithme.\n**Exemples :**\n- Mauvaise gestion des conditions dans une boucle.\n- Utilisation incorrecte des variables dans une fonction.\n- Algorithmes incorrects qui produisent des résultats imprévus."
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

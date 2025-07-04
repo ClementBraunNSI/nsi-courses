@@ -1,0 +1,36 @@
+{
+  "title": "Fiche de Cours : Piles et Files en Python (Implémentation POO)",
+  "sections": [
+    {
+      "level": 2,
+      "title": "1. Introduction aux Structures Linéaires",
+      "content": "Les **piles** (LIFO - Last In First Out) et les **files** (FIFO - First In First Out) sont des structures de données fondamentales en informatique. Nous allons les implémenter en Python en utilisant la Programmation Orientée Objet."
+    },
+    {
+      "level": 2,
+      "title": "2. Le Type de Données Abstrait : Pile (Stack)",
+      "content": "Une pile est une structure de données linéaire qui suit le principe LIFO (Last In, First Out - Dernier Entré, Premier Sorti). Imaginez une pile d'assiettes : vous ne pouvez ajouter ou retirer une assiette que par le dessus."
+    },
+    {
+      "level": 3,
+      "title": "Opérations Fondamentales",
+      "content": "Soit $P$ une pile et $e$ un élément :\n*   **`creer_pile()` → Pile**\n    *   Description : Crée une nouvelle pile vide.\n    *   Axiome : `est_vide(creer_pile())` est Vrai.\n*   **`empiler(P, e)` → Pile**\n    *   Description : Ajoute $e$ au sommet de la pile $P$.\n    *   Axiome : `sommet(empiler(P, e))` est $e$.\n    *   Axiome : `depiler(empiler(P, e))` est $e$.\n*   **`depiler(P)` → Pile**\n    *   Description : Retire l'élément au sommet de la pile $P$ et le renvoie. Précondition : $P$ ne doit pas être vide.\n    *   Exemple : Si $P = [e_1, e_2, e_3]$, alors `depiler(P)` donne $P = [e_1, e_2]$.\n    *   Axiome : `depiler(empiler(creer_pile(), e))` est une pile vide.\n*   **`sommet(P)` → Element**\n    *   Description : Retourne l'élément au sommet de la pile $P$ sans le retirer. Précondition : $P$ ne doit pas être vide.\n    *   Exemple : Si $P = [e_1, e_2, e_3]$, alors `sommet(P)` retourne $e_3$.\n*   **`est_vide(P)` → Booléen**\n    *   Description : Retourne Vrai si la pile $P$ est vide, Faux sinon."
+    },
+    {
+      "level": 3,
+      "title": "Comportement d'une Pile (Exemple Conceptuel)",
+      "content": "Supposons que nous ayons une pile `P` initialement vide (`P = creer_pile()`):\n1. `empiler(P, 10)`  => La pile $P$ devient `[10]` (10 est au sommet)\n2. `empiler(P, 20)`  => La pile $P$ devient `[10, 20]` (20 est au sommet)\n3. `sommet(P)`       => Retourne `20` (la pile $P$ reste `[10, 20]`)\n4. `depiler(P)`      => La pile $P$ devient `[10]`. L'opération retourne `20`.\n5. `est_vide(P)`     => Retourne `Faux`\n6. `depiler(P)`      => La pile $P$ devient `[]`. L'opération retourne `10`.\n7. `est_vide(P)`     => Retourne `Vrai`"
+    },
+    {
+      "level": 2,
+      "title": "3. Le Type de Données Abstrait : File (Queue)",
+      "content": "Une file est une structure de données linéaire qui suit le principe FIFO (First In, First Out - Premier Entré, Premier Sorti). Pensez à une file d'attente au cinéma : la première personne arrivée est la première servie."
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "Programmation_Orientee_Objet",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

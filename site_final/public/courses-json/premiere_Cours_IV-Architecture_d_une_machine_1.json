@@ -1,0 +1,56 @@
+{
+  "title": "💻 Architecture d'une machine : le modèle de Von Neumann",
+  "sections": [
+    {
+      "level": 2,
+      "title": "📚 Définition et Histoire",
+      "content": "On définit un ordinateur comme étant une machine qui réalise des calculs de manière ordonnée (on parlait d'ordonnateur).\nIl existe divers modèles pour créer des machines qui résolvent des calculs (comme la machine de Turing par exemple) mais celui qui a été retenu pour réaliser les machines que l'on utilise quotidiennement est celui de John Von Neumann.\n👨‍🔬 John Von Neumann était un mathématicien de la fin du XIXe - début XXe siècle et son but était d'augmenter les puissances de calcul des machines déjà existantes à cause notamment de la seconde guerre mondiale.\nIl reprend le modèle de calcul du projet **EDVAC** qui était une machine de calcul militaire (qui pouvait réaliser des opérations mathématiques en utilisant le binaire) mais y ajoute la notion de mémoire de programme pour créer son modèle.\n![edvac](edvac.jpeg)\nCe modèle réalise des calculs de manière séquentielle, ordonnée : on peut appeler ce modèle un **modèle de calcul séquentiel**."
+    },
+    {
+      "level": 2,
+      "title": "🔧 Les composants du modèle de Von Neumann",
+      "content": "Le modèle de Von Neumann est caractérisé par la présence de 4 composants notables."
+    },
+    {
+      "level": 3,
+      "title": "🧮 UAL et UC",
+      "content": "Le cerveau de la machine, les composants qui réalisent les calculs, résolvent les algorithmes et les ordonnent : **l'Unité Arithmético Logique** et **l'Unité de Contrôle**\nL'Unité Arithmético-logique (ou UAL) est une unité de traitement qui sert à réaliser des calculs et opérations de base. Elle peut réaliser des opérations mathématiques, des opérations de logique, de comparaisons ou des décalages.\nL'UAL peut aussi contenir un ensemble d'espaces de données nommé **registres**.\nCette unité est composé de milliards de transistors qui sont des composants électroniques qui servent à réaliser notamment des opérations et comparaisons suivant la logique booléenne. Cet ensemble de transistor peut être appelé **circuit de portes logiques ou circuit logique**.\n🎛️ L'Unité de contrôle comme son nom l'indique réalise la gestion des flux électriques provenant de la mémoire ou de l'Unité Arithmético-Logique.\nElle permet de réaliser la séquence des opérations ; Elle est responsable de l'appellation de modèle séquentielle.\nCette Unité de Contrôle suit un cycle précis pour organiser les programmes.\nIl est composé de 3 étapes :\n1. 🔄 L'UC récupère les instructions dans la mémoire. (Fetch)\n2. 🔍 L'UC décode ces instructions en langage proche de la machine. (Decode)\n3. ⚡ L'UC transmet l'instruction à l'UAL et celle-çi lui renvoie le résultat. (Execute)\n4. 💾 L'UC transmet le résultat dans la mémoire. (Store)\nCet ensemble d'unité est ce que l'on appelle le **micro-processeur** ou communément le **processeur**.\nIl existe divers types de processeurs qui peuvent réaliser des opérations en \"quasi simultané\" et qui sont cadencés par des signaux d'horloges : on parle de **fréquence du processeur**.\nCette fréquence est en général exprimée en *GHz* (prononcé *Giga-Hertz*).\n![proco](intelamd.jpeg)"
+    },
+    {
+      "level": 3,
+      "title": "💾 La mémoire",
+      "content": "Tous les calculs, opérations et programmes ont besoin de valeurs pour fonctionner ou doivent renvoyer et stocker des résultats pour les utiliser. \nLes machines ont aussi besoin de mémoire pour stocker de manière temporaire des variables de programmes ou de stockage à long terme pour enregistrer des fichers par exemple.\nIl existe divers types de mémoire qui permettent le bon fonctionnement d'une machine."
+    },
+    {
+      "level": 4,
+      "title": "⚡ Le cache du processeur",
+      "content": "Le cache du processeur est une mémoire d'accès très rapide, située entre le processeur et la RAM.\nElle permet de stocker temporairement les instructions utilisées par le processeur pour éviter de tout le temps les calculer. Cela permet d'optimiser l'utilisation du processeur."
+    },
+    {
+      "level": 4,
+      "title": "🔄 La mémoire volatile (RAM)",
+      "content": "La mémoire volatile ou mémoire **RAM (Random Access Memory)** correspond à la mémoire court terme de la machine.\nCette mémoire n'est pas aussi conséquente qu'une mémoire de stockage mais possède des fréquences d'accès très rapides (de l'ordre du *GHz*).\nCette mémoire permet de stocker temporairement les données à des programmes en cours d'exécution.\nLe fait de stocker ces données dans la RAM (qui est une mémoire d'accès très rapide) permet au processeur d'accéder à des données très rapidement et de réaliser d'autant plus rapidement les diverses opérations."
+    },
+    {
+      "level": 4,
+      "title": "📀 La mémoire morte (ROM)",
+      "content": "La mémoire ROM **(ou Read-Only Memory)** est une mémoire qui est non-volatile. Elle est conservée même lorsque la machine est éteinte. Elle contient les instructions nécessaires au démarrage de l'ordinateur (BIOS ou firmware)."
+    },
+    {
+      "level": 4,
+      "title": "💿 La mémoire à long terme",
+      "content": "La mémoire à long terme permet de stocker des données et des fichiers. Elle est celle qui correspond aux disques durs, clefs USB ou SSD.\nElle permet de stocker le système d'exploitation, les applications ou les données (fichiers, programmes etc...)."
+    },
+    {
+      "level": 3,
+      "title": "🔌 Les bus et périphériques",
+      "content": "On a vu précédemment l'utilité du processeur et de la mémoire mais comment tout cela interragit-il?\nLes **bus** permettent de relier tous ces composants pour leur permettre de communiquer. Un bus au sens physique est un ensemble de câbles\nIl existe divers bus :\n* 🎮 Bus de contrôle : Transfère les signaux de contrôle et de commande entre les composants.\n* 📊 Bus de données : Transfère les données entre le processeur, la mémoire et les périphériques.\n* 🔍 Bus d'adresses : Transfère les adresses mémoire ou des périphériques pour avoir accès aux diverses données nécessaires à l'exécution de la machine.\nLes périphériques font aussi partie de la machine.\nQu'ils soient d'entrée comme un clavier, un micro ou des capteures, de sortie comme des enceintes ou un écran, tous permettent de rajouter des fonctionnalités à une machine."
+    }
+  ],
+  "metadata": {
+    "level": "premiere",
+    "chapter": "",
+    "hasStyles": false,
+    "cardTypes": []
+  }
+}

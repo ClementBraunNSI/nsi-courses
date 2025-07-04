@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/test.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ceb9a3" />
+    <meta name="description" content="Cours de NSI - Numérique et Sciences Informatiques pour Seconde, Première et Terminale" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/test.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="keywords" content="NSI, Numérique, Sciences Informatiques, Cours, Seconde, Première, Terminale, Python, Algorithmique" />
+    <meta name="author" content="NSI Courses" />
+    <meta property="og:title" content="Cours de NSI" />
+    <meta property="og:description" content="Cours de Numérique et Sciences Informatiques pour tous les niveaux" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="%PUBLIC_URL%/test.png" />
+    
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true,
+          processEnvironments: true
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <title>Cours de NSI - Numérique et Sciences Informatiques</title>
+  </head>
+  <body>
+    <noscript>Vous devez activer JavaScript pour utiliser cette application.</noscript>
+    <div id="root"></div>
+    <!--
+      Cette application React est optimisée pour les cours de NSI.
+      Elle charge dynamiquement le contenu des cours depuis les fichiers Markdown.
+    -->
+  </body>
+</html>
