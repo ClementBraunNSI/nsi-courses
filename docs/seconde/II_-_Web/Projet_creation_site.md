@@ -1,75 +1,9 @@
 # 📚 Projet : Création du Bestiaire
 
-<style>
-.course-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
+> **📖 Préparation**
 
-.course-card {
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-}
+## Téléchargement des ressources
 
-.course-card.definition {
-  border-left: 4px solid #4CAF50;
-}
-
-.course-card.exercise {
-  border-left: 4px solid #667eea;
-}
-
-.course-card.tip {
-  border-left: 4px solid #FF9800;
-}
-
-.badge {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.badge.definition {
-  background: linear-gradient(135deg, #4CAF50, #45a049);
-  color: white;
-}
-
-.badge.exercise {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-}
-
-.badge.tip {
-  background: linear-gradient(135deg, #FF9800, #f57c00);
-  color: white;
-}
-
-.course-title {
-  margin: 0 0 15px 0;
-  color: #2c3e50;
-  font-size: 1.4rem;
-}
-
-.course-content {
-  line-height: 1.6;
-  color: #34495e;
-}
-</style>
-
-<div class="course-container">
-
-<div class="course-card definition">
-<div class="badge definition">📖 Préparation</div>
-<h3 class="course-title">Téléchargement des ressources</h3>
-<div class="course-content">
 Pour la création du bestiaire, téléchargez l'archive correspondante en cliquant sur le lien hypertexte suivant : [maquette_vide](./projet_site_eleve.zip).
 
 Vous retrouverez :
@@ -77,13 +11,11 @@ Vous retrouverez :
 - un fichier `index.html` qui correspond au site web à remplir
 - un dossier `image` qui contiendra l'image de votre monstre
 - un dossier `style` qui contiendra tous les éléments de style de votre page
-</div>
-</div>
 
-<div class="course-card exercise">
-<div class="badge exercise">🏋️ Partie 1</div>
-<h3 class="course-title">Remplir le site comme la maquette</h3>
-<div class="course-content">
+> **🏋️ Partie 1**
+
+## Remplir le site comme la maquette
+
 Voici ce que vous devez reproduire lors de la première séance: 
 
 ![a_reproduire](./a_reproduire.png)
@@ -124,13 +56,11 @@ Pour se faire, vous rajouterez la balise suivante :
 ```html
     <img class = "image_rival" width="30%"  src="image/rival2.png" alt="Rival 2"/>
 ```
-</div>
-</div>
 
-<div class="course-card exercise">
-<div class="badge exercise">🏋️ Partie 2</div>
-<h3 class="course-title">Retirer les bordures</h3>
-<div class="course-content">
+> **🏋️ Partie 2**
+
+## Retirer les bordures
+
 Le fichier `style.css` rassemble tous les éléments de style de la page.
 
 La syntaxe est telle que : 
@@ -150,13 +80,11 @@ Un des éléments de style présent sur votre maquette est l'ensemble des bordur
 *Vous chercherez sur internet comment réaliser des bordures en CSS pour retrouver les mots-clefs correspondants.*
 
 ![final](./presque_fini.png)
-</div>
-</div>
 
-<div class="course-card exercise">
-<div class="badge exercise">🏋️ Partie 3</div>
-<h3 class="course-title">Fond d'écran et couleurs de police d'écriture</h3>
-<div class="course-content">
+> **🏋️ Partie 3**
+
+## Fond d'écran et couleurs de police d'écriture
+
 La dernière étape de ce projet correspond à l'ajout du fond d'écran et de la modification de la police d'écriture en blanc.
 
 La *classe* `container` est la classe qui contient le plus d'éléments sur lesquels on veut appliquer ces propriété.
@@ -175,7 +103,3 @@ La *classe* `container` est la classe qui contient le plus d'éléments sur lesq
 Vous devez avoir ainsi :
 
 ![fini](./final.png)
-</div>
-</div>
-
-</div>

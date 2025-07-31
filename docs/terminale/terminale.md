@@ -60,409 +60,587 @@
   }
 }
 
-/* Design moderne et épuré */
-.chapter-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem 0;
-}
-
-/* Styles pour les boutons des sections */
-.data-section {
-    margin-bottom: 1.5rem;
-}
-
-.data-section h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #2d3748;
-}
-
-.data-section .btn {
-    background: #f7fafc;
-    color: #4a5568;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-    display: inline-block;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.data-section .btn:hover {
-    background: #805ad5;
-    color: white;
-    border-color: #805ad5;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(128, 90, 213, 0.25);
-}
-
-.chapter-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #f0f0f0;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+/* Carrousel de catégories */
+.category-carousel-container {
     position: relative;
-    overflow: hidden;
-}
-
-.chapter-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #805ad5 0%, #6b46c1 100%);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-
-.chapter-card:hover::before {
-    transform: scaleX(1);
-}
-
-.chapter-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(128, 90, 213, 0.15);
-    border-color: #805ad5;
-}
-
-.chapter-card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #2d3748;
-    letter-spacing: -0.025em;
-}
-
-.chapter-card p {
-    color: #718096;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-}
-
-.chapter-links {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 0 4rem;
 }
 
-.chapter-links .btn {
-    background: #f7fafc;
-    color: #4a5568;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+.carousel-wrapper {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 20px;
     position: relative;
-    text-align: left;
 }
 
-.chapter-links .btn:hover {
-    background: #805ad5;
+.category-carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 400%; /* 4 slides */
+}
+
+.category-carousel-item {
+    flex: 0 0 25%; /* 100% / 4 slides */
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(156, 39, 176, 0.9);
     color: white;
-    border-color: #805ad5;
-    transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(128, 90, 213, 0.25);
-}
-
-.chapter-links hr {
     border: none;
-    height: 1px;
-    background: #e2e8f0;
-    margin: 0.75rem 0;
-    opacity: 0.6;
-}
-
-/* Style spécial pour la section Structures de données */
-.structures-card {
-    grid-column: 1 / -1; /* Prend toute la largeur */
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #f0f0f0;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    margin-bottom: 2rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.structures-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #805ad5 0%, #6b46c1 100%);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-
-.structures-card:hover::before {
-    transform: scaleX(1);
-}
-
-.structures-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(128, 90, 213, 0.15);
-    border-color: #805ad5;
-}
-
-.structures-content {
-    display: grid;
-    grid-template-columns: 1fr 1px 1fr 1px 1fr;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-.structures-section {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(156, 39, 176, 0.3);
 }
 
-.structures-section h4 {
-    margin: 0 0 1rem 0;
-    background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+.carousel-btn:hover {
+    background: rgba(156, 39, 176, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(156, 39, 176, 0.4);
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(156, 39, 176, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: #9C27B0;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .category-carousel-container {
+        padding: 0 3rem;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Navigation ultra moderne 2024 - Terminale */
+.modern-nav {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(156, 39, 176, 0.05));
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    margin: 2rem 0;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.nav-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.nav-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid rgba(156, 39, 176, 0.3);
+    margin-bottom: 1rem;
 }
 
-.structures-section .btn {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    color: #9C27B0;
-    border: 2px solid rgba(156, 39, 176, 0.2);
-    border-radius: 12px;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
+.nav-subtitle {
+    color: var(--md-default-fg-color--light);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.category-card {
+    background: var(--md-default-bg-color);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(156, 39, 176, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.category-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.category-card:hover::before {
+    opacity: 1;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.category-title {
+    font-size: 1.4rem;
     font-weight: 600;
+    color: var(--md-default-fg-color);
+    margin: 0;
+}
+
+.category-description {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.chapter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.chapter-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.structures-section .btn::before {
+.chapter-item::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(156, 39, 176, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s ease;
 }
 
-.structures-section .btn:hover {
-    background: linear-gradient(135deg, #9C27B0, #7B1FA2);
-    color: white;
-    border-color: #9C27B0;
-    transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+.chapter-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(8px);
 }
 
-.structures-section .btn:hover::before {
+.chapter-item:hover::before {
     left: 100%;
 }
 
-.vertical-separator {
-    background: linear-gradient(to bottom, transparent, var(--md-primary-fg-color), transparent);
-    width: 1px;
-    margin: 1rem 0;
+.chapter-title {
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
 }
 
+.chapter-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.chapter-link {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chapter-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Couleurs thématiques par catégorie - Terminale */
+.category-structures {
+    background: linear-gradient(135deg, rgba(244, 67, 54, 0.2), rgba(211, 47, 47, 0.2));
+}
+
+.category-programming {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(56, 142, 60, 0.2));
+}
+
+.category-data {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.2), rgba(25, 118, 210, 0.2));
+}
+
+.category-systems {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.2), rgba(245, 124, 0, 0.2));
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-    .structures-content {
+    .category-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        padding: 0 1rem;
     }
     
-    .vertical-separator {
-        display: none;
+    .nav-title {
+        font-size: 2rem;
     }
     
-    .structures-section {
-        border-bottom: 1px solid var(--md-primary-fg-color);
-        padding-bottom: 1rem;
-    }
-    
-    .structures-section:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
+    .category-card {
+        padding: 1.5rem;
     }
 }
+
+/* Animation d'entrée */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.category-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.category-card:nth-child(1) { animation-delay: 0.1s; }
+.category-card:nth-child(2) { animation-delay: 0.2s; }
+.category-card:nth-child(3) { animation-delay: 0.3s; }
+.category-card:nth-child(4) { animation-delay: 0.4s; }
+
 </style>
 
+<script>
+// Carrousel de catégories
+let currentSlideIndex = 0;
+const totalSlides = 4;
+
+function updateCarousel() {
+    const track = document.getElementById('categoryCarousel');
+    const indicators = document.querySelectorAll('.carousel-indicator');
+    
+    if (track) {
+        const translateX = -currentSlideIndex * 25; // 25% par slide (100% / 4 slides)
+        track.style.transform = `translateX(${translateX}%)`;
+    }
+    
+    // Mise à jour des indicateurs
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlideIndex);
+    });
+}
+
+function changeSlide(direction) {
+    currentSlideIndex += direction;
+    
+    if (currentSlideIndex >= totalSlides) {
+        currentSlideIndex = 0;
+    } else if (currentSlideIndex < 0) {
+        currentSlideIndex = totalSlides - 1;
+    }
+    
+    updateCarousel();
+}
+
+function currentSlide(slideIndex) {
+    currentSlideIndex = slideIndex - 1;
+    updateCarousel();
+}
+
+// Support tactile
+let startX = 0;
+let isDragging = false;
+
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.carousel-wrapper');
+    
+    if (carousel) {
+        carousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        });
+        
+        carousel.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+        });
+        
+        carousel.addEventListener('touchend', (e) => {
+            if (!isDragging) return;
+            
+            const endX = e.changedTouches[0].clientX;
+            const diffX = startX - endX;
+            
+            if (Math.abs(diffX) > 50) {
+                if (diffX > 0) {
+                    changeSlide(1);
+                } else {
+                    changeSlide(-1);
+                }
+            }
+            
+            isDragging = false;
+        });
+    }
+    
+    // Support clavier
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            changeSlide(-1);
+        } else if (e.key === 'ArrowRight') {
+            changeSlide(1);
+        }
+    });
+    
+    // Initialisation
+    updateCarousel();
+});
+</script>
+
 <!-- Bandeau de niveau -->
-<div class="level-header">
-  <div class="level-header-content">
-    <img src="../../images/fox_terminale.png" alt="Terminale" class="level-logo" />
-    <div>
-      <h1>Terminale NSI</h1>
-      <p>Numérique et Sciences Informatiques</p>
-      <p class="level-description">
-        Maîtrise des concepts avancés et préparation au supérieur
-      </p>
+
+
+<div class="modern-nav">
+    <div class="level-header">
+    <div class="level-header-content">
+        <img src="../../images/fox_terminale.png" alt="Terminale" class="level-logo" />
+        <div>
+        <h1>Terminale NSI</h1>
+        <p>Numérique et Sciences Informatiques</p>
+        <p class="level-description">
+            Approfondissement et spécialisation en informatique
+        </p>
+        </div>
     </div>
-  </div>
+    
+    <div class="category-carousel-container">
+        <button class="carousel-btn" id="prevBtn" onclick="changeSlide(-1)">‹</button>
+        
+        <div class="carousel-wrapper">
+            <div class="category-carousel-track" id="categoryCarousel">
+            <!-- Catégorie Structures & Algorithmes -->
+            <div class="category-carousel-item">
+                <div class="category-card category-structures">
+                    <div class="category-header">
+                        <span class="category-icon">🧱</span>
+                        <h3 class="category-title">Structures & Algorithmes</h3>
+                    </div>
+                    <p class="category-description">
+                        Structures de données avancées, algorithmes complexes et optimisation
+                    </p>
+                    <div class="chapter-list">
+                        <div class="chapter-item">
+                            <div class="chapter-title">Structures de données</div>
+                            <div class="chapter-links">
+                                <a href="../I-Structures_de_donnees/Cours/Cours_1/" class="chapter-link">📋 Listes</a>
+                                <a href="../I-Structures_de_donnees/Cours/Cours_2/" class="chapter-link">📚 Piles</a>
+                                <a href="../I-Structures_de_donnees/Cours/Cours_3/" class="chapter-link">🚶 Files</a>
+                                <a href="../I-Structures_de_donnees/Cours/Cours_5/" class="chapter-link">🌳 Arbres</a>
+                                <a href="../I-Structures_de_donnees/Cours/Cours_6/" class="chapter-link">🕸️ Graphes</a>
+                            </div>
+                        </div>
+                        <div class="chapter-item">
+                            <div class="chapter-title">Algorithmes avancés</div>
+                            <div class="chapter-links">
+                                <a href="../III-Algorithmes/Cours/Cours_1/" class="chapter-link">⚡ Diviser pour régner</a>
+                                <a href="../III-Algorithmes/Cours/Cours_2/" class="chapter-link">🎯 Prog. dynamique</a>
+                                <a href="../III-Algorithmes/Cours/Cours_3/" class="chapter-link">🔍 Recherche textuelle</a>
+                            </div>
+                        </div>
+                        <div class="chapter-item">
+                            <div class="chapter-title">Exercices structures</div>
+                            <div class="chapter-links">
+                                <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_listes/" class="chapter-link">📝 Listes</a>
+                                <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_piles_files/" class="chapter-link">📝 Piles/Files</a>
+                                <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_arbres/" class="chapter-link">📝 Arbres</a>
+                                <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_graphes/" class="chapter-link">📝 Graphes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Catégorie Programmation Avancée -->
+            <div class="category-carousel-item">
+                <div class="category-card category-programming">
+                    <div class="category-header">
+                        <span class="category-icon">🔧</span>
+                        <h3 class="category-title">Programmation Avancée</h3>
+                    </div>
+                    <p class="category-description">
+                        Récursivité, programmation orientée objet, paradigmes et modularité
+                    </p>
+                    <div class="chapter-list">
+                        <div class="chapter-item">
+                            <div class="chapter-title">Concepts avancés</div>
+                            <div class="chapter-links">
+                                <a href="../II-Programmation/Cours/Cours_1/" class="chapter-link">🔄 Récursivité</a>
+                                <a href="../II-Programmation/Cours/Cours_2/" class="chapter-link">🏗️ POO</a>
+                                <a href="../II-Programmation/Cours/Cours_3/" class="chapter-link">📦 Modularité</a>
+                            </div>
+                        </div>
+                        <div class="chapter-item">
+                            <div class="chapter-title">Paradigmes de programmation</div>
+                            <div class="chapter-links">
+                                <a href="../VI-Langages_et_programmation/Cours/Cours_1/" class="chapter-link">🎨 Paradigmes</a>
+                                <a href="../VI-Langages_et_programmation/Cours/Cours_2/" class="chapter-link">⚙️ Interprétation</a>
+                                <a href="../VI-Langages_et_programmation/Cours/Cours_3/" class="chapter-link">🔄 Récursivité</a>
+                            </div>
+                        </div>
+                        <div class="chapter-item">
+                            <div class="chapter-title">Exercices programmation</div>
+                            <div class="chapter-links">
+                                <a href="../II-Programmation/Fiches_d_exercices/Fiche_exercices_recursivite/" class="chapter-link">📝 Récursivité</a>
+                                <a href="../II-Programmation/Fiches_d_exercices/Fiche_exercices_POO/" class="chapter-link">📝 POO</a>
+                                <a href="../III-Algorithmes/Fiches_d_exercices/Fiche_exercices_diviser_regner/" class="chapter-link">📝 Diviser pour régner</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Catégorie Données & Graphes -->
+            <div class="category-carousel-item">
+                <div class="category-card category-data">
+                    <div class="category-header">
+                        <span class="category-icon">🌐</span>
+                        <h3 class="category-title">Données & Graphes</h3>
+                    </div>
+                    <p class="category-description">
+                        Bases de données relationnelles, SQL et traitement de données complexes
+                    </p>
+                    <div class="chapter-list">
+                        <div class="chapter-item">
+                            <div class="chapter-title">Bases de données</div>
+                            <div class="chapter-links">
+                                <a href="../IV-Bases_de_donnees/Cours/Cours_1/" class="chapter-link">🗃️ Modèle relationnel</a>
+                                <a href="../IV-Bases_de_donnees/Cours/Cours_2/" class="chapter-link">💾 SQL</a>
+                                <a href="../IV-Bases_de_donnees/Fiches_d_exercices/Fiche_exercices_SQL/" class="chapter-link">📝 Exercices SQL</a>
+                            </div>
+                        </div>
+                        <div class="chapter-item">
+                            <div class="chapter-title">Structures avancées</div>
+                            <div class="chapter-links">
+                                <a href="../I-Structures_de_donnees/Cours/Cours_4/" class="chapter-link">📖 Dictionnaires</a>
+                                <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_dictionnaires/" class="chapter-link">📝 Exercices dict.</a>
+                                <a href="../III-Algorithmes/Fiches_d_exercices/Fiche_exercices_prog_dynamique/" class="chapter-link">📝 Prog. dynamique</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Catégorie Systèmes & Réseaux -->
+            <div class="category-carousel-item">
+                <div class="category-card category-systems">
+                    <div class="category-header">
+                        <span class="category-icon">🖥️</span>
+                        <h3 class="category-title">Systèmes & Réseaux</h3>
+                    </div>
+                    <p class="category-description">
+                        Architecture matérielle, processeurs, systèmes sur puce et protocoles réseau
+                    </p>
+                    <div class="chapter-list">
+                        <div class="chapter-item">
+                            <div class="chapter-title">Architecture matérielle</div>
+                            <div class="chapter-links">
+                                <a href="../V-Architectures_materielles/Cours/Cours_1/" class="chapter-link">⚙️ Processeurs</a>
+                                <a href="../V-Architectures_materielles/Cours/Cours_2/" class="chapter-link">🔧 Systèmes sur puce</a>
+                                <a href="../V-Architectures_materielles/Cours/Cours_3/" class="chapter-link">🔄 Gestion processus</a>
+                            </div>
+                        </div>
+                        <div class="chapter-item">
+                            <div class="chapter-title">Réseaux & Protocoles</div>
+                            <div class="chapter-links">
+                                <a href="../V-Architectures_materielles/Cours/Cours_4/" class="chapter-link">🌐 Protocoles routage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-indicators">
+            <span class="carousel-indicator active" onclick="currentSlide(1)"></span>
+            <span class="carousel-indicator" onclick="currentSlide(2)"></span>
+            <span class="carousel-indicator" onclick="currentSlide(3)"></span>
+            <span class="carousel-indicator" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    <button class="carousel-btn" id="nextBtn" onclick="changeSlide(1)">›</button>
 </div>
-
-<section class="chapter-cards">
-    <!-- I. Rappels de Première -->
-    <div class="chapter-card">
-        <h3>I. 🔄 Rappels de Première</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Révision des concepts fondamentaux : variables, structures de contrôle, fonctions et listes</p>
-        <div class="chapter-links">
-            <a href="../I-Rappels/Cours/variables_et_types/" class="btn">Variables et types</a>
-            <a href="../I-Rappels/Cours/structures_conditionnelles_boucles/" class="btn">Conditions et boucles</a>
-            <a href="../I-Rappels/Cours/fonctions/" class="btn">Fonctions</a>
-            <a href="../I-Rappels/Cours/listes_tableaux/" class="btn">Listes et tableaux</a>
-            <a href="../I-Rappels/Exercices/fiche_exercices_rappels/" class="btn">Exercices de révision</a>
-        </div>
-    </div>
-
-    <!-- II. Structures de données -->
-    <div class="structures-card">
-        <h3>II. 🏗️ Structures de données</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Structures de données, interface et implémentation - Programmation objet</p>
-        <div class="structures-content">
-            <!-- Section Piles/Files -->
-            <div class="structures-section">
-                <h4>📚 Listes, Piles, Files</h4>
-                <a href="../II-Structures_de_donnees/Cours/listes_piles_files/" class="btn">Cours : Structures linéaires</a>
-                <a href="../II-Structures_de_donnees/Exercices/fiche_exercices_listes_piles_files/" class="btn">Exercices : Listes, piles et files</a>
-            </div>
-            
-            <div class="vertical-separator"></div>
-            
-            <!-- Section Arbres -->
-            <div class="structures-section">
-                <h4>🌳 Arbres</h4>
-                <a href="../II-Structures_de_donnees/Cours/arbres/" class="btn">Cours : Arbres binaires</a>
-                <a href="../II-Structures_de_donnees/Exercices/fiche_exercices_arbres/" class="btn">Exercices : Arbres</a>
-            </div>
-            
-            <div class="vertical-separator"></div>
-            
-            <!-- Section Graphes -->
-            <div class="structures-section">
-                <h4>🕸️ Graphes</h4>
-                <a href="../II-Structures_de_donnees/Cours/graphes/" class="btn">Cours : Graphes</a>
-                <a href="../II-Structures_de_donnees/Exercices/fiche_exercices_graphes/" class="btn">Exercices : Graphes</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- III. Bases de données -->
-    <div class="chapter-card">
-        <h3>III. 🗄️ Bases de données</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Modèle relationnel - Système de gestion de bases de données - Langage SQL</p>
-        <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Bases_de_donnees/Cours/modele_relationnel/" class="btn">Modèle relationnel</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Bases_de_donnees/Cours/sgbd/" class="btn">Systèmes de gestion</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Bases_de_donnees/Cours/langage_sql/" class="btn">Langage SQL</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Bases_de_donnees/Exercices/fiche_exercices_sql/" class="btn">Exercices SQL</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Bases_de_donnees/TP/tp_gestion_bibliotheque/" class="btn">TP : Gestion bibliothèque</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/III-Bases_de_donnees/TP/tp_conception_bdd/" class="btn">TP : Conception BDD</a>
-        </div>
-    </div>
-
-    <!-- IV. Architectures matérielles, systèmes d'exploitation et réseaux -->
-    <div class="chapter-card">
-        <h3>IV. 🖥️ Architectures matérielles et réseaux</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Composants intégrés - Gestion des processus - Protocoles de routage - Sécurisation</p>
-        <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Architectures_et_reseaux/Cours/systemes_sur_puce/" class="btn">Systèmes sur puce</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Architectures_et_reseaux/Cours/gestion_processus/" class="btn">Gestion des processus</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Architectures_et_reseaux/Cours/protocoles_routage/" class="btn">Protocoles de routage</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Architectures_et_reseaux/Cours/securisation/" class="btn">Sécurisation des communications</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Architectures_et_reseaux/Exercices/fiche_exercices_reseaux/" class="btn">Exercices réseaux</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/IV-Architectures_et_reseaux/TP/tp_simulation_reseau/" class="btn">TP : Simulation réseau</a>
-        </div>
-    </div>
-
-    <!-- V. Langages et programmation -->
-    <div class="chapter-card">
-        <h3>V. 💻 Langages et programmation</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Calculabilité, décidabilité - Récursivité - Modularité - Paradigmes de programmation</p>
-        <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/Cours/calculabilite_decidabilite/" class="btn">Calculabilité et décidabilité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/Cours/recursivite/" class="btn">Récursivité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/Cours/modularite/" class="btn">Modularité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/Cours/paradigmes/" class="btn">Paradigmes de programmation</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/Cours/poo_avancee/" class="btn">POO avancée</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/Cours/mise_au_point/" class="btn">Mise au point des programmes</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/Exercices/fiche_recursivite/" class="btn">Exercices récursivité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/V-Langages_et_programmation/TP/tp_poo_avance/" class="btn">TP : POO avancé</a>
-        </div>
-    </div>
-
-    <!-- VI. Algorithmique -->
-    <div class="chapter-card">
-        <h3>VI. 🧮 Algorithmique</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Algorithmes sur les arbres et graphes - Diviser pour régner - Programmation dynamique - Recherche textuelle</p>
-        <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/Cours/algorithmes_arbres/" class="btn">Algorithmes sur les arbres</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/Cours/algorithmes_graphes/" class="btn">Algorithmes sur les graphes</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/Cours/diviser_pour_regner/" class="btn">Diviser pour régner</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/Cours/programmation_dynamique/" class="btn">Programmation dynamique</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/Cours/recherche_textuelle/" class="btn">Recherche textuelle</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/Exercices/fiche_complexite/" class="btn">Exercices complexité</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/Exercices/fiche_algorithmes_avances/" class="btn">Exercices algorithmes avancés</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VI-Algorithmique/TP/tp_algorithmes_avances/" class="btn">TP : Algorithmes avancés</a>
-        </div>
-    </div>
-
-    <!-- VII. Projets -->
-    <div class="chapter-card">
-        <h3>VII. 🚀 Projets</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Projets dirigés par les élèves (minimum 25% du temps de formation)</p>
-        <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Projets/methodologie_projet/" class="btn">Méthodologie de projet</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Projets/reseau_social_avance/" class="btn">Réseau social avancé</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Projets/moteur_recherche/" class="btn">Moteur de recherche</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Projets/jeu_strategie/" class="btn">Jeu de stratégie</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Projets/analyse_donnees/" class="btn">Analyse de données</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Projets/cryptographie/" class="btn">Projet cryptographie</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VII-Projets/intelligence_artificielle/" class="btn">Projet IA</a>
-        </div>
-    </div>
-
-    <!-- VIII. Préparation au bac -->
-    <div class="chapter-card">
-        <h3>VIII. 📝 Préparation au bac</h3>
-        <p style="margin-bottom: 1rem; color: var(--md-default-fg-color--light); font-style: italic;">Épreuve écrite (3h30) et épreuve pratique (1h) - Sujets types et méthodologie</p>
-        <div class="chapter-links">
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VIII-Preparation_bac/epreuve_ecrite/" class="btn">Épreuve écrite</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VIII-Preparation_bac/epreuve_pratique/" class="btn">Épreuve pratique</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VIII-Preparation_bac/sujets_types/" class="btn">Sujets types</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VIII-Preparation_bac/methodologie/" class="btn">Méthodologie</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VIII-Preparation_bac/revisions/" class="btn">Fiches de révisions</a>
-            <a href="https://clementbraunnsi.github.io/nsi-courses/terminale/VIII-Preparation_bac/annales/" class="btn">Annales corrigées</a>
-        </div>
-    </div>
-</section>
+</div>
 

@@ -1392,8 +1392,8 @@
     <h2 class="section-title" style="color: var(--md-default-fg-color); margin-bottom: 2rem;">🌐 Sites de collègues de NSI</h2>
     
     <div class="colleagues-carousel">
-        <button class="carousel-nav prev" onclick="moveCarousel(-1)">‹</button>
-        <button class="carousel-nav next" onclick="moveCarousel(1)">›</button>
+        <button class="carousel-nav prev" onclick="moveCarousel(-2)">‹</button>
+        <button class="carousel-nav next" onclick="moveCarousel(2)">›</button>
         
         <div class="colleagues-grid" id="colleaguesGrid">
             <div class="colleague-card">
@@ -1431,6 +1431,14 @@
                 <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
                 <a href="https://mmarchand-nsi.github.io" class="colleague-link" target="_blank">Visiter le site</a>
             </div>
+            <div class="colleague-card">
+                <div class="colleague-header">
+                    <div class="colleague-icon">🚀</div>
+                    <h3 class="colleague-name">LEAL Nicolas</h3>
+                </div>
+                <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
+                <a href="http://www.prof-leal.fr" class="colleague-link" target="_blank">Visiter le site</a>
+            </div>
         </div>
     </div>
     
@@ -1439,12 +1447,13 @@
         <button class="carousel-indicator" onclick="goToSlide(1)"></button>
         <button class="carousel-indicator" onclick="goToSlide(2)"></button>
         <button class="carousel-indicator" onclick="goToSlide(3)"></button>
+        <button class="carousel-indicator" onclick="goToSlide(4)"></button>
     </div>
 </div>
 
 <script>
 let currentSlide = 0;
-const totalSlides = 4;
+const totalSlides = 5;
 const slideWidth = 300; // largeur d'une carte + gap
 
 function updateCarousel() {
