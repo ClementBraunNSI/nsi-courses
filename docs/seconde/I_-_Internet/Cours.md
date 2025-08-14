@@ -1,119 +1,1031 @@
-# 📚 Internet
+<style>
+/* Styles modernes pour le cours Internet */
+.course-header {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 3rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    text-align: center;
+}
 
-La création d'Internet date du début des années 1960. L'idée était de relier divers machines pour envoyer des données, à l'origine des travaux issus de laboratoires ou des universités.  
-A l'époque, le projet initial s'appelait ARPANET et était un projet détenu par la Défense des États-Unis chapeauté Robert Kahn à la Defense Advanced Research Projects Agency.
+.course-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
 
-**Le premier objectif était de relier les universités de Stanford, de Los Angeles et celle de l'Utah.**
+.course-subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
 
-Ce n'est que le 20 septembre 1969 que la première communication voit le jour entre l'université de Californie et celle de Stanford.
+.timeline-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-**Le premier message transmis de l'Histoire était *login*.**  
-![arpa](img/arpanet.jpeg)  
-À la suite de cela, dans les années 70-80, des normalismes de communication ont vu le jour.  
-On appelle cet ensemble de règles à respecter des **protocoles**.
+.timeline-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
-La manière de communiquer pour les machines est découpées en diverses étapes.  
-Ces diverses étapes sont catégorisées dans un modèle : le modèle TCP-IP qui explique chaque étape de la communication.  
-Chaque étape (ou couche) du modèle TCP-IP correspond à divers protocoles.  
-Dans les années 1980, le fameux **protocole TCP/IPv4** a vu le jour.  
-Il est installé en 1983 sur ARPANET, la même année où ont vu le jour les règles des systèmes de nom de domaine (DNS).  
-Les années 1990 ont permis de faire voir le jour à une des plus grandes technologies jamais créée par l'être humain : le WEB, créé au CERN (en Suisse) par Tim Berners-Lee et Robert Cailliau.
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
 
-![tblrc](img/tblrc.jpeg)
+.timeline-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
 
-Depuis, Internet permet de relier plus de 3 à 4 milliards d'internautes pour s'envoyer des mails, des fichiers ou accéder à une quantité de données incommensurable à l'aide de plusieurs applications dépendant de protocoles.  
-Par exemple, il existe des applications de mail (protocole POP), d'échange de fichier (FTP) ou de navigation sur des pages (WEB).  
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
 
-![map](img/geo-mercator.svg)  
-En clair, **Internet est un réseau informatique à échelle mondiale sur lequel de nombreuses applications sont basées.**
+.timeline-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
 
-## Définitions
+.timeline-event {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
 
-Un **réseau informatique** est un ensemble de machines reliées, par différents moyens, qui communiquent entre elles pour échanger des données ou des informations.  
-**On retrouve un certain nombre d'éléments sur un réseau informatique qui ont chacun leur propre rôle.**
+.timeline-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
 
-### Les éléments d'un réseau
+.definition-box {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-left: 5px solid #667eea;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
 
-Pour qu'un réseau fonctionne, il faut des éléments le constituant.
+.definition-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
 
-**On retrouve :**
+.definition-content {
+    color: var(--md-default-fg-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
-| élément | rôle | exemple |
-|----------|-------------------------------|-----------------------|
-| Machines | Élément qui cherche à communiquer, envoyer ou recevoir des données |ordinateur, tablettes, consoles, smartphones |
-| Switch   | Élément qui relie de manière locale des machines                   | box internet, switch RJ45                    |
-|Routeur  | Élément qui permet de relier un réseau local à Internet ou d'autres réseaux | Box internet, routeur spécifique    |
-| Cables, Ondes | Élément qui permet de relier les diverses machines au Switch ou au routeur| Câble Ethernet, Fibre optique, WiFi|
+.highlight-fact {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    font-weight: 500;
+}
 
-On a défini dans les rôles divers types de réseaux.
-On peut les regrouper en 2 catégories :
+.image-container {
+    text-align: center;
+    margin: 2rem 0;
+}
 
-- **Réseau local** : réseau localisé dans une même zone géographique.
-- **Réseau Internet** : réseau accessible à Internet.
+.image-container img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
 
-![rlinternet](img/rlinternet.png)
+@media (max-width: 768px) {
+    .course-title {
+        font-size: 2rem;
+    }
+    
+    .timeline-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-header {
+        padding: 2rem;
+    }
+}
+</style>
 
-!!!danger
-    On dispose de machines, d'un réseau mais, comment se retrouvent-elles pour communiquer? Quelles techniques sont utilisées?
+<div class="course-header">
+    <h1 class="course-title">🌐 Internet</h1>
+    <p class="course-subtitle">L'histoire et le fonctionnement du réseau mondial</p>
+</div>
 
-### Adressage de machines sur un réseau local
+<div class="timeline-section">
+    <h2 class="timeline-title">📅 L'Histoire d'Internet : Des Pionniers à la Révolution Mondiale</h2>
+    
+    <div class="timeline-grid">
+        <div class="timeline-card">
+            <div class="timeline-year">1960s</div>
+            <div class="timeline-event">Les Pionniers d'ARPANET</div>
+            <div class="timeline-description">
+                L'idée révolutionnaire de relier des machines pour échanger des données naît dans les laboratoires et universités. Robert Kahn dirige le projet ARPANET pour la Defense Advanced Research Projects Agency.
+            </div>
+        </div>
+        
+        <div class="timeline-card">
+            <div class="timeline-year">1969</div>
+            <div class="timeline-event">Premier Message de l'Histoire</div>
+            <div class="timeline-description">
+                Le 20 septembre 1969, la première communication voit le jour entre l'université de Californie et Stanford. Le premier message transmis était simplement "login".
+            </div>
+        </div>
+        
+        <div class="timeline-card">
+            <div class="timeline-year">1970-80s</div>
+            <div class="timeline-event">Naissance des Protocoles</div>
+            <div class="timeline-description">
+                Développement des règles de communication appelées "protocoles". Ces normes permettent aux machines de communiquer de manière standardisée.
+            </div>
+        </div>
+        
+        <div class="timeline-card">
+            <div class="timeline-year">1983</div>
+            <div class="timeline-event">Révolution TCP/IP</div>
+            <div class="timeline-description">
+                Installation du protocole TCP/IPv4 sur ARPANET. Création simultanée des règles des systèmes de nom de domaine (DNS).
+            </div>
+        </div>
+        
+        <div class="timeline-card">
+            <div class="timeline-year">1990s</div>
+            <div class="timeline-event">Explosion du Web</div>
+            <div class="timeline-description">
+                Tim Berners-Lee et Robert Cailliau créent le World Wide Web au CERN en Suisse, révolutionnant l'accès à l'information.
+            </div>
+            <div class="image-container">
+                <img src="../img/tblrc.jpeg" alt="Tim Berners-Lee et Robert Cailliau" />
+            </div>
+        </div>
+        
+        <div class="timeline-card">
+            <div class="timeline-year">Aujourd'hui</div>
+            <div class="timeline-event">Internet Mondial</div>
+            <div class="timeline-description">
+                Plus de 4 milliards d'internautes connectés, échangeant emails, fichiers et accédant à une quantité incommensurable de données.
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="../img/arpanet.jpeg" alt="Réseau ARPANET" />
+    </div>
+    
+    <div class="highlight-fact">
+        💡 <strong>Le saviez-vous ?</strong> L'objectif initial était de relier seulement trois universités : Stanford, Los Angeles et l'Utah.
+    </div>
+    
+    
+    
+    <div class="image-container">
+        <img src="../img/geo-mercator.svg" width = "70%" alt="Carte mondiale d'Internet" />
+    </div>
+</div>
 
-Une machine dispose d'une ou plusieurs **cartes réseaux**. Ces cartes permettent de communiquer de manière locale ou de manière globale vers Internet.
+<div class="definition-box">
+    <div class="definition-title">🎯 Définition : Internet</div>
+    <div class="definition-content">
+        <strong>Internet</strong> est un réseau informatique à échelle mondiale sur lequel de nombreuses applications sont basées (email, transfert de fichiers, navigation web, etc.).
+    </div>
+</div>
 
-Ces cartes disposent de plusieurs adresses qui permettent de l'identifier sur un réseau.  
-De manière locale, une carte réseau dispose d'une adresse **MAC (Media Access Control)**.  
+<style>
+.network-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-Cette adresse MAC peut aussi être appelée **adresse physique** car elle correspond à l'adresse utilisée par le port Ethernet et le protocole Ethernet.  
-Cette adresse est composée de 6 blocs de 2 caractères hexadécimaux. 
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
-Exemple : `a1:b2:c3:d4:e5:f6`.
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
 
-La base hexadécimale correspond à une représentation en 16 caractères de chiffres ou de nombres.
+.component-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
 
-### Adressage de machines sur Internet
+.component-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
 
-Chaque réseau doit pouvoir être accessible et reconnaissable.
-Sur Internet, on utilise ce que l'on appelle **l'Adresse IP** (pour Internet Protocol).  
-**Une adresse IP est constituée de 4 nombres allant de 0 à 255 représenté en binaire.**  
-Le binaire correspond à une représentation en 2 caractères de chiffres ou de nombres (0 et 1).  
-**Par exemple : 127.0.0.1 est une adresse IP écrite en base 10, compréhensible par l'humain mais pas par l'ordinateur.**  
-Il faut pouvoir convertir ces nombres en représentation **décimale** en **binaire**.
-L'adresse IP est constituée de 2 parties :  
+.component-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
-**La partie Réseau : elle permet d'identifier un réseau sur Internet.**  
-**La partie Machine : elle permet d'identifier une machine sur le réseau défini.**
+.component-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
-Pour connaître ces deux parties, on utilise ce que l'on appelle un **masque**.
-Il permet de définir la répartition du nombre de bits pour la partie Réseau. On pourra en déduire le nombre de bits réservés pour la partie Machine. On peut le représenter de diverses manières.
+.component-role {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
 
-Exemple :
+.component-examples {
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    color: #667eea;
+    font-weight: 500;
+}
 
-On dispose de l'adresse **128.40.94.3** qui dispose d'un masque de 16 bits.
+.network-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
 
-Cela correspond en binaire à $10000000.00101000.01011110.00000100_2$.  
-Ce qui veut dire que le masque est $11111111.11111111.00000000.00000000_2$.  
+.network-type-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    text-align: center;
+}
 
-On peut donc définir que l'adresse du serveur est **128.40.0.0** et que cette adresse correspond à la machine **94.3** de ce réseau.
+.network-type-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
 
-!!! Warning
+.network-type-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
 
-    L'adresse réseau est très importante car deux machines sont dans le même réseau si elles ont la même adresse réseau.
+.question-box {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.05));
+    border-left: 5px solid #ffc107;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
 
-On sait comment les machines se reconnaissent sur Internet (quelle sont les adresses) mais on veut savoir surtout comment des données transitent sur Internet pour aller d'une machine à une autre.
-Pour échanger des données, on ne peut pas les envoyer de but en blanc. En effet, les données sont trop volumineuses pour être envoyées d'un coup, il faut les découper. On appelle **paquet** une découpe d'une donnée qui doit être échangée entre deux machines.
+.question-content {
+    color: var(--md-default-fg-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
 
-Le protocole TCP-IP permet la communication et l'échange de données sur Internet entre une machine **émettrice** et une **réceptrice**.
-Ce protocole est composé de deux protocoles :
+@media (max-width: 768px) {
+    .components-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .network-types {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 
-- Le protocole TCP permet le contrôle et la sécurité de l'envoi des paquets. 
-  Il permet d'être sur qu'un paquet est arrivé à destination à l'aide **d'accusés de réceptions**.
+<div class="network-section">
+    <h2 class="section-title">🔧 Anatomie d'un Réseau Informatique</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Définition : Réseau Informatique</div>
+        <div class="definition-content">
+            Un <strong>réseau informatique</strong> est un ensemble de machines reliées, par différents moyens, qui communiquent entre elles pour échanger des données ou des informations.
+        </div>
+    </div>
+    
+    <h3 style="text-align: center; color: #667eea; margin: 2rem 0;">🧩 Les Composants Essentiels</h3>
+    
+    <div class="components-grid">
+        <div class="component-card">
+            <div class="component-icon">💻</div>
+            <div class="component-name">Machines</div>
+            <div class="component-role">
+                Éléments qui cherchent à communiquer, envoyer ou recevoir des données
+            </div>
+            <div class="component-examples">
+                📱 Ordinateurs, tablettes, consoles, smartphones
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <div class="component-icon">🔀</div>
+            <div class="component-name">Switch</div>
+            <div class="component-role">
+                Élément qui relie de manière locale des machines dans un même réseau
+            </div>
+            <div class="component-examples">
+                🏠 Box internet, switch RJ45
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <div class="component-icon">🌐</div>
+            <div class="component-name">Routeur</div>
+            <div class="component-role">
+                Élément qui permet de relier un réseau local à Internet ou d'autres réseaux
+            </div>
+            <div class="component-examples">
+                🔗 Box internet, routeur spécialisé
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <div class="component-icon">📡</div>
+            <div class="component-name">Supports de Transmission</div>
+            <div class="component-role">
+                Éléments qui permettent de relier les diverses machines au switch ou au routeur
+            </div>
+            <div class="component-examples">
+                🔌 Câble Ethernet, Fibre optique, WiFi
+            </div>
+        </div>
+    </div>
+    
+    <h3 style="text-align: center; color: #667eea; margin: 2rem 0;">🗺️ Typologie des Réseaux</h3>
+    
+    <div class="network-types">
+        <div class="network-type-card">
+            <div class="network-type-title">🏠 Réseau Local (LAN)</div>
+            <div class="network-type-description">
+                Réseau localisé dans une même zone géographique (maison, bureau, école)
+            </div>
+        </div>
+        
+        <div class="network-type-card">
+            <div class="network-type-title">🌍 Réseau Internet (WAN)</div>
+            <div class="network-type-description">
+                Réseau accessible à Internet, connectant des réseaux locaux du monde entier
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="../img/rlinternet.png" alt="Schéma réseau local et Internet" />
+    </div>
+    
+    <div class="question-box">
+        <div class="question-content">
+            🤔 <strong>Question clé :</strong> On dispose de machines et d'un réseau, mais comment se retrouvent-elles pour communiquer ? Quelles techniques sont utilisées ?
+        </div>
+    </div>
+</div>
 
-- Le protocole IP qui permet d'identifier quelles machines sur quels réseaux communiquent à l'aide de l'adresse IP.
+<style>
+.addressing-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-Le protocole TCP-IP fonctionne en plusieurs étapes :
+.address-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
 
-  1. Le protocole découpe la donnée à échanger en plusieurs paquets composés de 0 et de 1 d'une certaine taille donnée et numérotés.
-  2. La donnée transite pour partir de la machine de départ à la machine de destination.
-  3. Tous les paquets sont reconstruits à l'aide de leur numérotation.
-  4. Enfin, un contrôle est réalisé par la machine de réception pour s'assurer que la donnée est bien **intègre**, c'est à dire que la donnée est bien correcte.
-  Si la donnée n'est pas correcte, la machine de reception demande de renvoyer les paquets "défectueux".
+.address-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.address-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.address-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.address-description {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.address-characteristics {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.characteristic-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.characteristic-item:last-child {
+    border-bottom: none;
+}
+
+.characteristic-label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.characteristic-value {
+    font-weight: bold;
+    color: #667eea;
+}
+
+.example-box {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.ip-structure {
+    background: var(--md-default-bg-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.ip-parts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.ip-part {
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ip-part-title {
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.ip-part-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.calculation-example {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.calculation-step {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.warning-box {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 0.1), rgba(255, 152, 0, 0.05));
+    border-left: 5px solid #ff5722;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.warning-content {
+    color: var(--md-default-fg-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .address-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .ip-parts {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="addressing-section">
+    <h2 class="section-title">🏷️ L'Adressage dans les Réseaux</h2>
+    
+    <div class="address-cards">
+        <div class="address-card">
+            <div class="address-type">🔗 Adressage Local : MAC</div>
+            <div class="address-description">
+                Une machine dispose d'une ou plusieurs <strong>cartes réseaux</strong> qui permettent de communiquer localement ou globalement vers Internet. Chaque carte possède une adresse unique.
+            </div>
+            
+            <div class="definition-box">
+                <div class="definition-title">📍 Adresse MAC</div>
+                <div class="definition-content">
+                    L'adresse <strong>MAC (Media Access Control)</strong> est aussi appelée <strong>adresse physique</strong> car elle correspond à l'adresse utilisée par le port Ethernet et le protocole Ethernet.
+                </div>
+            </div>
+            
+            <div class="address-characteristics">
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Format</span>
+                    <span class="characteristic-value">6 blocs de 2 caractères</span>
+                </div>
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Base</span>
+                    <span class="characteristic-value">Hexadécimale (16 caractères)</span>
+                </div>
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Portée</span>
+                    <span class="characteristic-value">Réseau local uniquement</span>
+                </div>
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Unicité</span>
+                    <span class="characteristic-value">Unique au monde</span>
+                </div>
+            </div>
+            
+            <div class="example-box">
+                💡 Exemple : a1:b2:c3:d4:e5:f6
+            </div>
+            
+            <div class="highlight-fact">
+                🔢 <strong>Base hexadécimale :</strong> Représentation en 16 caractères (0-9, A-F)
+            </div>
+        </div>
+        
+        <div class="address-card">
+            <div class="address-type">🌐 Adressage Internet : IP</div>
+            <div class="address-description">
+                Pour qu'un réseau soit accessible sur Internet, chaque machine doit posséder une adresse unique permettant de l'identifier parmi des milliards d'autres.
+            </div>
+            
+            <div class="definition-box">
+                <div class="definition-title">🎯 Adresse IP</div>
+                <div class="definition-content">
+                    L'<strong>Adresse IP (Internet Protocol)</strong> est constituée de 4 nombres allant de 0 à 255, représentés en binaire par l'ordinateur mais affichés en décimal pour l'humain.
+                </div>
+            </div>
+            
+            <div class="address-characteristics">
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Format</span>
+                    <span class="characteristic-value">4 nombres (0-255)</span>
+                </div>
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Base humaine</span>
+                    <span class="characteristic-value">Décimale (base 10)</span>
+                </div>
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Base machine</span>
+                    <span class="characteristic-value">Binaire (0 et 1)</span>
+                </div>
+                <div class="characteristic-item">
+                    <span class="characteristic-label">Portée</span>
+                    <span class="characteristic-value">Internet mondial</span>
+                </div>
+            </div>
+            
+            <div class="example-box">
+                💡 Exemple : 127.0.0.1 (localhost)
+            </div>
+        </div>
+    </div>
+    
+    <div class="ip-structure">
+        <h3 style="text-align: center; color: #667eea; margin-bottom: 1.5rem;">🧩 Structure d'une Adresse IP</h3>
+        
+        <div class="ip-parts">
+            <div class="ip-part">
+                <div class="ip-part-title">🏠 Partie Réseau</div>
+                <div class="ip-part-description">
+                    Identifie un réseau spécifique sur Internet
+                </div>
+            </div>
+            <div class="ip-part">
+                <div class="ip-part-title">💻 Partie Machine</div>
+                <div class="ip-part-description">
+                    Identifie une machine sur le réseau défini
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlight-fact">
+            🎭 <strong>Le Masque :</strong> Permet de définir la répartition des bits entre la partie réseau et la partie machine
+        </div>
+    </div>
+    
+    <div class="calculation-example">
+        <h4 style="color: #667eea; margin-bottom: 1rem;">📊 Exemple de Calcul</h4>
+        
+        <div class="highlight-fact">
+            Adresse : <strong>128.40.94.3</strong> avec un masque de <strong>16 bits</strong>
+        </div>
+        
+        <div class="calculation-step">
+            <strong>En binaire :</strong> 10000000.00101000.01011110.00000100
+        </div>
+        
+        <div class="calculation-step">
+            <strong>Masque :</strong> 11111111.11111111.00000000.00000000
+        </div>
+        
+        <div class="calculation-step">
+            <strong>Adresse réseau :</strong> 128.40.0.0
+        </div>
+        
+        <div class="calculation-step">
+            <strong>Adresse machine :</strong> 94.3
+        </div>
+    </div>
+    
+    <div class="warning-box">
+        <div class="warning-content">
+            ⚠️ <strong>Important :</strong> L'adresse réseau est cruciale car deux machines sont dans le même réseau si et seulement si elles ont la même adresse réseau.
+        </div>
+    </div>
+</div>
+
+<style>
+.protocol-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.protocol-intro {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.protocol-intro h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.protocol-intro p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.layers-container {
+    background: var(--md-default-bg-color);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.layers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.layer-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.layer-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+}
+
+.layer-number {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #667eea;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.layer-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    margin-right: 3rem;
+}
+
+.layer-description {
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.process-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.process-card {
+    background: var(--md-default-bg-color);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    text-align: center;
+}
+
+.process-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.process-description {
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.process-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.flow-step {
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    width: 100%;
+    text-align: center;
+}
+
+.flow-arrow {
+    color: #667eea;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.note-box {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(139, 195, 74, 0.05));
+    border-left: 5px solid #4caf50;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.note-content {
+    color: var(--md-default-fg-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.note-title {
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .process-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .layer-card:hover {
+        transform: translateY(-5px);
+    }
+}
+</style>
+
+<div class="protocol-section">
+    <div class="protocol-intro">
+        <h2>🌐 Le Protocole TCP-IP</h2>
+        <p>
+            Maintenant que nous savons comment les machines se reconnaissent sur Internet grâce aux adresses, 
+            découvrons comment les données transitent réellement d'une machine à une autre à travers le monde.
+        </p>
+    </div>
+    
+    <div class="definition-box">
+        <div class="definition-title">🔗 Protocole TCP-IP</div>
+        <div class="definition-content">
+            Le protocole <strong>TCP-IP</strong> est un protocole de communication qui permet l'échange de données entre machines sur Internet. 
+            Il constitue le langage universel d'Internet, permettant à des milliards d'appareils de communiquer ensemble.
+        </div>
+    </div>
+    
+    <div class="layers-container">
+        <h3 style="text-align: center; color: #667eea; margin-bottom: 2rem;">🏗️ Les 4 Couches du Protocole TCP-IP</h3>
+        
+        <div class="layers-grid">
+            <div class="layer-card">
+                <div class="layer-number">4</div>
+                <div class="layer-title">📱 Couche Application</div>
+                <div class="layer-description">
+                    Correspond aux logiciels qui utilisent le réseau : navigateur web, logiciel de messagerie, 
+                    applications mobiles, jeux en ligne, etc.
+                </div>
+            </div>
+            
+            <div class="layer-card">
+                <div class="layer-number">3</div>
+                <div class="layer-title">🚛 Couche Transport</div>
+                <div class="layer-description">
+                    S'occupe du transport des données et de leur intégrité. Garantit que les données arrivent 
+                    complètes et dans le bon ordre.
+                </div>
+            </div>
+            
+            <div class="layer-card">
+                <div class="layer-number">2</div>
+                <div class="layer-title">🗺️ Couche Internet</div>
+                <div class="layer-description">
+                    S'occupe de l'adressage et du routage des données. Détermine le chemin optimal 
+                    pour faire transiter les données.
+                </div>
+            </div>
+            
+            <div class="layer-card">
+                <div class="layer-number">1</div>
+                <div class="layer-title">🔌 Couche Accès Réseau</div>
+                <div class="layer-description">
+                    S'occupe de la transmission physique des données : câbles, WiFi, fibre optique, 
+                    signaux électriques ou lumineux.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="process-container">
+        <div class="process-card">
+            <div class="process-title">📦 Encapsulation</div>
+            <div class="process-description">
+                Lorsqu'on <strong>envoie</strong> des données, elles "descendent" les couches 
+                en se faisant encapsuler (ajouter des informations) à chaque étape.
+            </div>
+            
+            <div class="process-flow">
+                <div class="flow-step">📱 Application : Données utilisateur</div>
+                <div class="flow-arrow">⬇️</div>
+                <div class="flow-step">🚛 Transport : + En-tête TCP</div>
+                <div class="flow-arrow">⬇️</div>
+                <div class="flow-step">🗺️ Internet : + En-tête IP</div>
+                <div class="flow-arrow">⬇️</div>
+                <div class="flow-step">🔌 Accès réseau : + En-tête Ethernet</div>
+            </div>
+        </div>
+        
+        <div class="process-card">
+            <div class="process-title">📂 Désencapsulation</div>
+            <div class="process-description">
+                Lorsqu'on <strong>reçoit</strong> des données, elles "remontent" les couches 
+                en se faisant désencapsuler (retirer des informations) à chaque étape.
+            </div>
+            
+            <div class="process-flow">
+                <div class="flow-step">🔌 Accès réseau : - En-tête Ethernet</div>
+                <div class="flow-arrow">⬇️</div>
+                <div class="flow-step">🗺️ Internet : - En-tête IP</div>
+                <div class="flow-arrow">⬇️</div>
+                <div class="flow-step">🚛 Transport : - En-tête TCP</div>
+                <div class="flow-arrow">⬇️</div>
+                <div class="flow-step">📱 Application : Données utilisateur</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="note-box">
+        <div class="note-title">💡 Pourquoi TCP-IP est-il si important ?</div>
+        <div class="note-content">
+            Le protocole TCP-IP est le fondement d'Internet car il permet de faire communiquer des machines 
+            de différents types (ordinateurs, smartphones, serveurs, objets connectés, etc.) sur un réseau mondial. 
+            C'est grâce à ce protocole universel que vous pouvez consulter un site web hébergé au Japon 
+            depuis votre smartphone en France !
+        </div>
+    </div>
+</div>

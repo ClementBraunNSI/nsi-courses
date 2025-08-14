@@ -1,71 +1,103 @@
-# Photographie Numérique 1: Noir et Blanc, Niveaux de gris
+# 📸 Photographie Numérique 1 : Images en Noir et Blanc
 
-## Qu'est ce qu'une image?
+## 📚 Histoire de la photographie numérique
 
-**Définition** : Une image est un tableau à deux dimensions de cases. Ces cases sont appelées des pixels (qui vient de *Picture element*).
+La photographie numérique trouve ses origines dans les années **1970** avec les premiers capteurs CCD (Charge-Coupled Device) développés par **Willard Boyle** et **George Smith** aux laboratoires Bell. Ces travaux leur vaudront le prix Nobel de physique en **2009**.
 
-Chaque pixel est assigné à une position que l’on nomme **coordonnées**.
-Ces coordonnées sont un couple *( i , j )* où i est une valeur comprise sur la largeur (axe des abscisses) et j est une valeur comprise sur la hauteur (axe des ordonnées).
+Le premier appareil photo numérique grand public, le **Kodak DCS-100**, est commercialisé en **1991** pour la somme de 13 000 dollars. Il fallait attendre les années **2000** pour voir la démocratisation de cette technologie avec l'arrivée des premiers appareils accessibles au grand public.
 
-La **définition** d’une image correspond au nombre de pixels de celle-ci.
-On la calcule : $\texttt{definition} = \texttt{hauteur} \times \texttt{largeur}$.
-Par exemple, une image ayant 800 pixels de hauteur et 600 pixels de largeur a une définition de 480 000 pixels.
+Aujourd'hui, chaque smartphone contient un capteur numérique capable de produire des images de plusieurs millions de pixels, révolutionnant notre rapport à la photographie.
 
-La **résolution** d’une image correspond au nombre de pixels sur une longueur donnée. Son unité est le ppp (pixels par pouce). Un pouce est une longueur correspondant à 2,54cm.
+## 📖 Qu'est-ce qu'une image numérique ?
 
-Chaque pixel contient une information capitale : la valeur de la couleur qu’on lui affecte selon le **mode** utilisé.
+> **📖 Définition**
 
-**Exercice:**
-Une télévision est munie d’un écran 4K, c’est à dire qu’elle a 4096 pixels sur la largeur et 2160 pixels sur la hauteur. Donner la définition de l’écran.
+Une **image numérique** est un tableau à deux dimensions composé de cases élémentaires appelées **pixels** (contraction de *Picture Element*). Chaque pixel contient une information de couleur ou de luminosité.
+
+### 🔍 Caractéristiques fondamentales d'une image
+
+| Caractéristique | Définition | Exemple |
+|-----------------|------------|----------|
+| **Coordonnées** | Position d'un pixel dans l'image (i, j) | Pixel en position (150, 200) |
+| **Définition** | Nombre total de pixels (hauteur × largeur) | 800 × 600 = 480 000 pixels |
+| **Résolution** | Nombre de pixels par unité de longueur (ppp) | 300 ppp pour l'impression |
+| **Mode** | Type d'information stockée par pixel | Noir/blanc, niveaux de gris, couleur |
+
+**Activité : Calculs sur les images**
+
+**1. Calculez la définition d'un écran 4K (4096 × 2160 pixels)**
+
 _______________________________________________________________________________________
-______________________________________________________________________________________________________________________________________________________________________________
 
-Une image possède 1920 pixels en largeur et 1080 pixels en hauteur. Celle-ci est imprimée sur une feuille dont les dimensions sont : 20cm de largeur et 30cm de longueur.
-Donner sa résolution en largeur et sa résolution en hauteur.
+**2. Une image Full HD (1920 × 1080) est imprimée sur 20cm × 30cm. Calculez sa résolution.**
 
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________
 
-## Les images en noir et blanc
+## 📖 Les images en noir et blanc
 
-Une image en noir et blanc est un tableau à deux dimensions où les pixels peuvent être uniquement **noirs ou blancs**.
+> **📖 Définition**
 
-Un ordinateur ne comprend que nombres alors, comment une image est représentée en mémoire ?
+Une **image en noir et blanc** (ou binaire) est un tableau à deux dimensions où chaque pixel ne peut prendre que deux valeurs : **noir** ou **blanc**.
 
-On définit **le blanc avec le chiffre 1** et **le noir avec le chiffre 0**.
+### 💾 Représentation en mémoire
 
-On peut donc dessiner des images grâce à des tableaux de nombres.
+Pour stocker ces images, l'ordinateur utilise le système binaire :
 
-**Exercice** : Donner l’image associée au tableau de 0 et de 1 ci-dessous :
+| Couleur | Valeur numérique | Représentation binaire |
+|---------|------------------|------------------------|
+| **Noir** | 0 | 0 |
+| **Blanc** | 1 | 1 |
+
+Chaque pixel occupe donc exactement **1 bit** en mémoire, ce qui rend ces images très légères.
+
+**Activité : Décodage d'images binaires**
+
+**1. Dessinez l'image correspondant à ce tableau binaire :**
 
 ![tab01](tab_01.png)
 
-**Exercice** : Donner le tableau de 0 et de 1 associé à cette image : 
+**2. Créez le tableau binaire pour cette image :**
 
 ![img_to_tab](img_to_tab.png)
 
-Les images en noir et blanc sont basiques et n’ont pas par définition une palette de couleur variée.
-Cependant, entre le noir et le blanc existe une quantité de nuances du mélange de celles-ci : le gris.
+!!! warning
+    Les images en noir et blanc pur sont limitées pour représenter la réalité. C'est pourquoi on utilise souvent les **niveaux de gris** pour plus de nuances.
 
-## Les images en nuances de gris
+## 📖 Les images en niveaux de gris
 
-Une image en nuances de gris est donc un tableau à deux dimensions dont chaque pixel qui la compose contient une valeur entre 0 et 255 (256 valeurs).
+> **📖 Définition**
 
-Ainsi 100% de luminosité correspond à du blanc et 0% correspond à du noir.
-Ce pourcentage correspond au nombre entre 0 et 255 qui représente la nuance de gris associée.
+Une **image en niveaux de gris** est un tableau à deux dimensions où chaque pixel contient une valeur d'intensité lumineuse comprise entre **0** (noir) et **255** (blanc), soit **256 nuances** possibles.
+
+### 🎨 Échelle des gris
+
+| Valeur | Couleur | Pourcentage de luminosité |
+|--------|---------|---------------------------|
+| 0 | Noir pur | 0% |
+| 127 | Gris moyen | 50% |
+| 255 | Blanc pur | 100% |
 
 ![nuances](nuances_gris.png)
 
-**Remarque** : Plus la valeur est grande, plus le gris tendra sur du blanc, plus elle est faible, plus le gris tendra vers du noir.
+!!! info
+    Plus la valeur est **élevée**, plus le pixel tend vers le **blanc**. Plus elle est **faible**, plus il tend vers le **noir**.
+
+### 💾 Stockage en mémoire
+
+Chaque pixel nécessite **8 bits** (1 octet) pour stocker sa valeur :
+- Valeur minimale : 0 = **0000 0000** en binaire
+- Valeur maximale : 255 = **1111 1111** en binaire
 
 ![img_nuances](img_nuances.png)
 
-On a vu précédemment qu’un ordinateur ne comprend que des 0 et des 1 en mémoire, on a donc un problème : comment représenter les nombres entre 0 et 255 en mémoire ?
-La solution : convertir les nombres décimaux que nous connaissons en 0 et 1.
+**Activité : Conversion décimal-binaire**
 
-## Conséquences sur les images en niveaux de gris
+**Convertissez ces valeurs de gris en binaire :**
 
-Chaque pixel d’une image en niveau de gris comportera donc un nombre entre 0 et 255 écrit en binaire.  Ces valeurs iront donc de **0000 0000** à **1111 1111**.
-
-**Exercice:**
-
-Pour la palette donnée de niveau de gris, donner l’écriture binaire de chaque nombre décimaux.  
+| Valeur décimale | Nuance de gris | Valeur binaire |
+|-----------------|----------------|----------------|
+| 0 | Noir | |
+| 64 | Gris foncé | |
+| 128 | Gris moyen | |
+| 192 | Gris clair | |
+| 255 | Blanc | |

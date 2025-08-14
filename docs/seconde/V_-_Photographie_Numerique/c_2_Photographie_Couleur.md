@@ -1,86 +1,135 @@
-# Photographie Numérique 2 : Les images couleurs
+# 📸 Photographie Numérique 2 : Les Images en Couleur
 
-## La vision humaine et les capteurs d'appareils photo
+## 📚 Histoire de la photographie couleur
 
-### Le fonctionnement de l'oeil
+La photographie couleur naît en **1861** grâce aux travaux du physicien écossais **James Clerk Maxwell**, qui réalise la première photographie couleur en superposant trois images prises à travers des filtres rouge, vert et bleu.
 
-Avant de comprendre comment une image est formée, il faut comprendre comment l’oeil voit ce qui l’entoure.
+Le procédé **Autochrome** des frères **Lumière** (1907) démocratise la couleur, suivi par le **Kodachrome** (1935) et le **Polaroid** couleur (1963). L'ère numérique révolutionne cette approche avec les capteurs **CCD** puis **CMOS**, permettant la capture directe des trois composantes colorimétriques.
 
-La cornée sert à faire converger les rayons de la lumière.
-L’iris permet d’ajuster la quantité de lumière qui rentre dans la pupille.
-Le cristallin permet de faire la mise au point pour voir de manière nette en projettant les rayons lumineux sur la rétine.
-La rétine contient de nombreuses cellules qui réagissent à la lumières. Ce sont les cônes.
-Il existe trois types de cônes : les verts, les bleus et les rouge.
-**Remarque** : Il y a plus de cônes verts que de bleus et rouges.
+Aujourd'hui, chaque smartphone capture des images couleur de qualité professionnelle grâce à des capteurs de plusieurs millions de pixels.
 
-Les cônes transforment l’énergie lumineuse en impulsion électriques qui sont transmises au cerveau grâce au nerf optique. Le cerveau à l’aide des impulsions électriques qui sont dépendantes les proportions de vert, bleu et rouge, les additionne et permet de reconstituer toutes les couleurs.
+## 📖 Vision humaine et capteurs numériques
 
-**Grâce au paragraphe précédent, remplir le schéma suivant :**
+### 👁️ Le fonctionnement de l'œil humain
+
+> **📖 Définition**
+
+L'**œil humain** fonctionne comme un appareil photo biologique, capable de percevoir les couleurs grâce à des cellules spécialisées appelées **cônes**.
+
+| Composant | Fonction | Équivalent photo |
+|-----------|----------|------------------|
+| **Cornée** | Convergence des rayons lumineux | Lentille frontale |
+| **Iris** | Contrôle de la quantité de lumière | Diaphragme |
+| **Cristallin** | Mise au point | Objectif |
+| **Rétine** | Capture de l'image | Capteur |
+| **Cônes** | Détection des couleurs (R, V, B) | Photosites |
+
+!!! info
+    L'œil contient environ **6 millions de cônes**, avec une prédominance des cônes verts (64%), suivis des rouges (32%) et des bleus (4%).
+
+**Activité : Anatomie de l'œil**
+
+**Légendez le schéma de l'œil avec les termes appropriés :**
 
 ![oeil](oeil.png)
 
-## Le capteur photo
+### 📷 Le capteur photographique numérique
 
-Le fonctionnement du capteur d’un appareil photo est très similaire au fonctionnement de l’oeil.
+> **📖 Définition**
 
-La lumière suit un chemin particulier. Elle traverse dans un premier temps **l’objectif** (une série de lentilles qui permet d’adapter la netteté et faire converger la lumière vers le capteur.
+Un **capteur photographique** est un composant électronique qui convertit la lumière en signal électrique, reproduisant le fonctionnement de la rétine humaine.
 
-Elle continue son chemin à travers **le diaphragme** qui permet d’adapter la **quantité de lumière** qui se dirige vers le capteur numérique.
+#### 🔄 Trajet de la lumière dans l'appareil photo
 
-Elle traverse ce que l’on appelle la **matrice de Bayer** qui est un filtre qui permet de scinder les différentes couleurs de la lumière. Ce filtre est superposé au **capteur numérique**.
+| Étape | Composant | Fonction |
+|-------|-----------|----------|
+| 1 | **Objectif** | Convergence et mise au point |
+| 2 | **Diaphragme** | Contrôle de la quantité de lumière |
+| 3 | **Matrice de Bayer** | Filtrage des couleurs R, V, B |
+| 4 | **Photosites** | Conversion lumière → signal électrique |
 
-Ce capteur est composé de beaucoup de cellules qui réagissent à la lumière : on les appelle **photosites**.  
-Les photosites transforment l’énergie lumineuse (Rouge, Bleu et Vert) en signal électrique (à la manière des cônes rétiniens).
+#### 🌈 La matrice de Bayer
 
-**Grâce au paragraphe précédent, remplir le schéma suivant :**
+Inventée par **Bryce Bayer** chez Kodak en **1976**, cette matrice filtre la lumière selon un motif spécifique :
+- **50% de filtres verts** (sensibilité de l'œil)
+- **25% de filtres rouges**
+- **25% de filtres bleus**
+
+**Activité : Schéma du capteur**
+
+**Complétez le schéma de l'appareil photo numérique :**
 
 ![apphoto](apphoto.png)
 
-## L'image en couleur
+## 📖 Représentation des images en couleur
 
-Pour l’image en couleur, le pixel comprend trois composantes qui permettent de recréer une couleur : **le rouge, le vert et le bleu**. On parle de composantes **R V B**.
+> **📖 Définition**
 
-Chaque pixel est composé d’un ensemble de **trois valeurs** représentant la quantité de rouge, de vert et de bleu qui le compose entre 0 et 255.
-On peut définir le pixel Rouge par les valeurs (255, 0, 0), le vert (0,255,0) et le bleu (0,0,255)
+Une **image couleur** utilise le modèle **RVB** (Rouge, Vert, Bleu) où chaque pixel est défini par trois valeurs comprises entre **0** et **255**, représentant l'intensité de chaque composante colorimétrique.
 
-Les couleurs sont donc des combinaisons de ces composantes en faisant varier leur intensité.
+### 🎨 Le modèle RVB (RGB)
 
-On peut définir d’autres couleurs comme le :
+Chaque pixel nécessite **24 bits** (3 octets) de stockage :
+- **8 bits** pour le rouge (0-255)
+- **8 bits** pour le vert (0-255)  
+- **8 bits** pour le bleu (0-255)
 
-- **Cyan (0 , 255, 255)**
-- **Magenta (255, 255, 0)**
-- **Jaune ( 255, 255, 0)**
-- **Blanc (255, 255, 255)**
-- **Noir (0, 0, 0)**
-- **Orange Renard (195, 88, 23)**
+| Couleur | Rouge | Vert | Bleu | Code RVB |
+|---------|-------|------|------|----------|
+| **Rouge pur** | 255 | 0 | 0 | (255, 0, 0) |
+| **Vert pur** | 0 | 255 | 0 | (0, 255, 0) |
+| **Bleu pur** | 0 | 0 | 255 | (0, 0, 255) |
+| **Cyan** | 0 | 255 | 255 | (0, 255, 255) |
+| **Magenta** | 255 | 0 | 255 | (255, 0, 255) |
+| **Jaune** | 255 | 255 | 0 | (255, 255, 0) |
+| **Blanc** | 255 | 255 | 255 | (255, 255, 255) |
+| **Noir** | 0 | 0 | 0 | (0, 0, 0) |
+| **Orange Renard** | 195 | 88 | 23 | (195, 88, 23) |
 
-**Colorier les cases en fonction de la valeur du pixel:**
+**Activité : Décodage couleur**
+
+**Coloriez les cases selon les valeurs RVB indiquées :**
 
 ![pix_coul](pix_to_couleur.png)
 
-## Les images et Python
+## 📖 Traitement d'images avec Python
 
-La bibliothèque **PIL** permet de réaliser des traitements sur des images grâce à des fonctions.
-*Image.open*(**chemin de l’image**) permet d’associer à une variable une image grâce à son chemin.
-*Image.format* permet de donner le format de l’image.
-*Image.size* permet de donner les dimensions de l’image.
-*Image.mode* permet de donner le mode de l’image (RVB, Nuances de Gris).
-*Image.crop*( **(gauche, haut, droite, bas)** ) permet de découper une image grâce aux coordonnées.
-*Image.split*(  ) permet d'obtenir chacune des composantes d'un pixel dans 3 variables à définir.
-*Image.rotate*( **angle** ) permet de tourner l’image dans le sens horaire d’un certain angle.
+### 🐍 La bibliothèque PIL (Python Imaging Library)
 
-*Grâce à la notice précédente, légender le programme suivant et expliquer ce qu’il fait.*
+> **📖 Définition**
+
+La bibliothèque **PIL** (ou **Pillow**) est un module Python permettant de manipuler et traiter des images numériques de manière programmatique.
+
+#### 🔧 Fonctions principales de PIL
+
+| Fonction | Syntaxe | Description |
+|----------|---------|-------------|
+| **Ouverture** | `Image.open("chemin")` | Charge une image depuis un fichier |
+| **Format** | `image.format` | Retourne le format de l'image (JPEG, PNG...) |
+| **Dimensions** | `image.size` | Retourne (largeur, hauteur) en pixels |
+| **Mode** | `image.mode` | Retourne le mode (RGB, L, RGBA...) |
+| **Découpage** | `image.crop((x1,y1,x2,y2))` | Découpe une zone rectangulaire |
+| **Séparation** | `image.split()` | Sépare les composantes R, V, B |
+| **Rotation** | `image.rotate(angle)` | Fait tourner l'image |
+| **Conversion** | `image.convert("L")` | Convertit en niveaux de gris |
+
+**Activité : Analyse de code**
+
+**1. Analysez ce programme et expliquez son fonctionnement :**
 
 ![progpil](prog_pil.png)
 
 _______________________________________________________________________________________
-______________________________________________________________________________________________________________________________________________________________________________
-_______________________________________________________________________________________
 _______________________________________________________________________________________
 _______________________________________________________________________________________
 
-*Ecrire un programme qui permet d’ouvrir l’image fournie, la tourne de 45 degrés et l’affiche.*
+**2. Programmation pratique**
 
-*Écrire un programme qui permet d’ouvrir l’image fournie et d’afficher les trois composantes rouge, bleu et vert.*
+**Écrivez un programme qui :**
+- Ouvre l'image fournie
+- La fait tourner de 45 degrés
+- L'affiche
 
-*Écrire un programme qui permet de convertir l’image fournie en nuances de gris. Vous utiliserez Image.convert( ).*
+**3. Écrivez un programme qui sépare et affiche les trois composantes RVB d'une image.**
+
+**4. Écrivez un programme qui convertit une image couleur en niveaux de gris.**
