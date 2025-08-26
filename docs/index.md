@@ -1508,6 +1508,548 @@ setInterval(() => {
 
 // Initialisation
 document.addEventListener('DOMContentLoaded', updateCarousel);
+
+// Animation de loading screen pour la page d'accueil
+
+// Fonction pour créer l'écran de chargement
+function createLoadingScreen() {
+    const loadingScreen = document.createElement('div');
+    loadingScreen.id = 'loading-screen';
+    loadingScreen.innerHTML = `
+        <div class="loading-container">
+            <div class="logo-container">
+                <img src="images/test.png" alt="Logo NSI" class="loading-logo">
+            </div>
+            <h1 class="welcome-text">Bienvenue</h1>
+            <p class="subtitle-text">Clément Braun - NSI</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Chargement en cours...</p>
+        </div>
+    `;
+    
+    document.body.appendChild(loadingScreen);
+}
+
+// Fonction pour animer la barre de progression
+function animateProgressBar() {
+    const progressBar = document.querySelector('.loading-progress');
+    let progress = 0;
+    
+    const interval = setInterval(() => {
+        progress += Math.random() * 15 + 5; // Progression aléatoire entre 5% et 20%
+        
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+            setTimeout(hideLoadingScreen, 500); // Attendre 500ms avant de cacher l'écran
+        }
+        
+        progressBar.style.width = progress + '%';
+    }, 200); // Mise à jour toutes les 200ms
+}
+
+// Fonction pour masquer l'écran de chargement
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    const mainContent = document.querySelector('.md-content');
+    const logo = document.querySelector('.loading-logo');
+    const loadingContainer = document.querySelector('.loading-container');
+    
+    if (loadingScreen && logo) {
+        // Phase 1: Zoom et fade du logo
+        logo.style.transition = 'all 1.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        logo.style.transform = 'scale(3)';
+        logo.style.opacity = '0';
+        
+        // Phase 2: Fade des autres éléments
+        setTimeout(() => {
+            if (loadingContainer) {
+                loadingContainer.style.transition = 'opacity 0.8s ease';
+                loadingContainer.style.opacity = '0';
+            }
+        }, 800);
+        
+        // Phase 2.5: Créer un overlay de transition
+        setTimeout(() => {
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, rgba(255, 152, 0, 1) 0%, rgba(255, 193, 7, 1) 100%);
+                z-index: 9998;
+                opacity: 1;
+                transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            `;
+            document.body.appendChild(overlay);
+            
+            // Commencer la transition de l'overlay
+            setTimeout(() => {
+                overlay.style.opacity = '0';
+            }, 50);
+            
+            // Supprimer l'overlay après la transition
+            setTimeout(() => {
+                if (overlay.parentNode) {
+                    overlay.remove();
+                }
+            }, 1600);
+        }, 1200);
+        
+        // Phase 3: Suppression de l'écran et affichage du contenu
+        setTimeout(() => {
+            loadingScreen.remove();
+            // Animation d'entrée du contenu principal avec fade-in
+            if (mainContent) {
+                // État initial: complètement invisible
+                mainContent.style.opacity = '0';
+                mainContent.style.transform = 'scale(0.9) translateY(30px)';
+                mainContent.style.filter = 'blur(5px)';
+                
+                // Délai pour s'assurer que l'écran de chargement est supprimé
+                setTimeout(() => {
+                    mainContent.style.transition = 'all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    mainContent.style.opacity = '1';
+                    mainContent.style.transform = 'scale(1) translateY(0)';
+                    mainContent.style.filter = 'blur(0px)';
+                }, 200);
+            }
+        }, 1800);
+    }
+}
+
+// Fonction d'initialisation
+function initLoadingAnimation() {
+    // Créer l'écran de chargement
+    createLoadingScreen();
+    
+    // Masquer le contenu principal initialement
+    const mainContent = document.querySelector('.md-content');
+    if (mainContent) {
+        mainContent.style.opacity = '0';
+    }
+    
+    // Démarrer l'animation après un court délai
+    setTimeout(() => {
+        animateProgressBar();
+    }, 500);
+}
+
+// Initialisation au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    // Masquer immédiatement le contenu principal
+    const mainContent = document.querySelector('.md-content');
+    if (mainContent) {
+        mainContent.style.opacity = '0';
+        mainContent.style.visibility = 'hidden';
+    }
+    
+    initLoadingAnimation();
+    
+    // Simulation du temps de chargement (3 secondes)
+    setTimeout(() => {
+        // Rendre le contenu visible avant l'animation
+        if (mainContent) {
+            mainContent.style.visibility = 'visible';
+        }
+        hideLoadingScreen();
+    }, 3000);
+});
+
+// Styles CSS pour l'animation
+const loadingStyles = `
+<style>
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffb347 0%, #ff8c42 50%, #ff6b35 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: all 0.6s ease;
+}
+
+.loading-container {
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.loading-logo {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    animation: logoFloat 4s ease-in-out infinite;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.welcome-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    animation: fadeInUp 1s ease 0.5s both;
+}
+
+.subtitle-text {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.7s both;
+}
+
+.loading-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 2rem 0 1rem 0;
+    animation: fadeInUp 1s ease 0.9s both;
+}
+
+.loading-progress {
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+    width: 0%;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.loading-text {
+    font-size: 1rem;
+    opacity: 0.8;
+    animation: fadeInUp 1s ease 1.1s both;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .loading-container {
+        padding: 1rem;
+    }
+    
+    .loading-logo {
+        width: 180px;
+        height: 180px;
+        padding: 25px;
+    }
+    
+    .welcome-text {
+        font-size: 2rem;
+    }
+    
+    .subtitle-text {
+        font-size: 1rem;
+    }
+}
+</style>
+`;
+
+// Injecter les styles dans le document
+document.head.insertAdjacentHTML('beforeend', loadingStyles);
+
+// Système de protection par mot de passe pour les pages NSI
+(function() {
+    'use strict';
+    
+    // Configuration des mots de passe pour chaque niveau
+    const passwords = {
+        'seconde': 'vulpesmacrotis',
+        'premiere': 'vulpeszerda', 
+        'terminale': 'vulpesvulpes'
+    };
+    
+    // Noms d'affichage pour chaque niveau
+    const levelNames = {
+        'seconde': 'SNT - Seconde',
+        'premiere': 'NSI - Première',
+        'terminale': 'NSI - Terminale'
+    };
+    
+    // Fonction pour créer la boîte de dialogue de mot de passe
+    function createPasswordDialog(level, originalUrl) {
+        // Créer l'overlay
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        `;
+        
+        // Créer la boîte de dialogue
+        const dialog = document.createElement('div');
+        dialog.style.cssText = `
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        `;
+        
+        dialog.innerHTML = `
+            <div style="margin-bottom: 1.5rem;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
+                <h2 style="color: #ff6b35; margin: 0 0 0.5rem 0; font-size: 1.5rem;">Accès protégé</h2>
+                <p style="color: #666; margin: 0; font-size: 1rem;">${levelNames[level]}</p>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+                <input type="password" id="passwordInput" placeholder="Entrez le mot de passe" 
+                       style="width: 100%; padding: 0.8rem; border: 2px solid #ddd; border-radius: 8px; 
+                              font-size: 1rem; text-align: center; box-sizing: border-box;
+                              transition: border-color 0.3s ease;" />
+            </div>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button id="cancelBtn" style="padding: 0.8rem 1.5rem; background: #f5f5f5; color: #666; 
+                                             border: none; border-radius: 8px; cursor: pointer; 
+                                             font-size: 1rem; transition: all 0.3s ease;">Annuler</button>
+                <button id="submitBtn" style="padding: 0.8rem 1.5rem; background: #ff6b35; color: white; 
+                                             border: none; border-radius: 8px; cursor: pointer; 
+                                             font-size: 1rem; transition: all 0.3s ease;">Accéder</button>
+            </div>
+            
+            <div id="errorMessage" style="color: #e74c3c; margin-top: 1rem; font-size: 0.9rem; display: none;">
+                Mot de passe incorrect. Veuillez réessayer.
+            </div>
+        `;
+        
+        // Ajouter les styles d'animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            @keyframes slideIn {
+                from { transform: translateY(-20px); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+            #passwordInput:focus {
+                outline: none;
+                border-color: #ff6b35 !important;
+                box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+            }
+            #cancelBtn:hover {
+                background: #e0e0e0;
+            }
+            #submitBtn:hover {
+                background: #e55a2b;
+                transform: translateY(-1px);
+            }
+        `;
+        document.head.appendChild(style);
+        
+        overlay.appendChild(dialog);
+        document.body.appendChild(overlay);
+        
+        // Récupérer les éléments
+        const passwordInput = dialog.querySelector('#passwordInput');
+        const submitBtn = dialog.querySelector('#submitBtn');
+        const cancelBtn = dialog.querySelector('#cancelBtn');
+        const errorMessage = dialog.querySelector('#errorMessage');
+        
+        // Focus sur le champ de saisie
+        setTimeout(() => passwordInput.focus(), 100);
+        
+        // Fonction de vérification du mot de passe
+        function checkPassword() {
+            const enteredPassword = passwordInput.value.trim();
+            
+            if (enteredPassword === passwords[level]) {
+                // Mot de passe correct - rediriger
+                overlay.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(overlay);
+                    window.location.href = originalUrl;
+                }, 300);
+            } else {
+                // Mot de passe incorrect
+                errorMessage.style.display = 'block';
+                passwordInput.style.borderColor = '#e74c3c';
+                passwordInput.value = '';
+                
+                // Animation de secousse
+                dialog.style.animation = 'shake 0.5s ease';
+                
+                // Ajouter l'animation de secousse
+                if (!document.querySelector('#shakeAnimation')) {
+                    const shakeStyle = document.createElement('style');
+                    shakeStyle.id = 'shakeAnimation';
+                    shakeStyle.textContent = `
+                        @keyframes shake {
+                            0%, 100% { transform: translateX(0); }
+                            25% { transform: translateX(-5px); }
+                            75% { transform: translateX(5px); }
+                        }
+                    `;
+                    document.head.appendChild(shakeStyle);
+                }
+                
+                setTimeout(() => {
+                    passwordInput.focus();
+                    passwordInput.style.borderColor = '#ddd';
+                    dialog.style.animation = '';
+                }, 500);
+            }
+        }
+        
+        // Fonction de fermeture
+        function closeDialog() {
+            overlay.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => {
+                if (document.body.contains(overlay)) {
+                    document.body.removeChild(overlay);
+                }
+            }, 300);
+        }
+        
+        // Gestionnaires d'événements
+        submitBtn.addEventListener('click', checkPassword);
+        cancelBtn.addEventListener('click', closeDialog);
+        
+        // Validation avec la touche Entrée
+        passwordInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+        
+        // Fermeture avec Échap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeDialog();
+            }
+        });
+        
+        // Fermeture en cliquant sur l'overlay
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                closeDialog();
+            }
+        });
+        
+        // Ajouter l'animation de fadeOut
+        const fadeOutStyle = document.createElement('style');
+        fadeOutStyle.textContent = `
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(fadeOutStyle);
+    }
+    
+    // Fonction pour intercepter les clics sur les liens protégés
+    function interceptProtectedLinks() {
+        // Sélectionner tous les liens vers les pages protégées
+        const protectedLinks = document.querySelectorAll('a[href*="seconde/seconde"], a[href*="premiere/premiere"], a[href*="terminale/terminale"]');
+        
+        protectedLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const href = this.getAttribute('href');
+                let level = '';
+                
+                // Déterminer le niveau basé sur l'URL
+                if (href.includes('seconde/seconde')) {
+                    level = 'seconde';
+                } else if (href.includes('premiere/premiere')) {
+                    level = 'premiere';
+                } else if (href.includes('terminale/terminale')) {
+                    level = 'terminale';
+                }
+                
+                if (level && passwords[level]) {
+                    createPasswordDialog(level, href);
+                }
+            });
+        });
+    }
+    
+    // Initialiser la protection quand le DOM est chargé
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', interceptProtectedLinks);
+    } else {
+        interceptProtectedLinks();
+    }
+    
+    // Réinitialiser la protection si le contenu change (pour les SPA)
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                // Vérifier si de nouveaux liens ont été ajoutés
+                const hasNewLinks = Array.from(mutation.addedNodes).some(node => {
+                    return node.nodeType === 1 && (
+                        node.querySelector && node.querySelector('a[href*="seconde/seconde"], a[href*="premiere/premiere"], a[href*="terminale/terminale"]') ||
+                        (node.tagName === 'A' && (node.href.includes('seconde/seconde') || node.href.includes('premiere/premiere') || node.href.includes('terminale/terminale')))
+                    );
+                });
+                
+                if (hasNewLinks) {
+                    setTimeout(interceptProtectedLinks, 100);
+                }
+            }
+        });
+    });
+    
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+})();
 </script>
 
 <style>
@@ -1515,4 +2057,8 @@ document.addEventListener('DOMContentLoaded', updateCarousel);
 .md-footer-meta__inner {
     display: none !important;
 }
+
+
 </style>
+
+
