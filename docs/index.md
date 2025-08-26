@@ -2,6 +2,12 @@
 
 ---
 
+<!-- Script d'animation de loading -->
+<script src="javascripts/loading-animation.js"></script>
+
+<!-- Script de protection par mot de passe -->
+<script src="javascripts/password-protection.js"></script>
+
 <style>
 .level-cards {
     display: grid;
