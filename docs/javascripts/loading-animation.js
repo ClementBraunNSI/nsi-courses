@@ -11,8 +11,12 @@ function createLoadingScreen() {
             </div>
             <h1 class="welcome-text">Bienvenue</h1>
             <p class="subtitle-text">Clément Braun - NSI</p>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
+            <div class="fox-progress">
+                <div class="fox-icon" data-index="0">🦊</div>
+                <div class="fox-icon" data-index="1">🦊</div>
+                <div class="fox-icon" data-index="2">🦊</div>
+                <div class="fox-icon" data-index="3">🦊</div>
+                <div class="fox-icon" data-index="4">🦊</div>
             </div>
             <p class="loading-text">Chargement en cours...</p>
         </div>
@@ -21,22 +25,49 @@ function createLoadingScreen() {
     document.body.appendChild(loadingScreen);
 }
 
-// Fonction pour animer la barre de progression
+// Fonction pour animer les icônes de renard et le remplissage du logo
 function animateProgressBar() {
-    const progressBar = document.querySelector('.loading-progress');
+    const foxIcons = document.querySelectorAll('.fox-icon');
+    const logoFill = document.querySelector('.logo-fill');
     let progress = 0;
+    let currentFoxIndex = 0;
     
     const interval = setInterval(() => {
         progress += Math.random() * 15 + 5; // Progression aléatoire entre 5% et 20%
         
-        if (progress >= 100) {
-            progress = 100;
-            clearInterval(interval);
-            setTimeout(hideLoadingScreen, 500); // Attendre 500ms avant de cacher l'écran
+        // Calculer quel renard doit être affiché
+        const foxToShow = Math.floor((progress / 100) * foxIcons.length);
+        
+        // Afficher les renards progressivement
+        for (let i = currentFoxIndex; i < foxToShow && i < foxIcons.length; i++) {
+            setTimeout(() => {
+                foxIcons[i].classList.add('visible');
+            }, i * 100); // Délai entre chaque renard
+            currentFoxIndex = i + 1;
         }
         
-        progressBar.style.width = progress + '%';
-    }, 200); // Mise à jour toutes les 200ms
+        if (progress >= 100) {
+            progress = 100;
+            // S'assurer que tous les renards sont visibles
+            foxIcons.forEach((fox, index) => {
+                setTimeout(() => {
+                    fox.classList.add('visible');
+                }, index * 50);
+            });
+            
+            clearInterval(interval);
+            // Animation finale du logo
+            setTimeout(() => {
+                animateLogoCompletion();
+            }, 800);
+            setTimeout(hideLoadingScreen, 1500); // Attendre plus longtemps pour voir l'animation complète
+        }
+        
+        // Synchroniser le remplissage du logo avec la progression
+        if (logoFill) {
+            logoFill.style.height = progress + '%';
+        }
+    }, 300); // Mise à jour toutes les 300ms pour un effet plus fluide
 }
 
 // Fonction pour masquer l'écran de chargement
@@ -207,23 +238,44 @@ const loadingStyles = `
     animation: fadeInUp 1s ease 0.7s both;
 }
 
-.loading-bar {
-    width: 100%;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 2px;
-    overflow: hidden;
+.fox-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin: 2rem 0 1rem 0;
     animation: fadeInUp 1s ease 0.9s both;
 }
 
-.loading-progress {
-    height: 100%;
-    background: white;
-    border-radius: 2px;
-    width: 0%;
-    transition: width 0.3s ease;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+.fox-icon {
+    font-size: 2rem;
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    filter: grayscale(100%) brightness(0.3);
+    color: transparent;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.fox-icon.visible {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: grayscale(100%) brightness(1);
+    color: transparent;
+    text-shadow: 0 0 0 white;
+    animation: foxBounce 0.6s ease;
+}
+
+@keyframes foxBounce {
+    0% {
+        transform: scale(0.5) rotate(-10deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .loading-text {

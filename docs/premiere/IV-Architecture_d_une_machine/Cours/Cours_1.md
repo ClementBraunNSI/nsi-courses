@@ -1,17 +1,266 @@
-# 📚 💻 Architecture d'une machine : le modèle de Von Neumann
+<style>
+/* Styles modernes pour le cours Architecture d'une machine */
+.course-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
 
-## 📚 Définition et Histoire
+.course-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 
-On définit un ordinateur comme étant une machine qui réalise des calculs de manière ordonnée (on parlait d'ordonnateur).  
-Il existe divers modèles pour créer des machines qui résolvent des calculs (comme la machine de Turing par exemple) mais celui qui a été retenu pour réaliser les machines que l'on utilise quotidiennement est celui de John Von Neumann.
+.timeline-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
 
-👨‍🔬 John Von Neumann était un mathématicien de la fin du XIXe - début XXe siècle et son but était d'augmenter les puissances de calcul des machines déjà existantes à cause notamment de la seconde guerre mondiale.
+.section-title {
+    color: #667eea;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
 
-Il reprend le modèle de calcul du projet **EDVAC** qui était une machine de calcul militaire (qui pouvait réaliser des opérations mathématiques en utilisant le binaire) mais y ajoute la notion de mémoire de programme pour créer son modèle.
+.definition-box {
+    background: rgba(102, 126, 234, 0.1);
+    border-left: 4px solid #667eea;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
 
-![edvac](edvac.jpeg)
+.definition-title {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
 
-Ce modèle réalise des calculs de manière séquentielle, ordonnée : on peut appeler ce modèle un **modèle de calcul séquentiel**.
+.definition-content {
+    line-height: 1.6;
+    color: #333;
+}
+
+.highlight-fact {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border-left: 4px solid #fdcb6e;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(253, 203, 110, 0.3);
+}
+
+.component-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.component-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.component-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+}
+
+.component-type {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.memory-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.2rem;
+    border: 1px solid rgba(102, 126, 234, 0.15);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.memory-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+}
+
+.memory-type {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.bus-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.2rem;
+    border: 1px solid rgba(102, 126, 234, 0.15);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.bus-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+}
+
+.bus-type {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.warning-box {
+    background: rgba(231, 76, 60, 0.1);
+    border-left: 4px solid #e74c3c;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+.warning-title {
+    font-weight: 600;
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.info-box {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid #3498db;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+.info-title {
+    font-weight: 600;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.cycle-steps {
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.cycle-step {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-left: 4px solid #2ecc71;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+    font-weight: 600;
+    color: #2ecc71;
+    margin-right: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .component-grid, .memory-grid, .bus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-header h1 {
+        font-size: 2rem;
+    }
+    
+    .timeline-section {
+        padding: 1rem;
+    }
+}
+</style>
+
+<div class="course-header">
+    <h1>📚 💻 Architecture d'une machine : le modèle de Von Neumann</h1>
+</div>
+
+<div class="timeline-section">
+    <h2 class="section-title">📚 Définition et Histoire</h2>
+
+    <div class="definition-box">
+        <div class="definition-title">💻 Qu'est-ce qu'un ordinateur ?</div>
+        <div class="definition-content">
+            On définit un ordinateur comme étant une machine qui réalise des calculs de manière ordonnée (on parlait d'ordonnateur).
+            <br/><br/>
+            Il existe divers modèles pour créer des machines qui résolvent des calculs (comme la machine de Turing par exemple) mais celui qui a été retenu pour réaliser les machines que l'on utilise quotidiennement est celui de <strong>John Von Neumann</strong>.
+        </div>
+    </div>
+    
+    <div class="info-box">
+        <div class="info-title">👨‍🔬 John Von Neumann</div>
+        <div class="definition-content">
+            John Von Neumann était un mathématicien de la fin du XIXe - début XXe siècle et son but était d'augmenter les puissances de calcul des machines déjà existantes à cause notamment de la seconde guerre mondiale.
+            <br/><br/>
+            Il reprend le modèle de calcul du projet <strong>EDVAC</strong> qui était une machine de calcul militaire (qui pouvait réaliser des opérations mathématiques en utilisant le binaire) mais y ajoute la notion de mémoire de programme pour créer son modèle.
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin: 2rem 0;">
+        <img src="edvac.jpeg" alt="Machine EDVAC" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);">
+    </div>
+    
+    <div class="highlight-fact">
+        🔄 <strong>Modèle séquentiel :</strong> Ce modèle réalise des calculs de manière séquentielle, ordonnée : on peut appeler ce modèle un <strong>modèle de calcul séquentiel</strong>.
+    </div>
+</div>
 
 ## 📖 🔧 Les composants du modèle de Von Neumann
 

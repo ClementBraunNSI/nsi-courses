@@ -1445,6 +1445,14 @@
                 <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
                 <a href="http://www.prof-leal.fr" class="colleague-link" target="_blank">Visiter le site</a>
             </div>
+            <div class="colleague-card">
+                <div class="colleague-header">
+                    <div class="colleague-icon">🚀</div>
+                    <h3 class="colleague-name">QUERTIER Théo</h3>
+                </div>
+                <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
+                <a href="https://ge0rgi0.github.io/TAQ/" class="colleague-link" target="_blank">Visiter le site</a>
+            </div>
         </div>
     </div>
     
@@ -1454,13 +1462,14 @@
         <button class="carousel-indicator" onclick="goToSlide(2)"></button>
         <button class="carousel-indicator" onclick="goToSlide(3)"></button>
         <button class="carousel-indicator" onclick="goToSlide(4)"></button>
+        <button class="carousel-indicator" onclick="goToSlide(5)"></button>
     </div>
 </div>
 
 <script>
 let currentSlide = 0;
-const totalSlides = 5;
-const slideWidth = 300; // largeur d'une carte + gap
+const totalSlides = 6;
+const slideWidth = 400; // largeur d'une carte + gap
 
 function updateCarousel() {
     const grid = document.getElementById('colleaguesGrid');
@@ -1498,7 +1507,7 @@ function goToSlide(slideIndex) {
 
 // Auto-play optionnel
 setInterval(() => {
-    if (currentSlide < totalSlides - 1) {
+    if (currentSlide < totalSlides - 2) {
         moveCarousel(1);
     } else {
         currentSlide = 0;
