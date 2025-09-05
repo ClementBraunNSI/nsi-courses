@@ -1,67 +1,139 @@
 <style>
-/* Styles pour le cours */
+/* Styles modernes pour le cours Représentation des caractères */
 .course-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 2rem;
-    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
-}
-
-.course-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.timeline-section {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 3rem;
     margin: 2rem 0;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    text-align: center;
+}
+
+.course-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.course-subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.concept-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
-    color: #667eea;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
     font-weight: 600;
+    color: #667eea;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .definition-box {
-    background: rgba(102, 126, 234, 0.1);
-    border-left: 4px solid #667eea;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-left: 5px solid #667eea;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
 }
 
 .definition-title {
+    font-size: 1.3rem;
     font-weight: 600;
     color: #667eea;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 .definition-content {
+    color: var(--md-default-fg-color);
+    font-size: 1.1rem;
     line-height: 1.6;
-    color: #333;
+}
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.concept-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.concept-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.concept-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.concept-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.code-example {
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+    border-left: 4px solid #4299e1;
+}
+
+.code-title {
+    color: #4299e1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .highlight-fact {
-    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
     padding: 1rem;
-    border-radius: 10px;
     margin: 1rem 0;
-    border-left: 4px solid #fdcb6e;
+    border-radius: 8px;
     font-weight: 500;
-    box-shadow: 0 2px 8px rgba(253, 203, 110, 0.3);
 }
 
 .character-examples {
@@ -72,13 +144,19 @@
 }
 
 .character-card {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
     border: 1px solid rgba(102, 126, 234, 0.2);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .character-symbol {
@@ -90,7 +168,7 @@
 
 .character-type {
     font-size: 0.9rem;
-    color: #666;
+    color: #7f8c8d;
     font-style: italic;
 }
 
@@ -139,7 +217,7 @@
 }
 
 .method-card {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 1.5rem;
@@ -162,21 +240,6 @@
     padding-bottom: 0.5rem;
 }
 
-.code-example {
-    background: #f8f9fa;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-left: 4px solid #667eea;
-    font-family: 'Courier New', monospace;
-}
-
-.code-title {
-    font-weight: 600;
-    color: #667eea;
-    margin-bottom: 0.5rem;
-}
-
 .unicode-examples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -190,6 +253,12 @@
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.unicode-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.2);
 }
 
 .unicode-symbol {
@@ -207,22 +276,34 @@
 
 .unicode-name {
     font-size: 0.8rem;
-    color: #666;
+    color: #7f8c8d;
     margin-top: 0.5rem;
 }
 
-/* Responsive design */
+.timeline-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 @media (max-width: 768px) {
-    .method-grid, .character-examples, .unicode-examples {
-        grid-template-columns: 1fr;
-    }
-    
-    .course-header h1 {
+    .course-title {
         font-size: 2rem;
     }
     
-    .timeline-section {
-        padding: 1rem;
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-header {
+        padding: 2rem;
+    }
+    
+    .method-grid, .character-examples, .unicode-examples {
+        grid-template-columns: 1fr;
     }
     
     .encoding-table {
@@ -232,10 +313,11 @@
 </style>
 
 <div class="course-header">
-    <h1>📝 La représentation des caractères</h1>
+    <h1 class="course-title">📝 La représentation des caractères</h1>
+    <p class="course-subtitle">Codage et encodage des symboles textuels</p>
 </div>
 
-<div class="timeline-section">
+<div class="concept-section">
     <h2 class="section-title">🎯 Objectif du cours</h2>
     
     <div class="definition-box">
@@ -248,7 +330,7 @@
     </div>
 </div>
 
-<div class="timeline-section">
+<div class="concept-section">
     <h2 class="section-title">📖 Définition</h2>
     
     <div class="definition-box">
@@ -296,7 +378,7 @@
     </div>
 </div>
 
-<div class="timeline-section">
+<div class="concept-section">
     <h2 class="section-title">🇺🇸 Un système de codage de caractère : ASCII</h2>
     
     <div class="definition-box">
@@ -437,7 +519,7 @@
     </div>
 </div>
 
-<div class="timeline-section">
+<div class="concept-section">
     <h2 class="section-title">🌍 Un système plus inclusif : Unicode</h2>
     
     <div class="definition-box">

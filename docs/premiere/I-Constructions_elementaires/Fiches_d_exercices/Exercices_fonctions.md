@@ -1,299 +1,563 @@
 # Fiche d'exercices : Fonctions
 
-## Exercices de niveau 1
+<style>
+/* Styles pour les fiches d'exercices avec système de cartes et onglets */
 
-!!! fox_exercice "Calcul de l'aire d'un rectangle (affichage)"
-    **Écrire un programme qui prend deux réels `longueur` et `largeur` et qui calcule l'aire d'un rectangle en affichant le résultat sous la forme : `'L'aire du rectangle est : [aire]'`.**
+.exercise-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    max-width: 100%;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def aire_rectangle(longueur: float, largeur: float) -> None:
-        print("L'aire du rectangle est ", longueur * largeur)
-    ```
+/* Styles pour les contextes d'exercices difficiles */
+.context-container {
+    margin-bottom: 2rem;
+    border: 2px solid #F44336;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(244, 67, 54, 0.02);
+}
 
----
+.context-header {
+    background: linear-gradient(135deg, #F44336 0%, #D32F2F 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    user-select: none;
+}
 
-!!! fox_exercice "Calcul de l'aire d'un rectangle (fonction)"
-    **Écrire une fonction Python `aire_rectangle` qui prend en paramètres deux réels correspondant à la largeur et la longueur d'un rectangle et renvoie l'aire de ce rectangle.**
+.context-header:hover {
+    background: linear-gradient(135deg, #D32F2F 0%, #B71C1C 100%);
+    transform: translateY(-1px);
+}
 
-??? fox_correction "Correction"
-    ```python
-    def aire_rectangle(longueur: float, largeur: float) -> float:
-        return longueur * largeur
-    ```
+.context-header .arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
 
----
+.context-header.active .arrow {
+    transform: rotate(90deg);
+}
 
-!!! fox_exercice "Calcul de la moyenne"
-    **Écrire une fonction `moyenne` qui prend deux réels en paramètres et renvoie la moyenne de ces deux nombres.**
+.context-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: white;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def moyenne(note_1: float, note_2: float) -> float:
-        return (note_1 + note_2) / 2
-    ```
+.context-content.show {
+    max-height: 10000px;
+    padding: 1rem;
+}
 
----
+.context-exercises {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-!!! fox_exercice "Somme de deux entiers"
-    **Écrire une fonction `somme` qui prend deux entiers en paramètres et renvoie leur somme.**  
-    *Exemple : somme(4,5) doit renvoyer 9.*
+/* Uniformiser la hauteur des cartes d'exercices dans les contextes */
+.context-exercises .exercise-card {
+    min-height: 200px;
+    align-items: stretch;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def somme(nombre_1: int, nombre_2: int) -> int:
-        return nombre_1 + nombre_2
-    ```
+.context-exercises .exercise-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
 
----
+.context-exercises .exercise-content {
+    flex-grow: 1;
+}
 
-!!! fox_exercice "Test de parité"
-    **Écrire une fonction `parite` qui prend en paramètre un entier et renvoie `True` s'il est pair, `False` sinon.**  
-    *Exemple : parite(7) doit renvoyer False.*  
+.context-exercises .toggle-solution {
+    margin-top: auto;
+    align-self: flex-start;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def parite(nombre: int) -> bool:
-        return nombre % 2 == 0
-    ```
+.exercise-card {
+    background: var(--md-default-bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid;
+    width: 100%;
+    max-width: 100%;
+    min-height: fit-content;
+}
 
----
+.exercise-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-!!! fox_exercice "Maximum entre deux nombres"
-    **Écrire une fonction `maximum_deux_nombres` qui prend deux entiers en paramètres et renvoie le plus grand des deux.**  
-    *Exemple : maximum_deux_nombres(10, 15) doit renvoyer 15.*  
+/* Modal pour les solutions */
+.solution-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
 
-??? fox_correction "Correction"
-    ```python
-    def maximum_deux_nombres(nombre_1: int, nombre_2: int) -> int:
-        return nombre_1 if nombre_1 > nombre_2 else nombre_2
-    ```
+.solution-modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
 
----
+.solution-content {
+    background: var(--md-default-bg-color);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
 
-!!! fox_exercice "Valeur absolue"
-    **Écrire une fonction `valeur_absolue` qui prend un nombre en paramètre et renvoie sa valeur absolue.**  
-    *Exemple : valeur_absolue(-8) doit renvoyer 8.*
+.solution-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def valeur_absolue(nombre: int) -> int:
-        return nombre if nombre >= 0 else -nombre
-    ```
+.solution-close:hover {
+    background: #d32f2f;
+}
 
----
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-!!! fox_exercice "Multiplication par addition"
-    **Écrire une fonction `multiplication_par_addition` qui prend deux entiers en paramètres et renvoie le produit des deux nombres en utilisant une succession d'additions.**  
-    *Exemple : multiplication_par_addition(4, 3) doit renvoyer 12.*
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
 
-??? fox_correction "Correction"
-    ```python
-    def multiplication_par_addition(nombre: int, multiple: int) -> int:
-        resultat = 0
-        for _ in range(multiple):
-            resultat += nombre
-        return resultat
-    ```
+.solution-wrapper {
+    display: none;
+}
 
----
+.exercise-card.intro {
+    border-left-color: #4CAF50;
+}
 
-## Exercices de niveau 2
+.exercise-card.intro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+}
 
-!!! fox_exercice "Calcul de la factorielle"
-    **Écrire une fonction `factorielle` qui prend en paramètre un entier n et renvoie la factorielle de ce nombre.**  
+.exercise-card.easy {
+    border-left-color: #2196F3;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def factorielle(n: int) -> int:
-        resultat = 1
-        for i in range(1, n + 1):
-            resultat *= i
-        return resultat
-    ```
+.exercise-card.easy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.4);
+}
 
----
+.exercise-card.medium {
+    border-left-color: #FF9800;
+}
 
-!!! fox_exercice "Somme des n premiers entiers"
-    **Écrire une fonction `somme_n_entiers` qui prend en paramètre un entier `n` et renvoie la somme de tous les entiers de 1 à n.**  
-    *Exemple : somme_n_entiers(100) doit renvoyer 5050.*
+.exercise-card.medium:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
+}
 
-??? fox_correction "Correction"
-    ```python
-    def somme_n_entiers(n: int) -> int:
-        return sum(range(1, n + 1))
-    ```
+.exercise-card.hard {
+    border-left-color: #F44336;
+}
 
----
+.exercise-card.hard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.4);
+}
 
-!!! fox_exercice "Compter les voyelles"
-    **Écrire une fonction `compter_voyelles` qui prend en paramètre une chaîne de caractères et renvoie le nombre de voyelles.**  
-    *Exemple : compter_voyelles("bonjour") doit renvoyer 3.*
+.exercise-card.important {
+    border-left-color: #ff8c42;
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.05) 0%, rgba(255, 140, 66, 0.02) 100%);
+}
 
-??? fox_correction "Correction"
-    ```python
-    def compter_voyelles(chaine: str) -> int:
-        voyelles = "aeiouAEIOU"
-        return sum(1 for lettre in chaine if lettre in voyelles)
-    ```
+.exercise-card.important:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 140, 66, 0.4);
+}
 
----
+.exercise-title {
+    margin: 0 0 1rem 0;
+    color: var(--md-primary-fg-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 
-!!! fox_exercice "Puissance sans opérateur **"
-    **Écrire une fonction `puissance` qui prend en paramètres deux entiers a et b et renvoie a à la puissance b sans utiliser l'opérateur `**`.**  
-    *Exemple : puissance(3, 2) doit renvoyer 9.*
+.exercise-content {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def puissance(base: int, exposant: int) -> int:
-        resultat = 1
-        for _ in range(exposant):
-            resultat *= base
-        return resultat
-    ```
+.difficulty-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
 
----
+.difficulty-badge.intro {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
 
-!!! fox_exercice "Nombre premier" 
-    **Écrire une fonction `est_premier` qui prend en paramètre un entier et renvoie `True` s'il est premier, `False` sinon.**  
-    Un nombre est premier uniquement s'il est divisible par 1 et par lui même.  
-    Indication : pour réussir cet exercice, vous utiliserez une boucle et vous compterez le nombre de diviseurs.  
-    Rappel : un nombre en divise un autre si le reste de leur division est 0. En python, l'opérateur qui obtient le reste de la division est `%`.  
-    *Exemple : est_premier(2) doit renvoyer Vrai, est_premier(6) doit renvoyer Faux.*  
+.difficulty-badge.easy {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+}
 
-??? fox_correction "Correction"
+.difficulty-badge.medium {
+    background: rgba(255, 152, 0, 0.1);
+    color: #FF9800;
+}
 
-    ```python
-    def est_premier(nombre : int)-> bool:
-        diviseurs = 0
-        for i in range(1,nombre+1):
-            if nombre%i == 0:
-                diviseurs = diviseurs + 1
-        if diviseurs == 2 :
-            return True
-        else:
-            return False
-    ```
----
+.difficulty-badge.hard {
+    background: rgba(244, 67, 54, 0.1);
+    color: #F44336;
+}
 
-!!! fox_exercice "Somme des chiffres d'un nombre"
-    **Écrire une fonction `somme_chiffres` qui prend un entier en paramètre et renvoie la somme de ses chiffres.**  
-    *Indication : Il peut être facile d'utiliser le changement de type en `str`*  
-    *Exemple : somme_chiffres(1234) doit renvoyer 10 (1+2+3+4)*
+.difficulty-badge.important {
+    background: rgba(255, 140, 66, 0.1);
+    color: #ff8c42;
+}
 
-??? fox_correction "Correction"
+.toggle-solution {
+    background: linear-gradient(135deg, #cccccc 0%, #999999 100%);
+    color: #666666;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: not-allowed;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    opacity: 0.5;
+}
 
-    ```python
-    def somme_chiffres(nombre : int)-> int:
-        somme = 0
-        str_nombre = str(nombre)
-        for chiffre in str_nombre:
-            somme = somme + int(chiffre)
-        return somme
-    ```
+.toggle-solution:hover {
+    /* Pas d'effet hover pour les boutons désactivés */
+}
 
----
+.toggle-solution.active {
+    background: linear-gradient(135deg, #ff7f50 0%, #ff6347 100%);
+}
 
-## Exercices de niveau 3
+.arrow {
+    transition: transform 0.3s ease;
+}
 
-!!! fox_exercice "Nombre parfait"
-    **Écrire une fonction `nombre_parfait` qui prend en paramètre un entier et renvoie True si la somme de ses diviseurs (sans lui-même) égale le nombre.**  
-    Indication : Si un nombre divise le nombre demandé en paramètre, il peut être judicieux de le mettre dans une liste. Il faudra donc chercher tous ses diviseurs sauf lui-même pour réussir cet exercice.  
-    *Exemple : nombre_parfait(6) doit renvoyer True (car 1 + 2 + 3 = 6).*  
+.solution {
+    height: 100%;
+    overflow-y: auto;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def nombre_parfait(nombre: int) -> bool:
-        somme = 0
-        for i in range(1, nombre):
-            if nombre % i == 0:
-                somme += i
-        return somme == nombre
-    ```
+.solution pre {
+    margin: 0;
+    font-size: 0.85rem;
+}
 
----
+.section-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    padding: 0;
+}
 
-!!! fox_exercice "Suite de Fibonacci"
-    **Écrire une fonction `fibonacci` qui prend en paramètre un entier et affiche les différents termes de la suite de Fibonacci.**  
-    On rappelle que la suite de Fibonacci est calculée à partir des deux termes précédents.  
-    $F(0) = 0$, $F(1) = 1$, $F(2) = 1 + 0 = 1$, $F(3) = F(2) + F(1) = 1 + 1 = 2$, $F(4) = F(3) + F(2) = 2 + 1 = 3$...  
-    *Exemple : fibonacci(5) doit afficher 0, 1, 1, 2, 3, 5.*
+.section-tab {
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def fibonacci(n: int) -> None:
-        a, b = 0, 1
-        for _ in range(n + 1):
-            print(a)
-            a, b = b, a + b
-    ```
+.section-tab:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
 
----
+.section-tab.active {
+    background: linear-gradient(135deg, #ffb347 0%, #ff8c42 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
+}
 
-!!! fox_exercice "Nombre d'Armstrong"
-    **Écrire une fonction `nombre_armstrong` qui prend en paramètre un nombre entier et renvoie `True` s'il est un nombre d'Armstrong, `False` sinon.**  
-    Un nombre est un nombre d'Armstrong si la somme des puissances de ses chiffres est égale au nombre lui-même.  
-    *Exemple : nombre_armstrong(153) doit renvoyer True car $1^3 + 5^3 + 3^3 = 153$.*
+.section-content {
+    display: none;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
 
-??? fox_correction "Correction"
-    ```python
-    def nombre_armstrong(nombre: int) -> bool:
-        somme = 0
-        str_nombre = str(nombre)
-        puissance = len(str_nombre)
-        for chiffre in str_nombre:
-            somme += int(chiffre) ** puissance
-        return somme == nombre
-    ```
+.section-content.active {
+    display: block;
+}
 
----
+/* JavaScript pour les fonctionnalités interactives */
+.exercise-script {
+    display: none;
+}
+</style>
 
-!!! fox_exercice "Somme des nombres premiers"
-    **Écrire une fonction `somme_premiers` qui prend en paramètre un entier n et renvoie la somme des nombres premiers jusque n (compris).**  
-    *Exemple : somme_premiers(10) doit renvoyer 17 car les nombres premiers inférieurs à 10 sont 2, 3, 5, et 7 (2 + 3 + 5 + 7 = 17).*
+<script>
+// JavaScript pour les fonctionnalités interactives des fiches d'exercices
 
-??? fox_correction "Correction"
-    ```python
-    def somme_premiers(n:int)-> int:
-        somme = 0
-        for i in range(n+1):
-            #On dispose d'une fonction qui renvoie True s'il est premier
-            if est_premier(i):
-                somme = somme +i
-        return somme
-    ```
+function toggleSolution(button) {
+    // Fonction désactivée - les corrections ne sont pas accessibles
+    return false;
+}
 
----
+function closeSolutionModal() {
+    const modal = document.getElementById('solution-modal');
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restaurer le scroll de la page
+    }
+}
 
-!!! fox_exercice "Compter les occurrences"
-    **Écrire une fonction `compter_occurences` qui prend en paramètres une chaîne de caractères et un caractère, et renvoie le nombre de fois que le caractère apparaît dans la chaîne.**  
-    *Exemple : compter_occurences("programmation", "m") doit renvoyer 2.*
+// Fermer la modal avec la touche Échap
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeSolutionModal();
+    }
+});
 
-??? fox_correction "Correction"
-    ```python
-    def compter_occurences(chaine: str, caractere: str) -> int:
-        occurences = 0
-        for lettre in chaine:
-            if lettre == caractere:
-                occurences = occurences + 1
-        return occurences
-    ```
+function showSection(sectionId) {
+    // Masquer toutes les sections
+    const allContents = document.querySelectorAll('.section-content');
+    const allTabs = document.querySelectorAll('.section-tab');
+    
+    allContents.forEach(content => content.classList.remove('active'));
+    allTabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Afficher la section sélectionnée
+    document.getElementById(sectionId).classList.add('active');
+    event.target.classList.add('active');
+}
 
----
+function toggleContext(header) {
+    const content = header.nextElementSibling;
+    const arrow = header.querySelector('.arrow');
+    
+    if (content.classList.contains('show')) {
+        content.classList.remove('show');
+        header.classList.remove('active');
+    } else {
+        content.classList.add('show');
+        header.classList.add('active');
+    }
+}
 
-## Exercices de niveau 4
+// Afficher la première section par défaut
+document.addEventListener('DOMContentLoaded', function() {
+    const firstTab = document.querySelector('.section-tab');
+    if (firstTab) {
+        firstTab.click();
+    }
+});
+</script>
 
-!!! fox_exercice "Tétration"
-    **Écrire une fonction `tetration` qui prend en paramètre un nombre `n` et un tétré `t` et renvoie la tétration du nombre par le tétré.**  
-    *Exemple : tetration(3, 3) doit renvoyer 7625597484987.*
+<div class="section-tabs">
+    <button class="section-tab" onclick="showSection('intro-section')">🎯 Exercices d'introduction</button>
+    <button class="section-tab" onclick="showSection('easy-section')">🌟 Niveau 1</button>
+    <button class="section-tab" onclick="showSection('medium-section')">🔥 Niveau 2</button>
+    <button class="section-tab" onclick="showSection('hard-section')">🚀 Niveau 3</button>
+</div>
 
-??? fox_correction "Correction"
-    ```python
-    def tetration(n: int, t: int) -> int:
-        if t == 0:
-            return 1
-        result = n
-        for i in range(t - 1):
-            result = n ** result
-        return result
-    ```
+<div id="intro-section" class="section-content">
+<div class="exercise-cards">
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Calcul de l'aire d'un rectangle (affichage)</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire un programme qui prend deux réels <code>longueur</code> et <code>largeur</code> et qui calcule l'aire d'un rectangle en affichant le résultat sous la forme : <code>'L'aire du rectangle est : [aire]'</code>.</strong></p>
+            </div>
+            <button class="toggle-solution" disabled>
+                <span class="arrow">🔒</span> Correction non disponible
+            </button>
+        </div>
+        <div class="solution-wrapper">
+            <div class="solution">
+                <pre><code>def aire_rectangle(longueur: float, largeur: float) -> None:
+    print("L'aire du rectangle est ", longueur * largeur)</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Calcul de l'aire d'un rectangle (fonction)</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire une fonction Python <code>aire_rectangle</code> qui prend en paramètres deux réels correspondant à la largeur et la longueur d'un rectangle et renvoie l'aire de ce rectangle.</strong></p>
+            </div>
+            <button class="toggle-solution" disabled>
+                <span class="arrow">🔒</span> Correction non disponible
+            </button>
+        </div>
+        <div class="solution-wrapper">
+            <div class="solution">
+                <pre><code>def aire_rectangle(longueur: float, largeur: float) -> float:
+    return longueur * largeur</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Calcul de la moyenne</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire une fonction <code>moyenne</code> qui prend deux réels en paramètres et renvoie la moyenne de ces deux nombres.</strong></p>
+            </div>
+            <button class="toggle-solution" disabled>
+                <span class="arrow">🔒</span> Correction non disponible
+            </button>
+        </div>
+        <div class="solution-wrapper">
+            <div class="solution">
+                <pre><code>def moyenne(note_1: float, note_2: float) -> float:
+    return (note_1 + note_2) / 2</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Somme de deux entiers</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire une fonction <code>somme</code> qui prend deux entiers en paramètres et renvoie leur somme.</strong></p>
+                <p><em>Exemple : somme(4,5) doit renvoyer 9.</em></p>
+            </div>
+            <button class="toggle-solution" disabled>
+                <span class="arrow">🔒</span> Correction non disponible
+            </button>
+        </div>
+        <div class="solution-wrapper">
+            <div class="solution">
+                <pre><code>def somme(nombre_1: int, nombre_2: int) -> int:
+    return nombre_1 + nombre_2</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="exercise-card intro">
+        <div class="exercise-content-wrapper">
+            <div class="difficulty-badge intro">Introduction 🦊</div>
+            <h4 class="exercise-title">Test de parité</h4>
+            <div class="exercise-content">
+                <p><strong>Écrire une fonction <code>parite</code> qui prend en paramètre un entier et renvoie <code>True</code> s'il est pair, <code>False</code> sinon.</strong></p>
+                <p><em>Exemple : parite(7) doit renvoyer False.</em></p>
+            </div>
+            <button class="toggle-solution" disabled>
+                <span class="arrow">🔒</span> Correction non disponible
+            </button>
+        </div>
+        <div class="solution-wrapper">
+            <div class="solution">
+                <pre><code>def parite(nombre: int) -> bool:
+    return nombre % 2 == 0</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script>
+function showSection(sectionId) {
+    // Masquer toutes les sections
+    const sections = document.querySelectorAll('.section-content');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    // Retirer la classe active de tous les onglets
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    // Afficher la section sélectionnée
+    document.getElementById(sectionId).style.display = 'block';
+    
+    // Ajouter la classe active à l'onglet cliqué
+    event.target.classList.add('active');
+}
+
+// Fonction désactivée pour empêcher l'accès aux corrections
+function toggleSolution(button) {
+    // Cette fonction est désactivée pour empêcher l'accès aux corrections
+    return false;
+}
+
+// Afficher la première section par défaut
+document.addEventListener('DOMContentLoaded', function() {
+    showSection('intro-section');
+    document.querySelector('.tab').classList.add('active');
+});
+</script>
+
+</body>
+</html>

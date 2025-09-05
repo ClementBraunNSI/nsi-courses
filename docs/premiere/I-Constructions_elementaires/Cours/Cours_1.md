@@ -1,219 +1,573 @@
-# 📚 Constructions élémentaires en Python
+<style>
+/* Styles modernes pour le cours Constructions élémentaires */
+.course-header {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 3rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    text-align: center;
+}
 
-## 📖 Qu'est ce qu'un programme ?
+.course-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
 
-**Défintion:** On définit un **programme** comme étant une suite d'instruction élémentaires destinées à être exécutées par un ordinateur.
+.course-subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
 
-Le langage python est un langage dit de haut niveau. Cela veut dire qu'il est plus proche de nous (utilisateurs) que de l'ordinateur (du processeur).
+.concept-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-Ce langage est basé sur nos ordinateurs qui réalisent des instructions de manière séquentielle (c'est à dire réalisées les unes après les autres).
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
-On peut dénombrer un certain nombre d'instructions élémentaires qui permettent de créer un programme.
-Ces instructions élémentaires peuvent utiliser des opérateurs.
+.definition-box {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-left: 5px solid #667eea;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
 
-**Définition:** Un opérateur est un caractère ou un ensemble de caractère qui correspond à une opération pouvant être réalisée par le processeur.
+.definition-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
 
-## 📖 Instanciation
+.definition-content {
+    color: var(--md-default-fg-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
-L'instanciation est une instruction qui permet d'associer une **valeur** à une **variable**.
-Une variable en python est une chaîne de caractère que l'on associe à une **type** (domaine de valeurs).
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
 
-L'instanciation utilise l'opérateur `=`.
-Pour la machine, cela revient à associer un espace mémoire à la valeur désignée.
+.concept-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
 
-Par exemple :
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
 
-```python
-# Instancier a à la valeur 42
+.concept-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.concept-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.concept-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.code-example {
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+    border-left: 4px solid #4299e1;
+}
+
+.code-title {
+    color: #4299e1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.highlight-fact {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.operator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.operator-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.operator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.operator-symbol {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Courier New', monospace;
+}
+
+.operator-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.operator-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .course-title {
+        font-size: 2rem;
+    }
+    
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .operator-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-header {
+        padding: 2rem;
+    }
+}
+</style>
+
+<div class="course-header">
+    <h1 class="course-title">📚 Constructions élémentaires en Python</h1>
+    <p class="course-subtitle">Les fondements de la programmation Python</p>
+</div>
+
+<div class="concept-section">
+    <h2 class="section-title">🤖 Qu'est-ce qu'un programme ?</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Définition Fondamentale</div>
+        <div class="definition-content">
+            Un <strong>programme</strong> est une suite d'instructions élémentaires destinées à être exécutées par un ordinateur.
+        </div>
+ </div>
+     
+     <div class="concept-grid">       <div class="concept-card">
+            <div class="concept-icon">🐍</div>
+            <div class="concept-name">Langage Python</div>
+            <div class="concept-description">
+                Python est un langage de <strong>haut niveau</strong>, plus proche de nous (utilisateurs) que de l'ordinateur (processeur).
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">⚡</div>
+            <div class="concept-name">Exécution Séquentielle</div>
+            <div class="concept-description">
+                Les instructions sont réalisées de manière <strong>séquentielle</strong> - les unes après les autres, dans l'ordre.
+            </div>
+        </div>
+    </div>
+    
+    <div class="definition-box">
+        <div class="definition-title">🔧 Les Opérateurs</div>
+        <div class="definition-content">
+            Un <strong>opérateur</strong> est un caractère ou un ensemble de caractères qui correspond à une opération pouvant être réalisée par le processeur.
+        </div>
+    </div>
+</div>
+
+<div class="concept-section">
+    <h2 class="section-title">💾 Instanciation</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Concept d'Instanciation</div>
+        <div class="definition-content">
+            L'<strong>instanciation</strong> est une instruction qui permet d'associer une <strong>valeur</strong> à une <strong>variable</strong>. Une variable en Python est une chaîne de caractères que l'on associe à un <strong>type</strong> (domaine de valeurs).
+        </div>
+    </div>
+    
+    <div class="concept-grid">
+        <div class="concept-card">
+            <div class="concept-icon">🔗</div>
+            <div class="concept-name">Opérateur d'Assignation</div>
+            <div class="concept-description">
+                L'instanciation utilise l'opérateur <strong>=</strong>. Pour la machine, cela revient à associer un espace mémoire à la valeur désignée.
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">🏷️</div>
+            <div class="concept-name">Variables et Types</div>
+            <div class="concept-description">
+                Les variables peuvent contenir différents types : entiers, chaînes de caractères, tableaux, listes, nombres réels, ou objets personnalisés.
+            </div>
+        </div>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Exemples d'Instanciation</div>
+        <pre><code># Instancier a à la valeur 42
 a = 42
 
-#Instancier ma_chaine_de_caractere à la valeur 'Hello World!'
-ma_chaine_de_caractere = 'Hello World!'
-```
+# Instancier ma_chaine_de_caractere à la valeur 'Hello World!'
+ma_chaine_de_caractere = 'Hello World!'</code></pre>
+    </div>
+    
+    <div class="highlight-fact">
+        💡 <strong>Base de la programmation :</strong> L'instanciation est l'opération fondamentale qui consiste à associer une valeur à une variable.
+    </div>
+</div>
 
-On a donc ici, l'explicitation des types entiers ou chaînes de caractères mais il en existe un certain nombre : tableaux, listes, nombres réels (réels à virgule flottante) ou d'autres objets que l'on peut créer nous même.
+<div class="concept-section">
+    <h2 class="section-title">🧮 Opérations Mathématiques</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Calculs en Python</div>
+        <div class="definition-content">
+            Python permet de réaliser des opérations mathématiques grâce à des <strong>opérateurs</strong> qui utilisent 2 valeurs, comme nos opérations sur papier.
+        </div>
+    </div>
+    
+    <div class="operator-grid">
+        <div class="operator-card">
+            <div class="operator-symbol">+</div>
+            <div class="operator-name">Addition</div>
+            <div class="operator-description">Additionne deux nombres</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol">-</div>
+            <div class="operator-name">Soustraction</div>
+            <div class="operator-description">Soustrait le second nombre du premier</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol">*</div>
+            <div class="operator-name">Multiplication</div>
+            <div class="operator-description">Multiplie deux nombres</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol">/</div>
+            <div class="operator-name">Division</div>
+            <div class="operator-description">Divise le premier nombre par le second</div>
+        </div>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Exemples d'Opérations</div>
+        <pre><code>a = 3 + 2  # Addition : a = 5
+b = 5 - 3  # Soustraction : b = 2
+c = a * b  # Multiplication : c = 10
+d = b / a  # Division : d = 0.4</code></pre>
+    </div>
+    
+    <div class="highlight-fact">
+        ⚠️ <strong>Important :</strong> Les opérations mathématiques sont réservées aux variables de type entiers ou nombres réels. Attention aux imprécisions avec les flottants !
+    </div>
+</div>
 
-Cette opération est la base de la programmation. On utilisera le terme **instancier** pour définir le fait d'associer à une variable une valeur donnée.
+<div class="concept-section">
+    <h2 class="section-title">⚖️ Opérations de Comparaisons</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Comparaisons en Python</div>
+        <div class="definition-content">
+            Python permet de comparer des variables pour évaluer des relations d'ordre ou d'égalité. <strong>Attention :</strong> on ne peut comparer que des éléments du même type !
+        </div>
+    </div>
+    
+    <div class="operator-grid">
+        <div class="operator-card">
+            <div class="operator-symbol">></div>
+            <div class="operator-name">Supérieur</div>
+            <div class="operator-description">a plus grand que b</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol"><</div>
+            <div class="operator-name">Inférieur</div>
+            <div class="operator-description">a plus petit que b</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol">>=</div>
+            <div class="operator-name">Supérieur ou égal</div>
+            <div class="operator-description">a plus grand ou égal à b</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol"><=</div>
+            <div class="operator-name">Inférieur ou égal</div>
+            <div class="operator-description">a plus petit ou égal à b</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol">==</div>
+            <div class="operator-name">Égalité</div>
+            <div class="operator-description">a est égal à b</div>
+        </div>
+        
+        <div class="operator-card">
+            <div class="operator-symbol">!=</div>
+            <div class="operator-name">Différence</div>
+            <div class="operator-description">a est différent de b</div>
+        </div>
+    </div>
+    
+    <div class="highlight-fact">
+        ⚠️ <strong>Erreur fréquente :</strong> Ne pas confondre <code>=</code> (assignation) et <code>==</code> (comparaison) ! Utiliser <code>=</code> dans une comparaison provoque une SyntaxError.
+    </div>
+    
+    <div class="highlight-fact">
+        🚫 <strong>TypeError :</strong> Comparer des éléments de types différents génère une erreur. Exemple : <code>5 > "hello"</code> est invalide.
+    </div>
+</div>
 
-## 📖 Opérations mathématiques
+<div class="concept-section">
+    <h2 class="section-title">💬 Affichage et Demande à l'Utilisateur</h2>
+    
+    <div class="concept-grid">
+        <div class="concept-card">
+            <div class="concept-icon">📺</div>
+            <div class="concept-name">Fonction print()</div>
+            <div class="concept-description">
+                Affiche des informations à l'écran : chaînes de caractères, nombres, résultats de calculs. Peut concaténer plusieurs éléments séparés par des virgules.
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">⌨️</div>
+            <div class="concept-name">Fonction input()</div>
+            <div class="concept-description">
+                Capture les données saisies par l'utilisateur. Affiche un message d'invitation et renvoie la saisie sous forme de chaîne de caractères.
+            </div>
+        </div>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Exemples d'Utilisation</div>
+        <pre><code># Affichage simple
+print("Bonjour le monde !")
 
-Le langage python est un langage informatique. En informatique, il est nécessaire de réaliser des opérations qui peuvent être du domaine mathématique.
+# Affichage de plusieurs éléments
+print("Bonjour", "le monde", 42)  # Affiche : Bonjour le monde 42
 
-Il existe un certain nombre d'opérations mathématiques qui sont associées à des opérateurs.
-On peut citer :
+# Demande à l'utilisateur
+nom = input("Quel est votre nom ? ")
+print("Bonjour", nom)
 
-- $+$: addition
-- $-$: soustraction
-- $\ast$: multiplication
-- $/$ : division
+# Conversion de type pour les nombres
+age_str = input("Quel est votre âge ? ")
+age = int(age_str)  # Conversion en entier</code></pre>
+    </div>
+    
+    <div class="highlight-fact">
+        ⚠️ <strong>Important :</strong> La fonction <code>input()</code> renvoie toujours une chaîne de caractères (string). Pour traiter des nombres, il faut convertir le type avec <code>int()</code> ou <code>float()</code>.
+    </div>
+</div>
 
-Ces opérateurs utilisent 2 valeurs, à l'instar de nos opérations que l'on peut écrire sur papier.
-Il en parait nécessaire d'instancier une variable à une opération, comme par exemple nos fonctions mathématiques $y = 3x+2$.
-
-Par exemple:
-
-```python
-a = 3 + 2 
-b = 5 - 3
-c = a * b
-d = b / a
-```
-
-Les exemples précédents montrent que l'on peut réaliser des opérations sur les différentes variables que l'on a déjà créée.
-
-Il faut cependant prendre compte d'une chose importante : **le type des variables utilisées**.
-En effet, les opérations **mathématiques** sont réservées à des variables de type entiers ou nombres réels. Il faut cependant faire attention aux nombres réels (flottants) à cause des imprécisions (cf cours précédent).
-
-## 📖 Opérations de comparaisons
-
-Comme les opérations mathématiques, il est possible de réaliser des comparaisons sur des variables.
-
-> **⚠️ Attention**
-> **On ne peut comparer des éléments uniquement s'ils sont du même type** !  
-> Si jamais lors d'un programme on compare deux éléments de types différents, on pourrait faire face à ce que l'on appelle une erreur (**TypeError**).
-
-Il existe un certain nombre d'opérateurs en python qui permettent de réaliser des comparaisons.  
-
-On peut citer :
-
-- $a > b$ : Cet opérateur correspond à une comparaison d'ordre (a plus grand que b).
-- $a < b$ : Cet opérateur correspond à une comparaison d'ordre (a plus petit que b).
-- $a >= b$ : Cet opérateur correspond à une comparaison d'ordre (a plus grand ou égal à b).
-- $a <= b$ : Cet opérateur correspond à une comparaison d'ordre (a plus petit ou égal à b).
-- $a == b$ : Cet opérateur correspond à une comparaison : a est égal à b.
-
-> **⚠️ Attention**
-> Il ne faut pas confondre les opérateurs $=$ et $==$.
-> En effet, $=$ ne sera utilisé uniquement lors d'**instanciation** de variables. Utiliser l'opérateur $=$ lors d'une **comparaison** peut mener à des erreurs! (**SyntaxError**).
-
-## 📖 Affichage et Demande à l'utilisateur
-
-La fonction `print()` est utilisée pour afficher des informations à l'écran.  
-Elle peut afficher des chaînes de caractères, des nombres, ou même les résultats de calculs.  
-On peut également concaténer plusieurs éléments à afficher en les séparant par des virgules dans l'appel à print().  
-Par exemple, print("Bonjour", "le monde", 42) affichera "Bonjour le monde 42" dans la console.
-
-D'un autre côté, la fonction input() permet de capturer des données saisies par l'utilisateur.  
-Elle prend en argument une chaîne de caractères qui est affichée comme un message à l'utilisateur pour l'inviter à entrer une valeur.  
-La valeur saisie par l'utilisateur est ensuite renvoyée sous forme de chaîne de caractères.  
-Par exemple, nom = input("Quel est votre nom ? ") demandera à l'utilisateur de saisir son nom, qui sera ensuite stocké dans la variable nom.  
-
-> **⚠️ Attention**
-> Attention ! La fonction input permet de stocker l'entrée de l'utilisateur dans une variable mais celle-ci sera forcément du type `string`.
-> Si l'on souhaite traiter des nombres, il faudra alors modifier le type de la valeur à l'aide des fonctions le permettant.
-
-## 📖 Conditions
-
-Une condition est réalisable en python grâce à l'instruction `if`.
-
-Cette condition permet d'évaluer des comparaisons, des états de variables ou des valeurs associées à des variables.
-Si cette condition est validée, alors le bout de code associé est exécuté, sinon il peut exister un bloc de code associé au mot-clef `else`.
-
-Par exemple, on souhaite réaliser un affichage suivant une valeur d'une variable âge qui correspond à l'âge de l'utilisateur qu'il renseigne.
-
-```python
-# Demander à l'utilisateur son age
-age = input('Quel est votre âge?')
-
-# Lors d'une demande à l'aide d'input, on reçoit une chaîne de caractères, on doit la convertir en entier
-age_entier = int(age)
+<div class="concept-section">
+    <h2 class="section-title">🔀 Conditions</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Structure Conditionnelle</div>
+        <div class="definition-content">
+            Les conditions permettent d'exécuter du code selon des critères spécifiques grâce à l'instruction <strong>if</strong>. Elles évaluent des comparaisons, des états de variables ou des valeurs.
+        </div>
+    </div>
+    
+    <div class="concept-grid">
+        <div class="concept-card">
+            <div class="concept-icon">🚪</div>
+            <div class="concept-name">if</div>
+            <div class="concept-description">
+                Exécute le code si la condition est vraie. C'est la structure de base pour les décisions.
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">🔄</div>
+            <div class="concept-name">elif</div>
+            <div class="concept-description">
+                "Else if" - teste une nouvelle condition si la précédente était fausse. Peut être répété plusieurs fois.
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">🏁</div>
+            <div class="concept-name">else</div>
+            <div class="concept-description">
+                Exécute le code si aucune des conditions précédentes n'était vraie. Optionnel.
+            </div>
+        </div>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Exemple : Test de Majorité</div>
+        <pre><code># Demander à l'utilisateur son âge
+age = input('Quel est votre âge ? ')
+age_entier = int(age)  # Conversion en entier
 
 # Condition d'affichage
-if age_entier > 18 :
+if age_entier >= 18:
     print('Vous êtes majeur')
 else:
-    print('Vous êtes mineur')
-```
+    print('Vous êtes mineur')</code></pre>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Exemple : Évaluation de Notes</div>
+        <pre><code># Demande d'une note (A, B, C)
+note = input('Quelle est la note à évaluer ? ')
 
-Ce bout de code permet d'afficher si l'utilisateur est majeur ou mineur.
-
-On remarque la présence du bloc else.
-Cependant, il existe un autre bloc permettant de réaliser des conditions si une condition n'est pas déjà validée. Ce bloc est le `elif`.
-
-Par exemple, on va réaliser un programme qui permet de mettre une appréciation à une note.
-
-```python
-# On demande à l'utilisateur une note (A,B,C)
-note = input('Quelle est la note à évaluer?')
-
-if note == 'A' :
+if note == 'A':
     print('Très bien')
 elif note == 'B':
     print('Un peu plus pour exceller')
+elif note == 'C':
+    print('Peut mieux faire')
 else:
-    print("Poursuis tes efforts")
-```
+    print('Poursuis tes efforts')</code></pre>
+    </div>
+    
+    <div class="highlight-fact">
+        💡 <strong>Astuce :</strong> Le bloc <code>else</code> est optionnel. Si aucune action n'est nécessaire quand toutes les conditions sont fausses, vous pouvez l'omettre.
+    </div>
+    
+    <div class="highlight-fact">
+        ⚠️ <strong>Performance :</strong> Les conditions sont évaluées dans l'ordre. Placez les conditions les plus probables en premier pour optimiser les performances.
+    </div>
+</div>
 
-> **⚠️ Attention**
-> On remaraque que l'on a un bloc elif. Celui-ci est exécuté si la première condition n'est pas validée et ainsi de suite. On peut enchaîner autant de bloc `elif` que nécessaire.
->
-> Cependant il faut faire attention au nombre de conditions réalisées car trop détailler peut ralentir la vitesse à laquelle on attend une réponse.
-> Chaque condition est évaluée jusqu'à trouver une qui est valide, ou rentrer dans le `else`.
+<div class="concept-section">
+    <h2 class="section-title">🔄 Boucles</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Répétition de Code</div>
+        <div class="definition-content">
+            Les boucles permettent de répéter un bloc de code plusieurs fois. Python propose deux types principaux : <strong>for</strong> (nombre d'itérations défini) et <strong>while</strong> (condition de continuation).
+        </div>
+    </div>
+    
+    <div class="concept-grid">
+        <div class="concept-card">
+            <div class="concept-icon">🔢</div>
+            <div class="concept-name">Boucle for</div>
+            <div class="concept-description">
+                Répète un code un nombre défini de fois. Idéale quand on connaît le nombre d'itérations à l'avance.
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">⏳</div>
+            <div class="concept-name">Boucle while</div>
+            <div class="concept-description">
+                Répète un code tant qu'une condition reste vraie. Utilisée quand le nombre d'itérations est inconnu.
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">📊</div>
+            <div class="concept-name">range()</div>
+            <div class="concept-description">
+                Fonction qui génère une séquence de nombres. Essentielle pour les boucles for avec compteur.
+            </div>
+        </div>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Boucle for : Affichage de 1 à n</div>
+        <pre><code>n = 30
+for i in range(1, n+1):
+    print(i)
 
-> **💡 Astuce**
-> Le bloc `else` n'est pas obligatoire s'il ne doit rien faire. On peut l'omettre
-> ```python
-> age = 36
-> if age < 40:
->     print("Vous êtes né après 1980")
-> else:
->     print('')
-> ```
-> Ici, print('') ne sert pas à grand chose, on peut l'omettre.
-> ```python
-> age = 36
-> if age < 40 :
->     print('Vous êtes né après 1980')
-> ```
-
-## 📖 Boucles
-
-Une boucle en python est la répétition d'une certaine partie d'un algorithme un certain nombre de fois ou suivant la validation d'une condition.
-
-Il existe plusieurs types de boucles en python.
-
-### La boucle while
-
-La boucle `while` correspond à une boucle qui s'exécute `tant que` la condition choisie est valide.
-
-Par exemple, on peut réaliser un bout de code tant qu'un nombre est positif, tant qu'un tableau n'est pas vide, tant qu'une chaîne de caractère n'est pas vide ou bien par exemple tant qu'une condition booléenne est valide.
-
-On peut associer la syntaxe python suivante:
-
-```python
-n = 30
+# Variantes de range() :
+# range(10)      → 0, 1, 2, ..., 9
+# range(1, 10)   → 1, 2, 3, ..., 9
+# range(1, 10, 2) → 1, 3, 5, 7, 9</code></pre>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Boucle while : Même résultat</div>
+        <pre><code>n = 30
 i = 1
-# On veut afficher les nombres de 1 à n choisi en faisant croître un entier i.
+# On veut afficher les nombres de 1 à n
 while i <= n:
     print(i)
-    i = i + 1
-```
+    i = i + 1  # Incrémentation obligatoire !</code></pre>
+    </div>
+    
+    <div class="highlight-fact">
+        ⚠️ <strong>Danger :</strong> Attention aux boucles infinies ! Dans une boucle <code>while</code>, oublier d'incrémenter la variable de contrôle peut créer une boucle qui ne s'arrête jamais.
+    </div>
+    
+    <div class="highlight-fact">
+         💡 <strong>Avantage :</strong> La boucle <code>for</code> s'arrête forcément car elle itère sur un nombre défini d'éléments. Utilisez <code>for</code> quand vous connaissez le nombre d'itérations, <code>while</code> pour les conditions dynamiques.
+     </div>
+ </div>
 
-Ici, ce bout de code incrémente 1 jusqu'à ce qu'il soit supérieur à n. Cela veut dire que la boucle va se dérouler tant que i est inférieur ou égal à n.
-
-> **⚠️ Attention**
-> Une boucle `while` peut ne pas s'arrêter !
-> Il faut vérifier que la condition est valide jusqu'au point désiré. On parle de **terminaison de boucle**.
-> Par exemple, on peut réaliser une boucle infinie en écrivant `while True` ou bien en ayant une condition qui traite un entier positif et ne jamais le décrémenter.
-
-### La boucle for
-
-Il existe un autre type de boucle en python : la boucle `for`.
-
-Une boucle for est une boucle que l'on nomme `boucle pour`. Cette boucle s'exécute à l'aide d'une variable qui va évoluer par rapport à un objet itérable ou une valeur.
-Par exemple cette boucle est utilisée peut être utilisée pour chaque valeur d'un tableau, pour une valeur jusqu'une borne etc...
-
-Par exemple :
-
-```python
-n = 30
-for i in range(1,n+1):
-    print(i)
-```
-
-Cette boucle permet d'afficher les entiers de 1 à n.
-Elle va itérer jusqu'à ce que n soit égal à n et s'arrêter à n+1 avec l'utilisation de la fonction `range`.
-
-> **💡 Astuce**
-> La boucle `for` a un net avantage : Elle s'arrête forcément.
-> En effet, la boucle `for` itère sur un objet itérable ou sur une variable donc sur un certain nombre d'itération donné.
+</body>
+</html>

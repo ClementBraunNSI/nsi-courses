@@ -1,276 +1,592 @@
-# 📚 Structures de données linéaires
+<style>
+/* Styles modernes pour le cours Structures de données linéaires */
+.course-header {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 3rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    text-align: center;
+}
 
-## 📖 Définition
+.course-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
 
-Une **structure de données linéaire** est une collection d'**éléments** stockés séquentiellement. En Python, les deux principales implémentations de tableaux (un concept général de structure de données linéaire) sont les **listes** (mutables, c'est-à-dire modifiables après création) et les **tuples** (immuables, c'est-à-dire non modifiables après création).
+.course-subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
 
-Ces structures permettent d'organiser et de stocker divers éléments. Elles sont ordonnées, ce qui signifie que chaque élément a une position spécifiques (indice), et les éléments sont généralement stockés dans des zones mémoires contiguës ou liées.
+.concept-section {
+    background: var(--md-default-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-Utiliser des tableaux (listes ou tuples) permet de ne pas avoir à créer une variable distincte pour chaque élément à stocker.
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
-On peut accéder à un élément d'un tableau en utilisant son **indice**. Un indice correspond à la position de l'élément dans le tableau.
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
 
-> **⚠️ Important**  
-> Cas particulier, en **python**, comme dans la plupart des autres langages de programmation, les indices de tableaux commencent à 0.
+.concept-grid.horizontal {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
 
-Pour initialiser un **tuple** vide (un type de tableau immuable), on l'associe à une variable :
+.concept-grid.two-columns {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
 
-```python
-# Instance d'un tuple vide
->>> mon_tuple_vide = ()
->>> print(type(mon_tuple_vide))
-<class 'tuple'>
->>> print(mon_tuple_vide)
-()
-```
+@media (max-width: 1200px) {
+    .concept-grid.two-columns {
+        grid-template-columns: 1fr;
+    }
+}
 
-Pour initialiser une **liste** vide (un type de tableau mutable), on utilise des crochets `[]` :
+@media (max-width: 1200px) {
+    .concept-grid.horizontal {
+        grid-template-columns: 1fr;
+    }
+}
 
-```python
-# Instance d'une liste vide
->>> ma_liste_vide = []
->>> print(type(ma_liste_vide))
-<class 'list'>
->>> print(ma_liste_vide)
-[]
-```
+.concept-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
 
-Considérons un exemple de tableau d'entiers :
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
 
-| indice | élément |
-| --- | --- |
-| 0 | 312 |
-| 1 | 354 |
-| 2 | 1234 |
+.concept-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
 
-En Python, pour un **tuple**, on l'écrirait avec des parenthèses `()` :
+.concept-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
 
-```python
+.concept-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.definition-box {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-left: 5px solid #667eea;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.definition-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.definition-content {
+    color: var(--md-default-fg-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.highlight-fact {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.code-example {
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+    border-left: 4px solid #4299e1;
+    white-space: pre-wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.code-title {
+    color: #4299e1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.method-card {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: none;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.method-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.comparison-table {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    overflow-x: auto;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th {
+    background: #667eea;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.comparison-table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.comparison-table tr:hover {
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.algorithm-card {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.05));
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.algorithm-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .course-title {
+        font-size: 2rem;
+    }
+    
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-header {
+        padding: 2rem;
+    }
+}
+</style>
+
+<div class="course-header">
+    <h1 class="course-title">📚 Structures de données linéaires</h1>
+    <p class="course-subtitle">Maîtrisez les listes et tuples en Python pour organiser vos données efficacement</p>
+</div>
+
+<div class="concept-section">
+    <h2 class="section-title">🎯 Définition Fondamentale</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">📖 Structure de données linéaire</div>
+        <div class="definition-content">
+            Une <strong>structure de données linéaire</strong> est une collection d'<strong>éléments</strong> stockés séquentiellement. En Python, les deux principales implémentations de tableaux sont les <strong>listes</strong> (mutables) et les <strong>tuples</strong> (immuables).
+        </div>
+    </div>
+    
+    <div class="concept-grid">
+        <div class="concept-card">
+            <div class="concept-icon">📋</div>
+            <div class="concept-name">Organisation séquentielle</div>
+            <div class="concept-description">
+                Les éléments sont stockés dans un ordre spécifique, chaque élément ayant une position unique (indice).
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">🔢</div>
+            <div class="concept-name">Accès par indice</div>
+            <div class="concept-description">
+                Chaque élément est accessible via son indice, permettant un accès direct et rapide aux données.
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">💾</div>
+            <div class="concept-name">Stockage efficace</div>
+            <div class="concept-description">
+                Évite la création de variables distinctes pour chaque élément, optimisant l'utilisation de la mémoire.
+            </div>
+        </div>
+    </div>
+    
+    <div class="highlight-fact">
+        ⚠️ <strong>Important :</strong> En Python, comme dans la plupart des langages, les indices commencent à <strong>0</strong>.
+    </div>
+</div>
+
+<div class="concept-section">
+    <h2 class="section-title">🆚 Tuples vs Listes</h2>
+    
+    <div class="concept-grid">
+        <div class="concept-card">
+            <div class="concept-icon">🔒</div>
+            <div class="concept-name">Tuples (Immuables)</div>
+            <div class="concept-description">
+                <strong>Syntaxe :</strong> <code>()</code><br>
+                <strong>Caractéristique :</strong> Non modifiables après création<br>
+                <strong>Usage :</strong> Données fixes, coordonnées, configurations
+            </div>
+            
+            <div class="code-example">
+                <div class="code-title">💻 Création d'un tuple</div>
+                <pre><code># Tuple vide
+mon_tuple_vide = ()
+
+# Tuple avec valeurs
 mon_tuple = (312, 354, 1234)
-# print(mon_tuple) # Pourrait afficher (312, 354, 1234)
-```
+coordonnees = (10.5, 20.3)</code></pre>
+            </div>
+        </div>
+        
+        <div class="concept-card">
+            <div class="concept-icon">🔓</div>
+            <div class="concept-name">Listes (Mutables)</div>
+            <div class="concept-description">
+                <strong>Syntaxe :</strong> <code>[]</code><br>
+                <strong>Caractéristique :</strong> Modifiables après création<br>
+                <strong>Usage :</strong> Collections dynamiques, données évolutives
+            </div>
+            
+            <div class="code-example">
+                <div class="code-title">💻 Création d'une liste</div>
+                <pre><code># Liste vide
+ma_liste_vide = []
 
-Pour une **liste**, on l'écrirait avec des crochets `[]` :
-
-```python
+# Liste avec valeurs
 ma_liste = [312, 354, 1234]
-# print(ma_liste) # Pourrait afficher [312, 354, 1234]
-```
+notes = [14, 15, 20, 19]</code></pre>
+            </div>
+        </div>
+    </div>
+    
+    <div class="comparison-table">
+        <h4 style="text-align: center; color: #667eea; margin-bottom: 1rem;">📊 Exemple de tableau d'indices</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Indice</th>
+                    <th>Élément</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>312</td>
+                    <td>Premier élément</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>354</td>
+                    <td>Deuxième élément</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1234</td>
+                    <td>Troisième élément</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="highlight-fact">
+        💡 <strong>Conseil :</strong> Privilégiez des tableaux contenant des données de même type pour éviter les erreurs et améliorer la lisibilité.
+    </div>
+</div>
 
-On peut créer des tableaux possédant diverses valeurs, leur taille étant limitée par l'espace mémoire de la machine :
-
-```python
-tableau_de_notes = (14,15,20,19)
-tableau_animaux = ("chien", "chat", "oiseau", "poisson")
-```
-
-> **💡 Conseil**  
-> Dans la majorité des cas, il est préférable de **créer des tableaux pour des données de même type**.  
-> Cela permet d'éviter des erreurs pour l'interpréteur et éviter des incompréhensions pour la suite du code.
-
-> **⚠️ Mutabilité : Tuples (immuables) vs Listes (mutables)**  
-> Attention à la distinction entre tuples et listes concernant la mutabilité !
-> 
-> **Tuples (immuables) :**  
-> Un tuple est **immuable**. Cela signifie qu'une fois qu'un tuple est créé, ses éléments ne peuvent pas être modifiés, ajoutés ou supprimés directement. Toute tentative de modifier un élément d'un tuple existant résultera en une erreur `TypeError`.  
-> Par exemple :
-> ```python
-> mon_tuple = (10, 20, 30)
-> # mon_tuple[0] = 5 # Ceci lèverait une TypeError: 'tuple' object does not support item assignment
-> ```
-> Pour "modifier" un tuple, on doit en réalité créer un nouveau tuple.
-> 
-> **Listes (mutables) :**  
-> Une liste est **mutable**. Cela signifie que l'on peut modifier ses éléments, en ajouter ou en supprimer après sa création.  
-> Par exemple :
-> ```python
-> ma_liste = [10, 20, 30]
-> ma_liste[0] = 5  # Modifie l'élément à l'indice 0
-> ma_liste.append(40) # Ajoute un élément à la fin
-> # print(ma_liste) # Afficherait [5, 20, 30, 40]
-> ```
-> L'erreur `TypeError` mentionnée dans le contexte original ("les valeurs d'un tuple ne supportent pas l'assignation de valeurs") s'applique spécifiquement aux tuples.
-
-## 📖 Taille d'un tableau
-
-Les tableaux possèdent des fonctions qui leurs sont propres.
-
-Ces fonctions s'appellent des méthodes.
-
-La méthode `len` permet d'obtenir la longueur d'un tableau, ie sa taille. Cela fonctionne de la même manière que lorsque l'on souhaite obtenir la longueur d'une chaîne de caractère.
-
-```python
-tableau_animaux = ("chien", "chat", "oiseau", "poisson")
->>>print(len(tableaux_animaux))
-4
-```
-
-## 📖 Accéder à un élément d'un tableau
-
-### Notion d'indice
-
-Pour accéder à un élément du tableau, on peut s'intéresser à sa position dans le tableau, c'est à dire son **indice**.  
-**Rappel important : L'indice commence à 0 !**
-
-On peut accéder à un élément d'un tableau (liste ou tuple) en utilisant son indice avec la syntaxe `nom_du_tableau[indice]`:
-
-```python
-# Exemple avec un tuple
-mon_tuple_animaux = ("chien", "chat", "poisson", "vache")
-# On veut l'élément à la position 3 du tuple (le quatrième élément)
-# >>> print(mon_tuple_animaux[3]) # Afficherait 'vache'
-
-# Exemple avec une liste
-ma_liste_animaux = ["chien", "chat", "poisson", "vache"]
-# >>> print(ma_liste_animaux[1]) # Afficherait 'chat'
-```
-
-On peut vouloir accéder à tous les éléments d'un tableau (liste ou tuple), ou à une partie de celui-ci.  
-Pour ce faire, on peut utiliser les boucles **`while` (tant que) et `for` (pour)** afin de parcourir les éléments.
-
-```python
-tableau = ("chien", "chat", "poisson", "vache")
-
-#pour i allant de 0 à la taille du tableau:
+<div class="concept-section">
+    <h2 class="section-title">🔍 Accès et Manipulation</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">📏 Taille d'un tableau</div>
+        <div class="definition-content">
+            La fonction <code>len()</code> permet d'obtenir la longueur d'un tableau, identique au fonctionnement avec les chaînes de caractères.
+        </div>
+    </div>
+    
+    <div class="code-example">
+        <div class="code-title">💻 Obtenir la taille</div>
+        <pre><code>tableau_animaux = ("chien", "chat", "oiseau", "poisson")
+print(len(tableau_animaux))  # Affiche: 4</code></pre>
+    </div>
+    
+    <div class="concept-card">
+        <div class="concept-icon">🎯</div>
+        <div class="concept-name">Accès par indice</div>
+        <div class="concept-description">
+            Utilisez la syntaxe <code>tableau[indice]</code> pour accéder à un élément spécifique.
+        </div>
+        
+        <div class="code-example">
+            <div class="code-title">💻 Accès direct</div>
+            <pre><code>animaux = ["chien", "chat", "poisson", "vache"]
+print(animaux[0])  # "chien"
+print(animaux[3])  # "vache"</code></pre>
+        </div>
+    </div>
+    
+    <div class="concept-card">
+        <div class="concept-icon">🔄</div>
+        <div class="concept-name">Parcours avec boucles</div>
+        <div class="concept-description">
+            Utilisez les boucles <code>for</code> et <code>while</code> pour parcourir tous les éléments.
+        </div>
+        
+        <div class="code-example">
+            <div class="code-title">💻 Parcours complet</div>
+            <pre><code># Avec for et range
 for i in range(len(tableau)):
-	print(tableau[i])
+    print(tableau[i])
 
-# tant que i est plus petit que la taille du tableau
-i=0
-while i < len(tableau):
-	print(tableau[i])
-	i = i + 1
-```
-
-De cette même manière, on fait varier i pour qu'il prenne tous les indices du tableau et on arrive à accéder à tous les éléments du tableau.
-
-### Notion de *in*
-
-Python permet d'utiliser bon nombres de mots-clefs. Le mot-clef **`in`** en fait partie.
-
-Celui ci permet de savoir si un élément fait partie d'une autre variable. On peut l'utiliser notamment pour savoir si un caractère ou un mot fait partie d'une chaîne de caractère.
-
-En reprenant l'exemple précédent, on veut une autre méthode de parcours de tableau:
-
-```python
-tableau = ("chien", "chat", "poisson", "vache")
-chaine = ""
-
-#pour i allant de 0 à la taille du tableau:
+# Avec for et in
 for element in tableau:
-	print(element)
-```
-
-De ce fait, on accède aussi à tous les éléments du tableau.
-
-On peut aussi fusionner des tableaux. On peut utiliser l'opérateur `+` qui sert à **concaténer** des tableaux.
-
-En clair :
-```python
-tableau_1 = (1,2,3)
-tableau_2 = (4,5,6)
+    print(element)</code></pre>
+        </div>
+    </div>
+    
+    <div class="concept-card">
+        <div class="concept-icon">🔗</div>
+        <div class="concept-name">Concaténation</div>
+        <div class="concept-description">
+            L'opérateur <code>+</code> permet de fusionner plusieurs tableaux.
+        </div>
+        
+        <div class="code-example">
+            <div class="code-title">💻 Fusion de tableaux</div>
+            <pre><code>tableau_1 = (1, 2, 3)
+tableau_2 = (4, 5, 6)
 tableau_3 = tableau_1 + tableau_2
-```
+# Résultat: (1, 2, 3, 4, 5, 6)</code></pre>
+        </div>
+    </div>
+</div>
 
-## 📖 Les listes
+<div class="concept-section">
+    <h2 class="section-title">📝 Manipulation des Listes</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🔧 Avantages des listes mutables</div>
+        <div class="definition-content">
+            Les listes permettent d'ajouter, supprimer et modifier des éléments après leur création, offrant une flexibilité essentielle pour les données dynamiques.
+        </div>
+    </div>
+    
+    <!-- Section Ajout d'éléments -->
+    <div class="method-card">
+        <div class="method-type">➕ Ajout d'éléments</div>
+        
+        <div class="concept-grid horizontal">
+            <div class="concept-card">
+                <div class="concept-icon">📎</div>
+                <div class="concept-name">Méthode append()</div>
+                <div class="concept-description">
+                    Ajoute un élément à la fin de la liste. Modifie la liste en place.
+                </div>
+                
+                <div class="code-example">
+                    <div class="code-title">💻 Utilisation d'append</div>
+                    <pre><code>multiples_de_2 = []
+for i in range(0, 11):
+    multiples_de_2.append(i * 2)
+# Résultat: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="concept-icon">🔗</div>
+                <div class="concept-name">Concaténation</div>
+                <div class="concept-description">
+                    Utilise l'opérateur <code>+</code> mais crée une nouvelle liste à chaque opération.
+                </div>
+                
+                <div class="code-example">
+                    <div class="code-title">💻 Concaténation (moins efficace)</div>
+                    <pre><code>multiples_de_2 = []
+for i in range(0, 11):
+    multiples_de_2 = multiples_de_2 + [i * 2]
+# Moins efficace car crée une nouvelle liste</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section Suppression d'éléments -->
+    <div class="method-card">
+        <div class="method-type">➖ Suppression d'éléments</div>
+        
+        <div class="concept-grid horizontal">
+            <div class="concept-card">
+                <div class="concept-icon">🎯</div>
+                <div class="concept-name">Méthode pop()</div>
+                <div class="concept-description">
+                    <code>pop(i)</code> : retire l'élément à l'indice i<br>
+                    <code>pop()</code> : retire le dernier élément
+                </div>
+                
+                <div class="code-example">
+                    <div class="code-title">💻 Utilisation de pop</div>
+                    <pre><code>tableau = [1, 2, 3, 4]
+print(tableau.pop(1))  # Affiche: 2
+print(tableau.pop())   # Affiche: 4
+print(tableau)         # Affiche: [1, 3]</code></pre>
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="concept-icon">🔍</div>
+                <div class="concept-name">Méthode remove()</div>
+                <div class="concept-description">
+                    Retire la première occurrence de l'élément spécifié.
+                </div>
+                
+                <div class="code-example">
+                    <div class="code-title">💻 Utilisation de remove</div>
+                    <pre><code>tableau = [1, 2, 2, 3, 4, 4]
+tableau.remove(2)
+print(tableau)  # Affiche: [1, 2, 3, 4, 4]</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-Les listes sont des tableaux mutables. Cela veut dire que l'on peut rajouter des éléments, en retirer ou même modifier le contenu de ce tableau.
+<div class="concept-section">
+    <h2 class="section-title">🚀 Techniques Avancées</h2>
+    
+    <div class="algorithm-card">
+        <div class="algorithm-title">📝 Compréhension de liste</div>
+        <div class="definition-content">
+            Technique permettant de créer des listes de manière concise et élégante, en une seule ligne de code.
+        </div>
+        
+        <div class="code-example">
+            <div class="code-title">💻 Syntaxe de base</div>
+            <pre><code># Syntaxe générale
+# [expression for element in iterable]
+# [expression for element in iterable if condition]
 
-### Ajout d'élément dans une liste
+# Exemple: multiples de 3
+multiples_de_3 = [i * 3 for i in range(0, 11)]
+# Résultat: [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
 
-On peut rajouter des éléments dans une liste créée de diverses manières.
-
-Exemple : *On veut créer une liste qui correspond à la table de multiplication de 2*
-
-```python
-#Initialisation d'une liste vide
-multiples_de_2 = []
-
-#Boucle for pour remplir notre liste
-for i in range(0,11):
-
-	#On ajoute la valeur i dans le tableau.
-	multiples_de_2 = multiples_de_2 + [i*2]
-```
-
-En procédant de cette manière, on créée implicitement un tableau d'une valeur contenant ici notre nombre *i multiplié par 2*.
-
-Le procédé utilisé ici est la **construction par concaténation**. Cette méthode par concaténation a un inconvénient implicite : elle créée une nouvelle liste à la place de modifier la liste en place.
-
-L'avantage d'utiliser des listes en python pour créer des tableaux provient de l'essence de la liste : **utiliser les méthodes** de listes.
-
-Au lieu de créer des "sous-listes" de taille 1, on peut utiliser la méthode *append* qui permet d'ajouter une variable à la fin du tableau.
-
-```python
-#Initialisation d'une liste vide
-multiples_de_2 = []
-
-#Boucle for pour remplir notre liste
-for i in range(0,11): # i prendra les valeurs de 0 à 10
-
-	#On ajoute la valeur i*2 à la fin de la liste.
-	#La méthode append() modifie la liste en place et retourne None.
-	multiples_de_2.append(i*2)
-
-# print(multiples_de_2) # Pourrait afficher [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-```
-
-La méthode *append* a l'avantage sur la méthode par concaténation **de modifier en place la liste au lieu d'en créer une autre.**
-
-## 📖 Retirer des éléments d'une liste
-
-Pour retirer des éléments d'une liste, on peut utiliser les méthodes des listes / tableaux.
-
-### La méthode pop
-
-La méthode pop est utilisable dans 2 cas:
-
-- `tableau.pop(i)` : retire l'élément à l'indice i
-- `tableau.pop()` : retire le dernier élément
-
-```python
-tableau = [1,2,3,4]
->>> print(tableau.pop(1))
-2
->>> print(tableau.pop())
-4
-```
-
-### La méthode remove
-
-La méthode remove permet de retirer la première occurence d'un élément passé en paramètre.
-
-On a donc :
-
-```python
->>> tableau = [1,2,2,3,4,4]
->>> tableau.remove(2)
->>> print(tableau)
-[1,2,3,4,4]
-```
-
-## 📖 Pour aller plus loin
-
-### Construction de liste par compréhension
-
-On peut simplifier le code utilisé précédemment en une seule ligne. Cela a pour but de rendre le code plus concis, de réduire le nombre de lignes et de se rapprocher de notions et écritures plus mathématiques.
-
-```python
-# Comment instancier à l'aide de la méthode par compréhension:
-# nom_variable = [expression for element in iterable]
-# ou avec une condition:
-# nom_variable = [expression for element in iterable if condition]
-
-# Exemple: On initialise la liste directement avec les multiples de 3 de 0*3 à 10*3
-multiples_de_3 = [i * 3 for i in range(0, 11)] # i prend les valeurs de 0 à 10
-# print(multiples_de_3) # Afficherait [0, 3, 6, ..., 30]
-```
-
-L'écriture ici peut être scindée en plusieurs blocs :
-
-- multiple_de_3 : nom de la variable
-- = assignation de la valeur à la variable
-- i : valeur qui sera renseignée dans le tableau ou la liste
-- for i in range(0,11) : on fait varier i entre 0 et 11 non compris
-
-Cette notation peut être difficile à lire aux premiers abords mais il est utile de la maîtriser pour rendre son code plus aéré.
+# Avec condition: nombres pairs
+pairs = [i for i in range(20) if i % 2 == 0]
+# Résultat: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]</code></pre>
+        </div>
+        
+        <div class="concept-grid">
+            <div class="concept-card">
+                <div class="concept-icon">⚡</div>
+                <div class="concept-name">Avantages</div>
+                <div class="concept-description">
+                    • Code plus concis et lisible<br>
+                    • Performance optimisée<br>
+                    • Syntaxe proche des mathématiques
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="concept-icon">🎯</div>
+                <div class="concept-name">Structure</div>
+                <div class="concept-description">
+                    • <strong>Expression :</strong> ce qui sera dans la liste<br>
+                    • <strong>Itérable :</strong> source des données<br>
+                    • <strong>Condition :</strong> filtre optionnel
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="highlight-fact">
+        💡 <strong>Conseil :</strong> La compréhension de liste est idéale pour les transformations simples. Pour des logiques complexes, préférez les boucles traditionnelles pour maintenir la lisibilité.
+    </div>
+</div>

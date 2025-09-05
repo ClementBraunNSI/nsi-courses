@@ -362,40 +362,8 @@
 // JavaScript pour les fonctionnalités interactives des fiches d'exercices
 
 function toggleSolution(button) {
-    const card = button.closest('.exercise-card');
-    const solutionWrapper = card.querySelector('.solution-wrapper');
-    
-    // Créer la modal si elle n'existe pas déjà
-    let modal = document.getElementById('solution-modal');
-    if (!modal) {
-        modal = document.createElement('div');
-        modal.id = 'solution-modal';
-        modal.className = 'solution-modal';
-        document.body.appendChild(modal);
-        
-        // Fermer la modal en cliquant à l'extérieur
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                closeSolutionModal();
-            }
-        });
-    }
-    
-    // Créer le contenu de la modal
-    const exerciseTitle = card.querySelector('.exercise-title').textContent;
-    const solutionContent = solutionWrapper.innerHTML;
-    
-    modal.innerHTML = `
-        <div class="solution-content">
-            <button class="solution-close" onclick="closeSolutionModal()">×</button>
-            <h3>Correction : ${exerciseTitle}</h3>
-            ${solutionContent}
-        </div>
-    `;
-    
-    // Afficher la modal
-    modal.classList.add('show');
-    document.body.style.overflow = 'hidden'; // Empêcher le scroll de la page
+    // Fonction désactivée - les corrections ne sont pas accessibles
+    return false;
 }
 
 function closeSolutionModal() {

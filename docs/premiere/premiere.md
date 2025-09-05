@@ -544,10 +544,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="chapter-item">
                             <div class="chapter-title">Constructions élémentaires</div>
                             <div class="chapter-links">
-                                <a href="../I-Constructions_elementaires/Cours/Cours_1/" class="chapter-link">📚 Bases</a>
-                                <a href="../I-Constructions_elementaires/Cours/Cours_2/" class="chapter-link">📚 Cours 2</a>
-                                <a href="../I-Constructions_elementaires/Cours/Cours_3/" class="chapter-link">📚 Cours 3</a>
-                                <a href="../I-Constructions_elementaires/Cours/Cours_4/" class="chapter-link">📚 Cours 4</a>
+                                <a href="../I-Constructions_elementaires/Cours/Cours_1/" class="chapter-link">📚 Structures de base de Python</a>
+                                <a href="../I-Constructions_elementaires/Cours/Cours_2/" class="chapter-link">📚 Les types</a>
+                                <a href="../I-Constructions_elementaires/Cours/Cours_4/" class="chapter-link">📚 Les fonctions</a>
                             </div>
                         </div>
                         <div class="chapter-item">
@@ -601,6 +600,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="chapter-title">Traitement de données</div>
                             <div class="chapter-links">
                                 <a href="../V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_1/" class="chapter-link">📚 Dictionnaires</a>
+                                <a href="../V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_2/" class="chapter-link">📊 Traitement de données en tables</a>
+                                <a href="../V-Dictionnaires_et_Traitement_de_tables/Cours/Cours_3/" class="chapter-link">Avant-goût : SQL</a>
                                 <a href="../V-Dictionnaires_et_Traitement_de_tables/Exercices/Fiche_exercices_dictionnaires/" class="chapter-link">✏️ Exercices</a>
                             </div>
                         </div>
@@ -625,12 +626,14 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <a href="../VII-Algorithmes_sur_les_tableaux/Cours/" class="chapter-link">📚 Cours</a>
                                 <a href="../VII-Algorithmes_sur_les_tableaux/Mesures_de_complexite/mesure_tris/sujets_mesure_tris/" class="chapter-link">📊 Complexité</a>
                                 <a href="../VII-Algorithmes_sur_les_tableaux/dicho/" class="chapter-link">🔍 Dichotomie</a>
+                                
                             </div>
                         </div>
                         <div class="chapter-item">
                             <div class="chapter-title">Stratégies algorithmiques</div>
                             <div class="chapter-links">
                                 <a href="../VIII-Algorithmes_Gloutons/Algorithmes%20Gloutons_22_23/" class="chapter-link">🎯 Gloutons</a>
+                                <a href="../VIII-Algorithmes_Gloutons/Gloutons_exercices/" class="chapter-link">🎯 Exercices Gloutons</a>
                                 <a href="../XI-K_plus_proches_voisins/Cours/" class="chapter-link">🤖 KNN</a>
                                 <a href="../XI-K_plus_proches_voisins/TP_KNN/" class="chapter-link">💻 TP KNN</a>
                             </div>
@@ -655,13 +658,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="chapter-links">
                                 <a href="../IV-Architecture_d_une_machine/Cours/Cours_1/" class="chapter-link">🖥️ Processeur</a>
                                 <a href="../IV-Architecture_d_une_machine/Cours/Cours_2/" class="chapter-link">🔌 Portes logiques</a>
-                                <a href="../IV-Architecture_d_une_machine/Exercices/Fiche_Exo/" class="chapter-link">💻 TP</a>
+                                <a href="../IV-Architecture_d_une_machine/Exercices/Fiche_Exo/" class="chapter-link">💻 Exercices logiques</a>
+                                <a href="../IV-Architecture_d_une_machine/Cours/Cours_3/" class="chapter-link">Jeux d'instructions</a>
+                                <a href="../IV-Architecture_d_une_machine/Cours/Cours_4/" class="chapter-link">Ludopédagogie : Minecraft</a>
                             </div>
                         </div>
                         <div class="chapter-item">
                             <div class="chapter-title">Systèmes d'exploitation</div>
                             <div class="chapter-links">
                                 <a href="../VIIII-Systemes_d_exploitation_et_commandes_Linux/Cours/Cours_1/" class="chapter-link">📚 Principes</a>
+                                <a href="../VIIII-Systemes_d_exploitation_et_commandes_Linux/Cours/Cours_2/" class="chapter-link">📚 Commandes Linux</a>
                                 <a href="../VIIII-Systemes_d_exploitation_et_commandes_Linux/TP_Commandes_Linux/TP_commandes_linux/" class="chapter-link">🐧 TP Linux</a>
                             </div>
                         </div>
@@ -669,7 +675,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="chapter-title">Internet & Web</div>
                             <div class="chapter-links">
                                 <a href="../VI-Internet_et_Reseaux/Cours/" class="chapter-link">🌐 Réseaux</a>
-                                <a href="../X-Web_et_HTTP/Cours/" class="chapter-link">📡 HTTP</a>
+                                <a href="../X-Web_et_HTTP/Cours/Cours" class="chapter-link">📡 Le WEB</a>
+                                <a href="../X-Web_et_HTTP/Cours/Cours_html/" class="chapter-link">📡 Notice HTML</a>
                                 <a href="../X-Web_et_HTTP/TP/Projet/" class="chapter-link">🚀 Projet web</a>
                             </div>
                         </div>
