@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<!-- Titre du QCM -->
+	<question type="category">
+		<category>
+			<text><![CDATA[<infos><name>QCM Métadonnées et Traitement d'Image</name><answernumbering>123</answernumbering><niveau>Seconde</niveau><matiere>NSI</matiere></infos>]]></text>
+		</category>
+	</question>
+
+	<!-- Question 1 -->
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Qu'est-ce qu'une extension de fichier ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[<div style="font-family: Arial; font-size: 13px;"><div><div>Qu'est-ce qu'une extension de fichier ?</div></div></div>]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[La manière d'encoder les bits de la donnée]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[Une suite de caractères précédée d’un point identifiant le format]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Un algorithme de compression d'image]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Le nom principal du fichier]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+
+	<!-- Question 2 -->
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Quel format d'image est principalement utilisé pour les logos et illustrations nécessitant de la transparence ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[<div style="font-family: Arial; font-size: 13px;"><div><div>Quel format d'image est principalement utilisé pour les logos et illustrations nécessitant de la transparence ?</div></div></div>]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[JPEG]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[GIF]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[PNG]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[BMP]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+
+	<!-- Question 3 -->
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Quelle méthode de conversion en nuances de gris prend en compte la perception humaine des couleurs avec des coefficients spécifiques ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[<div style="font-family: Arial; font-size: 13px;"><div><div>Quelle méthode de conversion en nuances de gris prend en compte la perception humaine des couleurs avec des coefficients spécifiques ?</div></div></div>]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Méthode de la moyenne]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Méthode rapide]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[Méthode de la couleur vraie]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Méthode de l'inversion]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+
+	<!-- Question 4 -->
+	<question type="numerical">
+		<name>
+			<text><![CDATA[Calcul de l'inverse d'une couleur]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[<div style="font-family: Arial; font-size: 13px;"><div><div>Si la valeur d'une composante de couleur (Rouge, Vert ou Bleu) est 100, quelle sera la valeur de sa composante inverse (négatif) ? (Formule: Inverse = 255 - Valeur)</div></div></div>]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[155]]></text>
+			<feedback><text><![CDATA[Correct ! 255 - 100 = 155]]></text></feedback>
+		</answer>
+	</question>
+
+	<!-- Question 5 -->
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Quel algorithme compense le mouvement du photographe pour éviter le "flou de bougé" ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[<div style="font-family: Arial; font-size: 13px;"><div><div>Quel algorithme compense le mouvement du photographe pour éviter le "flou de bougé" ?</div></div></div>]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Algorithme de mise au point]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Algorithme de compression]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[Algorithme de stabilisation]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Algorithme de conversion de couleur]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+
+	<!-- Question 6 -->
+	<question type="multichoice">
+		<name>
+			<text><![CDATA[Que sont les métadonnées EXIF associées à une image ?]]></text>
+		</name>
+		<questiontext format="html">
+			<text><![CDATA[<div style="font-family: Arial; font-size: 13px;"><div><div>Que sont les métadonnées EXIF associées à une image ?</div></div></div>]]></text>
+		</questiontext>
+		<externallink/>
+		<usecase>1</usecase>
+		<defaultgrade>1</defaultgrade>
+		<editeur>0</editeur>
+		<single>true</single>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Les pixels composant l'image]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="100" format="plain_text">
+			<text><![CDATA[Des données fournissant des informations sur l'image (date, lieu, paramètres techniques, etc.)]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Un type de format d'image compressé]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+		<answer fraction="0" format="plain_text">
+			<text><![CDATA[Un algorithme de traitement d'image]]></text>
+			<feedback><text><![CDATA[]]></text></feedback>
+		</answer>
+	</question>
+
+</quiz>
