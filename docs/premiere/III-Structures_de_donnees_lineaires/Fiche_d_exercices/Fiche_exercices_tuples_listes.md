@@ -295,8 +295,21 @@
 // JavaScript pour les fonctionnalités interactives des fiches d'exercices
 
 function toggleSolution(button) {
-    // Fonction désactivée - les corrections ne sont pas accessibles
-    return false;
+    const card = button.closest('.exercise-card');
+    const solutionWrapper = card.querySelector('.solution-wrapper');
+    const arrow = button.querySelector('.arrow');
+    
+    if (solutionWrapper.style.display === 'none' || solutionWrapper.style.display === '') {
+        solutionWrapper.style.display = 'block';
+        button.classList.add('active');
+        arrow.style.transform = 'rotate(90deg)';
+        button.innerHTML = '<span class="arrow" style="transform: rotate(90deg)">→</span> Masquer la correction';
+    } else {
+        solutionWrapper.style.display = 'none';
+        button.classList.remove('active');
+        arrow.style.transform = 'rotate(0deg)';
+        button.innerHTML = '<span class="arrow">→</span> Voir la correction';
+    }
 }
 
 function closeSolutionModal() {
