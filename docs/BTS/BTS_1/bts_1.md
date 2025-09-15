@@ -14,13 +14,13 @@
 .category-carousel-track {
   display: flex;
   transition: transform 0.5s ease;
-  width: 400%; /* 4 slides × 100% */
+  width: 300%; /* 3 slides × 100% */
 }
 
 .category-carousel-item {
-  flex: 0 0 25%; /* 100% / 4 slides = 25% each */
+  flex: 0 0 33.333%; /* 100% / 3 slides = 33.333% each */
   min-height: 600px;
-  width: 25%;
+  width: 33.333%;
   box-sizing: border-box;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .carousel-btn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4a90e2, #357abd);
   border: none;
   border-radius: 50%;
   width: 60px;
@@ -47,7 +47,7 @@
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
   flex-shrink: 0;
   z-index: 10;
   display: flex;
@@ -59,7 +59,7 @@
 
 .carousel-btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
 }
 
 .carousel-btn:disabled {
@@ -82,13 +82,13 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(102, 126, 234, 0.3);
+  background: rgba(74, 144, 226, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .carousel-indicator.active {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4a90e2, #357abd);
   transform: scale(1.2);
 }
 
@@ -97,7 +97,7 @@
   background: var(--md-default-bg-color);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 6px rgba(74, 144, 226, 0.3);
   text-align: center;
   transition: transform 0.3s ease;
   margin: 2rem 0;
@@ -109,8 +109,8 @@
 }
 
 .level-header:hover img {
-  box-shadow: 0 0 15px rgba(102, 126, 234, 0);
-  filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.8));
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0);
+  filter: drop-shadow(0 0 10px rgba(74, 144, 226, 0.8));
   transition: box-shadow 0.3s ease;
 }
 
@@ -132,7 +132,7 @@
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4a90e2, #357abd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -177,27 +177,14 @@
   }
 }
 
-/* Bandeau de niveau */
-.level-header {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 2rem;
-  margin: 2rem 0;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 5px solid #667eea;
-}
-
-<style>
 /* Navigation ultra moderne harmonisée avec index.md */
 .modern-nav {
     padding: 2rem 0;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(53, 122, 189, 0.05));
     backdrop-filter: blur(20px);
     border-radius: 24px;
     margin: 2rem 0;
-    border: 1px solid rgba(102, 126, 234, 0.2);
+    border: 1px solid rgba(74, 144, 226, 0.2);
 }
 
 .nav-header {
@@ -208,7 +195,7 @@
 .nav-title {
     font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -223,14 +210,12 @@
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
     max-width: 1400px;
     margin: 0 auto;
     align-items: start;
-    grid-auto-flow: row dense;
 }
 
 .category-card {
@@ -369,32 +354,33 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Couleurs thématiques par catégorie - Seconde */
-.category-web {
-    background: linear-gradient(135deg, rgba(52, 152, 219, 0.3), rgba(155, 89, 182, 0.3));
-    border: 1px solid rgba(52, 152, 219, 0.2);
+/* Couleurs thématiques par catégorie - BTS */
+.category-support {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(53, 122, 189, 0.2));
 }
 
 .category-programming {
-    background: linear-gradient(135deg, rgba(46, 204, 113, 0.3), rgba(39, 174, 96, 0.3));
-    border: 1px solid rgba(46, 204, 113, 0.2);
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.2), rgba(56, 142, 60, 0.2));
 }
 
-.category-multimedia {
-    background: linear-gradient(135deg, rgba(230, 126, 34, 0.3), rgba(231, 76, 60, 0.3));
-    border: 1px solid rgba(230, 126, 34, 0.2);
-}
-
-.category-data {
-    background: linear-gradient(135deg, rgba(142, 68, 173, 0.3), rgba(74, 144, 226, 0.3));
-    border: 1px solid rgba(142, 68, 173, 0.2);
+.category-systems {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.2), rgba(245, 124, 0, 0.2));
 }
 
 /* Responsive design */
+@media (max-width: 1200px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .category-grid {
+    .categories-grid {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
+        gap: 1.5rem;
+        padding: 1rem;
     }
     
     .nav-title {
@@ -425,12 +411,11 @@
 .category-card:nth-child(1) { animation-delay: 0.1s; }
 .category-card:nth-child(2) { animation-delay: 0.2s; }
 .category-card:nth-child(3) { animation-delay: 0.3s; }
-.category-card:nth-child(4) { animation-delay: 0.4s; }
 </style>
 
 <script>
 let currentSlideIndex = 0;
-const totalSlides = 4;
+const totalSlides = 3;
 
 // Fonction pour générer automatiquement les indicateurs
 function generateIndicators() {
@@ -473,7 +458,7 @@ function showSlide(index) {
     }
     
     // Déplacer le carrousel
-    const translateX = -currentSlideIndex * 25;
+    const translateX = -currentSlideIndex * 33.333;
     track.style.transform = `translateX(${translateX}%)`;
     
     // Mettre à jour les indicateurs
@@ -542,147 +527,86 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <!-- Bandeau de niveau -->
-
 <div class="modern-nav">
     <div class="level-header">
-    <div class="level-header-content">
-        <img src="../../images/fox_seconde.png" alt="Seconde" class="level-logo" />
-        <div>
-        <h1>Seconde SNT</h1>
-        <p>Sciences Numériques et Technologie</p>
-        <p class="level-description">
-            Découverte des enjeux du numérique dans la société contemporaine
-        </p>
+        <div class="level-header-content">
+            <div>
+                <h1>BTS SIO 1ère Année</h1>
+                <p>Services Informatiques aux Organisations</p>
+                <p class="level-description">
+                    Fondamentaux de l'informatique et des services numériques
+                </p>
+            </div>
         </div>
     </div>
     
-    <div class="category-carousel-container">
-        <button class="carousel-btn" id="prevBtn" onclick="changeSlide(-1)">‹</button>
-        
-        <div class="carousel-wrapper">
-            <div class="category-carousel-track" id="categoryCarousel">
-            <!-- Catégorie Internet & Web -->
-            <div class="category-carousel-item">
-                <div class="category-card category-web">
-                    <div class="category-header">
-                        <span class="category-icon">🌐</span>
-                        <h3 class="category-title">Internet & Web</h3>
-                    </div>
-                    <p class="category-description">
-                        Découvrez le fonctionnement d'Internet, les protocoles de communication et la création de sites web
-                    </p>
-                    <div class="chapter-list">
-                        <div class="chapter-item">
-                            <div class="chapter-title">Internet</div>
-                            <div class="chapter-links">
-                                <a href="../I_-_Internet/Cours/" class="chapter-link">📚 Cours principal</a>
-                                <a href="../I_-_Internet/Activite/" class="chapter-link">🎯 Activité</a>
-                                <a href="../I_-_Internet/Binaire_Décimal/" class="chapter-link">🔢 Binaire/Décimal</a>
-                            </div>
-                        </div>
-                        <div class="chapter-item">
-                            <div class="chapter-title">Web</div>
-                            <div class="chapter-links">
-                                <a href="../II_-_Web/Cours/" class="chapter-link">📚 Cours HTML</a>
-                                <a href="../II_-_Web/Projet_creation_site/" class="chapter-link">🚀 Projet création site</a>
-                                <a href="../II_-_Web/monstres" class="chapter-link">🎨 Galerie des créations</a>
-                            </div>
-                        </div>
-                        <div class="chapter-item">
-                            <div class="chapter-title">Réseaux sociaux</div>
-                            <div class="chapter-links">
-                                <a href="../III_-_Reseaux_sociaux/Cours/" class="chapter-link">📚 Cours théorique</a>
-                                <a href="../III_-_Reseaux_sociaux/TP_reseau_social/" class="chapter-link">💻 TP Modélisation</a>
-                            </div>
-                        </div>
+    <div class="nav-header">
+        <h2 class="nav-title">Blocs de Compétences</h2>
+        <p class="nav-subtitle">Parcours de formation professionnalisante</p>
+    </div>
+    
+    <div class="categories-grid">
+        <!-- Bloc 1 - Support et Services -->
+        <div class="category-card category-support">
+            <div class="category-header">
+                <span class="category-icon">🛠️</span>
+                <h3 class="category-title">Bloc 1 - Support & Services</h3>
+            </div>
+            <p class="category-description">
+                Support et mise à disposition de services informatiques, gestion du patrimoine et assistance utilisateurs
+            </p>
+            <div class="chapter-list">
+                <div class="chapter-item">
+                    <div class="chapter-title">B1.1 - Gestion du patrimoine informatique</div>
+                    <div class="chapter-links">
+                        <a href="../B1/B1_1_Gestion_patrimoine/" class="chapter-link">📚 Cours</a>
+                        <a href="../B1/B1_1_Gestion_patrimoine/exercices/" class="chapter-link">✏️ Exercices</a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Catégorie Programmation -->
-            <div class="category-carousel-item">
-                <div class="category-card category-programming">
-                    <div class="category-header">
-                        <span class="category-icon">🐍</span>
-                        <h3 class="category-title">Programmation</h3>
-                    </div>
-                    <p class="category-description">
-                        Initiez-vous à la programmation avec Python : variables, boucles, conditions et algorithmes
-                    </p>
-                    <div class="chapter-list">
-                        <div class="chapter-item">
-                            <div class="chapter-title">Python - Bases</div>
-                            <div class="chapter-links">
-                                <a href="../IIII_-_Programmation_Python/Fiche_exercices_python/" class="chapter-link">🐍 Exercices Python</a>
-                                <a href="../IIII_-_Programmation_Python/Fiche_exercices_boucles/" class="chapter-link">🔄 Exercices boucles</a>
-                                <a href="../IIII_-_Programmation_Python/Fiche_exercices_conditions/" class="chapter-link">❓ Exercices conditions</a>
-                            </div>
-                        </div>
+                <div class="chapter-item">
+                    <div class="chapter-title">B1.2 - Réponse aux incidents</div>
+                    <div class="chapter-links">
+                        <a href="../B1/B1_2_Incidents_assistance/" class="chapter-link">📚 Cours</a>
+                        <a href="../B1/B1_2_Incidents_assistance/tp/" class="chapter-link">💻 TP</a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Catégorie Multimédia & Données -->
-            <div class="category-carousel-item">
-                <div class="category-card category-multimedia">
-                    <div class="category-header">
-                        <span class="category-icon">📸</span>
-                        <h3 class="category-title">Multimédia & Données</h3>
-                    </div>
-                    <p class="category-description">
-                        Explorez le traitement d'images, la géolocalisation et la structuration des données numériques
-                    </p>
-                    <div class="chapter-list">
-                        <div class="chapter-item">
-                            <div class="chapter-title">Photographie Numérique</div>
-                            <div class="chapter-links">
-                                <a href="../V_-_Photographie_Numerique/c_1_Photographie_Noir_et_Blanc/" class="chapter-link">⚫ Noir et Blanc</a>
-                                <a href="../V_-_Photographie_Numerique/c_2_Photographie_Couleur/" class="chapter-link">🌈 Couleur</a>
-                                <a href="../V_-_Photographie_Numerique/c_3_Metadonnees/" class="chapter-link">📋 Métadonnées</a>
-                            </div>
-                        </div>
-                        <div class="chapter-item">
-                            <div class="chapter-title">Géolocalisation</div>
-                            <div class="chapter-links">
-                                <a href="../VI_-_Geolocalisation/La%20Géolocalisation_22_23/" class="chapter-link">🗺️ Cours géolocalisation</a>
-                            </div>
-                        </div>
-                        <div class="chapter-item">
-                            <div class="chapter-title">Données Structurées</div>
-                            <div class="chapter-links">
-                                <a href="../VII_-_Donnees_Structurees/Activité%20blockly/" class="chapter-link">🧩 Activité Blockly</a>
-                            </div>
-                        </div>
+                <div class="chapter-item">
+                    <div class="chapter-title">B1.3 - Présence en ligne</div>
+                    <div class="chapter-links">
+                        <a href="../B1/B1_3_Presence_ligne/" class="chapter-link">📚 Cours</a>
+                        <a href="../B1/B1_3_Presence_ligne/projets/" class="chapter-link">🚀 Projets</a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Catégorie Objets Connectés -->
-            <div class="category-carousel-item">
-                <div class="category-card category-data">
-                    <div class="category-header">
-                        <span class="category-icon">💡</span>
-                        <h3 class="category-title">Objets Connectés</h3>
-                    </div>
-                    <p class="category-description">
-                        Découvrez l'Internet des Objets et programmez des micro-contrôleurs avec des capteurs
-                    </p>
-                    <div class="chapter-list">
-                        <div class="chapter-item">
-                            <div class="chapter-title">Micro:bit & IoT</div>
-                            <div class="chapter-links">
-                                <a href="../VIII_-_Objets_Connectes/activite/" class="chapter-link">🧩 Activité Blockly</a>
-                                <a href="../VIII_-_Objets_Connectes/tp/" class="chapter-link">💻 TP Micro:bit</a>
-                            </div>
-                        </div>
+                <div class="chapter-item">
+                    <div class="chapter-title">B1.4-B1.6 - Projet & Développement</div>
+                    <div class="chapter-links">
+                        <a href="../B1/B1_4_6_Projet_dev/" class="chapter-link">📚 Cours</a>
+                        <a href="../B1/B1_4_6_Projet_dev/methodologie/" class="chapter-link">📋 Méthodologie</a>
                     </div>
                 </div>
             </div>
         </div>
         
-        <!-- Les indicateurs seront générés automatiquement par JavaScript -->
+        <!-- Programmation & Développement -->
+        <div class="category-card category-programming">
+            <div class="category-header">
+                <span class="category-icon">💻</span>
+                <h3 class="category-title">Programmation & Développement</h3>
+            </div>
+            <p class="category-description">
+                Bases de la programmation, langages de développement et outils de création d'applications
+            </p>
+        </div>
+        
+        <!-- Systèmes & Réseaux -->
+        <div class="category-card category-systems">
+            <div class="category-header">
+                <span class="category-icon">🖥️</span>
+                <h3 class="category-title">Systèmes & Réseaux</h3>
+            </div>
+            <p class="category-description">
+                Architecture des systèmes informatiques, réseaux et services d'infrastructure
+            </p>
+        </div>
     </div>
-    <button class="carousel-btn" id="nextBtn" onclick="changeSlide(1)">›</button>
 </div>
-</div>
-

@@ -431,6 +431,31 @@
 let currentSlideIndex = 0;
 const totalSlides = 5;
 
+// Fonction pour générer automatiquement les indicateurs
+function generateIndicators() {
+    const carouselContainer = document.querySelector('.category-carousel');
+    let indicatorsContainer = carouselContainer.querySelector('.carousel-indicators');
+    
+    // Créer le conteneur d'indicateurs s'il n'existe pas
+    if (!indicatorsContainer) {
+        indicatorsContainer = document.createElement('div');
+        indicatorsContainer.className = 'carousel-indicators';
+        carouselContainer.appendChild(indicatorsContainer);
+    }
+    
+    // Vider les indicateurs existants
+    indicatorsContainer.innerHTML = '';
+    
+    // Générer les indicateurs automatiquement
+    for (let i = 0; i < totalSlides; i++) {
+        const indicator = document.createElement('span');
+        indicator.className = 'carousel-indicator';
+        if (i === 0) indicator.classList.add('active');
+        indicator.onclick = () => currentSlide(i);
+        indicatorsContainer.appendChild(indicator);
+    }
+}
+
 function showSlide(index) {
     const track = document.getElementById('categoryCarousel');
     const indicators = document.querySelectorAll('.carousel-indicator');
@@ -465,7 +490,7 @@ function changeSlide(direction) {
 }
 
 function currentSlide(index) {
-    showSlide(index - 1);
+    showSlide(index);
 }
 
 // Support tactile
@@ -493,6 +518,12 @@ function handleSwipe() {
         }
     }
 }
+
+// Initialiser les indicateurs au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    generateIndicators();
+    showSlide(0); // Afficher le premier slide
+});
 
 // Support clavier
 document.addEventListener('keydown', (e) => {

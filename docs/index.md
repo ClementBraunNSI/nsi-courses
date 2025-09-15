@@ -76,6 +76,12 @@
         <a href="terminale/terminale" class="btn">Accéder aux ressources</a>
     </div>
     <div class="level-card">
+        <img src="images/fox_terminale.png" alt="NSI Terminale">
+        <h2>BTS SIO</h2>
+        <p>Approfondissement en informatique : Gestion de projet, programmation logicielle, développement d'applications, sécurité informatique</p>
+        <a href="BTS/BTS_1/bts_1" class="btn">Accéder aux ressources</a>
+    </div>
+    <div class="level-card">
         <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
         <h2>Chasse aux Ren'arts</h2>
         <p>Défi ludique et pédagogique pour mettre en pratique les compétences NSI de manière créative</p>
@@ -1370,13 +1376,13 @@
             <div class="contributor-card">
                 <div class="contributor-avatar">💻</div>
                 <div class="contributor-name">DELPLACE Nicolas</div>
-                <div class="contributor-role">Enseignant d'informatique</div>
+                <div class="contributor-role">Enseignant d'informatique<br>Lycée de l'Escaut de Valenciennes</div>
             </div>
             
             <div class="contributor-card">
                 <div class="contributor-avatar">🎓</div>
                 <div class="contributor-name">RAMSTEIN Stéphane</div>
-                <div class="contributor-role">Enseignant d'informatique<br>Lycée Raymond Queneau</div>
+                <div class="contributor-role">Enseignant d'informatique<br>Lycée Raymond Queneau de Villeneuve-d'Ascq</div>
             </div>
             
             <div class="contributor-card">
@@ -1388,7 +1394,7 @@
             <div class="contributor-card">
                 <div class="contributor-avatar">🎯</div>
                 <div class="contributor-name">MARCHAND Mathieu</div>
-                <div class="contributor-role">Enseignant d'informatique<br>Lycée Benjamin Franklin</div>
+                <div class="contributor-role">Enseignant d'informatique<br>Lycée Benjamin Franklin d'Auray</div>
             </div>
         </div>
     </div>
@@ -1453,6 +1459,14 @@
                 <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
                 <a href="https://ge0rgi0.github.io/TAQ/" class="colleague-link" target="_blank">Visiter le site</a>
             </div>
+            <div class="colleague-card">
+                <div class="colleague-header">
+                    <div class="colleague-icon">🚀</div>
+                    <h3 class="colleague-name">CARDOSO Mathieu</h3>
+                </div>
+                <p style="color: var(--md-default-fg-color--light); margin-bottom: 1rem;">Contenus avancés et méthodologie rigoureuse</p>
+                <a href="https://profcardoso.github.io" class="colleague-link" target="_blank">Visiter le site</a>
+            </div>
         </div>
     </div>
     
@@ -1468,7 +1482,7 @@
 
 <script>
 let currentSlide = 0;
-const totalSlides = 6;
+const totalSlides = 7;
 const slideWidth = 400; // largeur d'une carte + gap
 
 function updateCarousel() {

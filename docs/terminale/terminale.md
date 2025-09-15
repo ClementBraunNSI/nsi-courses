@@ -157,10 +157,10 @@
     }
 }
 
-/* Navigation ultra moderne 2024 - Terminale */
+/* Navigation ultra moderne harmonisée avec première */
 .modern-nav {
     padding: 2rem 0;
-    background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(156, 39, 176, 0.05));
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(123, 31, 162, 0.05));
     backdrop-filter: blur(20px);
     border-radius: 24px;
     margin: 2rem 0;
@@ -183,31 +183,38 @@
 }
 
 .nav-subtitle {
-    color: var(--md-default-fg-color--light);
+    color: #7f8c8d;
     font-size: 1.1rem;
     font-weight: 300;
 }
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 2rem;
-    padding: 0 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+    grid-auto-flow: row dense;
 }
 
 .category-card {
     background: var(--md-default-bg-color);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 2rem;
-    border: 1px solid rgba(156, 39, 176, 0.2);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(156, 39, 176, 0.1);
-    height: 100%;
+    height: auto;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .category-card::before {
@@ -217,20 +224,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    z-index: 1;
 }
 
 .category-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
 }
 
-.category-card:hover::before {
-    opacity: 1;
+.category-card > * {
+    position: relative;
+    z-index: 2;
 }
 
 .category-header {
@@ -266,13 +271,14 @@
 }
 
 .chapter-item {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 12px;
     padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(5px);
 }
 
 .chapter-item::before {
@@ -282,14 +288,15 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transition: left 0.5s ease;
 }
 
 .chapter-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.6);
     transform: translateX(8px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .chapter-item:hover::before {
@@ -298,7 +305,7 @@
 
 .chapter-title {
     font-weight: 600;
-    color: white;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
@@ -310,26 +317,28 @@
 }
 
 .chapter-link {
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+    color: #34495e;
     padding: 0.4rem 0.8rem;
     border-radius: 8px;
     text-decoration: none;
     font-size: 0.85rem;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 .chapter-link:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(255, 255, 255, 0.95);
+    color: #2c3e50;
     transform: scale(1.05);
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Couleurs thématiques par catégorie - Terminale */
 .category-structures {
-    background: linear-gradient(135deg, rgba(244, 67, 54, 0.2), rgba(211, 47, 47, 0.2));
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.2), rgba(123, 31, 162, 0.2));
 }
 
 .category-programming {
@@ -340,23 +349,34 @@
     background: linear-gradient(135deg, rgba(33, 150, 243, 0.2), rgba(25, 118, 210, 0.2));
 }
 
+.category-algorithms {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.2), rgba(255, 152, 0, 0.2));
+}
+
 .category-systems {
     background: linear-gradient(135deg, rgba(255, 152, 0, 0.2), rgba(245, 124, 0, 0.2));
 }
 
 /* Responsive design */
+@media (max-width: 1200px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .category-grid {
+    .categories-grid {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
+        grid-template-rows: repeat(4, auto);
+        gap: 1.5rem;
+        padding: 1rem;
     }
     
     .nav-title {
         font-size: 2rem;
-    }
-    
-    .category-card {
-        padding: 1.5rem;
     }
 }
 
@@ -388,6 +408,31 @@
 let currentSlideIndex = 0;
 const totalSlides = 4;
 
+// Fonction pour générer automatiquement les indicateurs
+function generateIndicators() {
+    const carouselContainer = document.querySelector('.category-carousel');
+    let indicatorsContainer = carouselContainer.querySelector('.carousel-indicators');
+    
+    // Créer le conteneur d'indicateurs s'il n'existe pas
+    if (!indicatorsContainer) {
+        indicatorsContainer = document.createElement('div');
+        indicatorsContainer.className = 'carousel-indicators';
+        carouselContainer.appendChild(indicatorsContainer);
+    }
+    
+    // Vider les indicateurs existants
+    indicatorsContainer.innerHTML = '';
+    
+    // Générer les indicateurs automatiquement
+    for (let i = 0; i < totalSlides; i++) {
+        const indicator = document.createElement('span');
+        indicator.className = 'carousel-indicator';
+        if (i === 0) indicator.classList.add('active');
+        indicator.onclick = () => currentSlide(i);
+        indicatorsContainer.appendChild(indicator);
+    }
+}
+
 function updateCarousel() {
     const track = document.getElementById('categoryCarousel');
     const indicators = document.querySelectorAll('.carousel-indicator');
@@ -416,7 +461,7 @@ function changeSlide(direction) {
 }
 
 function currentSlide(slideIndex) {
-    currentSlideIndex = slideIndex - 1;
+    currentSlideIndex = slideIndex;
     updateCarousel();
 }
 
@@ -466,6 +511,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Initialisation
+    generateIndicators();
     updateCarousel();
 });
 </script>
@@ -485,6 +531,13 @@ document.addEventListener('DOMContentLoaded', function() {
         </p>
         </div>
     </div>
+    
+    <div class="nav-header">
+        <h2 class="nav-title">Navigation par Catégories</h2>
+        <p class="nav-subtitle">Explorez les différents domaines de la Terminale NSI</p>
+    </div>
+    
+
     
     <div class="category-carousel-container">
         <button class="carousel-btn" id="prevBtn" onclick="changeSlide(-1)">‹</button>
@@ -508,7 +561,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="../I-Structures_de_donnees/Cours/Cours_1/" class="chapter-link">📋 Listes</a>
                                 <a href="../I-Structures_de_donnees/Cours/Cours_2/" class="chapter-link">📚 Piles</a>
                                 <a href="../I-Structures_de_donnees/Cours/Cours_3/" class="chapter-link">🚶 Files</a>
-                                <a href="../I-Structures_de_donnees/Cours/Cours_5/" class="chapter-link">🌳 Arbres</a>
+                                <a href="../II-Structures_de_donnees/Cours/Arbre/parcours_arbres/" class="chapter-link">🌳 Parcours d'arbres</a>
+                                <a href="../II-Structures_de_donnees/Cours/Arbre/arbres_binaires_recherche/" class="chapter-link">🔍 ABR</a>
                                 <a href="../I-Structures_de_donnees/Cours/Cours_6/" class="chapter-link">🕸️ Graphes</a>
                             </div>
                         </div>
@@ -525,7 +579,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="chapter-links">
                                 <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_listes/" class="chapter-link">📝 Listes</a>
                                 <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_piles_files/" class="chapter-link">📝 Piles/Files</a>
-                                <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_arbres/" class="chapter-link">📝 Arbres</a>
+                                <a href="../II-Structures_de_donnees/Fiche_d_exercices/Fiche_exercices_arbres/" class="chapter-link">📝 Arbres</a>
                                 <a href="../I-Structures_de_donnees/Fiches_d_exercices/Fiche_exercices_graphes/" class="chapter-link">📝 Graphes</a>
                             </div>
                         </div>
@@ -633,12 +687,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
         
-        <div class="carousel-indicators">
-            <span class="carousel-indicator active" onclick="currentSlide(1)"></span>
-            <span class="carousel-indicator" onclick="currentSlide(2)"></span>
-            <span class="carousel-indicator" onclick="currentSlide(3)"></span>
-            <span class="carousel-indicator" onclick="currentSlide(4)"></span>
-        </div>
+        <!-- Les indicateurs seront générés automatiquement par JavaScript -->
     </div>
     <button class="carousel-btn" id="nextBtn" onclick="changeSlide(1)">›</button>
 </div>

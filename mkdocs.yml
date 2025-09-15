@@ -2,6 +2,7 @@ site_name: NSI - Clément Braun
 theme:
   name : material
   logo : images/test.png
+  favicon: images/favicon.png
   features :
     - search.suggest
     - search.highlight
