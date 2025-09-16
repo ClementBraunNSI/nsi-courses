@@ -79,7 +79,7 @@
         <img src="images/fox_terminale.png" alt="NSI Terminale">
         <h2>BTS SIO</h2>
         <p>Approfondissement en informatique : Gestion de projet, programmation logicielle, développement d'applications, sécurité informatique</p>
-        <a href="BTS/BTS_1/bts_1" class="btn">Accéder aux ressources</a>
+        <a href="BTS/bts" class="btn">Accéder aux ressources</a>
     </div>
     <div class="level-card">
         <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
