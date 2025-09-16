@@ -559,26 +559,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="chapter-item">
                     <div class="chapter-title">B1.1 - Gestion du patrimoine informatique</div>
                     <div class="chapter-links">
-                        <a href="../B1/B1_1_Gestion_patrimoine/" class="chapter-link">📚 Cours</a>
-                        <a href="../B1/B1_1_Gestion_patrimoine/exercices/" class="chapter-link">✏️ Exercices</a>
                     </div>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-title">B1.2 - Réponse aux incidents</div>
                     <div class="chapter-links">
-                        <a href="../B1/B1_2_Incidents_assistance/" class="chapter-link">📚 Cours</a>
-                        <a href="../B1/B1_2_Incidents_assistance/tp/" class="chapter-link">💻 TP</a>
                     </div>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-title">B1.3 - Présence en ligne</div>
                     <div class="chapter-links">
                         <a href="../B1/B1_3_Presence_ligne/" class="chapter-link">📚 Cours</a>
-                    </div>
-                </div>
-                <div class="chapter-item">
-                    <div class="chapter-title">B1.4-B1.6 - Projet & Développement</div>
-                    <div class="chapter-links">
                     </div>
                 </div>
             </div>
