@@ -284,15 +284,12 @@
             La production de contenu original et pertinent constitue le pilier d'une présence en ligne réussie. Pour un professionnel de l'informatique, cela peut prendre la forme d'articles techniques, de tutoriels, de retours d'expérience sur des projets, ou de analyses de nouvelles technologies. L'objectif est de démontrer son expertise tout en apportant de la valeur à la communauté.
         </div>
         
-        <div class="content-text">
-            La régularité dans la publication est essentielle pour maintenir l'engagement de l'audience. Un calendrier éditorial permet de planifier les contenus et d'assurer une présence constante sans surcharger les abonnés. La qualité doit toujours primer sur la quantité.
-        </div>
     </div>
     
     <div class="strategy-section">
         <div class="strategy-title">💬 Engagement et Interaction</div>
         <div class="content-text">
-            L'interaction avec la communauté professionnelle est cruciale pour développer un réseau et renforcer sa visibilité. Cela implique de répondre aux commentaires, de participer à des discussions, de partager et commenter les contenus d'autres professionnels, et de contribuer à des groupes spécialisés.
+            L'interaction avec la communauté professionnelle est cruciale pour développer un réseau et renforcer sa visibilité. Cela implique de répondre aux commentaires, de participer à des discussions, de partager et commenter les contenus d'autres professionnels, et de contribuer à des groupes spécialisés. La création d'un réseau professionnel peut être bénéfique et différencier plusieurs dossiers lors d'une campagne de rectrutement.
         </div>
         
         <div class="content-text">
@@ -304,25 +301,6 @@
         <div class="strategy-title">📊 Mesure et Optimisation</div>
         <div class="content-text">
             Le suivi des performances permet d'ajuster la stratégie de présence en ligne. Les métriques importantes incluent la portée des publications, le taux d'engagement, la croissance de l'audience, et surtout la qualité des interactions générées.
-        </div>
-        
-        <div class="metrics-showcase">
-            <div class="metric-item">
-                <div class="metric-value">👁️</div>
-                <div class="metric-label">Portée</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-value">💬</div>
-                <div class="metric-label">Engagement</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-value">📈</div>
-                <div class="metric-label">Croissance</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-value">🎯</div>
-                <div class="metric-label">Qualité</div>
-            </div>
         </div>
     </div>
 </div>
@@ -338,7 +316,7 @@
     </div>
     
     <div class="content-text">
-        La sécurisation des comptes constitue la première ligne de défense. L'utilisation de mots de passe robtes et uniques pour chaque plateforme, l'activation de l'authentification à deux facteurs, et la vérification régulière des paramètres de confidentialité sont des pratiques essentielles.
+        La sécurisation des comptes constitue la première ligne de défense. L'utilisation de mots de passe robustes et uniques pour chaque plateforme (ou l'utilisation d'un gestionnaire de mots de passe), l'activation de l'authentification à deux facteurs, et la vérification régulière des paramètres de confidentialité sont des pratiques essentielles.
     </div>
     
     <div class="content-text">
@@ -347,14 +325,11 @@
     
     <div class="example-box">
         <div class="example-title">🔍 Techniques de Veille</div>
-        La mise en place d'alertes Google sur son nom et celui de son entreprise permet de surveiller les nouvelles mentions. L'utilisation d'outils spécialisés comme Mention, Brand24 ou Hootsuite Insights offre un monitoring plus approfondi des réseaux sociaux et des sites web.
+        La mise en place d'alertes Google sur son nom et celui de son entreprise permet de surveiller les nouvelles mentions.
     </div>
     
     <div class="strategy-section">
         <div class="strategy-title">🚨 Gestion de Crise</div>
-        <div class="content-text">
-            En cas de crise affectant l'e-réputation, la rapidité de réaction est cruciale. Une stratégie de gestion de crise doit être préparée en amont, incluant les procédures de communication, les personnes à contacter, et les messages types à adapter selon la situation.
-        </div>
         
         <div class="content-text">
             La transparence et l'authenticité sont généralement les meilleures approches en cas de crise. Reconnaître ses erreurs, présenter des excuses sincères si nécessaire, et expliquer les mesures correctives mises en place contribuent souvent à limiter les dégâts et parfois même à renforcer la confiance.
@@ -377,20 +352,7 @@
     </div>
     
     <div class="content-text">
-        La création et l'optimisation de profils professionnels sur les principales plateformes (LinkedIn, Twitter, GitHub pour les développeurs) permettent de contrôler les premiers résultats de recherche. Ces profils doivent être complets, régulièrement mis à jour, et optimisés avec les mots-clés pertinents du secteur d'activité.
-    </div>
-    
-    <div class="content-text">
-        La publication régulière de contenu de qualité sur des plateformes bien référencées contribue à améliorer la visibilité positive. Les articles de blog, les contributions à des sites spécialisés, et les interventions dans des forums techniques créent un maillage de contenus positifs qui remontent naturellement dans les résultats de recherche.
-    </div>
-    
-    <div class="example-box">
-        <div class="example-title">💡 Stratégie SEO Personnelle</div>
-        Un développeur peut créer un blog technique sur Medium ou Dev.to, maintenir un profil GitHub actif avec des projets open source, publier des articles sur LinkedIn, et participer à Stack Overflow. Cette diversification des plateformes assure une présence positive sur plusieurs résultats de la première page Google.
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>Conseil pratique :</strong> Effectuez régulièrement des recherches sur votre nom en navigation privée pour voir ce que trouvent les recruteurs et ajustez votre stratégie en conséquence.
+        La création et l'optimisation de profils professionnels sur les principales plateformes (LinkedIn, GitHub pour les développeurs) permettent de contrôler les premiers résultats de recherche. Ces profils doivent être complets, régulièrement mis à jour, et optimisés avec les mots-clés pertinents du secteur d'activité.
     </div>
 </div>
 
@@ -420,46 +382,5 @@
         <div class="content-text">
             La participation active à Stack Overflow, en répondant aux questions techniques et en posant des questions pertinentes, permet de démontrer son expertise et sa capacité à résoudre des problèmes complexes. Un score élevé et des réponses bien notées constituent une reconnaissance par les pairs.
         </div>
-    </div>
-    
-    <div class="strategy-section">
-        <div class="strategy-title">📝 Blogs Techniques et Publications</div>
-        <div class="content-text">
-            La rédaction d'articles techniques sur des plateformes comme Medium, Dev.to, ou un blog personnel permet de partager son expertise et de se positionner comme un expert dans son domaine. Ces contenus contribuent également au référencement personnel et démontrent la capacité à communiquer sur des sujets techniques complexes.
-        </div>
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>Synergie des plateformes :</strong> L'efficacité maximale est atteinte en créant des synergies entre les différentes plateformes : partager ses projets GitHub sur LinkedIn, écrire des articles sur ses découvertes techniques, référencer ses contributions Stack Overflow dans son CV.
-    </div>
-</div>
-
-<div class="concept-section">
-    <h2 class="section-title">🔄 Évolution et Adaptation Continue</h2>
-    
-    <div class="definition-box">
-        <div class="definition-title">📱 Adaptation aux Nouvelles Plateformes</div>
-        <div class="definition-content">
-            Le paysage numérique évolue constamment avec l'émergence de nouvelles plateformes et l'évolution des usages. Une stratégie de présence en ligne efficace doit s'adapter à ces changements tout en maintenant une cohérence globale.
-        </div>
-    </div>
-    
-    <div class="content-text">
-        L'émergence de nouvelles plateformes comme TikTok, Discord, ou Clubhouse modifie les habitudes de consommation de contenu et crée de nouvelles opportunités de visibilité. Cependant, il n'est pas nécessaire d'être présent partout. L'important est de choisir les plateformes les plus pertinentes pour son secteur d'activité et son audience cible.
-    </div>
-    
-    <div class="content-text">
-        L'évolution des algorithmes des réseaux sociaux et des moteurs de recherche nécessite une adaptation constante des stratégies de contenu. Ce qui fonctionnait il y a quelques années peut ne plus être efficace aujourd'hui. Une veille technologique et marketing est donc indispensable.
-    </div>
-    
-    <div class="strategy-section">
-        <div class="strategy-title">🎯 Formation Continue et Veille</div>
-        <div class="content-text">
-            La maîtrise de la présence en ligne nécessite une formation continue sur les nouvelles fonctionnalités des plateformes, les évolutions des bonnes pratiques, et les tendances du marketing digital. Cette formation peut prendre la forme de webinaires, de lectures spécialisées, ou de formations certifiantes.
-        </div>
-    </div>
-    
-    <div class="warning-fact">
-        ⚠️ <strong>Éviter la dispersion :</strong> Mieux vaut être très actif et efficace sur 2-3 plateformes que présent de manière superficielle sur 10 plateformes différentes.
     </div>
 </div>
