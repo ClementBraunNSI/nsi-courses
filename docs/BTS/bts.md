@@ -574,14 +574,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="chapter-title">B1.3 - Présence en ligne</div>
                     <div class="chapter-links">
                         <a href="../B1/B1_3_Presence_ligne/" class="chapter-link">📚 Cours</a>
-                        <a href="../B1/B1_3_Presence_ligne/projets/" class="chapter-link">🚀 Projets</a>
                     </div>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-title">B1.4-B1.6 - Projet & Développement</div>
                     <div class="chapter-links">
-                        <a href="../B1/B1_4_6_Projet_dev/" class="chapter-link">📚 Cours</a>
-                        <a href="../B1/B1_4_6_Projet_dev/methodologie/" class="chapter-link">📋 Méthodologie</a>
                     </div>
                 </div>
             </div>
@@ -598,14 +595,14 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>
         </div>
         
-        <!-- Systèmes & Réseaux -->
-        <div class="category-card category-systems">
+        <!-- Cyber Sécurité -->
+        <div class="category-card category-security">
             <div class="category-header">
-                <span class="category-icon">🖥️</span>
-                <h3 class="category-title">Systèmes & Réseaux</h3>
+                <span class="category-icon">🔒</span>
+                <h3 class="category-title">Cyber Sécurité</h3>
             </div>
             <p class="category-description">
-                Architecture des systèmes informatiques, réseaux et services d'infrastructure
+                Sécurité des systèmes informatiques, réseaux et services d'infrastructure
             </p>
         </div>
     </div>
