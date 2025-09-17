@@ -496,7 +496,7 @@
     </div>
     
     <div class="highlight-fact">
-        💡 <strong>Communication :</strong> La réussite d'un projet dépend à 80% de la qualité de la communication entre les membres de l'équipe.
+        💡 <strong>Communication :</strong> La réussite d'un projet dépend principalement de la qualité de la communication entre les membres de l'équipe.
     </div>
 </div>
 
@@ -867,10 +867,6 @@
         <div class="git-command">git checkout main</div>
         <div class="git-command">git pull origin main</div>
         <div class="git-command">git merge feature/nouvelle-fonctionnalite</div>
-        
-        <div class="git-command"># Créer un tag pour la release</div>
-        <div class="git-command">git tag -a v1.2.0 -m "Version 1.2.0 - Nouvelle fonctionnalité"</div>
-        <div class="git-command">git push origin v1.2.0</div>
     </div>
     
     <div class="concept-grid">
@@ -908,7 +904,7 @@
     </div>
     
     <div class="warning-fact">
-        ⚠️ <strong>Bonnes pratiques :</strong> Commits atomiques, messages clairs, branches courtes, reviews systématiques, tests automatisés.
+        ⚠️ <strong>Bonnes pratiques :</strong> Commits atomiques (le moins de mots possibles), messages clairs, branches courtes, reviews systématiques, tests automatisés.
     </div>
 </div>
 
@@ -927,7 +923,7 @@
             <div class="concept-icon">📊</div>
             <div class="concept-name">Indicateurs KPI</div>
             <div class="concept-description">
-                Métriques de performance : vélocité, burn-down chart, taux de défauts, respect des délais.
+                Métriques de performance : vélocité, taux de défauts, respect des délais.
             </div>
         </div>
         
@@ -954,9 +950,5 @@
                 Reporting régulier, réunions de suivi, tableaux de bord et communication avec les parties prenantes.
             </div>
         </div>
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>Outils de suivi :</strong> Jira, Azure DevOps, Trello, Monday.com, ou des solutions intégrées comme GitLab pour un suivi complet du cycle de développement.
     </div>
 </div>

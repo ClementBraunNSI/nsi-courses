@@ -572,6 +572,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="../B1/B1_3_Presence_ligne/" class="chapter-link">📚 Cours</a>
                     </div>
                 </div>
+                <div class="chapter-item">
+                    <div class="chapter-title">B1.5 - Gestion de projets</div>
+                    <div class="chapter-links">
+                        <a href="../B1/B1_5_Gestion_projet/" class="chapter-link">📚 Cours</a>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -595,6 +601,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="category-description">
                 Sécurité des systèmes informatiques, réseaux et services d'infrastructure
             </p>
+            <div class="chapter-item">
+                <div class="chapter-title">B3.1 - Notion de risques et de menaces</div>
+                <div class="chapter-links">
+                    <a href="../B3/B3_1_Fondamentaux_cybersecurite/" class="chapter-link">📚 Cours</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

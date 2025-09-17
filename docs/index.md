@@ -76,7 +76,7 @@
         <a href="terminale/terminale" class="btn">Accéder aux ressources</a>
     </div>
     <div class="level-card">
-        <img src="images/fox_terminale.png" alt="NSI Terminale">
+        <img src="images/fox_bts.png" alt="NSI Terminale">
         <h2>BTS SIO</h2>
         <p>Approfondissement en informatique : Gestion de projet, programmation logicielle, développement d'applications, sécurité informatique</p>
         <a href="BTS/bts" class="btn">Accéder aux ressources</a>
