@@ -356,7 +356,7 @@ Information claire et compréhensible des personnes concernées sur le traitemen
 </ol>
 </div>
 
-### Obligations des responsables de traitement
+<h3>Obligations des responsables de traitement</h3>
 
 <table class="compliance-table">
 <thead>
@@ -395,7 +395,7 @@ Information claire et compréhensible des personnes concernées sur le traitemen
 </tbody>
 </table>
 
-### Sanctions et amendes
+<h3>Sanctions et amendes</h3>
 
 <div class="sanction-box">
 <div class="sanction-title">Sanctions administratives</div>
@@ -406,7 +406,7 @@ Information claire et compréhensible des personnes concernées sur le traitemen
 </ul>
 </div>
 
-### Mise en conformité technique
+<h3>Mise en conformité technique</h3>
 
 <div class="code-example">
 <div class="code-title">Exemple d'implémentation RGPD en Python</div>
@@ -724,7 +724,7 @@ Référentiels internationaux qui définissent les bonnes pratiques et exigences
 </div>
 </div>
 
-### Principales normes de sécurité
+<h3>Principales normes de sécurité</h3>
 
 <div class="norms-grid">
 <div class="norm-card">
@@ -794,7 +794,7 @@ Référentiels internationaux qui définissent les bonnes pratiques et exigences
 </div>
 </div>
 
-### ISO 27001 - Détail des domaines
+<h3>ISO 27001 - Détail des domaines</h3>
 
 <table class="compliance-table">
 <thead>
@@ -878,7 +878,7 @@ Référentiels internationaux qui définissent les bonnes pratiques et exigences
 </tbody>
 </table>
 
-### Checklist de mise en conformité ISO 27001
+<h3>Checklist de mise en conformité ISO 27001</h3>
 
 <div class="checklist-item">
 <div class="checklist-title">✅ Phase 1 : Préparation</div>
@@ -944,7 +944,7 @@ Processus continu de collecte, d'analyse et de diffusion d'informations sur les 
 </div>
 </div>
 
-### Sources de veille sécurité
+<h3>Sources de veille sécurité</h3>
 
 <div class="veille-source">
 <div class="veille-source-title">🏛️ Sources institutionnelles</div>
@@ -986,7 +986,7 @@ Processus continu de collecte, d'analyse et de diffusion d'informations sur les 
 </ul>
 </div>
 
-### Automatisation de la veille
+<h3>Automatisation de la veille</h3>
 
 <div class="code-example">
 <div class="code-title">Système automatisé de veille sécurité</div>
@@ -1434,7 +1434,7 @@ Ensemble des informations et traces numériques qu'une organisation laisse sur I
 </div>
 </div>
 
-### Composantes de l'identité numérique
+<h3>Composantes de l'identité numérique</h3>
 
 <div class="identity-step">
 <div class="identity-title">🌐 Présence officielle</div>
@@ -1476,7 +1476,7 @@ Ensemble des informations et traces numériques qu'une organisation laisse sur I
 </ul>
 </div>
 
-### Menaces sur l'identité numérique
+<h3>Menaces sur l'identité numérique</h3>
 
 <table class="compliance-table">
 <thead>
@@ -1527,7 +1527,7 @@ Ensemble des informations et traces numériques qu'une organisation laisse sur I
 </tbody>
 </table>
 
-### Stratégie de protection de l'identité numérique
+<h3>Stratégie de protection de l'identité numérique</h3>
 
 <div class="identity-step">
 <div class="identity-title">🔍 Audit de l'identité numérique</div>
@@ -1569,7 +1569,7 @@ Ensemble des informations et traces numériques qu'une organisation laisse sur I
 </ul>
 </div>
 
-### Outils de monitoring de l'identité numérique
+<h3>Outils de monitoring de l'identité numérique</h3>
 
 <div class="code-example">
 <div class="code-title">Script de surveillance de l'identité numérique</div>
@@ -1930,13 +1930,13 @@ if __name__ == "__main__":
 
 ## 📚 Ressources et références
 
-### Documentation officielle
+<h3>Documentation officielle</h3>
 - **CNIL :** Guide RGPD du développeur
 - **ANSSI :** Guide d'hygiène informatique
 - **ISO :** Norme ISO 27001:2022
 - **NIST :** Cybersecurity Framework
 
-### Outils pratiques
+<h3>Outils pratiques</h3>
 - **RGPD :** PIA CNIL, registre des traitements
 - **Veille :** CERT-FR, CVE Details, NVD
 - **Monitoring :** Google Alerts, Mention, Brand24
