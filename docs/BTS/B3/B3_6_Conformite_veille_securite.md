@@ -1936,7 +1936,7 @@ if __name__ == "__main__":
 - **ISO :** Norme ISO 27001:2022
 - **NIST :** Cybersecurity Framework
 
-<h3>Outils pratiques</h3>
+### Outils pratiques
 - **RGPD :** PIA CNIL, registre des traitements
 - **Veille :** CERT-FR, CVE Details, NVD
 - **Monitoring :** Google Alerts, Mention, Brand24

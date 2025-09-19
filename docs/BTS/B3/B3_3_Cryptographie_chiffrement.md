@@ -699,7 +699,7 @@ Protection cryptographique et consensus distribué pour garantir l'intégrité.
 <div class="concept-section">
 <h2 class="section-title">💰 Applications et cryptomonnaies</h2>
 
-<h3>Domaines d'application</h3>
+### Domaines d'application
 
 <div class="algorithm-grid">
 <div class="algorithm-card">

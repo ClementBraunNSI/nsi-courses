@@ -1192,7 +1192,7 @@ print("Rapport de confidentialité :", privacy_report)
 <div class="concept-section">
 <h2 class="section-title">🔍 Monitoring et détection d'incidents</h2>
 
-<h3>Mise en place de logs de sécurité</h3>
+### Mise en place de logs de sécurité
 
 <div class="code-example">
 <div class="code-title">Système de logging sécurisé</div>

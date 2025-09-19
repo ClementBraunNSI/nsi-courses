@@ -180,16 +180,6 @@
     <p class="course-subtitle">Phishing, Injections SQL, XSS et autres menaces - BTS SIO</p>
 </div>
 
-## 🎯 Objectifs du cours
-
-À l'issue de ce cours, vous serez capable de :
-- Identifier les principales attaques informatiques
-- Comprendre les mécanismes du phishing et de l'ingénierie sociale
-- Analyser les vulnérabilités d'injection (SQL, XSS)
-- Mettre en place des mesures de prévention adaptées
-
----
-
 <div class="concept-section">
 <h2 class="section-title">🎭 Ingénierie sociale et Phishing</h2>
 
@@ -496,7 +486,7 @@ Procédures claires, gestion des accès, politique de mots de passe, plan de ré
 </div>
 </div>
 
-<h3>Tests de sécurité</h3>
+### Tests de sécurité
 
 <div class="prevention-box">
 <div class="prevention-title">🔍 Types de tests de sécurité</div>
@@ -526,15 +516,3 @@ Procédures claires, gestion des accès, politique de mots de passe, plan de ré
 </div>
 
 ---
-
-## ✅ Points clés à retenir
-
-1. **Ingénierie sociale** : 95% des attaques réussies impliquent l'humain
-2. **Injection SQL** : Toujours utiliser des requêtes préparées
-3. **XSS** : Échapper toutes les données utilisateur affichées
-4. **Défense en profondeur** : Combiner mesures techniques et humaines
-5. **Formation continue** : La sensibilisation est la première ligne de défense
-
-<div class="highlight-fact">
-🎓 <strong>Prochaine étape :</strong> Dans le cours B3.3, nous explorerons la cryptographie et les techniques de chiffrement (César, Vigenère, hash, blockchain).
-</div>

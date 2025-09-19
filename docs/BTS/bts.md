@@ -564,6 +564,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="chapter-item">
                     <div class="chapter-title">B1.2 - Réponse aux incidents</div>
                     <div class="chapter-links">
+                        <a href="../B1/B1_2_Incidents_assistance/" class="chapter-link">📚 Cours</a>
                     </div>
                 </div>
                 <div class="chapter-item">

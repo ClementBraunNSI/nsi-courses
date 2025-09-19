@@ -1126,7 +1126,7 @@ echo "- Metasploit (framework d'exploitation)"
 </ol>
 </div>
 
-<h3>Classification des risques</h3>
+### Classification des risques
 
 <table class="owasp-table">
 <thead>

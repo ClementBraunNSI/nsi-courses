@@ -405,7 +405,7 @@
     </div>
     
     <div class="highlight-fact">
-        💡 <strong>Workflows automatisés :</strong> Les outils ITSM permettent de configurer des workflows avec transitions automatiques, notifications et escalades selon des règles métier personnalisables.
+        💡 <strong>Workflows automatisés :</strong> Les outils ITSM (IT Service Management) permettent de configurer des workflows avec transitions automatiques, notifications et escalades selon des règles métier personnalisables.
     </div>
 </div>
 
@@ -451,10 +451,6 @@
                 Prise de contrôle à distance, diagnostic avancé, résolution sans déplacement.
             </div>
         </div>
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>Niveaux de support :</strong> Niveau 1 (support de base), Niveau 2 (expertise technique), Niveau 3 (spécialistes/éditeurs).
     </div>
     
     <div class="highlight-fact">
@@ -505,115 +501,5 @@
                 Évaluation de la qualité du service par les utilisateurs finaux.
             </div>
         </div>
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>Tableaux de bord :</strong> Power BI, Grafana ou les dashboards intégrés aux outils ITSM permettent de visualiser les métriques en temps réel et de générer des rapports automatisés.
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>Objectifs SLA :</strong> Définissez des objectifs de niveau de service (SLA) clairs : résolution en 4h pour les incidents critiques, 24h pour les incidents élevés.
-    </div>
-</div>
-
-<div class="concept-section">
-    <h2 class="section-title">🔧 Outils de Gestion des Incidents</h2>
-    
-    <div class="definition-box">
-        <div class="definition-title">🛠️ Solutions ITSM</div>
-        <div class="definition-content">
-            Les outils ITSM (IT Service Management) automatisent et optimisent la gestion des incidents, du support utilisateur et des processus IT selon les bonnes pratiques ITIL.
-        </div>
-    </div>
-    
-    <div class="concept-grid">
-        <div class="concept-card">
-            <div class="concept-icon">🎫</div>
-            <div class="concept-name">ServiceNow</div>
-            <div class="concept-description">
-                Plateforme enterprise complète avec workflows automatisés, CMDB intégrée et analytics avancés.
-            </div>
-        </div>
-        
-        <div class="concept-card">
-            <div class="concept-icon">🔧</div>
-            <div class="concept-name">GLPI</div>
-            <div class="concept-description">
-                Solution open source française avec gestion d'inventaire, helpdesk et suivi des interventions.
-            </div>
-        </div>
-        
-        <div class="concept-card">
-            <div class="concept-icon">📊</div>
-            <div class="concept-name">Jira Service Management</div>
-            <div class="concept-description">
-                Outil Atlassian intégré avec Confluence, tableaux de bord personnalisables et automatisations.
-            </div>
-        </div>
-        
-        <div class="concept-card">
-            <div class="concept-icon">💬</div>
-            <div class="concept-name">Freshservice</div>
-            <div class="concept-description">
-                Solution cloud moderne avec IA intégrée, portail self-service et gestion multi-canal.
-            </div>
-        </div>
-    </div>
-    
-    <div class="warning-fact">
-        ⚠️ <strong>Choix d'outil :</strong> Sélectionnez l'outil selon la taille de l'organisation, le budget, les intégrations nécessaires et la complexité des processus.
-    </div>
-</div>
-
-<div class="concept-section">
-    <h2 class="section-title">🤖 Automatisation et Intelligence Artificielle</h2>
-    
-    <div class="definition-box">
-        <div class="definition-title">🚀 Support Intelligent</div>
-        <div class="definition-content">
-            L'automatisation et l'IA transforment le support IT en permettant la résolution automatique d'incidents courants, la classification intelligente et l'assistance prédictive.
-        </div>
-    </div>
-    
-    <div class="concept-grid">
-        <div class="concept-card">
-            <div class="concept-icon">🤖</div>
-            <div class="concept-name">Chatbots</div>
-            <div class="concept-description">
-                Assistance 24/7, résolution automatique des demandes simples, collecte d'informations initiales.
-            </div>
-        </div>
-        
-        <div class="concept-card">
-            <div class="concept-icon">🧠</div>
-            <div class="concept-name">Classification Auto</div>
-            <div class="concept-description">
-                Analyse du contenu des tickets pour classification et routage automatiques vers les bonnes équipes.
-            </div>
-        </div>
-        
-        <div class="concept-card">
-            <div class="concept-icon">🔮</div>
-            <div class="concept-name">Analyse Prédictive</div>
-            <div class="concept-description">
-                Prédiction des pannes, identification des tendances, maintenance proactive des systèmes.
-            </div>
-        </div>
-        
-        <div class="concept-card">
-            <div class="concept-icon">📚</div>
-            <div class="concept-name">Base de Connaissances</div>
-            <div class="concept-description">
-                Suggestions automatiques de solutions, mise à jour dynamique, apprentissage continu.
-            </div>
-        </div>
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>Solutions IA :</strong> Microsoft Bot Framework, IBM Watson Assistant, ou des solutions intégrées comme ServiceNow Virtual Agent permettent de créer des chatbots intelligents pour le support.
-    </div>
-    
-    <div class="highlight-fact">
-        💡 <strong>ROI de l'automatisation :</strong> L'automatisation peut résoudre 30-40% des incidents de niveau 1, libérant du temps pour les techniciens sur des tâches à plus forte valeur ajoutée.
     </div>
 </div>
