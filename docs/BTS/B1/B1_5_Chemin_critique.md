@@ -669,25 +669,25 @@
         <div class="step-grid">
             <div class="step-card">
                 <div class="step-number">1</div>
-                <div class="step-title">Tracez le graphe PERT</div>
+                <div class="step-title">Tracer le graphe PERT</div>
                 <div class="step-description">
-                    Représentez les tâches et leurs dépendances sous forme de réseau.
+                    Représenter les tâches et leurs dépendances sous forme de réseau.
                 </div>
             </div>
             
             <div class="step-card">
                 <div class="step-number">2</div>
-                <div class="step-title">Calculez les chemins possibles</div>
+                <div class="step-title">Calculer les chemins possibles</div>
                 <div class="step-description">
-                    Identifiez tous les chemins du début à la fin et calculez leur durée.
+                    Identifier tous les chemins du début à la fin et calculer leur durée.
                 </div>
             </div>
             
             <div class="step-card">
                 <div class="step-number">3</div>
-                <div class="step-title">Déterminez le chemin critique</div>
+                <div class="step-title">Déterminer le chemin critique</div>
                 <div class="step-description">
-                    Trouvez le chemin le plus long et la durée totale du projet.
+                    Trouver le chemin le plus long et la durée totale du projet.
                 </div>
             </div>
         </div>
@@ -756,25 +756,25 @@
         <div class="step-grid">
             <div class="step-card">
                 <div class="step-number">1</div>
-                <div class="step-title">Construisez le graphe</div>
+                <div class="step-title">Construire le graphe</div>
                 <div class="step-description">
-                    Représentez les dépendances entre les tâches de développement.
+                    Représenter les dépendances entre les tâches de développement.
                 </div>
             </div>
             
             <div class="step-card">
                 <div class="step-number">2</div>
-                <div class="step-title">Énumérez les chemins</div>
+                <div class="step-title">Énumérer les chemins</div>
                 <div class="step-description">
-                    Calculez la durée de chaque chemin possible du projet.
+                    Calculer la durée de chaque chemin possible du projet.
                 </div>
             </div>
             
             <div class="step-card">
                 <div class="step-number">3</div>
-                <div class="step-title">Identifiez le critique</div>
+                <div class="step-title">Identifier le critique</div>
                 <div class="step-description">
-                    Trouvez le chemin critique et la durée totale.
+                    Trouver le chemin critique et la durée totale.
                 </div>
             </div>
         </div>
@@ -837,25 +837,25 @@
         <div class="step-grid">
             <div class="step-card">
                 <div class="step-number">1</div>
-                <div class="step-title">Représentez le graphe PERT</div>
+                <div class="step-title">Représenter le graphe PERT</div>
                 <div class="step-description">
-                    Créez le réseau des tâches de sécurisation.
+                    Créer le réseau des tâches de sécurisation.
                 </div>
             </div>
             
             <div class="step-card">
                 <div class="step-number">2</div>
-                <div class="step-title">Calculez tous les chemins</div>
+                <div class="step-title">Calculer tous les chemins</div>
                 <div class="step-description">
-                    Identifiez et calculez la durée de chaque chemin possible.
+                    Identifier et calculer la durée de chaque chemin possible.
                 </div>
             </div>
             
             <div class="step-card">
                 <div class="step-number">3</div>
-                <div class="step-title">Identifiez le chemin critique</div>
+                <div class="step-title">Identifier le chemin critique</div>
                 <div class="step-description">
-                    Trouvez le chemin le plus long et la durée totale.
+                    Trouver le chemin le plus long et la durée totale.
                 </div>
             </div>
         </div>
