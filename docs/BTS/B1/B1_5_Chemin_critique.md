@@ -436,7 +436,7 @@
         
         <div class="step-card">
             <div class="step-number">2</div>
-            <div class="step-title">Construire le Réseau</div>
+            <div class="step-title">Construire le Diagramme</div>
             <div class="step-description">
                 Créer le diagramme PERT avec les nœuds (tâches) et les liens (dépendances et leur durée).
             </div>
