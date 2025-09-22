@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="level-header">
         <div class="level-header-content">
             <div>
-                <h1>BTS SIO 1ère Année</h1>
+                <h1>BTS SI0/h1>
                 <p>Services Informatiques aux Organisations</p>
                 <p class="level-description">
                     Fondamentaux de l'informatique et des services numériques
@@ -564,19 +564,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="chapter-item">
                     <div class="chapter-title">B1.2 - Réponse aux incidents</div>
                     <div class="chapter-links">
-                        <a href="../B1/B1_2_Incidents_assistance/" class="chapter-link">📚 Cours</a>
                     </div>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-title">B1.3 - Présence en ligne</div>
-                    <div class="chapter-links">
-                        <a href="../B1/B1_3_Presence_ligne/" class="chapter-link">📚 Cours</a>
-                    </div>
                 </div>
                 <div class="chapter-item">
                     <div class="chapter-title">B1.5 - Gestion de projets</div>
                     <div class="chapter-links">
                         <a href="../B1/B1_5_Gestion_projet/" class="chapter-link">📚 Cours</a>
+                        <a href="../B1/B1_5_Chemin_critique/" class="chapter-link">🎯 Chemin Critique</a>
                     </div>
                 </div>
             </div>
