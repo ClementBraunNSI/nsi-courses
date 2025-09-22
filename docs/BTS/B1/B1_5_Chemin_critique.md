@@ -610,13 +610,7 @@
 
 <div class="concept-section">
     <h2 class="section-title">📝 Exercices Pratiques</h2>
-    
-    <div class="definition-box">
-        <div class="definition-title">🎯 Mise en Application</div>
-        <div class="definition-content">
-            Testez vos connaissances avec ces trois exercices pratiques inspirés de projets informatiques réels en entreprise.
-        </div>
-    </div>
+
     
     <div class="example-box">
         <div class="example-title">🔹 Exercice 1 – Mise en place d'un serveur web</div>
