@@ -677,7 +677,7 @@
             
             <div class="step-card">
                 <div class="step-number">2</div>
-                <div class="step-title">Calculer les chemins possibles</div>
+                <div class="step-title">Calculer tous les chemins possibles</div>
                 <div class="step-description">
                     Identifier tous les chemins du début à la fin et calculer leur durée.
                 </div>
@@ -764,7 +764,7 @@
             
             <div class="step-card">
                 <div class="step-number">2</div>
-                <div class="step-title">Énumérer les chemins</div>
+                <div class="step-title">Calculer tous les chemins</div>
                 <div class="step-description">
                     Calculer la durée de chaque chemin possible du projet.
                 </div>
