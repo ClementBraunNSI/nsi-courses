@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="level-header">
         <div class="level-header-content">
             <div>
-                <h1>BTS SI0/h1>
+                <h1>BTS SI0</h1>
                 <p>Services Informatiques aux Organisations</p>
                 <p class="level-description">
                     Fondamentaux de l'informatique et des services numériques
