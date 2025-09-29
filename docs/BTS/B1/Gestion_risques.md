@@ -547,19 +547,44 @@
     border-bottom: 2px solid #ecf0f1;
     margin-bottom: 1rem;
     overflow-x: auto;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #bdc3c7 #ecf0f1;
+}
+
+.exercise-tabs::-webkit-scrollbar {
+    height: 6px;
+}
+
+.exercise-tabs::-webkit-scrollbar-track {
+    background: #ecf0f1;
+    border-radius: 3px;
+}
+
+.exercise-tabs::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 3px;
+}
+
+.exercise-tabs::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
 }
 
 .exercise-tab {
     background: none;
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.2rem;
     cursor: pointer;
     font-weight: 600;
     color: #7f8c8d;
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
     white-space: nowrap;
-    min-width: 150px;
+    flex-shrink: 0;
+    min-width: 140px;
+    font-size: 0.9rem;
+    border-radius: 8px 8px 0 0;
 }
 
 .exercise-tab:hover {
@@ -659,69 +684,91 @@
     <div class="risk-matrix">
         <div class="matrix-grid">
             <div class="matrix-header">Impact →<br>Probabilité ↓</div>
-            <div class="matrix-header">Très Faible</div>
-            <div class="matrix-header">Faible</div>
-            <div class="matrix-header">Moyen</div>
-            <div class="matrix-header">Fort</div>
-            <div class="matrix-header">Très Fort</div>
+            <div class="matrix-header">1<br>Très Faible</div>
+            <div class="matrix-header">2<br>Faible</div>
+            <div class="matrix-header">3<br>Moyen</div>
+            <div class="matrix-header">4<br>Fort</div>
+            <div class="matrix-header">5<br>Très Fort</div>
             
-            <div class="matrix-label">Très Forte (5)</div>
-            <div class="matrix-cell risk-medium">Moyen</div>
-            <div class="matrix-cell risk-high">Élevé</div>
-            <div class="matrix-cell risk-high">Élevé</div>
-            <div class="matrix-cell risk-critical">Critique</div>
-            <div class="matrix-cell risk-critical">Critique</div>
+            <div class="matrix-label">5<br>Très Forte</div>
+            <div class="matrix-cell risk-medium"><small>Moyen</small><br>5</div>
+            <div class="matrix-cell risk-high"><small>Élevé</small><br>10</div>
+            <div class="matrix-cell risk-high"><small>Élevé</small><br>15</div>
+            <div class="matrix-cell risk-critical"><small>Critique</small><br>20</div>
+            <div class="matrix-cell risk-critical"><small>Critique</small><br>25</div>
             
-            <div class="matrix-label">Forte (4)</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-medium">Moyen</div>
-            <div class="matrix-cell risk-high">Élevé</div>
-            <div class="matrix-cell risk-high">Élevé</div>
-            <div class="matrix-cell risk-critical">Critique</div>
+            <div class="matrix-label">4<br>Forte</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>4</div>
+            <div class="matrix-cell risk-medium"><small>Moyen</small><br>8</div>
+            <div class="matrix-cell risk-high"><small>Élevé</small><br>12</div>
+            <div class="matrix-cell risk-high"><small>Élevé</small><br>16</div>
+            <div class="matrix-cell risk-critical"><small>Critique</small><br>20</div>
             
-            <div class="matrix-label">Moyenne (3)</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-medium">Moyen</div>
-            <div class="matrix-cell risk-high">Élevé</div>
-            <div class="matrix-cell risk-high">Élevé</div>
+            <div class="matrix-label">3<br>Moyenne</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>3</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>6</div>
+            <div class="matrix-cell risk-medium"><small>Moyen</small><br>9</div>
+            <div class="matrix-cell risk-high"><small>Élevé</small><br>12</div>
+            <div class="matrix-cell risk-high"><small>Élevé</small><br>15</div>
             
-            <div class="matrix-label">Faible (2)</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-medium">Moyen</div>
-            <div class="matrix-cell risk-high">Élevé</div>
+            <div class="matrix-label">2<br>Faible</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>2</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>4</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>6</div>
+            <div class="matrix-cell risk-medium"><small>Moyen</small><br>8</div>
+            <div class="matrix-cell risk-high"><small>Élevé</small><br>10</div>
             
-            <div class="matrix-label">Très Faible (1)</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-low">Faible</div>
-            <div class="matrix-cell risk-medium">Moyen</div>
+            <div class="matrix-label">1<br>Très Faible</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>1</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>2</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>3</div>
+            <div class="matrix-cell risk-low"><small>Faible</small><br>4</div>
+            <div class="matrix-cell risk-medium"><small>Moyen</small><br>5</div>
+        </div>
+    </div>
+    
+    <div class="definition-box">
+        <div class="definition-title">📐 Règles de Calcul de la Criticité</div>
+        <div class="definition-content">
+            <strong>Formule :</strong> Criticité = Probabilité × Impact<br><br>
+            <strong>Seuils de criticité :</strong>
+            <ul style="margin-top: 1rem;">
+                <li><strong>Risque Faible :</strong> 1 à 6 points</li>
+                <li><strong>Risque Moyen :</strong> 8 à 9 points</li>
+                <li><strong>Risque Élevé :</strong> 10 à 16 points</li>
+                <li><strong>Risque Critique :</strong> 20 à 25 points</li>
+            </ul>
+            <br>
+            <strong>Actions recommandées :</strong>
+            <ul>
+                <li><strong>Faible (1-6) :</strong> Surveillance passive</li>
+                <li><strong>Moyen (8-9) :</strong> Plan de contingence</li>
+                <li><strong>Élevé (10-16) :</strong> Actions préventives obligatoires</li>
+                <li><strong>Critique (20-25) :</strong> Traitement immédiat prioritaire</li>
+            </ul>
         </div>
     </div>
     
     <div class="probability-scale">
         <div class="probability-item prob-1">
             <div>1 - Très Faible</div>
-            <div>< 10%</div>
+            <div>Très improbable</div>
         </div>
         <div class="probability-item prob-2">
             <div>2 - Faible</div>
-            <div>10-30%</div>
+            <div>Peu probable</div>
         </div>
         <div class="probability-item prob-3">
             <div>3 - Moyenne</div>
-            <div>30-50%</div>
+            <div>Possible</div>
         </div>
         <div class="probability-item prob-4">
             <div>4 - Forte</div>
-            <div>50-70%</div>
+            <div>Probable</div>
         </div>
         <div class="probability-item prob-5">
             <div>5 - Très Forte</div>
-            <div>> 70%</div>
+            <div>Très probable</div>
         </div>
     </div>
 </div>
@@ -739,6 +786,12 @@
             </button>
             <button class="exercise-tab" onclick="showExercise(3)">
                 🌐 Exercice 3 - Site Web
+            </button>
+            <button class="exercise-tab" onclick="showExercise(4)">
+                🦊 Exercice 4 - Recensement
+            </button>
+            <button class="exercise-tab" onclick="showExercise(5)">
+                🚀 Exercice 5 - Projet libre
             </button>
         </div>
         
@@ -992,6 +1045,274 @@
         <div class="formula-box">
             Criticité = Probabilité × Impact
         </div>
+            </div>
+        </div>
+        
+        <div id="exercise4" class="exercise-content-wrapper">
+            <div class="exercise-summary">
+                <strong>Contexte :</strong> Application mobile de recensement de renards (Exercice guidé d'identification de risques)
+            </div>
+            <div class="exercise-container">
+                <div class="exercise-header">
+                    <div class="exercise-icon">🦊</div>
+                    <div class="exercise-title">Exercice 4 : Identification Guidée de Risques - App Renards</div>
+                </div>
+                
+                <div class="exercise-content">
+                    <strong>Mission :</strong> Vous devez identifier et évaluer les risques pour le développement d'une application mobile de recensement des renards dans une réserve naturelle.
+                </div>
+                
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Contexte du projet :</div>
+                    <ul>
+                        <li><strong>Client :</strong> Réserve naturelle des Vosges</li>
+                        <li><strong>Objectif :</strong> Recenser et suivre la population de renards</li>
+                        <li><strong>Utilisateurs :</strong> 15 gardes forestiers + 5 biologistes</li>
+                        <li><strong>Fonctionnalités :</strong> Géolocalisation, photos, base de données, rapports</li>
+                        <li><strong>Durée :</strong> 5 mois</li>
+                        <li><strong>Budget :</strong> 60 000 €</li>
+                        <li><strong>Contraintes :</strong> Utilisation en forêt (réseau limité)</li>
+                    </ul>
+                </div>
+                
+                <div class="scenario-box">
+                    <div class="scenario-title">🎯 Instructions guidées :</div>
+                    <p>Pour chaque catégorie ci-dessous, identifiez <strong>2 à 3 risques spécifiques</strong> et évaluez leur probabilité et impact :</p>
+                </div>
+                
+                <div class="risk-category-guide">
+                    <h4>🔧 1. Risques Techniques</h4>
+                    <div class="guide-hints">
+                        <p><strong>Indices :</strong> Pensez aux défis liés à :</p>
+                        <ul>
+                            <li>La géolocalisation en forêt</li>
+                            <li>La connectivité réseau limitée</li>
+                            <li>La synchronisation des données</li>
+                            <li>La qualité des photos en extérieur</li>
+                        </ul>
+                    </div>
+                    
+                    <h4>👥 2. Risques Humains</h4>
+                    <div class="guide-hints">
+                        <p><strong>Indices :</strong> Considérez :</p>
+                        <ul>
+                            <li>L'âge et l'expérience technologique des utilisateurs</li>
+                            <li>La formation nécessaire</li>
+                            <li>La résistance au changement</li>
+                            <li>La disponibilité des experts biologistes</li>
+                        </ul>
+                    </div>
+                    
+                    <h4>🌍 3. Risques Environnementaux</h4>
+                    <div class="guide-hints">
+                        <p><strong>Indices :</strong> Réfléchissez aux :</p>
+                        <ul>
+                            <li>Conditions météorologiques</li>
+                            <li>Durée de vie de la batterie en extérieur</li>
+                            <li>Résistance de l'équipement</li>
+                            <li>Saisonnalité des observations</li>
+                        </ul>
+                    </div>
+                    
+                    <h4>📊 4. Risques Projet</h4>
+                    <div class="guide-hints">
+                        <p><strong>Indices :</strong> Analysez :</p>
+                        <ul>
+                            <li>Les délais de développement</li>
+                            <li>Le budget limité</li>
+                            <li>Les changements de spécifications</li>
+                            <li>La validation par les biologistes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="formula-box">
+                    Criticité = Probabilité × Impact
+                </div>
+            </div>
+        </div>
+        
+        <div id="exercise5" class="exercise-content-wrapper">
+            <div class="exercise-summary">
+                <strong>Contexte :</strong> Projet libre - Identification autonome de risques
+            </div>
+            <div class="exercise-container">
+                <div class="exercise-header">
+                    <div class="exercise-icon">🚀</div>
+                    <div class="exercise-title">Exercice 5 : Identification Libre de Risques - Votre Projet</div>
+                </div>
+                
+                <div class="exercise-content">
+                    <strong>Mission :</strong> Choisissez un projet informatique de votre choix et identifiez de manière autonome les risques associés.
+                </div>
+                
+                <div class="scenario-box">
+                    <div class="scenario-title">💡 Suggestions de projets :</div>
+                    <ul>
+                        <li><strong>Application de covoiturage</strong> pour votre établissement</li>
+                        <li><strong>Plateforme de vente en ligne</strong> pour produits locaux</li>
+                        <li><strong>Système de réservation</strong> pour une salle de sport</li>
+                        <li><strong>Application de suivi</strong> de consommation énergétique</li>
+                        <li><strong>Site web de streaming</strong> pour cours en ligne</li>
+                        <li><strong>Application mobile</strong> de gestion de budget étudiant</li>
+                        <li><strong>Ou tout autre projet</strong> qui vous intéresse !</li>
+                    </ul>
+                </div>
+                
+                <div class="scenario-box">
+                    <div class="scenario-title">📋 Étapes à suivre :</div>
+                    <ol>
+                        <li><strong>Définissez votre projet :</strong> Objectif, utilisateurs, fonctionnalités principales</li>
+                        <li><strong>Fixez les contraintes :</strong> Durée, budget, équipe, technologies</li>
+                        <li><strong>Identifiez les risques :</strong> Minimum 8 risques variés</li>
+                        <li><strong>Évaluez chaque risque :</strong> Probabilité et impact</li>
+                        <li><strong>Proposez des mesures :</strong> Prévention ou mitigation</li>
+                        <li><strong>Priorisez :</strong> Classez par criticité décroissante</li>
+                    </ol>
+                </div>
+                
+                <div class="project-definition-box">
+                    <h4>🎯 Définition de votre projet :</h4>
+                    <table class="project-table">
+                        <tr>
+                            <td><strong>Nom du projet :</strong></td>
+                            <td>_________________________________</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Objectif principal :</strong></td>
+                            <td>_________________________________</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Utilisateurs cibles :</strong></td>
+                            <td>_________________________________</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Durée estimée :</strong></td>
+                            <td>_________________________________</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Budget approximatif :</strong></td>
+                            <td>_________________________________</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Taille de l'équipe :</strong></td>
+                            <td>_________________________________</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Technologies envisagées :</strong></td>
+                            <td>_________________________________</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <table class="calculation-table">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Risque Identifié</th>
+                            <th>Catégorie</th>
+                            <th>Probabilité (1-5)</th>
+                            <th>Impact (1-5)</th>
+                            <th>Criticité</th>
+                            <th>Mesure Préventive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>_____________________</td>
+                            <td>_________</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>?</td>
+                            <td>_____________________</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="formula-box">
+                    Criticité = Probabilité × Impact
+                </div>
+                
+                <div class="scenario-box">
+                    <div class="scenario-title">🏆 Bonus - Analyse de criticité :</div>
+                    <p>Classez vos risques par ordre de criticité décroissante et justifiez les 3 risques les plus critiques :</p>
+                    <ol>
+                        <li><strong>Risque le plus critique :</strong> ________________________</li>
+                        <li><strong>Justification :</strong> ________________________</li>
+                        <br>
+                        <li><strong>2ème risque :</strong> ________________________</li>
+                        <li><strong>Justification :</strong> ________________________</li>
+                        <br>
+                        <li><strong>3ème risque :</strong> ________________________</li>
+                        <li><strong>Justification :</strong> ________________________</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
@@ -1287,79 +1608,191 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="concept-section">
-    <h2 class="section-title">🔧 Outils et Techniques</h2>
+    <h2 class="section-title">🔧 Outils et Techniques de Gestion des Risques</h2>
+    
+    <div class="definition-box">
+        <div class="definition-title">🎯 Approche Méthodologique</div>
+        <div class="definition-content">
+            La gestion des risques s'appuie sur une <strong>combinaison d'outils numériques</strong> et de <strong>techniques d'analyse</strong> pour identifier, évaluer et traiter efficacement les risques.
+        </div>
+    </div>
+
+    <h3 style="color: #c0392b; font-size: 1.8rem; margin: 2rem 0 1rem 0;">💻 Outils Numériques Recommandés</h3>
     
     <div class="risk-grid">
         <div class="risk-card">
             <div class="risk-header">
-                <div class="risk-icon">🧠</div>
+                <div class="risk-icon">📊</div>
                 <div>
-                    <div class="risk-name">Brainstorming</div>
+                    <div class="risk-name">Microsoft Project / GanttProject</div>
+                    <div class="risk-level risk-level-high">Planification</div>
                 </div>
             </div>
             <div class="risk-description">
-                Session créative pour identifier les risques avec toute l'équipe.
+                Outils de gestion de projet intégrant la gestion des risques avec matrices, registres et suivi automatisé.
             </div>
-            <ul class="risk-impacts">
-                <li>Diversité des perspectives</li>
-                <li>Créativité collective</li>
-                <li>Engagement de l'équipe</li>
-                <li>Identification exhaustive</li>
-            </ul>
+            <div class="mitigation-box">
+                <div class="mitigation-title">✅ Fonctionnalités clés :</div>
+                • Registre des risques intégré<br>
+                • Matrices de probabilité/impact<br>
+                • Alertes automatiques<br>
+                • Rapports de suivi<br>
+                • Intégration planning projet
+            </div>
         </div>
         
         <div class="risk-card">
             <div class="risk-header">
                 <div class="risk-icon">🎯</div>
                 <div>
-                    <div class="risk-name">Analyse SWOT</div>
+                    <div class="risk-name">Trello / Notion / Monday</div>
+                    <div class="risk-level risk-level-medium">Collaboration</div>
                 </div>
             </div>
             <div class="risk-description">
-                Analyse des Forces, Faiblesses, Opportunités et Menaces du projet.
+                Plateformes collaboratives pour créer des tableaux de bord visuels de gestion des risques avec l'équipe.
             </div>
-            <ul class="risk-impacts">
-                <li>Vision globale du projet</li>
-                <li>Identification des menaces</li>
-                <li>Opportunités à saisir</li>
-                <li>Analyse structurée</li>
-            </ul>
-        </div>
-        
-        <div class="risk-card">
-            <div class="risk-header">
-                <div class="risk-icon">🔍</div>
-                <div>
-                    <div class="risk-name">Analyse des Causes</div>
-                </div>
+            <div class="mitigation-box">
+                <div class="mitigation-title">✅ Avantages :</div>
+                • Interface intuitive<br>
+                • Collaboration temps réel<br>
+                • Templates personnalisables<br>
+                • Notifications automatiques<br>
+                • Accessibilité mobile
             </div>
-            <div class="risk-description">
-                Technique des "5 Pourquoi" pour identifier les causes racines des risques.
-            </div>
-            <ul class="risk-impacts">
-                <li>Identification des causes profondes</li>
-                <li>Prévention efficace</li>
-                <li>Solutions durables</li>
-                <li>Apprentissage organisationnel</li>
-            </ul>
         </div>
         
         <div class="risk-card">
             <div class="risk-header">
                 <div class="risk-icon">📈</div>
                 <div>
-                    <div class="risk-name">Simulation Monte Carlo</div>
+                    <div class="risk-name">Excel / Google Sheets</div>
+                    <div class="risk-level risk-level-low">Analyse</div>
                 </div>
             </div>
             <div class="risk-description">
-                Modélisation probabiliste pour évaluer l'impact cumulé des risques.
+                Tableurs pour créer des matrices personnalisées, calculer automatiquement les criticités et générer des graphiques.
             </div>
-            <ul class="risk-impacts">
-                <li>Analyse quantitative</li>
-                <li>Scénarios multiples</li>
-                <li>Probabilités d'occurrence</li>
-                <li>Aide à la décision</li>
-            </ul>
+            <div class="mitigation-box">
+                <div class="mitigation-title">✅ Templates disponibles :</div>
+                • Matrice probabilité/impact<br>
+                • Registre des risques<br>
+                • Tableaux de bord KPI<br>
+                • Graphiques de tendances<br>
+                • Formules de calcul automatisées
+            </div>
+        </div>
+        
+        <div class="risk-card">
+            <div class="risk-header">
+                <div class="risk-icon">🔍</div>
+                <div>
+                    <div class="risk-name">JIRA / Azure DevOps</div>
+                    <div class="risk-level risk-level-high">Développement</div>
+                </div>
+            </div>
+            <div class="risk-description">
+                Outils spécialisés pour les projets de développement avec gestion intégrée des risques techniques et fonctionnels.
+            </div>
+            <div class="mitigation-box">
+                <div class="mitigation-title">✅ Spécificités IT :</div>
+                • Liens avec les bugs/incidents<br>
+                • Traçabilité des exigences<br>
+                • Métriques de qualité code<br>
+                • Intégration CI/CD<br>
+                • Rapports automatisés
+            </div>
         </div>
     </div>
+
+    <h3 style="color: #c0392b; font-size: 1.8rem; margin: 2rem 0 1rem 0;">🧠 Techniques d'Analyse Essentielles</h3>
+    
+    <div class="risk-grid">
+        <div class="risk-card">
+            <div class="risk-header">
+                <div class="risk-icon">💭</div>
+                <div>
+                    <div class="risk-name">Brainstorming Structuré</div>
+                    <div class="risk-level risk-level-medium">Identification</div>
+                </div>
+            </div>
+            <div class="risk-description">
+                Session créative organisée pour identifier exhaustivement les risques avec toute l'équipe projet.
+            </div>
+            <div class="mitigation-box">
+                <div class="mitigation-title">🎯 Méthode recommandée :</div>
+                1. <strong>Préparation :</strong> Définir les catégories de risques<br>
+                2. <strong>Animation :</strong> Utiliser des techniques créatives<br>
+                3. <strong>Collecte :</strong> Noter tous les risques sans jugement<br>
+                4. <strong>Consolidation :</strong> Regrouper et prioriser<br>
+                5. <strong>Validation :</strong> Confirmer avec les experts
+            </div>
+        </div>
+        
+        <div class="risk-card">
+            <div class="risk-header">
+                <div class="risk-icon">⚖️</div>
+                <div>
+                    <div class="risk-name">Analyse SWOT Projet</div>
+                    <div class="risk-level risk-level-medium">Stratégique</div>
+                </div>
+            </div>
+            <div class="risk-description">
+                Analyse des Forces, Faiblesses, Opportunités et Menaces spécifique au contexte du projet informatique.
+            </div>
+            <div class="mitigation-box">
+                <div class="mitigation-title">🔍 Focus BTS SIO :</div>
+                • <strong>Forces :</strong> Compétences techniques équipe<br>
+                • <strong>Faiblesses :</strong> Manque d'expérience, ressources<br>
+                • <strong>Opportunités :</strong> Technologies émergentes<br>
+                • <strong>Menaces :</strong> Évolution rapide du marché<br>
+                • <strong>Risques :</strong> Dérivés des faiblesses/menaces
+            </div>
+        </div>
+        
+        <div class="risk-card">
+            <div class="risk-header">
+                <div class="risk-icon">🔎</div>
+                <div>
+                    <div class="risk-name">Méthode des 5 Pourquoi</div>
+                    <div class="risk-level risk-level-low">Analyse</div>
+                </div>
+            </div>
+            <div class="risk-description">
+                Technique d'analyse des causes racines pour comprendre l'origine profonde des risques identifiés.
+            </div>
+            <div class="mitigation-box">
+                <div class="mitigation-title">📝 Exemple pratique :</div>
+                <strong>Risque :</strong> Retard de livraison<br>
+                <strong>Pourquoi 1 :</strong> Code non testé<br>
+                <strong>Pourquoi 2 :</strong> Pas de plan de tests<br>
+                <strong>Pourquoi 3 :</strong> Méconnaissance des bonnes pratiques<br>
+                <strong>Pourquoi 4 :</strong> Formation insuffisante<br>
+                <strong>Pourquoi 5 :</strong> Budget formation non prévu
+            </div>
+        </div>
+        
+        <div class="risk-card">
+            <div class="risk-header">
+                <div class="risk-icon">🎲</div>
+                <div>
+                    <div class="risk-name">Analyse de Scénarios</div>
+                    <div class="risk-level risk-level-high">Simulation</div>
+                </div>
+            </div>
+            <div class="risk-description">
+                Modélisation de différents scénarios (optimiste, réaliste, pessimiste) pour évaluer l'impact des risques.
+            </div>
+            <div class="mitigation-box">
+                <div class="mitigation-title">📊 Scénarios types :</div>
+                • <strong>Optimiste :</strong> Aucun risque majeur<br>
+                • <strong>Réaliste :</strong> Risques moyens attendus<br>
+                • <strong>Pessimiste :</strong> Cumul de risques élevés<br>
+                • <strong>Catastrophe :</strong> Risques critiques simultanés<br>
+                • <strong>Analyse :</strong> Probabilités et impacts
+            </div>
+        </div>
+    </div>
+
+    
 </div>
