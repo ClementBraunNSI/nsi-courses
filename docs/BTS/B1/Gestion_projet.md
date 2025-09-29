@@ -187,7 +187,7 @@
 }
 
 .methodology-v {
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg,rgb(238, 161, 29),rgb(234, 161, 2));
 }
 
 .methodology-agile {
@@ -319,17 +319,56 @@
 .git-title {
     color: #3498db;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 1.2rem;
     text-align: center;
 }
 
+.git-step {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(52, 73, 94, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.git-step-title {
+    color: #3498db;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .git-command {
     background: #34495e;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     border-radius: 6px;
+    margin: 0.3rem 0;
+    border-left: 3px solid #2ecc71;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #2ecc71;
+}
+
+.git-comment {
+    color: #95a5a6;
+    font-style: italic;
+    font-size: 0.85rem;
+    margin: 0.2rem 0;
+    padding-left: 1rem;
+}
+
+.git-note {
+    background: rgba(241, 196, 15, 0.1);
+    border-left: 3px solid #f1c40f;
+    padding: 0.7rem 1rem;
     margin: 0.5rem 0;
-    border-left: 3px solid #3498db;
+    border-radius: 4px;
+    color: #f1c40f;
+    font-size: 0.85rem;
 }
 
 @media (max-width: 768px) {
@@ -781,12 +820,6 @@
         </div>
         
         <div class="process-card">
-            <div class="process-number">🚀</div>
-            <div class="process-name">DevOps</div>
-            <div class="process-description">Intégration des équipes développement et opérations pour l'automatisation</div>
-        </div>
-        
-        <div class="process-card">
             <div class="process-number">📐</div>
             <div class="process-name">Cycle en V</div>
             <div class="process-description">Modèle séquentiel avec phases de test correspondant aux phases de développement</div>
@@ -845,28 +878,50 @@
     <div class="git-workflow">
         <div class="git-title">🔧 Workflow Git Standard</div>
         
-        <div class="git-command"># Cloner le repository</div>
-        <div class="git-command">git clone https://github.com/username/project.git</div>
+        <div class="git-step">
+            <div class="git-step-title">📥 1. Initialisation du projet</div>
+            <div class="git-comment">Cloner le repository depuis GitHub/GitLab</div>
+            <div class="git-command">git clone https://github.com/username/project.git</div>
+            <div class="git-command">cd project</div>
+        </div>
         
-        <div class="git-command"># Créer une nouvelle branche pour une fonctionnalité</div>
-        <div class="git-command">git checkout -b feature/nouvelle-fonctionnalite</div>
+        <div class="git-step">
+            <div class="git-step-title">🌿 2. Création d'une branche de fonctionnalité</div>
+            <div class="git-comment">Créer une branche dédiée pour développer une nouvelle fonctionnalité</div>
+            <div class="git-command">git checkout -b feature/nouvelle-fonctionnalite</div>
+            <div class="git-note">💡 Convention de nommage : feature/, bugfix/, hotfix/</div>
+        </div>
         
-        <div class="git-command"># Ajouter les modifications</div>
-        <div class="git-command">git add .</div>
+        <div class="git-step">
+            <div class="git-step-title">💻 3. Développement et commits</div>
+            <div class="git-comment">Développer la fonctionnalité et commiter régulièrement</div>
+            <div class="git-command">git add .</div>
+            <div class="git-command">git commit -m "feat: ajout de la fonctionnalité X"</div>
+            <div class="git-note">📝 Utiliser les Conventional Commits : feat, fix, docs, style, refactor, test</div>
+        </div>
         
-        <div class="git-command"># Commiter avec un message descriptif</div>
-        <div class="git-command">git commit -m "feat: ajout de la fonctionnalité X"</div>
+        <div class="git-step">
+            <div class="git-step-title">🚀 4. Publication de la branche</div>
+            <div class="git-comment">Pousser la branche vers le repository distant</div>
+            <div class="git-command">git push origin feature/nouvelle-fonctionnalite</div>
+        </div>
         
-        <div class="git-command"># Pousser la branche vers le repository distant</div>
-        <div class="git-command">git push origin feature/nouvelle-fonctionnalite</div>
+        <div class="git-step">
+            <div class="git-step-title">🔍 5. Demande de révision (Pull Request)</div>
+            <div class="git-comment">Créer une Pull Request via l'interface web</div>
+            <div class="git-note">🌐 Via GitHub, GitLab ou Azure DevOps</div>
+            <div class="git-note">👥 Assigner des reviewers et ajouter une description détaillée</div>
+        </div>
         
-        <div class="git-command"># Créer une Pull Request pour review</div>
-        <div class="git-command"># Via l'interface GitHub/GitLab</div>
-        
-        <div class="git-command"># Après validation, merger dans main</div>
-        <div class="git-command">git checkout main</div>
-        <div class="git-command">git pull origin main</div>
-        <div class="git-command">git merge feature/nouvelle-fonctionnalite</div>
+        <div class="git-step">
+            <div class="git-step-title">✅ 6. Intégration dans la branche principale</div>
+            <div class="git-comment">Après validation, merger dans main/master</div>
+            <div class="git-command">git checkout main</div>
+            <div class="git-command">git pull origin main</div>
+            <div class="git-command">git merge feature/nouvelle-fonctionnalite</div>
+            <div class="git-command">git branch -d feature/nouvelle-fonctionnalite</div>
+            <div class="git-note">🧹 Supprimer la branche locale après merge</div>
+        </div>
     </div>
     
     <div class="concept-grid">
@@ -921,9 +976,9 @@
     <div class="concept-grid">
         <div class="concept-card">
             <div class="concept-icon">📊</div>
-            <div class="concept-name">Indicateurs KPI</div>
+            <div class="concept-name">Indicateurs KPI (Key Performance Indicator)</div>
             <div class="concept-description">
-                Métriques de performance : vélocité, taux de défauts, respect des délais.
+                Métriques de performance : vélocité (nombre de points d'un sprint), taux de défauts et de réussites, respect des délais (Time to Market).
             </div>
         </div>
         

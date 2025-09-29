@@ -1,0 +1,263 @@
+@model AccueilViewModel
+@{
+    ViewData["Title"] = "Accueil";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="jumbotron bg-primary text-white rounded p-4 mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4">
+                        <i class="fas fa-paw me-3"></i>
+                        Bienvenue à FoxShelter
+                    </h1>
+                    <p class="lead">Refuge spécialisé dans la protection et le soin des renards</p>
+                    <p>Notre mission est de sauver, soigner et réhabiliter les renards en détresse, tout en sensibilisant le public à leur protection.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-fox" style="font-size: 8rem; opacity: 0.3;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Statistiques principales -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">@Model.Statistiques.NombreTotal</h4>
+                        <p class="card-text">Renards au refuge</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-fox fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">@Model.Statistiques.NombreAdoptes</h4>
+                        <p class="card-text">Adoptés ce mois</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-heart fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">@Model.RenardsUrgents.Count</h4>
+                        <p class="card-text">Cas urgents</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-exclamation-triangle fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">@Model.Statistiques.PourcentageAdoptes.ToString("F1")%</h4>
+                        <p class="card-text">Taux d'adoption</p>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-chart-line fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Actions rapides -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-bolt me-2"></i>
+                    Actions rapides
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 mb-2">
+                        <a asp-controller="Renard" asp-action="Create" class="btn btn-success btn-lg w-100">
+                            <i class="fas fa-plus me-2"></i>
+                            Nouveau renard
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a asp-controller="Renard" asp-action="Urgents" class="btn btn-danger btn-lg w-100">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            Cas urgents
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a asp-controller="Renard" asp-action="SuiviVeterinaire" class="btn btn-info btn-lg w-100">
+                            <i class="fas fa-stethoscope me-2"></i>
+                            Suivi vétérinaire
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a asp-controller="Renard" asp-action="Statistiques" class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            Statistiques
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Renards urgents -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-danger text-white">
+                <h6 class="mb-0">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    Cas urgents
+                </h6>
+            </div>
+            <div class="card-body">
+                @if (Model.RenardsUrgents.Any())
+                {
+                    @foreach (var renard in Model.RenardsUrgents)
+                    {
+                        <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+                            <div>
+                                <strong>@renard.Nom</strong><br>
+                                <small class="text-muted">@renard.EtatSante</small>
+                            </div>
+                            <a asp-controller="Renard" asp-action="Details" asp-route-id="@renard.Id" 
+                               class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    }
+                    <div class="text-center mt-3">
+                        <a asp-controller="Renard" asp-action="Urgents" class="btn btn-danger btn-sm">
+                            Voir tous les cas urgents
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted text-center">Aucun cas urgent actuellement</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Nouveaux arrivants -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-warning text-white">
+                <h6 class="mb-0">
+                    <i class="fas fa-star me-2"></i>
+                    Nouveaux arrivants (7 derniers jours)
+                </h6>
+            </div>
+            <div class="card-body">
+                @if (Model.NouveauxArrivants.Any())
+                {
+                    @foreach (var renard in Model.NouveauxArrivants)
+                    {
+                        <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+                            <div>
+                                <strong>@renard.Nom</strong><br>
+                                <small class="text-muted">Arrivé le @renard.DateArrivee.ToString("dd/MM/yyyy")</small>
+                            </div>
+                            <a asp-controller="Renard" asp-action="Details" asp-route-id="@renard.Id" 
+                               class="btn btn-sm btn-outline-warning">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    }
+                    <div class="text-center mt-3">
+                        <a asp-controller="Renard" asp-action="NouveauxArrivants" class="btn btn-warning btn-sm">
+                            Voir tous les nouveaux arrivants
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted text-center">Aucun nouveau renard cette semaine</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Suivi vétérinaire -->
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-info text-white">
+                <h6 class="mb-0">
+                    <i class="fas fa-stethoscope me-2"></i>
+                    Suivi vétérinaire requis
+                </h6>
+            </div>
+            <div class="card-body">
+                @if (Model.RenardsASuivre.Any())
+                {
+                    @foreach (var renard in Model.RenardsASuivre)
+                    {
+                        <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+                            <div>
+                                <strong>@renard.Nom</strong><br>
+                                <small class="text-muted">Suivi nécessaire</small>
+                            </div>
+                            <a asp-controller="Renard" asp-action="Details" asp-route-id="@renard.Id" 
+                               class="btn btn-sm btn-outline-info">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    }
+                    <div class="text-center mt-3">
+                        <a asp-controller="Renard" asp-action="SuiviVeterinaire" class="btn btn-info btn-sm">
+                            Voir tous les suivis
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted text-center">Tous les suivis sont à jour</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Actualisation automatique des données toutes les 5 minutes
+        setInterval(function() {
+            $.get('@Url.Action("ApiTableauBord", "Home")', function(data) {
+                if (!data.erreur) {
+                    // Mettre à jour les statistiques si nécessaire
+                    console.log('Données mises à jour:', data.DerniereMiseAJour);
+                }
+            });
+        }, 300000); // 5 minutes
+    </script>
+}
