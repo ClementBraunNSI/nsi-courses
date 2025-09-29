@@ -77,10 +77,10 @@
 
 .matrix-grid {
     display: grid;
-    grid-template-columns: 100px repeat(5, 1fr);
-    grid-template-rows: 50px repeat(5, 60px);
+    grid-template-columns: 120px repeat(5, 1fr);
+    grid-template-rows: 60px repeat(5, 60px);
     gap: 2px;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
@@ -92,6 +92,15 @@
     justify-content: center;
     font-weight: 600;
     border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.matrix-header:first-child {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    font-size: 0.8rem;
+    padding: 0.5rem;
 }
 
 .matrix-label {
@@ -523,6 +532,70 @@
     color: #8e44ad;
     border: 1px solid #8e44ad;
 }
+
+/* Styles pour la navigation des exercices */
+.exercise-navigation {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-tabs {
+    display: flex;
+    border-bottom: 2px solid #ecf0f1;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+}
+
+.exercise-tab {
+    background: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #7f8c8d;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    min-width: 150px;
+}
+
+.exercise-tab:hover {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.05);
+}
+
+.exercise-tab.active {
+    color: #2980b9;
+    border-bottom-color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
+}
+
+.exercise-content-wrapper {
+    display: none;
+}
+
+.exercise-content-wrapper.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.exercise-summary {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid #3498db;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
 </style>
 
 <div class="course-header">
@@ -656,7 +729,24 @@
 <div class="td-section">
     <h2 class="td-title">📝 Travaux Dirigés : Calcul de Risques</h2>
     
-    <div class="exercise-container">
+    <div class="exercise-navigation">
+        <div class="exercise-tabs">
+            <button class="exercise-tab active" onclick="showExercise(1)">
+                🎯 Exercice 1 - E-commerce
+            </button>
+            <button class="exercise-tab" onclick="showExercise(2)">
+                📱 Exercice 2 - App Mobile
+            </button>
+            <button class="exercise-tab" onclick="showExercise(3)">
+                🌐 Exercice 3 - Site Web
+            </button>
+        </div>
+        
+        <div id="exercise1" class="exercise-content-wrapper active">
+            <div class="exercise-summary">
+                <strong>Contexte :</strong> Développement d'une plateforme e-commerce (6 mois, 150k€, 8 développeurs)
+            </div>
+            <div class="exercise-container">
         <div class="exercise-header">
             <div class="exercise-icon">🎯</div>
             <div class="exercise-title">Exercice 1 : Évaluation de Risques Projet E-commerce</div>
@@ -728,72 +818,14 @@
         <div class="formula-box">
             Criticité = Probabilité × Impact
         </div>
-        
-        <div class="solution-box">
-            <div class="solution-title">Solution Exercice 1</div>
-            
-            <table class="calculation-table">
-                <thead>
-                    <tr>
-                        <th>Risque Identifié</th>
-                        <th>Probabilité</th>
-                        <th>Impact</th>
-                        <th>Criticité</th>
-                        <th>Niveau</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Retard de livraison des API externes</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>12</td>
-                        <td><span class="risk-level-indicator risk-level-medium">Moyen</span></td>
-                    </tr>
-                    <tr>
-                        <td>Départ d'un développeur senior</td>
-                        <td>2</td>
-                        <td>4</td>
-                        <td>8</td>
-                        <td><span class="risk-level-indicator risk-level-low">Faible</span></td>
-                    </tr>
-                    <tr>
-                        <td>Problème de performance sous charge</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>20</td>
-                        <td><span class="risk-level-indicator risk-level-critical">Critique</span></td>
-                    </tr>
-                    <tr>
-                        <td>Changement des exigences client</td>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>12</td>
-                        <td><span class="risk-level-indicator risk-level-medium">Moyen</span></td>
-                    </tr>
-                    <tr>
-                        <td>Faille de sécurité découverte</td>
-                        <td>2</td>
-                        <td>5</td>
-                        <td>10</td>
-                        <td><span class="risk-level-indicator risk-level-medium">Moyen</span></td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p><strong>Échelle de criticité :</strong></p>
-            <ul>
-                <li>1-6 : <span class="risk-level-indicator risk-level-low">Faible</span></li>
-                <li>7-12 : <span class="risk-level-indicator risk-level-medium">Moyen</span></li>
-                <li>13-20 : <span class="risk-level-indicator risk-level-high">Élevé</span></li>
-                <li>21-25 : <span class="risk-level-indicator risk-level-critical">Critique</span></li>
-            </ul>
-            
-            <p><strong>Priorité d'action :</strong> Le risque de performance sous charge (criticité 20) doit être traité en priorité absolue.</p>
+            </div>
         </div>
-    </div>
-    
-    <div class="exercise-container">
+        
+        <div id="exercise2" class="exercise-content-wrapper">
+            <div class="exercise-summary">
+                <strong>Contexte :</strong> Application mobile de gestion de tâches (4 mois, 80k€, équipe mixte)
+            </div>
+            <div class="exercise-container">
         <div class="exercise-header">
             <div class="exercise-icon">📱</div>
             <div class="exercise-title">Exercice 2 : Évaluation de Risques Application Mobile</div>
@@ -873,9 +905,14 @@
         <div class="formula-box">
             Criticité = Probabilité × Impact
         </div>
-    </div>
-    
-    <div class="exercise-container">
+            </div>
+        </div>
+        
+        <div id="exercise3" class="exercise-content-wrapper">
+            <div class="exercise-summary">
+                <strong>Contexte :</strong> Refonte site web universitaire (8 mois, 200k€, 25k utilisateurs)
+            </div>
+            <div class="exercise-container">
         <div class="exercise-header">
             <div class="exercise-icon">🌐</div>
             <div class="exercise-title">Exercice 3 : Évaluation de Risques Site Web Institutionnel</div>
@@ -955,8 +992,39 @@
         <div class="formula-box">
             Criticité = Probabilité × Impact
         </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<script>
+function showExercise(exerciseNumber) {
+    // Masquer tous les exercices en retirant la classe active
+    const exercises = document.querySelectorAll('.exercise-content-wrapper');
+    exercises.forEach(ex => ex.classList.remove('active'));
+    
+    // Retirer la classe active de tous les onglets
+    const tabs = document.querySelectorAll('.exercise-tab');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Afficher l'exercice sélectionné en ajoutant la classe active
+    const selectedExercise = document.getElementById('exercise' + exerciseNumber);
+    if (selectedExercise) {
+        selectedExercise.classList.add('active');
+    }
+    
+    // Activer l'onglet correspondant
+    const selectedTab = document.querySelector(`[onclick="showExercise(${exerciseNumber})"]`);
+    if (selectedTab) {
+        selectedTab.classList.add('active');
+    }
+}
+
+// Afficher l'exercice 1 par défaut
+document.addEventListener('DOMContentLoaded', function() {
+    showExercise(1);
+});
+</script>
 
 <div class="concept-section">
     <h2 class="section-title">🚨 Risques Typiques en Projet Informatique</h2>
