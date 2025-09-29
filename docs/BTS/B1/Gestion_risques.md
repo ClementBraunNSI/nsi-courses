@@ -795,186 +795,165 @@
     
     <div class="exercise-container">
         <div class="exercise-header">
-            <div class="exercise-icon">🔍</div>
-            <div class="exercise-title">Exercice 2 : Analyse Comparative de Risques</div>
+            <div class="exercise-icon">📱</div>
+            <div class="exercise-title">Exercice 2 : Évaluation de Risques Application Mobile</div>
         </div>
         
         <div class="exercise-content">
-            Comparez deux projets différents et déterminez lequel présente le profil de risque le plus élevé.
+            Vous dirigez le développement d'une application mobile de gestion de tâches pour une startup. Évaluez les risques suivants et calculez leur criticité.
         </div>
         
         <div class="scenario-box">
-            <div class="scenario-title">🏢 Projet A : Application Mobile Interne</div>
+            <div class="scenario-title">📋 Contexte du projet :</div>
             <ul>
-                <li>Équipe expérimentée (5 ans d'expérience moyenne)</li>
-                <li>Technologies maîtrisées</li>
-                <li>Délais flexibles</li>
-                <li>Budget confortable</li>
-            </ul>
-        </div>
-        
-        <div class="scenario-box">
-            <div class="scenario-title">🚀 Projet B : Plateforme IoT Innovante</div>
-            <ul>
-                <li>Équipe junior (1 an d'expérience moyenne)</li>
-                <li>Technologies émergentes</li>
-                <li>Délais serrés</li>
-                <li>Budget limité</li>
+                <li><strong>Durée :</strong> 4 mois</li>
+                <li><strong>Budget :</strong> 80 000 €</li>
+                <li><strong>Équipe :</strong> 5 développeurs (3 juniors, 2 seniors)</li>
+                <li><strong>Plateformes :</strong> iOS et Android</li>
+                <li><strong>Objectif :</strong> 10 000 utilisateurs en 6 mois</li>
             </ul>
         </div>
         
         <table class="calculation-table">
             <thead>
                 <tr>
-                    <th>Catégorie de Risque</th>
-                    <th>Projet A (P×I)</th>
-                    <th>Projet B (P×I)</th>
-                    <th>Différence</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Risques techniques</td>
-                    <td>2×2 = 4</td>
-                    <td>4×4 = 16</td>
-                    <td>+12</td>
-                </tr>
-                <tr>
-                    <td>Risques humains</td>
-                    <td>1×3 = 3</td>
-                    <td>4×4 = 16</td>
-                    <td>+13</td>
-                </tr>
-                <tr>
-                    <td>Risques planning</td>
-                    <td>2×2 = 4</td>
-                    <td>4×5 = 20</td>
-                    <td>+16</td>
-                </tr>
-                <tr>
-                    <td>Risques budgétaires</td>
-                    <td>1×2 = 2</td>
-                    <td>3×4 = 12</td>
-                    <td>+10</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>13</strong></td>
-                    <td><strong>64</strong></td>
-                    <td><strong>+51</strong></td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <div class="solution-box">
-            <div class="solution-title">Analyse Exercice 2</div>
-            <p><strong>Conclusion :</strong> Le Projet B présente un profil de risque significativement plus élevé (64 vs 13).</p>
-            
-            <p><strong>Recommandations pour le Projet B :</strong></p>
-            <ul>
-                <li>🎓 Formation intensive de l'équipe sur les nouvelles technologies</li>
-                <li>⏰ Révision du planning avec des marges de sécurité</li>
-                <li>👥 Renforcement de l'équipe avec des seniors</li>
-                <li>💰 Négociation d'un budget supplémentaire ou réduction du scope</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="exercise-container">
-        <div class="exercise-header">
-            <div class="exercise-icon">⚖️</div>
-            <div class="exercise-title">Exercice 3 : Calcul de Risque Résiduel</div>
-        </div>
-        
-        <div class="exercise-content">
-            Après mise en place de mesures de mitigation, calculez le risque résiduel.
-        </div>
-        
-        <div class="scenario-box">
-            <div class="scenario-title">🎯 Risque Initial : Perte de données client</div>
-            <ul>
-                <li><strong>Probabilité initiale :</strong> 3/5 (Moyenne)</li>
-                <li><strong>Impact initial :</strong> 5/5 (Critique)</li>
-                <li><strong>Criticité initiale :</strong> 15</li>
-            </ul>
-        </div>
-        
-        <div class="scenario-box">
-            <div class="scenario-title">🛡️ Mesures de Mitigation Mises en Place</div>
-            <ul>
-                <li>✅ Sauvegarde automatique quotidienne (-1 probabilité)</li>
-                <li>✅ Chiffrement des données (-1 impact)</li>
-                <li>✅ Système de monitoring 24/7 (-1 probabilité)</li>
-                <li>✅ Plan de récupération d'urgence (-1 impact)</li>
-            </ul>
-        </div>
-        
-        <table class="calculation-table">
-            <thead>
-                <tr>
-                    <th>Étape</th>
-                    <th>Probabilité</th>
-                    <th>Impact</th>
+                    <th>Risque Identifié</th>
+                    <th>Probabilité (1-5)</th>
+                    <th>Impact (1-5)</th>
                     <th>Criticité</th>
-                    <th>Statut</th>
+                    <th>Niveau</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Risque initial</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>15</td>
-                    <td><span class="risk-level-indicator risk-level-high">Élevé</span></td>
-                </tr>
-                <tr>
-                    <td>Après sauvegardes</td>
+                    <td>Rejet de l'app par l'App Store</td>
                     <td>2</td>
                     <td>5</td>
-                    <td>10</td>
-                    <td><span class="risk-level-indicator risk-level-medium">Moyen</span></td>
+                    <td>?</td>
+                    <td>?</td>
                 </tr>
                 <tr>
-                    <td>Après chiffrement</td>
-                    <td>2</td>
+                    <td>Problèmes de compatibilité entre versions iOS/Android</td>
                     <td>4</td>
-                    <td>8</td>
-                    <td><span class="risk-level-indicator risk-level-low">Faible</span></td>
-                </tr>
-                <tr>
-                    <td>Après monitoring</td>
-                    <td>1</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td><span class="risk-level-indicator risk-level-low">Faible</span></td>
-                </tr>
-                <tr>
-                    <td><strong>Risque résiduel</strong></td>
-                    <td>1</td>
                     <td>3</td>
-                    <td><strong>3</strong></td>
-                    <td><span class="risk-level-indicator risk-level-low">Faible</span></td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Manque d'expérience de l'équipe en développement mobile</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Changement des guidelines des stores</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Problèmes de performance sur anciens appareils</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Concurrence avec une app similaire lancée avant</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>?</td>
+                    <td>?</td>
                 </tr>
             </tbody>
         </table>
         
         <div class="formula-box">
-            Efficacité de la mitigation = (Risque Initial - Risque Résiduel) / Risque Initial × 100
+            Criticité = Probabilité × Impact
+        </div>
+    </div>
+    
+    <div class="exercise-container">
+        <div class="exercise-header">
+            <div class="exercise-icon">🌐</div>
+            <div class="exercise-title">Exercice 3 : Évaluation de Risques Site Web Institutionnel</div>
         </div>
         
-        <div class="solution-box">
-            <div class="solution-title">Résultats Exercice 3</div>
-            <p><strong>Risque résiduel :</strong> 3 (Faible)</p>
-            <p><strong>Réduction du risque :</strong> 15 → 3 = -12 points</p>
-            <p><strong>Efficacité de la mitigation :</strong> (15-3)/15 × 100 = 80%</p>
-            
-            <p><strong>Interprétation :</strong></p>
+        <div class="exercise-content">
+            Vous êtes responsable de la refonte du site web d'une université. Analysez les risques suivants et calculez leur criticité.
+        </div>
+        
+        <div class="scenario-box">
+            <div class="scenario-title">📋 Contexte du projet :</div>
             <ul>
-                <li>✅ Excellente réduction du risque (80%)</li>
-                <li>✅ Risque résiduel acceptable (niveau faible)</li>
-                <li>✅ Mesures de mitigation très efficaces</li>
-                <li>🎯 Le risque peut être accepté en l'état</li>
+                <li><strong>Durée :</strong> 8 mois</li>
+                <li><strong>Budget :</strong> 200 000 €</li>
+                <li><strong>Équipe :</strong> 6 développeurs + 2 designers</li>
+                <li><strong>Utilisateurs :</strong> 25 000 étudiants et 2 000 enseignants</li>
+                <li><strong>Contrainte :</strong> Mise en ligne avant la rentrée</li>
             </ul>
+        </div>
+        
+        <table class="calculation-table">
+            <thead>
+                <tr>
+                    <th>Risque Identifié</th>
+                    <th>Probabilité (1-5)</th>
+                    <th>Impact (1-5)</th>
+                    <th>Criticité</th>
+                    <th>Niveau</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Retard dans la migration des données existantes</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Non-conformité aux normes d'accessibilité</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Surcharge du serveur lors de la rentrée</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Résistance au changement des utilisateurs</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Problèmes d'intégration avec le système d'information</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td>Attaque de sécurité pendant la migration</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="formula-box">
+            Criticité = Probabilité × Impact
         </div>
     </div>
 </div>
