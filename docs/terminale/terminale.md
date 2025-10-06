@@ -601,9 +601,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="chapter-item">
                             <div class="chapter-title">Concepts avancés</div>
                             <div class="chapter-links">
-                                <a href="../II-Programmation/Cours/Cours_1/" class="chapter-link">🔄 Récursivité</a>
-                                <a href="../II-Programmation/Cours/Cours_2/" class="chapter-link">🏗️ POO</a>
-                                <a href="../II-Programmation/Cours/Cours_3/" class="chapter-link">📦 Modularité</a>
+                                <a href="../VI-Algorithmique/Exercices/Fiche_exercices_recursivite" class="chapter-link">🔄 Éxercices Récursivité</a>
                             </div>
                         </div>
                         <div class="chapter-item">
