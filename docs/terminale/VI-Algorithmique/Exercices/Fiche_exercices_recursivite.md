@@ -369,27 +369,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="solution-wrapper">
             <div class="solution">
                 <pre><code class="language-python"># Cas terminal : 0! = 1
-# Cas général : n! = n × (n-1)!
+# Cas récursif : n! = n × (n-1)!
 
-def factorielle(n):
-    """Calcule la factorielle de n de manière récursive"""
-    # Cas terminal
+def factorielle(n: int) -> int:
     if n == 0:
         return 1
-    
-    # Cas général : appel récursif
-    return n * factorielle(n - 1)
-
-# Tests
-print(f"5! = {factorielle(5)}")  # 120
-print(f"0! = {factorielle(0)}")  # 1
-
-# Trace d'exécution pour factorielle(3) :
-# factorielle(3) = 3 * factorielle(2)
-#                = 3 * (2 * factorielle(1))
-#                = 3 * (2 * (1 * factorielle(0)))
-#                = 3 * (2 * (1 * 1))
-#                = 6</code></pre>
+    return n * factorielle(n - 1)</code></pre>
             </div>
         </div>
     </div>
@@ -411,29 +396,14 @@ print(f"0! = {factorielle(0)}")  # 1
         <div class="solution-wrapper">
             <div class="solution">
                 <pre><code class="language-python"># Cas terminaux : F(0) = 0, F(1) = 1
-# Cas général : F(n) = F(n-1) + F(n-2)
+# Cas récursif : F(n) = F(n-1) + F(n-2)
 
-def fibonacci(n):
-    """Calcule le n-ième terme de Fibonacci de manière récursive"""
-    # Cas terminaux
+def fibonacci(n: int) -> int:
     if n == 0:
         return 0
     if n == 1:
         return 1
-    
-    # Cas général : appels récursifs
-    return fibonacci(n - 1) + fibonacci(n - 2)
-
-# Tests
-print(f"F(6) = {fibonacci(6)}")   # 8
-print(f"F(0) = {fibonacci(0)}")   # 0
-
-# Trace d'exécution pour fibonacci(4) :
-# fibonacci(4) = fibonacci(3) + fibonacci(2)
-#              = (fibonacci(2) + fibonacci(1)) + (fibonacci(1) + fibonacci(0))
-#              = ((fibonacci(1) + fibonacci(0)) + 1) + (1 + 0)
-#              = ((1 + 0) + 1) + 1
-#              = 3</code></pre>
+    return fibonacci(n - 1) + fibonacci(n - 2)</code></pre>
             </div>
         </div>
     </div>
@@ -455,27 +425,12 @@ print(f"F(0) = {fibonacci(0)}")   # 0
         <div class="solution-wrapper">
             <div class="solution">
                 <pre><code class="language-python"># Cas terminal : n = 0
-# Cas général : somme_chiffres(n) = (n % 10) + somme_chiffres(n // 10)
+# Cas récursif : somme_chiffres(n) = (n % 10) + somme_chiffres(n // 10)
 
-def somme_chiffres(n):
-    """Calcule la somme des chiffres de n de manière récursive"""
-    # Cas terminal
+def somme_chiffres(n: int) -> int:
     if n == 0:
         return 0
-    
-    # Cas général : appel récursif
-    return (n % 10) + somme_chiffres(n // 10)
-
-# Tests
-print(f"Somme des chiffres de 245 : {somme_chiffres(245)}")   # 11
-print(f"Somme des chiffres de 1001 : {somme_chiffres(1001)}") # 2
-
-# Trace d'exécution pour somme_chiffres(123) :
-# somme_chiffres(123) = 3 + somme_chiffres(12)
-#                     = 3 + (2 + somme_chiffres(1))
-#                     = 3 + (2 + (1 + somme_chiffres(0)))
-#                     = 3 + (2 + (1 + 0))
-#                     = 6</code></pre>
+    return (n % 10) + somme_chiffres(n // 10)</code></pre>
             </div>
         </div>
     </div>
@@ -496,28 +451,13 @@ print(f"Somme des chiffres de 1001 : {somme_chiffres(1001)}") # 2
         </div>
         <div class="solution-wrapper">
             <div class="solution">
-                <pre><code class="language-python"># Cas terminal : a^0 = 1
-# Cas général : a^b = a × a^(b-1)
+                <pre><code class="language-python"># Cas terminal : exposant = 0, a^0 = 1
+# Cas récursif : a^n = a × a^(n-1)
 
-def puissance(a, b):
-    """Calcule a^b de manière récursive"""
-    # Cas terminal
-    if b == 0:
+def puissance(a: int, n: int) -> int:
+    if n == 0:
         return 1
-    
-    # Cas général : appel récursif
-    return a * puissance(a, b - 1)
-
-# Tests
-print(f"2^5 = {puissance(2, 5)}")  # 32
-print(f"3^0 = {puissance(3, 0)}")  # 1
-
-# Trace d'exécution pour puissance(2, 3) :
-# puissance(2, 3) = 2 * puissance(2, 2)
-#                 = 2 * (2 * puissance(2, 1))
-#                 = 2 * (2 * (2 * puissance(2, 0)))
-#                 = 2 * (2 * (2 * 1))
-#                 = 8</code></pre>
+    return a * puissance(a, n - 1)</code></pre>
             </div>
         </div>
     </div>
@@ -538,27 +478,13 @@ print(f"3^0 = {puissance(3, 0)}")  # 1
         </div>
         <div class="solution-wrapper">
             <div class="solution">
-                <pre><code class="language-python"># Cas terminal : chaîne vide ou un caractère
-# Cas général : inverse(s) = s[-1] + inverse(s[:-1])
+                <pre><code class="language-python"># Cas terminal : chaîne vide ou un seul caractère
+# Cas récursif : inverse_chaine(s) = s[-1] + inverse_chaine(s[:-1])
 
-def inverse_chaine(s):
-    """Inverse une chaîne de manière récursive"""
-    # Cas terminal
+def inverse_chaine(s: str) -> str:
     if len(s) <= 1:
         return s
-    
-    # Cas général : appel récursif
-    return s[-1] + inverse_chaine(s[:-1])
-
-# Tests
-print(f"Inverse de 'NSI' : {inverse_chaine('NSI')}")                    # ISN
-print(f"Inverse de 'informatique' : {inverse_chaine('informatique')}")  # euqitamrofni
-
-# Trace d'exécution pour inverse_chaine("ABC") :
-# inverse_chaine("ABC") = "C" + inverse_chaine("AB")
-#                       = "C" + ("B" + inverse_chaine("A"))
-#                       = "C" + ("B" + "A")
-#                       = "CBA"</code></pre>
+    return s[-1] + inverse_chaine(s[:-1])</code></pre>
             </div>
         </div>
     </div>
@@ -584,43 +510,18 @@ print(f"Inverse de 'informatique' : {inverse_chaine('informatique')}")  # euqita
         </div>
         <div class="solution-wrapper">
             <div class="solution">
-                <pre><code class="language-python"># Cas terminal : noeud = None
-# Cas général : longueur = 1 + longueur(suivant)
+                <pre><code class="language-python"># Cas terminal : noeud est None (liste vide)
+# Cas récursif : longueur = 1 + longueur du reste de la liste
 
 class Noeud:
-    def __init__(self, valeur):
+    def __init__(self, valeur, suivant=None):
         self.valeur = valeur
-        self.suivant = None
+        self.suivant = suivant
 
-def longueur_liste(noeud):
-    """Calcule la longueur d'une liste chaînée de manière récursive"""
-    # Cas terminal
+def longueur_liste(noeud: Noeud) -> int:
     if noeud is None:
         return 0
-    
-    # Cas général : appel récursif
-    return 1 + longueur_liste(noeud.suivant)
-
-# Création d'une liste de 4 noeuds
-n1 = Noeud(1)
-n2 = Noeud(2)
-n3 = Noeud(3)
-n4 = Noeud(4)
-
-n1.suivant = n2
-n2.suivant = n3
-n3.suivant = n4
-
-# Test
-print(f"Longueur de la liste : {longueur_liste(n1)}")  # 4
-
-# Trace d'exécution pour longueur_liste(n1) :
-# longueur_liste(n1) = 1 + longueur_liste(n2)
-#                    = 1 + (1 + longueur_liste(n3))
-#                    = 1 + (1 + (1 + longueur_liste(n4)))
-#                    = 1 + (1 + (1 + (1 + longueur_liste(None))))
-#                    = 1 + (1 + (1 + (1 + 0)))
-#                    = 4</code></pre>
+    return 1 + longueur_liste(noeud.suivant)</code></pre>
             </div>
         </div>
     </div>
@@ -641,30 +542,15 @@ print(f"Longueur de la liste : {longueur_liste(n1)}")  # 4
         </div>
         <div class="solution-wrapper">
             <div class="solution">
-                <pre><code class="language-python"># Cas terminal : liste vide
-# Cas général : si premier élément = valeur, trouvé, sinon rechercher dans le reste
+                <pre><code class="language-python"># Cas terminal : liste vide (élément non trouvé) ou élément trouvé
+# Cas récursif : chercher dans le reste de la liste
 
-def recherche(liste, valeur):
-    """Recherche une valeur dans une liste de manière récursive"""
-    # Cas terminal
-    if not liste:  # Liste vide
+def recherche(liste: list, element) -> bool:
+    if len(liste) == 0:
         return False
-    
-    # Cas général : vérifier le premier élément
-    if liste[0] == valeur:
+    if liste[0] == element:
         return True
-    
-    # Appel récursif sur le reste de la liste
-    return recherche(liste[1:], valeur)
-
-# Tests
-liste = [2, 5, 8, 10]
-print(f"5 dans la liste : {recherche(liste, 5)}")  # True
-print(f"7 dans la liste : {recherche(liste, 7)}")  # False
-
-# Trace d'exécution pour recherche([2, 5, 8, 10], 5) :
-# recherche([2, 5, 8, 10], 5) → 2 ≠ 5, appel récursif
-# recherche([5, 8, 10], 5) → 5 = 5, retourne True</code></pre>
+    return recherche(liste[1:], element)</code></pre>
             </div>
         </div>
     </div>
@@ -685,30 +571,13 @@ print(f"7 dans la liste : {recherche(liste, 7)}")  # False
         </div>
         <div class="solution-wrapper">
             <div class="solution">
-                <pre><code class="language-python"># Cas terminal : liste vide → somme = 0
-# Cas général : somme = premier_élément + somme(reste)
+                <pre><code class="language-python"># Cas terminal : liste vide
+# Cas récursif : somme = premier élément + somme du reste
 
-def somme_liste(liste):
-    """Calcule la somme des éléments d'une liste de manière récursive"""
-    # Cas terminal
-    if not liste:  # Liste vide
+def somme_liste(liste: list) -> int:
+    if len(liste) == 0:
         return 0
-    
-    # Cas général : appel récursif
-    return liste[0] + somme_liste(liste[1:])
-
-# Test
-liste = [1, 2, 3, 4, 5]
-print(f"Somme de la liste : {somme_liste(liste)}")  # 15
-
-# Trace d'exécution pour somme_liste([1, 2, 3, 4, 5]) :
-# somme_liste([1, 2, 3, 4, 5]) = 1 + somme_liste([2, 3, 4, 5])
-#                               = 1 + (2 + somme_liste([3, 4, 5]))
-#                               = 1 + (2 + (3 + somme_liste([4, 5])))
-#                               = 1 + (2 + (3 + (4 + somme_liste([5]))))
-#                               = 1 + (2 + (3 + (4 + (5 + somme_liste([])))))
-#                               = 1 + (2 + (3 + (4 + (5 + 0))))
-#                               = 15</code></pre>
+    return liste[0] + somme_liste(liste[1:])</code></pre>
             </div>
         </div>
     </div>
@@ -733,30 +602,16 @@ print(f"Somme de la liste : {somme_liste(liste)}")  # 15
         </div>
         <div class="solution-wrapper">
             <div class="solution">
-                <pre><code class="language-python"># Cas terminal : chaîne vide ou un caractère → palindrome
-# Cas général : premier = dernier ET reste est palindrome
+                <pre><code class="language-python"># Cas terminal : chaîne vide ou un seul caractère
+# Cas récursif : premier = dernier ET le milieu est un palindrome
 
-def est_palindrome(s):
-    """Vérifie si une chaîne est un palindrome de manière récursive"""
-    # Cas terminal
+def est_palindrome(s: str) -> bool:
     if len(s) <= 1:
         return True
-    
-    # Cas général : vérifier premier et dernier caractères
-    if s[0] != s[-1]:
-        return False
-    
-    # Appel récursif sur la sous-chaîne sans premier et dernier
-    return est_palindrome(s[1:-1])
-
-# Tests
-print(f"'radar' est palindrome : {est_palindrome('radar')}")  # True
-print(f"'NSI' est palindrome : {est_palindrome('NSI')}")      # False
-
-# Trace d'exécution pour est_palindrome("radar") :
-# est_palindrome("radar") → 'r' = 'r', appel récursif
-# est_palindrome("ada") → 'a' = 'a', appel récursif
-# est_palindrome("d") → len = 1, retourne True</code></pre>
+    if s[0] == s[-1]:
+        return est_palindrome(s[1:-1])
+    else:
+        return False</code></pre>
             </div>
         </div>
     </div>
@@ -777,42 +632,14 @@ print(f"'NSI' est palindrome : {est_palindrome('NSI')}")      # False
         </div>
         <div class="solution-wrapper">
             <div class="solution">
-                <pre><code class="language-python"># Cas terminal : n = 0 → rien à afficher
-# Cas général : afficher n étoiles + triangle(n-1)
+                <pre><code class="language-python"># Cas terminal : n = 0
+# Cas récursif : afficher n étoiles puis appel récursif avec n-1
 
-def triangle(n):
-    """Dessine un triangle d'étoiles de manière récursive"""
-    # Cas terminal
+def triangle(n: int) -> None:
     if n == 0:
         return
-    
-    # Cas général : afficher la ligne actuelle puis appel récursif
     print('*' * n)
-    triangle(n - 1)
-
-# Version alternative : triangle croissant (affichage après l'appel récursif)
-def triangle_croissant(n):
-    """Triangle croissant avec récursivité"""
-    # Cas terminal
-    if n == 0:
-        return
-    
-    # Appel récursif d'abord
-    triangle_croissant(n - 1)
-    # Puis affichage
-    print('*' * n)
-
-# Test
-print("Triangle décroissant avec n = 5 :")
-triangle(5)
-print("\nTriangle croissant avec n = 5 :")
-triangle_croissant(5)
-
-# Trace d'exécution pour triangle(3) :
-# triangle(3) → affiche "***", puis appelle triangle(2)
-# triangle(2) → affiche "**", puis appelle triangle(1)
-# triangle(1) → affiche "*", puis appelle triangle(0)
-# triangle(0) → cas terminal, retourne</code></pre>
+    triangle(n - 1)</code></pre>
             </div>
         </div>
     </div>
