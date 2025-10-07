@@ -106,18 +106,3 @@ Format condensé, prêt à l’emploi pour la préparation ou la correction oral
 > 💡 *L’entreprise passe d’une logique “réactive” à une gestion “préventive et organisée”.*
 
 ---
-
-## 🧾 Résumé général
-
-| **Notion ITIL** | **Objectif clé** | **Exemple concret** |
-|------------------|------------------|----------------------|
-| Gestion des incidents | Rétablir le service rapidement | Redémarrer un serveur tombé en panne |
-| Gestion des problèmes | Trouver la cause racine | Corriger un bug provoquant les pannes répétées |
-| Gestion des changements | Modifier sans perturber | Déployer une mise à jour testée et validée |
-| Gestion des connaissances | Capitaliser l’expérience | Créer une base de solutions dans GLPI |
-
----
-
-> 🧠 **Phrase de conclusion à dire en classe :**  
-> “ITIL, ce n’est pas de la technique, c’est de l’organisation.  
-> On ne fait pas que réparer, on apprend à **éviter** que ça casse.”  

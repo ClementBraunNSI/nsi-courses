@@ -939,7 +939,7 @@
             <div id="sub-exercise-1-1" class="sub-exercise-content active">
                 <div class="example-box">
                     <div class="example-title">✏️ Exercice 1.1 – Incident ou problème ?</div>
-                    <p>Indique pour chaque situation s'il s'agit d'un <strong>incident</strong> ou d'un <strong>problème</strong>.</p>
+                    <p>Indiquer pour chaque situation s'il s'agit d'un <strong>incident</strong> ou d'un <strong>problème</strong>.</p>
                     
                     <table class="exercise-table">
                         <thead>
@@ -979,7 +979,7 @@
             <div id="sub-exercise-1-2" class="sub-exercise-content">
                 <div class="example-box">
                     <div class="example-title">✏️ Exercice 1.2 – Priorisation des incidents</div>
-                    <p>Classez ces incidents par ordre de priorité (1 = le plus urgent, 4 = le moins urgent).</p>
+                    <p>Classer ces incidents par ordre de priorité (1 = le plus urgent, 4 = le moins urgent).</p>
                     
                     <table class="exercise-table">
                         <thead>
@@ -1024,7 +1024,7 @@
             <div id="sub-exercise-1-3" class="sub-exercise-content">
                 <div class="example-box">
                     <div class="example-title">✏️ Exercice 1.3 – Escalade des incidents</div>
-                    <p>Pour chaque incident, indiquez le niveau d'escalade approprié.</p>
+                    <p>Pour chaque incident, indiquer le niveau d'escalade approprié.</p>
                     
                     <div class="highlight-fact">
                         <strong>Niveaux d'escalade :</strong><br>
@@ -1090,7 +1090,7 @@
             <div id="sub-exercise-2-1" class="sub-exercise-content active">
                 <div class="example-box">
                     <div class="example-title">✏️ Exercice 2.1 – Étapes du changement</div>
-                    <p>Remettez dans l'ordre les étapes du processus de gestion des changements :</p>
+                    <p>Remettre dans l'ordre les étapes du processus de gestion des changements :</p>
                     
                     <ul>
                         <li>☐ Évaluation des risques</li>
@@ -1112,7 +1112,7 @@
             <div id="sub-exercise-2-2" class="sub-exercise-content">
                 <div class="example-box">
                     <div class="example-title">✏️ Exercice 2.2 – Types de changements</div>
-                    <p>Classifiez chaque changement selon son type et son niveau d'approbation requis.</p>
+                    <p>Classifier chaque changement selon son type et son niveau d'approbation requis.</p>
                     
                     <div class="highlight-fact">
                         <strong>Types de changements :</strong><br>
@@ -1174,7 +1174,7 @@
             </div>
             
             <h3>📊 Analyse de cas pratique</h3>
-            <p>Analysez le cas suivant et proposez une solution ITIL appropriée.</p>
+            <p>Analyser le cas suivant et proposer une solution ITIL appropriée.</p>
             
             <div class="example-box">
                 <div class="example-title">🏢 Cas d'entreprise</div>
@@ -1188,7 +1188,7 @@
                 
                 <p><strong>Questions :</strong></p>
                 <ol>
-                    <li>Quels processus ITIL recommanderiez-vous ?</li>
+                    <li>Quels processus ITIL recommander ?</li>
                     <li>Dans quel ordre les implémenter ?</li>
                     <li>Quels bénéfices attendus ?</li>
                 </ol>
@@ -1202,14 +1202,14 @@
             </div>
             
             <h3>🎯 Mise en pratique</h3>
-            <p>Créez un plan d'implémentation ITIL pour votre organisation.</p>
+            <p>Créer un plan d'implémentation ITIL pour votre organisation.</p>
             
             <div class="step-grid">
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <div class="step-title">Diagnostic</div>
                     <div class="step-description">
-                        Évaluez la maturité actuelle de votre organisation en matière de gestion des services IT.
+                        Évaluer la maturité actuelle de votre organisation en matière de gestion des services IT.
                     </div>
                 </div>
                 
@@ -1217,7 +1217,7 @@
                     <div class="step-number">2</div>
                     <div class="step-title">Priorisation</div>
                     <div class="step-description">
-                        Identifiez les processus ITIL les plus critiques à implémenter en premier.
+                        Identifier les processus ITIL les plus critiques à implémenter en premier.
                     </div>
                 </div>
                 
@@ -1225,7 +1225,7 @@
                     <div class="step-number">3</div>
                     <div class="step-title">Planification</div>
                     <div class="step-description">
-                        Établissez un calendrier d'implémentation avec des jalons mesurables.
+                        Établir un calendrier d'implémentation avec des jalons mesurables.
                     </div>
                 </div>
                 
@@ -1233,7 +1233,7 @@
                     <div class="step-number">4</div>
                     <div class="step-title">Formation</div>
                     <div class="step-description">
-                        Planifiez la formation des équipes aux nouveaux processus ITIL.
+                        Planifier la formation des équipes aux nouveaux processus ITIL.
                     </div>
                 </div>
             </div>
