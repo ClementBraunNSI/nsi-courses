@@ -1193,6 +1193,66 @@
                     <li>Quels bénéfices attendus ?</li>
                 </ol>
             </div>
+            
+            <div class="example-box">
+                <div class="example-title">✅ Correction</div>
+                
+                <h4><strong>Problèmes constatés</strong></h4>
+                <ul>
+                    <li>Pannes répétées chaque semaine.</li>
+                    <li>Appels directs aux techniciens.</li>
+                    <li>Aucune documentation.</li>
+                    <li>Changements non validés.</li>
+                </ul>
+                
+                <h4><strong>Processus ITIL à mettre en place</strong></h4>
+                <table class="exercise-table">
+                    <thead>
+                        <tr>
+                            <th>Processus</th>
+                            <th>Objectif principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gestion des incidents</td>
+                            <td>Centraliser les demandes et pannes.</td>
+                        </tr>
+                        <tr>
+                            <td>Gestion des problèmes</td>
+                            <td>Identifier et corriger les causes récurrentes.</td>
+                        </tr>
+                        <tr>
+                            <td>Gestion des changements</td>
+                            <td>Encadrer les modifications techniques.</td>
+                        </tr>
+                        <tr>
+                            <td>Gestion des connaissances</td>
+                            <td>Documenter et partager les solutions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4><strong>Ordre de mise en œuvre</strong></h4>
+                <ol>
+                    <li><strong>Gestion des incidents</strong> → outil de ticketing.</li>
+                    <li><strong>Gestion des problèmes</strong> → analyse des causes profondes.</li>
+                    <li><strong>Gestion des changements</strong> → validation et test avant déploiement.</li>
+                    <li><strong>Gestion des connaissances</strong> → documentation et retours d'expérience.</li>
+                </ol>
+                
+                <h4><strong>Bénéfices attendus</strong></h4>
+                <ul>
+                    <li>Support plus efficace.</li>
+                    <li>Moins de pannes récurrentes.</li>
+                    <li>Changements mieux maîtrisés.</li>
+                    <li>Capitalisation du savoir interne.</li>
+                </ul>
+                
+                <div class="highlight-fact">
+                    💡 <strong>L'entreprise passe d'une logique "réactive" à une gestion "préventive et organisée".</strong>
+                </div>
+            </div>
         </div>
         
         <!-- Exercice 4 -->

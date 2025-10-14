@@ -577,6 +577,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="../B1/Methodes_agiles/" class="chapter-link">📚 Méthodes Agiles</a>
                         <a href="../B1/Gestion_risques/" class="chapter-link">📚 Gestion des risques</a>
                         <a href="../B1/ITIL" class="chapter-link">📚 ITIL</a>
+                        <a href="../B1/DS1" class="chapter-link">📚 DS1</a>
                     </div>
                 </div>
             </div>

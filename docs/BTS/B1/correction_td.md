@@ -69,7 +69,7 @@ Format condensé, prêt à l’emploi pour la préparation ou la correction oral
 | Migration vers un nouveau serveur | Normal | CAB / Direction IT | Risque élevé, planification requise. |
 | Redémarrage d’urgence du serveur web | Urgent | Responsable IT | Incident critique à corriger immédiatement. |
 | Ajout d’un nouvel utilisateur | Standard | Automatique / Support | Opération fréquente et maîtrisée. |
-| Changement d’architecture réseau | Normal | CAB / Direction | Impact important sur l’infrastructure. |
+| Changement d’architecture réseau | Normal | CAB / Direction IT | Impact important sur l’infrastructure. |
 
 > 🧠 *Standard = routine / Normal = planifié / Urgent = immédiat*
 
@@ -92,7 +92,7 @@ Format condensé, prêt à l’emploi pour la préparation ou la correction oral
 | Gestion des connaissances | Documenter et partager les solutions. |
 
 ### **Ordre de mise en œuvre**
-1. Gestion des incidents → point d’entrée unique (outil de ticketing).  
+1. Gestion des incidents → outil de ticketing.  
 2. Gestion des problèmes → analyse des causes profondes.  
 3. Gestion des changements → validation et test avant déploiement.  
 4. Gestion des connaissances → documentation et retours d’expérience.
