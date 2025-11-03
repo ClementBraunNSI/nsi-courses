@@ -33,7 +33,8 @@ function animateProgressBar() {
     let currentFoxIndex = 0;
     
     const interval = setInterval(() => {
-        progress += Math.random() * 15 + 5; // Progression aléatoire entre 5% et 20%
+        // Accélérer la progression pour une ouverture plus rapide
+        progress += Math.random() * 35 + 20; // Progression plus rapide entre 20% et 55%
         
         // Calculer quel renard doit être affiché
         const foxToShow = Math.floor((progress / 100) * foxIcons.length);
@@ -56,89 +57,71 @@ function animateProgressBar() {
             });
             
             clearInterval(interval);
-            // Animation finale du logo
-            setTimeout(() => {
-                animateLogoCompletion();
-            }, 800);
-            setTimeout(hideLoadingScreen, 1500); // Attendre plus longtemps pour voir l'animation complète
+            // Optionnel: animation finale du logo (si définie)
+            // setTimeout(() => {
+            //     if (typeof animateLogoCompletion === 'function') {
+            //         animateLogoCompletion();
+            //     }
+            // }, 400);
+            // Enchaîner rapidement vers la fermeture du loading
+            setTimeout(hideLoadingScreen, 600);
         }
         
         // Synchroniser le remplissage du logo avec la progression
         if (logoFill) {
             logoFill.style.height = progress + '%';
         }
-    }, 300); // Mise à jour toutes les 300ms pour un effet plus fluide
+    }, 180); // Mise à jour plus fréquente pour un effet plus rapide
 }
 
 // Fonction pour masquer l'écran de chargement
 function hideLoadingScreen() {
+    // Garde pour éviter les appels multiples
+    if (window.isLoadingScreenHiding) return;
+    window.isLoadingScreenHiding = true;
+
     const loadingScreen = document.getElementById('loading-screen');
     const mainContent = document.querySelector('.md-content');
     const logo = document.querySelector('.loading-logo');
     const loadingContainer = document.querySelector('.loading-container');
     
     if (loadingScreen && logo) {
-        // Phase 1: Zoom et fade du logo
-        logo.style.transition = 'all 1.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        // Phase 1: Zoom et fade du logo (plus court)
+        logo.style.transition = 'all 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
         logo.style.transform = 'scale(3)';
         logo.style.opacity = '0';
         
-        // Phase 2: Fade des autres éléments
+        // Phase 2: Fade des autres éléments (plus court)
         setTimeout(() => {
             if (loadingContainer) {
-                loadingContainer.style.transition = 'opacity 0.8s ease';
+                loadingContainer.style.transition = 'opacity 0.4s ease';
                 loadingContainer.style.opacity = '0';
             }
-        }, 800);
+        }, 350);
         
-        // Phase 2.5: Créer un overlay de transition
-        setTimeout(() => {
-            const overlay = document.createElement('div');
-            overlay.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(135deg, rgba(255, 152, 0, 1) 0%, rgba(255, 193, 7, 1) 100%);
-                z-index: 9998;
-                opacity: 1;
-                transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            `;
-            document.body.appendChild(overlay);
-            
-            // Commencer la transition de l'overlay
-            setTimeout(() => {
-                overlay.style.opacity = '0';
-            }, 50);
-            
-            // Supprimer l'overlay après la transition
-            setTimeout(() => {
-                if (overlay.parentNode) {
-                    overlay.remove();
-                }
-            }, 1600);
-        }, 1200);
+        // Phase 2.5: (Simplifiée) pas d'overlay pour éviter reflows et rollback
         
-        // Phase 3: Suppression de l'écran et affichage du contenu
+        // Phase 3: Suppression de l'écran et fade-in flat du contenu (moderne)
         setTimeout(() => {
             loadingScreen.remove();
-            // Animation d'entrée du contenu principal avec fade-in
             if (mainContent) {
-                // État initial: complètement invisible
+                // Rendre visible et préparer le reveal
+                mainContent.style.visibility = 'visible';
+                // État initial: opacity à 0 pour un fade-in flat
                 mainContent.style.opacity = '0';
-                mainContent.style.transform = 'scale(0.9) translateY(30px)';
-                mainContent.style.filter = 'blur(5px)';
-                
-                // Délai pour s'assurer que l'écran de chargement est supprimé
+                mainContent.style.willChange = 'opacity';
+                // Déclencher le fade-in
                 setTimeout(() => {
-                    mainContent.style.transition = 'all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    mainContent.style.transition = 'opacity 240ms ease-out';
                     mainContent.style.opacity = '1';
-                    mainContent.style.transform = 'scale(1) translateY(0)';
-                    mainContent.style.filter = 'blur(0px)';
-                }, 200);
+                }, 20);
+                // Nettoyage après reveal
+                setTimeout(() => {
+                    mainContent.style.transition = '';
+                    mainContent.style.willChange = '';
+                }, 280);
             }
-        }, 1800);
+        }, 640);
     }
 }
 
@@ -150,6 +133,8 @@ function initLoadingAnimation() {
     // Masquer le contenu principal initialement
     const mainContent = document.querySelector('.md-content');
     if (mainContent) {
+        // Utiliser visibility et opacity pour préparer le fade-in
+        mainContent.style.visibility = 'hidden';
         mainContent.style.opacity = '0';
     }
     
@@ -164,20 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Masquer immédiatement le contenu principal
     const mainContent = document.querySelector('.md-content');
     if (mainContent) {
-        mainContent.style.opacity = '0';
         mainContent.style.visibility = 'hidden';
     }
-    
+    // Démarrer le loading (la fermeture sera déclenchée par animateProgressBar)
     initLoadingAnimation();
-    
-    // Simulation du temps de chargement (3 secondes)
-    setTimeout(() => {
-        // Rendre le contenu visible avant l'animation
-        if (mainContent) {
-            mainContent.style.visibility = 'visible';
-        }
-        hideLoadingScreen();
-    }, 3000);
 });
 
 // Styles CSS pour l'animation
