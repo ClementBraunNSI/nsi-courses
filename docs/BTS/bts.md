@@ -558,7 +558,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="chapter-list">
                 <div class="chapter-item">
                     <div class="chapter-title">B1.1 - Gestion du patrimoine informatique</div>
+                        <a href="../B1/Patrimoine_informatique" class="chapter-link">📚 Patrimoine Informatique</a>
                     <div class="chapter-links">
+
                     </div>
                 </div>
                 <div class="chapter-item">
