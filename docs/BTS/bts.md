@@ -603,11 +603,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 Sécurité des systèmes informatiques, réseaux et services d'infrastructure
             </p>
             <div class="chapter-item">
-                <div class="chapter-title">B3.1 - Notion de risques et de menaces</div>
+                <div class="chapter-title">TP Python</div>
                 <div class="chapter-links">
-                    <a href="../B3/B3_1_Fondamentaux_cybersecurite/" class="chapter-link">📚 Cours</a>
+                   <a href="../B3/TP/Introduction_python_1" class="chapter-link">⚙️ TP Python 1 : conditions / boucles / fonctions </a>
                 </div>
             </div>
+
+
         </div>
     </div>
 </div>
