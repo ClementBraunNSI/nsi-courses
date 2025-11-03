@@ -8,7 +8,7 @@ Ce n'est qu'en 1999 que Kevin Ashton, chercheur au MIT, invente le terme "Intern
 
 **La première définition était : "un réseau d'objets physiques connectés à Internet".**
 
-![iot_history](img/iot_history.svg)
+<!-- image removed: iot_history -->
 
 À la suite de cela, dans les années 2000-2010, les technologies sans fil se sont démocratisées.
 On appelle ces technologies de communication des **protocoles de communication**.
@@ -20,12 +20,12 @@ Dans les années 2010, les **capteurs miniaturisés** et les **réseaux basse co
 Ils sont installés massivement depuis 2015, la même année où ont vu le jour les premières plateformes IoT grand public.
 Les années 2020 ont permis de faire voir le jour à une des plus grandes révolutions technologiques : la **5G** et l'**intelligence artificielle embarquée**.
 
-![iot_evolution](img/iot_evolution.svg)
+<!-- image removed: iot_evolution -->
 
 Depuis, les objets connectés permettent de relier plus de 50 milliards d'appareils pour collecter des données, automatiser des tâches ou améliorer notre quotidien à l'aide de plusieurs technologies dépendant de protocoles.
 Par exemple, il existe des capteurs de température (protocole LoRaWAN), des montres connectées (Bluetooth) ou des assistants vocaux (WiFi).
 
-![iot_map](img/iot_world_map.svg)
+<!-- image removed: iot_world_map -->
 
 En clair, **un objet connecté est un dispositif physique équipé de capteurs, d'actionneurs et d'une connexion réseau qui lui permet de collecter, échanger et traiter des données via Internet.**
 
@@ -54,7 +54,7 @@ On peut les regrouper en 2 catégories :
 - **Capteurs** : dispositifs qui mesurent et collectent des données de l'environnement.
 - **Actionneurs** : dispositifs qui agissent sur l'environnement en réponse aux données.
 
-![composants_iot](img/composants_iot.svg)
+<!-- image removed: composants_iot -->
 
 !!!danger
     On dispose de composants, d'un objet mais, comment communiquent-ils entre eux ? Quelles technologies sont utilisées ?
@@ -131,7 +131,7 @@ Un système d'objets connectés fonctionne selon un cycle en plusieurs étapes :
 4. **Analyse** : Des algorithmes déterminent les actions à entreprendre
 5. **Action** : Des commandes sont envoyées aux actionneurs pour agir sur l'environnement
 
-![cycle_iot](img/cycle_iot.svg)
+<!-- image removed: cycle_iot -->
 
 ### Exemple concret : Thermostat connecté
 
@@ -191,6 +191,5 @@ Les objets connectés transforment de nombreux secteurs de notre société :
 - **Gestion des déchets** : capteurs de remplissage des poubelles
 - **Transport** : optimisation du trafic, véhicules autonomes
 
-![applications_iot](img/applications_iot.svg)
 
 **L'avenir des objets connectés s'oriente vers une intégration toujours plus poussée dans notre quotidien, avec des objets plus intelligents, plus autonomes et plus respectueux de l'environnement.**

@@ -37,7 +37,6 @@ Pour localiser un point sur Terre, on utilise un système de coordonnées basé 
 
 Le principe est simple : chaque satellite émet un signal contenant l'heure précise d'émission et sa position. Le récepteur GPS calcule le temps de trajet du signal pour déterminer sa distance à chaque satellite.
 
-![trilateration](trilateration.svg)
 
 ### Le processus de localisation
 

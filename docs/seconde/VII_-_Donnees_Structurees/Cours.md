@@ -8,7 +8,7 @@ C'est dans les années 1970 qu'Edgar F. Codd, un informaticien d'IBM, a révolut
 
 **Les premières bases de données relationnelles ont vu le jour dans les années 1980.**
 
-![data_history](img/data_evolution.svg)
+<!-- image removed: data_evolution -->
 
 À la suite de cela, dans les années 1990-2000, de nouveaux formats d'échange de données ont émergé avec l'essor d'Internet.
 On appelle ces formats des **standards d'échange** car ils permettent à différents systèmes de communiquer.
@@ -22,7 +22,7 @@ Les années 2010 ont vu l'explosion du **Big Data** et des nouvelles approches d
 Depuis, les données structurées permettent de gérer des milliards d'informations pour alimenter des applications, des sites web ou des systèmes d'intelligence artificielle.
 Par exemple, il existe des formats pour les données tabulaires (CSV), les données hiérarchiques (JSON) ou les documents structurés (XML).
 
-![data_formats](img/data_formats.svg)
+<!-- image removed: data_formats -->
 
 En clair, **les données structurées sont des informations organisées selon des règles précises qui permettent leur traitement automatique par les machines.**
 
@@ -50,7 +50,6 @@ On peut les regrouper en 2 catégories :
 - **Données tabulaires** : données organisées en lignes et colonnes (comme un tableau).
 - **Données hiérarchiques** : données organisées en arbre avec des niveaux de profondeur.
 
-![formats_comparison](img/formats_comparison.png)
 
 !!!danger
     On dispose de formats, de structures mais, comment les machines comprennent-elles ces données? Quelles règles sont utilisées?
