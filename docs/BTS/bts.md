@@ -572,8 +572,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="chapter-item">
                     <div class="chapter-title">B1.5 - Gestion de projets</div>
                     <div class="chapter-links">
-                        
-                        <a href="../B1/DS1" class="chapter-link">📚 DS1</a>
+                        <a href="../B1/Chemin_critique" class="chapter-link">📚 Chemin critique</a>
+                        <a href="../B1/Gestion_projet" class="chapter-link">📚 Gestion de projet</a>
+                        <a href="../B1/Gestion_risques" class="chapter-link">📚 Gestion des risques</a>
+                        <a href="../B1/Methodes_agiles" class="chapter-link">📚 Méthodes agiles</a>
+                        <a href="../B1/ITIL" class="chapter-link">📚 ITIL</a>
                     </div>
                 </div>
             </div>
