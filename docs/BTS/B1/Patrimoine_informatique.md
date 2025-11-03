@@ -180,15 +180,143 @@
     </div>
   </div>
 
-  <div class="content-text">
-    Objectif du chapitre : savoir <strong>recenser</strong> et <strong>identifier</strong> ces ressources pour garantir la
-    <strong>cohérence</strong>, la <strong>disponibilité</strong> et la <strong>sécurité</strong> du SI.
-  </div>
 
-  <div class="highlight-fact">
-    💡 Pourquoi recenser ? Sécurité des accès, maintenance planifiée, conformité des licences, et planification
+  <div class="definition-content">
+    Pourquoi recenser ?  
+    Sécurité des accès, maintenance planifiée, conformité des licences, et planification
     des évolutions du SI.
   </div>
+
+  <div class="definition-content">
+    Tenir un inventaire clair et précis de toutes les ressources numériques, y compris les matérielles, logicielles et imatérielles permet aussi de respecter la norme ISO-27001:2022.
+
+<div class="definition-box">
+  <div class="definition-title">📚 Normes ISO/IEC 27001 — Annexes clés</div>
+  <div class="definition-content">
+    <ul class="content-text">
+      <li><strong>Annexe A.5.9 — Inventaire des actifs</strong><br/><em>“Les actifs associés à l’information et aux installations de traitement de l’information doivent être identifiés, et un inventaire de ces actifs doit être établi et tenu à jour.”</em></li>
+      <li><strong>Annexe A.5.10 - Contrôle des systèmes d'informations </strong><br/><em>Ce contrôle vise à mettre en place une structure permettant aux organisations de garantir que les informations et autres ressources sont correctement protégées, utilisées et gérées.</em></li>
+      <li><strong>Annexe A.5.36 - Politiques de sécurité</strong><br/><em> Les sociétés doivent avoir une visualisation complète de tous les actifs suivant leurs politiques de sécurité, règles fondées et standards imposés.</em></li>
+    </ul>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="concept-section">
+  <h2 class="section-title">❓ Pourquoi entretenir et maintenir l’inventaire</h2>
+
+  <div class="definition-box">
+    <div class="definition-title">📈 Chiffres clés (ordres de grandeur)</div>
+    <div class="definition-content">
+      <ul class="content-text">
+        <li>−20 à −30% de temps moyen de rétablissement (MTTR) avec inventaire centralisé.</li>
+        <li>−15 à −25% de coûts logiciels via conformité et optimisation des licences.</li>
+        <li>+30 à +50% de couverture de sauvegarde quand les dépendances sont cartographiées.</li>
+        <li>Jusqu’à −40% d’incidents liés à l’obsolescence non suivie avec une CMDB tenue.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="definition-box">
+    <div class="definition-title">🏢 Bénéfices pour une SS2I / ESN</div>
+    <div class="definition-content">
+      <ul class="content-text">
+        <li>Optimisation des coûts : connaître les équipements sous-utilisés ou obsolètes permet d’éviter les dépenses inutiles.</li>
+        <li>Sécurité accrue : repérer rapidement les matériels ou logiciels non conformes aux politiques internes.</li>
+        <li>Planification des interventions : prioriser les actions de maintenance ou de remplacement.</li>
+        <li>Gestion simplifiée des licences : éviter les sanctions en cas de non-conformité.</li>
+        <li>Aide à la prise de décision : fournir des statistiques fiables pour orienter les investissements.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="concept-section">
+  <h2 class="section-title">Audits d'une SS2I</h2>
+  <div class="definition-box">
+    <div class="definition-content">
+      Ce recensement permet aussi de connaître tous les éléments permettant le fonctionnement de la société.
+      Il peut être d'une (grande) aide pour la réalisation d'<strong>audits</strong> pour maîtriser au mieux l'ensemble des 
+      ressources numériques (autant matérielles qu'immatérielles) de la société.
+    </div>
+  </div>
+
+  <div class="definition-box">
+    <div class="definition-content">
+      Un audit informatique consiste à vérifier la conformité, la sécurité et la performance du système d’information d’une entreprise.
+      L’objectif est d’évaluer si les ressources recensées (matérielles et logicielles) sont :
+      <ul class="content-text">
+      <strong>
+      <li>correctement utilisées,</li>
+      <li>sécurisées,</li>
+      <li>à jour,</li>
+      <li>et conformes aux normes et obligations légales ou contractuelles.</li>
+      </strong>
+      </ul> 
+      Un audit s’appuie toujours sur un inventaire fiable :
+      sans inventaire, impossible de savoir ce qu’il faut vérifier, ni sur quoi appliquer des mesures correctives.
+    </div>
+  </div>
+
+  <h2 class="section-title">🔍 Types d’audits informatiques</h2>
+
+  <table style="width:100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead>
+      <tr style="background-color: #3498db; color: white;">
+        <th style="padding: 0.8rem; border: 1px solid #2980b9;">Type d’audit</th>
+        <th style="padding: 0.8rem; border: 1px solid #2980b9;">Éléments contrôlés</th>
+        <th style="padding: 0.8rem; border: 1px solid #2980b9;">Objectifs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">Matériel</td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Postes fixes et mobiles, serveurs, téléphones, tablettes, imprimantes, infrastructure réseau et télécom
+        </td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Vérifier l’état et la disponibilité, détecter le matériel obsolète, planifier le renouvellement
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">Sécurité</td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Antivirus, pare-feu, droits utilisateurs, mots de passe, accès aux données, politiques de sécurité
+        </td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Identifier les vulnérabilités, sécuriser le SI, protéger les données sensibles
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">Solutions collaboratives</td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Messagerie, outils collaboratifs, plateformes internes de communication
+        </td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Vérifier l’accès, la conformité, et la performance des outils collaboratifs
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">Sauvegarde / continuité</td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Serveurs de sauvegarde, solutions cloud, data centers, procédures de restauration
+        </td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Garantir la continuité d’activité et la restauration rapide en cas de panne
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">Solutions applicatives</td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Logiciels métiers, logiciels de gestion, systèmes d’exploitation et mises à jour
+        </td>
+        <td style="padding: 0.8rem; border: 1px solid #2980b9;">
+          Vérifier la conformité, la performance et la mise à jour des logiciels
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <div class="concept-section">
@@ -232,7 +360,7 @@
   <div class="definition-box">
     <div class="definition-title">⚙️ Recensement automatisé</div>
     <div class="definition-content">
-      Outils recommandés : <strong>GLPI</strong>, <strong>OCS Inventory</strong>, <strong>Spiceworks</strong>.
+      Outils recommandés : <strong>GLPI</strong>, <strong>OCS Inventory</strong>, <strong>Spiceworks</strong>.<br/>
       Avantages : inventaire centralisé, suivi des licences, alertes.
     </div>
   </div>
