@@ -180,13 +180,6 @@
     </div>
   </div>
 
-
-  <div class="definition-content">
-    Pourquoi recenser ?  
-    Sécurité des accès, maintenance planifiée, conformité des licences, et planification
-    des évolutions du SI.
-  </div>
-
   <div class="definition-content">
     Tenir un inventaire clair et précis de toutes les ressources numériques, y compris les matérielles, logicielles et imatérielles permet aussi de respecter la norme ISO-27001:2022.
 
@@ -407,15 +400,23 @@
   <div class="definition-box">
     <div class="definition-title">📊 Cartographie du SI</div>
     <div class="definition-content">
-      Identifiez les ressources principales, leurs <strong>dépendances</strong> et représentez-les (draw.io, Lucidchart…).
-      Codes couleurs : bleu = matériel, vert = logiciel, jaune = immatériel.
+      Identifier les ressources principales, leurs <strong>dépendances</strong> et les représenter (draw.io, Lucidchart…).<br/>
+      Par exemple, codes couleurs : bleu = matériel, vert = logiciel, jaune = immatériel.
     </div>
   </div>
 
   <div class="definition-box">
     <div class="definition-title">🗃️ Modèle CMDB</div>
     <div class="definition-content">
-      Base centralisée des ressources, mise à jour régulière, colonne « critique » pour l’essentiel.
+      La <strong>CMDB</strong> est une base centralisée regroupant l’ensemble des informations sur le patrimoine informatique d’une organisation.  
+      Elle contient des données détaillées sur les ressources matérielles, logicielles et immatérielles, leurs relations et dépendances, ainsi que leur criticité.  
+      La CMDB permet :
+      <ul class="content-text">
+        <li>De visualiser l’ensemble des composants du SI.</li>
+        <li>De suivre les dépendances entre ressources.</li>
+        <li>De gérer les changements, les incidents et les mises à jour.</li>
+        <li>De produire des rapports stratégiques pour la direction et les audits.</li>
+      </ul>
     </div>
   </div>
 </div>
