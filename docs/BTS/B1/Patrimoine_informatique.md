@@ -450,10 +450,10 @@
         <li>Ressources : 10 PC fixes dev, 5 portables managers, NAS Synology DS920+, MySQL, réseau (switches+firewall), IDE/design, comptes/droits.</li>
       </ul>
       <ol>
-        <li>Inventaire complet.</li>
-        <li>Ressources critiques (dév/sécurité).</li>
-        <li>Dépendances et <strong>cartographie</strong>.</li>
-        <li>Améliorations maintenance.</li>
+        <li>Créer un tableau d'inventaire complet.</li>
+        <li>Quelles sont les ressources critiques (dév/sécurité).</li>
+        <li>Donner une dépendance entre 2 actifs.</strong>.</li>
+        <li>Proposer une améliorations de maintenance.</li>
         <li>Risques potentiels (panne, licence…).</li>
       </ol>
     </div>
