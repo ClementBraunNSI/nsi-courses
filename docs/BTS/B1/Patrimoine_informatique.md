@@ -434,7 +434,7 @@
     <div class="exercise-content-wrapper active">
       <div class="scenario-box"><strong>Contexte :</strong> Start-up de 4 employés, logiciel interne de gestion client.</div>
       <ul>
-        <li>Ressources : PC portables, NAS Synology DS220+, routeur/switch, VS Code & GitHub, Sage Start, imprimante.</li>
+        <li>Ressources : PC portables Dell Latitude, NAS Synology DS220+, routeur/switch, VS Code & GitHub, Sage Start, imprimante.</li>
       </ul>
       <ol>
         <li>Créer un <strong>tableau d’inventaire</strong>.</li>
@@ -447,7 +447,7 @@
     <div class="exercise-content-wrapper">
       <div class="scenario-box"><strong>Contexte :</strong> PME de 15 employés, développement d’apps mobiles.</div>
       <ul>
-        <li>Ressources : 10 PC fixes dev, 5 portables managers, DS920+, MySQL, réseau (switches+firewall), IDE/design, comptes/droits.</li>
+        <li>Ressources : 10 PC fixes dev, 5 portables managers, NAS Synology DS920+, MySQL, réseau (switches+firewall), IDE/design, comptes/droits.</li>
       </ul>
       <ol>
         <li>Inventaire complet.</li>
