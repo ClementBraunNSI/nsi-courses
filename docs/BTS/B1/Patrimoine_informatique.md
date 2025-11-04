@@ -441,7 +441,6 @@
         <li>Identifier les <strong>ressources critiques</strong>.</li>
         <li>Proposer une <strong>organisation des sauvegardes</strong>.</li>
         <li>Identifier les <strong>dépendances</strong>.</li>
-        <li>Suggérer une <strong>amélioration</strong> (maintenance/sécurité).</li>
       </ol>
     </div>
 
