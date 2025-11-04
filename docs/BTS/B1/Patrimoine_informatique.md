@@ -338,6 +338,10 @@
     </div>
   </div>
 
+  <div class="definition-content">
+      On appelle <strong>ressource critique</strong> une ressource qui possède un rôle significatif et dont son disfonctionnement pourrait avoir <strong>un impact majeur</strong> sur le fonctionnement de l'entreprise.
+      <em>Exemple : un serveur de fichier qui contient tous les fichiers relatif à une application qui doit partir en production.</em>
+    </div>
 </div>
 
 <div class="concept-section">
