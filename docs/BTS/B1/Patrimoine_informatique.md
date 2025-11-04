@@ -206,7 +206,7 @@
         <li>−20 à −30% de temps moyen de rétablissement (MTTR) avec inventaire centralisé.</li>
         <li>−15 à −25% de coûts logiciels via conformité et optimisation des licences.</li>
         <li>+30 à +50% de couverture de sauvegarde quand les dépendances sont cartographiées.</li>
-        <li>Jusqu’à −40% d’incidents liés à l’obsolescence non suivie avec une CMDB tenue.</li>
+        <li>Jusqu’à −40% d’incidents liés à l’obsolescence non suivie avec une CMDB (Configuration Management DataBase) tenue.</li>
       </ul>
     </div>
   </div>
