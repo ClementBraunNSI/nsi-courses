@@ -437,8 +437,14 @@
 
     <div class="exercise-content-wrapper active">
       <div class="scenario-box"><strong>Contexte :</strong> Start-up de 4 employés, logiciel interne de gestion client.</div>
+      Ressources :
       <ul>
-        <li>Ressources : PC portables Dell Latitude, NAS Synology DS220+, routeur/switch, VS Code & GitHub, Sage Start, imprimante.</li>
+        <li> PC portables Dell Latitude</li>
+        <li>NAS Synology DS220+</li>
+        <li>routeur/switch</li>
+        <li>VS Code & GitHub</li>
+        <li>Sage Start</li>
+        <li>imprimante</li>
       </ul>
       <ol>
         <li>Créer un <strong>tableau d’inventaire</strong>.</li>
@@ -450,22 +456,35 @@
 
     <div class="exercise-content-wrapper">
       <div class="scenario-box"><strong>Contexte :</strong> PME de 15 employés, développement d’apps mobiles.</div>
+      Ressources :
       <ul>
-        <li>Ressources : 10 PC fixes dev, 5 portables managers, NAS Synology DS920+, MySQL, réseau (switches+firewall), IDE/design, comptes/droits.</li>
+        <li>10 PC fixes dev</li> 
+        <li>5 portables managers</li>
+        <li>NAS Synology DS920+</li>
+        <li>MySQL</li> 
+        <li>réseau (switches+firewall)</li> 
+        <li>Suite JetBrains</li>
+        <li>comptes/droits.</li>
       </ul>
       <ol>
+        <li>Classer les ressources : matérielles , immatérielles, logicielles</li>
         <li>Créer un tableau d'inventaire complet.</li>
         <li>Quelles sont les ressources critiques (dév/sécurité).</li>
-        <li>Donner une dépendance entre 2 actifs.</strong>.</li>
-        <li>Proposer une améliorations de maintenance.</li>
+        <li>Donner une dépendance entre 2 ressources/actifs.</strong>.</li>
         <li>Risques potentiels (panne, licence…).</li>
       </ol>
     </div>
 
     <div class="exercise-content-wrapper">
       <div class="scenario-box"><strong>Contexte :</strong> 50 employés, projets web/mobiles simultanés.</div>
+      Ressources :
       <ul>
-        <li>Ressources : 35 dev (HP G6), 15 chefs de projet/QA (Dell XPS, VPN), serveurs (DS1821+, Exchange, BDD), réseau Cisco, IDE/bureautique/design, AD/LDAP, documentation.</li>
+        <li> 35 dev (HP G6)</li>
+        <li>15 chefs de projet (Dell XPS, VPN)</li>
+        <li>serveur de test et de production</li>
+        <li>intranet</li>
+        <li>IDE/logiciel bureautique/logiciels de design</li> 
+        <li>documentation.</li>
       </ul>
       <ol>
         <li>Inventaire complet.</li>
@@ -486,7 +505,8 @@
 
     <div class="exercise-title">Consignes</div>
     <ul class="content-text">
-      <li>Lister toutes les ressources matérielles et logicielles.</li>
+      <li>Lister toutes les ressources matérielles, logicielles et immatérielles.</li>
+      <li>Réaliser le tableau d'inventaire.</li>
       <li>Identifier les ressources <strong>critiques</strong>.</li>
       <li>Décrire les <strong>dépendances</strong>.</li>
       <li>Proposer une <strong>organisation des sauvegardes</strong>.</li>

@@ -605,9 +605,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 Sécurité des systèmes informatiques, réseaux et services d'infrastructure
             </p>
             <div class="chapter-item">
+                <div class="chapter-title">B3.1</div>
+                <div class="chapter-links">
+                    
+                   <a href="../B3/Introduction_cybersecurite" class="chapter-link">📚 Introduction </a>
+                </div>
+            </div>
                 <div class="chapter-title">TP Python</div>
                 <div class="chapter-links">
-                   <a href="../B3/TP/Introduction_python_1" class="chapter-link">⚙️ TP Python 1 : conditions / boucles / fonctions </a>
+                    
+                   <a href="../B3/TP/premiers_pas_python" class="chapter-link">TP Python 1 : variables /conditions  / fonctions </a>
                 </div>
             </div>
 
