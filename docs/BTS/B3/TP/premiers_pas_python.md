@@ -36,12 +36,15 @@
 .exercise-card.intro { border-left-color: #2196F3; }
 .exercise-card.conditions { border-left-color: #FF9800; }
 .exercise-card.functions { border-left-color: #4CAF50; }
+.exercise-card.loops { border-left-color: #9C27B0; }
+.exercise-card.lists { border-left-color: #3F51B5; }
 .exercise-title { margin: 0 0 0.5rem 0; color: var(--md-primary-fg-color); font-size: 1.05rem; font-weight: 600; }
 .exercise-content { line-height: 1.6; }
 .difficulty-badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; font-weight: 500; margin-bottom: 0.5rem; }
 .difficulty-badge.intro { background: rgba(33, 150, 243, 0.1); color: #2196F3; }
 .difficulty-badge.conditions { background: rgba(255, 152, 0, 0.1); color: #FF9800; }
 .difficulty-badge.functions { background: rgba(76, 175, 80, 0.1); color: #4CAF50; }
+.difficulty-badge.loops { background: rgba(156, 39, 176, 0.1); color: #9C27B0; }
 </style>
 
 <style>
@@ -136,6 +139,8 @@ document.addEventListener('DOMContentLoaded', function() {
   <button id="tab-course-variables" class="course-tab" role="tab" aria-controls="course-variables" aria-selected="false" onclick="showCourseSection('course-variables', this)">Variables · Affichage · Demande</button>
   <button id="tab-course-conditions" class="course-tab" role="tab" aria-controls="course-conditions" aria-selected="false" onclick="showCourseSection('course-conditions', this)">Conditions</button>
   <button id="tab-course-fonctions" class="course-tab" role="tab" aria-controls="course-fonctions" aria-selected="false" onclick="showCourseSection('course-fonctions', this)">Fonctions</button>
+  <button id="tab-course-boucles" class="course-tab" role="tab" aria-controls="course-boucles" aria-selected="false" onclick="showCourseSection('course-boucles', this)">Boucles</button>
+  <button id="tab-course-listes" class="course-tab" role="tab" aria-controls="course-listes" aria-selected="false" onclick="showCourseSection('course-listes', this)">Listes · Tuples</button>
   <noscript>Activez JavaScript pour naviguer entre les points de cours.</noscript>
 </div>
 
@@ -202,6 +207,131 @@ age = int(age)</code></pre>
     </div>
   </div>
   <p style="font-size:0.9rem; color:#888;">
+</div>
+
+<div id="course-listes" class="course-content" role="tabpanel" aria-labelledby="tab-course-listes">
+  <div class="course-header">
+    <h2 class="section-title">Listes · Tuples</h2>
+    <p class="course-subtitle">Structures linéaires : listes (mutables) et tuples (immuables), parcours et opérations courantes, puis exercices sous forme de fonctions.</p>
+  </div>
+
+  <div class="concept-section">
+    <h3 class="subsection-title">Créer et manipuler une liste</h3>
+    <pre><code># Création
+notes = [12, 15, 9, 18]
+
+# Accès par indice
+premiere = notes[0]   # 12
+derniere = notes[-1]  # 18
+
+# Longueur
+taille = len(notes)   # 4
+
+# Parcours par valeur
+for n in notes:
+    print(n)
+
+# Parcours par indice
+for i in range(len(notes)):
+    print(i, notes[i])
+
+# Compréhension de liste
+carres = [x*x for x in range(5)]  # [0,1,4,9,16]</code></pre>
+  </div>
+
+  <div class="concept-section">
+    <h3 class="subsection-title">Méthodes utiles sur les listes</h3>
+    <p class="content-text">Méthodes courantes pour ajouter, retirer, trier, copier et interroger une liste.</p>
+    <pre><code>liste = [3, 1, 4]
+
+# Ajouter / étendre / insérer
+liste.append(2)             # [3, 1, 4, 2]
+liste.extend([5, 6])        # [3, 1, 4, 2, 5, 6]
+liste.insert(1, 99)         # [3, 99, 1, 4, 2, 5, 6]
+
+# Retirer / dépiler
+liste.remove(99)            # supprime la première occurrence de 99
+x = liste.pop()             # retire et retourne le dernier élément
+y = liste.pop(2)            # retire à l’indice 2
+
+# Compter / trouver indice
+c = liste.count(3)          # nombre d’occurrences de 3
+i = liste.index(4)          # première position de 4
+
+# Trier / inverser
+liste.sort()                # tri croissant
+liste.sort(reverse=True)    # tri décroissant
+liste.reverse()             # inversion
+
+# Découpage (slicing)
+milieu = liste[2:5]
+inverse = liste[::-1]
+
+# Copie (pour éviter les alias)
+copie1 = liste[:]           # copie par slicing
+copie2 = liste.copy()       # copie</code></pre>
+    <p class="content-text"><strong>Attention</strong> : les listes sont mutables; utiliser une copie pour conserver l’original si vous devez modifier sans impacter la variable source.</p>
+  </div>
+
+  <div class="concept-section">
+    <h3 class="subsection-title">Tuples</h3>
+    <p class="content-text">Un tuple est une séquence immuable. On peut l'indexer et le parcourir comme une liste, mais on ne peut pas modifier ses éléments.</p>
+    <pre><code>coord = (10, 20)
+x = coord[0]  # 10
+y = coord[1]  # 20
+# coord[0] = 99  # Erreur : tuple immuable</code></pre>
+  </div>
+
+  <div class="exercise-cards">
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 1 — Somme des éléments</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>somme_elements(liste)</code> qui retourne la somme des éléments de <code>liste</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 2 — Compter les pairs</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_pairs(liste)</code> qui retourne le nombre d'éléments pairs dans <code>liste</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 3 — Longueurs des chaînes</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>longueur_chaines(liste)</code> qui retourne une nouvelle liste contenant la longueur de chaque chaîne de <code>liste</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 4 — Produit des éléments</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>produit_elements(liste)</code> qui retourne le produit des éléments; pour une liste vide, retourner <code>1</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 5 — Occurrences</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_occurrences(liste, valeur)</code> qui retourne le nombre d'occurrences de <code>valeur</code> dans <code>liste</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 6 — Inverser une liste</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>inverser_liste(liste)</code> qui retourne une nouvelle liste avec les éléments dans l'ordre inverse.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 7 — Concaténation</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>concatener_listes(a, b)</code> qui retourne une nouvelle liste contenant les éléments de <code>a</code> suivis de ceux de <code>b</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes · Tuples</div>
+      <h4 class="exercise-title">Exercice 8 — Premiers éléments</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>premiers_elements(liste, n)</code> qui retourne les <code>n</code> premiers éléments de <code>liste</code> (ou toute la liste si <code>n</code> est plus grand).</strong></div>
+    </div>
+  </div>
+  <p style="font-size:0.9rem; color:#888;"></p>
 </div>
 
 <div id="course-conditions" class="course-content" role="tabpanel" aria-labelledby="tab-course-conditions">
@@ -386,6 +516,122 @@ print("Le double est :", resultat)</code></pre>
       <div class="difficulty-badge functions">Fonctions</div>
       <h4 class="exercise-title">Exercice 6 — Calculatrice complète</h4>
       <div class="exercise-content"><strong>Créer <code>addition</code>, <code>soustraction</code>, <code>multiplication</code>, <code>division</code> puis une fonction <code>calculatrice()</code> qui demande deux nombres et une opération, appelle la fonction appropriée et affiche le résultat.</strong></div>
+    </div>
+  </div>
+  <p style="font-size:0.9rem; color:#888;">
+</div>
+
+<div id="course-boucles" class="course-content" role="tabpanel" aria-labelledby="tab-course-boucles">
+  <div class="course-header">
+    <h2 class="section-title">Boucles</h2>
+    <p class="course-subtitle">Rappels sur <code>for</code>, <code>while</code>, <code>range()</code>, <code>break</code>/<code>continue</code>, puis exercices sous forme de fonctions.</p>
+  </div>
+
+  <div class="concept-section">
+    <h3 class="subsection-title">Boucle <code>for</code> et <code>range()</code></h3>
+    <pre><code># Parcourir une séquence de nombres de 1 à 5
+for i in range(1, 6):
+    print(i)
+
+# Parcourir une liste
+animaux = ["renard", "lapin", "hibou"]
+for a in animaux:
+    print(a)</code></pre>
+    <p class="content-text"><code>range(debut, fin, pas)</code> génère une séquence. Parcourir des listes directement est fréquent.</p>
+  </div>
+
+  <div class="concept-section">
+    <h3 class="subsection-title">Boucle <code>while</code></h3>
+    <pre><code># Répéter tant qu'une condition est vraie
+compteur = 0
+while compteur < 3:
+    print("tour", compteur)
+    compteur += 1</code></pre>
+    <p class="content-text">Attention aux conditions et aux mises à jour des variables pour éviter les boucles infinies.</p>
+  </div>
+
+  <div class="concept-section">
+    <h3 class="subsection-title"><code>break</code> et <code>continue</code></h3>
+    <pre><code>for i in range(1, 10):
+    if i == 5:
+        break      # Arrête la boucle
+    if i % 2 == 0:
+        continue   # Passe à l'itération suivante
+    print(i)</code></pre>
+    <p class="content-text">Utiliser <code>break</code> pour arrêter la boucle, <code>continue</code> pour sauter à l'itération suivante.</p>
+  </div>
+
+  <div class="exercise-cards">
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 1 — 1 à 100</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>liste_de_1_a_100()</code> qui retourne la liste des nombres de 1 à 100.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 2 — Table de multiplication</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>table_multiplication(n)</code> qui retourne une liste de 10 chaînes sous la forme <code>"i x n = produit"</code> pour <code>i</code> allant de 1 à 10.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 3 — Somme de 1 à 100</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>somme_1_a_100()</code> qui retourne la somme des entiers de 1 à 100.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 4 — Pairs 1..100</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>pairs_1_a_100()</code> qui retourne la liste des nombres pairs entre 1 et 100.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 5 — Compter les voyelles</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_voyelles(chaine)</code> qui retourne le nombre de voyelles dans <code>chaine</code>.</strong> <em>Indice&nbsp;: utiliser un ensemble comme <code>set("aeiouyAEIOUY")</code>.</em></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 6 — Inverser une chaîne</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>inverser_chaine(chaine)</code> qui retourne <code>chaine</code> inversée.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 7 — Somme des chiffres</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>somme_chiffres(n)</code> qui retourne la somme des chiffres de l'entier <code>n</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 8 — Jusqu'au premier négatif</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_positifs_avant_negatif(entiers)</code> qui parcourt la liste <code>entiers</code> et retourne le nombre de valeurs lues avant de rencontrer le premier négatif (ou la longueur si aucun négatif).</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 9 — Multiples de 3</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>multiples_de_trois(start, count)</code> qui retourne la liste obtenue en partant de <code>start</code> et en le multipliant par 3, <code>count</code> fois de suite.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 10 — Divisions par 2</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>nb_divisions_par_2(n)</code> qui retourne le nombre de fois où <code>n</code> est divisible par 2 (division entière) jusqu'à devenir strictement inférieur à 2.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 11 — Diviseurs et primalité</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>diviseurs_propres(n)</code> qui retourne la liste des diviseurs de <code>n</code> (hors 1 et <code>n</code>). Puis écrire <code>est_premier(n)</code> qui retourne <code>True</code> si <code>n</code> est premier.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 12 — Conjecture de Syracuse</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>sequence_syracuse(n)</code> qui retourne la liste des termes de la suite de Syracuse en partant de <code>n</code> jusqu'à 1 (si pair: <code>n // 2</code>, sinon: <code>3*n + 1</code>).</strong></div>
     </div>
   </div>
   <p style="font-size:0.9rem; color:#888;">
