@@ -633,6 +633,49 @@ while compteur < 3:
       <h4 class="exercise-title">Exercice 12 — Conjecture de Syracuse</h4>
       <div class="exercise-content"><strong>Écrire une fonction <code>sequence_syracuse(n)</code> qui retourne la liste des termes de la suite de Syracuse en partant de <code>n</code> jusqu'à 1 (si pair: <code>n // 2</code>, sinon: <code>3*n + 1</code>).</strong></div>
     </div>
+
+    <!-- Exercices supplémentaires — Boucles avec chaînes de caractères -->
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 13 — Occurrences d’un caractère</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_occurrences_caractere(chaine, c)</code> qui retourne le nombre d’occurrences de <code>c</code> dans <code>chaine</code> en parcourant la chaîne caractère par caractère.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 14 — Supprimer un caractère</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>supprimer_caractere(chaine, c)</code> qui retourne une nouvelle chaîne sans aucune occurrence de <code>c</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 15 — Doubler chaque caractère</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>doubler_caracteres(chaine)</code> qui retourne une chaîne où chaque caractère de <code>chaine</code> est répété deux fois (ex: <code>"abc" → "aabbcc"</code>).</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 16 — Alterner majuscules/minuscules</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>alterner_casse(chaine)</code> qui retourne une chaîne où les caractères d’indice pair sont en majuscule et ceux d’indice impair en minuscule. Utiliser une boucle sur les indices.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 17 — Miroir des mots</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>miroir_mots(phrase)</code> qui retourne une nouvelle phrase où chaque mot est inversé caractère par caractère, en conservant les espaces (ex: <code>"bonjour monde" → "ruojnob ednom"</code>).</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 18 — Compter lettres et chiffres</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_lettres_chiffres(chaine)</code> qui retourne un tuple <code>(nb_lettres, nb_chiffres)</code> en parcourant la chaîne et en classant chaque caractère.</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 19 — Palindrome (sans slicing)</h4>
+      <div class="exercise-content"><strong>Écrire une fonction <code>est_palindrome(chaine)</code> qui retourne <code>True</code> si <code>chaine</code> est un palindrome en utilisant une boucle (sans <code>[::-1]</code> ni <code>reversed()</code>).</strong></div>
+    </div>
   </div>
   <p style="font-size:0.9rem; color:#888;">
 </div>
