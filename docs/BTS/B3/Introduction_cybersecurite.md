@@ -1498,171 +1498,47 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
   <div class="content-text"><p><strong>Légende :</strong> Vert = faible, Orange = moyen, Rouge = élevé, Violet = critique.</p></div>
 </div>
 
-<h3 class="subsection-title">7.5 Exemple de calcul détaillé</h3>
+<h3 class="subsection-title">7.5 Calcul de risque simplifié</h3>
 
-<div class="scenario-box">
+<div class="definition-box">
+  <div class="definition-title">Principe</div>
+  <div class="definition-content content-text">
+    <p>Le calcul repose sur une formule unique et intuitive&nbsp;:</p>
+    <pre><code>Risque = Vraisemblance × Impact</code></pre>
+    <p>Attribuez une note de 1 à 5 à chaque dimension selon les définitions ci-dessous, puis lisez le niveau de risque via la grille de lecture.</p>
+  </div>
+  </div>
+
+<div class="concept-section">
+  <h4 class="subsubsection-title">Échelles simples (1–5)</h4>
   <div class="content-text">
-    <p><strong>Scénario :</strong> Attaque ransomware sur une PME de 50 employés dans le secteur industriel</p>
+    <ul>
+      <li><strong>Vraisemblance (P)</strong> : 1 Très faible, 2 Faible, 3 Moyenne, 4 Élevée, 5 Très élevée</li>
+      <li><strong>Impact (I)</strong> : 1 Mineur, 2 Faible, 3 Significatif, 4 Élevé, 5 Critique</li>
+    </ul>
   </div>
   </div>
 
-<h4 class="subsubsection-title">Étape 1 : Analyse des composants</h4>
+<div class="concept-section">
+  <h4 class="subsubsection-title">Lecture du résultat</h4>
+  <div class="content-text">
+    <ul>
+      <li>1–4 → <strong>Faible</strong></li>
+      <li>5–8 → <strong>Moyen</strong></li>
+      <li>9–12 → <strong>Élevé</strong></li>
+      <li>13–25 → <strong>Critique</strong></li>
+    </ul>
+  </div>
+  </div>
 
 <div class="definition-box">
-  <div class="definition-title">Analyse des composants</div>
+  <div class="definition-title">Exemple rapide</div>
   <div class="definition-content content-text">
-    <p><strong>Menace :</strong></p>
-    <ul>
-      <li>Groupe de cybercriminels spécialisé en ransomware (REvil, Conti, LockBit)</li>
-      <li>Motivés par l'argent</li>
-      <li>Ciblent activement les PME industrielles</li>
-    </ul>
-    <p><strong>Vulnérabilités identifiées :</strong></p>
-    <ul>
-      <li>Absence de sauvegarde hors ligne testée</li>
-      <li>Utilisateurs non sensibilisés au phishing</li>
-      <li>Pas d'authentification multi-facteurs sur les accès distants</li>
-      <li>Réseau non segmenté</li>
-      <li>Droits administrateur sur tous les postes</li>
-    </ul>
-    <p><strong>Actif concerné :</strong></p>
-    <ul>
-      <li>Système d'information complet (serveurs de production, postes de travail, données)</li>
-    </ul>
-  </div>
-  </div>
-
-<h4 class="subsubsection-title">Étape 2 : Évaluation de la vraisemblance</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Évaluation de la vraisemblance</div>
-  <div class="definition-content content-text">
-    <p><strong>Facteurs analysés :</strong></p>
-    <ul>
-      <li>Secteur ciblé activement : ✓</li>
-      <li>Vulnérabilités multiples et critiques : ✓</li>
-      <li>Absence de mesures de protection avancées : ✓</li>
-      <li>Historique d'attaques dans le secteur : ✓</li>
-    </ul>
-  </div>
-  </div>
-<div class="highlight-fact">Vraisemblance : ÉLEVÉE (4/5)</div>
-
-<h4 class="subsubsection-title">Étape 3 : Évaluation de l'impact</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Évaluation de l'impact</div>
-  <div class="definition-content content-text">
-    <p><strong>Impact financier :</strong></p>
-    <ul>
-      <li>Arrêt de production : 2 semaines = 300 k€</li>
-      <li>Paiement de la rançon : 100 k€</li>
-      <li>Remédiation et restauration : 80 k€</li>
-      <li>Consultants externes : 50 k€</li>
-    </ul>
-    <p><strong>Total :</strong> 530 k€</p>
-    <p><strong>Impact opérationnel :</strong></p>
-    <ul>
-      <li>Arrêt total de l'activité : 2 semaines</li>
-      <li>Perte de contrats clients</li>
-      <li>Retards de livraison</li>
-    </ul>
-    <p><strong>Impact réputationnel :</strong></p>
-    <ul>
-      <li>Couverture médiatique locale</li>
-      <li>Perte de confiance des clients</li>
-      <li>Difficultés commerciales</li>
-    </ul>
-    <p><strong>Impact juridique :</strong></p>
-    <ul>
-      <li>Notification CNIL obligatoire</li>
-      <li>Risque de sanctions RGPD</li>
-      <li>Pertes de certifications</li>
-    </ul>
-  </div>
-  </div>
-<div class="highlight-fact">Impact global : CRITIQUE (4/5)</div>
-
-<h4 class="subsubsection-title">Étape 4 : Calcul du risque</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Calcul du risque</div>
-  <div class="definition-content content-text">
-    <pre><code>RISQUE = 4 × 4 = 16 → CRITIQUE</code></pre>
-  </div>
-  </div>
-
-<h4 class="subsubsection-title">Étape 5 : Décision et actions</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Décision et plan d'action</div>
-  <div class="definition-content content-text">
-    <p><strong>Niveau de risque :</strong> CRITIQUE (16/25) → Actions immédiates obligatoires</p>
-    <p><strong>Plan d'action prioritaire :</strong></p>
-    <ol>
-      <li><strong>Sauvegardes (Priorité 1)</strong> — Délai : 1 semaine
-        <ul>
-          <li>Mise en place de sauvegardes 3-2-1</li>
-          <li>Tests de restauration mensuels</li>
-          <li>Sauvegardes hors ligne et immutables</li>
-          <li>Coût : 15 k€</li>
-        </ul>
-      </li>
-      <li><strong>Sensibilisation (Priorité 1)</strong> — Délai : 2 semaines
-        <ul>
-          <li>Formation anti-phishing pour tous</li>
-          <li>Simulations mensuelles</li>
-          <li>Procédure de signalement</li>
-          <li>Coût : 5 k€</li>
-        </ul>
-      </li>
-      <li><strong>MFA (Priorité 1)</strong> — Délai : 1 mois
-        <ul>
-          <li>Authentification multi-facteurs sur tous les accès distants</li>
-          <li>MFA pour les comptes administrateurs</li>
-          <li>Coût : 3 k€</li>
-        </ul>
-      </li>
-      <li><strong>Segmentation réseau (Priorité 2)</strong> — Délai : 2 mois
-        <ul>
-          <li>Séparation production / administration / invités</li>
-          <li>VLANs et règles de pare-feu</li>
-          <li>Coût : 20 k€</li>
-        </ul>
-      </li>
-      <li><strong>Gestion des privilèges (Priorité 2)</strong> — Délai : 1 mois
-        <ul>
-          <li>Suppression des droits admin inutiles</li>
-          <li>Comptes à privilèges séparés</li>
-          <li>Coût : 2 k€</li>
-        </ul>
-      </li>
-    </ol>
-    <p><strong>Investissement total :</strong> 45 k€ — <strong>Comparé au coût d'un incident :</strong> 530 k€ — <strong>ROI :</strong> 1 077%</p>
-  </div>
-  </div>
-
-<h4 class="subsubsection-title">Étape 6 : Calcul du risque résiduel</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Calcul du risque résiduel</div>
-  <div class="definition-content content-text">
-    <p>Après implémentation des mesures :</p>
-    <p><strong>Nouvelle vraisemblance :</strong> FAIBLE (2/5)</p>
-    <ul>
-      <li>Sauvegardes efficaces</li>
-      <li>Utilisateurs sensibilisés</li>
-      <li>MFA en place</li>
-      <li>Réseau segmenté</li>
-    </ul>
-    <p><strong>Impact réduit :</strong> MINEUR (2/5)</p>
-    <ul>
-      <li>Récupération possible via sauvegardes</li>
-      <li>Limitation de la propagation</li>
-      <li>Détection plus rapide</li>
-    </ul>
-    <pre><code>Risque résiduel = 2 × 2 = 4 → MOYEN</code></pre>
-    <div class="highlight-fact">Niveau de risque résiduel acceptable avec surveillance continue.</div>
+    <p><strong>Scénario :</strong> Indisponibilité du site web (attaque DDoS).</p>
+    <p><strong>Évaluation :</strong> P = 3 (Moyenne), I = 4 (Élevé).</p>
+    <pre><code>Risque = 3 × 4 = 12 → ÉLEVÉ</code></pre>
+    <p><strong>Après protections</strong> (anti-DDoS, CDN) : P = 2, I = 3.</p>
+    <pre><code>Risque résiduel = 2 × 3 = 6 → MOYEN</code></pre>
   </div>
   </div>
 
@@ -1702,7 +1578,7 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
 
   <div class="exercise-title">Format de réponse</div>
   <div class="content-text">
-    <p>Suivez le modèle de l'exemple détaillé ci-dessus.</p>
+    <p>Suivez le modèle simplifié ci-dessus.</p>
   </div>
 </div>
 
