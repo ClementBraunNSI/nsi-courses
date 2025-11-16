@@ -63,11 +63,8 @@ Justifications des 3 premiers actifs:
 | 1 | Vulnérabilité | Logiciel obsolète (Apache 2018) expose des failles connues. |
 | 2 | Menace | Groupe malveillant identifié ciblant un secteur. |
 | 3 | Risque | Combinaison vraisemblance × impact chiffré (200 k€). |
-| 4 | Incident | Réalisation de la menace (infection et propagation). |
-| 5 | Vulnérabilité | Manque de sensibilisation = faiblesse organisationnelle/humaine. |
-| 6 | Menace | Tenter d’obtenir des infos confidentielles = intention malveillante externe. |
-| 7 | Risque | Possibilité de vol avec impact estimé (500 k€). |
-| 8 | Vulnérabilité | Mots de passe administrateurs accessibles à tous, non protégés. |
+| 4 | Vulnérabilité | Manque de sensibilisation = faiblesse organisationnelle/humaine. |
+| 5 | Vulnérabilité | Mots de passe administrateurs accessibles à tous, non protégés. |
 
 ---
 
@@ -79,9 +76,7 @@ Justifications des 3 premiers actifs:
 | 2 | Humaine non intentionnelle | Sensibilisation/DLP, double vérification destinataires, bannières d’avertissement mails externes. |
 | 3 | Technique | Gestion des correctifs (patch management), segmentation réseau, IDS/IPS. |
 | 4 | Environnementale | Local technique adapté, PRA/PCA, sauvegardes hors site, capteurs anti-inondation. |
-| 5 | Légale | Gestion des licences, inventaire logiciels, audit de conformité régulier. |
-| 6 | Humaine intentionnelle | Durcissement (hardening), surveillance (SIEM), contrôle d’accès strict, EDR, SOC. |
-| 7 | Humaine non intentionnelle | Processus de changement (4-eyes), validation par pair, règles de configuration, formation. |
+| 7 | Humaine non intentionnelle | Validation par pair, règles de configuration, formation. |
 | 8 | Environnementale | Site de secours/Cloud, protections sismiques, redondance, assurance. |
 | 9 | Légale | Programme RGPD, DPO, registre des traitements, DPIA, politiques et preuves de conformité. |
 | 10 | Technique | Anti-DDoS (CDN/WAF), filtrage, surdimensionnement, architecture résiliente. |

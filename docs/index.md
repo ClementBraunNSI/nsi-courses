@@ -54,6 +54,34 @@
     margin-top: 1rem;
 
 }
+
+/* Mise en ligne des 5 cards sans réduction de taille (no shrink) */
+.level-cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.level-card {
+    flex: 0 0 300px; /* largeur stable par card */
+    scroll-snap-align: start;
+}
+
+/* Sur écrans larges, forcer 5 cards parfaitement sur une ligne */
+@media (min-width: 1200px) {
+    .level-cards-container {
+        overflow-x: visible;
+    }
+    .level-card {
+        flex: 0 0 calc((100% - 4rem) / 5); /* 5 colonnes avec gaps */
+        min-width: 280px;
+    }
+}
 </style>
 
 <div class="level-cards-container">
