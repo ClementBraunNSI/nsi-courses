@@ -566,6 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="chapter-item">
                     <div class="chapter-title">B1.2 - Réponse aux incidents</div>
                     <div class="chapter-links">
+                        <a href="../B1/Gestion_risques" class="chapter-link">📚 Gestion des risques</a>
                     </div>
                 </div>
                 <div class="chapter-item">
@@ -576,9 +577,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="chapter-links">
                         <a href="../B1/Chemin_critique" class="chapter-link">📚 Chemin critique</a>
                         <a href="../B1/Gestion_projet" class="chapter-link">📚 Gestion de projet</a>
-                        <a href="../B1/Gestion_risques" class="chapter-link">📚 Gestion des risques</a>
                         <a href="../B1/Methodes_agiles" class="chapter-link">📚 Méthodes agiles</a>
                         <a href="../B1/ITIL" class="chapter-link">📚 ITIL</a>
+                        <a href="../B1/etude_de_cas" class = "chapter-link">Étude de cas</a>
                     </div>
                 </div>
             </div>
