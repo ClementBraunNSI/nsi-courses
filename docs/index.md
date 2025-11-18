@@ -43,6 +43,30 @@
     margin-bottom: 1rem;
 }
 
+/* Override du conteneur du thème pour largeur pleine et sans bordures */
+.md-main, .md-container, .md-content, .md-content__inner {
+    box-shadow: none !important;
+    border: 0 !important;
+    background: transparent !important;
+}
+
+.md-content, .md-content__inner {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.md-content, .md-content__inner {
+    padding-left: clamp(0.5rem, 2vw, 2rem) !important;
+    padding-right: clamp(0.5rem, 2vw, 2rem) !important;
+}
+
+.md-main .md-container {
+    max-width: min(1400px, 98vw) !important;
+    width: 100% !important;
+}
+
 .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -463,9 +487,21 @@
 <style>
 .software-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     padding: 2rem 0;
+}
+
+@media (max-width: 1200px) {
+    .software-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .software-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .software-card {
@@ -560,7 +596,7 @@
 <div class="software-grid">
     <div class="software-card">
         <div class="software-logo">
-            <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code" style="width: 60px; height: 60px; object-fit: contain;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/330px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code" style="width: 60px; height: 60px; object-fit: contain;">
         </div>
         <h3 class="software-name">Visual Studio Code</h3>
         <p class="software-description">Éditeur de code moderne avec extensions pour Python, JavaScript, C++. Interface intuitive et débogage intégré.</p>
