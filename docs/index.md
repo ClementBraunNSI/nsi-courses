@@ -23,6 +23,9 @@
     box-shadow: 0 4px 6px rgba(193, 131, 38, 0.93);
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
 }
 
 .level-card:hover {
@@ -41,6 +44,10 @@
     height: 200px;
     object-fit: contain;
     margin-bottom: 1rem;
+}
+
+.level-card .btn {
+    margin-top: auto;
 }
 
 /* Override du conteneur du thème pour largeur pleine et sans bordures */
@@ -803,6 +810,16 @@
     
     .level-card {
         padding: 1rem;
+        min-height: 360px;
+    }
+
+    .level-cards-container {
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
+
+    .level-cards-container .level-card {
+        flex: 1 1 100%;
     }
     
     .level-card img {
@@ -984,6 +1001,7 @@
 @media (max-width: 480px) {
     .level-card {
         padding: 0.8rem;
+        min-height: 320px;
     }
     
     .level-card h2 {
