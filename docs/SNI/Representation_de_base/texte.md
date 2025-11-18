@@ -1,0 +1,1 @@
+# Représentation du texte en binaire

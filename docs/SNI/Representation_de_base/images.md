@@ -1,0 +1,1 @@
+# Représentation des images en binaire

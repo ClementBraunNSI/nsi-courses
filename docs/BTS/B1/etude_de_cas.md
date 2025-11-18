@@ -644,6 +644,8 @@ Faire contenir au document PDF <strong>dans l'ordre</strong> :
       <tr><td><strong>TOTAL</strong></td><td><strong>/20</strong></td></tr>
     </tbody>
   </table>
+
+  <p style="font-size:5px;">Bonus : Que signifie Fuchs? /0.0000001</p>
 </div>
 
 </div>
