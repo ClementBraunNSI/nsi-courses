@@ -125,7 +125,10 @@ Pour chaque collaborateur, prévoir :
   </table>
 </div>
 
-<div class="highlight-fact">Contrainte : le total TTC ne doit pas dépasser 50 000 €.</div>
+<div class="highlight-fact">
+Les développeurs et designer sont dans un open space, le support technique dans un ensemble de bureaux à part (SC1 et SC2) et la direction à l'étage (A1, A2).
+Contrainte : le total TTC ne doit pas dépasser 50 000 €.
+</div>
 
 <h3>1.2 Inventaire CMDB</h3>
 
@@ -211,6 +214,7 @@ Voici les tâches identifiées pour le projet :
 <h3>2.3 Travail à réaliser</h3>
 
 <ol>
+   <li>Quelle méthodologie serait la plus adaptée pour la réalisation de ce projet en matière de gestion de projet ? Quels sont les avantages qu'elle propose ?</li>
   <li><strong>Créer un diagramme de Gantt</strong> pour ce projet :
     <ul>
       <li>Utiliser un tableur (Excel, Google Sheets) ou un outil dédié (GanttProject, ProjectLibre)</li>
@@ -329,7 +333,7 @@ Identifier le chemin critique du projet TechStore et calculer les marges de man�
 
 <h4>4.3.1 Travail à réaliser</h4>
 
-Identifier <strong>au minimum 6 risques</strong> liés à l'infrastructure de l'entreprise et compléter le tableau :
+Identifier <strong>au minimum 6 risques autres que ceux énoncés</strong> liés à l'infrastructure de l'entreprise et compléter le tableau :
 
 <div class="table-section">
   <table class="styled-table">
@@ -362,7 +366,7 @@ Stratégies disponibles : Éviter, Transférer, Réduire, Accepter
 
 <h4>4.4.1 Travail à réaliser</h4>
 
-Identifier <strong>au minimum 6 risques</strong> liés au développement de l'application TechStore :
+Identifier <strong>au minimum 6 risques autres que ceux énoncés</strong> liés au développement de l'application TechStore :
 
 <div class="table-section">
   <table class="styled-table">
@@ -456,7 +460,7 @@ ITIL définit les bonnes pratiques pour <strong>faire vivre un service dans la d
   </table>
 </div>
 
-  <li><strong>Proposer 3 exemples d'incidents</strong> avec leur traitement :</li>
+  <li><strong>Proposer 5 exemples d'incidents</strong> avec leur traitement :</li>
 </ol>
 
 <strong>Incident 1</strong> :
@@ -475,7 +479,7 @@ ITIL définit les bonnes pratiques pour <strong>faire vivre un service dans la d
   <li>Niveau d'escalade :</li>
 </ul>
 
-<strong>Incident 3</strong> :
+<strong>Incident n</strong> :
 <ul>
   <li>Description :</li>
   <li>Priorité :</li>
@@ -487,7 +491,7 @@ ITIL définit les bonnes pratiques pour <strong>faire vivre un service dans la d
 
 <h4>5.4.1 Travail à réaliser</h4>
 
-Identifier <strong>3 problèmes potentiels</strong> (causes profondes récurrentes) et leur traitement :
+Identifier <strong>5 problèmes potentiels</strong> (causes profondes récurrentes) et leur traitement :
 
 <div class="table-section">
   <table class="styled-table">
