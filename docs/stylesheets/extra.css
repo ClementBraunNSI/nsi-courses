@@ -279,6 +279,11 @@
     background-color: rgb(241, 170, 70,0)!important;
 }
 
+#clement-braun-nsi{
+  visibility: hidden;
+  padding-top : -10%;
+}
+
 .md-typeset h1{
     text-align: center !important;
     width: 100%;

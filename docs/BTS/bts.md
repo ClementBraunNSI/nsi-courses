@@ -1,4 +1,23 @@
 <style>
+.md-content, .md-content__inner {
+  box-shadow: none !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.md-content, .md-content__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: clamp(0.5rem, 2vw, 2rem) !important;
+  padding-right: clamp(0.5rem, 2vw, 2rem) !important;
+}
+
+.md-main .md-container {
+  max-width: min(1400px, 98vw) !important;
+  width: 100% !important;
+}
 /* Carrousel pour les catégories */
 .category-carousel-container {
   position: relative;

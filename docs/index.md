@@ -96,26 +96,35 @@
     overflow-x: auto;
     padding: 1rem 0;
     scroll-snap-type: x mandatory;
+    scroll-margin-top: 80px;
 }
 
 .level-card {
     flex: 0 0 300px; /* largeur stable par card */
     scroll-snap-align: start;
+    min-height :750px;
 }
 
-/* Sur écrans larges, forcer 5 cards parfaitement sur une ligne */
+/* Sur écrans larges, forcer 6 cards parfaitement sur une ligne */
 @media (min-width: 1200px) {
     .level-cards-container {
         overflow-x: visible;
     }
     .level-card {
-        flex: 0 0 calc((100% - 4rem) / 5); /* 5 colonnes avec gaps */
-        min-width: 280px;
+        flex: 0 0 calc((100% - 5rem) / 6); /* 6 colonnes avec 5 gaps de 1rem */
+        min-width: 240px;
+        min-height: 750px;
     }
 }
 </style>
 
-<div class="level-cards-container">
+<div class="level-cards-container" id="level-cards">
+    <div class="level-card">
+        <img src="images/fox_sni.png" alt="SNT Seconde">
+        <h2>SNI - 3e</h2>
+        <p>Sciences Numériques et Informatique : introduction à l'informatique au collège</p>
+        <a href="SNI/SNI" class="btn">Accéder aux ressources</a>
+    </div>
     <div class="level-card">
         <img src="images/fox_seconde.png" alt="SNT Seconde">
         <h2>SNT - Seconde</h2>
@@ -147,6 +156,19 @@
         <a href="chasse_aux_renards" class="btn">Participer au défi</a>
     </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (!location.hash) {
+    var el = document.getElementById('level-cards');
+    if (el) {
+      var header = document.querySelector('.md-header');
+      var offset = header ? header.offsetHeight + 8 : 72;
+      var y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: 'auto' });
+    }
+  }
+});
+</script>
 ---
 
 <style>
