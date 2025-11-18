@@ -594,9 +594,7 @@ Faire contenir au document PDF <strong>dans l'ordre</strong> :
     <ul>
       <li>Tableau CMDB matériel</li>
       <li>Tableau CMDB licences</li>
-      <li>Tableau services IT</li>
-      <li>Analyse de l'état du parc</li>
-      <li>Plan de migration</li>
+      <li>Explication méthodologie de projet</li>
     </ul>
   </li>
   <li><strong>Partie 2 : Diagramme de Gantt</strong>
