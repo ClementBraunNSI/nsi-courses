@@ -1254,35 +1254,35 @@ La vraisemblance (ou probabilité) qu'une menace se réalise dépend de plusieur
       </thead>
       <tbody>
         <tr>
-          <td>Très faible</td>
+          <td>Faible</td>
           <td>1</td>
           <td>&lt; 5%</td>
           <td>Événement exceptionnel, peu probable</td>
           <td>Attaque APT ciblée sur une petite PME</td>
         </tr>
         <tr>
-          <td>Faible</td>
+          <td>Moyen</td>
           <td>2</td>
           <td>5–25%</td>
           <td>Événement rare</td>
           <td>Sabotage interne dans une entreprise avec bonne culture sécurité</td>
         </tr>
         <tr>
-          <td>Moyenne</td>
+          <td>Élevé</td>
           <td>3</td>
           <td>25–75%</td>
           <td>Événement possible</td>
           <td>Attaque par force brute sur un service exposé</td>
         </tr>
         <tr>
-          <td>Élevée</td>
+          <td>Très élevé</td>
           <td>4</td>
           <td>75–95%</td>
           <td>Événement probable</td>
           <td>Phishing sur des employés non formés</td>
         </tr>
         <tr>
-          <td>Très élevée</td>
+          <td>Critique</td>
           <td>5</td>
           <td>&gt; 95%</td>
           <td>Événement quasi certain</td>
@@ -1331,35 +1331,35 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
       </thead>
       <tbody>
         <tr>
-          <td>Négligeable</td>
+          <td>Faible</td>
           <td>1</td>
           <td>&lt; 10 k€</td>
           <td>Impact minimal, récupération rapide</td>
           <td>Poste de travail non critique compromis</td>
         </tr>
         <tr>
-          <td>Mineur</td>
+          <td>Moyen</td>
           <td>2</td>
           <td>10–100 k€</td>
           <td>Impact limité, quelques heures d'interruption</td>
           <td>Serveur de test compromis</td>
         </tr>
         <tr>
-          <td>Majeur</td>
+          <td>Élevé</td>
           <td>3</td>
           <td>100 k€ – 1 M€</td>
           <td>Impact significatif, plusieurs jours d'interruption</td>
           <td>Fuite de données clients non sensibles</td>
         </tr>
         <tr>
-          <td>Critique</td>
+          <td>Très élevé</td>
           <td>4</td>
           <td>1–10 M€</td>
           <td>Impact grave, semaines d'interruption</td>
           <td>Ransomware sur serveurs de production</td>
         </tr>
         <tr>
-          <td>Catastrophique</td>
+          <td>Critique</td>
           <td>5</td>
           <td>&gt; 10 M€</td>
           <td>Survie de l'organisation en jeu</td>
@@ -1454,34 +1454,34 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
   </div>
   <div class="matrix-grid">
     <div class="matrix-header">Probabilité ↓ / Impact →</div>
-    <div class="matrix-header">Très faible</div>
     <div class="matrix-header">Faible</div>
     <div class="matrix-header">Moyen</div>
     <div class="matrix-header">Élevé</div>
+    <div class="matrix-header">Très élevé</div>
     <div class="matrix-header">Critique</div>
-
-    <div class="matrix-label">Très faible</div>
-    <div class="matrix-cell risk-low">Faible</div>
-    <div class="matrix-cell risk-low">Faible</div>
-    <div class="matrix-cell risk-low">Faible</div>
-    <div class="matrix-cell risk-medium">Moyen</div>
-    <div class="matrix-cell risk-medium">Moyen</div>
 
     <div class="matrix-label">Faible</div>
     <div class="matrix-cell risk-low">Faible</div>
     <div class="matrix-cell risk-low">Faible</div>
+    <div class="matrix-cell risk-low">Faible</div>
+    <div class="matrix-cell risk-medium">Moyen</div>
+    <div class="matrix-cell risk-medium">Moyen</div>
+
+    <div class="matrix-label">Moyen</div>
+    <div class="matrix-cell risk-low">Faible</div>
+    <div class="matrix-cell risk-low">Faible</div>
     <div class="matrix-cell risk-medium">Moyen</div>
     <div class="matrix-cell risk-medium">Moyen</div>
     <div class="matrix-cell risk-high">Élevé</div>
 
-    <div class="matrix-label">Moyen</div>
+    <div class="matrix-label">Élevé</div>
     <div class="matrix-cell risk-low">Faible</div>
     <div class="matrix-cell risk-medium">Moyen</div>
     <div class="matrix-cell risk-medium">Moyen</div>
     <div class="matrix-cell risk-high">Élevé</div>
     <div class="matrix-cell risk-high">Élevé</div>
 
-    <div class="matrix-label">Élevé</div>
+    <div class="matrix-label">Très élevé</div>
     <div class="matrix-cell risk-medium">Moyen</div>
     <div class="matrix-cell risk-medium">Moyen</div>
     <div class="matrix-cell risk-high">Élevé</div>
@@ -1513,8 +1513,8 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
   <h4 class="subsubsection-title">Échelles simples (1–5)</h4>
   <div class="content-text">
     <ul>
-      <li><strong>Vraisemblance (P)</strong> : 1 Très faible, 2 Faible, 3 Moyenne, 4 Élevée, 5 Très élevée</li>
-      <li><strong>Impact (I)</strong> : 1 Mineur, 2 Faible, 3 Significatif, 4 Élevé, 5 Critique</li>
+      <li><strong>Vraisemblance (P)</strong> : 1 Faible, 2 Moyen, 3 Élevé, 4 Très élevé, 5 Critique</li>
+      <li><strong>Impact (I)</strong> : 1 Faible, 2 Moyen, 3 Élevé, 4 Très élevé, 5 Critique</li>
     </ul>
   </div>
   </div>
@@ -1524,9 +1524,9 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
   <div class="content-text">
     <ul>
       <li>1–4 → <strong>Faible</strong></li>
-      <li>5–8 → <strong>Moyen</strong></li>
-      <li>9–12 → <strong>Élevé</strong></li>
-      <li>13–25 → <strong>Critique</strong></li>
+      <li>5–9 → <strong>Moyen</strong></li>
+      <li>10–16 → <strong>Élevé</strong></li>
+      <li>16–25 → <strong>Critique</strong></li>
     </ul>
   </div>
   </div>
@@ -1535,7 +1535,7 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
   <div class="definition-title">Exemple rapide</div>
   <div class="definition-content content-text">
     <p><strong>Scénario :</strong> Indisponibilité du site web (attaque DDoS).</p>
-    <p><strong>Évaluation :</strong> P = 3 (Moyenne), I = 4 (Élevé).</p>
+    <p><strong>Évaluation :</strong> P = 3 (Élevée), I = 4 (Très élevé).</p>
     <pre><code>Risque = 3 × 4 = 12 → ÉLEVÉ</code></pre>
     <p><strong>Après protections</strong> (anti-DDoS, CDN) : P = 2, I = 3.</p>
     <pre><code>Risque résiduel = 2 × 3 = 6 → MOYEN</code></pre>
@@ -1589,294 +1589,165 @@ L'impact mesure la gravité des conséquences si l'événement se produit.
 
 
 
+
+
+
 <div class="concept-section">
-  <h2 class="section-title">8. Méthode d'analyse de risque (inspirée d'EBIOS Risk Manager)</h2>
+  <h2 class="section-title">8. La méthode EBIOS Risk Manager</h2>
 
-<h3 class="subsection-title">8.1 Présentation de la méthode EBIOS</h3>
-
-<div class="definition-box">
-  <div class="definition-title">Présentation</div>
-  <div class="definition-content content-text">
-    <p><strong>EBIOS Risk Manager</strong> est une méthode française d'analyse des risques développée par l'ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information). Elle permet une approche structurée et complète de l'évaluation des risques cyber.</p>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">Pourquoi EBIOS ?</div>
-  <div class="definition-content content-text">
-    <ul>
-      <li>Méthode française reconnue et gratuite</li>
-      <li>Adaptable à tous types d'organisations</li>
-      <li>Approche par scénarios réalistes</li>
-      <li>Alignée avec les normes (ISO 27001, 27005)</li>
-      <li>Prise en compte du contexte métier</li>
-    </ul>
-  </div>
-</div>
-
-<h3 class="subsection-title">8.2 Les 5 ateliers EBIOS</h3>
-
-<h4 class="subsubsection-title">Atelier 1 : Définir le contexte et le périmètre</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Objectif</div>
-  <div class="definition-content content-text">
-    <p>Quels actifs protéger et dans quel contexte ?</p>
-  </div>
+  <h3 class="subsection-title">8.1 Qu'est-ce qu'EBIOS Risk Manager ?</h3>
+  <div class="definition-box">
+    <div class="definition-title">Définition</div>
+    <div class="definition-content content-text">
+      <p><strong>EBIOS</strong> (Expression des Besoins et Identification des Objectifs de Sécurité) est une <strong>méthode française</strong> de gestion des risques cyber développée par l'<strong>ANSSI</strong> (Agence Nationale de la Sécurité des Systèmes d'Information).</p>
+      <p><strong>Objectif :</strong> Identifier, analyser et traiter les risques de manière structurée.</p>
+    </div>
   </div>
 
-<div class="definition-box">
-  <div class="definition-title">Actions</div>
-  <div class="definition-content content-text">
-    <ol>
-      <li>Définir le périmètre de l'étude (service, application, processus)</li>
-      <li>Identifier les biens essentiels (missions, processus métiers, informations)</li>
-      <li>Cartographier les biens supports (matériels, logiciels, réseaux, locaux, personnes)</li>
-      <li>Identifier les parties prenantes (clients, partenaires, fournisseurs, régulateurs)</li>
-      <li>Définir les valeurs métier et le contexte de sécurité existant</li>
-    </ol>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">💡 Exemple</div>
-  <div class="definition-content content-text">
-    <ul>
-      <li><strong>Périmètre :</strong> Service de paie de l'entreprise</li>
-      <li><strong>Biens essentiels :</strong> Traitement des salaires, données RH</li>
-      <li><strong>Biens supports :</strong> Logiciel de paie, serveur Windows, réseau, fichiers Excel</li>
-      <li><strong>Parties prenantes :</strong> Employés, direction, URSSAF</li>
-    </ul>
-  </div>
-</div>
-
-<h4 class="subsubsection-title">Atelier 2 : Identifier les événements redoutés</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Objectif</div>
-  <div class="definition-content content-text">
-    <p>Quels sont les impacts que l'on veut éviter à tout prix ?</p>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">Actions</div>
-  <div class="definition-content content-text">
-    <ol>
-      <li>Définir les événements redoutés sur les biens essentiels<br /><span class="content-text">Exemples : "Divulgation des salaires", "Impossibilité de payer les salaires"</span></li>
-      <li>Évaluer la gravité de chaque événement redouté</li>
-      <li>Déterminer les critères de sécurité impactés (C, I, D)</li>
-      <li>Établir les seuils d'acceptabilité du risque</li>
-    </ol>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">Exemples d'événements redoutés</div>
-  <div class="definition-content content-text">
-    <ul>
-      <li>ER1 : Divulgation des données de paie → Impact sur Confidentialité → Gravité 4/4</li>
-      <li>ER2 : Modification frauduleuse des salaires → Impact sur Intégrité → Gravité 4/4</li>
-      <li>ER3 : Impossibilité de traiter la paie → Impact sur Disponibilité → Gravité 3/4</li>
-    </ul>
-  </div>
-</div>
-
-<h4 class="subsubsection-title">Atelier 3 : Étudier les scénarios de menace</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Objectif</div>
-  <div class="definition-content content-text">
-    <p>Comment les attaquants peuvent-ils procéder ?</p>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">Actions</div>
-  <div class="definition-content content-text">
-    <ol>
-      <li>Identifier les sources de risque (SR) potentielles<br /><span class="content-text">Exemples : cybercriminels, employés malveillants, concurrents</span></li>
-      <li>Analyser leurs motivations et capacités</li>
-      <li>Modéliser les scénarios stratégiques (chemins d'attaque)</li>
-      <li>Évaluer la vraisemblance de chaque scénario</li>
-    </ol>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">Exemple de scénario stratégique</div>
-  <div class="definition-content content-text">
-    <ul>
-      <li><strong>SR :</strong> Employé mécontent du service RH</li>
-      <li><strong>Motivation :</strong> Vengeance, divulgation</li>
-      <li><strong>Capacité :</strong> Moyenne (accès légitime au système)</li>
-      <li><strong>Scénario :</strong> Exfiltration des données de paie pour les divulguer publiquement</li>
-      <li><strong>Vraisemblance :</strong> 3/4</li>
-    </ul>
-  </div>
-</div>
-
-<h4 class="subsubsection-title">Atelier 4 : Identifier les mesures de sécurité existantes</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Objectif</div>
-  <div class="definition-content content-text">
-    <p>Quelles protections sont déjà en place et sont-elles efficaces ?</p>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">Actions</div>
-  <div class="definition-content content-text">
-    <ol>
-      <li>Inventorier toutes les mesures de sécurité existantes<br /><span class="content-text">Techniques (firewall, antivirus, chiffrement, sauvegardes), Organisationnelles (procédures, formations, audits), Physiques (contrôle d'accès, vidéosurveillance)</span></li>
-      <li>Évaluer leur efficacité réelle (pas seulement théorique)</li>
-      <li>Identifier les lacunes et les faiblesses</li>
-      <li>Déduire le niveau de vulnérabilité des biens supports</li>
-    </ol>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">💡 Exemple</div>
-  <div class="definition-content content-text">
-    <ul>
-      <li>✓ Antivirus à jour sur tous les postes (efficace)</li>
-      <li>✓ Sauvegardes quotidiennes (efficace)</li>
-      <li>✗ Pas de chiffrement des fichiers de paie (lacune)</li>
-      <li>✗ Droits d'accès trop larges (lacune)</li>
-    </ul>
-  </div>
-</div>
-
-<h4 class="subsubsection-title">Atelier 5 : Évaluer le risque et définir le plan de traitement</h4>
-
-<div class="definition-box">
-  <div class="definition-title">Objectif</div>
-  <div class="definition-content content-text">
-    <p>Calculer les risques résiduels et proposer un plan d'action priorisé.</p>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">Actions</div>
-  <div class="definition-content content-text">
-    <ol>
-      <li>Calculer les risques résiduels pour chaque scénario<br /><span class="content-text">Risque = Vraisemblance × Gravité (impact)</span></li>
-      <li>Comparer aux seuils d'acceptabilité définis</li>
-      <li>Pour les risques inacceptables, proposer des mesures de traitement : Réduire, Transférer, Éviter, Accepter</li>
-      <li>Établir un plan d'action priorisé avec : Liste des mesures, Coûts estimés, Délais, Responsables</li>
-      <li>Planifier le suivi et les revues périodiques</li>
-    </ol>
-  </div>
-</div>
-
-<div class="definition-box">
-  <div class="definition-title">💡 Exemple de plan de traitement</div>
-  <div class="definition-content content-text">
-    <table class="exercise-table">
-      <thead>
-        <tr>
-          <th>Mesure</th>
-          <th>Type</th>
-          <th>Priorité</th>
-          <th>Coût</th>
-          <th>Délai</th>
-          <th>Responsable</th>
-          <th>Risques traités</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Chiffrement des fichiers paie</td><td>Technique</td><td>1</td><td>2 k€</td><td>1 mois</td><td>DSI</td><td>ER1</td></tr>
-        <tr><td>Revue des droits d'accès</td><td>Organisationnelle</td><td>1</td><td>0€</td><td>2 semaines</td><td>RSSI</td><td>ER1, ER2</td></tr>
-        <tr><td>Assurance cyber</td><td>Transfert</td><td>2</td><td>5 k€/an</td><td>2 mois</td><td>Direction</td><td>Tous</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<h3 class="subsection-title">📝 EXERCICE 7 : Application de la méthode EBIOS simplifiée</h3>
-
-<div class="exercise-container">
-  <div class="exercise-title">Contexte</div>
-  <div class="content-text">
-    <p>Vous travaillez pour « PetitCommerce », une boutique en ligne de 10 personnes vendant des vêtements. Le site web est critique pour l'activité (95% du CA). Vous devez réaliser une analyse de risque simplifiée selon la méthode EBIOS.</p>
+  <div class="definition-box">
+    <div class="definition-title">Points clés</div>
+    <div class="definition-content content-text">
+      <ul>
+        <li>Gratuite et accessible sur cyber.gouv.fr</li>
+        <li>Approche par scénarios d'attaque réalistes</li>
+        <li>Prise en compte de l'écosystème (fournisseurs, partenaires)</li>
+        <li>Langage commun entre technique et direction</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="exercise-title">Informations sur l'infrastructure</div>
-  <div class="content-text">
-    <ul>
-      <li>Site web développé sur mesure (PHP/MySQL)</li>
-      <li>Hébergement mutualisé</li>
-      <li>Base de données contenant : clients, commandes, paiements</li>
-      <li>5 employés ayant accès au back-office</li>
-      <li>5 000 clients dans la base</li>
-      <li>CA annuel : 800 000€</li>
-    </ul>
+  <h3 class="subsection-title">8.2 Les 5 ateliers EBIOS</h3>
+  <div class="definition-box">
+    <div class="definition-title">Méthode</div>
+    <div class="definition-content content-text">
+      <p>La méthode se déroule en <strong>5 ateliers successifs</strong>.</p>
+    </div>
   </div>
 
-  <div class="exercise-title">Consignes</div>
-  <div class="content-text">
-    <p>Suivez les 6 étapes de la méthode simplifiée.</p>
+  <h4 class="subsubsection-title">Atelier 1 : Cadrage et socle de sécurité</h4>
+  <div class="definition-box">
+    <div class="definition-title">Question</div>
+    <div class="definition-content content-text"><p>Que doit-on protéger ?</p></div>
+  </div>
+  <div class="definition-box">
+    <div class="definition-title">Actions</div>
+    <div class="definition-content content-text">
+      <ul>
+        <li>Définir le <strong>périmètre</strong> de l'étude</li>
+        <li>Identifier les <strong>missions essentielles</strong> de l'organisation</li>
+        <li>Lister les <strong>valeurs métier</strong> (données sensibles, services critiques)</li>
+        <li>Cartographier l'<strong>écosystème</strong> (partenaires, fournisseurs)</li>
+        <li>Identifier les <strong>événements redoutés</strong> (ce qu'on veut éviter)</li>
+        <li>Établir le <strong>socle de sécurité</strong> (mesures minimales obligatoires)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight-fact"><strong>Exemple :</strong> Hôpital → Mission : soigner les patients → Valeur métier : dossiers patients → Événement redouté : indisponibilité des dossiers pendant une opération</div>
+
+  <h4 class="subsubsection-title">Atelier 2 : Sources de risque</h4>
+  <div class="definition-box">
+    <div class="definition-title">Question</div>
+    <div class="definition-content content-text"><p>Qui pourrait nous attaquer et pourquoi ?</p></div>
+  </div>
+  <div class="definition-box">
+    <div class="definition-title">Actions</div>
+    <div class="definition-content content-text">
+      <ul>
+        <li>Identifier les <strong>sources de risque (SR)</strong> : cybercriminels, APT, concurrents, hacktivistes</li>
+        <li>Définir leurs <strong>objectifs visés (OV)</strong> : vol de données, ransomware, sabotage</li>
+        <li>Évaluer leurs capacités et motivations</li>
+        <li>Prioriser les couples SR/OV pertinents</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight-fact"><strong>Exemple :</strong> Entreprise pharmaceutique → SR : Groupe APT étatique → OV : Voler les formules du vaccin</div>
+
+  <h4 class="subsubsection-title">Atelier 3 : Scénarios stratégiques</h4>
+  <div class="definition-box">
+    <div class="definition-title">Question</div>
+    <div class="definition-content content-text"><p>Par quels chemins pourraient-ils atteindre nos valeurs métier ?</p></div>
+  </div>
+  <div class="definition-box">
+    <div class="definition-title">Objectif</div>
+    <div class="definition-content content-text"><p>Acquérir une <strong>vision claire de l'écosystème</strong> et établir une <strong>cartographie du niveau de dangerosité</strong> induit par la relation avec les <strong>parties prenantes majeures</strong>.</p></div>
+  </div>
+  <div class="definition-box">
+    <div class="definition-title">Actions</div>
+    <div class="definition-content content-text">
+      <ul>
+        <li>Analyser les <strong>parties prenantes (PP)</strong> : fournisseurs, prestataires, partenaires</li>
+        <li>Évaluer le <strong>niveau de dangerosité</strong> de chaque PP (exposition, accès, confiance)</li>
+        <li>Construire des <strong>scénarios stratégiques</strong> : chemins d'attaque de haut niveau</li>
+        <li>Concevoir à l'échelle de l'<strong>écosystème</strong> et des <strong>valeurs métier</strong></li>
+        <li>Estimer la <strong>gravité</strong> de chaque scénario (impact sur les valeurs métier)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="warning-fact"><strong>Important :</strong> À l'issue de cet atelier, vous pouvez déjà définir des <strong>mesures</strong> sur l'écosystème (clauses contractuelles, audits de sécurité des fournisseurs).</div>
+  <div class="highlight-fact"><strong>Exemple :</strong> APT → Prestataire de maintenance (accès VPN) → Vol de données R&D ; Gravité : 4/4 ; Mesure : MFA contractuel + audit annuel</div>
+
+  <h4 class="subsubsection-title">Atelier 4 : Scénarios opérationnels</h4>
+  <div class="definition-box">
+    <div class="definition-title">Question</div>
+    <div class="definition-content content-text"><p>Comment techniquement ces attaques se réaliseraient-elles ?</p></div>
+  </div>
+  <div class="definition-box">
+    <div class="definition-title">Objectif</div>
+    <div class="definition-content content-text"><p>Construire des <strong>scénarios techniques</strong> (modes opératoires) pour réaliser les scénarios stratégiques, en se concentrant sur les <strong>biens supports critiques</strong>.</p></div>
+  </div>
+  <div class="definition-box">
+    <div class="definition-title">Actions</div>
+    <div class="definition-content content-text">
+      <ul>
+        <li>Décomposer en <strong>étapes techniques</strong></li>
+        <li>Identifier les <strong>modes opératoires</strong> (phishing, CVE, mouvement latéral, exfiltration)</li>
+        <li>Repérer les <strong>biens supports</strong> ciblés</li>
+        <li>Lister les <strong>vulnérabilités</strong> exploitables</li>
+        <li>Estimer la <strong>vraisemblance</strong> (probabilité) de chaque scénario</li>
+      </ul>
+    </div>
+  </div>
+  <div class="definition-box">
+    <div class="definition-title">Exemple de décomposition</div>
+    <div class="definition-content content-text">
+      <ol>
+        <li><strong>Phishing du prestataire</strong> → Postes de travail → Vulnérabilité : Absence de formation → Vraisemblance : 3/4</li>
+        <li><strong>Utilisation VPN volé</strong> → Serveur VPN → Vulnérabilité : Pas de MFA → Vraisemblance : 4/4</li>
+        <li><strong>Mouvement latéral</strong> → Active Directory → Vulnérabilité : Réseau non segmenté → Vraisemblance : 3/4</li>
+        <li><strong>Exfiltration</strong> → Serveurs de fichiers R&D → Vulnérabilité : Pas de DLP → Vraisemblance : 3/4</li>
+      </ol>
+    </div>
   </div>
 
-  <div class="exercise-title">Étape 1 : Définir le périmètre</div>
-  <div class="content-text">
-    <ul>
-      <li>Listez les biens essentiels (3 minimum)</li>
-      <li>Listez les biens supports (5 minimum)</li>
-      <li>Identifiez les parties prenantes</li>
-    </ul>
+  <h4 class="subsubsection-title">Atelier 5 : Traitement du risque</h4>
+  <div class="definition-box">
+    <div class="definition-title">Question</div>
+    <div class="definition-content content-text"><p>Que fait-on pour réduire les risques ?</p></div>
   </div>
-
-  <div class="exercise-title">Étape 2 : Identifier les événements redoutés</div>
-  <div class="content-text">
-    <ul>
-      <li>Proposez 3 événements redoutés</li>
-      <li>Pour chacun, indiquez le(s) pilier(s) CIA impacté(s)</li>
-      <li>Évaluez la gravité (1-4)</li>
-    </ul>
+  <div class="definition-box">
+    <div class="definition-title">Actions</div>
+    <div class="definition-content content-text">
+      <ul>
+        <li>Définir les <strong>mesures de sécurité</strong> pour chaque scénario opérationnel</li>
+        <li>Choisir la <strong>stratégie</strong> : Réduire / Éviter / Transférer / Accepter</li>
+        <li><strong>Prioriser</strong> selon coût/efficacité</li>
+        <li>Établir un <strong>plan d'action</strong> avec échéancier</li>
+        <li>Calculer le <strong>risque résiduel</strong></li>
+        <li>Faire <strong>valider</strong> par la direction</li>
+      </ul>
+    </div>
   </div>
-
-  <div class="exercise-title">Étape 3 : Lister les scénarios de menace</div>
-  <div class="content-text">
-    <ul>
-      <li>Choisissez 1 événement redouté</li>
-      <li>Décrivez 2 scénarios différents menant à cet événement</li>
-      <li>Pour chaque scénario, identifiez : source de risque, motivation, capacité</li>
-    </ul>
+  <div class="definition-box">
+    <div class="definition-title">Exemples de mesures</div>
+    <div class="definition-content content-text">
+      <ul>
+        <li>Formation anti‑phishing prestataire</li>
+        <li>Déploiement MFA sur VPN</li>
+        <li>Segmentation réseau (VLAN R&D isolé)</li>
+        <li>Solution DLP + SIEM</li>
+      </ul>
+    </div>
   </div>
-
-  <div class="exercise-title">Étape 4 : Évaluer vraisemblance et impact</div>
-  <div class="content-text">
-    <ul>
-      <li>Pour vos 2 scénarios, évaluez la vraisemblance (1-5)</li>
-      <li>Évaluez l'impact détaillé (financier, opérationnel, juridique, réputationnel)</li>
-      <li>Donnez un niveau d'impact global (1-5)</li>
-      <li>Calculez le niveau de risque</li>
-    </ul>
-  </div>
-
-  <div class="exercise-title">Étape 5 : Définir les mesures</div>
-  <div class="content-text">
-    <ul>
-      <li>Pour chaque scénario, proposez 3 mesures de sécurité</li>
-      <li>Classez-les par priorité</li>
-      <li>Estimez un coût et un délai</li>
-    </ul>
-  </div>
-
-  <div class="exercise-title">Étape 6 : Plan d'action</div>
-  <div class="content-text">
-    <ul>
-      <li>Créez un tableau récapitulatif de votre plan d'action</li>
-      <li>Calculez le risque résiduel après implémentation</li>
-    </ul>
-  </div>
-</div>
-
-
-
 </div>
 
 <div class="concept-section">

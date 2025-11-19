@@ -137,8 +137,7 @@ h4.subsubsection-title { font-size: 1.25rem; font-weight: 600; color: #2c3e50; m
         <li>Ne pas créer ses propres algorithmes; utiliser des bibliothèques reconnues</li>
         <li>Privilégier AES‑GCM ou ChaCha20‑Poly1305 pour la confidentialité + intégrité</li>
         <li>Clés : tailles suffisantes (≥ 128 bits symétrique; RSA ≥ 2048; ECC courantes)</li>
-        <li>Gestion des IV/nonce uniques par message en modes CBC/CTR/GCM</li>
-        <li>Rotation et stockage sécurisé des clés (HSM, KMS)</li>
+        <li>Rotation et stockage sécurisé des clés (Modules de sécurité Matériels (HSM) locaux, Services de Gestion des Clés (KMS) cloud)</li>
       </ul>
     </div>
   </div>
