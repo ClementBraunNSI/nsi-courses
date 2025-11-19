@@ -71,6 +71,22 @@ document.addEventListener('DOMContentLoaded', function() { generateIndicators();
         <div class="category-carousel-item">
           <div class="category-card">
             <div class="category-header">
+              <h3 class="category-title">Représentation de base</h3>
+            </div>
+            <p class="category-description">Binaire, données et formats de représentation</p>
+            <div class="chapter-list">
+              <div class="chapter-item">
+                <div class="chapter-title">Accéder au chapitre</div>
+                <div class="chapter-links">
+                  <a href="../Representation_de_base/binaire" class="chapter-link">🔢 Bases et Binaire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-carousel-item">
+          <div class="category-card">
+            <div class="category-header">
               <h3 class="category-title">Architecture machine</h3>
             </div>
             <p class="category-description">Matériel, composants et organisation d’un système informatique</p>
@@ -127,22 +143,6 @@ document.addEventListener('DOMContentLoaded', function() { generateIndicators();
                 <div class="chapter-title">Accéder au chapitre</div>
                 <div class="chapter-links">
                   <a href="Programmation_Python/" class="chapter-link">Ouvrir</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="category-carousel-item">
-          <div class="category-card">
-            <div class="category-header">
-              <h3 class="category-title">Représentation de base</h3>
-            </div>
-            <p class="category-description">Binaire, données et formats de représentation</p>
-            <div class="chapter-list">
-              <div class="chapter-item">
-                <div class="chapter-title">Accéder au chapitre</div>
-                <div class="chapter-links">
-                  <a href="Representation_de_base/" class="chapter-link">Ouvrir</a>
                 </div>
               </div>
             </div>
