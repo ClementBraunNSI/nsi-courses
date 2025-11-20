@@ -785,7 +785,7 @@ while compteur < 3:
     <div class="exercise-card loops">
       <div class="difficulty-badge loops">Boucles</div>
       <h4 class="exercise-title">Exercice 8 — Jusqu'au premier négatif</h4>
-      <div class="exercise-content"><strong>Écrire une fonction <code>compter_positifs_avant_negatif(entiers)</code> qui parcourt la liste <code>entiers</code> et retourne le nombre de valeurs lues avant de rencontrer le premier négatif (ou la longueur si aucun négatif).</strong></div>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_positifs_avant_negatif(entiers)</code> qui parcourt la liste <code>entiers</code> entiers=[1,5,2,-5,1,2,6,-9] et retourne le nombre de valeurs lues avant de rencontrer le premier négatif (ou la longueur si aucun négatif).</strong></div>
     </div>
 
     <div class="exercise-card loops">
