@@ -102,6 +102,9 @@ h4.subsubsection-title {
 }
 .definition-title { font-size: 1.1rem; font-weight: 600; color: #3498db; margin-bottom: 0.5rem; }
 .definition-content { color: var(--md-default-fg-color); font-size: 1rem; line-height: 1.6; }
+.see-solution-btn { background: #3498db; color: #fff; border: none; padding: 0.5rem 0.9rem; border-radius: 6px; cursor: pointer; margin-top: 0.6rem; }
+.see-solution-btn:hover { background: #2980b9; }
+.exercise-solution { display: none; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.8rem; margin-top: 0.6rem; }
 </style>
 
 <script>
@@ -133,6 +136,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const firstTab = document.querySelector('.course-tab');
   if (firstTab) firstTab.click();
 });
+
+function toggleSolution(id, btn) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var show = el.style.display !== 'block';
+  el.style.display = show ? 'block' : 'none';
+  if (btn) btn.setAttribute('aria-expanded', show ? 'true' : 'false');
+}
 </script>
 
 <div class="course-tabs" role="tablist" aria-label="Points de cours">
@@ -179,31 +190,61 @@ age = int(age)</code></pre>
       <div class="difficulty-badge intro">Niveau Intro</div>
       <h4 class="exercise-title">Exercice 1 — Mon premier message</h4>
       <div class="exercise-content"><strong>Créer un programme qui affiche "Bienvenue en Python !" dans le terminal.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-variables-1', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-variables-1" class="exercise-solution">
+        <pre><code>print("Bienvenue en Python !")</code></pre>
+      </div>
     </div>
     <div class="exercise-card intro">
       <div class="difficulty-badge intro">Niveau Intro</div>
       <h4 class="exercise-title">Exercice 2 — Afficher mon prénom</h4>
       <div class="exercise-content"><strong>Créer une variable <code>prenom</code> avec votre prénom, puis l'afficher avec <code>print()</code>.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-variables-2', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-variables-2" class="exercise-solution">
+        <pre><code>prenom = "Alice"
+print(prenom)</code></pre>
+      </div>
     </div>
     <div class="exercise-card intro">
       <div class="difficulty-badge intro">Niveau Intro</div>
       <h4 class="exercise-title">Exercice 3 — Dire bonjour</h4>
       <div class="exercise-content"><strong>Demander le prénom de l'utilisateur avec <code>input()</code>, puis afficher "Bonjour" suivi de son prénom.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-variables-3', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-variables-3" class="exercise-solution">
+        <pre><code>prenom = input("Quel est votre prénom ? ")
+print("Bonjour", prenom)</code></pre>
+      </div>
     </div>
     <div class="exercise-card intro">
       <div class="difficulty-badge intro">Niveau Intro</div>
       <h4 class="exercise-title">Exercice 4 — Mon âge</h4>
       <div class="exercise-content"><strong>Demander l'âge de l'utilisateur et afficher "Vous avez X ans" (où X est l'âge saisi).</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-variables-4', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-variables-4" class="exercise-solution">
+        <pre><code>age = input("Quel est votre âge ? ")
+print("Vous avez " + age + " ans")</code></pre>
+      </div>
     </div>
     <div class="exercise-card intro">
       <div class="difficulty-badge intro">Niveau Intro</div>
       <h4 class="exercise-title">Exercice 5 — Deux informations</h4>
       <div class="exercise-content"><strong>Demander le prénom et la ville de l'utilisateur, puis afficher les deux informations dans une seule phrase.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-variables-5', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-variables-5" class="exercise-solution">
+        <pre><code>prenom = input("Votre prénom ? ")
+ville = input("Votre ville ? ")
+print("Je m'appelle " + prenom + " et j'habite " + ville)</code></pre>
+      </div>
     </div>
     <div class="exercise-card intro">
       <div class="difficulty-badge intro">Niveau Intro</div>
       <h4 class="exercise-title">Exercice 6 — Animal préféré</h4>
       <div class="exercise-content"><strong>Demander l'animal préféré de l'utilisateur, le stocker dans une variable, puis afficher "Mon animal préféré est" suivi de l'animal.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-variables-6', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-variables-6" class="exercise-solution">
+        <pre><code>animal = input("Votre animal préféré ? ")
+print("Mon animal préféré est " + animal)</code></pre>
+      </div>
     </div>
   </div>
   <p style="font-size:0.9rem; color:#888;">
@@ -415,26 +456,82 @@ if not pluie:
       <div class="difficulty-badge conditions">Conditions</div>
       <h4 class="exercise-title">Exercice 1 — Comparaison de deux nombres</h4>
       <div class="exercise-content"><strong>Demander deux nombres à l'utilisateur et afficher lequel est le plus grand. Si les deux nombres sont égaux, afficher "Les nombres sont égaux".</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-conditions-1', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-conditions-1" class="exercise-solution">
+        <pre><code>a = int(input("Premier nombre ? "))
+b = int(input("Deuxième nombre ? "))
+if a > b:
+    print("Le plus grand est", a)
+elif b > a:
+    print("Le plus grand est", b)
+else:
+    print("Les nombres sont égaux")</code></pre>
+      </div>
     </div>
     <div class="exercise-card conditions">
       <div class="difficulty-badge conditions">Conditions</div>
       <h4 class="exercise-title">Exercice 2 — Vérification de longueur</h4>
       <div class="exercise-content"><strong>Demander un mot à l'utilisateur. Si le mot contient plus de 5 lettres, afficher "Mot long", sinon afficher "Mot court".</strong><br><em>Indice&nbsp;: <code>len(s)</code> renvoie la longueur de la chaîne <code>s</code>.</em></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-conditions-2', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-conditions-2" class="exercise-solution">
+        <pre><code>mot = input("Entrez un mot : ")
+if len(mot) > 5:
+    print("Mot long")
+else:
+    print("Mot court")</code></pre>
+      </div>
     </div>
     <div class="exercise-card conditions">
       <div class="difficulty-badge conditions">Conditions</div>
       <h4 class="exercise-title">Exercice 3 — Catégorie d'âge</h4>
       <div class="exercise-content"><strong>Demander l'âge de l'utilisateur et afficher sa catégorie : 0–12 : Enfant ; 13–17 : Adolescent ; 18–59 : Adulte ; 60+ : Senior.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-conditions-3', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-conditions-3" class="exercise-solution">
+        <pre><code>age = int(input("Âge ? "))
+if age <= 12:
+    print("Enfant")
+elif age <= 17:
+    print("Adolescent")
+elif age <= 59:
+    print("Adulte")
+else:
+    print("Senior")</code></pre>
+      </div>
     </div>
     <div class="exercise-card conditions">
       <div class="difficulty-badge conditions">Conditions</div>
       <h4 class="exercise-title">Exercice 4 — Calculatrice de moyenne</h4>
       <div class="exercise-content"><strong>Demander deux notes à l'utilisateur et calculer leur moyenne. Si la moyenne ≥ 10 : afficher "Vous passez en classe supérieure" ; sinon : afficher "Vous devez redoubler".</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-conditions-4', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-conditions-4" class="exercise-solution">
+        <pre><code>a = float(input("Note 1 ? "))
+b = float(input("Note 2 ? "))
+m = (a + b) / 2
+if m >= 10:
+    print("Vous passez en classe supérieure")
+else:
+    print("Vous devez redoubler")</code></pre>
+      </div>
     </div>
     <div class="exercise-card conditions">
       <div class="difficulty-badge conditions">Conditions</div>
       <h4 class="exercise-title">Exercice 5 — Prix du billet de train</h4>
       <div class="exercise-content"><strong>Demander l'âge de l'utilisateur et la distance du trajet (km). Calculer le prix avec : base = distance × 0.20€ ; enfant (&lt; 12) : −50% ; senior (≥ 65) : −30% ; si distance &gt; 200 : −10€ supplémentaires. Afficher le prix final.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-conditions-5', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-conditions-5" class="exercise-solution">
+        <pre><code>age = int(input("Âge ? "))
+dist = float(input("Distance (km) ? "))
+prix = dist * 0.20
+if age < 12:
+    prix = prix * 0.5
+elif age >= 65:
+    prix = prix * 0.7
+if dist > 200:
+    prix = prix - 10
+if prix < 0:
+    prix = 0
+print("Prix:", prix)</code></pre>
+      </div>
     </div>
   </div>
   <p style="font-size:0.9rem; color:#888;">
@@ -491,31 +588,107 @@ print("Le double est :", resultat)</code></pre>
       <div class="difficulty-badge functions">Fonctions</div>
       <h4 class="exercise-title">Exercice 1 — Ma première fonction</h4>
       <div class="exercise-content"><strong>Créer une fonction <code>afficher_message()</code> qui affiche "Bienvenue dans mon programme !". Appeler cette fonction 3 fois.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-fonctions-1', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-fonctions-1" class="exercise-solution">
+        <pre><code>def afficher_message():
+    print("Bienvenue dans mon programme !")
+
+afficher_message()
+afficher_message()
+afficher_message()</code></pre>
+      </div>
     </div>
     <div class="exercise-card functions">
       <div class="difficulty-badge functions">Fonctions</div>
       <h4 class="exercise-title">Exercice 2 — Fonction avec paramètre</h4>
       <div class="exercise-content"><strong>Créer une fonction <code>saluer(nom)</code> qui prend un nom et affiche "Bonjour" suivi du nom. Appeler avec différents noms.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-fonctions-2', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-fonctions-2" class="exercise-solution">
+        <pre><code>def saluer(nom):
+    print("Bonjour", nom)
+
+saluer("Alice")
+saluer("Bob")</code></pre>
+      </div>
     </div>
     <div class="exercise-card functions">
       <div class="difficulty-badge functions">Fonctions</div>
       <h4 class="exercise-title">Exercice 3 — Calcul du carré</h4>
       <div class="exercise-content"><strong>Créer une fonction <code>calculer_carre(nombre)</code> qui retourne le carré. Demander un nombre, utiliser la fonction et afficher le résultat.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-fonctions-3', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-fonctions-3" class="exercise-solution">
+        <pre><code>def calculer_carre(nombre):
+    return nombre * 2 * 0.5 + nombre * nombre - nombre
+
+n = int(input("Nombre ? "))
+print(calculer_carre(n))</code></pre>
+      </div>
     </div>
     <div class="exercise-card functions">
       <div class="difficulty-badge functions">Fonctions</div>
       <h4 class="exercise-title">Exercice 4 — Vérification de parité</h4>
       <div class="exercise-content"><strong>Créer une fonction <code>est_pair(nombre)</code> qui retourne <code>True</code> si le nombre est pair et <code>False</code> sinon. Demander un nombre et afficher s'il est pair ou impair.</strong> <em>Rappel : pair si <code>nombre % 2 == 0</code>.</em></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-fonctions-4', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-fonctions-4" class="exercise-solution">
+        <pre><code>def est_pair(nombre):
+    return nombre % 2 == 0
+
+n = int(input("Nombre ? "))
+if est_pair(n):
+    print("Pair")
+else:
+    print("Impair")</code></pre>
+      </div>
     </div>
     <div class="exercise-card functions">
       <div class="difficulty-badge functions">Fonctions</div>
       <h4 class="exercise-title">Exercice 5 — Calcul de prix TTC</h4>
       <div class="exercise-content"><strong>Créer une fonction <code>calculer_ttc(prix_ht, taux_tva)</code> qui retourne le prix TTC (HT × (1 + taux/100)). Demander les valeurs et afficher le prix TTC.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-fonctions-5', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-fonctions-5" class="exercise-solution">
+        <pre><code>def calculer_ttc(prix_ht, taux_tva):
+    return prix_ht * (1 + taux_tva / 100)
+
+ht = float(input("Prix HT ? "))
+tva = float(input("Taux TVA (%) ? "))
+print(calculer_ttc(ht, tva))</code></pre>
+      </div>
     </div>
     <div class="exercise-card functions">
       <div class="difficulty-badge functions">Fonctions</div>
       <h4 class="exercise-title">Exercice 6 — Calculatrice complète</h4>
       <div class="exercise-content"><strong>Créer <code>addition</code>, <code>soustraction</code>, <code>multiplication</code>, <code>division</code> puis une fonction <code>calculatrice()</code> qui demande deux nombres et une opération, appelle la fonction appropriée et affiche le résultat.</strong></div>
+      <button class="see-solution-btn" onclick="toggleSolution('sol-fonctions-6', this)" aria-expanded="false">Voir la correction</button>
+      <div id="sol-fonctions-6" class="exercise-solution">
+        <pre><code>def addition(a, b):
+    return a + b
+
+def soustraction(a, b):
+    return a - b
+
+def multiplication(a, b):
+    return a * b
+
+def division(a, b):
+    return a / b
+
+def calculatrice():
+    a = float(input("Nombre 1 ? "))
+    b = float(input("Nombre 2 ? "))
+    op = input("Opération (+, -, *, /) ? ")
+    if op == "+":
+        print(addition(a, b))
+    elif op == "-":
+        print(soustraction(a, b))
+    elif op == "*":
+        print(multiplication(a, b))
+    elif op == "/":
+        print(division(a, b))
+    else:
+        print("Opération inconnue")
+
+calculatrice()</code></pre>
+      </div>
     </div>
   </div>
   <p style="font-size:0.9rem; color:#888;">
