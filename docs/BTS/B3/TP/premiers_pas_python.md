@@ -762,7 +762,7 @@ while compteur < 3:
     <div class="exercise-card loops">
       <div class="difficulty-badge loops">Boucles</div>
       <h4 class="exercise-title">Exercice 5 — Compter les voyelles</h4>
-      <div class="exercise-content"><strong>Écrire une fonction <code>compter_voyelles(chaine)</code> qui retourne le nombre de voyelles dans <code>chaine</code>.</strong> <em>Indice&nbsp;: utiliser un ensemble comme <code>set("aeiouyAEIOUY")</code>.</em></div>
+      <div class="exercise-content"><strong>Écrire une fonction <code>compter_voyelles(chaine)</code> qui retourne le nombre de voyelles dans <code>chaine</code>.</strong> <em>Indice&nbsp;: utiliser un ensemble comme <code>voyelles = "aeiouyAEIOUY"</code>.</em></div>
     </div>
 
     <div class="exercise-card loops">
