@@ -769,6 +769,11 @@ while compteur < 3:
       <div class="difficulty-badge loops">Boucles</div>
       <h4 class="exercise-title">Exercice 6 — Inverser une chaîne</h4>
       <div class="exercise-content"><strong>Écrire une fonction <code>inverser_chaine(chaine)</code> qui retourne <code>chaine</code> inversée.</strong></div>
+      <p><em>Indice</em> l'opérateur + permet de mettre 2 chaînes de caractères à la suite.</p>
+      <code>chaine1 = "bonjour"</code>
+      <code>chaine2 = "au revoir"</code>
+      <code>chaine1+chaine2 => "bonjouraurevoir"</code>
+      <code>chaine2+chaine1 => "aurevoirbonjour"</code>
     </div>
 
     <div class="exercise-card loops">
