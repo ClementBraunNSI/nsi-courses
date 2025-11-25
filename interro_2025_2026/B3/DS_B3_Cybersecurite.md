@@ -2,13 +2,11 @@
 
 ## Introduction à la cybersécurité
 
-**Durée totale : 2 heures 15**  
+**Durée totale : 2 heures**  
 **Partie 1 (40 min)** – Questions de cours  
 **Partie 2 (1h35)** – Étude de cas et analyse de risque
 
 La justification, la rigueur, la rédaction et le soin de la copie entrent dans la notation sur 2 points. Un manquement de ces 4 critères entraîne une perte de 2 points.
-
----
 
 ## Partie 1 – Révision de cours (8 points)
 
@@ -18,12 +16,10 @@ La justification, la rigueur, la rédaction et le soin de la copie entrent dans 
 2. Citer **5 catégories d’actifs** et donner un exemple pour chacune.  
 3. Expliquer la notion de **criticité** d’un actif et donner 3 critères qui l’influencent.
 
----
-
 ### Triade CIA
 
 1. Définir **Confidentialité**, **Intégrité**, **Disponibilité**.  
-2. Associer chaque scénario au(x) pilier(s) compromis et justifier succinctement:
+2. Associer chaque scénario au(x) pilier(s) compromis et justifier:
 
 | Scénario | Pilier(s) compromis | Justification |
 |---|---|---|
@@ -31,8 +27,6 @@ La justification, la rigueur, la rédaction et le soin de la copie entrent dans 
 | Interception de mots de passe en transit |  |  |
 | Modification non autorisée des prix en base |  |  |
 | Panne électrique longue durée |  |  |
-
----
 
 ### Menace, vulnérabilité, incident, risque
 
@@ -43,14 +37,27 @@ La justification, la rigueur, la rédaction et le soin de la copie entrent dans 
    c) Compromission réussie d’un poste par phishing  
    d) Probabilité élevée d’attaque avec impact majeur
 
----
-
 ### Mesures de sécurité
 
 1. Proposer 3 **mesures techniques** contre le phishing.  
-2. Proposer 3 **mesures organisationnelles** pour réduire les risques internes.
+2. Proposer 3 **mesures humaines** pour réduire les risques internes.
+3. Proposer 3 **mesures physiques** pour améliorer la sécurité.
 
----
+### Propriétés complémentaires de sécurité
+
+1. Citer et définir 2 propriétés complémentaires parmi: **Traçabilité (Auditabilité)**, **Non‑répudiation**, **Authenticité**, **Preuve**.  
+
+### Typologie des menaces — classification rapide
+
+Classer chaque élément dans la catégorie appropriée (Humaine intentionnelle / Humaine non intentionnelle / Technique / Environnementale / Légale) et justifier en une phrase:  
+- Employé qui envoie par erreur un document confidentiel à un mauvais destinataire  
+- Groupe de hacker ciblant un secteur industriel  
+- Inondation dans la salle serveurs  
+- CNIL constate une non‑conformité RGPD  
+- Ransomware via phishing  
+- Configuration par défaut exposée sur une base de données  
+- Tremblement de terre impactant le datacenter  
+- Utilisation d’un logiciel sans licence
 
 ## Partie 2 – Étude de cas (18 points)
 
@@ -60,30 +67,16 @@ La justification, la rigueur, la rédaction et le soin de la copie entrent dans 
 
 ### Étape 0 – Définitions appliquées (2 points)
 
-1. Dans le **périmètre PetitCommerce**, donner une définition concise et contextualisée de :  
+1. Dans le **contexte de PetitCommerce**, donner une définition concise, contextualisée avec un exemple de :  
    a) Menace  
    b) Vulnérabilité  
    c) Incident  
    d) Risque  
-2. Associer un **exemple concret** à chacune des définitions (lié à l’activité e‑commerce).
 
 ### Étape 1 – Actifs et criticité (3 points)
 
 1. Lister 10 actifs et les **classer par catégorie**.  
 2. Donner une **criticité** (faible/moyenne/élevée/critique) pour 5 actifs et **justifier** les 3 plus élevés.
-
-| N° | Actif | Catégorie | Criticité | Justification |
-|---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
-| 6 |  |  |  |  |
-| 7 |  |  |  |  |
-| 8 |  |  |  |  |
-| 9 |  |  |  |  |
-| 10 |  |  |  |  |
 
 ### Étape 2 – Triade CIA et scénarios (3 points)
 
@@ -112,21 +105,3 @@ Compléter le tableau.
 ### Étape 4 – Calcul du risque et matrice (3 points)
 
 Utiliser l’échelle 1–5 pour la **vraisemblance** et l’**impact**. Calculer **Risque = Vraisemblance × Impact**. Classer 5 risques et identifier le **Top 3**.
-
-| Risque | Vraisemblance (1–5) | Impact (1–5) | Score | Priorité |
-|---|---|---|---|---|
-| R1 |  |  |  |  |
-| R2 |  |  |  |  |
-| R3 |  |  |  |  |
-| R4 |  |  |  |  |
-| R5 |  |  |  |  |
-
-Proposer, pour les 3 risques prioritaires, **une mesure** de **réduction**, **transfert**, **éviter** ou **accepter** et justifier.
-
-| Risque prioritaire | Traitement | Mesure proposée | Justification |
-|---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-
----

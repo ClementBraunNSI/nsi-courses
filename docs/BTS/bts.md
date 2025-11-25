@@ -633,8 +633,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
                 <div class="chapter-title">TP Python</div>
                 <div class="chapter-links">
-                    
-                   <a href="../B3/TP/premiers_pas_python" class="chapter-link">TP Python 1 : variables /conditions  / fonctions </a>
                 </div>
             </div>
 
