@@ -22,7 +22,6 @@
 ✅ **Total Partie 1 : 6 points**
 
 ---
-
 ## 💼 Partie 2 – Étude de cas complète (12 points)
 
 ### 🔹 Étape 1 – Planification du projet (4 points)
@@ -61,18 +60,7 @@ Autres éléments :
 - ITIL maintient la qualité du service par structuration et amélioration continue.  
 - Outils possibles : GLPI, OTRS, Jira Service Management.  
 
-✅ **Total Partie 2 : 12 points**
 
----
-
-## 🧾 Synthèse du barème global
-
-| Partie | Points max | Pondération |
-|---------|-------------|--------------|
-| Partie 1 – Révision de cours | 6 | 30 % |
-| Partie 2 – Étude de cas | 12 | 60 % |
-| Présentation / rigueur / justification | 2 | 10 % |
-| **Total général** | **20 points** | **100 %** |
 
 ---
 ****

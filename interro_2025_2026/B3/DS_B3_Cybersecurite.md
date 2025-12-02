@@ -3,8 +3,8 @@
 ## Introduction à la cybersécurité
 
 **Durée totale : 2 heures**  
-**Partie 1 (40 min)** – Questions de cours  
-**Partie 2 (1h35)** – Étude de cas et analyse de risque
+**Partie 1** – Questions de cours  
+**Partie 2** – Étude de cas et analyse de risque
 
 La justification, la rigueur, la rédaction et le soin de la copie entrent dans la notation sur 2 points. Un manquement de ces 4 critères entraîne une perte de 2 points.
 
@@ -59,6 +59,32 @@ Classer chaque élément dans la catégorie appropriée (Humaine intentionnelle 
 - Tremblement de terre impactant le datacenter  
 - Utilisation d’un logiciel sans licence
 
+### QCM — notions rapides
+
+Donner la bonne réponse et justifier en une phrase:
+
+1. La disponibilité protège contre: (A) divulgation, (B) interruption de service, (C) altération de données  
+2. Un ransomware compromet d’abord: (A) intégrité, (B) confidentialité, (C) disponibilité  
+3. Un log centralisé sert principalement à: (A) chiffrement, (B) traçabilité, (C) DDoS  
+4. La non‑répudiation est garantie par: (A) signature numérique, (B) pare‑feu, (C) antivirus  
+5. Une configuration par défaut exposée est une: (A) menace, (B) vulnérabilité, (C) incident  
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## Partie 2 – Étude de cas (18 points)
 
 ### Contexte
@@ -75,8 +101,8 @@ Classer chaque élément dans la catégorie appropriée (Humaine intentionnelle 
 
 ### Étape 1 – Actifs et criticité (3 points)
 
-1. Lister 10 actifs et les **classer par catégorie**.  
-2. Donner une **criticité** (faible/moyenne/élevée/critique) pour 5 actifs et **justifier** les 3 plus élevés.
+1. Lister 5 actifs de la société **PetitCommerce** et les **classer par catégorie**.  
+2. Donner une **criticité** (faible/moyenne/élevée/critique) pour ces actifs et **justifier** les 3 plus élevés.
 
 ### Étape 2 – Triade CIA et scénarios (3 points)
 
@@ -92,7 +118,7 @@ Associer chaque scénario au(x) pilier(s) compromis et proposer **une mesure de 
 
 ### Étape 3 – Menaces, vulnérabilités, incidents, risques (3 points)
 
-Compléter le tableau.
+Associer à chaque élément de la liste ci-dessous une catégorie (menace, vulnérabilité, incident, risque) et justifier.
 
 | Élément | Catégorie | Justification |
 |---|---|---|
@@ -104,4 +130,33 @@ Compléter le tableau.
 
 ### Étape 4 – Calcul du risque et matrice (3 points)
 
-Utiliser l’échelle 1–5 pour la **vraisemblance** et l’**impact**. Calculer **Risque = Vraisemblance × Impact**. Classer 5 risques et identifier le **Top 3**.
+- Fuite de données clients via injection SQL sur formulaire de login
+- Partage d’un mot de passe administrateur au sein de l’équipe
+- Base de données exposée par mauvaise configuration réseau
+- Dégâts des eaux dans la salle serveurs
+- Non‑conformité RGPD (registre absent / notification tardive)
+- Sauvegardes non testées, restauration impossible
+- Envoi par erreur d’un fichier CSV clients à un destinataire externe
+- Utilisation d’un logiciel sans licence (risque d’interruption / sanctions)
+
+Vous ne choisirez que 5 risques de votre choix :
+
+1. Utiliser l’échelle 1–5 pour la **vraisemblance** et l’**impact** en justifiant chacune des valeurs.
+2. Calculer **Risque = Vraisemblance × Impact**. Classer 5 risques et identifier le **Top 3**.
+3. Pour chaque risque, donner une mesure de protection qui pourrait réduire le risque.
+
+### Étape 5 – Enjeux et impacts détaillés
+
+Pour chacun des incidents ci‑dessous, détailler les **impacts financiers, opérationnels, juridiques, réputationnels, humains** (au moins 2 points par catégorie):
+
+- Ransomware sur serveurs de fichiers  
+- Fuite de données clients (base e‑commerce)  
+- DDoS rendant le site indisponible 48h
+
+### Étape 6 – Attaques courantes (phishing, DDoS, injection SQL)
+
+Pour chaque attaque:
+
+1. Décrire brièvement « comment ça fonctionne » (4 étapes).  
+2. Indiquer le(s) pilier(s) CIA principalement compromis.  
+3. Donner 2 exemples de **vulnérabilités** typiques qui facilitent l’attaque.
