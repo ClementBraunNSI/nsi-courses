@@ -19,13 +19,14 @@
 .level-card {
     background: var(--md-default-bg-color);
     border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(193, 131, 38, 0.93);
-    text-align: center;
-    transition: transform 0.3s ease;
+    padding: 1rem;
+    box-shadow: 0 3px 6px rgba(193, 131, 38, 0.5);
+    text-align: left;
+    transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;
-    min-height: 700px;
+    gap: 0.75rem;
+    min-height: 240px;
 }
 
 .level-card:hover {
@@ -41,9 +42,9 @@
 
 .level-card img {
     width: 100%;
-    height: 200px;
+    height: 140px;
     object-fit: contain;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .level-card .btn {
@@ -62,7 +63,15 @@
     width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
+.md-main__inner { padding-top: 0 !important; margin-top: 0 !important; }
+.md-container { padding-top: 0 !important; margin-top: 0 !important; }
+.level-cards-container { margin-top: -25px !important; }
+.md-content .md-typeset { padding-top: 0 !important; margin-top: 0 !important; }
+.md-content .md-typeset > :first-child { margin-top: 0 !important; }
+.level-cards-container { margin-top: 0 !important; }
 
 .md-content, .md-content__inner {
     padding-left: clamp(0.5rem, 2vw, 2rem) !important;
@@ -73,6 +82,12 @@
     max-width: min(1400px, 98vw) !important;
     width: 100% !important;
 }
+
+/* Réduire l'espace vertical au-dessus du contenu */
+.md-typeset h1 { margin-top: 0 !important; margin-bottom: 0.5rem !important; }
+hr { margin: 0 !important; }
+.md-main { padding-top: 0 !important; margin-top: 0 !important; }
+.md-header { margin-bottom: 0 !important; }
 
 .btn {
     display: inline-block;
@@ -88,85 +103,102 @@
 
 /* Mise en ligne des 5 cards sans réduction de taille (no shrink) */
 .level-cards-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
     justify-content: center;
-    align-items: stretch;
-    overflow-x: auto;
-    padding: 1rem 0;
-    scroll-snap-type: x mandatory;
-    scroll-margin-top: 80px;
+    align-items: start;
+    padding: 0.75rem 0;
 }
 
 .level-card {
-    flex: 0 0 300px; /* largeur stable par card */
-    scroll-snap-align: start;
-    min-height :750px;
+    min-height: auto;
 }
 
-/* Sur écrans larges, forcer 6 cards parfaitement sur une ligne */
-@media (min-width: 1200px) {
-    .level-cards-container {
-        overflow-x: visible;
-    }
-    .level-card {
-        flex: 0 0 calc((100% - 5rem) / 6); /* 6 colonnes avec 5 gaps de 1rem */
-        min-width: 240px;
-        min-height: 750px;
-    }
+/* Responsive */
+@media (max-width: 900px) {
+    .level-cards-container { grid-template-columns: repeat(2, 1fr); }
 }
+@media (max-width: 600px) {
+    .level-cards-container { grid-template-columns: 1fr; }
+}
+/* titres plus compacts */
+.level-card h2 { font-size: 1.25rem; margin: 0.3rem 0; }
 </style>
 
-<div class="level-cards-container" id="level-cards">
+<div class="level-cards-container">
     <div class="level-card">
         <img src="images/fox_sni.png" alt="SNT Seconde">
         <h2>SNI - 3e</h2>
-        <p>Sciences Numériques et Informatique : introduction à l'informatique au collège</p>
-        <a href="SNI/SNI" class="btn">Accéder aux ressources</a>
+        <a href="SNI/SNI" class="btn" title="Sciences Numériques et Informatique : introduction à l'informatique au collège">Accéder aux ressources</a>
     </div>
     <div class="level-card">
         <img src="images/fox_seconde.png" alt="SNT Seconde">
         <h2>SNT - Seconde</h2>
-        <p>Sciences Numériques et Technologie : découverte des enjeux du numérique dans notre société</p>
-        <a href="seconde/seconde" class="btn">Accéder aux ressources</a>
+        <a href="seconde/seconde" class="btn" title="Sciences Numériques et Technologie : découverte des enjeux du numérique dans notre société">Accéder aux ressources</a>
     </div>
     <div class="level-card">
         <img src="images/fox_premiere.png" alt="NSI Première">
         <h2>NSI - Première</h2>
-        <p>Numérique et Sciences Informatiques : initiation à la programmation et aux concepts fondamentaux</p>
-        <a href="premiere/premiere" class="btn">Accéder aux ressources</a>
+        <a href="premiere/premiere" class="btn" title="Numérique et Sciences Informatiques : initiation à la programmation et aux concepts fondamentaux">Accéder aux ressources</a>
     </div>
     <div class="level-card">
         <img src="images/fox_terminale.png" alt="NSI Terminale">
         <h2>NSI - Terminale</h2>
-        <p>Approfondissement en informatique : structures de données, bases de données et projets avancés</p>
-        <a href="terminale/terminale" class="btn">Accéder aux ressources</a>
+        <a href="terminale/terminale" class="btn" title="Approfondissement en informatique : structures de données, bases de données et projets avancés">Accéder aux ressources</a>
     </div>
     <div class="level-card">
         <img src="images/fox_bts.png" alt="NSI Terminale">
         <h2>BTS SIO</h2>
-        <p>Approfondissement en informatique : Gestion de projet, programmation logicielle, développement d'applications, sécurité informatique</p>
-        <a href="BTS/bts" class="btn">Accéder aux ressources</a>
+        <a href="BTS/bts" class="btn" title="Approfondissement en informatique : Gestion de projet, programmation logicielle, développement d'applications, sécurité informatique">Accéder aux ressources</a>
     </div>
     <div class="level-card">
         <img src="images/chasserenarts.png" alt="Chasse aux Ren'Arts">
         <h2>Chasse aux Ren'arts</h2>
-        <p>Défi ludique et pédagogique pour mettre en pratique les compétences NSI de manière créative</p>
-        <a href="chasse_aux_renards" class="btn">Participer au défi</a>
+        <a href="chasse_aux_renards" class="btn" title="Défi ludique et pédagogique pour mettre en pratique les compétences NSI de manière créative">Participer au défi</a>
+    </div>
+    <div class="level-card">
+        <img src="images/fox_bts.png" alt="Cours particuliers">
+        <h2>Cours particuliers</h2>
+        <a id="btn-cours-particuliers" class="btn" title="Accès privé aux cours particuliers (protégé)">Accéder</a>
     </div>
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  if (!location.hash) {
-    var el = document.getElementById('level-cards');
-    if (el) {
-      var header = document.querySelector('.md-header');
-      var offset = header ? header.offsetHeight + 8 : 72;
-      var y = el.getBoundingClientRect().top + window.pageYOffset - offset;
-      window.scrollTo({ top: y, behavior: 'auto' });
+  (function(){
+    var btn = document.getElementById('btn-cours-particuliers');
+    var b64 = 'Y291cnMtcGFydGljdWxpZXJzLTgzNDcyOTEwNTY1MDI4MTczNDY5OTE4MjczNjQ1MDc2MTAyODM5NTQzNDA5ODUxNzI2Mjg5NzUxMDQzNjYxNTA5NzQzMjg0NzM5MjA1NjE4OTAyMzE4NzQ2NTE1NDc4NjIzMDk=';
+    var slug = atob(b64);
+    var target = slug + '/';
+    var expectedHex = '346303eb48dc27e8d5123c211415d31e92159d466c9aae736f57460691da48c1';
+    async function sha256Hex(str){
+      const buf = await (crypto && crypto.subtle ? crypto.subtle.digest('SHA-256', new TextEncoder().encode(str)) : Promise.reject());
+      const arr = Array.from(new Uint8Array(buf));
+      return arr.map(b=>b.toString(16).padStart(2,'0')).join('');
     }
-  }
+    function weakHash(str){ var t=0; for(var i=0;i<str.length;i++){ t=(t*131+str.charCodeAt(i))>>>0; } return t.toString(16); }
+    var expectedWeak = 'b8f71277';
+    if (btn) {
+      btn.addEventListener('click', async function(){
+        var entered = prompt('Mot de passe requis');
+        if (!entered) return;
+        try {
+          var hex = await sha256Hex(entered);
+          if (hex === expectedHex) {
+            try { sessionStorage.setItem('cp_token', 'ok'); } catch(e) {}
+            location.href = target;
+            return;
+          }
+        } catch(e) {}
+        if (weakHash(entered) === expectedWeak) {
+          try { sessionStorage.setItem('cp_token', 'ok'); } catch(e) {}
+          location.href = target;
+        } else {
+          alert('Mot de passe incorrect');
+        }
+      });
+    }
+  })();
 });
 </script>
 ---

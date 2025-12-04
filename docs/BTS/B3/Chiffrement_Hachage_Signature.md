@@ -14,7 +14,6 @@ body {
     margin: 0;
     padding: 20px;
 }
-
 .course-header {
     background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.05));
     backdrop-filter: blur(20px);
@@ -24,7 +23,6 @@ body {
     border: 1px solid rgba(52, 152, 219, 0.2);
     text-align: center;
 }
-
 .course-title {
     font-size: 3rem;
     font-weight: 700;
