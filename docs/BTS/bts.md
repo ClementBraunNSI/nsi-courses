@@ -558,12 +558,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
-    
     <div class="nav-header">
         <h2 class="nav-title">Blocs de Compétences</h2>
         <p class="nav-subtitle">Parcours de formation professionnalisante</p>
     </div>
-    
     <div class="categories-grid">
         <!-- Bloc 1 - Support et Services -->
         <div class="category-card category-support">
@@ -579,7 +577,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="chapter-title">B1.1 - Gestion du patrimoine informatique</div>
                         <a href="../B1/Patrimoine_informatique" class="chapter-link">📚 Patrimoine Informatique</a>
                     <div class="chapter-links">
-
                     </div>
                 </div>
                 <div class="chapter-item">
@@ -603,7 +600,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         </div>
-        
         <!-- Programmation & Développement -->
         <div class="category-card category-programming">
             <div class="category-header">
@@ -614,7 +610,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 Bases de la programmation, langages de développement et outils de création d'applications
             </p>
         </div>
-        
         <!-- Cyber Sécurité -->
         <div class="category-card category-security">
             <div class="category-header">
@@ -629,16 +624,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="chapter-links">
                     
                    <a href="../B3/Introduction_cybersecurite" class="chapter-link">📚 Introduction </a>
-                   <a href="../B3/TP/premiers_pas_python" class="chapter-link">📚 Premiers pas avec Python</a>
-                   <a href="../B3/TP/tp_cesar_vigenere" class="chapter-link">📚 TP Chiffrements</a>
+                   
                 </div>
             </div>
                 <div class="chapter-title">TP Python</div>
                 <div class="chapter-links">
+                    <a href="../B3/TP/premiers_pas_python" class="chapter-link">📚 Premiers pas avec Python</a>
+                    <a href="../B3/TP/tp_cesar_vigenere" class="chapter-link">📚 TP Chiffrements</a>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
