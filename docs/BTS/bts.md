@@ -630,6 +630,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                    <a href="../B3/Introduction_cybersecurite" class="chapter-link">📚 Introduction </a>
                    <a href="../B3/TP/premiers_pas_python" class="chapter-link">📚 Premiers pas avec Python</a>
+                   <a href="../B3/TP/tp_cesar_vigenere" class="chapter-link">📚 TP Chiffrements</a>
                 </div>
             </div>
                 <div class="chapter-title">TP Python</div>
