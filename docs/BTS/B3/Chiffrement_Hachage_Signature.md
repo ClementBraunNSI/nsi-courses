@@ -983,6 +983,56 @@ Chiffré XOR Clé = Message
 </div>
 
 <div class="concept-section">
+    <h2 class="section-title">👥 Le problème : Human-in-the-Middle</h2>
+
+    <div class="content-text">
+        <p>Nous avons vu que le chiffrement asymétrique résout le problème de l'échange de clés. Mais un nouveau problème apparaît : <strong>Comment être sûr qu'on communique avec la bonne personne ?</strong></p>
+    </div>
+
+    <div class="danger-fact">
+        🚨 <strong>Attaque Human-in-the-Middle (HITM)</strong>
+    </div>
+
+    <div class="visual-diagram">
+        <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+            <div style="background: rgba(52, 152, 219, 0.1); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
+                <strong>1.</strong> 🦊 Alice demande la clé publique de Bob
+            </div>
+            <div class="arrow">⬇️</div>
+            <div style="background: rgba(231, 76, 60, 0.2); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
+                <strong>2.</strong> 👤 <strong>Charlie intercepte</strong> et envoie <strong>SA propre clé publique</strong> à Alice en se faisant passer pour Bob
+            </div>
+            <div class="arrow">⬇️</div>
+            <div style="background: rgba(52, 152, 219, 0.1); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
+                <strong>3.</strong> 🦊 Alice chiffre son message avec la clé publique de Charlie (qu'elle croit être celle de Bob)
+            </div>
+            <div class="arrow">⬇️</div>
+            <div style="background: rgba(231, 76, 60, 0.2); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
+                <strong>4.</strong> 👤 <strong>Charlie déchiffre</strong> le message, le lit, puis le rechiffre avec la vraie clé publique de Bob
+            </div>
+            <div class="arrow">⬇️</div>
+            <div style="background: rgba(155, 89, 182, 0.1); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
+                <strong>5.</strong> 👨‍🔬 Bob reçoit le message, sans se douter de rien
+            </div>
+        </div>
+    </div>
+
+    <div class="content-text">
+        <p><strong>Résultat :</strong> Charlie peut lire et même <strong>modifier</strong> tous les messages entre Alice et Bob sans qu'ils s'en rendent compte !</p>
+    </div>
+
+    <div class="warning-fact">
+        ⚠️ <strong>Problème fondamental :</strong><br>
+        Le chiffrement asymétrique garantit la <strong>confidentialité</strong>, mais pas l'<strong>authenticité</strong> ni l'<strong>intégrité</strong> !<br>
+        <strong>Comment être sûr que la clé publique appartient vraiment à Bob ?</strong>
+    </div>
+
+    <div class="highlight-fact">
+        💡 <strong>La solution :</strong> Les signatures numériques et les certificats !
+    </div>
+</div>
+
+<div class="concept-section">
     <h2 class="section-title">#️⃣ Le hachage : garantir l'intégrité</h2>
 
     <div class="definition-box">
@@ -1121,55 +1171,6 @@ sha256sum nom_fichier.txt
     </div>
 </div>
 
-<div class="concept-section">
-    <h2 class="section-title">👥 Le problème : Human-in-the-Middle</h2>
-
-    <div class="content-text">
-        <p>Nous avons vu que le chiffrement asymétrique résout le problème de l'échange de clés. Mais un nouveau problème apparaît : <strong>Comment être sûr qu'on communique avec la bonne personne ?</strong></p>
-    </div>
-
-    <div class="danger-fact">
-        🚨 <strong>Attaque Human-in-the-Middle (HITM)</strong>
-    </div>
-
-    <div class="visual-diagram">
-        <div style="text-align: left; max-width: 800px; margin: 0 auto;">
-            <div style="background: rgba(52, 152, 219, 0.1); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
-                <strong>1.</strong> 🦊 Alice demande la clé publique de Bob
-            </div>
-            <div class="arrow">⬇️</div>
-            <div style="background: rgba(231, 76, 60, 0.2); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
-                <strong>2.</strong> 👤 <strong>Charlie intercepte</strong> et envoie <strong>SA propre clé publique</strong> à Alice en se faisant passer pour Bob
-            </div>
-            <div class="arrow">⬇️</div>
-            <div style="background: rgba(52, 152, 219, 0.1); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
-                <strong>3.</strong> 🦊 Alice chiffre son message avec la clé publique de Charlie (qu'elle croit être celle de Bob)
-            </div>
-            <div class="arrow">⬇️</div>
-            <div style="background: rgba(231, 76, 60, 0.2); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
-                <strong>4.</strong> 👤 <strong>Charlie déchiffre</strong> le message, le lit, puis le rechiffre avec la vraie clé publique de Bob
-            </div>
-            <div class="arrow">⬇️</div>
-            <div style="background: rgba(155, 89, 182, 0.1); padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
-                <strong>5.</strong> 👨‍🔬 Bob reçoit le message, sans se douter de rien
-            </div>
-        </div>
-    </div>
-
-    <div class="content-text">
-        <p><strong>Résultat :</strong> Charlie peut lire et même <strong>modifier</strong> tous les messages entre Alice et Bob sans qu'ils s'en rendent compte !</p>
-    </div>
-
-    <div class="warning-fact">
-        ⚠️ <strong>Problème fondamental :</strong><br>
-        Le chiffrement asymétrique garantit la <strong>confidentialité</strong>, mais pas l'<strong>authenticité</strong> ni l'<strong>intégrité</strong> !<br>
-        <strong>Comment être sûr que la clé publique appartient vraiment à Bob ?</strong>
-    </div>
-
-    <div class="highlight-fact">
-        💡 <strong>La solution :</strong> Les signatures numériques et les certificats !
-    </div>
-</div>
 
 <div class="concept-section">
     <h2 class="section-title">✍️ La signature numérique</h2>

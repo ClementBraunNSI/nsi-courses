@@ -69,8 +69,8 @@ def identifiant_renard_valide(code: str) -> bool:
 		if c in digits:
 			a_chiffre = True
 	if a_lettre and a_chiffre:
-	return True
-return False
+		return True
+	return False
 
 
 ''' Exercice A6

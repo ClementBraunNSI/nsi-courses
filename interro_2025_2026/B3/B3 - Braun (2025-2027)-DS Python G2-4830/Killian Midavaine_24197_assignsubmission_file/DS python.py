@@ -43,7 +43,7 @@ def contient_separateur(code:str) -> bool:
 
 def contient_deux_types(code:str) -> bool:
     alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    digist = "0123456789"
+    digits = "0123456789"
     a_lettre = False
     #au moins une lettre ?
     i = 0
@@ -57,7 +57,7 @@ def contient_deux_types(code:str) -> bool:
         if nb_occurences(code, digits[j]) > nb_occurences(code, alphabet[i]):
             a_chiffre = True
         j = j + 1
-    a_sep = contient_separateur(-_)
+    a_sep = contient_separateur(-_) #erreur
     if (a_lettre and a_chiffre) or (a_lettre and a_sep) or (a_chiffre and a_sep):
         return True
     return False
@@ -66,14 +66,14 @@ def contient_deux_types(code:str) -> bool:
 
 def contient_deux_types(chaine:str) ->bool:
     a_lettre = False
-    a_chiffres = False
+    a_chiffre = False
     alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     digits = "0123456789"
     a_sep = False
     for lettre in chaine:
         if lettre in digits:
             a_chiffre = True
-        elif chiffre in alphabet:
+        elif chiffre in alphabet: #erreur
             a_lettre = True
     if (chaine):
         a_sep = True
@@ -117,7 +117,7 @@ def score_renard(code: str) -> int:
         score = score + 2
     if contient_deux_types(True):
         score = score + 2
-    if nb_occurrences(code, 'R') >= 1:
+    if nb_occurences(code, 'R') >= 1: #erreur typo
         score = score + 2
     return False
 
