@@ -228,7 +228,25 @@ print(lettre_vers_decalage('Z'))  # 25</code></pre>
       <p class="content-text">Écrire <code>chiffrer_vigenere(message, cle)</code>. Ignorer les caractères non alphabétiques, répéter la clé, et calculer <code>(indice_lettre + decalage) % 26</code>.</p>
       <pre><code>print(chiffrer_vigenere("BONJOUR", "CLE"))      # DZRLZYT
 print(chiffrer_vigenere("HELLO WORLD", "KEY"))  # RIJVS UYVJN
-print(chiffrer_vigenere("AAA", "BCD"))          # BDF</code></pre>
+print(chiffrer_vigenere("AAA", "BCD"))          # BDF
+
+    </code></pre>
+    <pre><code>
+        function chiffrer_vigenere(message, clef)
+            "" -> res
+            0 -> indice_clef
+            pour chaque lettre dans message
+                indice de la lettre dans l'alphabet -> indice_lettre
+                si indice == -1
+                    res += lettre
+                sinon
+                    indice_dans_clef = indice_dans_alphabet(clef[indice_clef], ALPHABET)
+                    indice_dans_mot = indice_dans_alphabet(lettre, ALPHABET)
+                    res += ALPHABET[(indice_dans_mot + indice_dans_clef) % 26]
+                    indice_clef = (indice_clef + 1) % len(clef)
+            renvoyer res
+
+    </code></pre>
     </div>
   </div>
 </div>
