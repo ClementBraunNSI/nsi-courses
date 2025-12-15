@@ -20,7 +20,7 @@
 <div class="level-cards-container">
   <div class="level-card">
     <img src="../../images/fox_premiere.png" alt="Cléo">
-    <h2>Cléo</h2>
+    <h2>C</h2>
     <p>Suivi particulier — révision des bases du langage C</p>
     <a href="Cleo/index_cleo/" class="btn">Accéder à l’espace</a>
   </div>

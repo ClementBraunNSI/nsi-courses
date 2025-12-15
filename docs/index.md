@@ -159,8 +159,8 @@ hr { margin: 0 !important; }
     </div>
     <div class="level-card">
         <img src="images/fox_bts.png" alt="Cours particuliers">
-        <h2>Cours particuliers</h2>
-        <a id="btn-cours-particuliers" class="btn" title="Accès privé aux cours particuliers (protégé)">Accéder</a>
+        <h2>Langages supplémentaires</h2>
+        <a id="btn-cours-particuliers" class="btn" title="Accès privé aux cours sur les langages supplémentaires (protégé)">Accéder</a>
     </div>
 </div>
 <script>

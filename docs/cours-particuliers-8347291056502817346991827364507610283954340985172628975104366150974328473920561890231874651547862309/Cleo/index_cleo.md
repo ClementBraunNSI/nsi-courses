@@ -13,7 +13,7 @@
 
 <div class="level-header">
   <img src="../../../images/fox_premiere.png" alt="Cléo" style="width:90px;height:90px;object-fit:contain;" />
-  <h1>Espace Cléo</h1>
+  <h1>Espace C</h1>
   <p>Révisions personnalisées</p>
 </div>
 
