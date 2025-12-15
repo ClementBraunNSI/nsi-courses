@@ -20,13 +20,25 @@
 <div class="categories-grid">
   <div class="category-card">
     <h3>Bases du langage C</h3>
-    <p>Introduction, types, entrées/sorties, conditions, boucles, fonctions</p>
+    <p>Introduction, types, entrées/sorties, condition et boucles</p>
     <div class="chapter-links">
-      <a href="Cours/c_bases/" class="chapter-link">📚 C – Constructions élémentaires</a>
+      <!--<a href="Cours/c_bases/" class="chapter-link">📚 C – Constructions élémentaires</a> -->
+      <a href="../Instanciation_conditions_boucles/Cours/Cours_1" class="chapter-link">📚 Instanciation et Entrées / Sorties</a>
+      <a href="../Instanciation_conditions_boucles/Cours/Cours_2" class="chapter-link">📚 Conditions et Boucles</a>
+      <a href="../Instanciation_conditions_boucles/Exercices/exercices_intro" class="chapter-link">📚 Exercices</a>
     </div>
   </div>
+    <div class="category-card">
+    <h3>Bases du langage C</h3>
+    <p>Fonctions</p>
+    <div class="chapter-links">
+      <!--<a href="Cours/c_bases/" class="chapter-link">📚 C – Constructions élémentaires</a> -->
+      <a href="../Instanciation_conditions_boucles/Cours/Cours_3" class="chapter-link">📚 Fonctions</a>
+      <a href="../Instanciation_conditions_boucles/Exercices/exercices_intro" class="chapter-link">📚 Exercices</a>
+    </div>
+  </div>
+  </div>
 </div>
-<!-- Accès contrôlé par sessionStorage défini depuis la page d'accueil -->
 <script>
 (function(){
   try {

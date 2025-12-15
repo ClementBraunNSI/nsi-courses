@@ -1,26 +1,34 @@
-ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+def indice_dans_alphabet(lettre, alphabet):
+    return alphabet.index(lettre) if lettre in alphabet else -1
 
-def indice_dans_alphabet(lettre):
-    if lettre in ALPHABET:
-        return ALPHABET.index(lettre)
-    else:
-        return -1
+def chiffrer_cesar(lettre,clef,alphabet):
+    ind_lettre = indice_dans_alphabet(lettre, alphabet)
+    if ind_lettre == -1:  # Si ce n'est pas une lettre
+        return lettre
+    else:  # Si c'est une lettre
+        n_ind = (ind_lettre + clef) % 26
+        return alphabet[n_ind]
 
-def chiffrer_vigenere(message, clef):
+def chiffrer_mot_cesar(mot,clef,alphabet):
     res = ""
-    i_clef = 0
-    for lettre in message:
-        ind_lettre = indice_dans_alphabet(lettre)
-        
-        if ind_lettre == -1:  # Si ce n'est pas une lettre
-            res += lettre
-        else:  # Si c'est une lettre
-            ind_clef = indice_dans_alphabet(clef[i_clef])
-            n_ind = (ind_lettre + ind_clef) % 26
-            res += ALPHABET[n_ind]
-            i_clef = (i_clef + 1) % len(clef)
-    
+    for lettre in mot:
+        res += chiffrer_cesar(lettre,clef,alphabet)
     return res
 
-print(chiffrer_vigenere("BONJOUR", "CLE"))  # Attendu : DZRLZYT
-print(chiffrer_vigenere("HELLO WORLD","KEY"))
+def dechiffrer_mot_cesar(mot,clef,alphabet):
+    res = ""
+    for lettre in mot:
+        res += chiffrer_cesar(lettre,-clef,alphabet)
+    return res
+
+def bruteforce_dechiffrer(mot,alphabet):
+    for clef in range(len(alphabet)):
+        print(chiffrer_mot_cesar(mot,-clef,alphabet))
+
+ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+print(indice_dans_alphabet("A",ALPHABET))
+print(chiffrer_cesar("B",3,ALPHABET))
+print(chiffrer_mot_cesar("BONJOUR",3,ALPHABET))
+print(dechiffrer_mot_cesar("ERQMRXU",3,ALPHABET))
+bruteforce_dechiffrer("ERQMRXU",ALPHABET)
