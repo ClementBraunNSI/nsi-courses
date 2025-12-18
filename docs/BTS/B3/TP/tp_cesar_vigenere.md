@@ -279,17 +279,7 @@ print(chiffrer_vigenere("AAA", "BCD"))          # BDF
       <li>Choisir e tel que 1 &lt; e &lt; φ(n) et e est premier avec φ(n)</li>
       <li>Calculer d tel que (d × e) % φ(n) = 1</li>
     </ol>
-    <ol class="content-text">
-        n <- p * q
-        phi <- (p-1) * (q-1)
-        e = 0
-        pour i allant de 2 à phi
-          si le pgcg de i et phi vaut 1
-            e <- i
-            sortir de la boucle (break)
-        d  <- inverse_modulaire(e,phi)
-        renvoyer (e,n),(d,n)
-    </ol>
+    
     <p class="content-text"><strong>Clé publique :</strong> (e, n)<br><strong>Clé privée :</strong> (d, n)</p>
     <p class="content-text"><strong>Chiffrement d'un nombre m :</strong> c = (m^e) % n<br><strong>Déchiffrement d'un nombre c :</strong> m = (c^d) % n</p>
   </div>
@@ -358,6 +348,17 @@ print(inverse_modulaire(17, 3120))   # Attendu : 2753</code></pre>
           <li>Calculer d avec <code>inverse_modulaire(e, phi)</code></li>
           <li>Retourner ((e, n), (d, n))</li>
         </ol>
+        <pre><code>
+            n <- p * q
+            phi <- (p-1) * (q-1)
+            e = 0
+            pour i allant de 2 à phi
+              si le pgcg de i et phi vaut 1
+                e <- i
+                sortir de la boucle (break)
+            d  <- inverse_modulaire(e,phi)
+            renvoyer (e,n),(d,n)
+        </code></pre>
         <pre><code>cle_pub, cle_priv = generer_cles_rsa(61, 53)
 print("Clé publique:", cle_pub)    # Exemple : (7, 3233)
 print("Clé privée:", cle_priv)     # Exemple : (1783, 3233)</code></pre>
