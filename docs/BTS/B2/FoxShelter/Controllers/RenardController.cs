@@ -4,6 +4,7 @@ using FoxShelter.Services;
 using FoxShelter.Models.Entities;
 using FoxShelter.Models.Enums;
 using FoxShelter.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace FoxShelter.Controllers
 {

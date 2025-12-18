@@ -235,6 +235,7 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "int") to str
 nb_chiffres("digits")
 0
+
 def repeter_caractere(c: str,n: int):
     a = c * n
     print(a)

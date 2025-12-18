@@ -29,6 +29,6 @@ ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 print(indice_dans_alphabet("A",ALPHABET))
 print(chiffrer_cesar("B",3,ALPHABET))
-print(chiffrer_mot_cesar("BONJOUR",3,ALPHABET))
-print(dechiffrer_mot_cesar("ERQMRXU",3,ALPHABET))
-bruteforce_dechiffrer("ERQMRXU",ALPHABET)
+print(chiffrer_mot_cesar("ALPHA",3,ALPHABET))
+print(dechiffrer_mot_cesar("DOSKD",3,ALPHABET))
+#bruteforce_dechiffrer("ERQMRXU",ALPHABET)

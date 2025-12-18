@@ -120,7 +120,7 @@ namespace FoxShelter.Models.Entities
                 return TypeDon switch
                 {
                     TypeDon.Argent => Montant?.ToString("C") ?? "Non spécifié",
-                    TypeDon.Nourriture or TypeDon.Matériel or TypeDon.Médicaments or TypeDon.Équipement 
+                    TypeDon.Nourriture or TypeDon.Materiel or TypeDon.Medicaments or TypeDon.Equipement 
                         => $"{Quantite} {Unite ?? "unité(s)"}",
                     TypeDon.Service => Description ?? "Service non spécifié",
                     _ => "Non évalué"
@@ -159,16 +159,16 @@ namespace FoxShelter.Models.Entities
         /// </summary>
         public decimal CalculerValeurMonetaire()
         {
-            return TypeDon switch
-            {
-                TypeDon.Argent => Montant ?? 0,
-                TypeDon.Nourriture => (Quantite ?? 0) * 2.5m, // Estimation 2.5€/kg
-                TypeDon.Matériel => (Quantite ?? 0) * 15m, // Estimation 15€/unité
-                TypeDon.Médicaments => (Quantite ?? 0) * 25m, // Estimation 25€/unité
-                TypeDon.Équipement => (Quantite ?? 0) * 50m, // Estimation 50€/unité
-                TypeDon.Service => Montant ?? 0, // Valeur estimée du service
-                _ => 0
-            };
+                return TypeDon switch
+                {
+                    TypeDon.Argent => Montant ?? 0,
+                    TypeDon.Nourriture => (Quantite ?? 0) * 2.5m,
+                    TypeDon.Materiel => (Quantite ?? 0) * 15m,
+                    TypeDon.Medicaments => (Quantite ?? 0) * 25m,
+                    TypeDon.Equipement => (Quantite ?? 0) * 50m,
+                    TypeDon.Service => Montant ?? 0,
+                    _ => 0
+                };
         }
         
         /// <summary>
@@ -238,10 +238,10 @@ namespace FoxShelter.Models.Entities
             {
                 TypeDon.Argent => $"votre généreux don de {Montant:C}",
                 TypeDon.Nourriture => $"votre don de nourriture ({ValeurEstimee})",
-                TypeDon.Matériel => $"votre don de matériel ({ValeurEstimee})",
+                TypeDon.Materiel => $"votre don de matériel ({ValeurEstimee})",
                 TypeDon.Service => $"votre aide bénévole ({Description})",
-                TypeDon.Médicaments => $"votre don de médicaments ({ValeurEstimee})",
-                TypeDon.Équipement => $"votre don d'équipement ({ValeurEstimee})",
+                TypeDon.Medicaments => $"votre don de médicaments ({ValeurEstimee})",
+                TypeDon.Equipement => $"votre don d'équipement ({ValeurEstimee})",
                 _ => "votre généreux don"
             };
             

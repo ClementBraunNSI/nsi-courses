@@ -1,0 +1,11 @@
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.csproj.AssemblyReference.cache
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/rpswa.dswa.cache.json
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.AssemblyInfoInputs.cache
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.AssemblyInfo.cs
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.csproj.CoreCompileInputs.cache
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.MvcApplicationPartsAssemblyInfo.cs
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.MvcApplicationPartsAssemblyInfo.cache
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.RazorAssemblyInfo.cache
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.RazorAssemblyInfo.cs
+/Users/clementbraun/nsi-courses/docs/BTS/B2/FoxShelter/obj/Debug/net8.0/FoxShelter.sourcelink.json

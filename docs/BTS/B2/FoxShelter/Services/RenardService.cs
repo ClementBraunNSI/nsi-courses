@@ -75,7 +75,7 @@ namespace FoxShelter.Services
                 .Include(r => r.RegimeAlimentaire)
                 .Include(r => r.Soins)
                 .Where(r => r.EtatSante == EtatSante.Critique || 
-                           r.EtatSante == EtatSante.Malade)
+                           r.EtatSante == EtatSante.Faible)
                 .OrderBy(r => r.EtatSante)
                 .ThenBy(r => r.DateArrivee)
                 .ToListAsync();
@@ -173,7 +173,7 @@ namespace FoxShelter.Services
             if (!renard.PeutEtreAdopte())
                 throw new InvalidOperationException("Ce renard ne peut pas être adopté dans son état actuel");
             
-            renard.MarquerCommeAdopte(dateAdoption);
+            renard.MarquerCommeAdopte();
             await _context.SaveChangesAsync();
             
             return true;
@@ -188,7 +188,7 @@ namespace FoxShelter.Services
             if (renard == null)
                 return false;
             
-            renard.ModifierEtatSante(nouvelEtat, commentaire);
+            renard.ModifierEtatSante(nouvelEtat);
             await _context.SaveChangesAsync();
             
             return true;
@@ -229,12 +229,12 @@ namespace FoxShelter.Services
                 NombreAdoptes = renards.Count(r => r.EstAdopte),
                 NombreNonAdoptes = renards.Count(r => !r.EstAdopte),
                 NombreCritiques = renards.Count(r => r.EtatSante == EtatSante.Critique),
-                NombreMalades = renards.Count(r => r.EtatSante == EtatSante.Malade),
-                NombreEnConvalescence = renards.Count(r => r.EtatSante == EtatSante.EnConvalescence),
-                NombreEnBonneSante = renards.Count(r => r.EtatSante == EtatSante.BonneSante),
+                NombreMalades = renards.Count(r => r.EtatSante == EtatSante.Faible),
+                NombreEnConvalescence = renards.Count(r => r.EtatSante == EtatSante.Stable),
+                NombreEnBonneSante = renards.Count(r => r.EtatSante == EtatSante.Bon),
                 NombreExcellents = renards.Count(r => r.EtatSante == EtatSante.Excellent),
-                PoidsMovenKg = renards.Where(r => r.Poids.HasValue).Average(r => r.Poids) ?? 0,
-                AgeMovenAnnees = renards.Where(r => r.Age.HasValue).Average(r => r.Age) ?? 0,
+                PoidsMovenKg = renards.Where(r => r.Poids.HasValue).Select(r => r.Poids!.Value).DefaultIfEmpty(0).Average(),
+                AgeMovenAnnees = Convert.ToDecimal(renards.Where(r => r.Age.HasValue).Select(r => (double)r.Age!.Value).DefaultIfEmpty(0).Average()),
                 DureeMovenneSejourJours = renards.Average(r => r.CalculerDureeSejourJours()),
                 CoutTotalSoins = await _context.SoinsVeterinaires.SumAsync(s => s.Cout)
             };
@@ -282,7 +282,7 @@ namespace FoxShelter.Services
             if (string.IsNullOrWhiteSpace(renard.Espece))
                 erreurs.Add("L'espèce est obligatoire");
             
-            if (string.IsNullOrWhiteSpace(renard.Sexe) || (renard.Sexe != "M" && renard.Sexe != "F"))
+            if (renard.Sexe != 'M' && renard.Sexe != 'F')
                 erreurs.Add("Le sexe doit être 'M' ou 'F'");
             
             if (renard.Age.HasValue && (renard.Age < 0 || renard.Age > 20))
