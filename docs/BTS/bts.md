@@ -622,7 +622,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="chapter-item">
                 <div class="chapter-title">B3.1</div>
                 <div class="chapter-links">
-                    
                    <a href="../B3/Introduction_cybersecurite" class="chapter-link">📚 Introduction </a>
                    <a href="../B3/Chiffrement_Hachage_Signature" class="chapter-link">📚 Chiffrement Hachage Signature </a>
                 </div>

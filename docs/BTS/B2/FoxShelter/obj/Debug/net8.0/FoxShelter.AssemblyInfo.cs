@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoxShelter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+597272cfc8ce691759a0644168de9fdf431ec065")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc86d32791867bbf03574ebe4a9bf6f170cf240a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoxShelter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoxShelter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
