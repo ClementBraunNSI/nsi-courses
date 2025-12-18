@@ -3,20 +3,20 @@
 ## Introduction à la cybersécurité
 
 **Durée totale : 2 heures**  
-**Partie 1** – Questions de cours  
-**Partie 2** – Étude de cas et analyse de risque
+**Partie 1** – Questions de cours (12 points)  
+**Partie 2** – Étude de cas et analyse de risque (28 points)
 
 La justification, la rigueur, la rédaction et le soin de la copie entrent dans la notation sur 2 points. Un manquement de ces 4 critères entraîne une perte de 2 points.
 
-## Partie 1 – Révision de cours (8 points)
+## Partie 1 – Révision de cours (12 points)
 
-### Système d’Information et actifs
+### Système d’Information et actifs (2 points)
 
 1. Définir un **Système d’Information (SI)** et donner 3 exemples d’actifs.  
 2. Citer **5 catégories d’actifs** et donner un exemple pour chacune.  
 3. Expliquer la notion de **criticité** d’un actif et donner 3 critères qui l’influencent.
 
-### Triade CIA
+### Triade CIA (2 points)
 
 1. Définir **Confidentialité**, **Intégrité**, **Disponibilité**.  
 2. Associer chaque scénario au(x) pilier(s) compromis et justifier:
@@ -28,7 +28,7 @@ La justification, la rigueur, la rédaction et le soin de la copie entrent dans 
 | Modification non autorisée des prix en base |  |  |
 | Panne électrique longue durée |  |  |
 
-### Menace, vulnérabilité, incident, risque
+### Menace, vulnérabilité, incident, risque (2 points)
 
 1. Donner une **définition** courte de chacun des termes.  
 2. Classer les situations ci-dessous et justifier:  
@@ -37,17 +37,17 @@ La justification, la rigueur, la rédaction et le soin de la copie entrent dans 
    c) Compromission réussie d’un poste par phishing  
    d) Probabilité élevée d’attaque avec impact majeur
 
-### Mesures de sécurité
+### Mesures de sécurité (2 points)
 
 1. Proposer 3 **mesures techniques** contre le phishing.  
 2. Proposer 3 **mesures humaines** pour réduire les risques internes.
 3. Proposer 3 **mesures physiques** pour améliorer la sécurité.
 
-### Propriétés complémentaires de sécurité
+### Propriétés complémentaires de sécurité (1 point)
 
 1. Citer et définir 2 propriétés complémentaires parmi: **Traçabilité (Auditabilité)**, **Non‑répudiation**, **Authenticité**, **Preuve**.  
 
-### Typologie des menaces — classification rapide
+### Typologie des menaces — classification rapide (1 point)
 
 Classer chaque élément dans la catégorie appropriée (Humaine intentionnelle / Humaine non intentionnelle / Technique / Environnementale / Légale) et justifier en une phrase:  
 - Employé qui envoie par erreur un document confidentiel à un mauvais destinataire  
@@ -59,7 +59,7 @@ Classer chaque élément dans la catégorie appropriée (Humaine intentionnelle 
 - Tremblement de terre impactant le datacenter  
 - Utilisation d’un logiciel sans licence
 
-### QCM — notions rapides
+### QCM — notions rapides (2 points)
 
 Donner la bonne réponse et justifier en une phrase:
 
@@ -85,13 +85,13 @@ Donner la bonne réponse et justifier en une phrase:
 <br/>
 <br/>
 
-## Partie 2 – Étude de cas (18 points)
+## Partie 2 – Étude de cas (28 points)
 
 ### Contexte
 
 « PetitCommerce » est une boutique en ligne (10 personnes). Le site web (PHP/MySQL) représente 95% du chiffre d’affaires. Vous réalisez une **analyse de risque** sur le périmètre du service e‑commerce.
 
-### Étape 0 – Définitions appliquées (2 points)
+### Étape 0 – Définitions appliquées (4 points)
 
 1. Dans le **contexte de PetitCommerce**, donner une définition concise, contextualisée avec un exemple de :  
    a) Menace  
@@ -99,12 +99,12 @@ Donner la bonne réponse et justifier en une phrase:
    c) Incident  
    d) Risque  
 
-### Étape 1 – Actifs et criticité (3 points)
+### Étape 1 – Actifs et criticité (4 points)
 
 1. Lister 5 actifs de la société **PetitCommerce** et les **classer par catégorie**.  
 2. Donner une **criticité** (faible/moyenne/élevée/critique) pour ces actifs et **justifier** les 3 plus élevés.
 
-### Étape 2 – Triade CIA et scénarios (3 points)
+### Étape 2 – Triade CIA et scénarios (4 points)
 
 Associer chaque scénario au(x) pilier(s) compromis et proposer **une mesure de protection** prioritaire.
 
@@ -116,7 +116,7 @@ Associer chaque scénario au(x) pilier(s) compromis et proposer **une mesure de 
 | 4 | Sauvegardes hors service pendant 3 semaines |  |  |
 | 5 | Employé mécontent exfiltre des données |  |  |
 
-### Étape 3 – Menaces, vulnérabilités, incidents, risques (3 points)
+### Étape 3 – Menaces, vulnérabilités, incidents, risques (4 points)
 
 Associer à chaque élément de la liste ci-dessous une catégorie (menace, vulnérabilité, incident, risque) et justifier.
 
@@ -128,7 +128,7 @@ Associer à chaque élément de la liste ci-dessous une catégorie (menace, vuln
 | Chiffrement réussi de la base clients |  |  |
 | Probabilité élevée de fuite de données sensibles |  |  |
 
-### Étape 4 – Calcul du risque et matrice (3 points)
+### Étape 4 – Calcul du risque et matrice (4 points)
 
 - Fuite de données clients via injection SQL sur formulaire de login
 - Partage d’un mot de passe administrateur au sein de l’équipe
@@ -145,7 +145,7 @@ Vous ne choisirez que 5 risques de votre choix :
 2. Calculer **Risque = Vraisemblance × Impact**. Classer 5 risques et identifier le **Top 3**.
 3. Pour chaque risque, donner une mesure de protection qui pourrait réduire le risque.
 
-### Étape 5 – Enjeux et impacts détaillés
+### Étape 5 – Enjeux et impacts détaillés (4 points)
 
 Pour chacun des incidents ci‑dessous, détailler les **impacts financiers, opérationnels, juridiques, réputationnels, humains** (au moins 2 points par catégorie):
 
@@ -153,7 +153,7 @@ Pour chacun des incidents ci‑dessous, détailler les **impacts financiers, op�
 - Fuite de données clients (base e‑commerce)  
 - DDoS rendant le site indisponible 48h
 
-### Étape 6 – Attaques courantes (phishing, DDoS, injection SQL)
+### Étape 6 – Attaques courantes (phishing, DDoS, injection SQL) (4 points)
 
 Pour chaque attaque:
 

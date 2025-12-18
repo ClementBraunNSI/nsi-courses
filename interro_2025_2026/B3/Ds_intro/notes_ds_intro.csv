@@ -1,0 +1,3 @@
+Nom,Prénom,Note/40,Détails Partie 1,Détails Partie 2
+Willoquet,Allan,24,"Bonne compréhension globale (8.75/12). Définitions et typologies maîtrisées. Attention au QCM (Ransomware impacte d'abord la Disponibilité) et aux mesures physiques manquantes.","Partie 2 correcte sur l'analyse (Actifs, CIA, Catégories) mais incomplète (Étapes 0 et 4 sautées, Étape 5 très légère). L'étape 3 est parfaite (5/5). Résultat 15.25/28."
+Van de Velde,Gabriel,19.5,"Partie 1 solide (9/12). Bonnes définitions et classifications. Mesures de sécurité non traitées (0/2).","Partie 2 fragile (10.5/28). Bon début (Actifs, CIA) mais beaucoup d'erreurs de classification à l'étape 3 (confusions Menace/Vulnérabilité/Incident). Étapes 0, 4 et 5 non traitées. Étape 6 incomplète."
