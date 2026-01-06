@@ -620,10 +620,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 Sécurité des systèmes informatiques, réseaux et services d'infrastructure
             </p>
             <div class="chapter-item">
-                <div class="chapter-title">B3.1</div>
+                <div class="chapter-title">B3</div>
                 <div class="chapter-links">
                    <a href="../B3/Introduction_cybersecurite" class="chapter-link">📚 Introduction </a>
                    <a href="../B3/Chiffrement_Hachage_Signature" class="chapter-link">📚 Chiffrement Hachage Signature </a>
+                   <a href="../B3/activite_mentions_legales" class="chapter-link">📚 Activité Mentions Légales</a>
                 </div>
             </div>
                 <div class="chapter-title">TP Python</div>

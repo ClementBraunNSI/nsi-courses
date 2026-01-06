@@ -36,6 +36,11 @@
       <a href="../Instanciation_conditions_boucles/Cours/Cours_3" class="chapter-link">📚 Fonctions</a>
       <a href="../Instanciation_conditions_boucles/Exercices/exercices_intro" class="chapter-link">📚 Exercices</a>
     </div>
+    <div class="chapter-links">
+      <!--<a href="Cours/c_bases/" class="chapter-link">📚 C – Constructions élémentaires</a> -->
+      <a href="../Tableaux_en_C/Cours/Cours_Tableaux" class="chapter-link">📚 Tableaux</a>
+      <a href="../Tableaux_en_C/Exercices/exercices_tableaux" class="chapter-link">📚 Exercices</a>
+    </div>
   </div>
   </div>
 </div>

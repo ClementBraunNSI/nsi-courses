@@ -77,14 +77,14 @@ def chiffrer_message_texte_rsa(message, clef):
     return l
 
 def dechiffrer_message_texte_rsa(message, clef):
-    l = []
+    l = ""
     for chiffre in message:
-        if chiffre == "":  # Si ce n'est pas un chiffre
-            l.append(" ")
+        if chiffre == "":  # Si ce n'est pas une lettre
+            l += ""
         else:  # Si c'est un chiffre
             lettre = ALPHABET[pow(chiffre, clef[0], clef[1])]
-            l.append(lettre)
-    return "".join(l)
+            l += lettre
+    return l
 
 
 cle_pub, cle_priv = generer_clef_rsa(61, 53)
