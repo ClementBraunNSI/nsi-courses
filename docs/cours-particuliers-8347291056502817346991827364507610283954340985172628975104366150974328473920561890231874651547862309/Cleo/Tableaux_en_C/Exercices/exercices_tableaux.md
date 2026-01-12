@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge intro">Introduction</div>
                 <h4 class="exercise-title">Déclaration Simple</h4>
                 <div class="exercise-content">
-                    <p>Dans une fonction <code>main</code>, déclarez un tableau d'entiers nommé <code>scores</code> capable de contenir 5 valeurs.</p>
+                    <p>Dans une fonction <code>main</code>, déclarer un tableau d'entiers nommé <code>scores</code> capable de contenir 5 valeurs.</p>
                 </div>
             </div>
         </div>
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge intro">Introduction</div>
                 <h4 class="exercise-title">Initialisation</h4>
                 <div class="exercise-content">
-                    <p>Déclarez un tableau <code>premiers</code> et initialisez-le directement avec les 5 premiers nombres premiers (2, 3, 5, 7, 11).</p>
+                    <p>Déclarer un tableau <code>premiers</code> et l'initialiser directement avec les 5 premiers nombres premiers (2, 3, 5, 7, 11).</p>
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge intro">Introduction</div>
                 <h4 class="exercise-title">Accès Lecture</h4>
                 <div class="exercise-content">
-                    <p>À partir du tableau <code>premiers</code> précédent, affichez le 3ème élément (le nombre 5) en utilisant <code>printf</code>.</p>
+                    <p>À partir du tableau <code>premiers</code> précédent, afficher le 3ème élément (le nombre 5) en utilisant <code>printf</code>.</p>
                 </div>
             </div>
         </div>
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge intro">Introduction</div>
                 <h4 class="exercise-title">Accès Écriture</h4>
                 <div class="exercise-content">
-                    <p>Changez la première valeur du tableau <code>scores</code> (de l'exercice 1) pour lui donner la valeur 100.</p>
+                    <p>Changer la première valeur du tableau <code>scores</code> (de l'exercice 1) pour lui donner la valeur 100.</p>
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge intro">Introduction</div>
                 <h4 class="exercise-title">Affichage complet</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une boucle <code>for</code> qui parcourt le tableau <code>premiers</code> et affiche chaque nombre suivi d'un espace.</p>
+                    <p>Écrire une boucle <code>for</code> qui parcourt le tableau <code>premiers</code> et affiche chaque nombre suivi d'un espace.</p>
                 </div>
             </div>
         </div>
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge easy">Niveau 1</div>
                 <h4 class="exercise-title">Somme des éléments</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction <code>int somme_tableau(int tab[], int taille)</code> qui renvoie la somme de tous les éléments du tableau.</p>
+                    <p>Écrire une fonction <code>int somme_tableau(int tab[], int taille)</code> qui renvoie la somme de tous les éléments du tableau.</p>
                 </div>
             </div>
         </div>
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge easy">Niveau 1</div>
                 <h4 class="exercise-title">Moyenne</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction <code>float moyenne(int tab[], int taille)</code> qui calcule et renvoie la moyenne des valeurs.</p>
+                    <p>Écrire une fonction <code>float moyenne(int tab[], int taille)</code> qui calcule et renvoie la moyenne des valeurs.</p>
                 </div>
             </div>
         </div>
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge easy">Niveau 1</div>
                 <h4 class="exercise-title">Compteur de Zéros</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction qui compte combien de fois le nombre 0 apparaît dans un tableau donné.</p>
+                    <p>Écrire une fonction qui compte combien de fois le nombre 0 apparaît dans un tableau donné.</p>
                 </div>
             </div>
         </div>
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge easy">Niveau 1</div>
                 <h4 class="exercise-title">Remplissage 1 à N</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une procédure qui remplit un tableau existant avec les nombres 1, 2, 3... jusqu'à la taille du tableau.</p>
+                    <p>Écrire une procédure qui remplit un tableau existant avec les nombres 1, 2, 3... jusqu'à la taille du tableau.</p>
                 </div>
             </div>
         </div>
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge easy">Niveau 1</div>
                 <h4 class="exercise-title">Copie de Tableau</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une procédure qui copie le contenu d'un tableau A vers un tableau B (les deux ont la même taille).</p>
+                    <p>Écrire une procédure qui copie le contenu d'un tableau A vers un tableau B (les deux ont la même taille).</p>
                 </div>
             </div>
         </div>
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge medium">Niveau 2</div>
                 <h4 class="exercise-title">Le Maximum</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction <code>int trouver_max(int tab[], int taille)</code> qui renvoie la plus grande valeur présente dans le tableau.</p>
+                    <p>Écrire une fonction <code>int trouver_max(int tab[], int taille)</code> qui renvoie la plus grande valeur présente dans le tableau.</p>
                 </div>
             </div>
         </div>
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge medium">Niveau 2</div>
                 <h4 class="exercise-title">Index du Minimum</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction qui ne renvoie pas la valeur minimale, mais <strong>l'indice</strong> (la position) où se trouve le minimum.</p>
+                    <p>Écrire une fonction qui ne renvoie pas la valeur minimale, mais <strong>l'indice</strong> (la position) où se trouve le minimum.</p>
                 </div>
             </div>
         </div>
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge medium">Niveau 2</div>
                 <h4 class="exercise-title">Affichage Inversé</h4>
                 <div class="exercise-content">
-                    <p>Affichez le contenu d'un tableau en partant de la fin (dernier élément) jusqu'au début (premier élément).</p>
+                    <p>Afficher le contenu d'un tableau en partant de la fin (dernier élément) jusqu'au début (premier élément).</p>
                 </div>
             </div>
         </div>
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge medium">Niveau 2</div>
                 <h4 class="exercise-title">Recherche séquentielle</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction <code>int recherche(int tab[], int taille, int valeur)</code> qui renvoie l'indice de <code>valeur</code> si elle est trouvée, ou -1 si elle n'est pas dans le tableau.</p>
+                    <p>Écrire une fonction <code>int recherche(int tab[], int taille, int valeur)</code> qui renvoie l'indice de <code>valeur</code> si elle est trouvée, ou -1 si elle n'est pas dans le tableau.</p>
                 </div>
             </div>
         </div>
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge medium">Niveau 2</div>
                 <h4 class="exercise-title">Tableaux Identiques ?</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction qui prend deux tableaux et renvoie 1 s'ils contiennent exactement les mêmes éléments dans le même ordre, 0 sinon.</p>
+                    <p>Écrire une fonction qui prend deux tableaux et renvoie 1 s'ils contiennent exactement les mêmes éléments dans le même ordre, 0 sinon.</p>
                 </div>
             </div>
         </div>
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge hard">Niveau 3</div>
                 <h4 class="exercise-title">Palindrome</h4>
                 <div class="exercise-content">
-                    <p>Vérifiez si un tableau est un "palindrome" (se lit pareil dans les deux sens).<br>Ex: {1, 2, 3, 2, 1} est un palindrome.</p>
+                    <p>Vérifier si un tableau est un "palindrome" (se lit pareil dans les deux sens).<br>Ex: {1, 2, 3, 2, 1} est un palindrome.</p>
                 </div>
             </div>
         </div>
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge hard">Niveau 3</div>
                 <h4 class="exercise-title">Rotation à Droite</h4>
                 <div class="exercise-content">
-                    <p>Déplacez tous les éléments d'un cran vers la droite. Le dernier élément devient le premier.<br>Ex: {1, 2, 3} devient {3, 1, 2}.</p>
+                    <p>Déplacer tous les éléments d'un cran vers la droite. Le dernier élément devient le premier.<br>Ex: {1, 2, 3} devient {3, 1, 2}.</p>
                 </div>
             </div>
         </div>
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge hard">Niveau 3</div>
                 <h4 class="exercise-title">Fusion de tableaux</h4>
                 <div class="exercise-content">
-                    <p>Prenez deux tableaux A et B de même taille, et créez un tableau C deux fois plus grand qui contient A suivi de B.</p>
+                    <p>Prendre deux tableaux A et B de même taille, et créer un tableau C deux fois plus grand qui contient A suivi de B.</p>
                 </div>
             </div>
         </div>
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge hard">Niveau 3</div>
                 <h4 class="exercise-title">Détection de Doublons</h4>
                 <div class="exercise-content">
-                    <p>Écrivez une fonction qui renvoie 1 si le tableau contient au moins deux fois la même valeur, 0 sinon.</p>
+                    <p>Écrire une fonction qui renvoie 1 si le tableau contient au moins deux fois la même valeur, 0 sinon.</p>
                 </div>
             </div>
         </div>
@@ -385,7 +385,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="difficulty-badge hard">Niveau 3</div>
                 <h4 class="exercise-title">Inversion en place</h4>
                 <div class="exercise-content">
-                    <p>Inversez l'ordre des éléments d'un tableau <strong>sans utiliser de deuxième tableau</strong> (en modifiant le tableau original directement).</p>
+                    <p>Inverser l'ordre des éléments d'un tableau <strong>sans utiliser de deuxième tableau</strong> (en modifiant le tableau original directement).</p>
                 </div>
             </div>
         </div>

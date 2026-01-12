@@ -56,21 +56,21 @@ class Refuge:
         # Q2.b : Compléter la méthode d'ajout
         pass
 
-    def lister_sous_poids(self):
+    def lister_peu_corpulents(self):
         """
         Méthode qui renvoie une liste des Renards dont le poids est < 6.0 kg.
         sortie : 
-            - list[Renard] : liste des renards en sous-poids.
+            - list[Renard] : liste des renards peu corpulents.
         """
         return [renard for renard in self.liste_renards if renard.poids < 6]
 
-    def pourcentage_sous_poids(self):
+    def pourcentage_peu_corpulents(self):
         """
-        Méthode qui renvoie le pourcentage des renards en sous-poids.
+        Méthode qui renvoie le pourcentage des renards peu corpulents.
         sortie : 
-            - float : pourcentage des renards en sous-poids.
+            - float : pourcentage des renards peu corpulents.
         """
-        return len(self.lister_sous_poids()) / len(self.liste_renards) * 100
+        return len(self.lister_peu_corpulents()) / len(self.liste_renards) * 100
 
 
     def importer_donnees(self, nom_fichier):

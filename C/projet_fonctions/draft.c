@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h> 
 
 void affiche_poly(long valeurs[], int taille) {
     for (int i = taille-1 ; i >= 0; i--){
@@ -17,8 +18,28 @@ void affiche_poly(long valeurs[], int taille) {
                 printf("X^%d", i);
             }
         }
-       
     }
+}
+
+void horner_poly(long* valeurs, int degre, int a){
+    long* intermediaire = malloc((degre - 1) * sizeof(long));
+    long* final = malloc((degre - 1) * sizeof(long));
+    long reste;
+    if (intermediaire == NULL){
+        printf("Erreur d'allocation mémoire\n");
+        return;
+    }
+    final[0] = valeurs[0];
+    intermediaire[0] = final[0] * a;
+    final[1] = valeurs[1]-intermediaire[0];
+
+    for (int i = 0; i< sizeof(intermediaire)/sizeof(intermediaire[0]) ; i++){
+        intermediaire[i] = valeurs[i] * a;
+        final[i+1] = valeurs[i+1]-intermediaire[i];
+    }
+    reste = intermediaire[(sizeof(intermediaire)/sizeof(intermediaire[0]))-1];
+
+
 }
 
 int main(void){

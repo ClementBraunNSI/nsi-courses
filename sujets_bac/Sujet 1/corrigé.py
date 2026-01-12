@@ -1,3 +1,6 @@
+#Compétences
+# 33% prog / 33% compréhension / 18% autonomie / 16% oral
+
 from math import *
 from random import *
 from donnees_habitats import donnees
@@ -26,18 +29,18 @@ def k_plus_proches(k:int, habitat:dict, habitats:list[dict])->list[tuple]:
     return distances[:k]
 
 def presence_renard(k:int, habitat:dict, habitats:list[dict])->bool:
-    voisins = k_plus_proches(k, habitat, habitats)
+    habitats = k_plus_proches(k, habitat, habitats)
     n_renards = 0
-    for voisin in voisins:
-        if voisin[1]['presence_renard']:
+    for habitat in habitats:
+        distance = habitat[0]
+        caracteristiques = habitat[1]
+        if caracteristiques['presence_renard']:
             n_renards += 1
     return n_renards > k/2
 
-for hab in distance_d_un_habitat(nouveau, zones_connues)[:3]:
-    print(hab)
 
-print(presence_renard(10, nouveau, zones_connues))
-print(presence_renard(50, nouveau, zones_connues))
-print(presence_renard(100, nouveau, zones_connues))
-print(presence_renard(500, nouveau, zones_connues))
-print(presence_renard(700, nouveau, zones_connues))
+print(presence_renard(10, nouveau, zones_connues)) #True
+print(presence_renard(50, nouveau, zones_connues)) #True
+print(presence_renard(100, nouveau, zones_connues)) #False
+print(presence_renard(500, nouveau, zones_connues)) #False
+print(presence_renard(700, nouveau, zones_connues)) #True

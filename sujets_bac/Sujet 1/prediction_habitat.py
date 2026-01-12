@@ -20,7 +20,7 @@ def distance(habitat_1, habitat_2):
     for key in habitat_1:
         if key != 'presence_renard':
             d += (habitat_1[...] - ... )** ...
-    return ...
+    return sqrt(...)
 
 def distance_d_un_habitat(habitat, habitats):
     '''
@@ -33,7 +33,6 @@ def distance_d_un_habitat(habitat, habitats):
     '''
     return [] #modifier le renvoi.
 
-#Si une ligne est soulignée de rouge, ceci est normal, il faut d'abord compléter la fonction distance.
 def k_plus_proches(k, habitat, habitats):
     '''
     Calcule les k habitats les plus proches de l'habitat donné.
@@ -42,11 +41,14 @@ def k_plus_proches(k, habitat, habitats):
         - habitat : dictionnaire représentant un habitat.
         - habitats : liste de dictionnaires représentant des habitats.
     sortie : 
-        - list[tuple] : liste de tuples (distance, habitat) où distance est la distance euclidienne entre habitat et chaque habitat de la liste.
+        - list[tuple] : liste de tuples (distance, habitat) l'élément à l'indice 0 est la distance euclidienne entre habitat 
+                        et chaque habitat de la liste et l'élément à l'indice 1 est le dictionnaire correspondant à l'habitat correspondant.
     '''
+    # On calcule les distances
     distances = distance_d_un_habitat(habitat, habitats)
+    # On cherche à trier les distances en fonction de la distance euclidienne.
     distances.sort(key = lambda x: x[0])
-    return distances[:k]
+    return distances[:k] # renvoie les distances jusque la borne k non comprise
 
 def presence_renard(k, habitat, habitats):
     '''
@@ -58,9 +60,11 @@ def presence_renard(k, habitat, habitats):
     sortie : 
         - bool : True si l'habitat a plus de k/2 voisins avec des renards, False sinon.
     '''
-    voisins = k_plus_proches(k, habitat, habitats)
+    habitats = k_plus_proches(k, habitat, habitats)
     n_renards = 0
-    for voisin in voisins:
-        if voisin[1]['presence_renard'] == True:
+    for habitat in habitats:
+        distance = habitat[0]
+        caracteristiques = habitat[1]
+        if distance['presence_renard']:
             n_renards += 1
     return n_renards > k/2

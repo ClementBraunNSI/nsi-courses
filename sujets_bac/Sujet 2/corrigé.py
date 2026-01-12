@@ -1,3 +1,6 @@
+# Compétences
+# Programmation 30% / Compréhension 35% / Autonomie 20% / Oral 15%
+
 import csv
 # Le module csv est inclus ici, mais une lecture simple par ligne est aussi possible.
 
