@@ -402,16 +402,28 @@ INSERT INTO Voitures (id, marque, modele, couleur, annee, prix, kilometrage) VAL
                 <div class="exercise-content">
                     <p>Vous gérez un refuge pour renards. Les données sont réparties sur trois tables.</p>
                     
+                    <strong>Table <code>Soignants</code></strong>
+                    <div class="sql-table-container">
+                        <table>
+                            <thead><tr><th>id</th><th>nom</th><th>specialite</th></tr></thead>
+                            <tbody>
+                                <tr><td>1</td><td>Dr. Dolittle</td><td>Vétérinaire</td></tr>
+                                <tr><td>2</td><td>Mme. Pomfrey</td><td>Infirmière</td></tr>
+                                <tr><td>3</td><td>Hagrid</td><td>Gardien</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                     <strong>Table <code>Renards</code></strong>
                     <div class="sql-table-container">
                         <table>
-                            <thead><tr><th>id</th><th>nom</th><th>sexe</th><th>age</th><th>id_enclos</th></tr></thead>
+                            <thead><tr><th>id</th><th>nom</th><th>sexe</th><th>age</th><th>id_enclos</th><th>id_soignant</th></tr></thead>
                             <tbody>
-                                <tr><td>1</td><td>Rusty</td><td>M</td><td>3</td><td>1</td></tr>
-                                <tr><td>2</td><td>Vixey</td><td>F</td><td>2</td><td>1</td></tr>
-                                <tr><td>3</td><td>Zorro</td><td>M</td><td>5</td><td>2</td></tr>
-                                <tr><td>4</td><td>Luna</td><td>F</td><td>1</td><td>3</td></tr>
-                                <tr><td>5</td><td>Shadow</td><td>M</td><td>4</td><td>NULL</td></tr>
+                                <tr><td>1</td><td>Rusty</td><td>M</td><td>3</td><td>1</td><td>1</td></tr>
+                                <tr><td>2</td><td>Vixey</td><td>F</td><td>2</td><td>1</td><td>2</td></tr>
+                                <tr><td>3</td><td>Zorro</td><td>M</td><td>5</td><td>2</td><td>1</td></tr>
+                                <tr><td>4</td><td>Luna</td><td>F</td><td>1</td><td>3</td><td>3</td></tr>
+                                <tr><td>5</td><td>Shadow</td><td>M</td><td>4</td><td>NULL</td><td>2</td></tr>
                             </tbody>
                         </table>
                     </div>
