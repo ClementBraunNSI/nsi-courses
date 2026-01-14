@@ -318,5 +318,16 @@ document.addEventListener('DOMContentLoaded', function() {
         Dans le Main, créer une <code>List&lt;Personnage&gt;</code>. Ajouter un Guerrier et un Magicien dedans. Faire une boucle <code>foreach</code> pour faire attaquer chaque personnage de la liste.
       </div>
     </div>
+
+    <div class="exercise-card heritage">
+      <div class="difficulty-badge heritage">Avancé</div>
+      <h4 class="exercise-title">Exercice 5.4 — Méthode SeDeplacer</h4>
+      <div class="exercise-content">
+        Ajouter une méthode virtuelle <code>SeDeplacer()</code> dans <code>Personnage</code> ("Le personnage marche").<br>
+        - Le Guerrier : "Le guerrier court avec son armure".<br>
+        - Le Magicien : "Le magicien se téléporte".<br>
+        Tester dans la boucle.
+      </div>
+    </div>
   </div>
 </div>
