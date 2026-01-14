@@ -516,18 +516,94 @@ h4.subsubsection-title {
       <li><strong>Chiffrement</strong> : Rendre les données illisibles sans clé.</li>
       <li><strong>Sauvegardes</strong> : Garantir la disponibilité.</li>
       <li><strong>Tests réguliers</strong> de vulnérabilité.</li>
+      <li><strong>Contrôle d'accès</strong> : Authentification forte et gestion des droits.</li>
+    </ul>
+  </div>
+
+  <h3 class="subsection-title">Mesures organisationnelles</h3>
+  <div class="definition-box">
+    <div class="definition-title">Politique et Humain</div>
+    <div class="definition-content">
+      La sécurité n'est pas que technique, elle est aussi humaine :
+      <ul>
+        <li><strong>Charte informatique</strong> : Règles d'utilisation des outils.</li>
+        <li><strong>Sensibilisation</strong> : Formation régulière du personnel (phishing, mots de passe).</li>
+        <li><strong>Gestion des départs</strong> : Suppression immédiate des accès.</li>
+        <li><strong>Clauses de confidentialité</strong> dans les contrats de travail.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="concept-section">
+  <h2 class="section-title">7. Transferts de données hors UE</h2>
+  <div class="content-text">
+    Le transfert de données personnelles en dehors de l'Union Européenne est par principe interdit, sauf exceptions encadrées.
+  </div>
+
+  <h3 class="subsection-title">7.1 Encadrement des transferts</h3>
+  <div class="definition-box">
+    <div class="definition-title">Pays à niveau de protection adéquat</div>
+    <div class="definition-content">
+      La Commission Européenne reconnaît que certains pays offrent un niveau de protection équivalent à celui de l'UE (ex: Suisse, Japon, Canada - secteur commercial). Les transferts vers ces pays sont libres.
+    </div>
+  </div>
+
+  <div class="definition-box">
+    <div class="definition-title">Garanties appropriées</div>
+    <div class="definition-content">
+      Pour les autres pays, il faut mettre en place des outils juridiques :
+      <ul>
+        <li><strong>BCR (Binding Corporate Rules)</strong> : Règles internes d'entreprise pour les groupes multinationaux.</li>
+        <li><strong>Clauses Contractuelles Types (CCT)</strong> : Modèles de contrats rédigés par la Commission Européenne.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="subsection-title">7.2 Cas particuliers</h3>
+  <div class="content-text">
+    <ul>
+      <li><strong>États-Unis</strong> : Le "Data Privacy Framework" facilite les échanges avec les entreprises américaines certifiées.</li>
+      <li><strong>Cloud Computing</strong> : Attention à la localisation des serveurs (AWS, Azure, Google Cloud). Héberger des données sensibles hors UE nécessite une vigilance accrue.</li>
     </ul>
   </div>
 </div>
 
 <div class="concept-section">
-  <h2 class="section-title">7. Sanctions</h2>
+  <h2 class="section-title">8. Sanctions</h2>
   <div class="content-text">
     La CNIL dispose d'un pouvoir de sanction dissuasif. Les amendes peuvent aller jusqu'à :
   </div>
   <div class="warning-fact">
     💰 <strong>10 millions d'euros</strong> ou <strong>2% du CA mondial</strong> (manquements administratifs).<br>
     💰 <strong>20 millions d'euros</strong> ou <strong>4% du CA mondial</strong> (violation des droits, principes fondamentaux).
+  </div>
+</div>
+
+<div class="concept-section">
+  <h2 class="section-title">9. Cas pratiques et applications</h2>
+
+  <h3 class="subsection-title">9.1 Politique de confidentialité</h3>
+  <div class="content-text">
+    Document obligatoire sur tout site web collectant des données. Elle doit être :
+    <ul>
+      <li><strong>Accessible</strong> depuis toutes les pages (footer).</li>
+      <li><strong>Compréhensible</strong> (langage clair, pas de jargon juridique).</li>
+      <li><strong>Complète</strong> (finalités, destinataires, durée, droits).</li>
+    </ul>
+  </div>
+
+  <h3 class="subsection-title">9.2 Gestion des cookies</h3>
+  <div class="definition-box">
+    <div class="definition-title">Bandeau Cookies</div>
+    <div class="definition-content">
+      <ul>
+        <li>Le dépôt de cookies non essentiels (pub, réseaux sociaux) nécessite un <strong>consentement préalable</strong>.</li>
+        <li>Boutons obligatoires : "Tout accepter", "Tout refuser", "Personnaliser".</li>
+        <li>Il doit être aussi facile de refuser que d'accepter.</li>
+        <li>Durée de validité du choix : 6 mois recommandé.</li>
+      </ul>
+    </div>
   </div>
 </div>
 

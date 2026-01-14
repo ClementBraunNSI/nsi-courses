@@ -10,6 +10,8 @@ public class Program
         AfficherBienvenue();
         SePresenter("Alice", "Paris");
         Console.WriteLine($"Age dans 10 ans (si 20) : {AgeDans10Ans(20)}");
+        Console.WriteLine($"20°C en F : {CelsiusVersFahrenheit(20)}");
+        Console.WriteLine($"Moyenne(10, 12, 14) : {Moyenne(10, 12, 14)}");
         
         // --- TEST CONDITIONS ---
         Console.WriteLine("\n--- TEST CONDITIONS ---");
@@ -257,5 +259,35 @@ public class Program
         // result.AddRange(l2);
         
         return result;
+    }
+
+    // Exercice 5
+    public static int TrouverMax(List<int> nombres)
+    {
+        if (nombres.Count == 0) return 0;
+        int max = nombres[0];
+        foreach (int n in nombres)
+        {
+            if (n > max) max = n;
+        }
+        return max;
+    }
+
+    // Exercice 6
+    public static double CalculerMoyenne(List<int> nombres)
+    {
+        if (nombres.Count == 0) return 0;
+        return (double)Somme(nombres) / nombres.Count;
+    }
+
+    // Exercice 7
+    public static int CompterOccurrences(List<int> nombres, int valeur)
+    {
+        int count = 0;
+        foreach (int n in nombres)
+        {
+            if (n == valeur) count++;
+        }
+        return count;
     }
 }

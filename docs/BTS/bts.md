@@ -614,8 +614,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="chapter-title">B2 - C#</div>
                     <div class="chapter-links">
                         <a href="../B2/Constructions_elementaires/types_de_base_csharp" class="chapter-link">Types de base</a>
-                        <a href="../B2/Constructions_elementaires/premiers_pas_csharp" class="chapter-link">Premiers pas</a>
-                        <a href="../B2/Programmation_Orientee_Objet/introduction_poo_csharp" class="chapter-link">POO</a>
+                        <a href="../B2/Constructions_elementaires/premiers_pas_csharp" class="chapter-link">Fiche d'exercices sur les types de base</a>
+                        <a href="../B2/Programmation_Orientee_Objet/introduction_poo_csharp" class="chapter-link">Cours sur la Programmation Orientée Objet</a>
+                        <a href="../B2/Programmation_Orientee_Objet/exercices_poo_csharp" class="chapter-link">Fiche d'exercices sur la programmation orientée objet</a>
                     </div>
                 </div>
             </div>
@@ -635,7 +636,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    <a href="../B3/Introduction_cybersecurite" class="chapter-link">📚 Introduction </a>
                    <a href="../B3/Chiffrement_Hachage_Signature" class="chapter-link">📚 Chiffrement Hachage Signature </a>
                    <a href="../B3/activite_mentions_legales" class="chapter-link">📚 Activité Mentions Légales</a>
-                   <a href="../B3/attendus_rgpd_cnil" class="chapter-link">📚 Cadre légal : RGPD / CNIL</a>
+                   <!--<a href="../B3/attendus_rgpd_cnil" class="chapter-link">📚 Cadre légal : RGPD / CNIL</a> -->
                 </div>
             </div>
                 <div class="chapter-title">TP Python</div>

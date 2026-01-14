@@ -200,6 +200,18 @@ Console.WriteLine($"Bonjour {prenom}"); // Interpolation de chaîne</code></pre>
       <h4 class="exercise-title">Exercice 3 — Calcul d'âge futur</h4>
       <div class="exercise-content"><strong>Écrire une méthode <code>static int AgeDans10Ans(int ageActuel)</code> qui retourne l'âge dans 10 ans. Tester en affichant le résultat.</strong></div>
     </div>
+    
+    <div class="exercise-card intro">
+      <div class="difficulty-badge intro">Niveau Intro</div>
+      <h4 class="exercise-title">Exercice 4 — Conversion de température</h4>
+      <div class="exercise-content"><strong>Écrire une méthode <code>static double CelsiusVersFahrenheit(double celsius)</code>. Formule : <code>(celsius * 9/5) + 32</code>.</strong></div>
+    </div>
+
+    <div class="exercise-card intro">
+      <div class="difficulty-badge intro">Niveau Intro</div>
+      <h4 class="exercise-title">Exercice 5 — Moyenne de trois notes</h4>
+      <div class="exercise-content"><strong>Écrire une méthode <code>static double Moyenne(double n1, double n2, double n3)</code> qui retourne la moyenne des trois nombres.</strong></div>
+    </div>
   </div>
 </div>
 
@@ -286,6 +298,18 @@ Console.WriteLine($"Bonjour {prenom}"); // Interpolation de chaîne</code></pre>
       <h4 class="exercise-title">Exercice 6 — Palindrome</h4>
       <div class="exercise-content"><strong>Écrire une méthode <code>static bool EstPalindrome(string texte)</code> qui vérifie si le texte est un palindrome.</strong></div>
     </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 7 — Nombre Premier</h4>
+      <div class="exercise-content"><strong>Écrire une méthode <code>static bool EstPremier(int n)</code> qui retourne true si n est un nombre premier (divisible uniquement par 1 et lui-même).</strong></div>
+    </div>
+
+    <div class="exercise-card loops">
+      <div class="difficulty-badge loops">Boucles</div>
+      <h4 class="exercise-title">Exercice 8 — Pyramide d'étoiles</h4>
+      <div class="exercise-content"><strong>Écrire une méthode <code>static void AfficherPyramide(int hauteur)</code> qui dessine un triangle. Ex (hauteur 3) :<br>*<br>**<br>***</strong></div>
+    </div>
   </div>
 </div>
 
@@ -298,7 +322,10 @@ Console.WriteLine($"Bonjour {prenom}"); // Interpolation de chaîne</code></pre>
   <div class="concept-section">
     <h3 class="subsection-title">Manipuler une Liste</h3>
     <pre><code class="language-csharp">List&lt;int&gt; maListe = new List&lt;int&gt;();
-maListe.Add(10);</code></pre>
+maListe.Add(10); /* Ajouter un élément */
+List&lt;int&gt; autreListe = new List&lt;int&gt;{10,20,30};
+maListe.AddRange(autreListe); /* Ajouter à la fin de maListe le contenu de autreListe */</code></pre>
+
   </div>
 
   <div class="exercise-cards">
@@ -324,6 +351,24 @@ maListe.Add(10);</code></pre>
       <div class="difficulty-badge lists">Listes</div>
       <h4 class="exercise-title">Exercice 4 — Concaténation</h4>
       <div class="exercise-content"><strong>Écrire une méthode <code>static List&lt;int&gt; Concatener(List&lt;int&gt; l1, List&lt;int&gt; l2)</code> qui retourne une nouvelle liste contenant l1 suivie de l2.</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes</div>
+      <h4 class="exercise-title">Exercice 5 — Trouver le Maximum</h4>
+      <div class="exercise-content"><strong>Écrire une méthode <code>static int TrouverMax(List&lt;int&gt; nombres)</code> qui retourne la plus grande valeur de la liste (sans utiliser .Max()).</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes</div>
+      <h4 class="exercise-title">Exercice 6 — Calcul de Moyenne</h4>
+      <div class="exercise-content"><strong>Écrire une méthode <code>static double CalculerMoyenne(List&lt;int&gt; nombres)</code> qui retourne la moyenne des éléments. Attention à la division réelle !</strong></div>
+    </div>
+
+    <div class="exercise-card lists">
+      <div class="difficulty-badge lists">Listes</div>
+      <h4 class="exercise-title">Exercice 7 — Compter les occurrences</h4>
+      <div class="exercise-content"><strong>Écrire une méthode <code>static int CompterOccurrences(List&lt;int&gt; nombres, int valeur)</code> qui compte combien de fois 'valeur' apparaît dans la liste.</strong></div>
     </div>
   </div>
 </div>
