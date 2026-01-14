@@ -24,6 +24,13 @@
     <p>Suivi particulier — révision des bases du langage C</p>
     <a href="Cleo/index_cleo/" class="btn">Accéder à l’espace</a>
   </div>
+
+  <div class="level-card">
+    <img src="../../images/fox_terminale.png" alt="Roméo">
+    <h2>SQL</h2>
+    <p>Suivi particulier — Programme de terminale NSI</p>
+    <a href="Romeo/index_romeo/" class="btn">Accéder à l’espace</a>
+  </div>
 </div>
 
 <!-- Accès contrôlé par sessionStorage défini depuis la page d'accueil -->
