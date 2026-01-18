@@ -21,13 +21,12 @@ void affiche_poly(long valeurs[], int taille) {
     }
 }
 
-void horner_poly(long* valeurs, int degre, int a){
+long* horner_poly(long* valeurs, int degre, int a){
     long* intermediaire = malloc((degre - 1) * sizeof(long));
     long* final = malloc((degre - 1) * sizeof(long));
-    long reste;
     if (intermediaire == NULL){
         printf("Erreur d'allocation mémoire\n");
-        return;
+        return NULL;
     }
     final[0] = valeurs[0];
     intermediaire[0] = final[0] * a;
@@ -37,9 +36,9 @@ void horner_poly(long* valeurs, int degre, int a){
         intermediaire[i] = valeurs[i] * a;
         final[i+1] = valeurs[i+1]-intermediaire[i];
     }
-    reste = intermediaire[(sizeof(intermediaire)/sizeof(intermediaire[0]))-1];
+    long reste = intermediaire[(sizeof(intermediaire)/sizeof(intermediaire[0]))-1];
 
-
+    return final;
 }
 
 int main(void){

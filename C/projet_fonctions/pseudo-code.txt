@@ -1,0 +1,141 @@
+// Pour que tout fonctionne bien, tu dois avoir dans le même dossier simplepoly.h qui est dans le dossier src, simplepoly.a qui est dans le dossier lib et ton fichier .c
+// La commande pour compiler gcc tp_fonction.c -o tp_fonction simplepoly.a
+
+#include "simplepoly.h"
+
+Fonction s_poly_Affiche(P : Polynôme) : Vide
+Début
+    Si P est nul Alors
+        Afficher "0"
+        Retourner
+    Fin Si
+
+    deg <- Degre(P)
+    premier_terme <- Vrai
+
+    Pour i allant de deg à 0 (en descendant) Faire
+        coef <- P.termes[i]
+
+        Si coef est différent de 0 Alors
+            // 1. Gestion du signe et du coefficient
+            Si premier_terme est Vrai Alors
+                Si coef = -1 Alors
+                    Afficher "-"
+                Sinon Si coef est différent de 1 Alors
+                    Afficher coef
+                Fin Si
+            Sinon // Ce n'est pas le premier terme
+                Si coef > 0 Alors
+                    Afficher " + " suivi de coef
+                Sinon // coef est négatif
+                    Afficher " " suivi de coef
+                Fin Si
+            Fin Si
+
+            // 2. Gestion de la puissance de X
+            Si i = 1 Alors
+                Afficher "X"
+            Sinon Si i > 1 Alors
+                Afficher "X^" suivi de i
+            Fin Si
+
+            premier_terme <- Faux
+        Fin Si
+    Fin Pour
+Fin
+
+Fonction s_horner_Z(P : Polynôme, a : Entier) : QuotientReste
+Début
+    deg <- Degre(P)
+    // Initialisation de la structure résultat
+    resultat <- Nouveau QuotientReste
+    
+    // Cas particulier : polynôme constant
+    Si deg = 0 Alors
+        resultat.Q <- Nouveau Polynôme nul
+        resultat.R <- Copie de P
+        Retourner resultat
+    Fin Si
+
+    // Initialisation de Q (degré deg-1) et R (constant)
+    resultat.Q <- Nouveau Polynôme de degré (deg - 1)
+    resultat.R <- Nouveau Polynôme de degré 0
+
+    // Étape initiale : le coefficient le plus fort de Q est celui de P
+    resultat.Q.termes[deg - 1] <- P.termes[deg]
+
+    // Boucle de Horner
+    Pour i allant de (deg - 1) à 1 (en descendant) Faire
+        // Q[i-1] = P[i] + a * Q[i]
+        resultat.Q.termes[i - 1] <- P.termes[i] + a * resultat.Q.termes[i]
+    Fin Pour
+
+    // Calcul du reste final
+    resultat.R.termes[0] <- P.termes[0] + a * resultat.Q.termes[0]
+
+    Retourner resultat
+Fin
+
+Fonction s_division_euclidienne_Z(P : Polynôme, Q : Polynôme) : QuotientReste
+Début
+    deg_p <- Degre(P)
+    deg_q <- Degre(Q)
+
+    // Vérification que le diviseur est unitaire (coeff dominant == 1)
+    Si Q.termes[deg_q] est différent de 1 Alors
+        Afficher Erreur
+        Retourner NULL
+    Fin Si
+
+    resultat <- Nouveau QuotientReste
+
+    // Si degré du diviseur > dividende, division impossible (Q=0, R=P)
+    Si deg_p < deg_q Alors
+        resultat.Q <- Nouveau Polynôme nul
+        resultat.R <- Copie de P
+        Retourner resultat
+    Fin Si
+
+    // Initialisation
+    resultat.Q <- Nouveau Polynôme de degré (deg_p - deg_q)
+    resultat.R <- Copie de P // Le reste est initialisé avec P et sera modifié
+
+    // Boucle de division (soustractions successives)
+    // On calcule le coefficient du quotient pour chaque degré possible
+    Pour i allant de (deg_p - deg_q) à 0 (en descendant) Faire
+        
+        // Le coefficient du quotient à l'étape i est le coeff dominant actuel du reste
+        // (car Q est unitaire, sinon il faudrait diviser par le coeff dominant de Q)
+        coef_quotient <- resultat.R.termes[i + deg_q]
+        resultat.Q.termes[i] <- coef_quotient
+
+        // On soustrait Q * coef_quotient * X^i au Reste
+        Pour j allant de 0 à deg_q Faire
+            // On retire la part correspondante sur chaque terme concerné
+            resultat.R.termes[i + j] <- resultat.R.termes[i + j] - (coef_quotient * Q.termes[j])
+        Fin Pour
+
+    Fin Pour
+
+    Retourner resultat
+Fin
+
+Fonction s_est_divisible_Z(P : Polynôme, Q : Polynôme) : Booléen
+Début
+    // Effectuer la division euclidienne
+    qr <- s_division_euclidienne_Z(P, Q)
+
+    // Si la division a échoué (ex: Q non unitaire)
+    Si qr est NULL Alors
+        Retourner Faux
+    Fin Si
+
+    // Vérifier si le Reste est le polynôme nul
+    est_divisible <- s_estNul(qr.R)
+
+    // Nettoyage mémoire (très important en C !)
+    Libérer(qr)
+
+    Retourner est_divisible
+Fin
+
