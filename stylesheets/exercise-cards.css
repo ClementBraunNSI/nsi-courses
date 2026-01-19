@@ -1,0 +1,228 @@
+/* Styles pour les fiches d'exercices avec système de cartes et onglets */
+
+.exercise-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    max-width: 100%;
+}
+
+.exercise-card {
+    background: var(--md-default-bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.exercise-content-wrapper {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-right: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.solution-wrapper {
+    flex: 0 0 0;
+    width: 0;
+    overflow: hidden;
+    transition: flex 0.4s ease, width 0.4s ease;
+    border-left: 1px solid #e0e0e0;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.solution-wrapper.show {
+    flex: 0 0 40%;
+    width: 40%;
+    padding-left: 1rem;
+}
+
+.exercise-card.intro {
+    border-left-color: #4CAF50;
+}
+
+.exercise-card.intro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+}
+
+.exercise-card.easy {
+    border-left-color: #2196F3;
+}
+
+.exercise-card.easy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.4);
+}
+
+.exercise-card.medium {
+    border-left-color: #FF9800;
+}
+
+.exercise-card.medium:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
+}
+
+.exercise-card.hard {
+    border-left-color: #F44336;
+}
+
+.exercise-card.hard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(244, 67, 54, 0.4);
+}
+
+.exercise-card.important {
+    border-left-color: #ff8c42;
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.05) 0%, rgba(255, 140, 66, 0.02) 100%);
+}
+
+.exercise-card.important:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 140, 66, 0.4);
+}
+
+.exercise-title {
+    margin: 0 0 1rem 0;
+    color: var(--md-primary-fg-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.exercise-content {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.difficulty-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty-badge.intro {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.difficulty-badge.easy {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+}
+
+.difficulty-badge.medium {
+    background: rgba(255, 152, 0, 0.1);
+    color: #FF9800;
+}
+
+.difficulty-badge.hard {
+    background: rgba(244, 67, 54, 0.1);
+    color: #F44336;
+}
+
+.difficulty-badge.important {
+    background: rgba(255, 140, 66, 0.1);
+    color: #ff8c42;
+}
+
+.toggle-solution {
+    background: linear-gradient(135deg, #ffb347 0%, #ff8c42 100%);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.toggle-solution:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
+}
+
+.toggle-solution.active {
+    background: linear-gradient(135deg, #ff7f50 0%, #ff6347 100%);
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.solution {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.solution pre {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.section-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.section-tab {
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.section-tab:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.section-tab.active {
+    background: linear-gradient(135deg, #ffb347 0%, #ff8c42 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
+}
+
+.section-content {
+    display: none;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.section-content.active {
+    display: block;
+}
+
+/* JavaScript pour les fonctionnalités interactives */
+.exercise-script {
+    display: none;
+}
