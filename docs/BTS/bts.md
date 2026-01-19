@@ -637,6 +637,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    <a href="../B3/Chiffrement_Hachage_Signature" class="chapter-link">📚 Chiffrement Hachage Signature </a>
                    <a href="../B3/activite_mentions_legales" class="chapter-link">📚 Activité Mentions Légales</a>
                    <!--<a href="../B3/attendus_rgpd_cnil" class="chapter-link">📚 Cadre légal : RGPD / CNIL</a> -->
+                   <a href="../B3/injections_sql.md" class="chapter-link">📚 Injections SQL</a>
                 </div>
             </div>
                 <div class="chapter-title">TP Python</div>
