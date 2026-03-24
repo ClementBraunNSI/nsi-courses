@@ -1,0 +1,119 @@
+Fonction s_translate_Z(p : Pointeur vers s_polyZ, a : Entier long) -> Pointeur vers s_polyZ
+    deg <- degre(p)
+    Créer un nouveau polynôme 'resultat' de degré 'deg'
+    
+    'temp' <- copie de 'p'
+    
+    Pour i allant de 0 à deg :
+        qr <- s_horner_Z(temp, a)
+        
+        // Le reste de la division nous donne le coefficient de degré i du polynôme translaté
+        resultat.termes[i] <- qr.R.termes[0]
+        
+        // On continue les divisions avec le quotient
+        temp <- copie de qr.Q
+        
+        Libérer qr
+    
+    Retourner resultat
+Fin Fonction
+
+Fonction s_derive_Z(p : Pointeur vers s_polyZ, a : Entier long, k : Entier) -> Entier long
+    Si k > degre(p) :
+        Retourner 0
+        
+    Q <- s_translate_Z(p, a)
+    coef_k <- Q.termes[k]
+    
+    fact <- 1
+    Pour i allant de 1 à k :
+        fact <- fact * i
+        
+    resultat <- coef_k * fact
+    
+    Libérer Q
+    Retourner resultat
+Fin Fonction
+
+Fonction s_horner(p : Pointeur vers s_poly, a : Réel double) -> Pointeur vers QR
+    deg <- degre(p)
+    Créer un nouveau QR 'resultat'
+    
+    Si deg == 0 :
+        resultat.Q <- polynome nul
+        resultat.R <- copie de p
+        Retourner resultat
+        
+    resultat.Q <- nouveau polynome de degré (deg - 1)
+    resultat.R <- nouveau polynome de degré 0
+    
+    resultat.Q.termes[deg - 1] <- p.termes[deg]
+    
+    Pour i allant de (deg - 1) à 1 en descendant :
+        resultat.Q.termes[i - 1] <- p.termes[i] + a * resultat.Q.termes[i]
+        
+    resultat.R.termes[0] <- p.termes[0] + a * resultat.Q.termes[0]
+    
+    Retourner resultat
+Fin Fonction
+
+Fonction s_difference_divisees(n : Entier, x : Tableau de Réels, y : Tableau de Réels) -> Matrice de Réels
+    Allouer un tableau 2D 'dd' de taille n lignes et (n+1) colonnes
+    
+    // Initialisation des deux premières colonnes (x_i et f(x_i))
+    Pour i allant de 0 à n-1 :
+        dd[i][0] <- x[i]
+        dd[i][1] <- y[i]
+        
+    // Calcul des différences divisées
+    Pour j allant de 2 à n :          // Colonnes (ordre de la différence)
+        Pour i allant de 0 à (n - j) : // Lignes
+            numerateur <- dd[i + 1][j - 1] - dd[i][j - 1]
+            denominateur <- dd[i + j - 1][0] - dd[i][0]
+            dd[i][j] <- numerateur / denominateur
+            
+    Retourner dd
+Fin Fonction
+
+Fonction s_interpolation_newton(n : Entier, x : Tableau, y : Tableau, x0 : Réel) -> Réel
+    dd <- s_difference_divisees(n, x, y)
+    
+    // Le dernier coefficient se trouve en haut à droite de la matrice utile
+    valeur <- dd[0][n] 
+    
+    // Evaluation imbriquée (Hörner)
+    Pour i allant de (n - 2) à 0 en descendant :
+        valeur <- dd[0][i + 1] + (x0 - x[i]) * valeur
+        
+    Libérer la matrice dd
+    Retourner valeur
+Fin Fonction
+
+Fonction s_interpolation(n : Entier, x : Tableau, y : Tableau) -> Pointeur vers s_poly
+    dd <- s_difference_divisees(n, x, y)
+    
+    P <- nouveau polynome de degré 0
+    P.termes[0] <- dd[0][1] // a_0 = f(x_0)
+    
+    terme_produit <- nouveau polynome de degré 0 (valant 1)
+    
+    Pour i allant de 1 à n - 1 :
+        // Création du monôme (X - x_{i-1})
+        binome <- nouveau polynome de degré 1
+        binome.termes[1] <- 1
+        binome.termes[0] <- -x[i - 1]
+        
+        // terme_produit devient (X-x_0)...(X-x_{i-1})
+        terme_produit <- s_produit(terme_produit, binome)
+        
+        // On multiplie ce produit par le coefficient a_i (qui est dd[0][i+1])
+        terme_a_ajouter <- s_lproduit(terme_produit, dd[0][i + 1])
+        
+        // On ajoute le tout au polynome final
+        P <- s_somme(P, terme_a_ajouter)
+        
+        Libérer binome et terme_a_ajouter
+        
+    Libérer terme_produit et la matrice dd
+    Retourner P
+Fin Fonction

@@ -8,7 +8,6 @@ void s_poly_Affiche(s_polyZ *P)
 {
     if (s_estNul(P)) {
         printf("0");
-        return;
     }
     long deg = degre(P);
     bool premier = true;

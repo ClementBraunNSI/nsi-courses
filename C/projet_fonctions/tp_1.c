@@ -8,7 +8,65 @@ bool s_est_divisible_Z(s_polyZ *P, s_polyZ *Q);
 
 int main(void)
 {
-    // Vos tests ici
+    // 1. Création des polynômes P(X) = X^2 - 3X + 2 et Q(X) = X - 1
+    // p = 1*X^2 + (-3)*X + 2
+    s_polyZ *p = s_polyZ_new(2);
+    p->termes[0] = 2;
+    p->termes[1] = -3;
+    p->termes[2] = 1;
+
+    // q = 1*X - 1
+    s_polyZ *q = s_polyZ_new(1);
+    q->termes[0] = -1;
+    q->termes[1] = 1;
+
+    // 2. Affichage
+    printf("P(X) = ");
+    s_poly_Affiche(p);
+    printf("\n");
+
+    printf("Q(X) = ");
+    s_poly_Affiche(q);
+    printf("\n\n");
+
+    // 3. Test de s_horner_Z (Division par X - 1, donc a = 1)
+    printf("--- Test Horner (Division de P par X - 1) ---\n");
+    QRz *horner = s_horner_Z(p, 1);
+    if (horner) {
+        printf("Quotient Q(X) = ");
+        s_poly_Affiche(horner->Q);
+        printf("\n");
+        printf("Reste R(X) = ");
+        s_poly_Affiche(horner->R);
+        printf("\n\n");
+        s_qrz_free(horner);
+    }
+
+    // 4. Test de s_division_euclidienne_Z
+    printf("--- Test Division Euclidienne (P / Q) ---\n");
+    QRz *div = s_division_euclidienne_Z(p, q);
+    if (div) {
+        printf("Quotient Q(X) = ");
+        s_poly_Affiche(div->Q);
+        printf("\n");
+        printf("Reste R(X) = ");
+        s_poly_Affiche(div->R);
+        printf("\n\n");
+        s_qrz_free(div);
+    }
+
+    // 5. Test de s_est_divisible_Z
+    printf("--- Test Divisibilité ---\n");
+    if (s_est_divisible_Z(p, q)) {
+        printf("P(X) est divisible par Q(X)\n");
+    } else {
+        printf("P(X) n'est pas divisible par Q(X)\n");
+    }
+
+    // Libération de la mémoire
+    s_polyZ_free(p);
+    s_polyZ_free(q);
+
     return 0;
 }
 

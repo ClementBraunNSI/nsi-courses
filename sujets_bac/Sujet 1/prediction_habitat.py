@@ -1,8 +1,6 @@
 from math import *
 from random import *
-from donnees_habitats import donnees
-
-zones_connues = donnees
+from donnees_habitats import zones_connues
 
 nouveau = {'vegetation': 5, 'proximite_eau': 2, 'densite_urbaine': 4, 'disponibilite_proies': 6}
 
@@ -31,7 +29,7 @@ def distance_d_un_habitat(habitat, habitats):
     sortie : 
         - list[tuple] : liste de tuples (distance, habitat) où distance est la distance euclidienne entre habitat et chaque habitat de la liste.
     '''
-    return [] #modifier le renvoi.
+    pass #modifier le renvoi.
 
 def k_plus_proches(k, habitat, habitats):
     '''
@@ -63,8 +61,6 @@ def presence_renard(k, habitat, habitats):
     habitats = k_plus_proches(k, habitat, habitats)
     n_renards = 0
     for habitat in habitats:
-        distance = habitat[0]
-        caracteristiques = habitat[1]
-        if distance['presence_renard']:
+        if habitat[0]['presence_renard']:
             n_renards += 1
     return n_renards > k/2

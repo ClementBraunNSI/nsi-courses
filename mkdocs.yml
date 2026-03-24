@@ -1,4 +1,4 @@
-site_name: NSI - Clément Braun
+site_name: La tanière du Code by Clément Braun
 theme:
   name : material
   logo : images/test.png
@@ -12,8 +12,8 @@ theme:
     - header.autohide
   language: fr
   palette:
-    primary: indigo
-    accent: blue
+    primary: orange
+    accent: orange
     
 markdown_extensions:
   - pymdownx.highlight:

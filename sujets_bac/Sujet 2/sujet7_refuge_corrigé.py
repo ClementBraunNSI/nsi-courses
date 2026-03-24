@@ -28,36 +28,41 @@ class Refuge:
     def recueillir(self, un_renard:Renard)->None:
         self.renards.append(un_renard)
 
-    def lister_sous_poids(self)->list[Renard]:
+    def lister_peu_corpulents(self)->list:
         liste = []
         for renard in self.renards :
             if renard.poids < 6.0 :
                 liste.append(renard)
         return liste
 
-    def pourcentage_sous_poids(self)->float:
+    def pourcentage_peu_corpulents(self)->float:
         compteur = 0
         for renard in self.renards :
             if renard.poids < 6.0 :
                 compteur += 1
+        print(compteur, len(self.renards), (compteur/len(self.renards))*100)
         return compteur / len(self.renards) * 100
 
 
-def importer_donnees(nom_fichier:str, refuge:Refuge)->None:
-    print(f"Tentative d'importation depuis {nom_fichier}...")
-    with open(nom_fichier, 'r', encoding='utf-8') as f:
-            lignes = csv.DictReader(f, delimiter=';')
-            for ligne in lignes:
-                renard = Renard(int(ligne['id']), ligne['nom'], float(ligne['poids']), ligne['date_arrivee'])
-                refuge.recueillir(renard)
+    def importer_donnees(self, nom_fichier:str)->None:
+        print(f"Tentative d'importation depuis {nom_fichier}...")
+        with open(nom_fichier, 'r', encoding='utf-8') as f:
+                lignes = csv.DictReader(f, delimiter=';')
+                for ligne in lignes:
+                    renard = Renard(int(ligne['id']), ligne['nom'], float(ligne['poids']), ligne['date_arrivee'])
+                    self.recueillir(renard)
 
 oscar = Renard(200, "Oscar", 5.1, "2023-01-01")
 refuge = Refuge('SOS Goupil', '123 Rue des Renards 98412 Archipal Crozet')
 refuge.recueillir(oscar)
-importer_donnees('donnees_renards.csv', refuge)
+refuge.importer_donnees('donnees_renards.csv')
 for renard in refuge.renards :
     print(renard)
-print(refuge.pourcentage_sous_poids())
+print(refuge.pourcentage_peu_corpulents())
 
+# Q3.1
+# Lors de la création des renards en base, on précise que certains types doivent être entiers.
+# Or, DictReader importe tout sous forme de str, il faut donc cast dans les types correspondants.
 
-# Q3.a 
+# Q4.2
+#16 / 31 représente un peu plus de la moitié des renards, ceci est cohérent
